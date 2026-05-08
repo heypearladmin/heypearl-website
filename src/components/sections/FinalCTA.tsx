@@ -27,7 +27,7 @@ export function FinalCTA() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(60% 60% at 30% 20%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.18) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(67,16,67,0.18) 0%, transparent 60%)',
+            'radial-gradient(60% 60% at 30% 20%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.18) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(14,14,14,0.08) 0%, transparent 60%)',
         }}
       />
       <Container size="lg" className="relative">

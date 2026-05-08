@@ -14,9 +14,20 @@ The visual system represents:
 - warm AI-powered business operations
 - premium startup / editorial energy
 
+## Brand palette (Direction 2 — Editorial Black & Magenta)
+
+- Background: Ivory `#F8F5EE`
+- Soft surface: Bone `#EFE9DC`
+- Ink: Editorial black `#0E0E0E`
+- Primary accent: Magenta `#D34681`
+- Secondary accent: Warm orange `#FF914D`
+- Soft accent: Blush `#FED0D1`
+
+The mood is NYT Sunday Magazine, Vogue Business, Harper's Bazaar masthead. Ivory-dominant editorial with restrained pops of magenta and orange. No purple, no eggplant, no lavender washes.
+
 ## Master style note (use as a suffix on any prompt below if needed)
 
-> Editorial luxury startup aesthetic, warm cinematic lighting, cream and lavender base palette with magenta and orange accents, deep plum and navy shadows, premium magazine photography feel, spacious composition, shallow depth of field, soft natural daylight, subtle AI-era operational atmosphere, no text, no logos, no watermarks, no neon, no cyberpunk, no robotic imagery, no pearls, no oysters, no jewelry, no ocean, no beach, no underwater, no generic stock vibe.
+> Editorial luxury aesthetic in the spirit of NYT Magazine and Vogue Business. Warm cinematic lighting. Ivory and bone base palette `#F8F5EE` and `#EFE9DC` with restrained magenta `#D34681` and warm orange `#FF914D` accent pops. Editorial black ink tones for shadows. Premium magazine photography feel, spacious composition, shallow depth of field, soft natural daylight, subtle AI-era operational atmosphere. No purple, no eggplant, no lavender, no text, no logos, no watermarks, no neon, no cyberpunk, no robotic imagery, no pearls, no oysters, no jewelry, no ocean, no beach, no underwater, no generic stock vibe.
 
 Aspect ratio shorthand:
 

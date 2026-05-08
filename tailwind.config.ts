@@ -1,12 +1,27 @@
 import type { Config } from 'tailwindcss';
 
+/**
+ * HeyPearl palette — Direction 2: Editorial Black & Magenta
+ *
+ *   Background      Ivory       #F8F5EE   → token: cream
+ *   Soft surface    Bone        #EFE9DC   → token: lavender
+ *   Ink             Editorial   #0E0E0E   → token: plum
+ *   Ink (alt)       Off-black   #1A1A1A   → token: navy
+ *   Primary accent  Magenta     #D34681   → token: magenta (kept)
+ *   Secondary       Orange      #FF914D   → token: orange (kept)
+ *   Soft accent     Blush       #FED0D1   → token: blush (kept)
+ *   Body text       Warm slate  #4A4640   → token: slate
+ *
+ * Token names are kept (cream, lavender, plum, navy) so existing utility
+ * classes don't have to change site-wide. The color values are what shifted.
+ */
 const config: Config = {
   content: ['./src/**/*.{ts,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        cream: '#FFF9ED',
-        lavender: '#F6F4FB',
+        cream: '#F8F5EE',
+        lavender: '#EFE9DC',
         orange: {
           DEFAULT: '#FF914D',
           50: '#FFF5EE',
@@ -28,30 +43,30 @@ const config: Config = {
           600: '#962053',
         },
         plum: {
-          DEFAULT: '#431043',
-          50: '#F4EAF4',
-          100: '#E5C9E5',
-          200: '#C68FC6',
-          300: '#9B5C9B',
-          400: '#6B2C6B',
-          500: '#431043',
-          600: '#2E0A2E',
+          DEFAULT: '#0E0E0E',
+          50: '#F2F2F2',
+          100: '#D9D9D9',
+          200: '#B3B3B3',
+          300: '#7A7A7A',
+          400: '#3D3D3D',
+          500: '#0E0E0E',
+          600: '#000000',
         },
         navy: {
-          DEFAULT: '#1B263B',
-          50: '#EEF1F6',
-          100: '#D5DBE6',
-          200: '#A9B5C9',
-          300: '#7286A2',
-          400: '#43526E',
-          500: '#1B263B',
-          600: '#10182A',
+          DEFAULT: '#1A1A1A',
+          50: '#F2F2F2',
+          100: '#D9D9D9',
+          200: '#B3B3B3',
+          300: '#666666',
+          400: '#333333',
+          500: '#1A1A1A',
+          600: '#0A0A0A',
         },
         blush: '#FED0D1',
         slate: {
-          DEFAULT: '#38476B',
-          400: '#5A6A8E',
-          500: '#38476B',
+          DEFAULT: '#4A4640',
+          400: '#6E695F',
+          500: '#4A4640',
         },
         graytone: '#737373',
       },
@@ -88,15 +103,16 @@ const config: Config = {
         '5xl': '2.5rem',
       },
       boxShadow: {
-        'soft': '0 1px 2px rgba(27, 38, 59, 0.04), 0 8px 24px rgba(27, 38, 59, 0.06)',
-        'lift': '0 4px 12px rgba(27, 38, 59, 0.06), 0 24px 48px rgba(27, 38, 59, 0.08)',
+        'soft': '0 1px 2px rgba(14, 14, 14, 0.04), 0 8px 24px rgba(14, 14, 14, 0.06)',
+        'lift': '0 4px 12px rgba(14, 14, 14, 0.06), 0 24px 48px rgba(14, 14, 14, 0.08)',
         'glow': '0 0 0 1px rgba(211, 70, 129, 0.08), 0 24px 80px rgba(211, 70, 129, 0.12)',
       },
       backgroundImage: {
-        'pearl-gradient': 'linear-gradient(135deg, #FFF9ED 0%, #F6F4FB 50%, #FED0D1 100%)',
-        'plum-gradient': 'linear-gradient(135deg, #431043 0%, #1B263B 100%)',
+        'pearl-gradient': 'linear-gradient(135deg, #F8F5EE 0%, #EFE9DC 50%, #FED0D1 100%)',
+        'plum-gradient': 'linear-gradient(135deg, #0E0E0E 0%, #1A1A1A 100%)',
         'magenta-gradient': 'linear-gradient(135deg, #FF914D 0%, #D34681 100%)',
-        'aurora': 'radial-gradient(60% 60% at 30% 20%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.18) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(67,16,67,0.18) 0%, transparent 60%)',
+        'aurora':
+          'radial-gradient(60% 60% at 30% 20%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.18) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(14,14,14,0.10) 0%, transparent 60%)',
       },
       animation: {
         'shimmer': 'shimmer 8s linear infinite',

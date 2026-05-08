@@ -18,7 +18,7 @@ export function PearlMark({ variant = 'default', className }: PearlMarkProps) {
   // Color palette (cream tones for inverse, full brand spectrum for default)
   const colors = isInverse
     ? ['#FFF9ED', '#FED0D1', '#FF914D', '#D34681', '#FFF9ED']
-    : ['#431043', '#1B263B', '#D34681', '#FF914D', '#431043'];
+    : ['#0E0E0E', '#4A4640', '#D34681', '#FF914D', '#0E0E0E'];
 
   return (
     <svg

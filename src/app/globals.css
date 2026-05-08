@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --cream: #FFF9ED;
-  --lavender: #F6F4FB;
-  --orange: #FF914D;
-  --magenta: #D34681;
-  --plum: #431043;
-  --navy: #1B263B;
-  --blush: #FED0D1;
-  --slate: #38476B;
+  /* Direction 2 — Editorial Black & Magenta */
+  --cream: #F8F5EE;       /* Ivory background */
+  --lavender: #EFE9DC;    /* Bone soft surface */
+  --orange: #FF914D;      /* Warm orange accent */
+  --magenta: #D34681;     /* Magenta primary accent */
+  --plum: #0E0E0E;        /* Editorial black ink */
+  --navy: #1A1A1A;        /* Off-black for variance */
+  --blush: #FED0D1;       /* Soft pink subtle accent */
+  --slate: #4A4640;       /* Warm muted text */
   --gray: #737373;
 }
 

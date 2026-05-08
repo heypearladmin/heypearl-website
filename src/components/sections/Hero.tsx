@@ -34,7 +34,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(60% 60% at 25% 20%, rgba(255,145,77,0.20) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.20) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(67,16,67,0.16) 0%, transparent 60%)',
+            'radial-gradient(60% 60% at 25% 20%, rgba(255,145,77,0.20) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.20) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(14,14,14,0.08) 0%, transparent 60%)',
         }}
       />
 
@@ -44,7 +44,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage:
-            'linear-gradient(to right, #1B263B 1px, transparent 1px), linear-gradient(to bottom, #1B263B 1px, transparent 1px)',
+            'linear-gradient(to right, #0E0E0E 1px, transparent 1px), linear-gradient(to bottom, #0E0E0E 1px, transparent 1px)',
           backgroundSize: '64px 64px',
           maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
         }}

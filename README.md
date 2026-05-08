@@ -152,21 +152,21 @@ Drop these files into `public/images/`:
 
 A clean wordmark fallback is rendered by the `Logo` component if no image is present.
 
-## Design tokens
+## Design tokens — Direction 2: Editorial Black & Magenta
 
-Defined in `tailwind.config.ts`:
+Defined in `tailwind.config.ts`. Token names are kept (`plum`, `navy`, `cream`, `lavender`) so utility classes don't change site-wide. The values shifted from the original purple palette to NYT-Magazine-grade editorial black and ivory.
 
-| Token       | Value     |
-| ----------- | --------- |
-| `cream`     | `#FFF9ED` |
-| `lavender`  | `#F6F4FB` |
-| `orange`    | `#FF914D` |
-| `magenta`   | `#D34681` |
-| `plum`      | `#431043` |
-| `navy`      | `#1B263B` |
-| `blush`     | `#FED0D1` |
-| `slate`     | `#38476B` |
-| `graytone`  | `#737373` |
+| Token       | Role                  | Value     |
+| ----------- | --------------------- | --------- |
+| `cream`     | Ivory background      | `#F8F5EE` |
+| `lavender`  | Bone soft surface     | `#EFE9DC` |
+| `plum`      | Editorial black ink   | `#0E0E0E` |
+| `navy`      | Off-black variant     | `#1A1A1A` |
+| `magenta`   | Primary accent        | `#D34681` |
+| `orange`    | Secondary accent      | `#FF914D` |
+| `blush`     | Soft pink accent      | `#FED0D1` |
+| `slate`     | Warm muted text       | `#4A4640` |
+| `graytone`  | Neutral gray          | `#737373` |
 
 Display font: Helvetica Neue / Helvetica / Inter (fallback chain).
 

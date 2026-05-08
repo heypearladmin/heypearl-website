@@ -7,8 +7,8 @@ export const site = {
     'Authority infrastructure for the AI search era. HeyPearl operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
   url: 'https://heypearl.io',
   ogImage: '/images/og-default.jpg',
-  // Replace with the founder strategy call link (Calendly, Cal.com, Savvy, etc.)
-  strategyCallUrl: 'https://calendly.com/heypearl/strategy',
+  // Misti's Calendly for founder-led strategy calls
+  strategyCallUrl: 'https://calendly.com/hey-pearl/meet',
   contact: {
     phone: '+1 830 402 4045',
     phoneDisplay: '(830) 402-4045',
