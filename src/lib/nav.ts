@@ -47,6 +47,7 @@ export const footerNav = {
     { label: 'Strategy Call', href: '/contact#strategy' },
   ],
   legal: [
+    { label: 'Policies', href: '/policies' },
     { label: 'Privacy', href: '/privacy' },
     { label: 'Terms', href: '/terms' },
   ],

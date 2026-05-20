@@ -7,6 +7,7 @@ import { PageHero } from '@/components/ui/PageHero';
 import { Reveal } from '@/components/ui/Reveal';
 import { LinkButton } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
+import { ContactForm } from '@/components/forms/ContactForm';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -192,6 +193,13 @@ export default function ContactPage() {
               </article>
             </Reveal>
           </div>
+
+          {/* A2P 10DLC compliant contact form */}
+          <Reveal delay={0.08}>
+            <div id="form" className="mt-10">
+              <ContactForm />
+            </div>
+          </Reveal>
 
           {/* Founder follow strip */}
           <Reveal delay={0.1}>
