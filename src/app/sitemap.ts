@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/heylocal',
     '/services/authority-websites',
     '/insights',
+    '/policies',
     '/privacy',
     '/terms',
   ];
