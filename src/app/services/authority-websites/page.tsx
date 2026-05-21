@@ -8,6 +8,8 @@ import { LinkButton } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { site } from '@/lib/site';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'Authority Websites — Editorial, AI-Friendly Builds',
@@ -47,6 +49,22 @@ const principles = [
 export default function AuthorityWebsitesPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          serviceSchema({
+            name: 'Authority Websites',
+            url: `${site.url}/services/authority-websites`,
+            description:
+              'Editorial websites engineered to be cited, indexed, and surfaced by AI. Cinematic design with authority architecture built in.',
+            category: 'Website Design & Development',
+          }),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Services', url: `${site.url}/services` },
+            { name: 'Authority Websites', url: `${site.url}/services/authority-websites` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Authority Websites"
         title={

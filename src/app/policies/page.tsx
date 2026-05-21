@@ -73,7 +73,7 @@ export default function PoliciesPage() {
           ),
         },
         {
-          heading: 'SMS &amp; Phone Communications',
+          heading: 'SMS & Phone Communications',
           body: (
             <>
               <p>
@@ -144,7 +144,7 @@ export default function PoliciesPage() {
           ),
         },
         {
-          heading: 'Children&rsquo;s Privacy',
+          heading: "Children's Privacy",
           body: (
             <>
               <p>

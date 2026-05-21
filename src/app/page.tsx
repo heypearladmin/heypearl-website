@@ -8,10 +8,17 @@ import { Showcase } from '@/components/sections/Showcase';
 import { Founder } from '@/components/sections/Founder';
 import { PricingPreview } from '@/components/sections/PricingPreview';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import {
+  organizationSchema,
+  webSiteSchema,
+  localBusinessSchema,
+} from '@/lib/seo/schema';
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd schema={[organizationSchema(), webSiteSchema(), localBusinessSchema()]} />
       <Hero />
       <MarketShift />
       <PearlFramework />

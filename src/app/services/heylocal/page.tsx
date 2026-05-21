@@ -10,6 +10,8 @@ import { PricingCard } from '@/components/ui/PricingCard';
 import { heyLocalTiers } from '@/lib/pricing';
 import { site } from '@/lib/site';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'HeyLocal — Local Authority for the AI Era',
@@ -41,6 +43,22 @@ const pillars = [
 export default function HeyLocalPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          serviceSchema({
+            name: 'HeyLocal — Local Authority System',
+            url: `${site.url}/services/heylocal`,
+            description:
+              'A focused authority system for place-based businesses. Built to dominate maps, AI summaries, and local discovery.',
+            category: 'Local SEO & Authority',
+          }),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Services', url: `${site.url}/services` },
+            { name: 'HeyLocal', url: `${site.url}/services/heylocal` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="HeyLocal"
         title={

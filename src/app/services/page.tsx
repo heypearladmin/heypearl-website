@@ -10,16 +10,29 @@ import { site } from '@/lib/site';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { WhyHeyPearl } from '@/components/sections/WhyHeyPearl';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { organizationSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'Services — Authority Infrastructure for the AI Search Era',
   description:
     'GEO, content infrastructure, reputation systems, automation, and authority websites. The five layers of HeyPearl.',
+  openGraph: { images: ['/images/og-default.jpg'] },
+  twitter: { images: ['/images/og-default.jpg'] },
 };
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          organizationSchema(),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Services', url: `${site.url}/services` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Services"
         title={

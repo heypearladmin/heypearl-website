@@ -9,6 +9,8 @@ import { Eyebrow } from '@/components/ui/Eyebrow';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 import { PearlFramework } from '@/components/sections/PearlFramework';
 import { site } from '@/lib/site';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { organizationSchema, personSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'About — Software with a soul',
@@ -40,6 +42,16 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          organizationSchema(),
+          personSchema(),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'About', url: `${site.url}/about` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="About HeyPearl"
         title={

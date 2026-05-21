@@ -9,6 +9,8 @@ import { LinkButton } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { site } from '@/lib/site';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { localBusinessSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'Contact — Talk to HeyPearl',
@@ -21,6 +23,15 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          localBusinessSchema(),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Contact', url: `${site.url}/contact` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Contact"
         title={

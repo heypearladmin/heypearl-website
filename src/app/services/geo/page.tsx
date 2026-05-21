@@ -10,6 +10,8 @@ import { PricingCard } from '@/components/ui/PricingCard';
 import { geoTiers } from '@/lib/pricing';
 import { site } from '@/lib/site';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'GEO Authority System — Generative Engine Optimization',
@@ -59,6 +61,22 @@ const targets = [
 export default function GEOPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          serviceSchema({
+            name: 'GEO Authority System',
+            url: `${site.url}/services/geo`,
+            description:
+              'Generative Engine Optimization for the AI search era. The structured authority infrastructure that AI cites, recommends, and trusts.',
+            category: 'Generative Engine Optimization',
+          }),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Services', url: `${site.url}/services` },
+            { name: 'GEO Authority System', url: `${site.url}/services/geo` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="GEO Authority System"
         title={

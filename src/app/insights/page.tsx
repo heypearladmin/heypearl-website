@@ -8,11 +8,15 @@ import { LinkButton } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { ArrowUpRight } from 'lucide-react';
 import { site } from '@/lib/site';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { organizationSchema, breadcrumbSchema } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'Insights — Editorial on the AI Search Era',
   description:
     'Editorial insights, frameworks, and dispatches from HeyPearl on authority infrastructure and the AI search era.',
+  openGraph: { images: ['/images/og-default.jpg'] },
+  twitter: { images: ['/images/og-default.jpg'] },
 };
 
 const upcoming = [
@@ -49,6 +53,15 @@ const upcoming = [
 export default function InsightsPage() {
   return (
     <>
+      <JsonLd
+        schema={[
+          organizationSchema(),
+          breadcrumbSchema([
+            { name: 'Home', url: site.url },
+            { name: 'Insights', url: `${site.url}/insights` },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Insights"
         title={

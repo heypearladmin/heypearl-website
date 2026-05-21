@@ -106,7 +106,7 @@ export default function TermsPage() {
           ),
         },
         {
-          heading: 'Message &amp; Data Rates',
+          heading: 'Message & Data Rates',
           body: (
             <>
               <p>
