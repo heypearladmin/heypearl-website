@@ -4,79 +4,107 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 /**
- * A2P 10DLC / Twilio / GoHighLevel compliant consent block.
+ * GHL A2P 10DLC compliant dual-consent block.
  *
- * Renders the legally-required SMS + AI calling consent disclosure and an
- * unchecked, required consent checkbox. Used inside ContactForm.
+ * Renders TWO optional, unchecked SMS consent checkboxes:
+ *   1. Transactional SMS (appointment confirmations, account notifications, etc.)
+ *   2. Marketing SMS (offers, promotions, announcements)
  *
- * IMPORTANT: The disclosure language is intentionally verbatim. Do not
- * paraphrase without legal review — registrars (Twilio, GHL) check for it.
+ * Both are optional — neither blocks form submission.
+ * Disclosure language is verbatim per GHL A2P review requirements.
  */
 
 type ConsentBlockProps = {
-  checked: boolean;
-  onChange: (value: boolean) => void;
-  /** Optional id override for the checkbox (useful if multiple forms on a page). */
-  id?: string;
+  consentTransactional: boolean;
+  consentMarketing: boolean;
+  onChangeTransactional: (value: boolean) => void;
+  onChangeMarketing: (value: boolean) => void;
+  idPrefix?: string;
   className?: string;
-  /** Brand/company name interpolated into the disclosure. */
-  companyName?: string;
 };
 
 export function ConsentBlock({
-  checked,
-  onChange,
-  id = 'consent',
+  consentTransactional,
+  consentMarketing,
+  onChangeTransactional,
+  onChangeMarketing,
+  idPrefix = 'consent',
   className,
-  companyName = 'Hey Pearl',
 }: ConsentBlockProps) {
+  const transactionalId = `${idPrefix}-transactional`;
+  const marketingId = `${idPrefix}-marketing`;
+
   return (
     <div
       className={cn(
-        'rounded-2xl border border-plum/10 bg-cream/60 p-5 sm:p-6',
+        'rounded-2xl border border-plum/10 bg-cream/60 p-5 sm:p-6 flex flex-col gap-5',
         className,
       )}
     >
-      <label htmlFor={id} className="flex items-start gap-3 cursor-pointer">
+      {/* Checkbox 1 — Transactional SMS */}
+      <label htmlFor={transactionalId} className="flex items-start gap-3 cursor-pointer">
         <input
-          id={id}
-          name={id}
+          id={transactionalId}
+          name={transactionalId}
           type="checkbox"
-          required
-          checked={checked}
-          onChange={(e) => onChange(e.target.checked)}
-          aria-describedby={`${id}-description`}
+          checked={consentTransactional}
+          onChange={(e) => onChangeTransactional(e.target.checked)}
+          aria-describedby={`${transactionalId}-description`}
           className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-magenta focus:ring-2 focus:ring-magenta focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
         />
         <span
-          id={`${id}-description`}
+          id={`${transactionalId}-description`}
           className="text-sm text-slate leading-relaxed"
         >
-          I agree to receive text messages and phone calls from {companyName} at
-          the phone number provided. Message frequency varies. Message &amp;
-          data rates may apply. Reply STOP to unsubscribe. Reply HELP for help.
-          By submitting this form, you agree to our{' '}
-          <Link
-            href="/terms"
-            className="underline underline-offset-2 hover:text-plum transition-colors"
-          >
-            Terms &amp; Conditions
-          </Link>{' '}
-          and{' '}
-          <Link
-            href="/policies"
-            className="underline underline-offset-2 hover:text-plum transition-colors"
-          >
-            Privacy Policy
-          </Link>
-          .
+          I consent to receive non-marketing text messages from Hey Pearl Agency
+          LLC about appointment confirmations, appointment reminders, account
+          notifications, customer support updates, and service-related
+          communications at the phone number provided. Message frequency may
+          vary. Message &amp; data rates may apply. Text HELP for assistance,
+          reply STOP to opt out.
         </span>
       </label>
 
-      <p className="mt-4 text-xs text-slate/80 leading-relaxed pl-7">
-        By providing your phone number, you consent to receive calls and text
-        messages, including automated calls and AI-assisted communications,
-        from {companyName}.
+      {/* Checkbox 2 — Marketing SMS */}
+      <label htmlFor={marketingId} className="flex items-start gap-3 cursor-pointer">
+        <input
+          id={marketingId}
+          name={marketingId}
+          type="checkbox"
+          checked={consentMarketing}
+          onChange={(e) => onChangeMarketing(e.target.checked)}
+          aria-describedby={`${marketingId}-description`}
+          className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-magenta focus:ring-2 focus:ring-magenta focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
+        />
+        <span
+          id={`${marketingId}-description`}
+          className="text-sm text-slate leading-relaxed"
+        >
+          I consent to receive marketing text messages from Hey Pearl Agency LLC
+          about special offers, discounts, promotions, marketing updates, and
+          service announcements at the phone number provided. Message frequency
+          may vary. Message &amp; data rates may apply. Text HELP for
+          assistance, reply STOP to opt out.
+        </span>
+      </label>
+
+      {/* Policy links */}
+      <p className="text-xs text-slate/80 leading-relaxed pl-7">
+        By submitting this form, you agree to our{' '}
+        <Link
+          href="/terms-of-service"
+          className="underline underline-offset-2 hover:text-plum transition-colors"
+        >
+          Terms of Service
+        </Link>{' '}
+        and{' '}
+        <Link
+          href="/privacy-policy"
+          className="underline underline-offset-2 hover:text-plum transition-colors"
+        >
+          Privacy Policy
+        </Link>
+        . SMS consent is optional and not required to submit this form.
       </p>
     </div>
   );

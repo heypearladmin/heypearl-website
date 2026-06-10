@@ -28,7 +28,8 @@ type Payload = {
   email?: unknown;
   phone?: unknown;
   message?: unknown;
-  consent?: unknown;
+  consentTransactional?: unknown;
+  consentMarketing?: unknown;
 };
 
 function isNonEmptyString(v: unknown): v is string {
@@ -55,7 +56,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { firstName, lastName, email, phone, message, consent } = body;
+  const { firstName, lastName, email, phone, message, consentTransactional, consentMarketing } = body;
 
   if (
     !isNonEmptyString(firstName) ||
@@ -66,16 +67,6 @@ export async function POST(req: NextRequest) {
   ) {
     return NextResponse.json(
       { ok: false, error: 'All fields are required.' },
-      { status: 400 },
-    );
-  }
-
-  if (consent !== true) {
-    return NextResponse.json(
-      {
-        ok: false,
-        error: 'Consent is required before submitting this form.',
-      },
       { status: 400 },
     );
   }
@@ -108,7 +99,8 @@ export async function POST(req: NextRequest) {
         email,
         phone,
         message,
-        consent,
+        consentTransactional,
+        consentMarketing,
         submittedAt,
         userAgent,
         ip,
@@ -129,7 +121,8 @@ export async function POST(req: NextRequest) {
     message,
     ``,
     `— meta —`,
-    `Consent: ${consent === true ? 'YES (SMS + AI calling, STOP/HELP, msg & data rates disclosed)' : 'NO'}`,
+    `Consent (Transactional SMS): ${consentTransactional === true ? 'YES' : 'NO'}`,
+    `Consent (Marketing SMS): ${consentMarketing === true ? 'YES' : 'NO'}`,
     `Submitted: ${submittedAt}`,
     `IP: ${ip}`,
     `User-Agent: ${userAgent}`,
@@ -147,7 +140,8 @@ export async function POST(req: NextRequest) {
       <p style="white-space:pre-wrap;margin:0;">${escapeHtml(message)}</p>
       <hr style="margin:24px 0;border:none;border-top:1px solid #EFE9DC;" />
       <p style="font-size:12px;color:#4A4640;margin:0;">
-        Consent: <strong>YES</strong> — SMS + AI calling, STOP/HELP, msg &amp; data rates disclosed.<br/>
+        Consent (Transactional SMS): <strong>${consentTransactional === true ? 'YES' : 'NO'}</strong><br/>
+        Consent (Marketing SMS): <strong>${consentMarketing === true ? 'YES' : 'NO'}</strong><br/>
         Submitted: ${escapeHtml(submittedAt)}<br/>
         IP: ${escapeHtml(ip)}<br/>
         User-Agent: ${escapeHtml(userAgent)}
