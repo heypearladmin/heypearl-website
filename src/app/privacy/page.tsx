@@ -5,7 +5,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'How Hey Pearl collects, uses, and protects your information, including SMS opt-in data.',
+    'How Hey Pearl Agency LLC collects, uses, and protects your information, including SMS opt-in data.',
   // Canonical lives at /policies — keep /privacy indexable for backward compatibility.
   alternates: { canonical: '/policies' },
 };
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
     <LegalShell
       eyebrow="Legal"
       title="Privacy Policy"
-      description="A clear, plain-language summary of how Hey Pearl collects, uses, and protects information."
+      description="A clear, plain-language summary of how Hey Pearl Agency LLC collects, uses, and protects information."
       effectiveDate="January 2026"
       sections={[
         {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           body: (
             <>
               <p>
-                Hey Pearl provides authority infrastructure services for the
+                Hey Pearl Agency LLC provides authority infrastructure services for the
                 AI search era. This Privacy Policy describes how we collect
                 and use information across our website, applications, and
                 client engagements.
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
               <p>
                 When you check the consent box on our contact form, you
                 consent to receive recurring text messages and phone calls
-                from Hey Pearl, including automated and AI-assisted calls,
+                from Hey Pearl Agency LLC, including automated and AI-assisted calls,
                 at the phone number you provided. Message frequency varies.
                 Message and data rates may apply.
               </p>
@@ -123,7 +123,7 @@ export default function PrivacyPage() {
             <>
               <p>
                 Questions about this policy can be sent to{' '}
-                {site.contact.email} or Hey Pearl,{' '}
+                {site.contact.email} or Hey Pearl Agency LLC,{' '}
                 {site.contact.address.display}.
               </p>
             </>

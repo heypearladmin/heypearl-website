@@ -12,7 +12,7 @@ import { site } from '@/lib/site';
  * Required env (set in Vercel → Project → Settings → Environment Variables):
  *   - RESEND_API_KEY      (required for actual delivery)
  *   - CONTACT_TO_EMAIL    (optional; defaults to site.contact.email)
- *   - CONTACT_FROM_EMAIL  (optional; defaults to "Hey Pearl <noreply@heypearl.io>")
+ *   - CONTACT_FROM_EMAIL  (optional; defaults to "Hey Pearl Agency LLC <noreply@heypearl.io>")
  *
  * If RESEND_API_KEY is not set, the route still returns success and logs the
  * payload server-side. This keeps the form working through A2P review while
@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
 
   const to = process.env.CONTACT_TO_EMAIL ?? site.contact.email;
   const from =
-    process.env.CONTACT_FROM_EMAIL ?? 'Hey Pearl <noreply@heypearl.io>';
+    process.env.CONTACT_FROM_EMAIL ?? 'Hey Pearl Agency LLC <noreply@heypearl.io>';
   const apiKey = process.env.RESEND_API_KEY;
 
   // Graceful fallback while email delivery is being configured.
@@ -109,7 +109,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true });
   }
 
-  const subject = `New Hey Pearl contact form — ${firstName} ${lastName}`;
+  const subject = `New Hey Pearl Agency LLC contact form — ${firstName} ${lastName}`;
   const text = [
     `New contact form submission`,
     ``,
@@ -130,7 +130,7 @@ export async function POST(req: NextRequest) {
 
   const html = `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; color: #0E0E0E; line-height: 1.5;">
-      <h2 style="margin:0 0 16px;">New Hey Pearl contact form</h2>
+      <h2 style="margin:0 0 16px;">New Hey Pearl Agency LLC contact form</h2>
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
         <tr><td style="padding:4px 12px 4px 0;color:#4A4640;">Name</td><td><strong>${escapeHtml(firstName)} ${escapeHtml(lastName)}</strong></td></tr>
         <tr><td style="padding:4px 12px 4px 0;color:#4A4640;">Email</td><td><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>

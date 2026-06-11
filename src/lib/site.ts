@@ -1,10 +1,10 @@
 export const site = {
-  name: 'HeyPearl',
+  name: 'Hey Pearl',
   domain: 'heypearl.io',
-  legalName: 'HeyPearl',
+  legalName: 'Hey Pearl Agency LLC',
   tagline: 'Software with a soul.',
   description:
-    'Authority infrastructure for the AI search era. HeyPearl operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
+    'Authority infrastructure for the AI search era. Hey Pearl operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
   url: 'https://heypearl.io',
   ogImage: '/images/og-default.jpg',
   // Misti's Calendly for founder-led strategy calls

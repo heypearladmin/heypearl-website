@@ -113,8 +113,8 @@ export default function TermsOfServicePage() {
             <>
               <p>
                 Carriers (including AT&amp;T, T-Mobile, Verizon, and others)
-                are not liable for delayed or undelivered messages. Hey Pearl
-                Agency LLC is not responsible for any delays or failures in SMS
+                are not liable for delayed or undelivered messages. Hey Pearl Agency LLC
+                is not responsible for any delays or failures in SMS
                 delivery caused by your wireless carrier or network conditions.
               </p>
             </>
@@ -245,7 +245,7 @@ export default function TermsOfServicePage() {
                 visibility are influenced by many factors outside our control.
               </p>
               <p>
-                To the fullest extent permitted by applicable law, Hey Pearl
+                To the fullest extent permitted by applicable law, Hey Pearl Agency LLC
                 Agency LLC disclaims all warranties, including implied
                 warranties of merchantability, fitness for a particular purpose,
                 and non-infringement.

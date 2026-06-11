@@ -49,7 +49,7 @@ export function Footer() {
                 size="lg"
                 className="text-cream border border-cream/20 hover:bg-cream/5"
               >
-                Contact HeyPearl
+                Contact Hey Pearl
               </LinkButton>
             </div>
           </div>
@@ -66,7 +66,7 @@ export function Footer() {
                 <Logo variant="inverse" />
               </div>
               <p className="text-cream/70 max-w-sm leading-relaxed">
-                {site.tagline} HeyPearl is the authority infrastructure for the AI search era.
+                {site.tagline} Hey Pearl is the authority infrastructure for the AI search era.
               </p>
               <p className="text-xs text-cream/55 max-w-sm leading-relaxed">
                 P.E.A.R.L.: Process &middot; Efficiency &middot; Automation &middot; Revenue &middot; Leverage.

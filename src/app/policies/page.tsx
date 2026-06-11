@@ -5,7 +5,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Hey Pearl Privacy Policy — how we collect, use, and protect your information, including SMS opt-in data.',
+    'Hey Pearl Agency LLC Privacy Policy — how we collect, use, and protect your information, including SMS opt-in data.',
   alternates: { canonical: '/policies' },
   robots: { index: true, follow: true },
 };
@@ -15,7 +15,7 @@ export default function PoliciesPage() {
     <LegalShell
       eyebrow="Legal"
       title="Privacy Policy"
-      description="A clear, plain-language summary of how Hey Pearl collects, uses, and protects information — including SMS opt-in data for A2P 10DLC compliance."
+      description="A clear, plain-language summary of how Hey Pearl Agency LLC collects, uses, and protects information — including SMS opt-in data for A2P 10DLC compliance."
       effectiveDate="January 2026"
       sections={[
         {
@@ -23,7 +23,7 @@ export default function PoliciesPage() {
           body: (
             <>
               <p>
-                Hey Pearl (&ldquo;Hey Pearl,&rdquo; &ldquo;we,&rdquo;
+                Hey Pearl Agency LLC (&ldquo;Hey Pearl Agency LLC,&rdquo; &ldquo;we,&rdquo;
                 &ldquo;us,&rdquo; or &ldquo;our&rdquo;) provides authority
                 infrastructure services for the AI search era. This Privacy
                 Policy describes how we collect and use information across our
@@ -79,7 +79,7 @@ export default function PoliciesPage() {
               <p>
                 By providing your phone number and checking the consent box on
                 our contact form, you expressly consent to receive recurring
-                text messages and phone calls from Hey Pearl, including
+                text messages and phone calls from Hey Pearl Agency LLC, including
                 automated calls and AI-assisted communications, at the phone
                 number you provided.
               </p>
@@ -148,7 +148,7 @@ export default function PoliciesPage() {
           body: (
             <>
               <p>
-                Hey Pearl&rsquo;s services are not directed to children under
+                Hey Pearl Agency LLC&rsquo;s services are not directed to children under
                 13, and we do not knowingly collect personal information from
                 children under 13.
               </p>
@@ -174,7 +174,7 @@ export default function PoliciesPage() {
               <p>
                 Questions about this Privacy Policy can be sent to{' '}
                 {site.contact.email}, called to{' '}
-                {site.contact.phoneDisplay}, or mailed to Hey Pearl,{' '}
+                {site.contact.phoneDisplay}, or mailed to Hey Pearl Agency LLC,{' '}
                 {site.contact.address.display}.
               </p>
             </>
