@@ -73,7 +73,7 @@ export default function PoliciesPage() {
           ),
         },
         {
-          heading: 'SMS &amp; Phone Communications',
+          heading: 'SMS & Phone Communications',
           body: (
             <>
               <p>

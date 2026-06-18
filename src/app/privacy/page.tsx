@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           ),
         },
         {
-          heading: 'SMS &amp; Phone Communications',
+          heading: 'SMS & Phone Communications',
           body: (
             <>
               <p>
