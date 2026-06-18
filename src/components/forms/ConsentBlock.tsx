@@ -1,17 +1,16 @@
 'use client';
 
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 /**
  * GHL A2P 10DLC compliant dual-consent block.
  *
- * Renders TWO optional, unchecked SMS consent checkboxes:
- *   1. Transactional SMS (appointment confirmations, account notifications, etc.)
- *   2. Marketing SMS (offers, promotions, announcements)
+ * Two optional, unchecked SMS consent checkboxes per GHL template format:
+ *   1. Transactional SMS
+ *   2. Marketing SMS
  *
- * Both are optional — neither blocks form submission.
- * Disclosure language is verbatim per GHL A2P review requirements.
+ * Policy links (Privacy Policy | Terms and Conditions) are rendered
+ * below the Submit button in ContactForm, not here.
  */
 
 type ConsentBlockProps = {
@@ -56,12 +55,11 @@ export function ConsentBlock({
           id={`${transactionalId}-description`}
           className="text-sm text-slate leading-relaxed"
         >
-          I consent to receive non-marketing text messages from Hey Pearl Agency
-          LLC about appointment confirmations, appointment reminders, account
-          notifications, customer support updates, and service-related
-          communications at the phone number provided. Message frequency may
-          vary. Message &amp; data rates may apply. Text HELP for assistance,
-          reply STOP to opt out.
+          I consent to receive non-marketing text messages from{' '}
+          <strong>Hey Pearl Agency LLC</strong> regarding appointment
+          confirmations, reminders, account notifications, customer support, and
+          service-related communications. Message frequency varies, message &amp;
+          data rates may apply. Reply HELP for assistance, reply STOP to opt out.
         </span>
       </label>
 
@@ -80,32 +78,13 @@ export function ConsentBlock({
           id={`${marketingId}-description`}
           className="text-sm text-slate leading-relaxed"
         >
-          I consent to receive marketing text messages from Hey Pearl Agency LLC
-          about special offers, discounts, promotions, marketing updates, and
-          service announcements at the phone number provided. Message frequency
-          may vary. Message &amp; data rates may apply. Text HELP for
-          assistance, reply STOP to opt out.
+          I consent to receive marketing text messages from{' '}
+          <strong>Hey Pearl Agency LLC</strong> regarding special offers,
+          discounts, promotions, marketing updates, and service announcements.
+          Message frequency varies, message &amp; data rates may apply. Reply
+          HELP for assistance, reply STOP to opt out.
         </span>
       </label>
-
-      {/* Policy links */}
-      <p className="text-xs text-slate/80 leading-relaxed pl-7">
-        By submitting this form, you agree to our{' '}
-        <Link
-          href="/terms-of-service"
-          className="underline underline-offset-2 hover:text-plum transition-colors"
-        >
-          Terms of Service
-        </Link>{' '}
-        and{' '}
-        <Link
-          href="/privacy-policy"
-          className="underline underline-offset-2 hover:text-plum transition-colors"
-        >
-          Privacy Policy
-        </Link>
-        . SMS consent is optional and not required to submit this form.
-      </p>
     </div>
   );
 }

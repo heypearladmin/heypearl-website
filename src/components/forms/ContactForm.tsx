@@ -205,7 +205,7 @@ export function ContactForm() {
         </div>
       )}
 
-      <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <div className="mt-8">
         <Button
           type="submit"
           variant="primary"
@@ -213,13 +213,27 @@ export function ContactForm() {
           withArrow
           disabled={!canSubmit}
           aria-disabled={!canSubmit}
+          className="w-full sm:w-auto"
         >
           {submitting ? 'Sending…' : 'Send message'}
         </Button>
-        <p className="text-xs text-slate/80">
-          SMS consent above is optional and does not affect form submission.
-        </p>
       </div>
+
+      <p className="mt-4 text-xs text-slate/70 text-center">
+        <a
+          href="/privacy-policy"
+          className="underline underline-offset-2 hover:text-plum transition-colors"
+        >
+          Privacy Policy
+        </a>
+        {' | '}
+        <a
+          href="/terms-of-service"
+          className="underline underline-offset-2 hover:text-plum transition-colors"
+        >
+          Terms and Conditions
+        </a>
+      </p>
     </form>
   );
 }
