@@ -85,6 +85,123 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://heypearl.io/#organization',
+  name: 'Hey Pearl Agency LLC',
+  alternateName: 'Hey Pearl',
+  url: 'https://heypearl.io',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://heypearl.io/images/og-default.jpg',
+    width: 1200,
+    height: 630,
+  },
+  description:
+    'Authority infrastructure for the AI search era. Hey Pearl Agency LLC operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
+  foundingDate: '2023',
+  founder: {
+    '@type': 'Person',
+    name: 'Misti Bruton',
+    url: 'https://www.mistibruton.com/',
+    sameAs: [
+      'https://www.instagram.com/themistibruton',
+      'https://www.facebook.com/mistibrutonceo',
+      'https://www.youtube.com/@themistibruton',
+    ],
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '1606 Headway Cir',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    postalCode: '78754',
+    addressCountry: 'US',
+  },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: '+18304024045',
+      contactType: 'customer service',
+      email: 'support@heypearl.io',
+      availableLanguage: 'English',
+    },
+  ],
+  sameAs: [
+    'https://www.facebook.com/heypearlagency',
+    'https://www.instagram.com/heypearl.io',
+    'https://www.youtube.com/@HeyPearl.Agency',
+  ],
+  knowsAbout: [
+    'Generative Engine Optimization',
+    'AI search visibility',
+    'Authority infrastructure',
+    'GEO',
+    'AI Overviews',
+    'ChatGPT visibility',
+    'Perplexity SEO',
+    'Local SEO',
+    'Content infrastructure',
+    'Reputation management',
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Hey Pearl Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'GEO — Generative Engine Optimization',
+          description:
+            'AI-driven authority signals, structured data, and content systems that make your business the answer AI search engines recommend.',
+          url: 'https://heypearl.io/services/geo',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Authority Websites',
+          description:
+            'Fast, AI-ready websites built on structured data, semantic markup, and authority architecture.',
+          url: 'https://heypearl.io/services/authority-websites',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'HeyLocal — Local Authority',
+          description:
+            'Profiles, schema, and entity signals tuned for the geography you actually serve.',
+          url: 'https://heypearl.io/services/heylocal',
+        },
+      },
+    ],
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://heypearl.io/#website',
+  url: 'https://heypearl.io',
+  name: 'Hey Pearl Agency LLC',
+  description:
+    'Authority infrastructure for the AI search era.',
+  publisher: { '@id': 'https://heypearl.io/#organization' },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://heypearl.io/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -97,6 +214,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `var script=document.createElement("script");script.setAttribute("nowprocket","");script.setAttribute("nitro-exclude","");script.src="https://reports.heypearl.io/scripts/dynamic_optimization.js";script.dataset.uuid="2d02d0c8-91ea-4b98-befd-20d028eecbd8";script.id="sa-dynamic-optimization";document.head.appendChild(script);`,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="bg-cream text-navy antialiased relative">
