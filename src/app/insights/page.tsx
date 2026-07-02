@@ -112,8 +112,8 @@ export default function InsightsPage() {
           {/* Article grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post, i) => {
-              // All posts in this listing are new (published this week or within 10 weeks)
-              const isNew = true;
+              // "New" on the 2 most-recent grid cards (featured card already carries New)
+              const isNew = i < 2;
               return (
                 <Reveal key={post.slug} delay={i * 0.04}>
                   <Link
