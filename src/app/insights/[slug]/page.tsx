@@ -172,9 +172,9 @@ export default async function InsightPost({ params }: Props) {
             fill
             priority
             sizes="100vw"
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-plum/70 via-plum/80 to-plum/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-plum/50 via-plum/60 to-plum/85" />
         </div>
         <Container size="md" className="relative pt-12 pb-16">
           <Link
