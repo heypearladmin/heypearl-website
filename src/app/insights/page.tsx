@@ -71,9 +71,9 @@ export default function InsightsPage() {
                     alt={featured.h1}
                     fill
                     sizes="100vw"
-                    className="object-cover opacity-25 transition-transform duration-700 group-hover:scale-[1.02]"
+                    className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-[1.02]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-plum/95 via-plum/80 to-plum/50" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-plum/80 via-plum/60 to-plum/30" />
                 </div>
                 <div className="relative grid lg:grid-cols-2 gap-8 p-8 sm:p-12">
                   <div className="flex flex-col justify-center">
