@@ -29,8 +29,8 @@ html {
 body {
   background: var(--cream);
   color: var(--navy);
-  font-family: 'Helvetica Neue', Helvetica, Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  font-feature-settings: 'ss01', 'ss02', 'cv11';
+  font-family: var(--font-inter), 'Helvetica Neue', Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
 ::selection {

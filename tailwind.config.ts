@@ -72,18 +72,18 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
+          'var(--font-inter)',
           'Helvetica Neue',
           'Helvetica',
-          'Inter',
           '-apple-system',
           'BlinkMacSystemFont',
           'Arial',
           'sans-serif',
         ],
         display: [
+          'var(--font-inter)',
           'Helvetica Neue',
           'Helvetica',
-          'Inter',
           '-apple-system',
           'sans-serif',
         ],

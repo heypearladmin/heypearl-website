@@ -8,8 +8,11 @@ import { site } from '@/lib/site';
 
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
-  display: 'swap',
+  display: 'optional',
+  preload: true,
+  fallback: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 });
 
 export const metadata: Metadata = {
