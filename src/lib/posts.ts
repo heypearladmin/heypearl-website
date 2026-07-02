@@ -26,7 +26,7 @@ export const posts: Post[] = [
     excerpt: "AI visibility is not a switch you flip. It is a sequence you execute. Here is the 90-day roadmap we use to move a business from invisible to recommended \u2014 and the metrics that prove it is working.",
     publishedAt: "2026-06-19",
     readTime: "10 min read",
-    image: "/images/blog-90-day-roadmap.jpg",
+    image: "/images/website-blog-90-day-ai-visibility-roadmap.png",
     content: `## Ninety days, in the right order
 
 Most businesses that try to improve their AI visibility fail for one reason: they do the right things in the wrong order. They chase content before their entity is stable, or pursue reviews before they have a page worth citing. Sequence matters, because each stage depends on the one before it.
@@ -153,7 +153,7 @@ Then the work changes shape. AI visibility is not a project you complete; it is 
     excerpt: "AI engines recommend businesses that signal operational maturity. The P.E.A.R.L. framework is how we build that maturity into a company so the machines can see it.",
     publishedAt: "2026-06-12",
     readTime: "8 min read",
-    image: "/images/blog-pearl-framework.jpg",
+    image: "/images/website-blog-pearl-framework-ai-ready-business.png",
     content: `## Trust is an output, not a tactic
 
 Most advice about AI visibility treats it as a set of tricks — add this schema, write that page, chase these citations. Those tactics matter, but they are downstream of something larger. AI engines are, at their core, trust-allocation machines. They are constantly deciding which businesses are real, capable, and safe to put in front of a person asking for help. The businesses they trust are the ones that are genuinely well-run and that leave a visible trail of that fact.
@@ -254,7 +254,7 @@ The deeper point is that P.E.A.R.L. does not ask you to choose between building 
     excerpt: "Reviews were once a conversion tool at the bottom of the funnel. In the AI era, they are training data \u2014 and they now shape whether the machines recommend you at all.",
     publishedAt: "2026-06-05",
     readTime: "7 min read",
-    image: "/images/blog-reputation-signals.jpg",
+    image: "/images/website-blog-reputation-signals-ai-recommendations.png",
     content: `## Reviews stopped being about conversion
 
 For years, reviews did one job: they reassured a buyer who had already found you. Star ratings sat near the checkout, doing their quiet work at the bottom of the funnel. That job still exists, but it is no longer the important one.
@@ -349,7 +349,7 @@ Every review adds to a base that competitors cannot quickly replicate. Sentiment
     excerpt: "Most businesses treat the About page as an afterthought. AI engines treat it as the primary source of truth about who you are. That mismatch is costing you citations.",
     publishedAt: "2026-05-29",
     readTime: "7 min read",
-    image: "/images/blog-about-page.jpg",
+    image: "/images/website-blog-about-page-ai-citations.png",
     content: `## The page you ignore is the page the machines read first
 
 Ask most operators to name their most important page and they will say the homepage, or a high-converting service page. Ask an AI engine, and the answer is often the About page. When ChatGPT, Perplexity, or Gemini needs to establish who you are — to decide whether you are a real, credible entity worth recommending — the About page is where it goes looking. It is the single densest source of identity signals on most websites, and it is almost always neglected.
@@ -460,7 +460,7 @@ A strong About page does not just help the About page rank. It stabilizes your e
     excerpt: "Most business owners have never checked what AI engines say about them. Here is a repeatable 30-minute audit that tells you exactly where you stand \u2014 and what to fix first.",
     publishedAt: "2026-05-22",
     readTime: "9 min read",
-    image: "/images/blog-ai-audit.jpg",
+    image: "/images/website-blog-audit-ai-search-visibility.png",
     content: `## You are already being described by machines
 
 By mid-2026, a majority of buyer research journeys begin with a generative answer rather than a list of blue links. Google's AI Overviews now appear on the bulk of commercial queries, and standalone assistants — ChatGPT, Perplexity, Gemini, Claude — handle a growing share of the questions your prospects used to type into a search bar. Each of these systems already has an opinion about your business, your category, and your competitors. The problem is that almost no operator has actually read that opinion.
@@ -586,7 +586,7 @@ Re-run the audit every 90 days. AI visibility is not a project you finish; it is
     excerpt: "AI doesn't recommend websites. It recommends entities \u2014 things it recognizes as real. The question is whether your business is one of them.",
     publishedAt: "2026-05-15",
     readTime: "7 min read",
-    image: "/images/blog-entity-seo.jpg",
+    image: "/images/website-blog-entity-seo-ai-knowledge-graph.png",
     content: `There's a reason certain businesses get named by ChatGPT and Perplexity again and again while their competitors — sometimes larger, sometimes better — never come up. It usually isn't about the quality of the work. It's about whether the engine understands the business as an entity.
 
 Entity SEO is the practice of making your business a recognized, named thing in the web's shared understanding — not just a domain, but a distinct real-world entity the machines can identify, verify, and cite. In the AI era, this is the foundation everything else stands on.
@@ -679,7 +679,7 @@ Establish the entity first, and everything else compounds on top of it. That seq
     excerpt: "Schema is how you speak to a machine in its own language. In the AI era, the businesses that speak clearly get quoted.",
     publishedAt: "2026-05-08",
     readTime: "7 min read",
-    image: "/images/blog-schema-markup.jpg",
+    image: "/images/website-blog-structured-data-schema-ai-visibility.png",
     content: `Most business owners think of schema markup — if they think of it at all — as a technical SEO nicety that produces star ratings in Google results. That framing is now badly out of date. Structured data has become one of the most direct levers you have for AI visibility, because it's the cleanest way to tell an AI engine exactly what your business is, in a form the machine can extract without guessing.
 
 When an engine can extract your facts cleanly, it can cite you confidently. When it has to infer them from marketing prose, it often decides not to risk it. Schema is the difference.
@@ -770,7 +770,7 @@ This kind of technical authority is baked into how we build [authority websites]
     excerpt: "The four letters haven't changed. What the machines do with them has changed completely.",
     publishedAt: "2026-05-01",
     readTime: "7 min read",
-    image: "/images/blog-eeat-ai.jpg",
+    image: "/images/website-blog-eeat-ai-era-trust-signals.png",
     content: `E-E-A-T — Experience, Expertise, Authoritativeness, Trust — began as guidance for human quality raters evaluating Google's search results. It was a rubric for judging whether a page deserved to rank. In 2026, that rubric has quietly become something bigger: a framework that AI engines use to decide whether a source is safe to synthesize into an answer and whether a business is credible enough to name.
 
 The letters are the same. What sits behind them has evolved considerably.
@@ -863,7 +863,7 @@ Operationally, feed the engines proof of the real. Use original data and imagery
     excerpt: "When an AI recommends a business, it isn't guessing. It's weighing signals. Understand the signals and you can influence the outcome.",
     publishedAt: "2026-04-24",
     readTime: "7 min read",
-    image: "/images/blog-ai-engines.jpg",
+    image: "/images/website-blog-ai-engines-business-recommendations.png",
     content: `Ask ChatGPT to recommend a bookkeeping firm, and it will name two or three. It will not name yours unless something specific has happened to make it confident that yours belongs on the list. That confidence is not random. It is the output of a set of signals the engine can measure, and those signals are learnable.
 
 This is the part most operators miss. AI recommendations feel like a black box, so people assume there's nothing to be done. There is a great deal to be done. You just have to understand what the machine is actually weighing.
@@ -960,7 +960,7 @@ This is coordinated infrastructure work, not a one-time fix — which is exactly
     excerpt: "Search stopped being a list of blue links. It became an answer. GEO is how you make sure the answer includes you.",
     publishedAt: "2026-04-17",
     readTime: "8 min read",
-    image: "/images/blog-geo-foundations.jpg",
+    image: "/images/website-blog-geo-generative-engine-optimization.png",
     content: `The way people find businesses has quietly changed. A few years ago, a prospect typed a query into Google, scanned ten blue links, and clicked. Today, a growing share of those prospects never see the links at all. They ask ChatGPT, Perplexity, or Google's AI Overviews a question and receive a single synthesized answer — one that names a handful of companies and ignores everyone else.
 
 Generative Engine Optimization, or GEO, is the discipline of making sure your business is one of the companies that gets named. If SEO was about ranking, GEO is about being cited.
