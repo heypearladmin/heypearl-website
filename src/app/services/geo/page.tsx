@@ -12,12 +12,80 @@ import { site } from '@/lib/site';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'GEO Authority System — Generative Engine Optimization',
+  title: 'GEO Authority System — Generative Engine Optimization by Hey Pearl',
   description:
-    'Generative Engine Optimization for the AI search era. The structured authority infrastructure that AI cites, recommends, and trusts.',
-  openGraph: { images: ['/images/og-geo.jpg'] },
+    'Generative Engine Optimization (GEO) for the AI search era. Hey Pearl builds the structured authority infrastructure — schema, entity SEO, editorial content, and reputation signals — that AI cites, recommends, and trusts.',
+  openGraph: {
+    title: 'GEO Authority System — Generative Engine Optimization by Hey Pearl',
+    description: 'The authority infrastructure built to make your business citable and recommended by ChatGPT, Perplexity, Google AI Overviews, and Gemini.',
+    images: ['/images/og-geo.jpg'],
+  },
   twitter: { images: ['/images/og-geo.jpg'] },
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is Generative Engine Optimization (GEO)?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Generative Engine Optimization (GEO) is the practice of building the structured authority signals — schema markup, entity consistency, citable content, and reputation depth — that cause AI engines like ChatGPT, Perplexity, and Google AI Overviews to cite and recommend your business in their responses.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is GEO different from traditional SEO?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Traditional SEO optimizes for clicks on a search results page. GEO optimizes for citation and recommendation inside AI-generated answers. AI engines do not rank links — they synthesize answers. GEO ensures your business is the entity those engines trust and reference when your audience asks relevant questions.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Which AI platforms does Hey Pearl GEO target?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl GEO is built to improve visibility across Google AI Overviews, ChatGPT, Gemini, Perplexity, local AI summaries, and classic Google Search. The underlying authority infrastructure — schema, entity signals, citable content — works across all major AI surfaces.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does GEO take to show results?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Most clients see measurable movement in AI citation and visibility within 60 to 90 days of completing their authority foundation. Category-level authority compounds over 6 to 12 months as content cadence, schema depth, and reputation signals accumulate.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is included in a Hey Pearl GEO engagement?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Every Hey Pearl GEO engagement includes authority architecture, schema and structured data implementation, an editorial content engine, reputation and trust signal management, and the PearlOS operations layer — a complete system, not a collection of tactics.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need GEO if I already invest in traditional SEO?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Traditional SEO and GEO are complementary but distinct. SEO drives ranking on links pages; GEO drives citation inside AI answers. As more of your customers begin their search with AI rather than a search results page, GEO determines whether your business is part of the conversation at all.' },
+    },
+  ],
+};
+
+const geoFaqs = [
+  {
+    q: 'What is Generative Engine Optimization (GEO)?',
+    a: 'GEO is the practice of building structured authority signals — schema markup, entity consistency, citable content, and reputation depth — that cause AI engines like ChatGPT, Perplexity, and Google AI Overviews to cite and recommend your business in their responses.',
+  },
+  {
+    q: 'How is GEO different from traditional SEO?',
+    a: 'Traditional SEO optimizes for clicks on a search results page. GEO optimizes for citation and recommendation inside AI-generated answers. AI engines synthesize answers, not rank links — GEO ensures your business is the entity those engines trust and reference.',
+  },
+  {
+    q: 'Which AI platforms does Hey Pearl GEO target?',
+    a: 'Hey Pearl GEO is built to improve visibility across Google AI Overviews, ChatGPT, Gemini, Perplexity, local AI summaries, and classic Google Search.',
+  },
+  {
+    q: 'How long does GEO take to show results?',
+    a: 'Most clients see measurable movement in AI citation within 60 to 90 days of completing their authority foundation. Category-level authority compounds over 6 to 12 months as content cadence, schema, and reputation signals accumulate.',
+  },
+  {
+    q: 'What is included in a Hey Pearl GEO engagement?',
+    a: 'Every GEO engagement includes authority architecture, schema and structured data implementation, an editorial content engine, reputation signal management, and the PearlOS operations layer — a complete system, not a collection of tactics.',
+  },
+  {
+    q: 'Do I need GEO if I already invest in traditional SEO?',
+    a: 'Yes. Traditional SEO and GEO are complementary but distinct. As more customers begin their search with AI rather than a results page, GEO determines whether your business is part of the conversation at all.',
+  },
+];
 
 const layers = [
   {
@@ -59,6 +127,10 @@ const targets = [
 export default function GEOPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHero
         eyebrow="GEO Authority System"
         title={
@@ -267,6 +339,29 @@ export default function GEOPage() {
             {geoTiers.map((tier, i) => (
               <Reveal key={tier.id} delay={i * 0.05}>
                 <PricingCard tier={tier} />
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-cream">
+        <Container size="lg">
+          <Reveal>
+            <SectionHeading
+              eyebrow="FAQ"
+              title="Common questions about GEO."
+              description="Everything you need to know about Generative Engine Optimization and how Hey Pearl builds it."
+            />
+          </Reveal>
+          <div className="mt-12 flex flex-col gap-5">
+            {geoFaqs.map((item, i) => (
+              <Reveal key={i} delay={i * 0.05}>
+                <div className="rounded-2xl border border-plum/10 bg-white p-6 sm:p-8">
+                  <h3 className="font-display text-lg text-plum">{item.q}</h3>
+                  <p className="mt-3 text-slate leading-relaxed">{item.a}</p>
+                </div>
               </Reveal>
             ))}
           </div>

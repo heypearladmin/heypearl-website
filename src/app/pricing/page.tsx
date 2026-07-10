@@ -13,16 +13,79 @@ import { site } from '@/lib/site';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Pricing — Authority Systems for the AI Era',
+  title: 'Pricing — Authority Infrastructure Plans by Hey Pearl',
   description:
-    'HeyPearl pricing. Authority infrastructure for the AI search era, from foundational visibility to category leading AI authority.',
-  openGraph: { images: ['/images/og-pricing.jpg'] },
+    'Hey Pearl pricing. Two product families — GEO and HeyLocal — with transparent plans for every stage of AI authority building. From foundational visibility to category-leading AI recommendation.',
+  openGraph: {
+    title: 'Pricing — Authority Infrastructure Plans by Hey Pearl',
+    description: 'Transparent pricing for GEO and HeyLocal authority infrastructure. Every plan is a complete system, not a marketing retainer.',
+    images: ['/images/og-pricing.jpg'],
+  },
   twitter: { images: ['/images/og-pricing.jpg'] },
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the difference between Hey Pearl GEO and HeyLocal?',
+      acceptedAnswer: { '@type': 'Answer', text: 'GEO is built for brands and businesses seeking category-level authority across AI engines at a national or industry level. HeyLocal is built for place-based businesses — local operators, restaurants, service providers — who need to dominate their local area across maps, search, and AI local summaries.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is there a contract or long-term commitment?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure compounds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is included at every pricing tier?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Every Hey Pearl tier includes an authority strategy, structured data and schema implementation, editorial content cadence, reputation signal monitoring, PearlOS operational workflows, and visibility reporting. Higher tiers add depth, automation, and category-level architecture.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I know which plan is right for my business?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The best way to identify the right entry point is a strategy call with Misti Bruton. She will audit your current AI visibility, identify the biggest gaps, and recommend the tier that matches your competitive category and growth goals.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Hey Pearl work with local businesses?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. HeyLocal is specifically designed for place-based businesses that need to be the trusted name across Google Maps, local search, and AI local summaries. It includes local entity architecture, Google Business Profile management, and local reputation signal systems.' },
+    },
+  ],
+};
+
+const pricingFaqs = [
+  {
+    q: 'What is the difference between Hey Pearl GEO and HeyLocal?',
+    a: 'GEO is built for brands and businesses seeking category-level authority at a national or industry level. HeyLocal is built for place-based businesses — local operators, service providers — who need to dominate their local area across maps, search, and AI local summaries.',
+  },
+  {
+    q: 'Is there a contract or long-term commitment?',
+    a: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure compounds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.',
+  },
+  {
+    q: 'What is included at every pricing tier?',
+    a: 'Every tier includes an authority strategy, structured data and schema implementation, editorial content cadence, reputation signal monitoring, PearlOS operational workflows, and visibility reporting. Higher tiers add depth, automation, and category-level architecture.',
+  },
+  {
+    q: 'How do I know which plan is right for my business?',
+    a: 'The best way to identify the right entry point is a strategy call with Misti Bruton. She will audit your current AI visibility, identify the biggest gaps, and recommend the tier that matches your competitive category and growth goals.',
+  },
+  {
+    q: 'Does Hey Pearl work with local businesses?',
+    a: 'Yes. HeyLocal is specifically designed for place-based businesses that need to be the trusted name across Google Maps, local search, and AI local summaries — including local entity architecture, Google Business Profile management, and local reputation signal systems.',
+  },
+];
 
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHero
         eyebrow="Pricing"
         title={
@@ -149,6 +212,28 @@ export default function PricingPage() {
               maps the right entry point.
             </p>
           </Reveal>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-cream">
+        <Container size="lg">
+          <Reveal>
+            <SectionHeading
+              eyebrow="FAQ"
+              title="Questions about Hey Pearl pricing."
+            />
+          </Reveal>
+          <div className="mt-12 flex flex-col gap-5">
+            {pricingFaqs.map((item, i) => (
+              <Reveal key={i} delay={i * 0.05}>
+                <div className="rounded-2xl border border-plum/10 bg-white p-6 sm:p-8">
+                  <h3 className="font-display text-lg text-plum">{item.q}</h3>
+                  <p className="mt-3 text-slate leading-relaxed">{item.a}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </Container>
       </section>
 

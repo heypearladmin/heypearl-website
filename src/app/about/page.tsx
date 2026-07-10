@@ -11,11 +11,47 @@ import { PearlFramework } from '@/components/sections/PearlFramework';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'About — Software with a soul',
+  title: 'About Hey Pearl — Authority Infrastructure Company for the AI Search Era',
   description:
-    'HeyPearl is the operational authority infrastructure company for the AI search era. The P.E.A.R.L. framework: Process, Efficiency, Automation, Revenue, Leverage.',
-  openGraph: { images: ['/images/og-about.jpg'] },
+    'Hey Pearl Agency LLC is the authority infrastructure company for the AI search era. Founded by Misti Bruton, Hey Pearl builds the systems that get businesses cited, recommended, and trusted by AI engines.',
+  openGraph: {
+    title: 'About Hey Pearl — Authority Infrastructure Company for the AI Search Era',
+    description: 'Hey Pearl Agency LLC. Founded by Misti Bruton. We build the authority infrastructure — schema, entity SEO, editorial content, reputation signals — that makes your business the answer AI gives.',
+    images: ['/images/og-about.jpg'],
+  },
   twitter: { images: ['/images/og-about.jpg'] },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Who founded Hey Pearl?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl was founded by Misti Bruton, an operator with deep experience scaling brokerages, building brand engines, and leading businesses through major market shifts. Misti is also the founder of PearlOS, the operational layer beneath Hey Pearl.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does Hey Pearl Agency LLC actually do?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl builds authority infrastructure for the AI search era. That includes structured data and schema implementation, entity SEO, citation-worthy editorial content, reputation signal systems, and the PearlOS operational layer — all engineered to make your business the one AI engines cite and recommend.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the P.E.A.R.L. framework?',
+      acceptedAnswer: { '@type': 'Answer', text: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Revenue, and Leverage. It is the operating framework that underpins every Hey Pearl engagement — connecting AI visibility work to the business operations that convert discovery into closed business.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is Hey Pearl based?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl Agency LLC is based in Austin, Texas. The company works with businesses across the United States.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is PearlOS?',
+      acceptedAnswer: { '@type': 'Answer', text: 'PearlOS is the operational layer beneath Hey Pearl. It includes CRM workflows, lead nurture sequences, AI inbox systems, booking and scheduling automation, and operational dashboards that convert AI-driven visibility into closed business.' },
+    },
+  ],
 };
 
 const values = [
@@ -37,9 +73,36 @@ const values = [
   },
 ];
 
+const aboutFaqs = [
+  {
+    q: 'Who founded Hey Pearl?',
+    a: 'Hey Pearl was founded by Misti Bruton, an operator with deep experience scaling brokerages, building brand engines, and leading businesses through major market shifts. Misti is also the founder of PearlOS, the operational layer beneath Hey Pearl.',
+  },
+  {
+    q: 'What does Hey Pearl Agency LLC actually do?',
+    a: 'Hey Pearl builds authority infrastructure for the AI search era — structured data, entity SEO, citation-worthy content, reputation signal systems, and the PearlOS operational layer — all engineered to make your business the one AI engines cite and recommend.',
+  },
+  {
+    q: 'What is the P.E.A.R.L. framework?',
+    a: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Revenue, and Leverage. It is the operating framework that underpins every Hey Pearl engagement, connecting AI visibility to the business operations that convert discovery into closed business.',
+  },
+  {
+    q: 'Where is Hey Pearl based?',
+    a: 'Hey Pearl Agency LLC is based in Austin, Texas and works with businesses across the United States.',
+  },
+  {
+    q: 'What is PearlOS?',
+    a: 'PearlOS is the operational layer beneath Hey Pearl. It includes CRM workflows, lead nurture sequences, AI inbox systems, booking and scheduling automation, and operational dashboards that convert AI-driven visibility into closed business.',
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHero
         eyebrow="About HeyPearl"
         title={
@@ -233,6 +296,28 @@ export default function AboutPage() {
               </div>
             </div>
           </Reveal>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-cream">
+        <Container size="lg">
+          <Reveal>
+            <SectionHeading
+              eyebrow="FAQ"
+              title="Questions about Hey Pearl."
+            />
+          </Reveal>
+          <div className="mt-12 flex flex-col gap-5">
+            {aboutFaqs.map((item, i) => (
+              <Reveal key={i} delay={i * 0.05}>
+                <div className="rounded-2xl border border-plum/10 bg-white p-6 sm:p-8">
+                  <h3 className="font-display text-lg text-plum">{item.q}</h3>
+                  <p className="mt-3 text-slate leading-relaxed">{item.a}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </Container>
       </section>
 
