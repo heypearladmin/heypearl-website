@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { slugify } from '@/lib/slugify';
 
 export type TocItem = {
   id: string;
@@ -112,10 +113,4 @@ export function extractToc(markdown: string): TocItem[] {
   return items;
 }
 
-export function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
+export { slugify } from '@/lib/slugify';

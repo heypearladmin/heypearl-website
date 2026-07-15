@@ -7,7 +7,7 @@ import { Eyebrow } from '@/components/ui/Eyebrow';
 import { LinkButton } from '@/components/ui/Button';
 import { site } from '@/lib/site';
 import { posts, formatDate } from '@/lib/posts';
-import { slugify } from '@/components/blog/TableOfContents';
+import { slugify } from '@/lib/slugify';
 import { getFaqEnrichment } from '@/lib/faq-content';
 import { ArrowLeft, ArrowRight, CheckCircle2, Calendar, Clock, ExternalLink } from 'lucide-react';
 

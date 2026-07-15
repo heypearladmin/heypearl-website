@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { slugify } from './TableOfContents';
+import { slugify } from '@/lib/slugify';
 
 type FAQCardProps = {
   q: string;

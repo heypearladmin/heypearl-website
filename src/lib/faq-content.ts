@@ -1,4 +1,4 @@
-import { slugify } from '@/components/blog/TableOfContents';
+import { slugify } from '@/lib/slugify';
 
 export type ComparisonRow = { [key: string]: string };
 
