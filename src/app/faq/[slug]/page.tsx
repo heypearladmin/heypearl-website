@@ -413,28 +413,6 @@ export default async function FaqPage({ params }: Props) {
             </section>
           )}
 
-          {/* ── Sources ── */}
-          {enrichment?.sources && enrichment.sources.length > 0 && (
-            <section aria-label="Sources" className="mb-12">
-              <h2 className="font-display text-lg text-plum mb-4">Sources</h2>
-              <ul className="flex flex-col gap-2">
-                {enrichment.sources.map((src) => (
-                  <li key={src.url} className="flex items-center gap-2">
-                    <span className="h-1 w-1 rounded-full bg-magenta flex-shrink-0" />
-                    <a
-                      href={src.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-slate hover:text-plum transition inline-flex items-center gap-1.5"
-                    >
-                      {src.label}
-                      <ExternalLink size={11} className="text-slate/40" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
 
           {/* ── Related Articles ── */}
           {relatedArticles.length > 0 && (
