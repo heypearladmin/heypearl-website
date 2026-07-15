@@ -291,7 +291,7 @@ export default async function FaqPage({ params }: Props) {
         <Container size="md" className="py-12 sm:py-16">
 
           {/* ── Quick Answer ── */}
-          <aside aria-label="Quick answer" className="rounded-2xl border-l-4 border-magenta bg-white shadow-soft px-6 py-5 mb-10">
+          <aside aria-label="Quick answer" className="rounded-2xl border-l-4 border-magenta bg-white shadow-soft px-6 py-5 mb-6">
             <p className="text-[0.65rem] tracking-micro uppercase text-magenta font-medium mb-2">
               Quick Answer
             </p>
@@ -299,6 +299,20 @@ export default async function FaqPage({ params }: Props) {
               {faq.a}
             </p>
           </aside>
+
+          {/* ── Full article banner (top) ── */}
+          <Link
+            href={`/insights/${faq.postSlug}`}
+            className="group flex items-center justify-between gap-4 rounded-2xl bg-plum text-cream px-6 py-4 mb-10 hover:bg-plum/90 transition-colors"
+          >
+            <div>
+              <p className="text-[0.6rem] tracking-micro uppercase text-cream/50 mb-1">Full article</p>
+              <p className="text-sm font-medium leading-snug group-hover:text-cream/90 transition-colors line-clamp-1">
+                {faq.postTitle}
+              </p>
+            </div>
+            <ArrowRight size={18} className="flex-shrink-0 text-cream/60 group-hover:text-cream group-hover:translate-x-0.5 transition-all" />
+          </Link>
 
           {/* ── Key Takeaways ── */}
           {enrichment?.takeaways && enrichment.takeaways.length > 0 && (
@@ -360,13 +374,19 @@ export default async function FaqPage({ params }: Props) {
             </section>
           )}
 
-          {/* ── Back to article link ── */}
+          {/* ── Full article card (bottom) ── */}
           <Link
             href={`/insights/${faq.postSlug}`}
-            className="inline-flex items-center gap-2 text-sm font-medium text-magenta hover:text-magenta/80 transition mb-12"
+            className="group flex items-center justify-between gap-4 rounded-2xl border border-plum/10 bg-white px-6 py-5 mb-12 hover:border-magenta/30 hover:shadow-soft transition-all duration-300"
           >
-            <ArrowLeft size={14} />
-            Read the full article
+            <div>
+              <p className="text-[0.6rem] tracking-micro uppercase text-slate/40 mb-1">Read the full article</p>
+              <p className="text-sm font-semibold text-plum group-hover:text-magenta transition-colors leading-snug">
+                {faq.postTitle}
+              </p>
+              <p className="text-xs text-slate/50 mt-1">{faq.postEyebrow}</p>
+            </div>
+            <ArrowRight size={16} className="flex-shrink-0 text-slate/30 group-hover:text-magenta group-hover:translate-x-0.5 transition-all" />
           </Link>
 
           {/* ── Related Questions ── */}
