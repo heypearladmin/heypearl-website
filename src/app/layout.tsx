@@ -65,10 +65,7 @@ export const metadata: Metadata = {
       '/images/social-square-pearl.jpg',
     ],
   },
-  icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
-  },
+
   robots: {
     index: true,
     follow: true,
