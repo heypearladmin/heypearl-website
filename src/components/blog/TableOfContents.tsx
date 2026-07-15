@@ -4,12 +4,8 @@ import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { slugify } from '@/lib/slugify';
-
-export type TocItem = {
-  id: string;
-  text: string;
-  level: 2 | 3;
-};
+import type { TocItem } from '@/lib/toc';
+export type { TocItem } from '@/lib/toc';
 
 type TableOfContentsProps = {
   items: TocItem[];
@@ -94,23 +90,5 @@ export function TableOfContents({ items }: TableOfContentsProps) {
   );
 }
 
-export function extractToc(markdown: string): TocItem[] {
-  const lines = markdown.split('\n');
-  const items: TocItem[] = [];
-
-  for (const line of lines) {
-    if (line.startsWith('### ')) {
-      const text = line.slice(4).replace(/\*\*/g, '').trim();
-      const id = slugify(text);
-      items.push({ id, text, level: 3 });
-    } else if (line.startsWith('## ')) {
-      const text = line.slice(3).replace(/\*\*/g, '').trim();
-      const id = slugify(text);
-      items.push({ id, text, level: 2 });
-    }
-  }
-
-  return items;
-}
-
+export { extractToc } from '@/lib/toc';
 export { slugify } from '@/lib/slugify';
