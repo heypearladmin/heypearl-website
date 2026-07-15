@@ -145,13 +145,14 @@ function renderBody(md: string): React.ReactNode[] {
 
 function inlineFmt(text: string): React.ReactNode {
   const parts: React.ReactNode[] = [];
-  const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
+  const regex = /\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   let last = 0;
   let match;
   while ((match = regex.exec(text)) !== null) {
     if (match.index > last) parts.push(text.slice(last, match.index));
     if (match[1]) parts.push(<strong key={match.index} className="font-semibold text-plum">{match[1]}</strong>);
     else if (match[2]) parts.push(<em key={match.index}>{match[2]}</em>);
+    else if (match[3]) parts.push(<a key={match.index} href={match[4]} target="_blank" rel="noopener noreferrer" className="text-magenta underline underline-offset-2 hover:text-magenta/80 transition">{match[3]}</a>);
     last = match.index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));
