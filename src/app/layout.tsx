@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { Navigation } from '@/components/layout/Navigation';
@@ -15,10 +15,20 @@ const inter = Inter({
   fallback: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 });
 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+  display: 'swap',
+  preload: true,
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Authority Infrastructure for the AI Search Era`,
+    default: `${site.name} — AI Authority Platform`,
     template: `%s — ${site.name}`,
   },
   description: site.description,
@@ -208,7 +218,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{

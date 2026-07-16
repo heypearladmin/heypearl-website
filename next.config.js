@@ -10,6 +10,18 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
+  async redirects() {
+    return [
+      // /services → /solutions (301 — preserves SEO equity)
+      { source: '/services',                    destination: '/solutions',                     permanent: true },
+      { source: '/services/geo',                destination: '/solutions/geo',                 permanent: true },
+      { source: '/services/heylocal',           destination: '/solutions/service-businesses',  permanent: true },
+      { source: '/services/authority-websites', destination: '/solutions/authority-websites',  permanent: true },
+      // /insights → /resources/ai-authority (301 — preserves SEO equity)
+      { source: '/insights',                    destination: '/resources/ai-authority',        permanent: true },
+      { source: '/insights/:slug',              destination: '/resources/ai-authority/:slug',  permanent: true },
+    ];
+  },
 };
 
 module.exports = nextConfig;

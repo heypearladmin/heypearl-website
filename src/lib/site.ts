@@ -2,9 +2,11 @@ export const site = {
   name: 'Hey Pearl',
   domain: 'heypearl.io',
   legalName: 'Hey Pearl Agency LLC',
-  tagline: 'Software with a soul.',
+  tagline: 'The AI Authority Platform.',
   description:
-    'Authority infrastructure for the AI search era. Hey Pearl operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
+    'HeyPearl builds the systems that help businesses become the authority AI recommends. The AI Authority Platform — powered by PearlOS and the P.E.A.R.L. framework.',
+  shortDescription:
+    'We build the systems that help businesses become the authority AI recommends.',
   url: 'https://heypearl.io',
   ogImage: '/images/og-default.jpg',
   // Misti's Calendly for founder-led strategy calls
