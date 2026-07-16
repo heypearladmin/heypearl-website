@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -50,17 +51,17 @@ export default function KnowledgeGraphPage() {
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-              Module 03 — Entity Architecture
+              Module 03 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             Knowledge Graph
           </h1>
           <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#BF9B5C' }}>
-            Exist. Be verified. Be recommended.
+            Before AI can recommend you, it has to know you exist.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75 }}>
-            AI engines recommend businesses they can verify. Knowledge Graph builds the entity architecture — structured signals across every platform AI uses to confirm who you are — so your business exists as a clear, trusted node in the AI knowledge layer.
+            AI engines don't look up your website when a buyer asks who to hire. They consult their knowledge layer — structured records of verified businesses, categorized by expertise and geography. Knowledge Graph builds your record in that layer.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
@@ -156,6 +157,13 @@ export default function KnowledgeGraphPage() {
       </section>
 
       {/* CTA */}
+      {/* Ecosystem nav */}
+      <EcosystemNav
+        current="/platform/knowledge-graph"
+        nextHref="/platform/authority-pages"
+        nextLabel="Authority Pages — Create the citable infrastructure"
+      />
+
       <section className="py-24 bg-[#090909]">
         <Container size="md" className="text-center">
           <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.1, letterSpacing: '-0.022em' }}>

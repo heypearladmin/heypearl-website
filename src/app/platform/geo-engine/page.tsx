@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -70,7 +71,7 @@ export default function GEOEnginePage() {
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-              Module 05 — Generative Engine Optimization
+              Module 05 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
@@ -80,7 +81,7 @@ export default function GEOEnginePage() {
             The answer AI generates. The name it uses.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75 }}>
-            Generative Engine Optimization is the practice of engineering your content, entity signals, and authority depth so AI engines generate responses that include your business. GEO Engine is the purpose-built system for doing it at scale — not as a content experiment, but as infrastructure.
+            When buyers ask AI who to call, who to trust, who to hire — they read a generated answer. GEO Engine engineers your content and authority signals so your business is the name in that answer — and stays there as authority compounds.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
@@ -175,6 +176,13 @@ export default function GEOEnginePage() {
           </div>
         </Container>
       </section>
+
+      {/* Ecosystem nav */}
+      <EcosystemNav
+        current="/platform/geo-engine"
+        nextHref={site.strategyCallUrl}
+        nextLabel="Book a Strategy Call"
+      />
 
       {/* CTA */}
       <section className="py-24 bg-[#090909]">

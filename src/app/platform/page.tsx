@@ -197,8 +197,78 @@ export default function PlatformPage() {
         </Container>
       </section>
 
+      {/* Journey guide */}
+      <section className="py-20 bg-[#090909]" aria-label="Platform journey">
+        <Container size="lg">
+          <div className="mb-10 flex items-center gap-3">
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+              Where to Start
+            </span>
+          </div>
+          <h2
+            className="mb-10 max-w-xl"
+            style={{
+              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontSize: 'clamp(1.7rem, 3.5vw, 2.4rem)',
+              fontWeight: 700,
+              color: '#F2EDE4',
+              lineHeight: 1.1,
+              letterSpacing: '-0.022em',
+            }}
+          >
+            The recommended path through the platform.
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { step: '00', label: 'PearlOS', href: '/platform/pearlos', desc: 'Understand the operating system that runs everything. Start here.', highlight: true },
+              { step: '01', label: 'Authority Score', href: '/platform/authority-score', desc: 'See exactly where your AI visibility stands and what gaps to close first.' },
+              { step: '02', label: 'Knowledge Graph', href: '/platform/knowledge-graph', desc: 'Build the entity foundation every other module depends on.' },
+              { step: '03', label: 'Authority Pages', href: '/platform/authority-pages', desc: 'Create the citable page infrastructure AI engines pull from.' },
+              { step: '04', label: 'AI Visibility', href: '/platform/ai-visibility', desc: 'Monitor how six AI engines represent your business in real time.' },
+              { step: '05', label: 'GEO Engine', href: '/platform/geo-engine', desc: 'Amplify what works. Close what doesn\'t. Compound month after month.' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex gap-4 p-5 rounded-xl transition-colors duration-200 hover:bg-white/[0.025]"
+                style={{
+                  background: item.highlight ? 'rgba(191,155,92,0.06)' : 'rgba(255,255,255,0.02)',
+                  border: item.highlight ? '1px solid rgba(191,155,92,0.2)' : '1px solid rgba(255,255,255,0.05)',
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontSize: '0.9rem',
+                    fontWeight: 700,
+                    color: item.highlight ? '#BF9B5C' : 'rgba(191,155,92,0.4)',
+                    flexShrink: 0,
+                    lineHeight: 1,
+                    marginTop: '0.1rem',
+                  }}
+                >
+                  {item.step}
+                </div>
+                <div>
+                  <div
+                    className="group-hover:text-[#BF9B5C] transition-colors duration-200 mb-1"
+                    style={{ fontSize: '0.88rem', fontWeight: 700, color: item.highlight ? '#F2EDE4' : 'rgba(242,237,228,0.75)', letterSpacing: '-0.01em' }}
+                  >
+                    {item.label}
+                  </div>
+                  <p style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.6 }}>
+                    {item.desc}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Module grid */}
-      <section className="py-28 bg-[#090909]" aria-label="Platform modules">
+      <section className="py-28 bg-[#0A0A0A]" aria-label="Platform modules">
         <Container size="lg">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">

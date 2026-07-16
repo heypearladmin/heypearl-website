@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function AIVisibilityPage() {
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-              Module 04 — Real-Time Monitoring
+              Module 04 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
@@ -188,6 +189,13 @@ export default function AIVisibilityPage() {
           </div>
         </Container>
       </section>
+
+      {/* Ecosystem nav */}
+      <EcosystemNav
+        current="/platform/ai-visibility"
+        nextHref="/platform/geo-engine"
+        nextLabel="GEO Engine — Amplify and compound your authority"
+      />
 
       {/* CTA */}
       <section className="py-24 bg-[#090909]">

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -61,7 +62,7 @@ export default function AuthorityScorePage() {
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-              Module 02 — Measurement & Gap Analysis
+              Module 02 — Powered by PearlOS
             </span>
           </div>
           <h1
@@ -86,10 +87,10 @@ export default function AuthorityScorePage() {
               color: '#BF9B5C',
             }}
           >
-            Exactly where you stand. Exactly what to fix.
+            You can't improve what you can't see.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75 }}>
-            A proprietary scoring system that quantifies your AI visibility across 6 engines — not impressions or clicks, but the exact gaps between where your authority is now and where it needs to be to earn AI recommendations.
+            Most businesses don't know their AI visibility is eroding until leads stop coming in. Authority Score gives you the exact picture — which engines are recommending you, which aren't, and what gaps to close first to start earning AI recommendations.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
@@ -190,6 +191,13 @@ export default function AuthorityScorePage() {
           </div>
         </Container>
       </section>
+
+      {/* Ecosystem nav */}
+      <EcosystemNav
+        current="/platform/authority-score"
+        nextHref="/platform/knowledge-graph"
+        nextLabel="Knowledge Graph — Build your entity foundation"
+      />
 
       {/* CTA */}
       <section className="py-24 bg-[#090909]">

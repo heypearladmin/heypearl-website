@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -80,7 +81,7 @@ export default function AuthorityPagesPage() {
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-              Module 01 — AI-Ready Architecture
+              Module 01 — Powered by PearlOS
             </span>
           </div>
           <h1
@@ -105,10 +106,10 @@ export default function AuthorityPagesPage() {
               color: '#BF9B5C',
             }}
           >
-            Page infrastructure AI engines cite with confidence.
+            The pages that make AI say your name.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75 }}>
-            Not content marketing. Not SEO blog posts. A deliberate page architecture — entity-first, schema-rich, and structured the way AI engines pull citations — so your business is the answer when buyers ask.
+            When a buyer asks AI which agent to call, which brokerage to trust, which service to hire — AI pulls its answer from somewhere. Authority Pages are the infrastructure that makes your business the source it pulls from.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
@@ -311,6 +312,13 @@ export default function AuthorityPagesPage() {
           </p>
         </Container>
       </section>
+
+      {/* Ecosystem nav */}
+      <EcosystemNav
+        current="/platform/authority-pages"
+        nextHref="/platform/ai-visibility"
+        nextLabel="AI Visibility — Monitor how engines represent you"
+      />
 
       {/* CTA */}
       <section className="py-24 bg-[#0C0C0C]">
