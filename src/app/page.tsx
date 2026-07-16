@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
-import { Hero } from '@/components/sections/Hero';
-import { MarketShift } from '@/components/sections/MarketShift';
+import { HeroDeclaration } from '@/components/sections/HeroDeclaration';
+import { TheGap } from '@/components/sections/TheGap';
+import { CategoryIntro } from '@/components/sections/CategoryIntro';
+import { PlatformModules } from '@/components/sections/PlatformModules';
+import { PearlOSFeature } from '@/components/sections/PearlOSFeature';
 import { PearlFramework } from '@/components/sections/PearlFramework';
-import { Services } from '@/components/sections/Services';
-import { HowItWorks } from '@/components/sections/HowItWorks';
-import { WhyHeyPearl } from '@/components/sections/WhyHeyPearl';
-import { Showcase } from '@/components/sections/Showcase';
+import { ResultsPreview } from '@/components/sections/ResultsPreview';
 import { Founder } from '@/components/sections/Founder';
 import { PricingPreview } from '@/components/sections/PricingPreview';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Hey Pearl — Authority Infrastructure for the AI Search Era',
+  title: 'HeyPearl — The AI Authority Platform',
   description:
-    'Hey Pearl builds the authority infrastructure that gets your business cited, recommended, and trusted by AI engines like ChatGPT, Perplexity, and Google AI Overviews. GEO, AEO, and SEO built for the AI era.',
+    'HeyPearl builds the systems that help businesses become the authority AI recommends. The AI Authority Platform — powered by PearlOS and the P.E.A.R.L. framework.',
   openGraph: {
-    title: 'Hey Pearl — Authority Infrastructure for the AI Search Era',
+    title: 'HeyPearl — The AI Authority Platform',
     description:
-      'The structured authority system that makes your business the answer AI gives. Schema, entity SEO, reputation signals, and editorial content — engineered to compound.',
+      'We build the infrastructure that makes AI trust, cite, and recommend your business. Not content. Not ads. AI Authority Infrastructure — engineered to compound.',
     images: ['/images/og-home.jpg'],
   },
   twitter: { images: ['/images/og-home.jpg'] },
@@ -29,28 +29,51 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What is Generative Engine Optimization (GEO)?',
-      acceptedAnswer: { '@type': 'Answer', text: 'GEO is the practice of structuring your business authority — through schema markup, entity SEO, reputation signals, and citable content — so that AI engines like ChatGPT, Perplexity, and Google AI Overviews cite and recommend your business in their responses.' },
+      name: 'What is AI Authority Infrastructure?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI Authority Infrastructure is the category HeyPearl created to describe the systematic engineering of why AI engines trust, cite, and recommend a business. It encompasses entity architecture, authority pages, knowledge graph signals, reputation infrastructure, and GEO — built as an integrated system, not a collection of tactics.',
+      },
     },
     {
       '@type': 'Question',
-      name: 'How is Hey Pearl different from a traditional SEO or marketing agency?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl builds authority infrastructure — the structured signals, schema, entity architecture, and editorial content that AI engines use to decide who to recommend. Traditional agencies optimize for clicks; Hey Pearl optimizes for AI citation and recommendation.' },
+      name: 'What is Generative Engine Optimization (GEO)?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'GEO is the practice of structuring your business authority — through schema markup, entity SEO, reputation signals, and citable content — so that AI engines like ChatGPT, Perplexity, and Google AI Overviews cite and recommend your business in their responses.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is PearlOS?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'PearlOS is HeyPearl\'s operating layer — the unified system that orchestrates entity signals, monitors AI recommendation patterns, and executes the full P.E.A.R.L. framework for every client engagement. It is the engine beneath every HeyPearl service.',
+      },
     },
     {
       '@type': 'Question',
       name: 'What is the P.E.A.R.L. framework?',
-      acceptedAnswer: { '@type': 'Answer', text: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Revenue, and Leverage. It is the operating framework Hey Pearl uses to build authority infrastructure that compounds — connecting AI visibility to real business operations so that discovery converts to closed business.' },
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'P.E.A.R.L. stands for Process, Entity, Authority, Reputation, and Leverage. It is the operating framework HeyPearl uses to build AI authority infrastructure that compounds — connecting entity architecture to reputation signals to AI visibility in a systematic 90-day sequence.',
+      },
     },
     {
       '@type': 'Question',
-      name: 'How long does it take to see results from GEO?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Most clients see measurable movement in AI visibility within 60 to 90 days of implementing a structured authority foundation. Full category authority compounds over 6 to 12 months as content, schema, and reputation signals accumulate.' },
+      name: 'How long does it take to see results from AI Authority Infrastructure?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Most clients see measurable movement in AI visibility within 60 to 90 days of implementing a structured authority foundation. Full category authority compounds over 6 to 12 months as entity signals, content, and reputation systems accumulate.',
+      },
     },
     {
       '@type': 'Question',
-      name: 'What types of businesses does Hey Pearl work with?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl works with service businesses, local operators, agencies, real estate companies, and professionals who want to be the business AI recommends in their category. Both national brands and local businesses benefit from authority infrastructure.' },
+      name: 'What types of businesses does HeyPearl work with?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'HeyPearl works with service businesses, local operators, real estate agents, brokerages, and enterprise teams who want to be the business AI recommends in their category. The platform scales from solo operators to brokerage networks.',
+      },
     },
   ],
 };
@@ -62,13 +85,13 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Hero />
-      <MarketShift />
+      <HeroDeclaration />
+      <TheGap />
+      <CategoryIntro />
+      <PlatformModules />
+      <PearlOSFeature />
       <PearlFramework />
-      <Services />
-      <HowItWorks />
-      <WhyHeyPearl />
-      <Showcase />
+      <ResultsPreview />
       <Founder />
       <PricingPreview />
       <FinalCTA />

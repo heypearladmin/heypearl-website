@@ -202,7 +202,7 @@ export default function AboutPage() {
       </section>
 
       {/* P.E.A.R.L. Framework — inverted on plum to feel foundational */}
-      <PearlFramework variant="full" invert />
+      <PearlFramework />
 
       {/* Operating principles */}
       <section className="py-24 bg-lavender">

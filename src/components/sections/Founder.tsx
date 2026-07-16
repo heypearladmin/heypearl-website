@@ -1,148 +1,152 @@
-'use client';
-
 import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { Eyebrow } from '@/components/ui/Eyebrow';
-import { LinkButton } from '@/components/ui/Button';
-import { Reveal } from '@/components/ui/Reveal';
 import { site } from '@/lib/site';
+
+const CREDENTIALS = [
+  { label: 'Background', value: 'Brokerage & brand operator' },
+  { label: 'Approach', value: 'Systems-first, zero hype' },
+  { label: 'Philosophy', value: 'Built to compound for years' },
+];
 
 export function Founder() {
   return (
-    <section className="relative py-28 sm:py-36 bg-cream overflow-hidden">
+    <section className="py-28 bg-[#0C0C0C] relative overflow-hidden">
+      {/* Subtle gold radial */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-60"
-        style={{
-          background:
-            'radial-gradient(40% 50% at 80% 30%, rgba(254,208,209,0.45) 0%, transparent 60%)',
-        }}
+        className="pointer-events-none absolute right-0 top-0 w-[500px] h-[500px]"
+        style={{ background: 'radial-gradient(ellipse at top right, rgba(191,155,92,0.06) 0%, transparent 60%)' }}
       />
 
       <Container size="xl" className="relative">
-        {/* Editorial workspace band */}
-        <Reveal>
-          <div className="mb-16 relative aspect-[16/9] w-full rounded-[2rem] overflow-hidden border border-plum/5 shadow-soft">
-            <Image
-              src="/images/misti-editorial.jpg"
-              alt="Misti Bruton in her studio"
-              fill
-              sizes="(min-width: 1024px) 80vw, 100vw"
-              className="object-cover object-center"
-            />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+          {/* Left — portrait */}
+          <div className="relative">
+            {/* Gold frame effect */}
             <div
-              aria-hidden
-              className="absolute inset-0 bg-gradient-to-t from-plum/40 via-plum/10 to-transparent"
-            />
-            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-              <div className="text-[0.65rem] tracking-micro uppercase text-cream">
-                In studio · Austin, Texas
+              className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-sm mx-auto lg:mx-0"
+              style={{ border: '1px solid rgba(191,155,92,0.15)' }}
+            >
+              <Image
+                src={site.founder.photo}
+                alt={`${site.founder.name}, ${site.founder.role}`}
+                fill
+                className="object-cover object-top"
+                sizes="(min-width: 1024px) 40vw, 80vw"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-0"
+                style={{ background: 'linear-gradient(to top, rgba(9,9,9,0.6) 0%, transparent 50%)' }}
+              />
+              <div className="absolute bottom-5 left-5 right-5">
+                <div style={{ fontSize: '0.67rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(242,237,228,0.5)', marginBottom: '2px' }}>
+                  Founder & CEO
+                </div>
+                <div
+                  style={{
+                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontSize: '1.15rem',
+                    fontWeight: 700,
+                    color: '#F2EDE4',
+                  }}
+                >
+                  {site.founder.name}
+                </div>
               </div>
-              <div className="text-[0.65rem] tracking-micro uppercase text-cream/85">
-                HeyPearl.io
+            </div>
+
+            {/* Floating credential card */}
+            <div
+              className="hidden lg:block absolute -right-8 bottom-16 rounded-xl p-4 w-44"
+              style={{ background: 'rgba(17,17,17,0.95)', border: '1px solid rgba(191,155,92,0.2)', backdropFilter: 'blur(12px)' }}
+            >
+              <div style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#BF9B5C', marginBottom: '6px' }}>
+                Category Creator
+              </div>
+              <div style={{ fontSize: '0.75rem', color: 'rgba(242,237,228,0.7)', lineHeight: 1.5 }}>
+                AI Authority Infrastructure — coined and built by HeyPearl
               </div>
             </div>
           </div>
-        </Reveal>
 
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
-          {/* Portrait */}
-          <Reveal className="lg:col-span-5">
-            <div className="relative">
-              <div className="absolute -inset-4 rounded-[2rem] bg-magenta-gradient opacity-20 blur-2xl" />
-              <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-[2rem] overflow-hidden bg-blush/40 border border-plum/5 shadow-lift">
-                {/*
-                  Replace with the headshot at /public/images/misti-headshot.jpg.
-                  Image component handles next/image optimization on Vercel.
-                */}
-                <Image
-                  src={site.founder.photo}
-                  alt={`${site.founder.name}, ${site.founder.role} of HeyPearl`}
-                  fill
-                  className="object-cover object-top"
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  priority={false}
-                />
-                {/* Soft overlay for editorial mood, very light */}
-                <div
-                  aria-hidden
-                  className="absolute inset-0 bg-gradient-to-t from-plum/15 via-transparent to-transparent"
-                />
-                <div className="absolute left-5 bottom-5 right-5 flex items-end justify-between">
-                  <div>
-                    <div className="text-[0.65rem] tracking-micro uppercase text-cream">
-                      Founder
-                    </div>
-                    <div className="font-display text-xl text-cream">
-                      {site.founder.name}
-                    </div>
-                  </div>
-                  <div className="text-[0.65rem] tracking-micro uppercase text-cream/80">
-                    HeyPearl.io
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-
-          {/* Editorial column */}
-          <Reveal delay={0.1} className="lg:col-span-7">
-            <Eyebrow>Founder Note</Eyebrow>
-            <h2 className="mt-4 font-display text-display-md text-plum">
-              Built by an operator who has{' '}
-              <span className="italic font-light text-magenta">
-                run the playbook.
+          {/* Right — editorial text */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+                The Founder
               </span>
+            </div>
+
+            <h2
+              style={{
+                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
+                fontWeight: 700,
+                color: '#F2EDE4',
+                lineHeight: 1.1,
+                letterSpacing: '-0.02em',
+                marginBottom: '1.25rem',
+              }}
+            >
+              Built by an operator who has{' '}
+              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>run the playbook.</span>
             </h2>
-            <p className="mt-6 text-lg text-slate leading-relaxed">
-              HeyPearl is led by Misti Bruton, a founder who has scaled brokerages, brands, and operations across rapidly changing markets. The shift to AI search is not theoretical for her. It is the next chapter of work she has spent her career preparing for.
+
+            <p style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75, marginBottom: '1rem' }}>
+              HeyPearl is led by Misti Bruton — a founder who has scaled brokerages, brands, and
+              operations across rapidly changing markets. The shift to AI search is not theoretical
+              for her. It is the next chapter of work she has spent her career preparing for.
             </p>
-            <p className="mt-4 text-lg text-slate leading-relaxed">
-              Every system inside HeyPearl was designed for the operators she would want as clients. Modern, sophisticated, and serious about long term authority. No hype, no shortcuts, no abandoned dashboards.
+            <p style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75, marginBottom: '2rem' }}>
+              Every system inside HeyPearl was built for the operators she would want as clients.
+              Modern, sophisticated, and serious about long-term authority. No hype. No shortcuts.
+              No abandoned dashboards.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <LinkButton
+            {/* Credentials */}
+            <div
+              className="grid grid-cols-3 gap-4 mb-8 py-6"
+              style={{ borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}
+            >
+              {CREDENTIALS.map(({ label, value }) => (
+                <div key={label}>
+                  <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#BF9B5C', marginBottom: '4px' }}>
+                    {label}
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.6)', lineHeight: 1.4 }}>
+                    {value}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4">
+              <a
                 href={site.strategyCallUrl}
-                external
-                variant="primary"
-                size="lg"
-                withArrow
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors duration-200"
+                style={{ background: '#BF9B5C', color: '#090909' }}
               >
-                Schedule a Strategy Call with Misti
-              </LinkButton>
-              <LinkButton href="/about" variant="secondary" size="lg">
-                Read the philosophy
-              </LinkButton>
+                Book a Strategy Call
+                <ArrowRight size={14} />
+              </a>
+              <Link
+                href="/about/founder"
+                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium transition-colors duration-200"
+                style={{ border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(242,237,228,0.6)' }}
+              >
+                Misti's story
+                <ArrowRight size={13} />
+              </Link>
             </div>
-
-            <div className="mt-10 pt-8 border-t border-plum/10 grid sm:grid-cols-3 gap-6">
-              <div>
-                <div className="text-[0.65rem] tracking-micro uppercase text-magenta">
-                  Operator-led
-                </div>
-                <div className="mt-1 text-sm text-plum">
-                  Brokerage and brand experience
-                </div>
-              </div>
-              <div>
-                <div className="text-[0.65rem] tracking-micro uppercase text-magenta">
-                  Systems-first
-                </div>
-                <div className="mt-1 text-sm text-plum">
-                  PearlOS infrastructure
-                </div>
-              </div>
-              <div>
-                <div className="text-[0.65rem] tracking-micro uppercase text-magenta">
-                  Long-term
-                </div>
-                <div className="mt-1 text-sm text-plum">
-                  Built to compound for years
-                </div>
-              </div>
-            </div>
-          </Reveal>
+          </div>
         </div>
       </Container>
     </section>
