@@ -15,75 +15,77 @@ export function HeroDeclaration() {
         className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(191,155,92,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.07) 1px, transparent 1px)',
+            'linear-gradient(rgba(191,155,92,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.06) 1px, transparent 1px)',
           backgroundSize: '80px 80px',
         }}
       />
 
-      {/* Radial gold glow — upper right */}
+      {/* Gold radial — upper right */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full"
+        className="pointer-events-none absolute -top-40 -right-40 w-[800px] h-[800px] rounded-full"
         style={{
           background:
-            'radial-gradient(ellipse at center, rgba(191,155,92,0.10) 0%, transparent 65%)',
+            'radial-gradient(ellipse at center, rgba(191,155,92,0.09) 0%, transparent 65%)',
         }}
       />
 
-      {/* Bottom fade to black */}
+      {/* Bottom fade */}
       <div
         aria-hidden
-        className="pointer-events-none absolute bottom-0 inset-x-0 h-40"
+        className="pointer-events-none absolute bottom-0 inset-x-0 h-48"
         style={{ background: 'linear-gradient(to bottom, transparent, #090909)' }}
       />
 
       <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-24">
-        {/* Eyebrow */}
+
+        {/* Brand declaration — answers "What is HeyPearl?" in the first line */}
         <div className="flex items-center gap-3 mb-8">
           <span
             className="inline-block h-px w-10"
-            style={{ background: 'rgba(191,155,92,0.5)' }}
+            style={{ background: '#BF9B5C', opacity: 0.5 }}
             aria-hidden
           />
           <span
             style={{
-              fontSize: '0.67rem',
-              fontWeight: 600,
-              letterSpacing: '0.14em',
+              fontSize: '0.72rem',
+              fontWeight: 700,
+              letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: '#BF9B5C',
             }}
           >
-            The AI Authority Platform
+            HeyPearl — The AI Authority Platform
           </span>
         </div>
 
-        {/* Headline */}
+        {/* H1 — answers "Why should I care?" */}
         <h1
-          className="font-display max-w-4xl leading-[1.05] tracking-tight"
+          className="max-w-4xl"
           style={{
             fontFamily: 'var(--font-playfair), Georgia, serif',
-            fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
+            fontSize: 'clamp(3rem, 7.5vw, 6rem)',
             fontWeight: 700,
             color: '#F2EDE4',
-            letterSpacing: '-0.025em',
+            lineHeight: 1.03,
+            letterSpacing: '-0.03em',
           }}
         >
-          The AI Recommendation Era{' '}
+          Become the Authority<br />
           <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>
-            Has Already Begun.
+            AI Recommends.
           </span>
         </h1>
 
-        {/* Body */}
+        {/* Subheadline — confirms the brand, explains the mechanism */}
         <p
-          className="mt-7 max-w-xl leading-relaxed"
-          style={{ fontSize: '1.05rem', color: 'rgba(242,237,228,0.6)' }}
+          className="mt-7 max-w-[38rem] leading-relaxed"
+          style={{ fontSize: '1.1rem', color: 'rgba(242,237,228,0.58)' }}
         >
-          HeyPearl builds the systems that help businesses become the authority
-          AI recommends. Not more content. Not more ads.{' '}
-          <span style={{ color: 'rgba(242,237,228,0.85)' }}>
-            The infrastructure that makes AI trust you.
+          We build the infrastructure that makes AI engines trust, cite, and recommend your business —
+          entity architecture, authority pages, and reputation systems engineered for the AI search era.{' '}
+          <span style={{ color: 'rgba(242,237,228,0.82)' }}>
+            Powered by PearlOS and the P.E.A.R.L. framework.
           </span>
         </p>
 
@@ -93,17 +95,17 @@ export function HeroDeclaration() {
             href={site.strategyCallUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
+            className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
           >
             Book a Strategy Call
             <ArrowRight size={15} />
           </a>
           <Link
             href="/platform"
-            className="inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-medium transition-colors duration-200"
+            className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200 hover:border-white/20 hover:text-[#F2EDE4]"
             style={{
               border: '1px solid rgba(255,255,255,0.1)',
-              color: 'rgba(242,237,228,0.7)',
+              color: 'rgba(242,237,228,0.65)',
             }}
           >
             Explore the Platform
@@ -111,25 +113,25 @@ export function HeroDeclaration() {
           </Link>
         </div>
 
-        {/* Social proof strip */}
+        {/* Proof strip — three consistent, system-level claims */}
         <div
-          className="mt-16 flex flex-wrap gap-8"
+          className="mt-16 flex flex-wrap gap-10"
           style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '2rem' }}
         >
           {[
-            { num: '62+',    label: 'Authority pages live' },
-            { num: '10',     label: 'Deep knowledge articles' },
-            { num: '90 day', label: 'Visibility roadmap' },
-            { num: '5-layer',label: 'P.E.A.R.L. system' },
+            { num: '6',        label: 'AI engines tracked per client' },
+            { num: '90-Day',   label: 'Authority visibility roadmap' },
+            { num: '5-Layer',  label: 'P.E.A.R.L. authority system' },
           ].map(({ num, label }) => (
             <div key={label}>
               <div
                 style={{
                   fontFamily: 'var(--font-playfair), Georgia, serif',
-                  fontSize: '1.5rem',
+                  fontSize: '1.55rem',
                   fontWeight: 700,
                   color: '#BF9B5C',
                   lineHeight: 1,
+                  letterSpacing: '-0.02em',
                 }}
               >
                 {num}
@@ -137,9 +139,9 @@ export function HeroDeclaration() {
               <div
                 style={{
                   fontSize: '0.72rem',
-                  color: 'rgba(242,237,228,0.4)',
-                  marginTop: '0.3rem',
-                  letterSpacing: '0.04em',
+                  color: 'rgba(242,237,228,0.38)',
+                  marginTop: '0.35rem',
+                  letterSpacing: '0.03em',
                 }}
               >
                 {label}
