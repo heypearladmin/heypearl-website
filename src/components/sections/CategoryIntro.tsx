@@ -21,7 +21,7 @@ const PILLARS = [
   {
     number: '04',
     title: 'AI Visibility Monitoring',
-    body: 'Real-time tracking of how AI engines represent your brand, so you can course-correct before gaps compound into invisibility.',
+    body: 'Real-time tracking of how AI engines represent your brand, so you can course-correct before gaps quietly erode your visibility.',
   },
 ];
 
@@ -111,7 +111,7 @@ export function CategoryIntro() {
         {/* Bottom CTA row */}
         <div className="mt-12 flex flex-wrap items-center justify-between gap-6">
           <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.4)' }}>
-            Built for the 10% of businesses willing to invest in permanent AI visibility.
+            Built for operators willing to invest in what lasts.
           </p>
           <Link
             href="/platform"

@@ -93,7 +93,7 @@ export function FinalCTA() {
           {[
             'No long-term contracts required',
             'Founder-led strategy sessions',
-            'Built for 90-day compounding returns',
+            'Measurable results in 90 days',
           ].map((trust) => (
             <div key={trust} className="flex items-center gap-2">
               <div className="w-1 h-1 rounded-full" style={{ background: '#BF9B5C' }} aria-hidden />

@@ -48,7 +48,7 @@ export const primaryNav: NavItem[] = [
     children: [
       {
         label: 'Real Estate',
-        href: '/solutions/real-estate',
+        href: '/solutions/real-estate-agents',
         description: 'Authority infrastructure for agents, brokers, and property groups.',
       },
       {
@@ -82,34 +82,14 @@ export const primaryNav: NavItem[] = [
     href: '/resources',
     children: [
       {
-        label: 'AI Authority',
-        href: '/resources/ai-authority',
-        description: 'Deep guides on AI visibility, GEO, and authority infrastructure.',
-      },
-      {
-        label: 'Guides',
-        href: '/resources/guides',
-        description: 'Step-by-step tactical guides for building AI authority.',
-      },
-      {
-        label: 'Knowledge Base',
-        href: '/resources/knowledge-base',
-        description: 'Reference documentation for the HeyPearl platform.',
-      },
-      {
-        label: 'Blog',
-        href: '/resources/blog',
-        description: 'News, updates, and commentary on AI search.',
+        label: 'Authority Library',
+        href: '/resources',
+        description: 'The complete guide to AI Authority Infrastructure — 10 pillar articles.',
       },
       {
         label: 'FAQ',
         href: '/faq',
         description: 'Answers to the most common questions about AI authority.',
-      },
-      {
-        label: 'Glossary',
-        href: '/resources/glossary',
-        description: 'Definitions for every term in the AI authority ecosystem.',
       },
     ],
   },
@@ -125,7 +105,7 @@ export const primaryNav: NavItem[] = [
       },
       {
         label: 'Founder',
-        href: '/about/founder',
+        href: '/about#founder',
         description: 'Misti Bruton — founder, practitioner, category creator.',
       },
       {
@@ -147,22 +127,19 @@ export const footerNav = {
     { label: 'GEO Engine',        href: '/platform/geo-engine' },
   ],
   solutions: [
-    { label: 'Real Estate',        href: '/solutions/real-estate' },
+    { label: 'Real Estate',        href: '/solutions/real-estate-agents' },
     { label: 'Service Businesses', href: '/solutions/service-businesses' },
     { label: 'Teams',              href: '/solutions/teams' },
     { label: 'Brokerages',         href: '/solutions/brokerages' },
     { label: 'Enterprise',         href: '/solutions/enterprise' },
   ],
   resources: [
-    { label: 'AI Authority', href: '/resources/ai-authority' },
-    { label: 'Guides',       href: '/resources/guides' },
-    { label: 'FAQ',          href: '/faq' },
-    { label: 'Glossary',     href: '/resources/glossary' },
-    { label: 'Blog',         href: '/resources/blog' },
+    { label: 'Authority Library', href: '/resources' },
+    { label: 'FAQ',               href: '/faq' },
   ],
   company: [
     { label: 'About',          href: '/about' },
-    { label: 'Founder',        href: '/about/founder' },
+    { label: 'Founder',        href: '/about#founder' },
     { label: 'Results',        href: '/results' },
     { label: 'Pricing',        href: '/pricing' },
     { label: 'Contact',        href: '/contact' },
@@ -171,6 +148,6 @@ export const footerNav = {
   legal: [
     { label: 'Policies', href: '/policies' },
     { label: 'Privacy',  href: '/privacy' },
-    { label: 'Terms',    href: '/terms' },
+    { label: 'Terms',    href: '/terms-of-service' },
   ],
 };

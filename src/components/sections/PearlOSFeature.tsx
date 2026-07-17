@@ -43,13 +43,13 @@ export function PearlOSFeature() {
                 marginBottom: '1.25rem',
               }}
             >
-              PearlOS is the operating system for{' '}
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>AI authority.</span>
+              One operating system.<br />
+              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Every signal. Every engine.</span>
             </h2>
             <p style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: '34rem' }}>
               Every HeyPearl engagement runs through PearlOS — a structured operating layer
-              that orchestrates entity signals, monitors AI recommendation patterns, and executes
-              the full P.E.A.R.L. framework from a single system of record.
+              that orchestrates entity signals, monitors recommendation patterns across six major engines, and executes
+              the P.E.A.R.L. framework from a single system of record.
             </p>
 
             {/* Capabilities list */}

@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         url: site.ogImage,
         width: 1200,
         height: 630,
-        alt: `${site.name} — Software with a soul`,
+        alt: `${site.name} — The AI Authority Platform`,
       },
     ],
   },
@@ -69,11 +69,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${site.name} — Authority Infrastructure for the AI Search Era`,
     description: site.description,
-    images: [
-      site.ogImage,
-      '/images/social-square-default.jpg',
-      '/images/social-square-pearl.jpg',
-    ],
+    images: [site.ogImage],
   },
 
   robots: {
@@ -104,9 +100,9 @@ const organizationSchema = {
   url: 'https://heypearl.io',
   logo: {
     '@type': 'ImageObject',
-    url: 'https://heypearl.io/images/og-default.jpg',
-    width: 1200,
-    height: 630,
+    url: 'https://heypearl.io/favicon.png',
+    width: 512,
+    height: 512,
   },
   description:
     'Authority infrastructure for the AI search era. Hey Pearl Agency LLC operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
@@ -157,36 +153,36 @@ const organizationSchema = {
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Hey Pearl Services',
+    name: 'HeyPearl Platform Modules',
     itemListElement: [
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'GEO — Generative Engine Optimization',
+          name: 'PearlOS — AI Authority Operating System',
           description:
-            'AI-driven authority signals, structured data, and content systems that make your business the answer AI search engines recommend.',
-          url: 'https://heypearl.io/services/geo',
+            'The operating layer that orchestrates every HeyPearl engagement — entity signals, AI recommendation monitoring, and the P.E.A.R.L. framework in sequence.',
+          url: 'https://heypearl.io/platform/pearlos',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Authority Websites',
+          name: 'Authority Pages',
           description:
-            'Fast, AI-ready websites built on structured data, semantic markup, and authority architecture.',
-          url: 'https://heypearl.io/services/authority-websites',
+            'Structured, AI-optimized pages that declare your business identity in a format AI systems can read, understand, and cite with confidence.',
+          url: 'https://heypearl.io/platform/authority-pages',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'HeyLocal — Local Authority',
+          name: 'Knowledge Graph Module',
           description:
-            'Profiles, schema, and entity signals tuned for the geography you actually serve.',
-          url: 'https://heypearl.io/services/heylocal',
+            'Complete entity architecture and knowledge graph optimization that makes your business recognizable and citable across AI systems.',
+          url: 'https://heypearl.io/platform/knowledge-graph',
         },
       },
     ],
@@ -219,25 +215,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `var script=document.createElement("script");script.setAttribute("nowprocket","");script.setAttribute("nitro-exclude","");script.src="https://reports.heypearl.io/scripts/dynamic_optimization.js";script.dataset.uuid="2d02d0c8-91ea-4b98-befd-20d028eecbd8";script.id="sa-dynamic-optimization";document.head.appendChild(script);`,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-      </head>
+      <head />
       <body className="bg-cream text-navy antialiased relative">
+        {/* Skip to content — keyboard accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"
+          style={{ background: '#BF9B5C', color: '#090909' }}
+        >
+          Skip to main content
+        </a>
         {/* Subtle paper grain overlay across the whole site */}
         <div
-          aria-hidden
+          aria-hidden="true"
           className="pointer-events-none fixed inset-0 z-0 opacity-[0.05] mix-blend-multiply"
           style={{
             backgroundImage: 'url(/images/texture-grain.png)',
@@ -246,9 +236,27 @@ export default function RootLayout({
         />
         <div className="relative z-10">
           <Navigation />
-          <main className="pt-24 sm:pt-28">{children}</main>
+          <main id="main-content" className="pt-24 sm:pt-28">{children}</main>
           <Footer />
         </div>
+        {/* JSON-LD structured data */}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        {/* Third-party optimization script */}
+        <Script
+          id="sa-dynamic-optimization"
+          src="https://reports.heypearl.io/scripts/dynamic_optimization.js"
+          data-uuid="2d02d0c8-91ea-4b98-befd-20d028eecbd8"
+          strategy="afterInteractive"
+        />
         <Script
           id="meta-pixel"
           strategy="afterInteractive"

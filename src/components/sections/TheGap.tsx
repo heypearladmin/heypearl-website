@@ -42,9 +42,9 @@ export function TheGap() {
             <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>The Authority Era has begun.</span>
           </h2>
           <p className="mt-6" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75, maxWidth: '38rem' }}>
-            For 25 years, digital visibility meant ranking on Google. That playbook is no longer enough.
-            AI engines don't rank pages — they recommend entities they have verified, trust, and understand.
-            Everything about how businesses get found has changed.
+            For 25 years, visibility meant ranking on Google. That era is over.
+            These systems don't rank pages — they recommend entities they have verified, understand, and trust.
+            How businesses get found has fundamentally changed.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export function TheGap() {
             <div className="flex items-center gap-2.5 mb-8">
               <div className="w-2 h-2 rounded-full" style={{ background: '#BF9B5C' }} />
               <span style={{ fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#BF9B5C' }}>
-                The AI Authority Era (Now)
+                The Recommendation Era (Now)
               </span>
             </div>
             <ul className="space-y-5">

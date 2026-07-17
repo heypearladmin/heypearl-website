@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Hey Pearl — Authority Infrastructure Company for the AI Search Era',
     description: 'Hey Pearl Agency LLC. Founded by Misti Bruton. We build the authority infrastructure — schema, entity SEO, editorial content, reputation signals — that makes your business the answer AI gives.',
-    images: ['/images/og-about.jpg'],
+    images: ['/images/og/og-about.webp'],
   },
-  twitter: { images: ['/images/og-about.jpg'] },
+  twitter: { images: ['/images/og/og-about.webp'] },
 };
 
 const faqSchema = {
@@ -56,12 +56,12 @@ const faqSchema = {
 
 const values = [
   {
-    title: 'Software with a soul',
-    body: 'Every system we ship is sharpened until it feels human. Powerful, but warm. Sophisticated, but clear.',
+    title: 'Outcomes over optics',
+    body: 'Every system we ship is measured against one standard: does it earn the business more authority, more visibility, more recommendations from AI.',
   },
   {
     title: 'Infrastructure over campaigns',
-    body: 'We do not chase tactics. We design ecosystems. Operational leverage that compounds for years, not weeks.',
+    body: 'We do not chase tactics. We design ecosystems. Operational leverage that grows for years, not weeks.',
   },
   {
     title: 'Operator-led standards',
@@ -107,14 +107,14 @@ export default function AboutPage() {
         eyebrow="About HeyPearl"
         title={
           <>
-            Operational authority,{' '}
+            Building the future{' '}
             <span className="italic font-light text-magenta">
-              built with a soul.
+              of AI Authority.
             </span>
           </>
         }
-        description="HeyPearl was founded to give modern operators what the AI search era actually demands. Not another agency. Not another tool. A category-defining authority infrastructure company built on a clear operating framework."
-        image="/images/about-hero.jpg"
+        description="HeyPearl is the AI Authority Platform. We help businesses earn trust, visibility, and recommendations across AI search — through structured infrastructure, not tactics."
+        image=""
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton
@@ -241,7 +241,7 @@ export default function AboutPage() {
               {/* Photographic backdrop */}
               <div aria-hidden className="pointer-events-none absolute inset-0">
                 <Image
-                  src="/images/about-pearlos-ambient.jpg"
+                  src="/images/backgrounds/bg-glow.webp"
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 60vw, 100vw"
@@ -276,7 +276,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="mt-12 relative aspect-[16/9] w-full rounded-[2rem] overflow-hidden border border-plum/5 shadow-soft">
               <Image
-                src="/images/about-misti-environmental.jpg"
+                src="/images/about/about-office.webp"
                 alt="Misti Bruton, founder of HeyPearl"
                 fill
                 sizes="(min-width: 1024px) 80vw, 100vw"

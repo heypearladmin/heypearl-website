@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HeyPearl Solutions — AI Authority for Your Business',
     description: 'The AI authority platform built around your specific business model, team size, and growth goals.',
+    images: ['/images/og/og-solutions.webp'],
   },
 };
 
@@ -115,7 +116,7 @@ export default function SolutionsPage() {
               The same platform.<br />
               <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Configured for your context.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.75 }}>
               Every HeyPearl engagement runs on PearlOS. What changes is how we apply the platform to the specific problems your business faces in the AI era.
             </p>
           </div>
@@ -132,7 +133,7 @@ export default function SolutionsPage() {
                 <div className="h-px sm:h-auto sm:w-px self-stretch shrink-0" style={{ background: 'rgba(255,255,255,0.05)' }} />
                 <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.25)', marginBottom: '0.3rem' }}>The problem</div>
+                    <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.58)', marginBottom: '0.3rem' }}>The problem</div>
                     <p style={{ fontSize: '0.85rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.6 }}>{sol.problem}</p>
                   </div>
                   <div>
@@ -160,7 +161,7 @@ export default function SolutionsPage() {
                 Every solution runs<br />
                 <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>on the same platform.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.48)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
+              <p style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
                 Whether you're a solo agent or a multi-region enterprise, the underlying infrastructure is the same — PearlOS orchestrating the P.E.A.R.L. framework across five connected modules.
               </p>
               <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#BF9B5C' }}>
@@ -194,12 +195,12 @@ export default function SolutionsPage() {
             Not sure which solution<br />
             <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>fits your situation?</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.75 }}>
             Book a strategy call. We'll review your current AI visibility, identify the gaps, and tell you exactly what an engagement looks like for your business.
           </p>
           <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200">
-            Book a Strategy Call <ArrowRight size={14} />
+            See How It Works <ArrowRight size={14} />
           </a>
         </Container>
       </section>

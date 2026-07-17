@@ -144,7 +144,7 @@ function HeroVisualStack() {
       {/* Photographic backdrop card */}
       <div className="absolute -right-6 -top-4 w-3/4 aspect-[3/4] rounded-[1.75rem] overflow-hidden border border-plum/5 shadow-soft hidden sm:block">
         <Image
-          src="/images/hero-side-ambient.jpg"
+          src="/images/hero/hero-dashboard.webp"
           alt=""
           fill
           sizes="(min-width: 1024px) 25vw, 50vw"

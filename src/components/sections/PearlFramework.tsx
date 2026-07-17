@@ -32,9 +32,9 @@ const STEPS = [
   {
     letter: 'L',
     title: 'Leverage',
-    tagline: 'Compound returns over time.',
+    tagline: 'Returns that grow over time.',
     description:
-      'Distribution and amplification systems that make authority signals multiply across channels — so your AI visibility grows every month without proportional reinvestment.',
+      'Distribution and amplification systems that make your signals multiply across channels — so visibility grows every month without proportional reinvestment.',
   },
 ];
 
@@ -84,7 +84,7 @@ export function PearlFramework() {
           </p>
           <p className="mt-5 max-w-xl mx-auto" style={{ fontSize: '0.975rem', color: 'rgba(242,237,228,0.48)', lineHeight: 1.75 }}>
             Every HeyPearl engagement executes this systematic sequence. Each layer is a prerequisite
-            for the next — building AI authority that compounds month after month without starting over.
+            for the next — building visibility that grows month after month without starting over.
           </p>
         </div>
 
@@ -189,7 +189,7 @@ export function PearlFramework() {
           >
             Executed over{' '}
             <span style={{ color: '#BF9B5C', fontWeight: 600 }}>90 days.</span>{' '}
-            Built to compound{' '}
+            Built to grow{' '}
             <span style={{ color: 'rgba(242,237,228,0.65)', fontWeight: 500 }}>indefinitely.</span>
           </p>
         </div>

@@ -41,7 +41,7 @@ export function Footer() {
                 size="lg"
                 withArrow
               >
-                Schedule a Strategy Call
+                Start Your AI Authority Journey
               </LinkButton>
               <LinkButton
                 href="/contact"
@@ -112,7 +112,7 @@ export function Footer() {
                 <Eyebrow tone="cream">Platform</Eyebrow>
                 <ul className="mt-5 flex flex-col gap-3">
                   {footerNav.platform.map((l) => (
-                    <li key={l.href}>
+                    <li key={l.label}>
                       <Link
                         href={l.href}
                         className="text-sm text-cream/80 hover:text-cream transition"
@@ -127,7 +127,7 @@ export function Footer() {
                 <Eyebrow tone="cream">Company</Eyebrow>
                 <ul className="mt-5 flex flex-col gap-3">
                   {footerNav.company.map((l) => (
-                    <li key={l.href}>
+                    <li key={l.label}>
                       <Link
                         href={l.href}
                         className="text-sm text-cream/80 hover:text-cream transition"
@@ -172,7 +172,7 @@ export function Footer() {
             </p>
             <ul className="flex items-center gap-6">
               {footerNav.legal.map((l) => (
-                <li key={l.href}>
+                <li key={l.label}>
                   <Link href={l.href} className="hover:text-cream transition">
                     {l.label}
                   </Link>

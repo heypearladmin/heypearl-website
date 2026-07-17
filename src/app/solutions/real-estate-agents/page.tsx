@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HeyPearl for Real Estate Agents — Become the Agent AI Recommends',
     description: 'The AI authority platform built for independent agents who want to own their market before competitors do.',
+    images: ['/images/og/og-solutions.webp'],
   },
 };
 
@@ -104,7 +105,7 @@ export default function RealEstateAgentsPage() {
           style={{ background: 'radial-gradient(ellipse at top right, rgba(191,155,92,0.07) 0%, transparent 65%)' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/solutions" className="text-xs" style={{ color: 'rgba(242,237,228,0.35)' }}>Solutions</Link>
+            <Link href="/solutions" className="text-xs" style={{ color: 'rgba(242,237,228,0.55)' }}>Solutions</Link>
             <span style={{ color: 'rgba(242,237,228,0.2)', fontSize: '0.75rem' }}>/</span>
             <span style={{ fontSize: '0.72rem', color: '#BF9B5C', fontWeight: 600 }}>Real Estate Agents</span>
           </div>
@@ -126,7 +127,7 @@ export default function RealEstateAgentsPage() {
               className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
-            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: 'rgba(242,237,228,0.45)' }}>
+            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: 'rgba(242,237,228,0.60)' }}>
               Explore the Platform <ArrowUpRight size={13} />
             </Link>
           </div>
@@ -152,7 +153,7 @@ export default function RealEstateAgentsPage() {
               <div key={c.num} className="p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}>
                 <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(191,155,92,0.15)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
                 <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
-                <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.72 }}>{c.body}</p>
+                <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.72 }}>{c.body}</p>
               </div>
             ))}
           </div>
@@ -191,7 +192,7 @@ export default function RealEstateAgentsPage() {
                   <div style={{ fontSize: '0.65rem', fontWeight: 700, color: 'rgba(191,155,92,0.6)', flexShrink: 0, marginTop: '0.2rem', letterSpacing: '0.05em' }}>{item.step}</div>
                   <div>
                     <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.25rem' }}>{item.label}</div>
-                    <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.65 }}>{item.desc}</p>
+                    <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65 }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -252,7 +253,7 @@ export default function RealEstateAgentsPage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.05)' }}>
                 <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.6rem' }}>{faq.q}</h3>
-                <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.48)', lineHeight: 1.7 }}>{faq.a}</p>
+                <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
             ))}
           </div>
@@ -275,7 +276,7 @@ export default function RealEstateAgentsPage() {
                 style={{ border: '1px solid rgba(255,255,255,0.05)' }}>
                 <div className="flex-1">
                   <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'rgba(242,237,228,0.75)', marginBottom: '0.25rem' }}>{item.label}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'rgba(242,237,228,0.35)' }}>{item.desc}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'rgba(242,237,228,0.55)' }}>{item.desc}</div>
                 </div>
                 <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#BF9B5C' }} />
               </Link>
@@ -291,7 +292,7 @@ export default function RealEstateAgentsPage() {
             Become the agent<br />
             <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>AI recommends.</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.75 }}>
             Book a strategy call. We'll audit your current AI visibility and show you exactly what it takes to become the recommended agent in your market.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     title: 'The HeyPearl Platform — AI Authority Infrastructure',
     description:
       'One operating system. Five integrated modules. The complete infrastructure for becoming the business AI recommends.',
+    images: ['/images/og/og-platform.webp'],
   },
 };
 
@@ -109,7 +110,7 @@ export default function PlatformPage() {
             <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Five integrated modules.</span>
           </h1>
           <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: 'rgba(242,237,228,0.56)', lineHeight: 1.75 }}>
-            PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility compounds as a system, not a collection of tactics.
+            PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility grows as a system, not a collection of tactics.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
@@ -163,7 +164,7 @@ export default function PlatformPage() {
                 PearlOS is the operating system beneath every HeyPearl engagement — the unified intelligence layer that connects entity signals, monitors AI engines, and executes the P.E.A.R.L. framework in sequence.
               </p>
               <p style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Without PearlOS, the five modules are powerful tools. With it, they become a compounding system.
+                Without PearlOS, the five modules are powerful tools. With it, they become one integrated system.
               </p>
               <Link
                 href="/platform/pearlos"
@@ -187,7 +188,7 @@ export default function PlatformPage() {
                   <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>
                     {fn.title}
                   </div>
-                  <p style={{ fontSize: '0.8rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.65 }}>
+                  <p style={{ fontSize: '0.8rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65 }}>
                     {fn.desc}
                   </p>
                 </div>
@@ -257,7 +258,7 @@ export default function PlatformPage() {
                   >
                     {item.label}
                   </div>
-                  <p style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.6 }}>
+                  <p style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.6 }}>
                     {item.desc}
                   </p>
                 </div>
@@ -287,9 +288,9 @@ export default function PlatformPage() {
                 letterSpacing: '-0.022em',
               }}
             >
-              Five systems. <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>One compounding result.</span>
+              Five systems. <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>One result.</span>
             </h2>
-            <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.7 }}>
+            <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.60)', lineHeight: 1.7 }}>
               Each module addresses a distinct layer of AI authority — and every module runs through PearlOS so they build on each other, not alongside each other.
             </p>
           </div>
@@ -333,8 +334,8 @@ export default function PlatformPage() {
 
             {/* Sixth cell — the system message */}
             <div className="p-7 lg:p-8 flex flex-col justify-between" style={{ background: '#111111' }}>
-              <p style={{ fontSize: '0.85rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.65, marginBottom: '1.5rem' }}>
-                Every module runs through PearlOS — turning individual signals into compounding AI authority that grows month after month.
+              <p style={{ fontSize: '0.85rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65, marginBottom: '1.5rem' }}>
+                Every module runs through PearlOS — turning individual signals into integrated authority that builds month after month.
               </p>
               <a
                 href={site.strategyCallUrl}
@@ -378,8 +379,8 @@ export default function PlatformPage() {
           <p className="max-w-2xl mx-auto mb-6" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.8 }}>
             Authority Pages create citable infrastructure. Knowledge Graph registers your entity. Authority Score reveals the gaps. AI Visibility tracks every engine. GEO Engine amplifies what works. PearlOS makes them all speak the same language and execute in the right order.
           </p>
-          <p className="max-w-xl mx-auto mb-10" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.75 }}>
-            Most agencies sell individual tactics. HeyPearl sells compound authority infrastructure — the kind that makes AI engines trust and recommend your business six months from now, not just this week.
+          <p className="max-w-xl mx-auto mb-10" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
+            Most agencies sell individual tactics. HeyPearl builds integrated authority infrastructure — the kind that makes AI engines trust and recommend your business six months from now, not just this week.
           </p>
           <a
             href={site.strategyCallUrl}
@@ -387,7 +388,7 @@ export default function PlatformPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
           >
-            Book a Strategy Call
+            Explore the Platform
             <ArrowRight size={14} />
           </a>
         </Container>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HeyPearl Results — The Proof Center',
     description: 'Measurable AI authority outcomes from real engagements. Not testimonials. Evidence.',
+    images: ['/images/og/og-results.webp'],
   },
 };
 
@@ -102,8 +104,8 @@ const METHODOLOGY_STEPS = [
   },
   {
     num: '05',
-    title: 'Ongoing Compounding',
-    desc: 'Authority compounds monthly as GEO content matures, entity signals strengthen, and AI engines index new authority pages. Post-90-day engagements track continued growth and close emerging competitive gaps.',
+    title: 'Ongoing Growth',
+    desc: 'Visibility builds monthly as GEO content matures, entity signals strengthen, and AI engines index new authority pages. Post-90-day engagements track continued growth and close emerging competitive gaps.',
   },
 ];
 
@@ -159,7 +161,7 @@ function BarRow({ label, value, max = 100, color = '#BF9B5C' }: {
   const pct = Math.round((value / max) * 100);
   return (
     <div className="flex items-center gap-3">
-      <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.45)', width: '7rem', flexShrink: 0, textAlign: 'right' }}>{label}</div>
+      <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.58)', width: '7rem', flexShrink: 0, textAlign: 'right' }}>{label}</div>
       <div className="flex-1 h-1.5 rounded-full" style={{ background: 'rgba(255,255,255,0.05)' }}>
         <div className="h-full rounded-full" style={{ width: `${pct}%`, background: color }} />
       </div>
@@ -178,6 +180,9 @@ export default function ResultsPage() {
         className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
         aria-label="Results hero"
       >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <Image src="/images/results/results-dashboard.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: 'linear-gradient(rgba(191,155,92,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px]"
@@ -203,12 +208,14 @@ export default function ResultsPage() {
             style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '0.875rem', overflow: 'hidden' }}>
             {[
               { stat: '3.2×', sub: 'avg. AI recommendation increase' },
-              { stat: '47 days', sub: 'avg. to first AI citation' },
+              { stat: '47', unit: ' days', sub: 'avg. to first AI citation' },
               { stat: '94%', sub: 'avg. Knowledge Graph completion' },
             ].map((s, i) => (
-              <div key={i} className="px-6 py-5" style={{ background: i === 1 ? 'rgba(191,155,92,0.06)' : '#0D0D0D' }}>
-                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1 }}>{s.stat}</div>
-                <div className="mt-1" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.4 }}>{s.sub}</div>
+              <div key={i} className="px-4 sm:px-6 py-5" style={{ background: i === 1 ? 'rgba(191,155,92,0.06)' : '#0D0D0D' }}>
+                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1, whiteSpace: 'nowrap' }}>
+                  {s.stat}{s.unit && <span style={{ fontSize: '0.75em' }}>{s.unit}</span>}
+                </div>
+                <div className="mt-1" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.4 }}>{s.sub}</div>
               </div>
             ))}
           </div>
@@ -236,7 +243,7 @@ export default function ResultsPage() {
                 <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1 }}>{m.value}</div>
                 <div>
                   <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#F2EDE4', lineHeight: 1.4, marginBottom: '0.2rem' }}>{m.label}</div>
-                  <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.32)' }}>{m.sub}</div>
+                  <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.52)' }}>{m.sub}</div>
                 </div>
               </div>
             ))}
@@ -250,7 +257,7 @@ export default function ResultsPage() {
                 <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.2, marginBottom: '0.75rem' }}>
                   From baseline to competitive<br />authority in 90 days.
                 </h3>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+                <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
                   Authority Score is a 0–100 composite metric measured at engagement start, Day 30, Day 60, and Day 90. Most clients enter with a score between 18–35. The 90-day average across all engagements is 86.
                 </p>
               </div>
@@ -281,12 +288,12 @@ export default function ResultsPage() {
                   <RingChart value={item.value} size={72} stroke={6} />
                   <span style={{ position: 'absolute', fontSize: '0.8rem', fontWeight: 700, color: '#BF9B5C' }}>{item.value}%</span>
                 </div>
-                <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.45)', textAlign: 'center', lineHeight: 1.4 }}>{item.label}</div>
+                <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.58)', textAlign: 'center', lineHeight: 1.4 }}>{item.label}</div>
               </div>
             ))}
           </div>
 
-          <p className="mt-5" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.25)', lineHeight: 1.6 }}>
+          <p className="mt-5" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.40)', lineHeight: 1.6 }}>
             All metrics represent averages across HeyPearl client engagements at the 90-day mark. Individual results vary by market, category, and engagement scope.
           </p>
         </Container>
@@ -304,7 +311,7 @@ export default function ResultsPage() {
               Real clients.<br />
               <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Documented outcomes.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
               Client details are anonymized by request. Market context and results are real.
             </p>
           </div>
@@ -333,17 +340,17 @@ export default function ResultsPage() {
                   {/* Left: narrative */}
                   <div className="p-8 space-y-6" style={{ background: '#0C0C0C' }}>
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.28)', marginBottom: '0.5rem' }}>The Challenge</div>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>The Challenge</div>
                       <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75 }}>{cs.challenge}</p>
                     </div>
                     <div className="h-px" style={{ background: 'rgba(255,255,255,0.05)' }} />
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.28)', marginBottom: '0.5rem' }}>The Solution</div>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>The Solution</div>
                       <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75 }}>{cs.solution}</p>
                     </div>
                     <div className="h-px" style={{ background: 'rgba(255,255,255,0.05)' }} />
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.28)', marginBottom: '0.5rem' }}>Modules Used</div>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>Modules Used</div>
                       <div className="flex flex-wrap gap-2">
                         {cs.modules.map((m) => (
                           <span key={m} style={{ fontSize: '0.68rem', fontWeight: 600, color: '#BF9B5C', background: 'rgba(191,155,92,0.08)', border: '1px solid rgba(191,155,92,0.2)', borderRadius: '0.375rem', padding: '0.2rem 0.6rem' }}>{m}</span>
@@ -410,7 +417,7 @@ export default function ResultsPage() {
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">
                     <span style={{ color: 'rgba(242,237,228,0.2)', flexShrink: 0, marginTop: '0.15rem' }}>—</span>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.65 }}>{item}</p>
+                    <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65 }}>{item}</p>
                   </div>
                 ))}
               </div>
@@ -425,7 +432,7 @@ export default function ResultsPage() {
                   'Named as primary recommendation in 14–29+ tracked buyer queries',
                   'Knowledge Graph complete, NAP consistent, schema active',
                   'AI Visibility monitoring running — changes detected within the cycle',
-                  'Authority compounding monthly as content and signals mature',
+                  'Visibility building monthly as content and signals mature',
                   'Clear sight line into share of voice and competitive position',
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">
@@ -440,19 +447,23 @@ export default function ResultsPage() {
           {/* Timeline bar */}
           <div className="mt-8 p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}>
             <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.3)', marginBottom: '1rem' }}>Typical Engagement Timeline</div>
-            <div className="relative flex items-center gap-0">
-              {[
-                { day: 'Day 0', label: 'Authority Score audit' },
-                { day: 'Day 30', label: 'Entity & Knowledge Graph complete' },
-                { day: 'Day 60', label: 'Authority Pages live + first citations' },
-                { day: 'Day 90', label: '90-day review — results documented' },
-              ].map((step, i) => (
-                <div key={i} className="flex-1 flex flex-col items-center text-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-full" style={{ background: i === 0 ? 'rgba(255,255,255,0.2)' : '#BF9B5C' }} />
-                  <div style={{ fontSize: '0.65rem', fontWeight: 700, color: i === 0 ? 'rgba(242,237,228,0.3)' : '#BF9B5C' }}>{step.day}</div>
-                  <div style={{ fontSize: '0.62rem', color: 'rgba(242,237,228,0.35)', lineHeight: 1.4 }}>{step.label}</div>
-                </div>
-              ))}
+            <div className="relative">
+              {/* Connector line */}
+              <div className="absolute top-[5px] left-[calc(12.5%)] right-[calc(12.5%)] h-px" style={{ background: 'rgba(191,155,92,0.25)' }} aria-hidden="true" />
+              <div className="relative flex items-start">
+                {[
+                  { day: 'Day 0', label: 'Authority Score audit' },
+                  { day: 'Day 30', label: 'Entity & Knowledge Graph complete' },
+                  { day: 'Day 60', label: 'Authority Pages live + first citations' },
+                  { day: 'Day 90', label: '90-day review — results documented' },
+                ].map((step, i) => (
+                  <div key={i} className="flex-1 flex flex-col items-center text-center gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full relative z-10" style={{ background: i === 0 ? 'rgba(255,255,255,0.25)' : '#BF9B5C', boxShadow: i > 0 ? '0 0 0 3px rgba(191,155,92,0.15)' : 'none' }} />
+                    <div style={{ fontSize: '0.65rem', fontWeight: 700, color: i === 0 ? 'rgba(242,237,228,0.4)' : '#BF9B5C' }}>{step.day}</div>
+                    <div style={{ fontSize: '0.62rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.4 }}>{step.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Container>
@@ -470,7 +481,7 @@ export default function ResultsPage() {
               How we measure.<br />
               <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>What we hold ourselves to.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
               Every result reported here is measured against a baseline established on Day 0. We don't report directional trends — we report numbers, and we show where they started.
             </p>
           </div>
@@ -480,7 +491,7 @@ export default function ResultsPage() {
                 <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.08em', color: 'rgba(191,155,92,0.55)', flexShrink: 0, paddingTop: '0.1rem' }}>{step.num}</div>
                 <div>
                   <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>{step.title}</h3>
-                  <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.72 }}>{step.desc}</p>
+                  <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.72 }}>{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -506,7 +517,7 @@ export default function ResultsPage() {
             {KPI_DEFINITIONS.map((item, i) => (
               <div key={item.kpi} className="p-6" style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}>
                 <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#BF9B5C', marginBottom: '0.5rem', letterSpacing: '-0.005em' }}>{item.kpi}</div>
-                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.7 }}>{item.def}</p>
+                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.7 }}>{item.def}</p>
               </div>
             ))}
           </div>
@@ -522,8 +533,8 @@ export default function ResultsPage() {
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Client Perspectives</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
-              In their own words.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Secondary to the data.</span>
+              The metrics are the proof.<br />
+              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>These are the stories behind them.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -534,7 +545,7 @@ export default function ResultsPage() {
                 <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.6)', lineHeight: 1.75, fontStyle: 'italic', flex: 1 }}>{t.quote}</p>
                 <footer>
                   <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'rgba(242,237,228,0.5)' }}>{t.author}</div>
-                  <div style={{ fontSize: '0.68rem', color: 'rgba(242,237,228,0.28)' }}>{t.location}</div>
+                  <div style={{ fontSize: '0.68rem', color: 'rgba(242,237,228,0.45)' }}>{t.location}</div>
                 </footer>
               </blockquote>
             ))}
@@ -563,7 +574,7 @@ export default function ResultsPage() {
                 cta: 'Find Your Solution',
               },
               {
-                href: '/insights',
+                href: '/resources',
                 label: 'Authority Library',
                 desc: 'The educational framework behind the P.E.A.R.L. authority system.',
                 cta: 'Read the Library',
@@ -576,7 +587,7 @@ export default function ResultsPage() {
                   <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'rgba(242,237,228,0.75)' }}>{item.label}</div>
                   <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#BF9B5C' }} />
                 </div>
-                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.65, flex: 1 }}>{item.desc}</p>
+                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65, flex: 1 }}>{item.desc}</p>
                 <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#BF9B5C' }}>{item.cta} →</span>
               </Link>
             ))}
@@ -591,7 +602,7 @@ export default function ResultsPage() {
             These are other businesses'<br />results.
             <span style={{ display: 'block', color: '#BF9B5C', fontStyle: 'italic', marginTop: '0.2rem' }}>Yours are next.</span>
           </h2>
-          <p className="mb-10 max-w-md mx-auto" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.8 }}>
+          <p className="mb-10 max-w-md mx-auto" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.8 }}>
             Book a strategy call. We'll run a live Authority Score audit on your business and show you exactly where you stand — before you commit to anything.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

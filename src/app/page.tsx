@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     title: 'HeyPearl — The AI Authority Platform',
     description:
       'Become the authority AI recommends. HeyPearl builds the infrastructure — entity architecture, authority pages, and reputation systems — that makes AI trust and recommend your business.',
-    images: ['/images/og-home.jpg'],
+    images: ['/images/og/og-home.webp'],
   },
-  twitter: { images: ['/images/og-home.jpg'] },
+  twitter: { images: ['/images/og/og-home.webp'] },
 };
 
 const faqSchema = {

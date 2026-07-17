@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GEO Engine — Generative Engine Optimization by HeyPearl',
     description: 'Purpose-built GEO tools for the era when AI generates the answers your buyers are reading.',
+    images: ['/images/og/og-geo-engine.webp'],
   },
 };
 
@@ -58,6 +60,9 @@ export default function GEOEnginePage() {
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
         aria-label="GEO Engine hero"
       >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <Image src="/images/platform/platform-geo-engine.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: 'linear-gradient(rgba(191,155,92,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute -top-40 right-1/4 w-[700px] h-[500px]"

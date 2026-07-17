@@ -38,7 +38,7 @@ export function PricingPreview() {
             <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>not retainers.</span>
           </h2>
           <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.7 }}>
-            Each tier is a complete authority infrastructure built to compound.
+            Each tier is a complete system, not a marketing retainer.
             Start where you are. Move up when the system is ready for it.
           </p>
         </div>

@@ -12,7 +12,7 @@ export function HowItWorks() {
       {/* Texture backdrop */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <Image
-          src="/images/pearl-framework-texture.jpg"
+          src="/images/textures/paper.webp"
           alt=""
           fill
           sizes="100vw"

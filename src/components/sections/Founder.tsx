@@ -7,7 +7,7 @@ import { site } from '@/lib/site';
 const CREDENTIALS = [
   { label: 'Background', value: 'Brokerage & brand operator' },
   { label: 'Approach', value: 'Systems-first, zero hype' },
-  { label: 'Philosophy', value: 'Built to compound for years' },
+  { label: 'Philosophy', value: 'Operator-first, never agency-speak' },
 ];
 
 export function Founder() {

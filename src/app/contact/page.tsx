@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   title: 'Contact — Talk to HeyPearl',
   description:
     'Schedule a strategy call with Misti or contact the HeyPearl team. Authority infrastructure for the AI search era.',
-  openGraph: { images: ['/images/og-contact.jpg'] },
-  twitter: { images: ['/images/og-contact.jpg'] },
+  openGraph: { images: ['/images/og/og-default.webp'] },
+  twitter: { images: ['/images/og/og-default.webp'] },
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
           </>
         }
         description="Choose the front door that fits. Strategy calls are founder-led. The contact channel is for support, partnerships, and operational questions."
-        image="/images/contact-ambient.jpg"
+        image=""
       />
 
       <section className="pb-24">

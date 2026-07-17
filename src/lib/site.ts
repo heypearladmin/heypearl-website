@@ -8,7 +8,7 @@ export const site = {
   shortDescription:
     'We build the systems that help businesses become the authority AI recommends.',
   url: 'https://heypearl.io',
-  ogImage: '/images/og-default.jpg',
+  ogImage: '/images/og/og-default.webp',
   // Misti's Calendly for founder-led strategy calls
   strategyCallUrl: 'https://calendly.com/hey-pearl/meet',
   contact: {
@@ -36,7 +36,7 @@ export const site = {
     facebook: 'https://facebook.com/mistibrutonceo',
     instagram: 'https://instagram.com/themistibruton',
     youtube: 'https://youtube.com/@themistibruton',
-    photo: '/images/misti-headshot.jpg',
+    photo: '/images/about/about-founder.webp',
   },
 } as const;
 

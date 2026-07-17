@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     title: 'PearlOS — The AI Authority Operating System',
     description:
       'The unified intelligence layer that turns five modules into one compounding authority system.',
+    images: ['/images/og/og-pearlos.webp'],
   },
 };
 
@@ -26,7 +28,7 @@ const BUSINESS_OUTCOMES = [
     detail: 'PearlOS coordinates every module so you don\'t have to. Entity signals, content layers, monitoring, and GEO — all running through one operating layer with one strategic direction.',
   },
   {
-    outcome: 'Authority that compounds instead of restarting.',
+    outcome: 'Authority that builds instead of resetting.',
     detail: 'Every month you run PearlOS, the signals accumulate. AI visibility grows without proportional reinvestment — the opposite of ad spend, which stops the moment billing stops.',
   },
 ];
@@ -58,9 +60,9 @@ const FUNCTIONS = [
       'Authority Pages, Authority Score, Knowledge Graph, AI Visibility, and GEO Engine don\'t operate in isolation. PearlOS makes them function as one integrated system.',
   },
   {
-    title: 'Compounding Feedback Loop',
+    title: 'Reinforcing Feedback Loop',
     description:
-      'As authority grows, PearlOS captures what signals are driving AI citations and reinforces them — creating compound returns that increase over time without proportional reinvestment.',
+      'As authority grows, PearlOS captures what signals are driving AI citations and reinforces them — creating returns that increase over time without proportional reinvestment.',
   },
 ];
 
@@ -80,6 +82,9 @@ export default function PearlOSPage() {
         className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
         aria-label="PearlOS hero"
       >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <Image src="/images/platform/platform-pearlos.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        </div>
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
@@ -142,7 +147,7 @@ export default function PearlOSPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
             >
-              Book a Strategy Call
+              See PearlOS in Action
               <ArrowRight size={14} />
             </a>
             <Link
@@ -351,7 +356,7 @@ export default function PearlOSPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
             >
-              Book a Strategy Call
+              See PearlOS in Action
               <ArrowRight size={14} />
             </a>
             <Link

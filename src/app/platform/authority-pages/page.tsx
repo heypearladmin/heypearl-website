@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Authority Pages — AI-Ready Page Architecture',
     description: 'Page infrastructure engineered so every AI engine knows exactly who you are and cites you with confidence.',
+    images: ['/images/og/og-authority-pages.webp'],
   },
 };
 
@@ -56,6 +58,9 @@ export default function AuthorityPagesPage() {
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
         aria-label="Authority Pages hero"
       >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <Image src="/images/platform/platform-authority-pages.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        </div>
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"

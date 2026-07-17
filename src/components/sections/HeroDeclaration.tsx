@@ -72,7 +72,7 @@ export function HeroDeclaration() {
           }}
         >
           Become the Authority<br />
-          <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>
+          <span style={{ color: '#BF9B5C', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
             AI Recommends.
           </span>
         </h1>
@@ -80,7 +80,7 @@ export function HeroDeclaration() {
         {/* Subheadline — confirms the brand, explains the mechanism */}
         <p
           className="mt-7 max-w-[38rem] leading-relaxed"
-          style={{ fontSize: '1.1rem', color: 'rgba(242,237,228,0.58)' }}
+          style={{ fontSize: '1.1rem', color: 'rgba(242,237,228,0.68)' }}
         >
           We build the infrastructure that makes AI engines trust, cite, and recommend your business —
           entity architecture, authority pages, and reputation systems engineered for the AI search era.{' '}

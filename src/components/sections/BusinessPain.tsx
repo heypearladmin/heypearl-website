@@ -9,7 +9,7 @@ const CONSEQUENCES = [
   {
     trigger: 'The businesses winning AI recommendations are investing now.',
     detail:
-      'Authority infrastructure takes 60–90 days to build measurable momentum. The competitors getting cited today started months ago. The window to establish category authority is open — but it closes.',
+      'Visibility infrastructure takes 60–90 days to build measurable momentum. The competitors getting cited today started months ago. The window is open — but it closes.',
   },
   {
     trigger: 'Visibility loss in AI search is silent.',
@@ -98,9 +98,9 @@ export function BusinessPain() {
               }}
             >
               This isn't an SEO problem. It isn't a content problem.
-              It's an{' '}
+              It's a{' '}
               <span style={{ color: '#F2EDE4', fontWeight: 600 }}>
-                AI authority infrastructure problem
+                visibility infrastructure problem
               </span>{' '}
               — and most businesses don't have a systematic solution for it yet.
             </p>
@@ -179,7 +179,7 @@ export function BusinessPain() {
               textAlign: 'center',
             }}
           >
-            "The businesses that build AI authority infrastructure in the next 24 months
+            "The businesses that establish recommendation authority in the next 24 months
             will own their categories for the next decade."
           </p>
           <div className="mt-4 flex items-center justify-center gap-3">

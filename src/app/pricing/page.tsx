@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pricing — Authority Infrastructure Plans by Hey Pearl',
     description: 'Transparent pricing for GEO and HeyLocal authority infrastructure. Every plan is a complete system, not a marketing retainer.',
-    images: ['/images/og-pricing.jpg'],
+    images: ['/images/og/og-pricing.webp'],
   },
-  twitter: { images: ['/images/og-pricing.jpg'] },
+  twitter: { images: ['/images/og/og-pricing.webp'] },
 };
 
 const faqSchema = {
@@ -36,7 +36,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Is there a contract or long-term commitment?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure compounds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure builds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.' },
     },
     {
       '@type': 'Question',
@@ -63,7 +63,7 @@ const pricingFaqs = [
   },
   {
     q: 'Is there a contract or long-term commitment?',
-    a: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure compounds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.',
+    a: 'Hey Pearl engagements are structured as monthly retainers. Authority infrastructure builds over time, so most clients commit to a minimum of three to six months to see meaningful results. Specific terms are discussed during your strategy call.',
   },
   {
     q: 'What is included at every pricing tier?',
@@ -95,7 +95,7 @@ export default function PricingPage() {
           </>
         }
         description="Two product families. Six tiers. Each one a complete authority system, not a marketing retainer."
-        image="/images/pricing-ambient.jpg"
+        image=""
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton
@@ -105,7 +105,7 @@ export default function PricingPage() {
             size="lg"
             withArrow
           >
-            Schedule a Strategy Call
+            Compare Plans
           </LinkButton>
           <LinkButton href="/contact" variant="secondary" size="lg">
             Talk to HeyPearl
@@ -159,7 +159,7 @@ export default function PricingPage() {
       <section className="py-24 relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0">
           <Image
-            src="/images/pricing-texture.jpg"
+            src="/images/textures/paper.webp"
             alt=""
             fill
             sizes="100vw"

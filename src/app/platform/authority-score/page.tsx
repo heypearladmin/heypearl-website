@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Authority Score — Measure and Track Your AI Visibility',
     description: "The scoring system that tells you exactly where you stand in AI search — and what to fix first.",
+    images: ['/images/og/og-authority-score.webp'],
   },
 };
 
@@ -39,6 +41,9 @@ export default function AuthorityScorePage() {
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
         aria-label="Authority Score hero"
       >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <Image src="/images/platform/platform-authority-score.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        </div>
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
