@@ -43,8 +43,8 @@ export default function ServicesPage() {
           >
             Schedule a Strategy Call
           </LinkButton>
-          <LinkButton href="/pricing" variant="secondary" size="lg">
-            See pricing
+          <LinkButton href="/get-started" variant="secondary" size="lg">
+            Find Your Solution
           </LinkButton>
         </div>
       </PageHero>

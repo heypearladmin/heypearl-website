@@ -16,7 +16,7 @@ type LogoProps = {
  */
 export function Logo({ variant = 'default', className, href = '/' }: LogoProps) {
   const isInverse = variant === 'inverse';
-  const src = isInverse ? '/images/logo-inverse.png' : '/images/logo.png';
+  const src = isInverse ? '/images/heypearl-logo-light.png' : '/images/logo.png';
 
   return (
     <Link

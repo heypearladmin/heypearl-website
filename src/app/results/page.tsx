@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { Reveal } from '@/components/ui/Reveal';
 import { Container } from '@/components/ui/Container';
 import { site } from '@/lib/site';
 
@@ -138,7 +139,7 @@ const TESTIMONIALS = [
 
 // ─── SVG Components ───────────────────────────────────────────────────────────
 
-function RingChart({ value, max = 100, size = 80, stroke = 7, color = '#BF9B5C' }: {
+function RingChart({ value, max = 100, size = 80, stroke = 7, color = '#C2185B' }: {
   value: number; max?: number; size?: number; stroke?: number; color?: string;
 }) {
   const r = (size - stroke) / 2;
@@ -147,7 +148,7 @@ function RingChart({ value, max = 100, size = 80, stroke = 7, color = '#BF9B5C' 
   const cx = size / 2;
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden>
-      <circle cx={cx} cy={cx} r={r} fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth={stroke} />
+      <circle cx={cx} cy={cx} r={r} fill="none" stroke="rgba(48,72,111,0.35)" strokeWidth={stroke} />
       <circle cx={cx} cy={cx} r={r} fill="none" stroke={color} strokeWidth={stroke}
         strokeDasharray={`${filled} ${circ}`} strokeLinecap="round"
         transform={`rotate(-90 ${cx} ${cx})`} />
@@ -155,14 +156,14 @@ function RingChart({ value, max = 100, size = 80, stroke = 7, color = '#BF9B5C' 
   );
 }
 
-function BarRow({ label, value, max = 100, color = '#BF9B5C' }: {
+function BarRow({ label, value, max = 100, color = '#C2185B' }: {
   label: string; value: number; max?: number; color?: string;
 }) {
   const pct = Math.round((value / max) * 100);
   return (
     <div className="flex items-center gap-3">
-      <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.58)', width: '7rem', flexShrink: 0, textAlign: 'right' }}>{label}</div>
-      <div className="flex-1 h-1.5 rounded-full" style={{ background: 'rgba(255,255,255,0.05)' }}>
+      <div style={{ fontSize: '0.72rem', color: '#C9D3E3', width: '7rem', flexShrink: 0, textAlign: 'right' }}>{label}</div>
+      <div className="flex-1 h-1.5 rounded-full" style={{ background: 'rgba(48,72,111,0.35)' }}>
         <div className="h-full rounded-full" style={{ width: `${pct}%`, background: color }} />
       </div>
       <div style={{ fontSize: '0.72rem', fontWeight: 700, color, width: '2rem', flexShrink: 0 }}>{value}</div>
@@ -177,87 +178,98 @@ export default function ResultsPage() {
     <>
       {/* Hero */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-[#07142F] overflow-hidden"
         aria-label="Results hero"
       >
-        <div aria-hidden className="pointer-events-none absolute inset-0">
-          <Image src="/images/results/results-dashboard.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
-        </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(191,155,92,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px]"
-          style={{ background: 'radial-gradient(ellipse at top, rgba(191,155,92,0.09) 0%, transparent 60%)' }} />
+          style={{ background: 'radial-gradient(ellipse at top, rgba(194,24,91,0.09) 0%, transparent 60%)' }} />
 
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.5)' }} aria-hidden />
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The Proof Center
             </span>
           </div>
-          <h1 className="max-w-4xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.8rem, 6.5vw, 5.5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.02, letterSpacing: '-0.03em' }}>
+          <h1 className="max-w-4xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.8rem, 6.5vw, 5.5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.02, letterSpacing: '-0.03em' }}>
             Measurable authority.<br />
-            <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Documented outcomes.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Documented outcomes.</span>
           </h1>
-          <p className="mt-6 max-w-[38rem]" style={{ fontSize: '1.05rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.8 }}>
+          <p className="mt-6 max-w-[38rem]" style={{ fontSize: '1.05rem', color: '#C9D3E3', lineHeight: 1.8 }}>
             Every claim on this page is backed by client data from real PearlOS engagements. These are not satisfaction scores. They are measurable changes in AI authority — tracked from Day 1 through Day 90 and beyond.
           </p>
 
           {/* Hero stat strip */}
           <div className="mt-12 grid grid-cols-3 gap-px max-w-2xl"
-            style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '0.875rem', overflow: 'hidden' }}>
+            style={{ border: '1px solid rgba(48,72,111,0.35)', borderRadius: '0.875rem', overflow: 'hidden' }}>
             {[
               { stat: '3.2×', sub: 'avg. AI recommendation increase' },
               { stat: '47', unit: ' days', sub: 'avg. to first AI citation' },
               { stat: '94%', sub: 'avg. Knowledge Graph completion' },
             ].map((s, i) => (
-              <div key={i} className="px-4 sm:px-6 py-5" style={{ background: i === 1 ? 'rgba(191,155,92,0.06)' : '#0D0D0D' }}>
-                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1, whiteSpace: 'nowrap' }}>
+              <div key={i} className="px-4 sm:px-6 py-5" style={{ background: i === 1 ? 'rgba(194,24,91,0.06)' : '#07142F' }}>
+                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#C2185B', lineHeight: 1, whiteSpace: 'nowrap' }}>
                   {s.stat}{s.unit && <span style={{ fontSize: '0.75em' }}>{s.unit}</span>}
                 </div>
-                <div className="mt-1" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.4 }}>{s.sub}</div>
+                <div className="mt-1" style={{ fontSize: '0.72rem', color: '#C9D3E3', lineHeight: 1.4 }}>{s.sub}</div>
               </div>
             ))}
           </div>
         </Container>
       </section>
 
-      {/* Dashboard */}
-      <section className="py-24 bg-[#0A0A0A]" aria-label="Results dashboard">
+      {/* Dashboard preview images */}
+      <section className="py-16 bg-[#07142F]">
         <Container size="lg">
-          <div className="mb-12">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Performance Dashboard</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: '16/10', border: '1px solid rgba(182,146,94,0.15)', boxShadow: '0 24px 48px rgba(3,8,20,0.5)' }}>
+              <Image src="/images/results/results-dashboard.webp" alt="Results dashboard" fill sizes="50vw" className="object-cover" />
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
-              Across all active engagements.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Averaged at 90 days.</span>
-            </h2>
+            <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: '16/10', border: '1px solid rgba(182,146,94,0.12)', boxShadow: '0 24px 48px rgba(3,8,20,0.5)' }}>
+              <Image src="/images/results/results-metrics.webp" alt="Results metrics" fill sizes="50vw" className="object-cover" />
+            </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Dashboard */}
+      <section className="py-24 bg-[#14284A]" aria-label="Results dashboard">
+        <Container size="lg">
+          <Reveal className="mb-12">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Performance Dashboard</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+              Across all active engagements.<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Averaged at 90 days.</span>
+            </h2>
+          </Reveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {DASHBOARD_METRICS.map((m, i) => (
               <div key={i} className="p-6 rounded-xl flex flex-col gap-3"
-                style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.06)' }}>
-                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1 }}>{m.value}</div>
+                style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(48,72,111,0.4)' }}>
+                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 700, color: '#C2185B', lineHeight: 1 }}>{m.value}</div>
                 <div>
-                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#F2EDE4', lineHeight: 1.4, marginBottom: '0.2rem' }}>{m.label}</div>
-                  <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.52)' }}>{m.sub}</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#F8F6F2', lineHeight: 1.4, marginBottom: '0.2rem' }}>{m.label}</div>
+                  <div style={{ fontSize: '0.72rem', color: '#C9D3E3' }}>{m.sub}</div>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Authority Score progress panel */}
-          <div className="mt-8 p-7 lg:p-9 rounded-2xl" style={{ background: 'rgba(191,155,92,0.04)', border: '1px solid rgba(191,155,92,0.1)' }}>
+          <div className="mt-8 p-7 lg:p-9 rounded-2xl" style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.1)' }}>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
               <div className="flex-1">
-                <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C', marginBottom: '0.75rem' }}>Authority Score — Typical Progression</div>
-                <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.2, marginBottom: '0.75rem' }}>
+                <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>Authority Score — Typical Progression</div>
+                <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.2, marginBottom: '0.75rem' }}>
                   From baseline to competitive<br />authority in 90 days.
                 </h3>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
+                <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.75 }}>
                   Authority Score is a 0–100 composite metric measured at engagement start, Day 30, Day 60, and Day 90. Most clients enter with a score between 18–35. The 90-day average across all engagements is 86.
                 </p>
               </div>
@@ -283,35 +295,35 @@ export default function ResultsPage() {
               { label: 'Schema Coverage', value: 89 },
             ].map((item) => (
               <div key={item.label} className="p-5 rounded-xl flex flex-col items-center gap-3"
-                style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}>
+                style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(48,72,111,0.35)' }}>
                 <div className="relative flex items-center justify-center">
                   <RingChart value={item.value} size={72} stroke={6} />
-                  <span style={{ position: 'absolute', fontSize: '0.8rem', fontWeight: 700, color: '#BF9B5C' }}>{item.value}%</span>
+                  <span style={{ position: 'absolute', fontSize: '0.8rem', fontWeight: 700, color: '#C2185B' }}>{item.value}%</span>
                 </div>
-                <div style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.58)', textAlign: 'center', lineHeight: 1.4 }}>{item.label}</div>
+                <div style={{ fontSize: '0.72rem', color: '#C9D3E3', textAlign: 'center', lineHeight: 1.4 }}>{item.label}</div>
               </div>
             ))}
           </div>
 
-          <p className="mt-5" style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.40)', lineHeight: 1.6 }}>
+          <p className="mt-5" style={{ fontSize: '0.72rem', color: '#98A6BE', lineHeight: 1.6 }}>
             All metrics represent averages across HeyPearl client engagements at the 90-day mark. Individual results vary by market, category, and engagement scope.
           </p>
         </Container>
       </section>
 
       {/* Case Studies */}
-      <section className="py-28 bg-[#090909]" aria-label="Case studies">
+      <section className="py-28 bg-[#07142F]" aria-label="Case studies">
         <Container size="lg">
           <div className="mb-16 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Featured Case Studies</span>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Featured Case Studies</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Real clients.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Documented outcomes.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Documented outcomes.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: '#C9D3E3', lineHeight: 1.75 }}>
               Client details are anonymized by request. Market context and results are real.
             </p>
           </div>
@@ -319,64 +331,64 @@ export default function ResultsPage() {
           <div className="space-y-8">
             {CASE_STUDIES.map((cs, idx) => (
               <div key={cs.id} className="rounded-2xl overflow-hidden"
-                style={{ border: '1px solid rgba(255,255,255,0.06)', background: '#0C0C0C' }}>
+                style={{ border: '1px solid rgba(48,72,111,0.4)', background: '#14284A' }}>
                 {/* Card header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 px-8 py-5"
-                  style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', background: 'rgba(191,155,92,0.04)' }}>
+                  style={{ borderBottom: '1px solid rgba(48,72,111,0.35)', background: 'rgba(194,24,91,0.04)' }}>
                   <div className="flex items-center gap-4">
-                    <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(191,155,92,0.6)' }}>{cs.label}</span>
+                    <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.6)' }}>{cs.label}</span>
                     <span style={{ fontSize: '0.62rem', color: 'rgba(255,255,255,0.12)' }}>·</span>
-                    <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'rgba(242,237,228,0.55)' }}>{cs.client} — {cs.location}</span>
+                    <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#C9D3E3' }}>{cs.client} — {cs.location}</span>
                     <span style={{ fontSize: '0.62rem', color: 'rgba(255,255,255,0.12)' }}>·</span>
-                    <span style={{ fontSize: '0.62rem', color: 'rgba(191,155,92,0.5)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>{cs.segment}</span>
+                    <span style={{ fontSize: '0.62rem', color: 'rgba(182,146,94,0.5)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>{cs.segment}</span>
                   </div>
-                  <div style={{ fontSize: '0.68rem', color: 'rgba(242,237,228,0.3)', fontWeight: 500 }}>
-                    Timeline: <span style={{ color: '#BF9B5C', fontWeight: 700 }}>{cs.timeline}</span>
+                  <div style={{ fontSize: '0.68rem', color: '#98A6BE', fontWeight: 500 }}>
+                    Timeline: <span style={{ color: '#C2185B', fontWeight: 700 }}>{cs.timeline}</span>
                   </div>
                 </div>
 
                 {/* Card body */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-px" style={{ background: 'rgba(255,255,255,0.04)' }}>
                   {/* Left: narrative */}
-                  <div className="p-8 space-y-6" style={{ background: '#0C0C0C' }}>
+                  <div className="p-8 space-y-6" style={{ background: '#14284A' }}>
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>The Challenge</div>
-                      <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75 }}>{cs.challenge}</p>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#98A6BE', marginBottom: '0.5rem' }}>The Challenge</div>
+                      <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.75 }}>{cs.challenge}</p>
                     </div>
-                    <div className="h-px" style={{ background: 'rgba(255,255,255,0.05)' }} />
+                    <div className="h-px" style={{ background: 'rgba(48,72,111,0.35)' }} />
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>The Solution</div>
-                      <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.52)', lineHeight: 1.75 }}>{cs.solution}</p>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#98A6BE', marginBottom: '0.5rem' }}>The Solution</div>
+                      <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.75 }}>{cs.solution}</p>
                     </div>
-                    <div className="h-px" style={{ background: 'rgba(255,255,255,0.05)' }} />
+                    <div className="h-px" style={{ background: 'rgba(48,72,111,0.35)' }} />
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.45)', marginBottom: '0.5rem' }}>Modules Used</div>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#98A6BE', marginBottom: '0.5rem' }}>Modules Used</div>
                       <div className="flex flex-wrap gap-2">
                         {cs.modules.map((m) => (
-                          <span key={m} style={{ fontSize: '0.68rem', fontWeight: 600, color: '#BF9B5C', background: 'rgba(191,155,92,0.08)', border: '1px solid rgba(191,155,92,0.2)', borderRadius: '0.375rem', padding: '0.2rem 0.6rem' }}>{m}</span>
+                          <span key={m} style={{ fontSize: '0.68rem', fontWeight: 600, color: '#C2185B', background: 'rgba(194,24,91,0.08)', border: '1px solid rgba(182,146,94,0.2)', borderRadius: '0.375rem', padding: '0.2rem 0.6rem' }}>{m}</span>
                         ))}
                       </div>
                     </div>
                   </div>
 
                   {/* Right: results */}
-                  <div className="p-8 flex flex-col gap-6" style={{ background: '#0E0E0E' }}>
+                  <div className="p-8 flex flex-col gap-6" style={{ background: '#1D355D' }}>
                     <div>
-                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(191,155,92,0.55)', marginBottom: '1rem' }}>Measured Results</div>
+                      <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.55)', marginBottom: '1rem' }}>Measured Results</div>
                       <div className="space-y-4">
                         {cs.results.map((r, i) => (
                           <div key={i} className="flex items-start gap-4">
-                            <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 700, color: '#BF9B5C', lineHeight: 1, flexShrink: 0, width: '5rem' }}>{r.metric}</div>
-                            <div style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.65, paddingTop: '0.25rem' }}>{r.label}</div>
+                            <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 700, color: '#C2185B', lineHeight: 1, flexShrink: 0, width: '5rem' }}>{r.metric}</div>
+                            <div style={{ fontSize: '0.82rem', color: '#98A6BE', lineHeight: 1.65, paddingTop: '0.25rem' }}>{r.label}</div>
                           </div>
                         ))}
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <div className="h-px mb-5" style={{ background: 'rgba(255,255,255,0.05)' }} />
+                      <div className="h-px mb-5" style={{ background: 'rgba(48,72,111,0.35)' }} />
                       <blockquote>
-                        <p style={{ fontSize: '0.875rem', fontStyle: 'italic', color: 'rgba(242,237,228,0.6)', lineHeight: 1.7, marginBottom: '0.5rem' }}>"{cs.quote}"</p>
-                        <footer style={{ fontSize: '0.68rem', color: 'rgba(242,237,228,0.3)' }}>— {cs.client}, {cs.location}</footer>
+                        <p style={{ fontSize: '0.875rem', fontStyle: 'italic', color: '#C9D3E3', lineHeight: 1.7, marginBottom: '0.5rem' }}>"{cs.quote}"</p>
+                        <footer style={{ fontSize: '0.68rem', color: '#98A6BE' }}>— {cs.client}, {cs.location}</footer>
                       </blockquote>
                     </div>
                   </div>
@@ -388,24 +400,24 @@ export default function ResultsPage() {
       </section>
 
       {/* Before / After */}
-      <section className="py-24 bg-[#0B0B0B]" aria-label="Before and after">
+      <section className="py-24 bg-[#14284A]" aria-label="Before and after">
         <Container size="lg">
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Before vs. After</span>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Before vs. After</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               What changes.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>What stays the same.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>What stays the same.</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px rounded-2xl overflow-hidden"
-            style={{ border: '1px solid rgba(255,255,255,0.06)' }}>
+            style={{ border: '1px solid rgba(48,72,111,0.4)' }}>
             {/* Before */}
-            <div className="p-8" style={{ background: '#0D0D0D' }}>
-              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.3)', marginBottom: '1.5rem' }}>Before PearlOS</div>
+            <div className="p-8" style={{ background: '#07142F' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#98A6BE', marginBottom: '1.5rem' }}>Before PearlOS</div>
               <div className="space-y-4">
                 {[
                   'AI engines cannot confidently identify or categorize the business',
@@ -416,16 +428,16 @@ export default function ResultsPage() {
                   'AI visibility loss is silent — you find out when leads drop',
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">
-                    <span style={{ color: 'rgba(242,237,228,0.2)', flexShrink: 0, marginTop: '0.15rem' }}>—</span>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65 }}>{item}</p>
+                    <span style={{ color: 'rgba(245,241,232,0.2)', flexShrink: 0, marginTop: '0.15rem' }}>—</span>
+                    <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.65 }}>{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* After */}
-            <div className="p-8" style={{ background: '#0F0F0F' }}>
-              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C', marginBottom: '1.5rem' }}>After 90 Days</div>
+            <div className="p-8" style={{ background: '#1D355D' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1.5rem' }}>After 90 Days</div>
               <div className="space-y-4">
                 {[
                   'Verified entity — correctly categorized across all six AI engines',
@@ -436,8 +448,8 @@ export default function ResultsPage() {
                   'Clear sight line into share of voice and competitive position',
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">
-                    <span style={{ color: '#BF9B5C', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.65)', lineHeight: 1.65 }}>{item}</p>
+                    <span style={{ color: '#C2185B', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
+                    <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.65 }}>{item}</p>
                   </div>
                 ))}
               </div>
@@ -445,11 +457,11 @@ export default function ResultsPage() {
           </div>
 
           {/* Timeline bar */}
-          <div className="mt-8 p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}>
-            <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.3)', marginBottom: '1rem' }}>Typical Engagement Timeline</div>
+          <div className="mt-8 p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(48,72,111,0.35)' }}>
+            <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#98A6BE', marginBottom: '1rem' }}>Typical Engagement Timeline</div>
             <div className="relative">
               {/* Connector line */}
-              <div className="absolute top-[5px] left-[calc(12.5%)] right-[calc(12.5%)] h-px" style={{ background: 'rgba(191,155,92,0.25)' }} aria-hidden="true" />
+              <div className="absolute top-[5px] left-[calc(12.5%)] right-[calc(12.5%)] h-px" style={{ background: 'rgba(182,146,94,0.25)' }} aria-hidden="true" />
               <div className="relative flex items-start">
                 {[
                   { day: 'Day 0', label: 'Authority Score audit' },
@@ -458,9 +470,9 @@ export default function ResultsPage() {
                   { day: 'Day 90', label: '90-day review — results documented' },
                 ].map((step, i) => (
                   <div key={i} className="flex-1 flex flex-col items-center text-center gap-2">
-                    <div className="w-2.5 h-2.5 rounded-full relative z-10" style={{ background: i === 0 ? 'rgba(255,255,255,0.25)' : '#BF9B5C', boxShadow: i > 0 ? '0 0 0 3px rgba(191,155,92,0.15)' : 'none' }} />
-                    <div style={{ fontSize: '0.65rem', fontWeight: 700, color: i === 0 ? 'rgba(242,237,228,0.4)' : '#BF9B5C' }}>{step.day}</div>
-                    <div style={{ fontSize: '0.62rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.4 }}>{step.label}</div>
+                    <div className="w-2.5 h-2.5 rounded-full relative z-10" style={{ background: i === 0 ? 'rgba(255,255,255,0.25)' : '#C2185B', boxShadow: i > 0 ? '0 0 0 3px rgba(194,24,91,0.15)' : 'none' }} />
+                    <div style={{ fontSize: '0.65rem', fontWeight: 700, color: i === 0 ? '#98A6BE' : '#C2185B' }}>{step.day}</div>
+                    <div style={{ fontSize: '0.62rem', color: '#98A6BE', lineHeight: 1.4 }}>{step.label}</div>
                   </div>
                 ))}
               </div>
@@ -470,54 +482,56 @@ export default function ResultsPage() {
       </section>
 
       {/* Methodology */}
-      <section className="py-28 bg-[#090909]" aria-label="Methodology">
+      <section className="py-28 bg-[#07142F]" aria-label="Methodology">
         <Container size="lg">
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Methodology</span>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Methodology</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               How we measure.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>What we hold ourselves to.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>What we hold ourselves to.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: '#C9D3E3', lineHeight: 1.75 }}>
               Every result reported here is measured against a baseline established on Day 0. We don't report directional trends — we report numbers, and we show where they started.
             </p>
           </div>
-          <div className="space-y-px rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.05)' }}>
+          <div className="space-y-px rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(48,72,111,0.35)' }}>
             {METHODOLOGY_STEPS.map((step, i) => (
-              <div key={step.num} className="flex gap-6 p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}>
-                <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.08em', color: 'rgba(191,155,92,0.55)', flexShrink: 0, paddingTop: '0.1rem' }}>{step.num}</div>
-                <div>
-                  <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F2EDE4', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>{step.title}</h3>
-                  <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.72 }}>{step.desc}</p>
+              <Reveal key={step.num} delay={i * 0.08}>
+                <div className="flex gap-6 p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#07142F' : '#14284A' }}>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.08em', color: 'rgba(182,146,94,0.55)', flexShrink: 0, paddingTop: '0.1rem' }}>{step.num}</div>
+                  <div>
+                    <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>{step.title}</h3>
+                    <p style={{ fontSize: '0.845rem', color: '#C9D3E3', lineHeight: 1.72 }}>{step.desc}</p>
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </Container>
       </section>
 
       {/* KPI Definitions */}
-      <section className="py-20 bg-[#0A0A0A]" aria-label="KPI definitions">
+      <section className="py-20 bg-[#14284A]" aria-label="KPI definitions">
         <Container size="lg">
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>What the Numbers Mean</span>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What the Numbers Mean</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               Six KPIs.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>Each one defined.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Each one defined.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px rounded-2xl overflow-hidden"
-            style={{ border: '1px solid rgba(255,255,255,0.05)' }}>
+            style={{ border: '1px solid rgba(48,72,111,0.35)' }}>
             {KPI_DEFINITIONS.map((item, i) => (
-              <div key={item.kpi} className="p-6" style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}>
-                <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#BF9B5C', marginBottom: '0.5rem', letterSpacing: '-0.005em' }}>{item.kpi}</div>
-                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.7 }}>{item.def}</p>
+              <div key={item.kpi} className="p-6" style={{ background: i % 2 === 0 ? '#07142F' : '#14284A' }}>
+                <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.5rem', letterSpacing: '-0.005em' }}>{item.kpi}</div>
+                <p style={{ fontSize: '0.82rem', color: '#C9D3E3', lineHeight: 1.7 }}>{item.def}</p>
               </div>
             ))}
           </div>
@@ -525,27 +539,27 @@ export default function ResultsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-[#090909]" aria-label="Client perspectives">
+      <section className="py-24 bg-[#07142F]" aria-label="Client perspectives">
         <Container size="lg">
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>Client Perspectives</span>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Client Perspectives</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               The metrics are the proof.<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>These are the stories behind them.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>These are the stories behind them.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {TESTIMONIALS.map((t, i) => (
               <blockquote key={i} className="p-7 rounded-xl flex flex-col gap-5"
-                style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.06)' }}>
-                <div style={{ fontSize: '1.5rem', color: 'rgba(191,155,92,0.3)', lineHeight: 1, fontFamily: 'Georgia, serif' }}>"</div>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.6)', lineHeight: 1.75, fontStyle: 'italic', flex: 1 }}>{t.quote}</p>
+                style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(48,72,111,0.4)' }}>
+                <div style={{ fontSize: '1.5rem', color: 'rgba(182,146,94,0.3)', lineHeight: 1, fontFamily: 'Georgia, serif' }}>"</div>
+                <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.75, fontStyle: 'italic', flex: 1 }}>{t.quote}</p>
                 <footer>
-                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'rgba(242,237,228,0.5)' }}>{t.author}</div>
-                  <div style={{ fontSize: '0.68rem', color: 'rgba(242,237,228,0.45)' }}>{t.location}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#98A6BE' }}>{t.author}</div>
+                  <div style={{ fontSize: '0.68rem', color: '#98A6BE' }}>{t.location}</div>
                 </footer>
               </blockquote>
             ))}
@@ -554,10 +568,10 @@ export default function ResultsPage() {
       </section>
 
       {/* Related Resources */}
-      <section className="py-20 bg-[#0A0A0A]">
+      <section className="py-20 bg-[#14284A]">
         <Container size="lg">
           <div className="mb-10">
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>What to Explore Next</span>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What to Explore Next</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
@@ -582,13 +596,13 @@ export default function ResultsPage() {
             ].map((item) => (
               <Link key={item.href} href={item.href}
                 className="group flex flex-col gap-4 p-6 rounded-xl hover:bg-white/[0.02] transition-colors duration-200"
-                style={{ border: '1px solid rgba(255,255,255,0.06)' }}>
+                style={{ border: '1px solid rgba(48,72,111,0.4)' }}>
                 <div className="flex items-center justify-between">
-                  <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'rgba(242,237,228,0.75)' }}>{item.label}</div>
-                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#BF9B5C' }} />
+                  <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#C9D3E3' }}>{item.label}</div>
+                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#C2185B' }} />
                 </div>
-                <p style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.65, flex: 1 }}>{item.desc}</p>
-                <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#BF9B5C' }}>{item.cta} →</span>
+                <p style={{ fontSize: '0.82rem', color: '#C9D3E3', lineHeight: 1.65, flex: 1 }}>{item.desc}</p>
+                <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#C2185B' }}>{item.cta} →</span>
               </Link>
             ))}
           </div>
@@ -596,22 +610,22 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 bg-[#090909]">
+      <section className="py-28 bg-[#07142F]">
         <Container size="md" className="text-center">
-          <h2 className="mb-5 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, color: '#F2EDE4', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
+          <h2 className="mb-5 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.025em' }}>
             These are other businesses'<br />results.
-            <span style={{ display: 'block', color: '#BF9B5C', fontStyle: 'italic', marginTop: '0.2rem' }}>Yours are next.</span>
+            <span style={{ display: 'block', color: '#C2185B', fontStyle: 'italic', marginTop: '0.2rem' }}>Yours are next.</span>
           </h2>
-          <p className="mb-10 max-w-md mx-auto" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.8 }}>
+          <p className="mb-10 max-w-md mx-auto" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.8 }}>
             Book a strategy call. We'll run a live Authority Score audit on your business and show you exactly where you stand — before you commit to anything.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-9 py-4 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-9 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(242,237,228,0.55)' }}>
+              style={{ border: '1px solid rgba(255,255,255,0.1)', color: '#C9D3E3' }}>
               Explore the Platform <ArrowRight size={14} />
             </Link>
           </div>

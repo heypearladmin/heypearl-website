@@ -3,67 +3,90 @@
 @tailwind utilities;
 
 /* ─────────────────────────────────────────────────────────────────────────
-   HeyPearl 3.0 — Design System CSS
-   Two themes, one brand.
+   HeyPearl 5.0 — AI Authority Platform — Onboarding-Inspired Design System
 
-   Dark Conversion Theme  — homepage, platform, solutions, pricing, company
-   Editorial Light Theme  — resources, blog, faq, glossary, guides
+   Dark Conversion Theme  — homepage, platform, solutions, company
+     Ground:   #07142F  deep navy (--hp-black)
+     Surface:  #14284A  mid navy  (--hp-ink)
+     Card:     #1D355D  card navy (--hp-charcoal)
+     Accent:   #C2185B  magenta   (--hp-magenta)
+     Hover:    #D62F73  magenta+  (--hp-magenta-hover)
+     Text 1:   #F8F6F2  warm cream (--hp-ivory)
+     Text 2:   #C9D3E3  cool slate (--hp-secondary)
+     Text 3:   #98A6BE  muted slate (--hp-muted)
+     Border:   #30486F  navy border (--hp-border-dark)
+     Neutral:  #D8CDBF  warm sand  (--hp-warm-neutral)
+
+   Editorial Light Theme  — resources, blog, faq
+     Ground:   #F8F6F2  warm cream
+     Surface:  #EDE4D4  warm sand
+     Ink:      #07142F  deep navy headings
+     Border:   #D8CDBF  warm sand dividers
    ───────────────────────────────────────────────────────────────────────── */
 
 :root {
   /* ── Raw palette ──────────────────────────────────────────────── */
-  --hp-black:    #090909;
-  --hp-ink:      #161616;
-  --hp-charcoal: #1C1C1C;
-  --hp-gold:     #BF9B5C;
-  --hp-ivory:    #F2EDE4;
-  --hp-magenta:  #C03070;
-  --hp-cream:    #F5F0E8;
-  --hp-bone:     #EDE7DC;
-  --hp-near-black: #1A1A1A;
-  --hp-warm-dark:  #2A2520;
-  --hp-border:   #E0D9CF;
+  --hp-black:        #07142F;   /* primary bg — deep navy */
+  --hp-ink:          #14284A;   /* secondary bg — mid navy */
+  --hp-charcoal:     #1D355D;   /* card/surface — card navy */
+  --hp-gold:         #B6925E;   /* muted gold — awards/badges only */
+  --hp-ivory:        #F8F6F2;   /* primary text on dark */
+  --hp-secondary:    #C9D3E3;   /* secondary text — cool blue slate */
+  --hp-muted:        #98A6BE;   /* muted text — labels, captions */
+  --hp-magenta:      #C2185B;   /* primary interactive accent */
+  --hp-magenta-hover:#D62F73;   /* hover state for magenta */
+  --hp-cream:        #F8F6F2;   /* warm cream bg */
+  --hp-bone:         #EDE4D4;   /* warm sand surface */
+  --hp-near-black:   #07142F;   /* editorial headings */
+  --hp-warm-dark:    #2A2520;
+  --hp-border:       #D8CDBF;   /* warm sand border (editorial) */
+  --hp-border-dark:  #30486F;   /* navy border (dark theme) */
+  --hp-warm-neutral: #D8CDBF;   /* warm sand — rare accent use */
 
-  /* ── Legacy tokens (light editorial default) ──────────────────── */
-  --cream:   #F5F0E8;
-  --lavender:#EDE7DC;
+  /* ── Legacy compat ────────────────────────────────────────────── */
+  --cream:   #F8F6F2;
+  --lavender:#EDE4D4;
   --orange:  #FF914D;
-  --magenta: #C03070;
-  --plum:    #0E0E0E;
-  --navy:    #1A1A1A;
+  --magenta: #C2185B;
+  --plum:    #07142F;
+  --navy:    #07142F;
   --blush:   #FED0D1;
   --slate:   #2A2520;
   --gray:    #737373;
-  --gold:    #BF9B5C;
+  --gold:    #B6925E;
 
-  /* ── Semantic dark-theme tokens (used on data-theme="dark" pages) */
-  --bg:      var(--hp-black);
-  --surface: var(--hp-ink);
-  --border-color: rgba(255,255,255,0.08);
-  --text:    var(--hp-ivory);
-  --text-dim:rgba(242,237,228,0.6);
-  --accent:  var(--hp-gold);
+  /* ── Semantic dark-theme tokens ───────────────────────────────── */
+  --bg:           var(--hp-black);
+  --surface:      var(--hp-ink);
+  --border-color: var(--hp-border-dark);
+  --text:         var(--hp-ivory);
+  --text-dim:     var(--hp-secondary);
+  --text-muted:   var(--hp-muted);
+  --accent:       var(--hp-magenta);
+  --accent-hover: var(--hp-magenta-hover);
 }
 
-/* ── Dark theme data attribute (set on <main> or section wrappers) ── */
 [data-theme="dark"] {
-  --bg:      var(--hp-black);
-  --surface: var(--hp-ink);
-  --border-color: rgba(255,255,255,0.08);
-  --text:    var(--hp-ivory);
-  --text-dim:rgba(242,237,228,0.6);
-  --accent:  var(--hp-gold);
+  --bg:           var(--hp-black);
+  --surface:      var(--hp-ink);
+  --border-color: var(--hp-border-dark);
+  --text:         var(--hp-ivory);
+  --text-dim:     var(--hp-secondary);
+  --text-muted:   var(--hp-muted);
+  --accent:       var(--hp-magenta);
+  --accent-hover: var(--hp-magenta-hover);
   color-scheme: dark;
 }
 
-/* ── Editorial light theme ────────────────────────────────────────── */
 [data-theme="light"] {
-  --bg:      var(--hp-cream);
-  --surface: var(--hp-bone);
+  --bg:           var(--hp-cream);
+  --surface:      var(--hp-bone);
   --border-color: var(--hp-border);
-  --text:    var(--hp-near-black);
-  --text-dim:#5C574F;
-  --accent:  var(--hp-gold);
+  --text:         var(--hp-near-black);
+  --text-dim:     rgba(7,20,47,0.55);
+  --text-muted:   rgba(7,20,47,0.38);
+  --accent:       var(--hp-magenta);
+  --accent-hover: var(--hp-magenta-hover);
   color-scheme: light;
 }
 
@@ -90,30 +113,27 @@ body {
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
-/* Dark sections invert body defaults */
 .dark-section {
   background: var(--hp-black);
   color: var(--hp-ivory);
 }
-.dark-section p { color: rgba(242,237,228,0.6); }
+.dark-section p { color: var(--hp-secondary); }
 .dark-section strong { color: var(--hp-ivory); }
 
 ::selection {
-  background: var(--hp-gold);
-  color: var(--hp-black);
+  background: var(--hp-magenta);
+  color: #fff;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
    Typography
    ───────────────────────────────────────────────────────────────────────── */
 
-/* Playfair Display display headings */
 .font-display {
   font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
   font-weight: 700;
 }
 
-/* Editorial label — category/eyebrow text */
 .label-editorial {
   font-size: 0.67rem;
   font-weight: 600;
@@ -121,7 +141,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Reading body — editorial light pages */
 .prose-editorial {
   font-size: 1rem;
   line-height: 1.8;
@@ -147,7 +166,7 @@ body {
 }
 .prose-editorial p { margin-top: 1.25rem; }
 .prose-editorial a {
-  color: var(--hp-gold);
+  color: var(--hp-magenta);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -156,24 +175,21 @@ body {
    Utility classes
    ───────────────────────────────────────────────────────────────────────── */
 
-/* Film grain overlay */
 .grain::before {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.025;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Gold rule */
 .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(191,155,92,0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(194,24,91,0.35), transparent);
 }
 
-/* Premium link underline */
 .link-underline {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px;
@@ -183,19 +199,14 @@ body {
 }
 .link-underline:hover { background-size: 100% 1px; }
 
-/* Scroll-driven fade utility */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.fade-in.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
+.fade-in.in-view { opacity: 1; transform: translateY(0); }
 
-/* Eyebrow (keep for legacy components) */
 .eyebrow {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
@@ -203,37 +214,33 @@ body {
   font-weight: 500;
 }
 
-/* Hide scrollbar in horizontal scrollers */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Dark-surface card utility */
+/* Dark theme cards — updated border to navy solid */
 .card-dark {
   background: var(--hp-ink);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--hp-border-dark);
   border-radius: 0.75rem;
 }
 .card-dark-gold {
   background: var(--hp-ink);
-  border: 1px solid rgba(191,155,92,0.2);
+  border: 1px solid rgba(182,146,94,0.18);
   border-radius: 0.75rem;
 }
 
-/* Dot grid texture — used as bg-* utility */
 .bg-dot-grid {
-  background-image: radial-gradient(rgba(242,237,228,0.12) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(248,246,242,0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
-/* Line grid texture */
 .bg-line-grid {
   background-image:
-    linear-gradient(rgba(242,237,228,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(242,237,228,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(248,246,242,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(248,246,242,0.04) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
-/* Accessibility: respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

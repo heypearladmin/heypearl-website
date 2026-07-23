@@ -82,6 +82,11 @@ export const primaryNav: NavItem[] = [
     href: '/resources',
     children: [
       {
+        label: 'Blog',
+        href: '/insights',
+        description: 'Insights, case studies, and strategy from the HeyPearl team.',
+      },
+      {
         label: 'Authority Library',
         href: '/resources',
         description: 'The complete guide to AI Authority Infrastructure — 10 pillar articles.',
@@ -93,7 +98,7 @@ export const primaryNav: NavItem[] = [
       },
     ],
   },
-  { label: 'Pricing', href: '/pricing' },
+  { label: 'Get Started', href: '/get-started' },
   {
     label: 'Company',
     href: '/about',
@@ -134,6 +139,7 @@ export const footerNav = {
     { label: 'Enterprise',         href: '/solutions/enterprise' },
   ],
   resources: [
+    { label: 'Blog',              href: '/insights' },
     { label: 'Authority Library', href: '/resources' },
     { label: 'FAQ',               href: '/faq' },
   ],
@@ -141,7 +147,7 @@ export const footerNav = {
     { label: 'About',          href: '/about' },
     { label: 'Founder',        href: '/about#founder' },
     { label: 'Results',        href: '/results' },
-    { label: 'Pricing',        href: '/pricing' },
+    { label: 'Get Started',     href: '/get-started' },
     { label: 'Contact',        href: '/contact' },
     { label: 'Strategy Call',  href: '/contact#strategy' },
   ],

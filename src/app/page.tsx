@@ -8,7 +8,6 @@ import { PlatformModules } from '@/components/sections/PlatformModules';
 import { PearlFramework } from '@/components/sections/PearlFramework';
 import { ResultsPreview } from '@/components/sections/ResultsPreview';
 import { Founder } from '@/components/sections/Founder';
-import { PricingPreview } from '@/components/sections/PricingPreview';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export const metadata: Metadata = {
@@ -112,9 +111,7 @@ export default function HomePage() {
       <ResultsPreview />
       {/* 9. The trust anchor — the founder */}
       <Founder />
-      {/* 10. The investment — transparent pricing */}
-      <PricingPreview />
-      {/* 11. The close — conviction CTA */}
+      {/* 10. The close — conviction CTA */}
       <FinalCTA />
     </>
   );

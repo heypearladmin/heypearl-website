@@ -36,7 +36,7 @@ export const site = {
     facebook: 'https://facebook.com/mistibrutonceo',
     instagram: 'https://instagram.com/themistibruton',
     youtube: 'https://youtube.com/@themistibruton',
-    photo: '/images/about/about-founder.webp',
+    photo: '/images/misti-headshot.jpg',
   },
 } as const;
 

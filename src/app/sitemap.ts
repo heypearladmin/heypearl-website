@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/platform', priority: 0.9, freq: 'monthly' },
     { path: '/solutions', priority: 0.9, freq: 'monthly' },
     { path: '/results',  priority: 0.8, freq: 'monthly' },
-    { path: '/pricing',  priority: 0.8, freq: 'monthly' },
+    { path: '/get-started', priority: 0.9, freq: 'monthly' },
     { path: '/about',    priority: 0.7, freq: 'monthly' },
     { path: '/contact',  priority: 0.8, freq: 'monthly' },
     // Platform modules

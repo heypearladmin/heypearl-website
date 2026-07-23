@@ -22,12 +22,12 @@ export function RecommendedModules({
   headline,
 }: RecommendedModulesProps) {
   return (
-    <section className="py-28 bg-[#090909]">
+    <section className="py-28 bg-[#07142F]">
       <Container size="lg">
         <div className="mb-14 max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
               {eyebrow}
             </span>
           </div>
@@ -36,40 +36,40 @@ export function RecommendedModules({
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.9rem, 4vw, 3rem)',
               fontWeight: 700,
-              color: '#F2EDE4',
+              color: '#F8F6F2',
               lineHeight: 1.08,
               letterSpacing: '-0.022em',
             }}
           >
             {headline ?? (
               <>The platform modules<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>that matter most for you.</span></>
+              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>that matter most for you.</span></>
             )}
           </h2>
-          <p className="mt-5" style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.7 }}>
+          <p className="mt-5" style={{ fontSize: '0.9rem', color: '#98A6BE', lineHeight: 1.7 }}>
             Every HeyPearl engagement runs through PearlOS. These modules are prioritized based on where this audience typically has the largest AI visibility gaps.
           </p>
         </div>
 
         <div
           className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-          style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '1rem', overflow: 'hidden' }}
+          style={{ border: '1px solid #30486F', borderRadius: '1rem', overflow: 'hidden' }}
         >
           {modules.map((mod, i) => (
             <Link
               key={mod.href}
               href={mod.href}
               className="group block p-7 lg:p-8 transition-colors duration-200 hover:bg-white/[0.02]"
-              style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}
+              style={{ background: i % 2 === 0 ? '#07142F' : '#14284A' }}
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(191,155,92,0.6)', marginBottom: '0.25rem' }}>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.6)', marginBottom: '0.25rem' }}>
                     {mod.tagline}
                   </div>
                   <h3
-                    className="group-hover:text-[#BF9B5C] transition-colors duration-200"
-                    style={{ fontSize: '1rem', fontWeight: 700, color: 'rgba(242,237,228,0.9)', letterSpacing: '-0.01em' }}
+                    className="group-hover:text-[#C2185B] transition-colors duration-200"
+                    style={{ fontSize: '1rem', fontWeight: 700, color: '#F8F6F2', letterSpacing: '-0.01em' }}
                   >
                     {mod.label}
                   </h3>
@@ -77,11 +77,11 @@ export function RecommendedModules({
                 <ArrowUpRight
                   size={13}
                   className="opacity-0 group-hover:opacity-60 transition-opacity shrink-0 mt-1"
-                  style={{ color: '#BF9B5C' }}
+                  style={{ color: '#C2185B' }}
                 />
               </div>
-              <div className="h-px mb-4" style={{ background: 'rgba(255,255,255,0.05)' }} />
-              <p style={{ fontSize: '0.845rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.72 }}>
+              <div className="h-px mb-4" style={{ background: 'rgba(48,72,111,0.6)' }} />
+              <p style={{ fontSize: '0.845rem', color: '#98A6BE', lineHeight: 1.72 }}>
                 {mod.reason}
               </p>
             </Link>
@@ -90,11 +90,11 @@ export function RecommendedModules({
 
         <div
           className="mt-5 px-6 py-4 rounded-xl flex items-center gap-4"
-          style={{ background: 'rgba(191,155,92,0.04)', border: '1px solid rgba(191,155,92,0.1)' }}
+          style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.1)' }}
         >
-          <span style={{ fontSize: '0.82rem', color: 'rgba(242,237,228,0.38)', lineHeight: 1.5 }}>
+          <span style={{ fontSize: '0.82rem', color: '#98A6BE', lineHeight: 1.5 }}>
             All modules run through{' '}
-            <Link href="/platform/pearlos" className="font-semibold hover:opacity-80" style={{ color: '#BF9B5C' }}>
+            <Link href="/platform/pearlos" className="font-semibold hover:opacity-80" style={{ color: '#C2185B' }}>
               PearlOS
             </Link>
             {' '}— the operating system that connects every signal and executes the P.E.A.R.L. framework in sequence.

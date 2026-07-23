@@ -19,26 +19,26 @@ interface EcosystemNavProps {
 export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps) {
   return (
     <section
-      className="py-10 bg-[#0A0A0A]"
-      style={{ borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}
+      className="py-10 bg-[#07142F]"
+      style={{ borderTop: '1px solid #30486F', borderBottom: '1px solid #30486F' }}
     >
       <Container size="lg">
         <div className="flex flex-col gap-5">
           {/* Ecosystem label */}
           <div className="flex items-center gap-3 flex-wrap">
-            <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,228,0.3)' }}>
+            <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#98A6BE' }}>
               The PearlOS Ecosystem
             </span>
-            <span style={{ color: 'rgba(255,255,255,0.12)', fontSize: '0.75rem' }}>—</span>
+            <span style={{ color: 'rgba(48,72,111,0.6)', fontSize: '0.75rem' }}>—</span>
             <Link
               href="/platform/pearlos"
               className="inline-flex items-center gap-1 text-xs font-semibold transition-colors duration-150 hover:opacity-80"
-              style={{ color: '#BF9B5C' }}
+              style={{ color: '#C2185B' }}
             >
               PearlOS
               <span style={{ fontSize: '0.65rem', opacity: 0.6 }}>↗</span>
             </Link>
-            <span style={{ color: 'rgba(255,255,255,0.12)', fontSize: '0.75rem' }}>→</span>
+            <span style={{ color: 'rgba(48,72,111,0.6)', fontSize: '0.75rem' }}>→</span>
             <div className="flex flex-wrap gap-2">
               {MODULES.map((mod) => {
                 const isActive = mod.href === current;
@@ -48,9 +48,9 @@ export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps
                     href={mod.href}
                     className="inline-block rounded-full px-3 py-1 text-xs font-medium transition-colors duration-150"
                     style={{
-                      background: isActive ? 'rgba(191,155,92,0.15)' : 'rgba(255,255,255,0.04)',
-                      border: isActive ? '1px solid rgba(191,155,92,0.35)' : '1px solid rgba(255,255,255,0.07)',
-                      color: isActive ? '#BF9B5C' : 'rgba(242,237,228,0.38)',
+                      background: isActive ? 'rgba(194,24,91,0.15)' : 'rgba(255,255,255,0.04)',
+                      border: isActive ? '1px solid rgba(194,24,91,0.35)' : '1px solid #30486F',
+                      color: isActive ? '#C2185B' : '#98A6BE',
                     }}
                   >
                     {mod.label}
@@ -63,11 +63,11 @@ export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps
           {/* Next module hint */}
           {nextHref && nextLabel && (
             <div className="flex items-center gap-2">
-              <span style={{ fontSize: '0.72rem', color: 'rgba(242,237,228,0.28)' }}>Next in the system:</span>
+              <span style={{ fontSize: '0.72rem', color: '#98A6BE' }}>Next in the system:</span>
               <Link
                 href={nextHref}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold transition-colors duration-150 hover:opacity-80"
-                style={{ color: 'rgba(242,237,228,0.55)' }}
+                style={{ color: '#C9D3E3' }}
               >
                 {nextLabel}
                 <ArrowRight size={11} />

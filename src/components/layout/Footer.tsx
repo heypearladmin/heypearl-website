@@ -62,7 +62,6 @@ export function Footer() {
             {/* Brand column */}
             <div className="lg:col-span-5 flex flex-col gap-6">
               <div className="flex items-center gap-4">
-                <PearlMark variant="inverse" className="h-12 w-12 shrink-0" />
                 <Logo variant="inverse" />
               </div>
               <p className="text-cream/70 max-w-sm leading-relaxed">

@@ -152,8 +152,8 @@ export default function GEOPage() {
           >
             Schedule a Strategy Call
           </LinkButton>
-          <LinkButton href="/pricing" variant="secondary" size="lg">
-            See GEO pricing
+          <LinkButton href="/get-started" variant="secondary" size="lg">
+            Find Your Solution
           </LinkButton>
         </div>
       </PageHero>

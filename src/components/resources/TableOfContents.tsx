@@ -32,7 +32,7 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
 
   return (
     <nav aria-label="Table of contents">
-      <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(28,25,23,0.35)', marginBottom: '0.875rem' }}>
+      <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(7,15,47,0.4)', marginBottom: '0.875rem' }}>
         Contents
       </div>
       <ol style={{ listStyle: 'none', margin: 0, padding: 0 }}>
@@ -50,14 +50,14 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
                   fontSize: '0.78rem',
                   lineHeight: 1.45,
                   fontWeight: isActive ? 600 : 400,
-                  color: isActive ? '#BF9B5C' : 'rgba(28,25,23,0.5)',
+                  color: isActive ? '#C2185B' : 'rgba(7,15,47,0.55)',
                   textDecoration: 'none',
-                  borderLeft: isActive ? '2px solid #BF9B5C' : '2px solid transparent',
+                  borderLeft: isActive ? '2px solid #C2185B' : '2px solid transparent',
                   paddingLeft: '0.625rem',
                   transition: 'all 0.15s',
                 }}
               >
-                <span style={{ color: 'rgba(28,25,23,0.25)', fontSize: '0.65rem', flexShrink: 0, paddingTop: '0.1rem' }}>
+                <span style={{ color: 'rgba(7,15,47,0.25)', fontSize: '0.65rem', flexShrink: 0, paddingTop: '0.1rem' }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 {label}

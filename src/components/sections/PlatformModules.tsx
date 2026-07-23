@@ -37,15 +37,15 @@ const MODULES = [
 
 export function PlatformModules() {
   return (
-    <section className="py-28 bg-[#090909]">
+    <section className="py-28 bg-[#07142F]">
       <Container size="lg">
 
         {/* Section header */}
         <div className="mb-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 Platform Modules
               </span>
             </div>
@@ -54,22 +54,22 @@ export function PlatformModules() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#F2EDE4',
+                color: '#F8F6F2',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               Five purpose-built modules,<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>all powered by PearlOS.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>all powered by PearlOS.</span>
             </h2>
-            <p className="mt-4" style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.7 }}>
+            <p className="mt-4" style={{ fontSize: '0.9rem', color: '#98A6BE', lineHeight: 1.7 }}>
               PearlOS orchestrates each module as part of one integrated system — no standalone tactics, no disconnected tools.
             </p>
           </div>
           <Link
             href="/platform"
             className="inline-flex items-center gap-2 text-sm font-medium shrink-0 self-start sm:self-auto"
-            style={{ color: 'rgba(242,237,228,0.45)' }}
+            style={{ color: '#98A6BE' }}
           >
             Full platform overview
             <ArrowUpRight size={14} />
@@ -79,14 +79,14 @@ export function PlatformModules() {
         {/* Module grid — 5 cards in a 2/3 split */}
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-          style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '1rem', overflow: 'hidden' }}
+          style={{ border: '1px solid rgba(48,72,111,0.5)', borderRadius: '1rem', overflow: 'hidden' }}
         >
           {MODULES.map((mod, i) => (
             <Link
               key={mod.href}
               href={mod.href}
               className="group block p-6 lg:p-8 transition-colors duration-200 hover:bg-white/[0.02]"
-              style={{ background: '#0D0D0D' }}
+              style={{ background: '#07142F' }}
             >
               {/* Tagline */}
               <div
@@ -95,7 +95,7 @@ export function PlatformModules() {
                   fontWeight: 600,
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  color: 'rgba(191,155,92,0.65)',
+                  color: 'rgba(194,24,91,0.65)',
                   marginBottom: '0.4rem',
                 }}
               >
@@ -105,11 +105,11 @@ export function PlatformModules() {
               {/* Module name + arrow */}
               <div className="flex items-start justify-between mb-4">
                 <h3
-                  className="group-hover:text-[#BF9B5C] transition-colors duration-200"
+                  className="group-hover:text-[#C2185B] transition-colors duration-200"
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: 'rgba(242,237,228,0.88)',
+                    color: '#F8F6F2',
                     letterSpacing: '-0.01em',
                   }}
                 >
@@ -118,14 +118,14 @@ export function PlatformModules() {
                 <ArrowUpRight
                   size={14}
                   className="opacity-0 group-hover:opacity-50 transition-opacity mt-0.5 shrink-0"
-                  style={{ color: '#BF9B5C' }}
+                  style={{ color: '#C2185B' }}
                 />
               </div>
 
               {/* Rule */}
-              <div className="h-px mb-4" style={{ background: 'rgba(255,255,255,0.05)' }} />
+              <div className="h-px mb-4" style={{ background: 'rgba(48,72,111,0.4)' }} />
 
-              <p style={{ fontSize: '0.855rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.72 }}>
+              <p style={{ fontSize: '0.855rem', color: '#98A6BE', lineHeight: 1.72 }}>
                 {mod.description}
               </p>
             </Link>
@@ -134,15 +134,15 @@ export function PlatformModules() {
           {/* Sixth cell — CTA */}
           <div
             className="p-6 lg:p-8 flex flex-col justify-center"
-            style={{ background: '#111111', border: 'none' }}
+            style={{ background: '#14284A', border: 'none' }}
           >
-            <p style={{ fontSize: '0.85rem', color: 'rgba(242,237,228,0.4)', lineHeight: 1.65, marginBottom: '1.25rem' }}>
+            <p style={{ fontSize: '0.85rem', color: '#98A6BE', lineHeight: 1.65, marginBottom: '1.25rem' }}>
               Every module runs through PearlOS — the operating layer that turns individual signals into compounding AI authority.
             </p>
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 text-sm font-semibold"
-              style={{ color: '#BF9B5C' }}
+              style={{ color: '#C2185B' }}
             >
               Explore the full platform
               <ArrowUpRight size={14} />

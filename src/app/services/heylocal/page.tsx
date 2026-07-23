@@ -64,8 +64,8 @@ export default function HeyLocalPage() {
           >
             Schedule a Strategy Call
           </LinkButton>
-          <LinkButton href="/pricing" variant="secondary" size="lg">
-            See HeyLocal pricing
+          <LinkButton href="/get-started" variant="secondary" size="lg">
+            Find Your Solution
           </LinkButton>
         </div>
       </PageHero>

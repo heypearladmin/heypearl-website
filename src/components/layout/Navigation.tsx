@@ -49,7 +49,7 @@ export function Navigation() {
       className={cn(
         'fixed top-0 inset-x-0 z-50 transition-all duration-500',
         scrolled
-          ? 'bg-[#090909]/90 backdrop-blur-xl border-b border-white/[0.06]'
+          ? 'bg-[#07142F]/90 backdrop-blur-xl border-b border-[#30486F]/50'
           : 'bg-transparent',
       )}
     >
@@ -73,8 +73,8 @@ export function Navigation() {
                   className={cn(
                     'inline-flex items-center gap-1 px-3.5 py-2 text-sm font-medium transition-colors duration-200 rounded-md',
                     openMenu === item.label
-                      ? 'text-[#F2EDE4]'
-                      : 'text-[rgba(242,237,228,0.65)] hover:text-[#F2EDE4]',
+                      ? 'text-[#F8F6F2]'
+                      : 'text-[#C9D3E3] hover:text-[#F8F6F2]',
                   )}
                 >
                   {item.label}
@@ -82,8 +82,8 @@ export function Navigation() {
                     <ChevronDown
                       size={13}
                       className={cn(
-                        'transition-transform duration-200 text-[rgba(242,237,228,0.4)]',
-                        openMenu === item.label && 'rotate-180 text-[#BF9B5C]',
+                        'transition-transform duration-200 text-[#98A6BE]',
+                        openMenu === item.label && 'rotate-180 text-[#C2185B]',
                       )}
                     />
                   )}
@@ -103,9 +103,9 @@ export function Navigation() {
                         onMouseEnter={() => handleMouseEnter(item.label)}
                         onMouseLeave={() => handleMouseLeave()}
                       >
-                        <div className="rounded-2xl bg-[#111111]/95 backdrop-blur-2xl border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.6)] p-2">
+                        <div className="rounded-2xl bg-[rgba(14,28,56,0.97)] backdrop-blur-2xl border border-[#30486F] shadow-[0_24px_64px_rgba(3,8,20,0.6)] p-2">
                           {/* Gold rule at top */}
-                          <div className="h-px bg-gradient-to-r from-transparent via-[rgba(191,155,92,0.4)] to-transparent mb-2" />
+                          <div className="h-px bg-gradient-to-r from-transparent via-[rgba(182,146,94,0.4)] to-transparent mb-2" />
 
                           {item.label === 'Platform' || item.label === 'Solutions' ? (
                             // Two-column grid for Platform and Solutions
@@ -116,12 +116,12 @@ export function Navigation() {
                                   href={child.href}
                                   className="group flex flex-col gap-1 rounded-xl p-3.5 hover:bg-white/[0.04] transition-colors duration-150"
                                 >
-                                  <span className="text-sm font-semibold text-[rgba(242,237,228,0.9)] group-hover:text-[#BF9B5C] transition-colors duration-150 flex items-center gap-1.5">
+                                  <span className="text-sm font-semibold text-[#F8F6F2] group-hover:text-[#C2185B] transition-colors duration-150 flex items-center gap-1.5">
                                     {child.label}
                                     <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-60 transition-opacity -ml-0.5" />
                                   </span>
                                   {child.description && (
-                                    <span className="text-xs text-[rgba(242,237,228,0.4)] leading-snug">
+                                    <span className="text-xs text-[#98A6BE] leading-snug">
                                       {child.description}
                                     </span>
                                   )}
@@ -138,11 +138,11 @@ export function Navigation() {
                                   className="group flex items-start gap-3 rounded-xl p-3.5 hover:bg-white/[0.04] transition-colors duration-150"
                                 >
                                   <div>
-                                    <div className="text-sm font-semibold text-[rgba(242,237,228,0.9)] group-hover:text-[#BF9B5C] transition-colors duration-150">
+                                    <div className="text-sm font-semibold text-[#F8F6F2] group-hover:text-[#C2185B] transition-colors duration-150">
                                       {child.label}
                                     </div>
                                     {child.description && (
-                                      <div className="mt-0.5 text-xs text-[rgba(242,237,228,0.4)] leading-snug">
+                                      <div className="mt-0.5 text-xs text-[#98A6BE] leading-snug">
                                         {child.description}
                                       </div>
                                     )}
@@ -166,7 +166,7 @@ export function Navigation() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#BF9B5C] text-[#090909] text-sm font-semibold hover:bg-[#CFAA50] transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#C2185B] text-white text-sm font-semibold hover:bg-[#D62F73] transition-colors duration-200"
             >
               Book a Strategy Call
               <ArrowUpRight size={14} />
@@ -176,7 +176,7 @@ export function Navigation() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className="lg:hidden p-2 text-[rgba(242,237,228,0.8)] hover:text-[#F2EDE4] transition-colors"
+            className="lg:hidden p-2 text-[#C9D3E3] hover:text-[#F8F6F2] transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -192,25 +192,25 @@ export function Navigation() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:hidden overflow-hidden bg-[#0C0C0C] border-t border-white/[0.06]"
+            className="lg:hidden overflow-hidden bg-[#07142F] border-t border-[#30486F]/50"
           >
             <Container size="xl" className="py-6">
               <ul className="flex flex-col">
                 {primaryNav.map((item) => (
-                  <li key={item.href} className="border-b border-white/[0.06] last:border-0">
+                  <li key={item.href} className="border-b border-[#30486F]/50 last:border-0">
                     {item.children ? (
                       <>
                         <button
                           onClick={() =>
                             setMobileExpanded((v) => (v === item.label ? null : item.label))
                           }
-                          className="w-full flex items-center justify-between py-4 text-base font-medium text-[rgba(242,237,228,0.8)]"
+                          className="w-full flex items-center justify-between py-4 text-base font-medium text-[#C9D3E3]"
                         >
                           {item.label}
                           <ChevronDown
                             size={16}
                             className={cn(
-                              'transition-transform text-[rgba(242,237,228,0.4)]',
+                              'transition-transform text-[#98A6BE]',
                               mobileExpanded === item.label && 'rotate-180',
                             )}
                           />
@@ -229,7 +229,7 @@ export function Navigation() {
                                   <Link
                                     href={child.href}
                                     onClick={() => setMobileOpen(false)}
-                                    className="block px-4 py-2.5 text-sm text-[rgba(242,237,228,0.55)] hover:text-[#BF9B5C] transition-colors"
+                                    className="block px-4 py-2.5 text-sm text-[#98A6BE] hover:text-[#C2185B] transition-colors"
                                   >
                                     {child.label}
                                   </Link>
@@ -243,7 +243,7 @@ export function Navigation() {
                       <Link
                         href={item.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block py-4 text-base font-medium text-[rgba(242,237,228,0.8)] hover:text-[#F2EDE4] transition-colors"
+                        className="block py-4 text-base font-medium text-[#C9D3E3] hover:text-[#F8F6F2] transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -257,7 +257,7 @@ export function Navigation() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#BF9B5C] text-[#090909] text-sm font-semibold hover:bg-[#CFAA50] transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#C2185B] text-white text-sm font-semibold hover:bg-[#D62F73] transition-colors"
                 >
                   Book a Strategy Call
                   <ArrowUpRight size={14} />
@@ -265,7 +265,7 @@ export function Navigation() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center w-full py-3.5 rounded-xl border border-white/10 text-sm font-medium text-[rgba(242,237,228,0.7)] hover:text-[#F2EDE4] hover:border-white/20 transition-colors"
+                  className="flex items-center justify-center w-full py-3.5 rounded-xl border border-[#30486F]/70 text-sm font-medium text-[#C9D3E3] hover:text-[#F8F6F2] hover:border-[#30486F] transition-colors"
                 >
                   Contact HeyPearl
                 </Link>

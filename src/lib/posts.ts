@@ -135,8 +135,8 @@ Then the work changes shape. AI visibility is not a project you complete; it is 
         "href": "/services/geo"
     },
     {
-        "label": "See our pricing",
-        "href": "/pricing"
+        "label": "Find your solution",
+        "href": "/get-started"
     },
     {
         "label": "Start your 90-day roadmap",

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { Reveal } from '@/components/ui/Reveal';
 import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
@@ -55,37 +56,40 @@ export default function AuthorityPagesPage() {
     <>
       {/* Hero */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#090909] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#07142F] overflow-hidden"
         aria-label="Authority Pages hero"
       >
-        <div aria-hidden className="pointer-events-none absolute inset-0">
-          <Image src="/images/platform/platform-authority-pages.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.12]" />
+        <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
+          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.15)', boxShadow: '0 32px 64px rgba(3,8,20,0.7)' }}>
+            <Image src="/images/platform/platform-authority-pages.webp" alt="" fill sizes="38vw" className="object-cover" />
+          </div>
         </div>
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(191,155,92,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(191,155,92,0.04) 1px, transparent 1px)',
+              'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
         <div
           aria-hidden
           className="pointer-events-none absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full"
-          style={{ background: 'radial-gradient(ellipse at center, rgba(191,155,92,0.06) 0%, transparent 65%)' }}
+          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.06) 0%, transparent 65%)' }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
+          <div style={{ maxWidth: '54%' }}>
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/platform" className="text-xs" style={{ color: 'rgba(242,237,228,0.35)' }}>
+            <Link href="/platform" className="text-xs" style={{ color: '#98A6BE' }}>
               Platform
             </Link>
-            <span style={{ color: 'rgba(242,237,228,0.2)', fontSize: '0.75rem' }}>/</span>
-            <span style={{ fontSize: '0.72rem', color: '#BF9B5C', fontWeight: 600 }}>Authority Pages</span>
+            <span style={{ color: 'rgba(245,241,232,0.2)', fontSize: '0.75rem' }}>/</span>
+            <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Authority Pages</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#BF9B5C', opacity: 0.5 }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
               Module 01 — Powered by PearlOS
             </span>
           </div>
@@ -95,7 +99,7 @@ export default function AuthorityPagesPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2.6rem, 6vw, 5rem)',
               fontWeight: 700,
-              color: '#F2EDE4',
+              color: '#F8F6F2',
               lineHeight: 1.04,
               letterSpacing: '-0.03em',
             }}
@@ -108,12 +112,12 @@ export default function AuthorityPagesPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#BF9B5C',
+              color: '#B6925E',
             }}
           >
             The pages that make AI say your name.
           </p>
-          <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: 'rgba(242,237,228,0.55)', lineHeight: 1.75 }}>
+          <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.75 }}>
             When a buyer asks AI which agent to call, which brokerage to trust, which service to hire — AI pulls its answer from somewhere. Authority Pages are the infrastructure that makes your business the source it pulls from.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -121,7 +125,7 @@ export default function AuthorityPagesPage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
             >
               Book a Strategy Call
               <ArrowRight size={14} />
@@ -129,23 +133,24 @@ export default function AuthorityPagesPage() {
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 text-sm font-medium"
-              style={{ color: 'rgba(242,237,228,0.45)' }}
+              style={{ color: '#98A6BE' }}
             >
               View all modules
               <ArrowUpRight size={13} />
             </Link>
           </div>
+          </div>
         </Container>
       </section>
 
       {/* The problem it solves */}
-      <section className="py-24 bg-[#0B0B0B]">
+      <section className="py-24 bg-[#14284A]">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+                <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
                   The Problem
                 </span>
               </div>
@@ -154,27 +159,27 @@ export default function AuthorityPagesPage() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: 'clamp(1.9rem, 4vw, 2.8rem)',
                   fontWeight: 700,
-                  color: '#F2EDE4',
+                  color: '#F8F6F2',
                   lineHeight: 1.1,
                   letterSpacing: '-0.022em',
                   marginBottom: '1.25rem',
                 }}
               >
                 Most websites are built<br />
-                <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>for humans, not AI.</span>
+                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>for humans, not AI.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.8, marginBottom: '1rem' }}>
+              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8, marginBottom: '1rem' }}>
                 Traditional websites optimize for click-through rates, session duration, and Google PageRank. AI engines don't use any of those signals to decide who to recommend.
               </p>
-              <p style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.8 }}>
+              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8 }}>
                 AI engines evaluate entity clarity, topical depth, structured data integrity, and citation worthiness. Authority Pages are built for that evaluation — not the old one.
               </p>
             </div>
             <div
               className="p-8 rounded-2xl"
-              style={{ background: 'rgba(191,155,92,0.04)', border: '1px solid rgba(191,155,92,0.12)' }}
+              style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}
             >
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C', marginBottom: '1.5rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '1.5rem' }}>
                 What AI engines actually evaluate
               </div>
               {[
@@ -185,8 +190,8 @@ export default function AuthorityPagesPage() {
                 'Is this the most complete answer on this topic?',
               ].map((q, i) => (
                 <div key={i} className="flex gap-3 mb-4 last:mb-0">
-                  <span style={{ color: '#BF9B5C', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
-                  <span style={{ fontSize: '0.88rem', color: 'rgba(242,237,228,0.65)', lineHeight: 1.55 }}>{q}</span>
+                  <span style={{ color: '#B6925E', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
+                  <span style={{ fontSize: '0.88rem', color: '#C9D3E3', lineHeight: 1.55 }}>{q}</span>
                 </div>
               ))}
             </div>
@@ -195,12 +200,13 @@ export default function AuthorityPagesPage() {
       </section>
 
       {/* What it includes */}
-      <section className="py-28 bg-[#090909]">
+      <section className="py-28 bg-[#07142F]">
         <Container size="lg">
+          <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
                 What's Included
               </span>
             </div>
@@ -209,47 +215,49 @@ export default function AuthorityPagesPage() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#F2EDE4',
+                color: '#F8F6F2',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               Six layers of<br />
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>AI-ready architecture.</span>
+              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI-ready architecture.</span>
             </h2>
           </div>
+          </Reveal>
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '1rem', overflow: 'hidden' }}
+            style={{ border: '1px solid rgba(48,72,111,0.35)', borderRadius: '1rem', overflow: 'hidden' }}
           >
             {WHAT_IT_DOES.map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.08}>
               <div
-                key={item.title}
                 className="p-7"
-                style={{ background: i % 2 === 0 ? '#0D0D0D' : '#0F0F0F' }}
+                style={{ background: i % 2 === 0 ? '#07142F' : '#14284A' }}
               >
-                <div className="h-px mb-5" style={{ background: 'rgba(191,155,92,0.1)' }} />
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#F2EDE4', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
+                <div className="h-px mb-5" style={{ background: 'rgba(182,146,94,0.1)' }} />
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#F8F6F2', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
                   {item.title}
                 </h3>
-                <p style={{ fontSize: '0.83rem', color: 'rgba(242,237,228,0.42)', lineHeight: 1.72 }}>
+                <p style={{ fontSize: '0.83rem', color: 'rgba(245,241,232,0.42)', lineHeight: 1.72 }}>
                   {item.desc}
                 </p>
               </div>
+              </Reveal>
             ))}
           </div>
         </Container>
       </section>
 
       {/* PearlOS integration */}
-      <section className="py-20 bg-[#0A0A0A]">
+      <section className="py-20 bg-[#14284A]">
         <Container size="lg">
           <div
             className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl"
-            style={{ background: 'rgba(191,155,92,0.04)', border: '1px solid rgba(191,155,92,0.12)' }}
+            style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}
           >
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#BF9B5C', marginBottom: '0.75rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>
                 PearlOS Integration
               </div>
               <h3
@@ -257,7 +265,7 @@ export default function AuthorityPagesPage() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: 'clamp(1.4rem, 3vw, 2rem)',
                   fontWeight: 700,
-                  color: '#F2EDE4',
+                  color: '#F8F6F2',
                   lineHeight: 1.1,
                   letterSpacing: '-0.02em',
                   marginBottom: '0.75rem',
@@ -265,7 +273,7 @@ export default function AuthorityPagesPage() {
               >
                 Authority Pages run through PearlOS.
               </h3>
-              <p style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.75 }}>
+              <p style={{ fontSize: '0.9rem', color: '#98A6BE', lineHeight: 1.75 }}>
                 PearlOS coordinates every Authority Page with your Knowledge Graph entity signals, Authority Score gaps, and AI Visibility data — so each page is built for the exact gaps in your AI presence, not a generic template.
               </p>
             </div>
@@ -273,7 +281,7 @@ export default function AuthorityPagesPage() {
               <Link
                 href="/platform/pearlos"
                 className="inline-flex items-center gap-2 text-sm font-semibold"
-                style={{ color: '#BF9B5C' }}
+                style={{ color: '#C2185B' }}
               >
                 Learn about PearlOS
                 <ArrowUpRight size={14} />
@@ -284,7 +292,7 @@ export default function AuthorityPagesPage() {
       </section>
 
       {/* Results */}
-      <section className="py-24 bg-[#090909]">
+      <section className="py-24 bg-[#07142F]">
         <Container size="lg">
           <div className="mb-12 text-center">
             <h2
@@ -292,7 +300,7 @@ export default function AuthorityPagesPage() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.7rem, 3.5vw, 2.6rem)',
                 fontWeight: 700,
-                color: '#F2EDE4',
+                color: '#F8F6F2',
                 lineHeight: 1.1,
                 letterSpacing: '-0.022em',
               }}
@@ -301,18 +309,18 @@ export default function AuthorityPagesPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px"
-            style={{ border: '1px solid rgba(255,255,255,0.05)', borderRadius: '1rem', overflow: 'hidden' }}>
+            style={{ border: '1px solid rgba(48,72,111,0.35)', borderRadius: '1rem', overflow: 'hidden' }}>
             {OUTCOMES.map((o, i) => (
-              <div key={o.context} className="p-8 text-center" style={{ background: i === 1 ? '#101010' : '#0D0D0D' }}>
-                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '3.2rem', fontWeight: 700, color: '#BF9B5C', lineHeight: 1, letterSpacing: '-0.03em', marginBottom: '0.25rem' }}>
+              <div key={o.context} className="p-8 text-center" style={{ background: i === 1 ? '#14284A' : '#07142F' }}>
+                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '3.2rem', fontWeight: 700, color: '#B6925E', lineHeight: 1, letterSpacing: '-0.03em', marginBottom: '0.25rem' }}>
                   {o.metric}
                 </div>
-                <div style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.55)', marginBottom: '0.5rem' }}>{o.label}</div>
-                <div style={{ fontSize: '0.65rem', color: 'rgba(191,155,92,0.5)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{o.context}</div>
+                <div style={{ fontSize: '0.78rem', color: '#C9D3E3', marginBottom: '0.5rem' }}>{o.label}</div>
+                <div style={{ fontSize: '0.65rem', color: 'rgba(182,146,94,0.4)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{o.context}</div>
               </div>
             ))}
           </div>
-          <p className="text-center mt-5" style={{ fontSize: '0.7rem', color: 'rgba(242,237,228,0.2)' }}>
+          <p className="text-center mt-5" style={{ fontSize: '0.7rem', color: 'rgba(245,241,232,0.2)' }}>
             Client details anonymized. Results represent real engagements — outcomes vary by market and scope.
           </p>
         </Container>
@@ -326,7 +334,7 @@ export default function AuthorityPagesPage() {
       />
 
       {/* CTA */}
-      <section className="py-24 bg-[#0C0C0C]">
+      <section className="py-24 bg-[#14284A]">
         <Container size="md" className="text-center">
           <h2
             className="mb-5 max-w-xl mx-auto"
@@ -334,15 +342,15 @@ export default function AuthorityPagesPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)',
               fontWeight: 700,
-              color: '#F2EDE4',
+              color: '#F8F6F2',
               lineHeight: 1.1,
               letterSpacing: '-0.022em',
             }}
           >
             Build the pages<br />
-            <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>AI wants to cite.</span>
+            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI wants to cite.</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Authority Pages are built as part of a complete PearlOS engagement — not sold as standalone deliverables.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -350,7 +358,7 @@ export default function AuthorityPagesPage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#BF9B5C] hover:bg-[#CFAA50] text-[#090909] transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
             >
               Book a Strategy Call
               <ArrowRight size={14} />
@@ -358,7 +366,7 @@ export default function AuthorityPagesPage() {
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(242,237,228,0.55)' }}
+              style={{ border: '1px solid rgba(255,255,255,0.1)', color: '#C9D3E3' }}
             >
               View all modules
               <ArrowRight size={14} />

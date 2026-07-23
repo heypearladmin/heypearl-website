@@ -40,30 +40,30 @@ const STEPS = [
 
 export function PearlFramework() {
   return (
-    <section className="py-32 bg-[#090909] relative overflow-hidden">
+    <section className="py-32 bg-[#07142F] relative overflow-hidden">
       {/* Horizontal gold centerline */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(191,155,92,0.12) 30%, rgba(191,155,92,0.12) 70%, transparent 100%)' }}
+        style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(182,146,94,0.1) 30%, rgba(182,146,94,0.1) 70%, transparent 100%)' }}
       />
 
       <Container size="xl">
         {/* Section header */}
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="inline-block h-px w-10" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#BF9B5C' }}>
+            <span className="inline-block h-px w-10" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               HeyPearl's Proprietary Framework
             </span>
-            <span className="inline-block h-px w-10" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
+            <span className="inline-block h-px w-10" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
           </div>
           <h2
             style={{
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2.2rem, 5vw, 3.6rem)',
               fontWeight: 700,
-              color: '#F2EDE4',
+              color: '#F8F6F2',
               lineHeight: 1.06,
               letterSpacing: '-0.025em',
             }}
@@ -75,14 +75,14 @@ export function PearlFramework() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
               fontStyle: 'italic',
-              color: '#BF9B5C',
+              color: '#C2185B',
               marginTop: '0.6rem',
               letterSpacing: '-0.01em',
             }}
           >
             Five layers. One complete system. Zero guesswork.
           </p>
-          <p className="mt-5 max-w-xl mx-auto" style={{ fontSize: '0.975rem', color: 'rgba(242,237,228,0.48)', lineHeight: 1.75 }}>
+          <p className="mt-5 max-w-xl mx-auto" style={{ fontSize: '0.975rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Every HeyPearl engagement executes this systematic sequence. Each layer is a prerequisite
             for the next — building visibility that grows month after month without starting over.
           </p>
@@ -91,13 +91,13 @@ export function PearlFramework() {
         {/* Five-pillar grid */}
         <div
           className="flex flex-col lg:flex-row gap-px"
-          style={{ border: '1px solid rgba(255,255,255,0.06)', borderRadius: '1.25rem', overflow: 'hidden' }}
+          style={{ border: '1px solid rgba(48,72,111,0.5)', borderRadius: '1.25rem', overflow: 'hidden' }}
         >
           {STEPS.map((step, i) => (
             <div
               key={step.letter}
               className="flex-1 p-7 lg:p-8 relative"
-              style={{ background: i % 2 === 0 ? '#0F0F0F' : '#0C0C0C' }}
+              style={{ background: i % 2 === 0 ? '#07142F' : '#14284A' }}
             >
               {/* Ghost letter — background watermark */}
               <div
@@ -106,7 +106,7 @@ export function PearlFramework() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: '7rem',
                   fontWeight: 700,
-                  color: 'rgba(191,155,92,0.07)',
+                  color: 'rgba(194,24,91,0.05)',
                   lineHeight: 1,
                   position: 'absolute',
                   top: '0.5rem',
@@ -124,8 +124,8 @@ export function PearlFramework() {
                 style={{
                   width: '2.75rem',
                   height: '2.75rem',
-                  background: 'rgba(191,155,92,0.1)',
-                  border: '1px solid rgba(191,155,92,0.25)',
+                  background: 'rgba(194,24,91,0.08)',
+                  border: '1px solid rgba(194,24,91,0.2)',
                 }}
               >
                 <span
@@ -133,7 +133,7 @@ export function PearlFramework() {
                     fontFamily: 'var(--font-playfair), Georgia, serif',
                     fontSize: '1.25rem',
                     fontWeight: 700,
-                    color: '#BF9B5C',
+                    color: '#C2185B',
                     lineHeight: 1,
                   }}
                 >
@@ -146,7 +146,7 @@ export function PearlFramework() {
                 style={{
                   fontSize: '1.05rem',
                   fontWeight: 700,
-                  color: '#F2EDE4',
+                  color: '#F8F6F2',
                   letterSpacing: '-0.015em',
                   marginBottom: '0.3rem',
                 }}
@@ -159,7 +159,7 @@ export function PearlFramework() {
                 style={{
                   fontSize: '0.75rem',
                   fontStyle: 'italic',
-                  color: 'rgba(191,155,92,0.7)',
+                  color: 'rgba(194,24,91,0.7)',
                   marginBottom: '0.9rem',
                   lineHeight: 1.4,
                 }}
@@ -168,10 +168,10 @@ export function PearlFramework() {
               </p>
 
               {/* Gold micro-rule */}
-              <div className="h-px mb-4" style={{ background: 'rgba(191,155,92,0.1)' }} />
+              <div className="h-px mb-4" style={{ background: 'rgba(194,24,91,0.08)' }} />
 
               {/* Description */}
-              <p style={{ fontSize: '0.875rem', color: 'rgba(242,237,228,0.58)', lineHeight: 1.75 }}>
+              <p style={{ fontSize: '0.875rem', color: '#C9D3E3', lineHeight: 1.75 }}>
                 {step.description}
               </p>
             </div>
@@ -183,14 +183,14 @@ export function PearlFramework() {
           <p
             style={{
               fontSize: '0.95rem',
-              color: 'rgba(242,237,228,0.38)',
+              color: '#98A6BE',
               letterSpacing: '0.01em',
             }}
           >
             Executed over{' '}
-            <span style={{ color: '#BF9B5C', fontWeight: 600 }}>90 days.</span>{' '}
+            <span style={{ color: '#C2185B', fontWeight: 600 }}>90 days.</span>{' '}
             Built to grow{' '}
-            <span style={{ color: 'rgba(242,237,228,0.65)', fontWeight: 500 }}>indefinitely.</span>
+            <span style={{ color: '#C9D3E3', fontWeight: 500 }}>indefinitely.</span>
           </p>
         </div>
       </Container>

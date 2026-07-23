@@ -20,7 +20,7 @@ const CONSEQUENCES = [
 
 export function BusinessPain() {
   return (
-    <section className="py-28 bg-[#0B0B0B] relative overflow-hidden">
+    <section className="py-28 bg-[#07142F] relative overflow-hidden">
       {/* Subtle tension glow — center left */}
       <div
         aria-hidden
@@ -34,14 +34,14 @@ export function BusinessPain() {
       <Container size="lg" className="relative">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-10">
-          <span className="inline-block h-px w-8" style={{ background: 'rgba(191,155,92,0.4)' }} aria-hidden />
+          <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
           <span
             style={{
               fontSize: '0.67rem',
               fontWeight: 600,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
-              color: '#BF9B5C',
+              color: '#C2185B',
             }}
           >
             The Visibility Gap
@@ -57,13 +57,13 @@ export function BusinessPain() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(2rem, 4.5vw, 3.4rem)',
                 fontWeight: 700,
-                color: '#F2EDE4',
+                color: '#F8F6F2',
                 lineHeight: 1.08,
                 letterSpacing: '-0.025em',
               }}
             >
               Right now, someone in your market is asking AI{' '}
-              <span style={{ color: '#BF9B5C', fontStyle: 'italic' }}>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>
                 who to hire.
               </span>
             </h2>
@@ -73,7 +73,7 @@ export function BusinessPain() {
               style={{
                 fontSize: '1.1rem',
                 fontWeight: 500,
-                color: 'rgba(242,237,228,0.5)',
+                color: '#98A6BE',
                 lineHeight: 1.65,
               }}
             >
@@ -85,7 +85,7 @@ export function BusinessPain() {
               className="mt-8 mb-8 h-px"
               style={{
                 background:
-                  'linear-gradient(90deg, rgba(191,155,92,0.4), rgba(191,155,92,0.1), transparent)',
+                  'linear-gradient(90deg, rgba(182,146,94,0.35), rgba(182,146,94,0.08), transparent)',
               }}
             />
 
@@ -93,13 +93,13 @@ export function BusinessPain() {
             <p
               style={{
                 fontSize: '1rem',
-                color: 'rgba(242,237,228,0.65)',
+                color: '#C9D3E3',
                 lineHeight: 1.7,
               }}
             >
               This isn't an SEO problem. It isn't a content problem.
               It's a{' '}
-              <span style={{ color: '#F2EDE4', fontWeight: 600 }}>
+              <span style={{ color: '#F8F6F2', fontWeight: 600 }}>
                 visibility infrastructure problem
               </span>{' '}
               — and most businesses don't have a systematic solution for it yet.
@@ -115,14 +115,14 @@ export function BusinessPain() {
                 style={{
                   borderBottom:
                     i < CONSEQUENCES.length - 1
-                      ? '1px solid rgba(255,255,255,0.05)'
+                      ? '1px solid rgba(48,72,111,0.5)'
                       : 'none',
                 }}
               >
                 <div className="flex gap-4">
                   <span
                     style={{
-                      color: '#BF9B5C',
+                      color: '#C2185B',
                       fontSize: '0.8rem',
                       marginTop: '0.15rem',
                       flexShrink: 0,
@@ -137,7 +137,7 @@ export function BusinessPain() {
                       style={{
                         fontSize: '0.9rem',
                         fontWeight: 600,
-                        color: '#F2EDE4',
+                        color: '#F8F6F2',
                         marginBottom: '0.5rem',
                         lineHeight: 1.4,
                         letterSpacing: '-0.01em',
@@ -148,7 +148,7 @@ export function BusinessPain() {
                     <p
                       style={{
                         fontSize: '0.85rem',
-                        color: 'rgba(242,237,228,0.45)',
+                        color: '#98A6BE',
                         lineHeight: 1.7,
                       }}
                     >
@@ -165,8 +165,8 @@ export function BusinessPain() {
         <div
           className="mt-14 rounded-xl p-6 lg:p-8"
           style={{
-            background: 'rgba(191,155,92,0.05)',
-            border: '1px solid rgba(191,155,92,0.12)',
+            background: 'rgba(194,24,91,0.05)',
+            border: '1px solid rgba(182,146,94,0.1)',
           }}
         >
           <p
@@ -174,7 +174,7 @@ export function BusinessPain() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: 'rgba(242,237,228,0.72)',
+              color: '#C9D3E3',
               lineHeight: 1.6,
               textAlign: 'center',
             }}
@@ -183,11 +183,11 @@ export function BusinessPain() {
             will own their categories for the next decade."
           </p>
           <div className="mt-4 flex items-center justify-center gap-3">
-            <div className="h-px w-6" style={{ background: 'rgba(191,155,92,0.3)' }} />
-            <span style={{ fontSize: '0.7rem', color: 'rgba(242,237,228,0.3)', letterSpacing: '0.08em' }}>
+            <div className="h-px w-6" style={{ background: 'rgba(182,146,94,0.25)' }} />
+            <span style={{ fontSize: '0.7rem', color: '#98A6BE', letterSpacing: '0.08em' }}>
               Misti Bruton — Founder, HeyPearl
             </span>
-            <div className="h-px w-6" style={{ background: 'rgba(191,155,92,0.3)' }} />
+            <div className="h-px w-6" style={{ background: 'rgba(182,146,94,0.25)' }} />
           </div>
         </div>
       </Container>

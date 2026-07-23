@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-const bg = '#F7F4EF';
-const text = '#1C1917';
-const secondary = 'rgba(28,25,23,0.5)';
-const gold = '#BF9B5C';
-const border = 'rgba(28,25,23,0.07)';
+const bg = '#F8F6F2';
+const text = '#07142F';
+const secondary = 'rgba(20,33,61,0.55)';
+const magenta = '#C2185B';
+const border = 'rgba(20,33,61,0.08)';
 const card = '#FFFFFF';
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
@@ -42,12 +42,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <Container size="xl">
           <nav aria-label="Breadcrumb">
             <div className="flex items-center gap-2 py-3" style={{ fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: secondary }}>
-              <Link href="/resources" className="flex items-center gap-1.5 hover:text-[#1C1917] transition-colors">
+              <Link href="/resources" className="flex items-center gap-1.5 hover:text-[#07142F] transition-colors">
                 <ArrowLeft size={11} />
                 Library
               </Link>
-              <span style={{ color: 'rgba(28,25,23,0.2)' }}>/</span>
-              <span style={{ color: gold }}>{article.category}</span>
+              <span style={{ color: 'rgba(20,33,61,0.2)' }}>/</span>
+              <span style={{ color: magenta }}>{article.category}</span>
             </div>
           </nav>
         </Container>
@@ -57,7 +57,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <header style={{ borderBottom: `1px solid ${border}`, paddingTop: '3.5rem', paddingBottom: '2.5rem' }}>
         <Container size="lg">
           <div className="max-w-3xl">
-            <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: gold, marginBottom: '1rem' }}>
+            <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1rem' }}>
               {article.category}
             </div>
             <h1
@@ -88,12 +88,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </header>
 
       {/* Quick Answer */}
-      <section style={{ borderBottom: `1px solid ${border}`, background: 'rgba(191,155,92,0.04)', paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
+      <section style={{ borderBottom: `1px solid ${border}`, background: 'rgba(194,24,91,0.04)', paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
         <Container size="lg">
           <div className="max-w-3xl flex gap-4">
-            <div style={{ width: '3px', background: gold, borderRadius: '999px', flexShrink: 0 }} />
+            <div style={{ width: '3px', background: magenta, borderRadius: '999px', flexShrink: 0 }} />
             <div>
-              <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: gold, marginBottom: '0.5rem' }}>
+              <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: magenta, marginBottom: '0.5rem' }}>
                 Quick Answer
               </div>
               <p style={{ fontSize: '0.95rem', color: text, lineHeight: 1.75, fontWeight: 500 }}>
@@ -114,8 +114,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               {article.keyTakeaways.map((point, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span style={{ width: '1.25rem', height: '1.25rem', background: 'rgba(191,155,92,0.12)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '0.1rem' }}>
-                    <span style={{ fontSize: '0.55rem', fontWeight: 800, color: gold }}>{String(i + 1)}</span>
+                  <span style={{ width: '1.25rem', height: '1.25rem', background: 'rgba(194,24,91,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '0.1rem' }}>
+                    <span style={{ fontSize: '0.55rem', fontWeight: 800, color: magenta }}>{String(i + 1)}</span>
                   </span>
                   <span style={{ fontSize: '0.88rem', color: text, lineHeight: 1.65 }}>{point}</span>
                 </li>
@@ -145,9 +145,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               {/* CTA in sidebar */}
               <div
                 className="mt-8 p-5 rounded-xl"
-                style={{ background: '#090909', border: '1px solid rgba(255,255,255,0.06)' }}
+                style={{ background: '#07142F', border: '1px solid rgba(48,72,111,0.6)' }}
               >
-                <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: gold, marginBottom: '0.625rem' }}>
+                <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta, marginBottom: '0.625rem' }}>
                   Ready to Build?
                 </div>
                 <p style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.6, marginBottom: '1rem' }}>
@@ -156,7 +156,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 <Link
                   href={site.strategyCallUrl}
                   className="flex items-center gap-1.5 text-[#090909] font-semibold rounded-full px-4 py-2 transition-opacity hover:opacity-85"
-                  style={{ background: gold, fontSize: '0.75rem', justifyContent: 'center' }}
+                  style={{ background: magenta, color: '#FFFFFF', fontSize: '0.75rem', justifyContent: 'center' }}
                 >
                   Book a Call
                   <ArrowUpRight size={12} />
@@ -180,14 +180,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 <Link
                   key={related.slug}
                   href={`/resources/${related.slug}`}
-                  className="group block p-6 transition-colors duration-150 hover:bg-[#F0EBE3]"
+                  className="group block p-6 transition-colors duration-150 hover:bg-[#EDE4D4]"
                   style={{ background: card }}
                 >
                   <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: secondary, marginBottom: '0.375rem' }}>
                     {related.category}
                   </div>
                   <h3
-                    className="group-hover:text-[#BF9B5C] transition-colors"
+                    className="group-hover:text-[#C2185B] transition-colors"
                     style={{ fontSize: '0.93rem', fontWeight: 700, color: text, lineHeight: 1.35, marginBottom: '0.5rem' }}
                   >
                     {related.title}
@@ -195,7 +195,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                   <div className="flex items-center gap-1.5">
                     <Clock size={10} style={{ color: secondary }} />
                     <span style={{ fontSize: '0.7rem', color: secondary }}>{related.readTime} min</span>
-                    <ArrowUpRight size={11} className="ml-auto opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: gold }} />
+                    <ArrowUpRight size={11} className="ml-auto opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: magenta }} />
                   </div>
                 </Link>
               ))}
@@ -205,10 +205,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       )}
 
       {/* Bottom CTA */}
-      <section style={{ borderTop: `1px solid ${border}`, background: '#090909', paddingTop: '4rem', paddingBottom: '4rem' }}>
+      <section style={{ borderTop: `1px solid ${border}`, background: '#07142F', paddingTop: '4rem', paddingBottom: '4rem' }}>
         <Container size="md">
           <div className="text-center">
-            <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: gold, marginBottom: '1rem' }}>
+            <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1rem' }}>
               From Understanding to Action
             </div>
             <h2
@@ -231,7 +231,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <Link
                 href={site.strategyCallUrl}
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold transition-opacity hover:opacity-85"
-                style={{ background: gold, color: '#090909', fontSize: '0.875rem' }}
+                style={{ background: magenta, color: '#FFFFFF', fontSize: '0.875rem' }}
               >
                 Book a Strategy Call
                 <ArrowUpRight size={13} />
