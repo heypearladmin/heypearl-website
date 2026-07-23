@@ -27,7 +27,7 @@ export function RecommendedModules({
         <div className="mb-14 max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               {eyebrow}
             </span>
           </div>
@@ -43,7 +43,7 @@ export function RecommendedModules({
           >
             {headline ?? (
               <>The platform modules<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>that matter most for you.</span></>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>that matter most for you.</span></>
             )}
           </h2>
           <p className="mt-5" style={{ fontSize: '0.9rem', color: '#98A6BE', lineHeight: 1.7 }}>

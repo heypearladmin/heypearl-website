@@ -22,7 +22,7 @@ const cream  = '#F8F6F2';
 const dim    = '#C9D3E3';
 const dimmer = '#98A6BE';
 const mg     = '#C2185B';
-const gold   = '#B6925E';
+const gold   = '#C2185B';
 const border = '#30486F';
 
 const STEPS = [

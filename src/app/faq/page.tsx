@@ -53,7 +53,7 @@ const bg = '#F8F6F2';
 const text = '#07142F';
 const secondary = 'rgba(7,20,47,0.55)';
 const magenta = '#C2185B';
-const mutedGold = '#B6925E';
+const mutedGold = '#C2185B';
 const border = 'rgba(7,20,47,0.08)';
 const card = '#FFFFFF';
 

@@ -89,7 +89,7 @@ export default function AuthorityPagesPage() {
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               Module 01 — Powered by PearlOS
             </span>
           </div>
@@ -112,7 +112,7 @@ export default function AuthorityPagesPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#B6925E',
+              color: '#C2185B',
             }}
           >
             The pages that make AI say your name.
@@ -150,7 +150,7 @@ export default function AuthorityPagesPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                   The Problem
                 </span>
               </div>
@@ -166,7 +166,7 @@ export default function AuthorityPagesPage() {
                 }}
               >
                 Most websites are built<br />
-                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>for humans, not AI.</span>
+                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>for humans, not AI.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8, marginBottom: '1rem' }}>
                 Traditional websites optimize for click-through rates, session duration, and Google PageRank. AI engines don't use any of those signals to decide who to recommend.
@@ -179,7 +179,7 @@ export default function AuthorityPagesPage() {
               className="p-8 rounded-2xl"
               style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}
             >
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '1.5rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1.5rem' }}>
                 What AI engines actually evaluate
               </div>
               {[
@@ -190,7 +190,7 @@ export default function AuthorityPagesPage() {
                 'Is this the most complete answer on this topic?',
               ].map((q, i) => (
                 <div key={i} className="flex gap-3 mb-4 last:mb-0">
-                  <span style={{ color: '#B6925E', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
+                  <span style={{ color: '#C2185B', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
                   <span style={{ fontSize: '0.88rem', color: '#C9D3E3', lineHeight: 1.55 }}>{q}</span>
                 </div>
               ))}
@@ -206,7 +206,7 @@ export default function AuthorityPagesPage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 What's Included
               </span>
             </div>
@@ -221,7 +221,7 @@ export default function AuthorityPagesPage() {
               }}
             >
               Six layers of<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI-ready architecture.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI-ready architecture.</span>
             </h2>
           </div>
           </Reveal>
@@ -257,7 +257,7 @@ export default function AuthorityPagesPage() {
             style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}
           >
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>
                 PearlOS Integration
               </div>
               <h3
@@ -312,7 +312,7 @@ export default function AuthorityPagesPage() {
             style={{ border: '1px solid rgba(48,72,111,0.35)', borderRadius: '1rem', overflow: 'hidden' }}>
             {OUTCOMES.map((o, i) => (
               <div key={o.context} className="p-8 text-center" style={{ background: i === 1 ? '#14284A' : '#07142F' }}>
-                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '3.2rem', fontWeight: 700, color: '#B6925E', lineHeight: 1, letterSpacing: '-0.03em', marginBottom: '0.25rem' }}>
+                <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '3.2rem', fontWeight: 700, color: '#C2185B', lineHeight: 1, letterSpacing: '-0.03em', marginBottom: '0.25rem' }}>
                   {o.metric}
                 </div>
                 <div style={{ fontSize: '0.78rem', color: '#C9D3E3', marginBottom: '0.5rem' }}>{o.label}</div>
@@ -348,7 +348,7 @@ export default function AuthorityPagesPage() {
             }}
           >
             Build the pages<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI wants to cite.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI wants to cite.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Authority Pages are built as part of a complete PearlOS engagement — not sold as standalone deliverables.

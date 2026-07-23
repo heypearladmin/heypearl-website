@@ -70,7 +70,7 @@ export default function AuthorityScorePage() {
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               Module 02 — Powered by PearlOS
             </span>
           </div>
@@ -93,7 +93,7 @@ export default function AuthorityScorePage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#B6925E',
+              color: '#C2185B',
             }}
           >
             You can't improve what you can't see.
@@ -126,11 +126,11 @@ export default function AuthorityScorePage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>What It Measures</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Measures</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Six dimensions.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>One clear picture.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One clear picture.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(245,241,232,0.48)', lineHeight: 1.75 }}>
               Authority Score doesn't measure website traffic or keyword rankings. It measures the signals AI engines actually use to decide whether to recommend your business.
@@ -159,7 +159,7 @@ export default function AuthorityScorePage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>How It Works</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>How It Works</span>
               </div>
               <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 Scoring in four steps.
@@ -189,7 +189,7 @@ export default function AuthorityScorePage() {
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl"
             style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
               <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 Authority Score guides the entire system.
               </h3>
@@ -218,7 +218,7 @@ export default function AuthorityScorePage() {
         <Container size="md" className="text-center">
           <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Find out where you<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>stand in AI search.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>stand in AI search.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Your Authority Score baseline is the first deliverable in every HeyPearl engagement. Book a strategy call to start the audit.

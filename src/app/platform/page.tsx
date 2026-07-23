@@ -92,7 +92,7 @@ export default function PlatformPage() {
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The HeyPearl Platform
             </span>
           </div>
@@ -108,7 +108,7 @@ export default function PlatformPage() {
             }}
           >
             One operating system.<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>Five integrated modules.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Five integrated modules.</span>
           </h1>
           <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: '#C9D3E3', lineHeight: 1.75 }}>
             PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility grows as a system, not a collection of tactics.
@@ -144,7 +144,7 @@ export default function PlatformPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                   The Operating Layer
                 </span>
               </div>
@@ -160,7 +160,7 @@ export default function PlatformPage() {
                 }}
               >
                 PearlOS runs<br />
-                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>everything.</span>
+                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>everything.</span>
               </h2>
               <p style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.75, marginBottom: '1rem' }}>
                 PearlOS is the operating system beneath every HeyPearl engagement — the unified intelligence layer that connects entity signals, monitors AI engines, and executes the P.E.A.R.L. framework in sequence.
@@ -209,7 +209,7 @@ export default function PlatformPage() {
           <Reveal>
           <div className="mb-10 flex items-center gap-3">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               Where to Start
             </span>
           </div>
@@ -250,7 +250,7 @@ export default function PlatformPage() {
                     fontFamily: 'var(--font-playfair), Georgia, serif',
                     fontSize: '0.9rem',
                     fontWeight: 700,
-                    color: item.highlight ? '#B6925E' : 'rgba(182,146,94,0.35)',
+                    color: item.highlight ? '#C2185B' : 'rgba(48,72,111,0.8)',
                     flexShrink: 0,
                     lineHeight: 1,
                     marginTop: '0.1rem',
@@ -283,7 +283,7 @@ export default function PlatformPage() {
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 Five Modules
               </span>
             </div>
@@ -297,7 +297,7 @@ export default function PlatformPage() {
                 letterSpacing: '-0.022em',
               }}
             >
-              Five systems. <span style={{ color: '#B6925E', fontStyle: 'italic' }}>One result.</span>
+              Five systems. <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One result.</span>
             </h2>
             <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: '#C9D3E3', lineHeight: 1.7 }}>
               Each module addresses a distinct layer of AI authority — and every module runs through PearlOS so they build on each other, not alongside each other.
@@ -370,7 +370,7 @@ export default function PlatformPage() {
           <Reveal>
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               Why Integration Matters
             </span>
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
@@ -387,7 +387,7 @@ export default function PlatformPage() {
             }}
           >
             We didn't build five separate tools.{' '}
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>We built one system.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>We built one system.</span>
           </h2>
           <p className="max-w-2xl mx-auto mb-6" style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.8 }}>
             Authority Pages create citable infrastructure. Knowledge Graph registers your entity. Authority Score reveals the gaps. AI Visibility tracks every engine. GEO Engine amplifies what works. PearlOS makes them all speak the same language and execute in the right order.

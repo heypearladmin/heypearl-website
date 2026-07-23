@@ -113,7 +113,7 @@ export default function PearlOSPage() {
           </div>
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The Operating System — Start Here
             </span>
           </div>
@@ -136,7 +136,7 @@ export default function PearlOSPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1rem, 2vw, 1.35rem)',
               fontStyle: 'italic',
-              color: '#B6925E',
+              color: '#C2185B',
             }}
           >
             The system that runs your authority build — so you don't have to.
@@ -174,7 +174,7 @@ export default function PearlOSPage() {
           <div className="mb-10 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 What It Means for Your Business
               </span>
             </div>
@@ -189,7 +189,7 @@ export default function PearlOSPage() {
               }}
             >
               Three outcomes.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>Not features. Outcomes.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Not features. Outcomes.</span>
             </h2>
           </div>
           </Reveal>
@@ -231,7 +231,7 @@ export default function PearlOSPage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 How It Works
               </span>
             </div>
@@ -246,7 +246,7 @@ export default function PearlOSPage() {
               }}
             >
               Six functions.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>One coordinated system.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One coordinated system.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
               Without PearlOS, the five modules are powerful individual tools. With it, they become a single coordinated system where every layer amplifies every other.
@@ -285,7 +285,7 @@ export default function PearlOSPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                   The P.E.A.R.L. Sequence
                 </span>
               </div>
@@ -301,7 +301,7 @@ export default function PearlOSPage() {
                 }}
               >
                 Five layers.<br />
-                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>Executed in order.</span>
+                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Executed in order.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
                 PearlOS enforces the P.E.A.R.L. sequence because the order matters. Entity architecture must precede authority content. Authority must precede reputation. Reputation must precede leverage. PearlOS ensures no step is skipped, no layer is built on a weak foundation.
@@ -355,7 +355,7 @@ export default function PearlOSPage() {
             }}
           >
             Ready to run PearlOS<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>for your business?</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>for your business?</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Every HeyPearl engagement is powered by PearlOS from day one. Book a strategy call to see how it applies to your specific market.

@@ -59,14 +59,14 @@ export default function KnowledgeGraphPage() {
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               Module 03 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             Knowledge Graph
           </h1>
-          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#B6925E' }}>
+          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#C2185B' }}>
             Before AI can recommend you, it has to know you exist.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.75 }}>
@@ -92,11 +92,11 @@ export default function KnowledgeGraphPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>Why It Matters</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Why It Matters</span>
               </div>
               <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 If AI doesn't know<br />
-                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>who you are, it won't say.</span>
+                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>who you are, it won't say.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8, marginBottom: '1rem' }}>
                 AI engines don't pull from websites — they pull from structured entity knowledge. When a buyer asks "who's the best [service] in [city]?" the AI consults its knowledge layer, not your homepage.
@@ -124,11 +124,11 @@ export default function KnowledgeGraphPage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>What It Builds</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Builds</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Six layers of<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>entity infrastructure.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>entity infrastructure.</span>
             </h2>
           </div>
           </Reveal>
@@ -153,7 +153,7 @@ export default function KnowledgeGraphPage() {
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl"
             style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
               <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 Entity is Layer 01. Everything builds on it.
               </h3>
@@ -182,7 +182,7 @@ export default function KnowledgeGraphPage() {
         <Container size="md" className="text-center">
           <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Build the entity<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI engines trust.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI engines trust.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             Knowledge Graph architecture is built in the first 30 days of every PearlOS engagement — the foundation every other module depends on.

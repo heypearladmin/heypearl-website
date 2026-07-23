@@ -24,7 +24,7 @@ export default function ResourcesPage() {
   const text = '#07142F';
   const secondary = 'rgba(20,33,61,0.55)';
   const magenta = '#C2185B';
-  const mutedGold = '#B6925E';
+  const mutedGold = '#C2185B';
   const border = 'rgba(20,33,61,0.08)';
 
   return (

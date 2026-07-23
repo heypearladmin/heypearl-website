@@ -62,14 +62,14 @@ export default function AIVisibilityPage() {
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               Module 04 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             AI Visibility
           </h1>
-          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#B6925E' }}>
+          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#C2185B' }}>
             Know exactly what AI is saying about you.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.75 }}>
@@ -92,7 +92,7 @@ export default function AIVisibilityPage() {
       <section className="py-20 bg-[#14284A]">
         <Container size="lg">
           <div className="mb-10 text-center">
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               Six Engines Monitored
             </span>
           </div>
@@ -118,11 +118,11 @@ export default function AIVisibilityPage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>What It Tracks</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Tracks</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Six signals.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>Complete AI awareness.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Complete AI awareness.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(245,241,232,0.48)', lineHeight: 1.75 }}>
               AI Visibility doesn't track impressions or clicks. It tracks the signals that predict whether your business gets recommended — before you lose the recommendation.
@@ -151,11 +151,11 @@ export default function AIVisibilityPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>Why It Matters</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Why It Matters</span>
               </div>
               <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 AI visibility loss<br />
-                <span style={{ color: '#B6925E', fontStyle: 'italic' }}>is invisible. Until it isn't.</span>
+                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>is invisible. Until it isn't.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8, marginBottom: '1rem' }}>
                 Traditional analytics tell you when traffic drops — after the damage is done. AI Visibility monitoring tells you when your AI representation changes — while you can still act on it.
@@ -172,7 +172,7 @@ export default function AIVisibilityPage() {
                 { label: 'A single inaccurate AI description can suppress recommendations across all six engines simultaneously.' },
               ].map((item, i) => (
                 <div key={i} className="flex gap-3 p-5 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(48,72,111,0.35)' }}>
-                  <span style={{ color: '#B6925E', flexShrink: 0, marginTop: '0.1rem', fontSize: '0.9rem' }}>→</span>
+                  <span style={{ color: '#C2185B', flexShrink: 0, marginTop: '0.1rem', fontSize: '0.9rem' }}>→</span>
                   <p style={{ fontSize: '0.85rem', color: '#C9D3E3', lineHeight: 1.65 }}>{item.label}</p>
                 </div>
               ))}
@@ -187,7 +187,7 @@ export default function AIVisibilityPage() {
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl"
             style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
               <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 Visibility data drives every other module.
               </h3>
@@ -216,7 +216,7 @@ export default function AIVisibilityPage() {
         <Container size="md" className="text-center">
           <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Know what AI<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>is saying about you.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>is saying about you.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             AI Visibility monitoring begins from day one of every PearlOS engagement. Book a strategy call to see your current AI presence.

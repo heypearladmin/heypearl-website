@@ -79,14 +79,14 @@ export default function GEOEnginePage() {
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B6925E' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               Module 05 — Powered by PearlOS
             </span>
           </div>
           <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             GEO Engine
           </h1>
-          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#B6925E' }}>
+          <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#C2185B' }}>
             The answer AI generates. The name it uses.
           </p>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.75 }}>
@@ -111,18 +111,18 @@ export default function GEOEnginePage() {
           <div className="mb-12 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>GEO vs. SEO</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>GEO vs. SEO</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Different game.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>Different rules.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Different rules.</span>
             </h2>
           </div>
           <div style={{ border: '1px solid rgba(48,72,111,0.35)', borderRadius: '1rem', overflow: 'hidden' }}>
             <div className="grid grid-cols-3 gap-px" style={{ background: 'rgba(48,72,111,0.35)' }}>
               <div className="p-4 text-xs font-semibold" style={{ background: '#07142F', color: '#98A6BE', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Dimension</div>
               <div className="p-4 text-xs font-semibold" style={{ background: '#07142F', color: '#98A6BE', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Traditional SEO</div>
-              <div className="p-4 text-xs font-semibold" style={{ background: '#07142F', color: '#B6925E', textTransform: 'uppercase', letterSpacing: '0.08em' }}>GEO Engine</div>
+              <div className="p-4 text-xs font-semibold" style={{ background: '#07142F', color: '#C2185B', textTransform: 'uppercase', letterSpacing: '0.08em' }}>GEO Engine</div>
             </div>
             {GEO_VS_SEO.map((row, i) => (
               <div key={row.dimension} className="grid grid-cols-3 gap-px" style={{ background: 'rgba(48,72,111,0.35)' }}>
@@ -142,11 +142,11 @@ export default function GEOEnginePage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E' }}>What It Builds</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Builds</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Six GEO systems.<br />
-              <span style={{ color: '#B6925E', fontStyle: 'italic' }}>One AI presence.</span>
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One AI presence.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: 'rgba(245,241,232,0.48)', lineHeight: 1.75 }}>
               GEO Engine isn't a content calendar. It's a coordinated system that targets the exact prompts your buyers are using and engineers your business as the AI-recommended answer.
@@ -174,7 +174,7 @@ export default function GEOEnginePage() {
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl"
             style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.12)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B6925E', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
               <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 GEO without entity architecture is noise.
               </h3>
@@ -203,7 +203,7 @@ export default function GEOEnginePage() {
         <Container size="md" className="text-center">
           <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Become the answer<br />
-            <span style={{ color: '#B6925E', fontStyle: 'italic' }}>AI generates.</span>
+            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI generates.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
             GEO Engine runs throughout every PearlOS engagement — starting from the first 30 days and compounding as entity architecture matures.
