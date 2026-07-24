@@ -47,6 +47,11 @@ export function HeroDeclaration() {
       style={{ background: '#FFFFFF' }}
       aria-label="Hero"
     >
+      {/* Hero background image */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Image src="/images/new-hero-images/hero-home.jpg" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-[0.12]" />
+      </div>
+
       {/* Subtle dot grid */}
       <div
         aria-hidden
