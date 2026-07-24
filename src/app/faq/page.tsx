@@ -51,10 +51,10 @@ function buildGroups(): FaqGroup[] {
 
 const bg = '#FFFFFF';
 const text = '#1E3A66';
-const secondary = 'rgba(7,20,47,0.55)';
+const secondary = '#64748B';
 const magenta = '#C2185B';
 const mutedGold = '#C2185B';
-const border = 'rgba(7,20,47,0.08)';
+const border = '#E7E3DD';
 const card = '#FFFFFF';
 
 export default function FaqIndexPage() {
@@ -75,7 +75,7 @@ export default function FaqIndexPage() {
           <Container size="lg">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(7,20,47,0.2)' }} aria-hidden />
+                <span className="inline-block h-px w-8" style={{ background: magenta, opacity: 0.4 }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta }}>
                   Frequently Asked Questions
                 </span>

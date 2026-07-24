@@ -16,7 +16,9 @@ type LogoProps = {
  */
 export function Logo({ variant = 'default', className, href = '/' }: LogoProps) {
   const isInverse = variant === 'inverse';
-  const src = isInverse ? '/images/heypearl-logo-light.png' : '/images/logo.png';
+  // default = navy "PEARL" for light backgrounds
+  // inverse = white "PEARL" for dark backgrounds (footer, dark hero)
+  const src = isInverse ? '/images/heypearl-logo-light.png' : '/images/Heypearl-logo-navy-blue.png';
 
   return (
     <Link
