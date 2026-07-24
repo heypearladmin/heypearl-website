@@ -52,7 +52,7 @@ export default function HeyLocalPage() {
           </>
         }
         description="A focused authority system for place-based businesses. Designed to dominate maps, search, and the AI summaries that now decide who customers visit first."
-        image="/images/heylocal-hero.jpg"
+        image="/images/new-hero-images/hero-heylocal.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

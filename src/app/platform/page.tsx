@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -72,7 +73,7 @@ export default function PlatformPage() {
     <>
       {/* Hero — navy bg, strong brand statement */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[70vh] flex flex-col justify-center bg-[#1E3A66] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[70vh] flex flex-col justify-center bg-white overflow-hidden"
         aria-label="Platform hero"
       >
         <div
@@ -80,18 +81,17 @@ export default function PlatformPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
+              'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full"
-          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.12) 0%, transparent 65%)' }}
-        />
+        <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
+          <Image src="/images/new-hero-images/hero-platform.jpg" alt="" fill sizes="45vw" className="object-cover opacity-20" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.85) 20%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0.05) 100%)' }} />
+        </div>
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The HeyPearl Platform
             </span>
@@ -102,7 +102,7 @@ export default function PlatformPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2.6rem, 6vw, 5rem)',
               fontWeight: 700,
-              color: '#FFFFFF',
+              color: '#1E3A66',
               lineHeight: 1.04,
               letterSpacing: '-0.03em',
             }}
@@ -110,7 +110,7 @@ export default function PlatformPage() {
             One operating system.<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Five integrated modules.</span>
           </h1>
-          <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
+          <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: '#64748B', lineHeight: 1.75 }}>
             PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility grows as a system, not a collection of tactics.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -126,7 +126,7 @@ export default function PlatformPage() {
             <Link
               href="/platform/pearlos"
               className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}
+              style={{ border: '1px solid #E7E3DD', color: '#334155' }}
             >
               Explore PearlOS
               <ArrowRight size={14} />

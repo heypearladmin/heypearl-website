@@ -31,7 +31,7 @@ export default function ServicesPage() {
           </>
         }
         description="HeyPearl is built as a system. Each service stands on its own. Together they form the authority infrastructure modern businesses need."
-        image="/images/pearl-framework-hero.jpg"
+        image="/images/new-hero-images/hero-solutions.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

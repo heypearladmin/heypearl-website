@@ -30,7 +30,7 @@ export default function ContactPage() {
           </>
         }
         description="Choose the front door that fits. Strategy calls are founder-led. The contact channel is for support, partnerships, and operational questions."
-        image=""
+        image="/images/new-hero-images/hero-contact.jpg"
       />
 
       <section className="pb-24 bg-white">

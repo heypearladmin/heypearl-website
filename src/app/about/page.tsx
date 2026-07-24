@@ -114,7 +114,7 @@ export default function AboutPage() {
           </>
         }
         description="HeyPearl is the AI Authority Platform. We help businesses earn trust, visibility, and recommendations across AI search — through structured infrastructure, not tactics."
-        image=""
+        image="/images/new-hero-images/hero-about.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

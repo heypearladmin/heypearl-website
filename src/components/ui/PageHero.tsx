@@ -11,7 +11,7 @@ type PageHeroProps = {
   title: ReactNode;
   description?: ReactNode;
   children?: ReactNode;
-  /** Optional background image (path under /public, e.g. "/images/about-hero.jpg") */
+  /** Optional background image (path under /public) */
   image?: string;
 };
 
@@ -23,31 +23,28 @@ export function PageHero({
   image,
 }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden">
-      {/* Optional photographic backdrop */}
+    <section className="relative overflow-hidden" style={{ background: '#F8F5F0' }}>
+      {/* Right-side editorial photo — same treatment as insights hero */}
       {image && (
-        <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
           <Image
             src={image}
             alt=""
             fill
             priority
-            sizes="100vw"
-            className="object-cover opacity-40"
+            sizes="45vw"
+            className="object-cover object-center opacity-25"
           />
-          {/* Stronger wash so headlines read cleanly */}
-          <div className="absolute inset-0 bg-gradient-to-b from-cream/65 via-cream/45 to-cream/55" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                'linear-gradient(to right, #F8F5F0 0%, rgba(248,245,240,0.85) 20%, rgba(248,245,240,0.35) 65%, rgba(248,245,240,0.05) 100%)',
+            }}
+          />
         </div>
       )}
 
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(50% 60% at 20% 20%, rgba(255,145,77,0.16) 0%, transparent 60%), radial-gradient(40% 50% at 80% 30%, rgba(211,70,129,0.14) 0%, transparent 60%)',
-        }}
-      />
       <Container size="xl" className="relative pt-16 pb-24 sm:pt-20 sm:pb-32">
         <div className="max-w-4xl flex flex-col gap-6">
           {eyebrow && (

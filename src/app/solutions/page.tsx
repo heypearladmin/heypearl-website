@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -66,8 +67,10 @@ export default function SolutionsPage() {
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
-        <div aria-hidden className="pointer-events-none absolute top-0 left-1/3 w-[800px] h-[500px]"
-          style={{ background: 'radial-gradient(ellipse at top, rgba(194,24,91,0.04) 0%, transparent 65%)' }} />
+        <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
+          <Image src="/images/new-hero-images/hero-solutions.jpg" alt="" fill sizes="45vw" className="object-cover opacity-20" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.85) 20%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0.05) 100%)' }} />
+        </div>
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />

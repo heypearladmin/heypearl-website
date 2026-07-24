@@ -58,7 +58,7 @@ export default function AuthorityWebsitesPage() {
           </>
         }
         description="Cinematic, editorial websites engineered to be discovered, indexed, and surfaced by AI. Premium design with authority architecture built in from the first sketch."
-        image="/images/authority-website-preview.jpg"
+        image="/images/new-hero-images/hero-authority-websites.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

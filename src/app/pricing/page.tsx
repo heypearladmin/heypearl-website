@@ -95,7 +95,7 @@ export default function PricingPage() {
           </>
         }
         description="Two product families. Six tiers. Each one a complete authority system, not a marketing retainer."
-        image=""
+        image="/images/new-hero-images/hero-platform.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

@@ -37,7 +37,7 @@ export default function InsightsPage() {
           </>
         }
         description="Field-tested frameworks, AI search experiments, and operator intelligence. A reading room for businesses taking authority infrastructure seriously."
-        image="/images/insights-hero.jpg"
+        image="/images/new-hero-images/insights-hero.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

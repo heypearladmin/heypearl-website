@@ -140,7 +140,7 @@ export default function GEOPage() {
           </>
         }
         description="The authority infrastructure built specifically for the AI search era. Designed to make your business citable, trusted, and recommended by the systems your customers now ask first."
-        image="/images/geo-concept.jpg"
+        image="/images/new-hero-images/hero-geo.jpg"
       >
         <div className="flex flex-col sm:flex-row gap-3">
           <LinkButton

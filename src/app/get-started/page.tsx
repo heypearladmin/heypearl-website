@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -100,11 +101,10 @@ export default function GetStartedPage() {
             backgroundSize: '80px 80px',
           }}
         />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute top-0 right-0 w-[600px] h-[600px]"
-          style={{ background: 'radial-gradient(ellipse at top right, rgba(194,24,91,0.04) 0%, transparent 65%)' }}
-        />
+        <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
+          <Image src="/images/new-hero-images/hero-get-started.jpg" alt="" fill sizes="45vw" className="object-cover opacity-20" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.85) 20%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0.05) 100%)' }} />
+        </div>
 
         <Container size="lg" className="relative z-10">
           <Reveal>
