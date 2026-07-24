@@ -19,6 +19,247 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "chatgpt-vs-perplexity-vs-google-ai-overviews-for-businesses",
+    eyebrow: "AI Engine Intelligence",
+    seoTitle: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business? | Hey Pearl",
+    metaDescription: "A practical comparison of how ChatGPT, Perplexity, and Google AI Overviews recommend businesses — and what you need to do differently to show up in each one.",
+    h1: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business?",
+    excerpt: "Three major AI engines. Three different recommendation logics. Most businesses optimize for none of them. Here is what sets each platform apart — and where your effort actually pays off.",
+    quickAnswer: "ChatGPT, Perplexity, and Google AI Overviews each surface businesses differently: Google AI Overviews leans on structured entity data and its Knowledge Graph; Perplexity is citation-obsessed and retrieval-first; ChatGPT blends training knowledge with live search, rewarding businesses that are both established in model memory and well-structured on the live web. The underlying authority signals — entity consistency, schema, citations, reviews — lift you across all three simultaneously.",
+    publishedAt: "2026-07-16",
+    readTime: "9 min read",
+    image: "/images/website-blog-ai-engine-comparison.png",
+    content: `## Three engines, three recommendation logics
+
+By mid-2026, the majority of commercial research journeys begin with a generative answer rather than a list of blue links. But "generative search" is not one thing. ChatGPT, Perplexity, and Google AI Overviews each work differently under the hood — and they surface businesses differently as a result.
+
+Most operators treat them as interchangeable and optimize for none of them deliberately. The ones who understand the differences build visibility that competitors cannot easily replicate. This is a practical breakdown of how each platform decides what to recommend, where the shared signals live, and what you can do that is specific to each.
+
+## Google AI Overviews
+
+Google AI Overviews sit on top of the world's most established knowledge graph. When a query triggers an Overview, Google is not starting from scratch — it is synthesizing an answer from sources it has already indexed, crawled, and evaluated through years of trust-signal accumulation.
+
+### How it decides what to surface
+
+Entity recognition is the foundation. Google has spent years building a formal understanding of which businesses exist, what they do, and how authoritative they are. Businesses with a Google Knowledge Panel — a signal that Google has formally admitted them into the Knowledge Graph — get cited in Overviews far more readily than those that exist only as websites.
+
+Structured data carries outsized weight here. Organization schema, LocalBusiness schema, and a well-populated sameAs array explicitly tell Google's systems which entity your site represents. This is the machine-readable layer Google built its ecosystem around; Overviews inherit that trust signal directly.
+
+E-E-A-T — Experience, Expertise, Authoritativeness, Trust — remains a primary filter. Overviews favor sources Google has evaluated as high-quality: pages with clear authorship, verifiable expertise, strong inbound signals, and a clean technical footprint. The same signals that drove traditional rankings now feed the answer layer.
+
+### What to do specifically for Google AI Overviews
+
+Claim and fully complete your Google Business Profile — it feeds Overviews directly for local and commercial queries. Implement Organization and, where relevant, LocalBusiness schema site-wide. Pursue a Knowledge Panel if your business warrants one: consistent NAP everywhere, verified profiles, and corroborating third-party mentions are the path. Keep your E-E-A-T signals strong: named authorship, founder visibility, and structured content that answers real questions.
+
+## Perplexity
+
+Perplexity operates as a retrieval-first engine. When a user submits a query, it performs a live web search, reads the results, and synthesizes an answer from what it finds in real time. It shows its sources explicitly — citations are the product, not a footnote.
+
+### How it decides what to surface
+
+Citation velocity matters more here than on any other platform. Because Perplexity is pulling live results for every query, freshness and web coverage are disproportionately powerful. A business mentioned recently across several credible sources is one Perplexity can confidently pull from. A business with few live references is one it has little to work with.
+
+Content extractability is equally important. Perplexity is reading your page in real time and deciding whether to pull from it. Clean HTML structure, clear headings, FAQ content with explicit question-and-answer pairs, and pages that directly state their subject all make you easier to cite. Opaque, marketing-heavy pages that require inference give Perplexity less to grab.
+
+Perplexity also weights domain authority and source credibility when deciding which of several retrieved pages to cite. Third-party mentions in credible publications, industry directories, and authoritative domains amplify your coverage in ways that matter here specifically.
+
+### What to do specifically for Perplexity
+
+Build citation velocity through genuine third-party coverage: press mentions, industry directories, partner announcements, and guest contributions all create the live web presence Perplexity can retrieve. Structure your pages for extraction: clear h2 and h3 headings, FAQ sections with explicit Q&A format, and first-person specificity that proves this content comes from somewhere real. Keep your pages current — Perplexity reads live, so freshness directly affects visibility in a way it does not for engines that rely more on training data.
+
+## ChatGPT
+
+ChatGPT has two layers that operate differently and reward different signals. The training layer is what the model learned during its last training cycle — a broad, deep representation of the web's text as it existed up to the cutoff date. The browsing layer is what the model retrieves live when a user's query signals that current information is needed.
+
+### How it decides what to surface
+
+Training-layer recognition determines the baseline. Businesses that appeared substantively in the web's text during the training period — covered in articles, referenced across credible sources, discussed in industry publications — have a presence in the model's weights. When a user asks about a category and no browsing is triggered, the model recommends from what it knows. This is why older, well-documented businesses sometimes appear in ChatGPT answers without having done any AI-specific optimization: they were simply present in the training data.
+
+For newer businesses, or for queries where ChatGPT's search layer activates, the live retrieval dynamic is closer to Perplexity: structured, extractable content and fresh third-party coverage matter significantly. The difference is that ChatGPT's search layer is less retrieval-obsessive than Perplexity's — it is more willing to synthesize from training knowledge alongside retrieved content, so entity authority from training still feeds the answer even when browsing is active.
+
+Memory and personalization are factors that neither Google nor Perplexity have at the same scale. Users who interact with ChatGPT regularly may receive recommendations shaped by their prior conversations and stated preferences, which is a dynamic that is currently impossible to optimize for directly — it is a reason to ensure the factual signals the model encounters about your business are accurate across every touchpoint.
+
+### What to do specifically for ChatGPT
+
+Pursue the third-party coverage and authoritative mentions that build training-layer presence over model cycles. This is a long-horizon investment: earning mentions in publications the model is likely to have ingested builds recognition that persists across queries even when no live search is triggered. Simultaneously, structure your owned content for the live layer: clean pages that answer real questions directly, updated regularly, with schema that makes extraction clean. Maintain accurate information everywhere your business appears — the model synthesizes from multiple sources, and contradictions degrade how confidently it describes you.
+
+## The shared foundation
+
+Despite their differences, the three platforms reward a common underlying infrastructure.
+
+**Entity clarity** — a consistent, verifiable identity across the web — is the prerequisite for confident citation on any platform. A business the engines cannot confidently resolve as a single entity is one they route around.
+
+**Structured data** is universally beneficial. The degree varies by platform, but clean schema removes ambiguity for all of them.
+
+**Review signals** — velocity, recency, sentiment — are read as live trust indicators across all three, and their absence is conspicuous in competitive categories.
+
+**Citation and mention coverage** in credible third-party sources feeds the retrieval layer of every platform and builds the training-layer presence that accumulates across model cycles.
+
+This is why optimizing for one engine is rarely worth the tradeoff: the underlying signals that lift your visibility in Google AI Overviews are the same signals that make you extractable in Perplexity and present in ChatGPT's training and retrieval layers. Build the foundation, and you improve across all three simultaneously.
+
+## Where to focus your effort
+
+If you had to prioritize: **Google AI Overviews** for the broadest reach and highest commercial query volume; **Perplexity** for research-heavy buyer journeys where the consideration process is longer and more rigorous; **ChatGPT** for conversational discovery, where buyers are asking for guidance rather than comparison-shopping.
+
+The practical answer for most businesses is to treat the shared signals as the primary investment — entity clarity, schema, reviews, citation coverage — and add the platform-specific tactics as multipliers on top of that foundation. Do the foundation work first. The platform-specific details reward businesses that have already earned the right to be cited.`,
+    faq: [
+      {
+        q: "Which AI engine sends the most traffic to business websites?",
+        a: "Google AI Overviews currently reach the broadest audience by volume, since they appear on a large share of Google searches. However, traffic volume from AI citations is less predictable than from ranked links — AI engines often answer without a click. Perplexity sends more direct referral traffic per citation because it shows sources explicitly, while ChatGPT and Gemini traffic varies by whether users follow cited links."
+      },
+      {
+        q: "Do I need to optimize for each engine separately?",
+        a: "The core work is shared: entity consistency, schema, reviews, and citation coverage lift you across all three simultaneously. Platform-specific tactics — like pursuing Google Knowledge Panel status for AI Overviews, or building Perplexity-readable page structure — are multipliers on a solid shared foundation, not substitutes for it. Start with the shared signals; layer platform specifics on top."
+      },
+      {
+        q: "Why does ChatGPT sometimes recommend businesses that have never done any optimization?",
+        a: "ChatGPT's training layer contains a representation of the web's text up to the model's training cutoff. Businesses that were substantively discussed in credible online sources during that period have a presence in the model's weights, which the model draws on when answering category queries without triggering a live search. Older, well-documented businesses benefit from this; newer or less-documented ones need to build the live web presence that the retrieval layer can access."
+      },
+      {
+        q: "Is Perplexity important if my buyers aren't technically sophisticated?",
+        a: "Perplexity's user base skews toward research-heavy buyers — professionals, analysts, and anyone conducting serious comparison research — so it matters most for categories with longer consideration cycles: B2B services, professional practices, high-ticket consumer decisions. If your buyers tend to make quick decisions on familiar terms, Google AI Overviews and ChatGPT likely carry more weight."
+      },
+      {
+        q: "How do I know which engine my buyers are using?",
+        a: "Check your analytics for referral traffic labeled with AI engine domains, and ask customers directly how they found you. Anecdotally, business buyers frequently use ChatGPT and Perplexity for vendor research; consumer buyers lean more on Google AI Overviews and voice search assistants. The honest answer is that most buyers use several, which is why platform-agnostic signal building is the right default strategy."
+      },
+      {
+        q: "Can paid advertising on these platforms replace organic AI visibility?",
+        a: "Paid placements exist or are emerging on some platforms, but they occupy a different position from organic citations — users who trust AI recommendations specifically trust them because they appear earned rather than purchased. The organic answer layer is where discovery-stage influence lives, and it responds to authority signals, not budget. Paid and organic serve different moments in the buyer journey rather than substituting for each other."
+      }
+    ],
+    conclusion: "ChatGPT, Perplexity, and Google AI Overviews are meaningfully different systems with meaningfully different recommendation logics. Understanding those differences tells you where to place your platform-specific bets. But the most durable AI visibility strategy is the one that builds the shared foundation — entity clarity, structured data, reviews, citation coverage — that lifts your position across all three at once. Earn the right to be cited, then optimize how you show up in each platform's particular way of deciding who belongs in the answer.",
+    internalLinks: [
+      { label: "Explore our GEO services", href: "/services/geo" },
+      { label: "Learn about AI Authority scoring", href: "/platform/authority-score" },
+      { label: "Start with a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photography of three sleek smartphones side by side on a clean marble surface, each screen glowing with a distinct soft interface light — blue, violet, and green — suggesting different AI platforms, warm ambient studio lighting, shallow depth of field, premium minimalist aesthetic, no text, no logos",
+    imageFilename: "website-blog-ai-engine-comparison.png",
+  },
+  {
+    slug: "local-ai-search-optimization",
+    eyebrow: "Local AI Visibility",
+    seoTitle: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses | Hey Pearl",
+    metaDescription: "AI engines now give local business recommendations the way a trusted friend would. Here is how to build the local authority signals that get you named — not your competitors.",
+    h1: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses",
+    excerpt: "When someone asks an AI assistant for the best plumber, accountant, or restaurant in their city, the engine names two or three businesses and stops. Here is how to be one of them.",
+    quickAnswer: "Local AI search optimization requires building four signals in combination: a complete, actively managed Google Business Profile; consistent NAP (name, address, phone) across every directory and platform; a strong body of recent, specific reviews on Google and industry-relevant platforms; and location-aware structured data on your website. Together, these give AI engines the confidence to name you as a local recommendation.",
+    publishedAt: "2026-07-09",
+    readTime: "8 min read",
+    image: "/images/website-blog-local-ai-search.png",
+    content: `## The shortest recommendation list in history
+
+When someone types "who is the best HVAC company in Denver?" into ChatGPT or Google AI Overviews, the engine does not return a list of fifty results to scroll. It names two or three businesses and moves on. For local commerce, this is the highest-stakes development in search since the invention of the map pack.
+
+The businesses that get named are not necessarily the ones with the biggest ad budgets or the highest traditional rankings. They are the ones the engine can identify with confidence — a distinction that turns on a specific set of local authority signals most businesses have never assembled deliberately.
+
+This is what local AI search optimization is: the disciplined work of building a signal set so clear, consistent, and rich that AI engines choose your business when someone asks for the best of your kind in your market.
+
+## Why local queries are different
+
+Local AI recommendations carry a distinctive pressure that national or general queries do not. When an engine answers "who should I trust for residential electrical work in Phoenix?", it is effectively vouching for a business with its reputation. The stakes are different from naming a general category article or a software tool. Engines respond to this by being more conservative in local categories — they name businesses they can verify, corroborate, and feel confident putting in front of someone who will walk through the door.
+
+This means the signals that drive local AI visibility are more trust-dependent than their national equivalents. Entity clarity, review volume and sentiment, and the coherence of your presence across local platforms all weigh disproportionately in local recommendations. Getting any one of these right while others are weak produces unpredictable results. The engine needs to see a consistent picture from multiple angles before it names you.
+
+## Signal 1: Google Business Profile — the gravity center of local AI
+
+Your Google Business Profile is the primary data source for local AI recommendations across multiple platforms. Google AI Overviews draw on GBP directly. Third-party engines — Perplexity, ChatGPT's live search layer — index GBP data as a high-authority local source. An incomplete or inactive GBP is the single most common reason a business with genuinely strong local credentials gets left out of AI recommendations.
+
+A GBP built for AI visibility is not the same as one "claimed and filled out." Every field matters:
+
+- **Primary category**: Choose the most specific category that accurately describes your core service. Engines use this to match you to queries.
+- **Services**: List your specific offerings explicitly, with short descriptions. This is the material engines use to match you to service queries rather than just category queries.
+- **Description**: Write 150–200 words that state your specialty, your founding story, and your service area in plain, specific language. Generic copy is invisible to engines looking for confidence signals.
+- **Photos**: Active, recent, original photos — exterior, interior, work in progress, team — signal a living business, not an abandoned listing. Engines weigh photo recency and specificity.
+- **Posts**: Regular GBP posts (even monthly) signal ongoing business activity. Recency is a trust signal in local contexts specifically.
+- **Q&A**: Seed and answer the questions buyers actually ask. This is structured FAQ content that feeds directly into local AI answer generation.
+
+## Signal 2: NAP consistency — the identity foundation
+
+Your name, address, and phone number must be identical across every platform where your business appears: your website, Google, Apple Maps, Yelp, industry directories, and any other citation source in your category.
+
+This sounds tedious because it is. It is also disproportionately high-leverage. When an engine encounters the same business appearing under "Acme Plumbing LLC" on Google, "Acme Plumbing" on Yelp, and "Acme Plumbing Co." in a directory, it sees three uncertain references to something rather than one confident entity. Entity resolution breaks down, and the engine routes to a competitor with a cleaner record.
+
+Run a citation audit before optimizing anything else. Find every listing, note every variation, and systematically align them to a single canonical identity. This is unglamorous infrastructure work — and it is the reason some businesses with excellent service and strong reviews are invisible in local AI results while less impressive competitors get named repeatedly.
+
+## Signal 3: Review velocity and specificity
+
+For local AI recommendations specifically, reviews are not just a trust signal — they are informational content. Engines read the text of your reviews to understand what you are actually good at, what neighborhoods you serve, and what kinds of jobs you handle. A body of 200 vague five-star reviews is less useful to an AI engine than 80 reviews that name specific services, specific locations, and specific outcomes.
+
+This has two practical implications.
+
+First, encourage specificity in the reviews you receive. While you cannot dictate what a reviewer writes, you can prompt customers in ways that increase the probability of detailed responses. "We'd love to hear what you thought of the installation process" produces more AI-useful content than "Please leave us a review."
+
+Second, recency is a local signal with particularly high weight. A local business whose reviews stopped growing six months ago reads as potentially dormant. A business with a steady stream of recent reviews reads as active, healthy, and safe to recommend. For local AI visibility, review velocity — the rate at which new reviews arrive — matters as much as total volume.
+
+Google is the primary platform, but do not stop there. Prioritize the industry-native platforms your buyers consult: for a contractor, a trade directory; for a medical practice, a health review site; for a restaurant, a dining platform. Engines treat domain-relevant sources as authoritative for domain-specific queries, and coverage across your category's native platforms compounds your local authority.
+
+## Signal 4: Location-aware structured data on your website
+
+Your website needs to tell engines, in machine-readable language, exactly where you operate and what you do there. LocalBusiness schema is the vehicle.
+
+A well-implemented LocalBusiness schema block states your business name, address, geographic coordinates, phone number, service hours, price range, and — critically — your service area. If you serve multiple locations, the areaServed property lets you list them explicitly rather than leaving engines to infer from content alone.
+
+Pair LocalBusiness schema with FAQ schema on your key service pages. Pages that answer "what plumbers serve the [neighborhood] area?" or "how much does HVAC installation cost in [city]?" with specific, structured answers are pages engines can extract and cite directly. First-party, location-specific content that directly answers the questions buyers ask is among the highest-value content a local business can produce for AI visibility.
+
+## Signal 5: Location-specific content
+
+AI engines favor sources that directly answer the question being asked. For local queries, this means content that is explicit about geography — not just "our plumbing services" but "emergency plumbing in the Denver metro area: what to expect and who to call."
+
+Location-specific pages, when they exist and are substantive, give engines extractable content for geographic queries they otherwise have to assemble from inference. A service-area page that names the neighborhoods you serve, the local regulations you work with, and the specific local context of your work is more useful to an AI engine than a generic services page with your city name appended.
+
+The same principle applies to blog content, FAQ pages, and case studies: ground them in local specifics where accurate, and you become more citable for the local queries that drive local business.
+
+## How to audit your local AI visibility
+
+Before optimizing, establish your baseline. Run the following queries across ChatGPT, Perplexity, and Google:
+
+- "Who are the best [category] in [city]?"
+- "I need a [service] near [neighborhood or landmark] — who should I call?"
+- "Tell me about [your business name]."
+
+Note where you appear, where you do not, and what the engines say about you when you do appear. Do your facts come through correctly? Are you described in the terms you would choose? Are competitors being named from their owned pages while you are cited from a third-party directory — or not cited at all?
+
+That gap is your local AI visibility roadmap. The businesses that close it fastest are the ones that treat local AI search optimization as infrastructure — the same way they treat their website or their review program — rather than a project to get to eventually.
+
+The channel is already routing buyers. The question is whether it is routing them to you.`,
+    faq: [
+      {
+        q: "Does local AI search optimization work differently for service-area businesses versus brick-and-mortar?",
+        a: "Yes, with nuance. Brick-and-mortar businesses benefit from physical address signals — map pack presence, verified location, photo recency — that service-area businesses lack. Service-area businesses should emphasize the areaServed property in LocalBusiness schema, create content that is explicit about the neighborhoods and cities they serve, and be especially diligent about GBP service area settings. Both types depend on the same core signals: NAP consistency, review velocity, and structured data."
+      },
+      {
+        q: "How many Google reviews do I need to appear in local AI recommendations?",
+        a: "There is no fixed threshold, and volume alone is not the deciding factor. Recency, sentiment, and specificity matter at least as much as count. A business with 60 detailed, recent reviews from the past 12 months often outperforms one with 300 older or vague reviews in AI recommendation contexts. Focus on maintaining a steady cadence of genuine reviews rather than reaching a number."
+      },
+      {
+        q: "If I serve multiple cities, do I need a separate page for each?",
+        a: "Substantive location-specific pages — not thin, templated duplicates — are worth building for your primary service areas, particularly for high-value or competitive categories. Each page should contain genuinely location-specific content: local regulations, area-specific pricing context, neighborhood service notes, and case studies from that market. Thin pages that are only differentiated by city name add little value and can harm your overall credibility."
+      },
+      {
+        q: "I've claimed my GBP but still don't appear in AI recommendations. What's the most likely cause?",
+        a: "The most common culprits are inconsistent NAP across directories (which prevents confident entity resolution), sparse or stale reviews, and an incomplete GBP — specifically missing or generic service descriptions, no photos, and no Q&A content. Check all three before looking at more complex technical explanations. In most cases, the issue is in the foundational signals, not a sophisticated algorithm gap."
+      },
+      {
+        q: "Do AI engines use Apple Maps or Yelp data for local recommendations?",
+        a: "Yes — multiple AI engines draw from a range of local data sources, not just Google. Perplexity and ChatGPT's live search layer retrieve data from Yelp, Apple Maps, industry directories, and other authoritative local sources. Your GBP is the highest-priority platform, but consistent, active profiles on Yelp and the directories native to your category add meaningful coverage across the engines that retrieve from these sources."
+      },
+      {
+        q: "How long does it take to see results from local AI search optimization?",
+        a: "Structural changes — fixing NAP inconsistencies, implementing LocalBusiness schema, completing GBP fields — can influence results within days to a few weeks as engines re-crawl and re-index. Review velocity improvements take longer, since they require genuine customer activity over months. Most businesses see meaningful movement in their local AI visibility within one to two quarters of sustained foundational work."
+      }
+    ],
+    conclusion: "Local AI recommendations are short lists with high stakes. The businesses that earn a spot on them are not necessarily the largest or the oldest — they are the ones engines can identify with the most confidence. Build that confidence through a complete and active Google Business Profile, consistent NAP across every platform, a steady stream of specific and recent reviews, location-aware structured data, and content that speaks directly to your geography and services. That infrastructure compounds over time, and it becomes the reason the engine names you instead of your competitor when the next buyer asks who to call.",
+    internalLinks: [
+      { label: "Learn about HeyLocal", href: "/services/heylocal" },
+      { label: "Explore our GEO services", href: "/services/geo" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photography of a person holding a smartphone with a soft glowing map interface visible on the screen, standing on a bright city sidewalk with blurred storefronts in the background, warm natural morning light, premium lifestyle documentary style, no text, no logos",
+    imageFilename: "website-blog-local-ai-search.png",
+  },
+  {
     slug: "90-day-ai-visibility-roadmap",
     eyebrow: "Roadmap",
     seoTitle: "From Invisible to Recommended: Your 90-Day AI Visibility Roadmap | Hey Pearl",
