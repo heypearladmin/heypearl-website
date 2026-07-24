@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   },
 };
 
+const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+
 const CHALLENGES = [
   {
     num: '01',
@@ -95,17 +97,17 @@ export default function TeamsPage() {
         aria-label="Teams hero"
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute top-1/4 right-1/4 w-[600px] h-[400px]"
-          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.06) 0%, transparent 65%)' }} />
+          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.04) 0%, transparent 65%)' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/solutions" className="text-xs" style={{ color: '#334155' }}>Solutions</Link>
-            <span style={{ color: 'rgba(245,241,232,0.2)', fontSize: '0.75rem' }}>/</span>
+            <Link href="/solutions" className="text-xs" style={{ color: '#64748B' }}>Solutions</Link>
+            <span style={{ color: '#94A3B8', fontSize: '0.75rem' }}>/</span>
             <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Real Estate Teams</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.5 }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               For Team Leads
             </span>
@@ -119,10 +121,10 @@ export default function TeamsPage() {
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
-            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: 'rgba(245,241,232,0.60)' }}>
+            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#64748B' }}>
               Explore the Platform <ArrowUpRight size={13} />
             </Link>
           </div>
@@ -130,12 +132,12 @@ export default function TeamsPage() {
       </section>
 
       {/* Challenges */}
-      <section className="py-28 bg-white">
+      <section className="py-28 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>The Challenge</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
@@ -146,12 +148,12 @@ export default function TeamsPage() {
           </Reveal>
           <Reveal delay={0.1}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden' }}>
-            {CHALLENGES.map((c, i) => (
-              <div key={c.num} className="p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#07142F' : '#07142F' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(182,146,94,0.15)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: cardShadow }}>
+            {CHALLENGES.map((c) => (
+              <div key={c.num} className="p-7 lg:p-8 bg-white">
+                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(30,58,102,0.08)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
                 <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
-                <p style={{ fontSize: '0.845rem', color: 'rgba(245,241,232,0.60)', lineHeight: 1.72 }}>{c.body}</p>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.72 }}>{c.body}</p>
               </div>
             ))}
           </div>
@@ -166,17 +168,17 @@ export default function TeamsPage() {
             <Reveal>
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+                <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>How HeyPearl Solves It</span>
               </div>
               <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 Authority that compounds<br />
                 <span style={{ color: '#C2185B', fontStyle: 'italic' }}>as your team grows.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.8, marginBottom: '1rem' }}>
+              <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8, marginBottom: '1rem' }}>
                 PearlOS builds a hierarchical entity structure with your team brand at the center and individual agent entities properly connected beneath it. Every new agent, every new specialty, every new geography reinforces the unified brand rather than fragmenting it.
               </p>
-              <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.8 }}>
+              <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8 }}>
                 The result is a team AI presence that's stronger than the sum of its parts — where buyers asking for any specialty your team covers find your brand first.
               </p>
             </div>
@@ -189,11 +191,11 @@ export default function TeamsPage() {
                 { step: '04', label: 'Compounding monitoring', desc: 'Track team AI visibility at both the brand level and the individual agent level — so you know where authority is compounding and where gaps remain.' },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
-                <div className="flex gap-4 p-5 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #E7E3DD' }}>
+                <div className="flex gap-4 p-5 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.05)' }}>
                   <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#C2185B', flexShrink: 0, marginTop: '0.2rem', letterSpacing: '0.05em' }}>{item.step}</div>
                   <div>
                     <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
-                    <p style={{ fontSize: '0.82rem', color: 'rgba(245,241,232,0.58)', lineHeight: 1.65 }}>{item.desc}</p>
+                    <p style={{ fontSize: '0.82rem', color: '#334155', lineHeight: 1.65 }}>{item.desc}</p>
                   </div>
                 </div>
                 </Reveal>
@@ -207,10 +209,10 @@ export default function TeamsPage() {
       <RecommendedModules modules={MODULES} />
 
       {/* Proof */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
-          <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#F8F5F0', border: '1px solid rgba(182,146,94,0.12)' }}>
+          <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: cardShadow }}>
             <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1rem' }}>Client Result</div>
             <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', fontStyle: 'italic', color: '#1E3A66', lineHeight: 1.5, marginBottom: '1.25rem' }}>
               "A real estate team in Scottsdale saw a 3× increase in AI recommendation frequency across their market — within a single quarter of PearlOS activation."
@@ -227,7 +229,7 @@ export default function TeamsPage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
@@ -239,9 +241,9 @@ export default function TeamsPage() {
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #E7E3DD' }}>
+              <div className="p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
                 <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
-                <p style={{ fontSize: '0.845rem', color: 'rgba(245,241,232,0.60)', lineHeight: 1.7 }}>{faq.a}</p>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
             ))}
@@ -250,7 +252,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Related */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="mb-8">
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Related Solutions</span>
@@ -262,13 +264,13 @@ export default function TeamsPage() {
             ].map((item, i) => (
               <Reveal key={item.href} delay={i * 0.08}>
               <Link href={item.href}
-                className="group flex items-center gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors duration-200"
-                style={{ border: '1px solid #E7E3DD' }}>
+                className="group flex items-center gap-4 p-5 rounded-xl bg-white hover:bg-[#F8F5F0] transition-colors duration-200"
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
                 <div className="flex-1">
-                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'rgba(245,241,232,0.75)', marginBottom: '0.25rem' }}>{item.label}</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
                   <div style={{ fontSize: '0.8rem', color: '#334155' }}>{item.desc}</div>
                 </div>
-                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#C2185B' }} />
+                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#C2185B' }} />
               </Link>
               </Reveal>
             ))}
@@ -277,23 +279,23 @@ export default function TeamsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#1E3A66]">
         <Container size="md" className="text-center">
           <Reveal>
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Build the team brand<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI recommends first.</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(245,241,232,0.60)', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             Book a strategy call. We'll audit your team's current AI visibility and show you what a unified authority build looks like for your specific structure.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid rgba(255,255,255,0.1)', color: '#334155' }}>
+              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}>
               Explore the Platform <ArrowRight size={14} />
             </Link>
           </div>

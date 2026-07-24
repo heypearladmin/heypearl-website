@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   },
 };
 
+const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+
 const CHALLENGES = [
   {
     num: '01',
@@ -104,17 +106,17 @@ export default function EnterprisePage() {
         aria-label="Enterprise hero"
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute top-0 right-0 w-[800px] h-[600px]"
-          style={{ background: 'radial-gradient(ellipse at top right, rgba(194,24,91,0.06) 0%, transparent 65%)' }} />
+          style={{ background: 'radial-gradient(ellipse at top right, rgba(194,24,91,0.04) 0%, transparent 65%)' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/solutions" className="text-xs" style={{ color: '#334155' }}>Solutions</Link>
-            <span style={{ color: '#64748B', fontSize: '0.75rem' }}>/</span>
+            <Link href="/solutions" className="text-xs" style={{ color: '#64748B' }}>Solutions</Link>
+            <span style={{ color: '#94A3B8', fontSize: '0.75rem' }}>/</span>
             <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Enterprise</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.5 }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               For Large Organizations
             </span>
@@ -128,10 +130,10 @@ export default function EnterprisePage() {
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Talk to Our Team <ArrowRight size={14} />
             </a>
-            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#334155' }}>
+            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#64748B' }}>
               Explore the Platform <ArrowUpRight size={13} />
             </Link>
           </div>
@@ -139,12 +141,12 @@ export default function EnterprisePage() {
       </section>
 
       {/* Challenges */}
-      <section className="py-28 bg-white">
+      <section className="py-28 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>The Challenge</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
@@ -155,10 +157,10 @@ export default function EnterprisePage() {
           </Reveal>
           <Reveal delay={0.1}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden' }}>
-            {CHALLENGES.map((c, i) => (
-              <div key={c.num} className="p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#07142F' : '#07142F' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(182,146,94,0.15)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: cardShadow }}>
+            {CHALLENGES.map((c) => (
+              <div key={c.num} className="p-7 lg:p-8 bg-white">
+                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(30,58,102,0.08)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
                 <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.72 }}>{c.body}</p>
               </div>
@@ -174,7 +176,7 @@ export default function EnterprisePage() {
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Enterprise Capabilities</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
@@ -185,10 +187,10 @@ export default function EnterprisePage() {
           </Reveal>
           <Reveal delay={0.1}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden' }}>
-            {CAPABILITIES.map((item, i) => (
-              <div key={item.title} className="p-7" style={{ background: i % 2 === 0 ? '#07142F' : '#07142F' }}>
-                <div className="h-px mb-5" style={{ background: 'rgba(182,146,94,0.1)' }} />
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: cardShadow }}>
+            {CAPABILITIES.map((item) => (
+              <div key={item.title} className="p-7 bg-white">
+                <div className="h-px mb-5" style={{ background: '#ECE8E2' }} />
                 <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.title}</h3>
                 <p style={{ fontSize: '0.83rem', color: '#334155', lineHeight: 1.72 }}>{item.desc}</p>
               </div>
@@ -210,7 +212,7 @@ export default function EnterprisePage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
@@ -222,7 +224,7 @@ export default function EnterprisePage() {
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #E7E3DD' }}>
+              <div className="p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
                 <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
@@ -233,7 +235,7 @@ export default function EnterprisePage() {
       </section>
 
       {/* Related */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="mb-8">
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Related Solutions</span>
@@ -245,13 +247,13 @@ export default function EnterprisePage() {
             ].map((item, i) => (
               <Reveal key={item.href} delay={i * 0.08}>
               <Link href={item.href}
-                className="group flex items-center gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors duration-200"
-                style={{ border: '1px solid #E7E3DD' }}>
+                className="group flex items-center gap-4 p-5 rounded-xl bg-white hover:bg-[#F8F5F0] transition-colors duration-200"
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
                 <div className="flex-1">
-                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#334155', marginBottom: '0.25rem' }}>{item.label}</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
                   <div style={{ fontSize: '0.8rem', color: '#334155' }}>{item.desc}</div>
                 </div>
-                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#C2185B' }} />
+                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#C2185B' }} />
               </Link>
               </Reveal>
             ))}
@@ -260,23 +262,23 @@ export default function EnterprisePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#1E3A66]">
         <Container size="md" className="text-center">
           <Reveal>
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Ready to build AI authority<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>across your organization?</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             Enterprise engagements start with a strategic assessment of your organization's AI visibility gaps. Talk to our team about scope, structure, and what a phased rollout looks like.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Talk to Our Team <ArrowRight size={14} />
             </a>
             <Link href="/platform/pearlos" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid #E7E3DD', color: '#334155' }}>
+              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}>
               Learn about PearlOS <ArrowRight size={14} />
             </Link>
           </div>
