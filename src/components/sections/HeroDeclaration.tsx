@@ -44,33 +44,37 @@ export function HeroDeclaration() {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className="relative -mt-24 sm:-mt-28 min-h-screen flex flex-col justify-center overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #07142F 0%, #1E3A66 55%, #0D2247 100%)' }}
+      style={{ background: '#FFFFFF' }}
       aria-label="Hero"
     >
-      {/* Subtle noise texture */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <Image src="/images/hero/hero-background.webp" alt="" fill sizes="100vw" className="object-cover opacity-[0.04]" />
-      </div>
+      {/* Subtle dot grid */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: 'radial-gradient(rgba(30,58,102,0.07) 1px, transparent 1px)',
+          backgroundSize: '36px 36px',
+        }}
+      />
 
-      {/* Glow accent — softer */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 hidden lg:block">
-        <Image src="/images/hero/hero-glow.webp" alt="" fill sizes="100vw" className="object-cover object-right opacity-10" />
-      </div>
+      {/* Cream fade — bottom right */}
+      <div aria-hidden className="pointer-events-none absolute inset-0"
+        style={{ background: 'radial-gradient(ellipse 70% 70% at 100% 100%, #F8F5F0 0%, transparent 60%)' }} />
 
-      {/* Cursor spotlight — very subtle */}
+      {/* Cursor spotlight — magenta tint */}
       {mounted && (
         <motion.div
           aria-hidden
           className="pointer-events-none absolute hidden lg:block"
           style={{
-            width: 700,
-            height: 700,
+            width: 600,
+            height: 600,
             borderRadius: '50%',
             left: spotX,
             top: spotY,
             x: '-50%',
             y: '-50%',
-            background: 'radial-gradient(circle, rgba(194,24,91,0.04) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(194,24,91,0.05) 0%, transparent 65%)',
           }}
         />
       )}
@@ -87,8 +91,8 @@ export function HeroDeclaration() {
             position: 'relative',
             borderRadius: '1rem',
             overflow: 'hidden',
-            border: '1px solid rgba(255,255,255,0.1)',
-            boxShadow: '0 40px 80px rgba(3,8,20,0.5), 0 0 0 1px rgba(255,255,255,0.04)',
+            border: '1px solid #E7E3DD',
+            boxShadow: '0 32px 72px rgba(30,58,102,0.12), 0 4px 16px rgba(30,58,102,0.08)',
           }}>
             <Image src="/images/hero/hero-dashboard.webp" alt="" fill sizes="38vw" className="object-cover" />
           </div>
@@ -96,28 +100,10 @@ export function HeroDeclaration() {
       )}
 
       {!mounted && (
-        <div aria-hidden className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+        <div aria-hidden className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid #E7E3DD', boxShadow: '0 32px 72px rgba(30,58,102,0.12)' }}>
           <Image src="/images/hero/hero-dashboard.webp" alt="" fill sizes="38vw" className="object-cover" />
         </div>
       )}
-
-      {/* Very subtle grid */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)',
-          backgroundSize: '80px 80px',
-        }}
-      />
-
-      {/* Bottom fade — transitions to white below */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 inset-x-0 h-32"
-        style={{ background: 'linear-gradient(to bottom, transparent, rgba(7,20,47,0.6))' }}
-      />
 
       <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-24">
 
@@ -128,7 +114,7 @@ export function HeroDeclaration() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
+          <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
           <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
             HeyPearl — The AI Authority Platform
           </span>
@@ -140,7 +126,7 @@ export function HeroDeclaration() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(3rem, 7.5vw, 6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.03, letterSpacing: '-0.03em' }}
+          style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(3rem, 7.5vw, 6rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.03, letterSpacing: '-0.03em' }}
         >
           Become the Authority<br />
           <span style={{ color: '#C2185B', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
@@ -154,11 +140,11 @@ export function HeroDeclaration() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.6)' }}
+          style={{ fontSize: '1.1rem', color: '#64748B' }}
         >
           We build the infrastructure that makes AI engines trust, cite, and recommend your business —
           entity architecture, authority pages, and reputation systems engineered for the AI search era.{' '}
-          <span style={{ color: 'rgba(255,255,255,0.78)' }}>
+          <span style={{ color: '#334155' }}>
             Powered by PearlOS and the P.E.A.R.L. framework.
           </span>
         </motion.p>
@@ -186,7 +172,7 @@ export function HeroDeclaration() {
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.75)' }}
+              style={{ border: '1px solid #E7E3DD', color: '#334155' }}
             >
               Explore the Platform
               <ArrowRight size={14} />
@@ -197,7 +183,7 @@ export function HeroDeclaration() {
         {/* Proof strip */}
         <motion.div
           className="mt-16 flex flex-wrap gap-10"
-          style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem' }}
+          style={{ borderTop: '1px solid #E7E3DD', paddingTop: '2rem' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -216,7 +202,7 @@ export function HeroDeclaration() {
               <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.55rem', fontWeight: 700, color: '#C2185B', lineHeight: 1, letterSpacing: '-0.02em' }}>
                 {num}
               </div>
-              <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.35)', marginTop: '0.35rem', letterSpacing: '0.03em' }}>
+              <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '0.35rem', letterSpacing: '0.03em' }}>
                 {label}
               </div>
             </motion.div>
