@@ -33,7 +33,7 @@ export function PageHero({
             fill
             priority
             sizes="45vw"
-            className="object-cover object-center opacity-25"
+            className="object-cover object-center opacity-40"
           />
           <div
             className="absolute inset-0"

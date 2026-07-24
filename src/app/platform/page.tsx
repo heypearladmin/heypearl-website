@@ -86,7 +86,7 @@ export default function PlatformPage() {
           }}
         />
         <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
-          <Image src="/images/new-hero-images/hero-platform.jpg" alt="" fill sizes="45vw" className="object-cover opacity-20" />
+          <Image src="/images/new-hero-images/hero-platform.jpg" alt="" fill sizes="45vw" className="object-cover opacity-35" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.85) 20%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0.05) 100%)' }} />
         </div>
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
