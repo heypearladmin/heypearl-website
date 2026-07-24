@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { HeroDashboardMockup } from '@/components/ui/HeroDashboardMockup';
 import { ArrowRight } from 'lucide-react';
 import { useRef, useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
@@ -88,7 +89,7 @@ export function HeroDeclaration() {
       {mounted && (
         <motion.div
           style={{ x: cardX, y: cardY }}
-          className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[38%] hidden lg:flex lg:flex-col lg:gap-3"
+          className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[42%] hidden lg:flex lg:flex-col lg:gap-3"
         >
           <div>
             <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
@@ -98,21 +99,14 @@ export function HeroDeclaration() {
               Track how AI engines see your brand, your entities, and your authority over time.
             </p>
           </div>
-          <div style={{
-            aspectRatio: '16/10',
-            position: 'relative',
-            borderRadius: '1rem',
-            overflow: 'hidden',
-            border: '1px solid #E7E3DD',
-            boxShadow: '0 32px 72px rgba(30,58,102,0.12), 0 4px 16px rgba(30,58,102,0.08)',
-          }}>
-            <Image src="/images/hero/hero-dashboard.webp" alt="" fill sizes="38vw" className="object-cover" />
+          <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18), 0 4px 16px rgba(30,58,102,0.1)' }}>
+            <HeroDashboardMockup />
           </div>
         </motion.div>
       )}
 
       {!mounted && (
-        <div className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[38%] hidden lg:flex lg:flex-col lg:gap-3">
+        <div className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[42%] hidden lg:flex lg:flex-col lg:gap-3">
           <div>
             <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
               Real data. Real visibility. Real results.
@@ -121,8 +115,8 @@ export function HeroDeclaration() {
               Track how AI engines see your brand, your entities, and your authority over time.
             </p>
           </div>
-          <div aria-hidden style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid #E7E3DD', boxShadow: '0 32px 72px rgba(30,58,102,0.12)' }}>
-            <Image src="/images/hero/hero-dashboard.webp" alt="" fill sizes="38vw" className="object-cover" />
+          <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18)' }}>
+            <HeroDashboardMockup />
           </div>
         </div>
       )}
