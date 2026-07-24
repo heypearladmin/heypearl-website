@@ -85,145 +85,110 @@ export function HeroDeclaration() {
         />
       )}
 
-      {/* Hero dashboard card + label */}
-      {mounted && (
-        <motion.div
-          style={{ x: cardX, y: cardY }}
-          className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[42%] hidden lg:flex lg:flex-col lg:gap-3"
-        >
-          <div>
-            <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
-              Real data. Real visibility. Real results.
+      <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-16">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+
+          {/* Left column */}
+          <div className="flex-1 min-w-0">
+            {/* Eyebrow */}
+            <div className="flex items-center gap-3 mb-8">
+              <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
+              <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+                HeyPearl — The AI Authority Platform
+              </span>
+            </div>
+
+            {/* H1 */}
+            <h1 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 5.5vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.03, letterSpacing: '-0.03em' }}>
+              Become the Authority<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
+                AI Recommends.
+              </span>
+            </h1>
+
+            {/* Subheadline */}
+            <p className="mt-6 max-w-lg leading-relaxed" style={{ fontSize: '1rem', color: '#64748B' }}>
+              We build the infrastructure that makes AI engines trust, cite, and recommend your business —
+              entity architecture, authority pages, and reputation systems engineered for the AI search era.{' '}
+              <span style={{ color: '#334155' }}>Powered by PearlOS and the P.E.A.R.L. framework.</span>
             </p>
-            <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
-              Track how AI engines see your brand, your entities, and your authority over time.
-            </p>
+
+            {/* CTAs */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href={site.strategyCallUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold transition-colors duration-200 hover:bg-[#D62F73]"
+                style={{ background: '#C2185B', color: '#FFFFFF' }}
+              >
+                Book a Strategy Call
+                <ArrowRight size={15} />
+              </a>
+              <Link
+                href="/platform"
+                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200"
+                style={{ border: '1px solid #E7E3DD', color: '#334155' }}
+              >
+                Explore the Platform
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+
+            {/* Proof strip */}
+            <div className="mt-12 flex flex-wrap gap-10" style={{ borderTop: '1px solid #E7E3DD', paddingTop: '1.75rem' }}>
+              {[
+                { num: '6',       label: 'AI engines tracked per client' },
+                { num: '90-Day',  label: 'Authority visibility roadmap' },
+                { num: '5-Layer', label: 'P.E.A.R.L. authority system' },
+              ].map(({ num, label }) => (
+                <div key={label}>
+                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.55rem', fontWeight: 700, color: '#C2185B', lineHeight: 1, letterSpacing: '-0.02em' }}>
+                    {num}
+                  </div>
+                  <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '0.35rem', letterSpacing: '0.03em' }}>
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18), 0 4px 16px rgba(30,58,102,0.1)' }}>
-            <HeroDashboardMockup />
-          </div>
-        </motion.div>
-      )}
 
-      {!mounted && (
-        <div className="pointer-events-none absolute right-8 xl:right-20 top-1/2 -translate-y-1/2 w-[42%] hidden lg:flex lg:flex-col lg:gap-3">
-          <div>
-            <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
-              Real data. Real visibility. Real results.
-            </p>
-            <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
-              Track how AI engines see your brand, your entities, and your authority over time.
-            </p>
-          </div>
-          <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18)' }}>
-            <HeroDashboardMockup />
-          </div>
-        </div>
-      )}
-
-      <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-24">
-
-        {/* Eyebrow */}
-        <motion.div
-          className="flex items-center gap-3 mb-8"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-        >
-          <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-          <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
-            HeyPearl — The AI Authority Platform
-          </span>
-        </motion.div>
-
-        {/* H1 */}
-        <motion.h1
-          className="max-w-[55%]"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(3rem, 7.5vw, 6rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.03, letterSpacing: '-0.03em' }}
-        >
-          Become the Authority<br />
-          <span style={{ color: '#C2185B', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
-            AI Recommends.
-          </span>
-        </motion.h1>
-
-        {/* Subheadline */}
-        <motion.p
-          className="mt-7 max-w-[38rem] leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          style={{ fontSize: '1.1rem', color: '#64748B' }}
-        >
-          We build the infrastructure that makes AI engines trust, cite, and recommend your business —
-          entity architecture, authority pages, and reputation systems engineered for the AI search era.{' '}
-          <span style={{ color: '#334155' }}>
-            Powered by PearlOS and the P.E.A.R.L. framework.
-          </span>
-        </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          className="mt-10 flex flex-wrap items-center gap-4"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-        >
-          <MagneticButton>
-            <a
-              href={site.strategyCallUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold transition-colors duration-200 hover:bg-[#D62F73]"
-              style={{ background: '#C2185B', color: '#FFFFFF' }}
-            >
-              Book a Strategy Call
-              <ArrowRight size={15} />
-            </a>
-          </MagneticButton>
-          <MagneticButton>
-            <Link
-              href="/platform"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid #E7E3DD', color: '#334155' }}
-            >
-              Explore the Platform
-              <ArrowRight size={14} />
-            </Link>
-          </MagneticButton>
-        </motion.div>
-
-        {/* Proof strip */}
-        <motion.div
-          className="mt-16 flex flex-wrap gap-10"
-          style={{ borderTop: '1px solid #E7E3DD', paddingTop: '2rem' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          {[
-            { num: '6',       label: 'AI engines tracked per client' },
-            { num: '90-Day',  label: 'Authority visibility roadmap' },
-            { num: '5-Layer', label: 'P.E.A.R.L. authority system' },
-          ].map(({ num, label }, i) => (
+          {/* Right column — dashboard */}
+          {mounted ? (
             <motion.div
-              key={label}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.55 + i * 0.08 }}
+              style={{ x: cardX, y: cardY }}
+              className="hidden lg:flex lg:flex-col lg:gap-3 lg:w-[46%] shrink-0"
             >
-              <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.55rem', fontWeight: 700, color: '#C2185B', lineHeight: 1, letterSpacing: '-0.02em' }}>
-                {num}
+              <div>
+                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
+                  Real data. Real visibility. Real results.
+                </p>
+                <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
+                  Track how AI engines see your brand, your entities, and your authority over time.
+                </p>
               </div>
-              <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '0.35rem', letterSpacing: '0.03em' }}>
-                {label}
+              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18), 0 4px 16px rgba(30,58,102,0.1)' }}>
+                <HeroDashboardMockup />
               </div>
             </motion.div>
-          ))}
-        </motion.div>
+          ) : (
+            <div className="hidden lg:flex lg:flex-col lg:gap-3 lg:w-[46%] shrink-0">
+              <div>
+                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
+                  Real data. Real visibility. Real results.
+                </p>
+                <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
+                  Track how AI engines see your brand, your entities, and your authority over time.
+                </p>
+              </div>
+              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18)' }}>
+                <HeroDashboardMockup />
+              </div>
+            </div>
+          )}
+
+        </div>
       </Container>
     </section>
   );
