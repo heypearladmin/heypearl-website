@@ -26,7 +26,7 @@ const BUSINESS_OUTCOMES = [
   },
   {
     outcome: 'One system instead of five disconnected tools.',
-    detail: 'PearlOS coordinates every module so you don\'t have to. Entity signals, content layers, monitoring, and GEO — all running through one operating layer with one strategic direction.',
+    detail: "PearlOS coordinates every module so you don't have to. Entity signals, content layers, monitoring, and GEO — all running through one operating layer with one strategic direction.",
   },
   {
     outcome: 'Authority that builds instead of resetting.',
@@ -58,7 +58,7 @@ const FUNCTIONS = [
   {
     title: 'Module Coordination',
     description:
-      'Authority Pages, Authority Score, Knowledge Graph, AI Visibility, and GEO Engine don\'t operate in isolation. PearlOS makes them function as one integrated system.',
+      "Authority Pages, Authority Score, Knowledge Graph, AI Visibility, and GEO Engine don't operate in isolation. PearlOS makes them function as one integrated system.",
   },
   {
     title: 'Reinforcing Feedback Loop',
@@ -80,11 +80,11 @@ export default function PearlOSPage() {
     <>
       {/* Hero */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-[#07142F] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-white overflow-hidden"
         aria-label="PearlOS hero"
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
-          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.15)', boxShadow: '0 32px 64px rgba(3,8,20,0.7)' }}>
+          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
             <Image src="/images/platform/platform-pearlos.webp" alt="" fill sizes="38vw" className="object-cover" />
           </div>
         </div>
@@ -93,26 +93,21 @@ export default function PearlOSPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)',
+              'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px]"
-          style={{ background: 'radial-gradient(ellipse at top, rgba(194,24,91,0.07) 0%, transparent 65%)' }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div style={{ maxWidth: '54%' }}>
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/platform" className="text-xs" style={{ color: '#98A6BE' }}>
+            <Link href="/platform" className="text-xs transition-colors hover:text-[#C2185B]" style={{ color: '#64748B' }}>
               Platform
             </Link>
-            <span style={{ color: 'rgba(245,241,232,0.2)', fontSize: '0.75rem' }}>/</span>
+            <span style={{ color: '#E7E3DD', fontSize: '0.75rem' }}>/</span>
             <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>PearlOS</span>
           </div>
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The Operating System — Start Here
             </span>
@@ -123,7 +118,7 @@ export default function PearlOSPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2.8rem, 6.5vw, 5.5rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#1E3A66',
               lineHeight: 1.03,
               letterSpacing: '-0.03em',
             }}
@@ -141,7 +136,7 @@ export default function PearlOSPage() {
           >
             The system that runs your authority build — so you don't have to.
           </p>
-          <p className="mt-5 max-w-[36rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.75 }}>
+          <p className="mt-5 max-w-[36rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75 }}>
             PearlOS coordinates every module, monitors every AI engine, and executes the P.E.A.R.L. framework in the exact sequence required. Every HeyPearl engagement is powered by it from day one.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -156,8 +151,8 @@ export default function PearlOSPage() {
             </a>
             <Link
               href="/platform"
-              className="inline-flex items-center gap-2 text-sm font-medium"
-              style={{ color: '#98A6BE' }}
+              className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#1E3A66] transition-colors"
+              style={{ color: '#64748B' }}
             >
               View all platform modules
               <ArrowUpRight size={13} />
@@ -167,13 +162,13 @@ export default function PearlOSPage() {
         </Container>
       </section>
 
-      {/* Business outcomes — what PearlOS means for your business */}
-      <section className="py-24 bg-[#14284A]">
+      {/* Business outcomes */}
+      <section className="py-24 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
           <div className="mb-10 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 What It Means for Your Business
               </span>
@@ -183,7 +178,7 @@ export default function PearlOSPage() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.9rem, 4vw, 2.8rem)',
                 fontWeight: 700,
-                color: '#F8F6F2',
+                color: '#1E3A66',
                 lineHeight: 1.1,
                 letterSpacing: '-0.022em',
               }}
@@ -197,15 +192,15 @@ export default function PearlOSPage() {
             {BUSINESS_OUTCOMES.map((item, i) => (
               <Reveal key={i} delay={i * 0.08}>
               <div
-                className="p-7 rounded-xl flex flex-col"
-                style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(48,72,111,0.6)' }}
+                className="p-7 rounded-xl flex flex-col bg-white"
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
               >
                 <div
                   style={{
                     fontFamily: 'var(--font-playfair), Georgia, serif',
                     fontSize: '1rem',
                     fontWeight: 700,
-                    color: '#F8F6F2',
+                    color: '#1E3A66',
                     lineHeight: 1.35,
                     marginBottom: '1rem',
                     letterSpacing: '-0.01em',
@@ -213,8 +208,8 @@ export default function PearlOSPage() {
                 >
                   {item.outcome}
                 </div>
-                <div className="h-px mb-4" style={{ background: 'rgba(182,146,94,0.12)' }} />
-                <p style={{ fontSize: '0.85rem', color: '#98A6BE', lineHeight: 1.7 }}>
+                <div className="h-px mb-4" style={{ background: '#E7E3DD' }} />
+                <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.7 }}>
                   {item.detail}
                 </p>
               </div>
@@ -225,12 +220,12 @@ export default function PearlOSPage() {
       </section>
 
       {/* What PearlOS does — technical */}
-      <section className="py-28 bg-[#14284A]">
+      <section className="py-28 bg-white">
         <Container size="lg">
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 How It Works
               </span>
@@ -240,7 +235,7 @@ export default function PearlOSPage() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#F8F6F2',
+                color: '#1E3A66',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
@@ -248,7 +243,7 @@ export default function PearlOSPage() {
               Six functions.<br />
               <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One coordinated system.</span>
             </h2>
-            <p className="mt-5" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
+            <p className="mt-5" style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
               Without PearlOS, the five modules are powerful individual tools. With it, they become a single coordinated system where every layer amplifies every other.
             </p>
           </div>
@@ -256,19 +251,19 @@ export default function PearlOSPage() {
 
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid rgba(48,72,111,0.6)', borderRadius: '1rem', overflow: 'hidden' }}
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
           >
             {FUNCTIONS.map((fn, i) => (
               <Reveal key={fn.title} delay={i * 0.08}>
               <div
                 className="p-7"
-                style={{ background: i % 2 === 0 ? '#14284A' : '#07142F' }}
+                style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}
               >
-                <div className="h-px mb-5" style={{ background: 'rgba(182,146,94,0.1)' }} />
-                <h3 style={{ fontSize: '0.92rem', fontWeight: 700, color: '#F8F6F2', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
+                <div className="h-px mb-5" style={{ background: '#E7E3DD' }} />
+                <h3 style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
                   {fn.title}
                 </h3>
-                <p style={{ fontSize: '0.83rem', color: '#98A6BE', lineHeight: 1.72 }}>
+                <p style={{ fontSize: '0.83rem', color: '#64748B', lineHeight: 1.72 }}>
                   {fn.description}
                 </p>
               </div>
@@ -279,12 +274,12 @@ export default function PearlOSPage() {
       </section>
 
       {/* The 5 Layers PearlOS executes */}
-      <section className="py-28 bg-[#07142F]">
+      <section className="py-28 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+                <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                   The P.E.A.R.L. Sequence
                 </span>
@@ -294,7 +289,7 @@ export default function PearlOSPage() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                   fontWeight: 700,
-                  color: '#F8F6F2',
+                  color: '#1E3A66',
                   lineHeight: 1.08,
                   letterSpacing: '-0.022em',
                   marginBottom: '1.25rem',
@@ -303,7 +298,7 @@ export default function PearlOSPage() {
                 Five layers.<br />
                 <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Executed in order.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
+              <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
                 PearlOS enforces the P.E.A.R.L. sequence because the order matters. Entity architecture must precede authority content. Authority must precede reputation. Reputation must precede leverage. PearlOS ensures no step is skipped, no layer is built on a weak foundation.
               </p>
             </div>
@@ -312,17 +307,17 @@ export default function PearlOSPage() {
               {LAYERS.map((layer) => (
                 <div
                   key={layer.step}
-                  className="flex gap-5 p-5 rounded-xl"
-                  style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(48,72,111,0.6)' }}
+                  className="flex gap-5 p-5 rounded-xl bg-white"
+                  style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06)' }}
                 >
-                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: 'rgba(182,146,94,0.4)', flexShrink: 0, lineHeight: 1 }}>
+                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: '#94A3B8', flexShrink: 0, lineHeight: 1 }}>
                     {layer.step}
                   </div>
                   <div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.25rem' }}>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>
                       {layer.title}
                     </div>
-                    <p style={{ fontSize: '0.8rem', color: '#98A6BE', lineHeight: 1.65 }}>
+                    <p style={{ fontSize: '0.8rem', color: '#64748B', lineHeight: 1.65 }}>
                       {layer.desc}
                     </p>
                   </div>
@@ -341,7 +336,7 @@ export default function PearlOSPage() {
       />
 
       {/* CTA */}
-      <section className="py-24 bg-[#14284A]">
+      <section className="py-24 bg-[#1E3A66]">
         <Container size="md" className="text-center">
           <h2
             className="mb-5 max-w-xl mx-auto"
@@ -349,7 +344,7 @@ export default function PearlOSPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.9rem, 4vw, 2.8rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#FFFFFF',
               lineHeight: 1.1,
               letterSpacing: '-0.022em',
             }}
@@ -357,7 +352,7 @@ export default function PearlOSPage() {
             Ready to run PearlOS<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>for your business?</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
             Every HeyPearl engagement is powered by PearlOS from day one. Book a strategy call to see how it applies to your specific market.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -373,7 +368,7 @@ export default function PearlOSPage() {
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid #30486F', color: '#C9D3E3' }}
+              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}
             >
               View all modules
               <ArrowRight size={14} />

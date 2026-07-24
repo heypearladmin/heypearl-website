@@ -138,8 +138,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <Reveal className="lg:col-span-5">
               <div className="relative">
-                <div className="absolute -inset-4 rounded-[2rem] bg-magenta-gradient opacity-15 blur-2xl" />
-                <div className="relative aspect-[4/5] w-full max-w-md rounded-[2rem] overflow-hidden border border-plum/5 shadow-lift bg-blush/30">
+                <div className="relative aspect-[4/5] w-full max-w-md rounded-[2rem] overflow-hidden border border-[#E7E3DD] shadow-lift bg-white">
                   <Image
                     src={site.founder.photo}
                     alt={`${site.founder.name}, Founder of HeyPearl`}
@@ -149,7 +148,7 @@ export default function AboutPage() {
                   />
                 </div>
                 {/* Secondary speaking portrait */}
-                <div className="hidden lg:block absolute -bottom-8 -right-12 w-2/5 aspect-[3/2] rounded-2xl overflow-hidden border border-cream shadow-lift z-10">
+                <div className="hidden lg:block absolute -bottom-8 -right-12 w-2/5 aspect-[3/2] rounded-2xl overflow-hidden border border-[#E7E3DD] shadow-lift z-10">
                   <Image
                     src="/images/misti-speaking.jpg"
                     alt="Misti Bruton speaking"
@@ -201,11 +200,11 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* P.E.A.R.L. Framework — inverted on plum to feel foundational */}
+      {/* P.E.A.R.L. Framework */}
       <PearlFramework />
 
       {/* Operating principles */}
-      <section className="py-24 bg-lavender">
+      <section className="py-24 bg-[#F8F5F0]">
         <Container size="xl">
           <Reveal>
             <SectionHeading
@@ -218,8 +217,8 @@ export default function AboutPage() {
           <div className="mt-14 grid md:grid-cols-2 gap-6">
             {values.map((v, i) => (
               <Reveal key={v.title} delay={i * 0.06}>
-                <div className="rounded-3xl bg-white border border-plum/5 shadow-soft p-8 sm:p-10 h-full">
-                  <div className="text-[0.65rem] tracking-micro uppercase text-magenta">
+                <div className="rounded-3xl bg-white border border-[#E7E3DD] shadow-soft p-8 sm:p-10 h-full">
+                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-magenta">
                     Principle 0{i + 1}
                   </div>
                   <h3 className="mt-3 font-display text-2xl text-plum">
@@ -233,8 +232,8 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* PearlOS positioning */}
-      <section className="py-24">
+      {/* PearlOS positioning — kept as dark navy accent for brand contrast */}
+      <section className="py-24 bg-white">
         <Container size="lg">
           <Reveal>
             <div className="rounded-3xl bg-plum text-cream shadow-glow relative overflow-hidden">
@@ -251,10 +250,10 @@ export default function AboutPage() {
               </div>
               <div
                 aria-hidden
-                className="pointer-events-none absolute inset-0 opacity-50"
+                className="pointer-events-none absolute inset-0 opacity-40"
                 style={{
                   background:
-                    'radial-gradient(50% 50% at 100% 0%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(211,70,129,0.18) 0%, transparent 60%)',
+                    'radial-gradient(50% 50% at 100% 0%, rgba(194,24,91,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(194,24,91,0.12) 0%, transparent 60%)',
                 }}
               />
               <div className="relative p-10 sm:p-14">
@@ -274,7 +273,7 @@ export default function AboutPage() {
 
           {/* Editorial environmental band */}
           <Reveal delay={0.1}>
-            <div className="mt-12 relative aspect-[16/9] w-full rounded-[2rem] overflow-hidden border border-plum/5 shadow-soft">
+            <div className="mt-12 relative aspect-[16/9] w-full rounded-[2rem] overflow-hidden border border-[#E7E3DD] shadow-soft">
               <Image
                 src="/images/about/about-office.webp"
                 alt="Misti Bruton, founder of HeyPearl"
@@ -284,13 +283,13 @@ export default function AboutPage() {
               />
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-plum/40 via-transparent to-transparent"
+                className="absolute inset-0 bg-gradient-to-t from-[#1E3A66]/40 via-transparent to-transparent"
               />
               <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-                <div className="text-[0.65rem] tracking-micro uppercase text-cream">
+                <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-white">
                   Founder · in the work
                 </div>
-                <div className="text-[0.65rem] tracking-micro uppercase text-cream/85">
+                <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-white/80">
                   Austin, Texas
                 </div>
               </div>
@@ -300,7 +299,7 @@ export default function AboutPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-cream">
+      <section className="py-24 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
             <SectionHeading
@@ -311,7 +310,7 @@ export default function AboutPage() {
           <div className="mt-12 flex flex-col gap-5">
             {aboutFaqs.map((item, i) => (
               <Reveal key={i} delay={i * 0.05}>
-                <div className="rounded-2xl border border-plum/10 bg-white p-6 sm:p-8">
+                <div className="rounded-2xl border border-[#E7E3DD] bg-white p-6 sm:p-8">
                   <h3 className="font-display text-lg text-plum">{item.q}</h3>
                   <p className="mt-3 text-slate leading-relaxed">{item.a}</p>
                 </div>

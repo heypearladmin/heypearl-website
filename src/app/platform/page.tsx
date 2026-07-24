@@ -70,9 +70,9 @@ const PEARLOS_FUNCTIONS = [
 export default function PlatformPage() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero — navy bg, strong brand statement */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[70vh] flex flex-col justify-center bg-[#07142F] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[70vh] flex flex-col justify-center bg-[#1E3A66] overflow-hidden"
         aria-label="Platform hero"
       >
         <div
@@ -80,18 +80,18 @@ export default function PlatformPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)',
+              'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
         <div
           aria-hidden
           className="pointer-events-none absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full"
-          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.07) 0%, transparent 65%)' }}
+          style={{ background: 'radial-gradient(ellipse at center, rgba(194,24,91,0.12) 0%, transparent 65%)' }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               The HeyPearl Platform
             </span>
@@ -102,7 +102,7 @@ export default function PlatformPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2.6rem, 6vw, 5rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#FFFFFF',
               lineHeight: 1.04,
               letterSpacing: '-0.03em',
             }}
@@ -110,7 +110,7 @@ export default function PlatformPage() {
             One operating system.<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Five integrated modules.</span>
           </h1>
-          <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: '#C9D3E3', lineHeight: 1.75 }}>
+          <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility grows as a system, not a collection of tactics.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -126,7 +126,7 @@ export default function PlatformPage() {
             <Link
               href="/platform/pearlos"
               className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid #30486F', color: '#C9D3E3' }}
+              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}
             >
               Explore PearlOS
               <ArrowRight size={14} />
@@ -136,14 +136,14 @@ export default function PlatformPage() {
       </section>
 
       {/* PearlOS — the orchestrating layer */}
-      <section className="py-28 bg-[#14284A]" aria-label="PearlOS overview">
+      <section className="py-28 bg-white" aria-label="PearlOS overview">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left — copy */}
             <Reveal>
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+                <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                   The Operating Layer
                 </span>
@@ -153,7 +153,7 @@ export default function PlatformPage() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: 'clamp(2rem, 4vw, 3rem)',
                   fontWeight: 700,
-                  color: '#F8F6F2',
+                  color: '#1E3A66',
                   lineHeight: 1.08,
                   letterSpacing: '-0.025em',
                   marginBottom: '1.25rem',
@@ -162,10 +162,10 @@ export default function PlatformPage() {
                 PearlOS runs<br />
                 <span style={{ color: '#C2185B', fontStyle: 'italic' }}>everything.</span>
               </h2>
-              <p style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.75, marginBottom: '1rem' }}>
+              <p style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75, marginBottom: '1rem' }}>
                 PearlOS is the operating system beneath every HeyPearl engagement — the unified intelligence layer that connects entity signals, monitors AI engines, and executes the P.E.A.R.L. framework in sequence.
               </p>
-              <p style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.75, marginBottom: '2rem' }}>
+              <p style={{ fontSize: '1rem', color: '#64748B', lineHeight: 1.75, marginBottom: '2rem' }}>
                 Without PearlOS, the five modules are powerful tools. With it, they become one integrated system.
               </p>
               <Link
@@ -182,17 +182,17 @@ export default function PlatformPage() {
             {/* Right — 4 PearlOS functions */}
             <Reveal delay={0.1}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-              style={{ border: '1px solid rgba(48,72,111,0.6)', borderRadius: '1rem', overflow: 'hidden' }}>
+              style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
               {PEARLOS_FUNCTIONS.map((fn, i) => (
                 <div
                   key={fn.title}
                   className="p-5"
-                  style={{ background: i % 2 === 0 ? '#14284A' : '#07142F' }}
+                  style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}
                 >
-                  <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>
+                  <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>
                     {fn.title}
                   </div>
-                  <p style={{ fontSize: '0.8rem', color: '#C9D3E3', lineHeight: 1.65 }}>
+                  <p style={{ fontSize: '0.8rem', color: '#64748B', lineHeight: 1.65 }}>
                     {fn.desc}
                   </p>
                 </div>
@@ -204,11 +204,11 @@ export default function PlatformPage() {
       </section>
 
       {/* Journey guide */}
-      <section className="py-20 bg-[#07142F]" aria-label="Platform journey">
+      <section className="py-20 bg-[#F8F5F0]" aria-label="Platform journey">
         <Container size="lg">
           <Reveal>
           <div className="mb-10 flex items-center gap-3">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               Where to Start
             </span>
@@ -219,7 +219,7 @@ export default function PlatformPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.7rem, 3.5vw, 2.4rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#1E3A66',
               lineHeight: 1.1,
               letterSpacing: '-0.022em',
             }}
@@ -234,15 +234,16 @@ export default function PlatformPage() {
               { step: '02', label: 'Knowledge Graph', href: '/platform/knowledge-graph', desc: 'Build the entity foundation every other module depends on.' },
               { step: '03', label: 'Authority Pages', href: '/platform/authority-pages', desc: 'Create the citable page infrastructure AI engines pull from.' },
               { step: '04', label: 'AI Visibility', href: '/platform/ai-visibility', desc: 'Monitor how six AI engines represent your business in real time.' },
-              { step: '05', label: 'GEO Engine', href: '/platform/geo-engine', desc: 'Amplify what works. Close what doesn\'t. Compound month after month.' },
+              { step: '05', label: 'GEO Engine', href: '/platform/geo-engine', desc: "Amplify what works. Close what doesn't. Compound month after month." },
             ].map((item, i) => (
               <Reveal key={item.href} delay={i * 0.08}>
               <Link
                 href={item.href}
-                className="group flex gap-4 p-5 rounded-xl transition-colors duration-200 hover:bg-white/[0.025]"
+                className="group flex gap-4 p-5 rounded-xl transition-colors duration-200"
                 style={{
-                  background: item.highlight ? 'rgba(194,24,91,0.06)' : 'rgba(255,255,255,0.02)',
-                  border: item.highlight ? '1px solid rgba(194,24,91,0.2)' : '1px solid rgba(48,72,111,0.6)',
+                  background: item.highlight ? 'rgba(194,24,91,0.04)' : '#FFFFFF',
+                  border: item.highlight ? '1px solid rgba(194,24,91,0.2)' : '1px solid #E7E3DD',
+                  boxShadow: '0 1px 4px rgba(30,58,102,0.06)',
                 }}
               >
                 <div
@@ -250,7 +251,7 @@ export default function PlatformPage() {
                     fontFamily: 'var(--font-playfair), Georgia, serif',
                     fontSize: '0.9rem',
                     fontWeight: 700,
-                    color: item.highlight ? '#C2185B' : 'rgba(48,72,111,0.8)',
+                    color: item.highlight ? '#C2185B' : '#94A3B8',
                     flexShrink: 0,
                     lineHeight: 1,
                     marginTop: '0.1rem',
@@ -261,11 +262,11 @@ export default function PlatformPage() {
                 <div>
                   <div
                     className="group-hover:text-[#C2185B] transition-colors duration-200 mb-1"
-                    style={{ fontSize: '0.88rem', fontWeight: 700, color: item.highlight ? '#F8F6F2' : '#C9D3E3', letterSpacing: '-0.01em' }}
+                    style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em' }}
                   >
                     {item.label}
                   </div>
-                  <p style={{ fontSize: '0.78rem', color: '#C9D3E3', lineHeight: 1.6 }}>
+                  <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.6 }}>
                     {item.desc}
                   </p>
                 </div>
@@ -277,12 +278,12 @@ export default function PlatformPage() {
       </section>
 
       {/* Module grid */}
-      <section className="py-28 bg-[#14284A]" aria-label="Platform modules">
+      <section className="py-28 bg-white" aria-label="Platform modules">
         <Container size="lg">
           <Reveal>
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
                 Five Modules
               </span>
@@ -292,14 +293,14 @@ export default function PlatformPage() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#F8F6F2',
+                color: '#1E3A66',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               Five systems. <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One result.</span>
             </h2>
-            <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: '#C9D3E3', lineHeight: 1.7 }}>
+            <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.7 }}>
               Each module addresses a distinct layer of AI authority — and every module runs through PearlOS so they build on each other, not alongside each other.
             </p>
           </div>
@@ -308,44 +309,44 @@ export default function PlatformPage() {
           <Reveal delay={0.1}>
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid rgba(48,72,111,0.6)', borderRadius: '1rem', overflow: 'hidden' }}
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
           >
             {MODULES.map((mod, i) => (
               <Link
                 key={mod.href}
                 href={mod.href}
-                className="group block p-7 lg:p-8 transition-colors duration-200 hover:bg-white/[0.025]"
-                style={{ background: '#07142F' }}
+                className="group block p-7 lg:p-8 transition-colors duration-200 hover:bg-[#F8F5F0]"
+                style={{ background: '#FFFFFF' }}
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span style={{ fontSize: '0.62rem', fontWeight: 700, color: 'rgba(182,146,94,0.45)', letterSpacing: '0.06em' }}>
+                  <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#94A3B8', letterSpacing: '0.06em' }}>
                     {mod.number}
                   </span>
                   <ArrowUpRight
                     size={13}
-                    className="opacity-0 group-hover:opacity-50 transition-opacity shrink-0"
+                    className="opacity-0 group-hover:opacity-60 transition-opacity shrink-0"
                     style={{ color: '#C2185B' }}
                   />
                 </div>
-                <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.6)', marginBottom: '0.35rem' }}>
+                <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94A3B8', marginBottom: '0.35rem' }}>
                   {mod.tagline}
                 </div>
                 <h3
                   className="group-hover:text-[#C2185B] transition-colors duration-200 mb-4"
-                  style={{ fontSize: '1rem', fontWeight: 700, color: '#F8F6F2', letterSpacing: '-0.01em' }}
+                  style={{ fontSize: '1rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em' }}
                 >
                   {mod.label}
                 </h3>
-                <div className="h-px mb-4" style={{ background: 'rgba(48,72,111,0.6)' }} />
-                <p style={{ fontSize: '0.845rem', color: '#98A6BE', lineHeight: 1.7 }}>
+                <div className="h-px mb-4" style={{ background: '#E7E3DD' }} />
+                <p style={{ fontSize: '0.845rem', color: '#64748B', lineHeight: 1.7 }}>
                   {mod.description}
                 </p>
               </Link>
             ))}
 
             {/* Sixth cell — the system message */}
-            <div className="p-7 lg:p-8 flex flex-col justify-between" style={{ background: '#1D355D' }}>
-              <p style={{ fontSize: '0.85rem', color: '#C9D3E3', lineHeight: 1.65, marginBottom: '1.5rem' }}>
+            <div className="p-7 lg:p-8 flex flex-col justify-between" style={{ background: '#F8F5F0' }}>
+              <p style={{ fontSize: '0.85rem', color: '#334155', lineHeight: 1.65, marginBottom: '1.5rem' }}>
                 Every module runs through PearlOS — turning individual signals into integrated authority that builds month after month.
               </p>
               <a
@@ -364,16 +365,16 @@ export default function PlatformPage() {
         </Container>
       </section>
 
-      {/* How it works together */}
-      <section className="py-24 bg-[#14284A]" aria-label="How the platform works">
+      {/* Why integration matters + CTA — navy bg */}
+      <section className="py-24 bg-[#1E3A66]" aria-label="How the platform works">
         <Container size="md" className="text-center">
           <Reveal>
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               Why Integration Matters
             </span>
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
           </div>
           <h2
             className="mb-6 max-w-2xl mx-auto"
@@ -381,7 +382,7 @@ export default function PlatformPage() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.9rem, 4vw, 3rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#FFFFFF',
               lineHeight: 1.1,
               letterSpacing: '-0.022em',
             }}
@@ -389,10 +390,10 @@ export default function PlatformPage() {
             We didn't build five separate tools.{' '}
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>We built one system.</span>
           </h2>
-          <p className="max-w-2xl mx-auto mb-6" style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.8 }}>
+          <p className="max-w-2xl mx-auto mb-6" style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.8 }}>
             Authority Pages create citable infrastructure. Knowledge Graph registers your entity. Authority Score reveals the gaps. AI Visibility tracks every engine. GEO Engine amplifies what works. PearlOS makes them all speak the same language and execute in the right order.
           </p>
-          <p className="max-w-xl mx-auto mb-10" style={{ fontSize: '0.95rem', color: '#C9D3E3', lineHeight: 1.75 }}>
+          <p className="max-w-xl mx-auto mb-10" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75 }}>
             Most agencies sell individual tactics. HeyPearl builds integrated authority infrastructure — the kind that makes AI engines trust and recommend your business six months from now, not just this week.
           </p>
           <a

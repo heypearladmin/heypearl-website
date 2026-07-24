@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   },
 };
 
+const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+
 const CHALLENGES = [
   {
     num: '01',
@@ -91,38 +93,38 @@ export default function BrokeragesPage() {
     <>
       {/* Hero */}
       <section
-        className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-[#07142F] overflow-hidden"
+        className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-white overflow-hidden"
         aria-label="Brokerages hero"
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(194,24,91,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.04) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute -bottom-20 left-1/4 w-[700px] h-[500px]"
-          style={{ background: 'radial-gradient(ellipse at bottom, rgba(194,24,91,0.06) 0%, transparent 65%)' }} />
+          style={{ background: 'radial-gradient(ellipse at bottom, rgba(194,24,91,0.04) 0%, transparent 65%)' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/solutions" className="text-xs" style={{ color: '#C9D3E3' }}>Solutions</Link>
-            <span style={{ color: '#98A6BE', fontSize: '0.75rem' }}>/</span>
+            <Link href="/solutions" className="text-xs" style={{ color: '#64748B' }}>Solutions</Link>
+            <span style={{ color: '#94A3B8', fontSize: '0.75rem' }}>/</span>
             <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Brokerages</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.5 }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />
             <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
               For Brokerage Owners
             </span>
           </div>
-          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
+          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             The brand buyers<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>AI knows to trust.</span>
           </h1>
-          <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#C9D3E3', lineHeight: 1.8 }}>
+          <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.8 }}>
             AI recommends individual agents by default — unless you've built the brokerage-level authority to change that. HeyPearl builds the infrastructure that makes your brand the one buyers hear about first.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
-            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#C9D3E3' }}>
+            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#64748B' }}>
               Explore the Platform <ArrowUpRight size={13} />
             </Link>
           </div>
@@ -130,15 +132,15 @@ export default function BrokeragesPage() {
       </section>
 
       {/* Challenges */}
-      <section className="py-28 bg-[#07142F]">
+      <section className="py-28 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>The Challenge</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Why strong brokerages<br />
               <span style={{ color: '#C2185B', fontStyle: 'italic' }}>lose the AI conversation.</span>
             </h2>
@@ -146,12 +148,12 @@ export default function BrokeragesPage() {
           </Reveal>
           <Reveal delay={0.1}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-            style={{ border: '1px solid rgba(48,72,111,0.6)', borderRadius: '1rem', overflow: 'hidden' }}>
-            {CHALLENGES.map((c, i) => (
-              <div key={c.num} className="p-7 lg:p-8" style={{ background: i % 2 === 0 ? '#07142F' : '#07142F' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(182,146,94,0.15)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
-                <p style={{ fontSize: '0.845rem', color: '#C9D3E3', lineHeight: 1.72 }}>{c.body}</p>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: cardShadow }}>
+            {CHALLENGES.map((c) => (
+              <div key={c.num} className="p-7 lg:p-8 bg-white">
+                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(30,58,102,0.08)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.72 }}>{c.body}</p>
               </div>
             ))}
           </div>
@@ -160,23 +162,23 @@ export default function BrokeragesPage() {
       </section>
 
       {/* How it solves */}
-      <section className="py-28 bg-[#07142F]">
+      <section className="py-28 bg-white">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <Reveal>
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+                <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>How HeyPearl Solves It</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 Brokerage-level authority<br />
                 <span style={{ color: '#C2185B', fontStyle: 'italic' }}>that agents amplify.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8, marginBottom: '1rem' }}>
+              <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8, marginBottom: '1rem' }}>
                 PearlOS builds authority at two levels simultaneously: the brokerage entity and the individual agent entities beneath it. When both are properly structured, each agent's authority reinforces the parent brand — and the brand amplifies every agent.
               </p>
-              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.8 }}>
+              <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8 }}>
                 AI engines begin recommending the brokerage itself for category-level queries: "best brokerage in [city]," "top real estate company for luxury homes," "which brokerage has specialists in [area]."
               </p>
             </div>
@@ -189,11 +191,11 @@ export default function BrokeragesPage() {
                 { step: '04', label: 'Brand-level AI monitoring', desc: 'Track how AI engines represent your brand separately from individual agents — with competitive intelligence on rival brokerages.' },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
-                <div className="flex gap-4 p-5 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #30486F' }}>
+                <div className="flex gap-4 p-5 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.05)' }}>
                   <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#C2185B', flexShrink: 0, marginTop: '0.2rem', letterSpacing: '0.05em' }}>{item.step}</div>
                   <div>
-                    <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.25rem' }}>{item.label}</div>
-                    <p style={{ fontSize: '0.82rem', color: '#C9D3E3', lineHeight: 1.65 }}>{item.desc}</p>
+                    <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
+                    <p style={{ fontSize: '0.82rem', color: '#334155', lineHeight: 1.65 }}>{item.desc}</p>
                   </div>
                 </div>
                 </Reveal>
@@ -207,30 +209,30 @@ export default function BrokeragesPage() {
       <RecommendedModules modules={MODULES} />
 
       {/* Proof */}
-      <section className="py-24 bg-[#07142F]">
+      <section className="py-24 bg-[#F8F5F0]">
         <Container size="lg">
           <Reveal>
-          <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#14284A', border: '1px solid rgba(182,146,94,0.12)' }}>
+          <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: cardShadow }}>
             <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1rem' }}>Client Result</div>
-            <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', fontStyle: 'italic', color: '#F8F6F2', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+            <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', fontStyle: 'italic', color: '#1E3A66', lineHeight: 1.5, marginBottom: '1.25rem' }}>
               "An independent brokerage in Austin became the #1 AI-cited brokerage across 6 engines tested — within 90 days of PearlOS activation."
             </p>
-            <p style={{ fontSize: '0.78rem', color: '#98A6BE' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope.</p>
+            <p style={{ fontSize: '0.78rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope.</p>
           </div>
           </Reveal>
         </Container>
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-[#07142F]">
+      <section className="py-24 bg-white">
         <Container size="lg">
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               What brokerages ask<br />
               <span style={{ color: '#C2185B', fontStyle: 'italic' }}>before they start.</span>
             </h2>
@@ -239,9 +241,9 @@ export default function BrokeragesPage() {
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #30486F' }}>
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#F8F6F2', marginBottom: '0.6rem' }}>{faq.q}</h3>
-                <p style={{ fontSize: '0.845rem', color: '#C9D3E3', lineHeight: 1.7 }}>{faq.a}</p>
+              <div className="p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
             ))}
@@ -250,7 +252,7 @@ export default function BrokeragesPage() {
       </section>
 
       {/* Related */}
-      <section className="py-16 bg-[#07142F]">
+      <section className="py-16 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="mb-8">
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Related Solutions</span>
@@ -262,13 +264,13 @@ export default function BrokeragesPage() {
             ].map((item, i) => (
               <Reveal key={item.href} delay={i * 0.08}>
               <Link href={item.href}
-                className="group flex items-center gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors duration-200"
-                style={{ border: '1px solid #30486F' }}>
+                className="group flex items-center gap-4 p-5 rounded-xl bg-white hover:bg-[#F8F5F0] transition-colors duration-200"
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
                 <div className="flex-1">
-                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#C9D3E3', marginBottom: '0.25rem' }}>{item.label}</div>
-                  <div style={{ fontSize: '0.8rem', color: '#C9D3E3' }}>{item.desc}</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
+                  <div style={{ fontSize: '0.8rem', color: '#334155' }}>{item.desc}</div>
                 </div>
-                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-50 transition-opacity" style={{ color: '#C2185B' }} />
+                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#C2185B' }} />
               </Link>
               </Reveal>
             ))}
@@ -277,23 +279,23 @@ export default function BrokeragesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#07142F]">
+      <section className="py-24 bg-[#1E3A66]">
         <Container size="md" className="text-center">
           <Reveal>
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#F8F6F2', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Make your brokerage<br />
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>the one AI recommends.</span>
           </h2>
-          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: '#C9D3E3', lineHeight: 1.75 }}>
+          <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             Book a strategy call. We'll audit your brokerage's current AI visibility and show you exactly what it takes to make your brand the AI-recommended choice in your market.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-[#07142F] transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"
-              style={{ border: '1px solid #30486F', color: '#C9D3E3' }}>
+              style={{ border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.85)' }}>
               Explore the Platform <ArrowRight size={14} />
             </Link>
           </div>

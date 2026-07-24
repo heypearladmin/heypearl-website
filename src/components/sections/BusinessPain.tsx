@@ -20,21 +20,11 @@ const CONSEQUENCES = [
 
 export function BusinessPain() {
   return (
-    <section className="py-28 bg-[#07142F] relative overflow-hidden">
-      {/* Subtle tension glow — center left */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full"
-        style={{
-          background:
-            'radial-gradient(ellipse at center, rgba(192,48,112,0.05) 0%, transparent 65%)',
-        }}
-      />
-
+    <section className="py-28 bg-white relative overflow-hidden">
       <Container size="lg" className="relative">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-10">
-          <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+          <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
           <span
             style={{
               fontSize: '0.67rem',
@@ -57,7 +47,7 @@ export function BusinessPain() {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(2rem, 4.5vw, 3.4rem)',
                 fontWeight: 700,
-                color: '#F8F6F2',
+                color: '#1E3A66',
                 lineHeight: 1.08,
                 letterSpacing: '-0.025em',
               }}
@@ -73,33 +63,30 @@ export function BusinessPain() {
               style={{
                 fontSize: '1.1rem',
                 fontWeight: 500,
-                color: '#98A6BE',
+                color: '#64748B',
                 lineHeight: 1.65,
               }}
             >
               Are you in that answer?
             </p>
 
-            {/* Gold divider */}
+            {/* Divider */}
             <div
               className="mt-8 mb-8 h-px"
-              style={{
-                background:
-                  'linear-gradient(90deg, rgba(182,146,94,0.35), rgba(182,146,94,0.08), transparent)',
-              }}
+              style={{ background: '#ECE8E2' }}
             />
 
-            {/* The bridge statement */}
+            {/* Bridge statement */}
             <p
               style={{
                 fontSize: '1rem',
-                color: '#C9D3E3',
-                lineHeight: 1.7,
+                color: '#334155',
+                lineHeight: 1.75,
               }}
             >
               This isn't an SEO problem. It isn't a content problem.
               It's a{' '}
-              <span style={{ color: '#F8F6F2', fontWeight: 600 }}>
+              <span style={{ color: '#1E3A66', fontWeight: 600 }}>
                 visibility infrastructure problem
               </span>{' '}
               — and most businesses don't have a systematic solution for it yet.
@@ -115,7 +102,7 @@ export function BusinessPain() {
                 style={{
                   borderBottom:
                     i < CONSEQUENCES.length - 1
-                      ? '1px solid rgba(48,72,111,0.5)'
+                      ? '1px solid #ECE8E2'
                       : 'none',
                 }}
               >
@@ -123,10 +110,11 @@ export function BusinessPain() {
                   <span
                     style={{
                       color: '#C2185B',
-                      fontSize: '0.8rem',
-                      marginTop: '0.15rem',
+                      fontSize: '0.75rem',
+                      fontWeight: 700,
+                      marginTop: '0.1rem',
                       flexShrink: 0,
-                      opacity: 0.7,
+                      opacity: 0.6,
                     }}
                     aria-hidden
                   >
@@ -137,7 +125,7 @@ export function BusinessPain() {
                       style={{
                         fontSize: '0.9rem',
                         fontWeight: 600,
-                        color: '#F8F6F2',
+                        color: '#1E3A66',
                         marginBottom: '0.5rem',
                         lineHeight: 1.4,
                         letterSpacing: '-0.01em',
@@ -148,8 +136,8 @@ export function BusinessPain() {
                     <p
                       style={{
                         fontSize: '0.85rem',
-                        color: '#98A6BE',
-                        lineHeight: 1.7,
+                        color: '#64748B',
+                        lineHeight: 1.72,
                       }}
                     >
                       {c.detail}
@@ -161,12 +149,12 @@ export function BusinessPain() {
           </div>
         </div>
 
-        {/* Bottom callout */}
+        {/* Bottom callout — cream card */}
         <div
-          className="mt-14 rounded-xl p-6 lg:p-8"
+          className="mt-14 rounded-2xl p-8 lg:p-10"
           style={{
-            background: 'rgba(194,24,91,0.05)',
-            border: '1px solid rgba(182,146,94,0.1)',
+            background: '#F8F5F0',
+            border: '1px solid #E7E3DD',
           }}
         >
           <p
@@ -174,20 +162,20 @@ export function BusinessPain() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#C9D3E3',
-              lineHeight: 1.6,
+              color: '#334155',
+              lineHeight: 1.65,
               textAlign: 'center',
             }}
           >
             "The businesses that establish recommendation authority in the next 24 months
             will own their categories for the next decade."
           </p>
-          <div className="mt-4 flex items-center justify-center gap-3">
-            <div className="h-px w-6" style={{ background: 'rgba(182,146,94,0.25)' }} />
-            <span style={{ fontSize: '0.7rem', color: '#98A6BE', letterSpacing: '0.08em' }}>
+          <div className="mt-5 flex items-center justify-center gap-3">
+            <div className="h-px w-8" style={{ background: '#E7E3DD' }} />
+            <span style={{ fontSize: '0.7rem', color: '#94A3B8', letterSpacing: '0.08em' }}>
               Misti Bruton — Founder, HeyPearl
             </span>
-            <div className="h-px w-6" style={{ background: 'rgba(182,146,94,0.25)' }} />
+            <div className="h-px w-8" style={{ background: '#E7E3DD' }} />
           </div>
         </div>
       </Container>

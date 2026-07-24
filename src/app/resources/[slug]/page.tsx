@@ -19,12 +19,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-const bg = '#F8F6F2';
-const text = '#07142F';
-const secondary = 'rgba(20,33,61,0.55)';
-const magenta = '#C2185B';
-const border = 'rgba(20,33,61,0.08)';
+const bg = '#F8F5F0';
 const card = '#FFFFFF';
+const navy = '#1E3A66';
+const body = '#334155';
+const secondary = '#64748B';
+const muted = '#94A3B8';
+const magenta = '#C2185B';
+const border = '#E7E3DD';
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticle(params.slug);
@@ -38,15 +40,15 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     <div style={{ background: bg, minHeight: '100vh' }}>
 
       {/* Breadcrumb */}
-      <div style={{ borderBottom: `1px solid ${border}` }}>
+      <div style={{ background: card, borderBottom: `1px solid ${border}` }}>
         <Container size="xl">
           <nav aria-label="Breadcrumb">
             <div className="flex items-center gap-2 py-3" style={{ fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: secondary }}>
-              <Link href="/resources" className="flex items-center gap-1.5 hover:text-[#07142F] transition-colors">
+              <Link href="/resources" className="flex items-center gap-1.5 transition-colors hover:text-[#1E3A66]" style={{ color: secondary }}>
                 <ArrowLeft size={11} />
                 Library
               </Link>
-              <span style={{ color: 'rgba(20,33,61,0.2)' }}>/</span>
+              <span style={{ color: border }}>/</span>
               <span style={{ color: magenta }}>{article.category}</span>
             </div>
           </nav>
@@ -54,7 +56,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </div>
 
       {/* Article Header */}
-      <header style={{ borderBottom: `1px solid ${border}`, paddingTop: '3.5rem', paddingBottom: '2.5rem' }}>
+      <header style={{ background: card, borderBottom: `1px solid ${border}`, paddingTop: '3.5rem', paddingBottom: '2.5rem' }}>
         <Container size="lg">
           <div className="max-w-3xl">
             <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1rem' }}>
@@ -65,7 +67,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.85rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: text,
+                color: navy,
                 lineHeight: 1.1,
                 letterSpacing: '-0.022em',
                 marginBottom: '1.25rem',
@@ -73,7 +75,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             >
               {article.headline}
             </h1>
-            <div className="flex flex-wrap items-center gap-4" style={{ fontSize: '0.78rem', color: secondary }}>
+            <div className="flex flex-wrap items-center gap-4" style={{ fontSize: '0.78rem', color: muted }}>
               <div className="flex items-center gap-1.5">
                 <Clock size={12} />
                 <span>{article.readTime} min read</span>
@@ -96,7 +98,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: magenta, marginBottom: '0.5rem' }}>
                 Quick Answer
               </div>
-              <p style={{ fontSize: '0.95rem', color: text, lineHeight: 1.75, fontWeight: 500 }}>
+              <p style={{ fontSize: '0.95rem', color: body, lineHeight: 1.75, fontWeight: 500 }}>
                 {article.quickAnswer}
               </p>
             </div>
@@ -105,7 +107,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Key Takeaways */}
-      <section style={{ borderBottom: `1px solid ${border}`, paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
+      <section style={{ background: card, borderBottom: `1px solid ${border}`, paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
         <Container size="lg">
           <div className="max-w-3xl">
             <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: secondary, marginBottom: '0.875rem' }}>
@@ -117,7 +119,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                   <span style={{ width: '1.25rem', height: '1.25rem', background: 'rgba(194,24,91,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '0.1rem' }}>
                     <span style={{ fontSize: '0.55rem', fontWeight: 800, color: magenta }}>{String(i + 1)}</span>
                   </span>
-                  <span style={{ fontSize: '0.88rem', color: text, lineHeight: 1.65 }}>{point}</span>
+                  <span style={{ fontSize: '0.88rem', color: body, lineHeight: 1.65 }}>{point}</span>
                 </li>
               ))}
             </ul>
@@ -145,17 +147,17 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               {/* CTA in sidebar */}
               <div
                 className="mt-8 p-5 rounded-xl"
-                style={{ background: '#07142F', border: '1px solid rgba(48,72,111,0.6)' }}
+                style={{ background: navy, border: `1px solid rgba(30,58,102,0.4)` }}
               >
                 <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta, marginBottom: '0.625rem' }}>
                   Ready to Build?
                 </div>
-                <p style={{ fontSize: '0.78rem', color: 'rgba(242,237,228,0.5)', lineHeight: 1.6, marginBottom: '1rem' }}>
+                <p style={{ fontSize: '0.78rem', color: 'rgba(248,245,240,0.6)', lineHeight: 1.6, marginBottom: '1rem' }}>
                   Get a free AI Authority audit and see where your business stands.
                 </p>
                 <Link
                   href={site.strategyCallUrl}
-                  className="flex items-center gap-1.5 text-[#090909] font-semibold rounded-full px-4 py-2 transition-opacity hover:opacity-85"
+                  className="flex items-center gap-1.5 font-semibold rounded-full px-4 py-2 transition-opacity hover:opacity-85"
                   style={{ background: magenta, color: '#FFFFFF', fontSize: '0.75rem', justifyContent: 'center' }}
                 >
                   Book a Call
@@ -180,21 +182,21 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 <Link
                   key={related.slug}
                   href={`/resources/${related.slug}`}
-                  className="group block p-6 transition-colors duration-150 hover:bg-[#EDE4D4]"
+                  className="group block p-6 transition-colors duration-150 hover:bg-[#F8F5F0]"
                   style={{ background: card }}
                 >
-                  <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: secondary, marginBottom: '0.375rem' }}>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta, marginBottom: '0.375rem' }}>
                     {related.category}
                   </div>
                   <h3
                     className="group-hover:text-[#C2185B] transition-colors"
-                    style={{ fontSize: '0.93rem', fontWeight: 700, color: text, lineHeight: 1.35, marginBottom: '0.5rem' }}
+                    style={{ fontSize: '0.93rem', fontWeight: 700, color: navy, lineHeight: 1.35, marginBottom: '0.5rem' }}
                   >
                     {related.title}
                   </h3>
                   <div className="flex items-center gap-1.5">
-                    <Clock size={10} style={{ color: secondary }} />
-                    <span style={{ fontSize: '0.7rem', color: secondary }}>{related.readTime} min</span>
+                    <Clock size={10} style={{ color: muted }} />
+                    <span style={{ fontSize: '0.7rem', color: muted }}>{related.readTime} min</span>
                     <ArrowUpRight size={11} className="ml-auto opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: magenta }} />
                   </div>
                 </Link>
@@ -205,7 +207,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       )}
 
       {/* Bottom CTA */}
-      <section style={{ borderTop: `1px solid ${border}`, background: '#07142F', paddingTop: '4rem', paddingBottom: '4rem' }}>
+      <section style={{ borderTop: `1px solid ${border}`, background: navy, paddingTop: '4rem', paddingBottom: '4rem' }}>
         <Container size="md">
           <div className="text-center">
             <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1rem' }}>
@@ -216,7 +218,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 fontFamily: 'var(--font-playfair), Georgia, serif',
                 fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
                 fontWeight: 700,
-                color: '#F2EDE4',
+                color: '#F8F5F0',
                 lineHeight: 1.15,
                 letterSpacing: '-0.02em',
                 marginBottom: '1rem',
@@ -224,7 +226,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             >
               See where your AI Authority stands today.
             </h2>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(242,237,228,0.45)', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '26rem', margin: '0 auto 2rem' }}>
+            <p style={{ fontSize: '0.9rem', color: 'rgba(248,245,240,0.5)', lineHeight: 1.7, maxWidth: '26rem', margin: '0 auto 2rem' }}>
               Book a Strategy Call and get a free baseline audit of your AI visibility across the six major AI search engines.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -239,7 +241,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <Link
                 href="/resources"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold transition-opacity hover:opacity-70"
-                style={{ background: 'transparent', color: 'rgba(242,237,228,0.6)', fontSize: '0.875rem', border: '1px solid rgba(242,237,228,0.15)' }}
+                style={{ background: 'transparent', color: 'rgba(248,245,240,0.65)', fontSize: '0.875rem', border: '1px solid rgba(248,245,240,0.2)' }}
               >
                 <BookOpen size={13} />
                 Browse All Guides

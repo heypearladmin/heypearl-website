@@ -33,10 +33,10 @@ export default function ContactPage() {
         image=""
       />
 
-      <section className="pb-24">
+      <section className="pb-24 bg-white">
         <Container size="xl">
           <div className="grid lg:grid-cols-2 gap-6">
-            {/* Strategy Call card */}
+            {/* Strategy Call card — navy accent for premium contrast */}
             <Reveal>
               <article
                 id="strategy"
@@ -49,16 +49,16 @@ export default function ContactPage() {
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover opacity-55"
+                    className="object-cover opacity-45"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-plum/90 via-plum/65 to-plum/35" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-plum/92 via-plum/70 to-plum/40" />
                 </div>
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 opacity-50"
+                  className="pointer-events-none absolute inset-0 opacity-40"
                   style={{
                     background:
-                      'radial-gradient(50% 50% at 100% 0%, rgba(255,145,77,0.18) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(211,70,129,0.18) 0%, transparent 60%)',
+                      'radial-gradient(50% 50% at 100% 0%, rgba(194,24,91,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(194,24,91,0.12) 0%, transparent 60%)',
                   }}
                 />
                 <div className="relative">
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
             {/* Operational contact card */}
             <Reveal delay={0.08}>
-              <article className="h-full rounded-3xl bg-white border border-plum/5 shadow-soft p-10 sm:p-12">
+              <article className="h-full rounded-3xl bg-[#F8F5F0] border border-[#E7E3DD] p-10 sm:p-12">
                 <Eyebrow>Operational</Eyebrow>
                 <h2 className="mt-4 font-display text-3xl sm:text-4xl text-plum">
                   Contact HeyPearl
@@ -100,10 +100,10 @@ export default function ContactPage() {
                   Support, partnerships, press, and operational questions. We answer fast.
                 </p>
 
-                <div className="mt-10 flex flex-col gap-5">
+                <div className="mt-10 flex flex-col gap-4">
                   <a
                     href={`mailto:${site.contact.email}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-plum/10 px-5 py-4 hover:bg-lavender transition-colors"
+                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#1E3A66] transition-colors"
                   >
                     <div className="flex items-center gap-3">
                       <Mail size={18} className="text-magenta" />
@@ -118,13 +118,13 @@ export default function ContactPage() {
                     </div>
                     <ArrowUpRight
                       size={16}
-                      className="text-plum/50 group-hover:text-plum transition"
+                      className="text-[#94A3B8] group-hover:text-plum transition"
                     />
                   </a>
 
                   <a
                     href={`tel:${site.contact.phone}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-plum/10 px-5 py-4 hover:bg-lavender transition-colors"
+                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#1E3A66] transition-colors"
                   >
                     <div className="flex items-center gap-3">
                       <Phone size={18} className="text-magenta" />
@@ -139,11 +139,11 @@ export default function ContactPage() {
                     </div>
                     <ArrowUpRight
                       size={16}
-                      className="text-plum/50 group-hover:text-plum transition"
+                      className="text-[#94A3B8] group-hover:text-plum transition"
                     />
                   </a>
 
-                  <div className="flex items-start gap-3 rounded-2xl border border-plum/10 px-5 py-4">
+                  <div className="flex items-start gap-3 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4">
                     <MapPin size={18} className="mt-0.5 text-magenta" />
                     <div>
                       <div className="text-xs tracking-micro uppercase text-slate">
@@ -167,7 +167,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.instagram}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-plum/15 text-plum hover:bg-lavender transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
                       aria-label="Instagram"
                     >
                       <Instagram size={16} />
@@ -175,7 +175,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.facebook}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-plum/15 text-plum hover:bg-lavender transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
                       aria-label="Facebook"
                     >
                       <Facebook size={16} />
@@ -183,7 +183,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.youtube}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-plum/15 text-plum hover:bg-lavender transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
                       aria-label="YouTube"
                     >
                       <Youtube size={16} />
@@ -203,7 +203,7 @@ export default function ContactPage() {
 
           {/* Founder follow strip */}
           <Reveal delay={0.1}>
-            <div className="mt-10 rounded-3xl bg-lavender border border-plum/10 p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div className="mt-10 rounded-3xl bg-[#F8F5F0] border border-[#E7E3DD] p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
               <div>
                 <Eyebrow>Founder</Eyebrow>
                 <h3 className="mt-2 font-display text-2xl text-plum">
@@ -217,7 +217,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.instagram}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-plum/15 text-plum hover:bg-blush transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
                   aria-label="Misti on Instagram"
                 >
                   <Instagram size={16} />
@@ -225,7 +225,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.facebook}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-plum/15 text-plum hover:bg-blush transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
                   aria-label="Misti on Facebook"
                 >
                   <Facebook size={16} />
@@ -233,7 +233,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.youtube}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-plum/15 text-plum hover:bg-blush transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
                   aria-label="Misti on YouTube"
                 >
                   <Youtube size={16} />

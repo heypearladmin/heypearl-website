@@ -6,7 +6,7 @@ import { site } from '@/lib/site';
 
 export function PricingPreview() {
   return (
-    <section className="py-28 bg-[#07142F] relative overflow-hidden">
+    <section className="py-28 bg-white relative overflow-hidden">
       {/* Subtle gold line top */}
       <div
         aria-hidden
@@ -29,7 +29,7 @@ export function PricingPreview() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#1E3A66',
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
             }}
@@ -37,14 +37,14 @@ export function PricingPreview() {
             Authority systems,{' '}
             <span style={{ color: '#C2185B', fontStyle: 'italic' }}>not retainers.</span>
           </h2>
-          <p className="mt-5" style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.7 }}>
+          <p className="mt-5" style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.7 }}>
             Each tier is a complete system, not a marketing retainer.
             Start where you are. Move up when the system is ready for it.
           </p>
         </div>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ border: '1px solid rgba(48,72,111,0.5)', borderRadius: '1rem', overflow: 'hidden' }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden' }}>
           {geoTiers.map((tier, i) => (
             <div
               key={tier.id}
@@ -76,7 +76,7 @@ export function PricingPreview() {
                 style={{
                   fontSize: '1.05rem',
                   fontWeight: 600,
-                  color: '#F8F6F2',
+                  color: '#1E3A66',
                   marginBottom: '0.5rem',
                   letterSpacing: '-0.01em',
                 }}
@@ -99,7 +99,7 @@ export function PricingPreview() {
                   >
                     ${tier.price.toLocaleString()}
                   </span>
-                  <span style={{ fontSize: '0.8rem', color: '#98A6BE' }}>/mo</span>
+                  <span style={{ fontSize: '0.8rem', color: '#64748B' }}>/mo</span>
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ export function PricingPreview() {
               <div className="h-px mb-5" style={{ background: 'rgba(48,72,111,0.4)' }} />
 
               {/* Description */}
-              <p style={{ fontSize: '0.83rem', color: '#98A6BE', lineHeight: 1.65, marginBottom: '1.5rem' }}>
+              <p style={{ fontSize: '0.83rem', color: '#64748B', lineHeight: 1.65, marginBottom: '1.5rem' }}>
                 {tier.description}
               </p>
 
@@ -116,7 +116,7 @@ export function PricingPreview() {
                 {tier.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <Check size={13} style={{ color: '#C2185B', marginTop: '3px', flexShrink: 0 }} />
-                    <span style={{ fontSize: '0.82rem', color: '#C9D3E3', lineHeight: 1.5 }}>{f}</span>
+                    <span style={{ fontSize: '0.82rem', color: '#334155', lineHeight: 1.5 }}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -130,7 +130,7 @@ export function PricingPreview() {
                 style={
                   tier.highlight
                     ? { background: '#C2185B', color: '#FFFFFF' }
-                    : { background: 'rgba(255,255,255,0.04)', color: '#C9D3E3', border: '1px solid #30486F' }
+                    : { background: 'rgba(255,255,255,0.04)', color: '#334155', border: '1px solid #E7E3DD' }
                 }
               >
                 Book a Strategy Call
@@ -142,7 +142,7 @@ export function PricingPreview() {
 
         {/* Footer note */}
         <div className="mt-8 text-center">
-          <p style={{ fontSize: '0.8rem', color: '#98A6BE', marginBottom: '8px' }}>
+          <p style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: '8px' }}>
             Looking for local authority?
           </p>
           <Link href="/pricing" className="text-sm font-medium" style={{ color: '#C2185B' }}>

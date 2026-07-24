@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   },
 };
 
-const navy   = '#07142F';
-const soft   = '#14284A';
-const card   = '#1D355D';
-const cream  = '#F8F6F2';
-const dim    = '#C9D3E3';
-const dimmer = '#98A6BE';
+const navy   = '#1E3A66';
+const soft   = '#F8F5F0';
+const card   = '#FFFFFF';
+const cream  = '#F8F5F0';
+const dim    = '#334155';
+const dimmer = '#64748B';
 const mg     = '#C2185B';
 const gold   = '#C2185B';
 const border = '#30486F';

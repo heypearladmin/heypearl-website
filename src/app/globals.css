@@ -3,95 +3,70 @@
 @tailwind utilities;
 
 /* ─────────────────────────────────────────────────────────────────────────
-   HeyPearl 5.0 — AI Authority Platform — Onboarding-Inspired Design System
+   HeyPearl 6.0 — Premium AI Software Platform
 
-   Dark Conversion Theme  — homepage, platform, solutions, company
-     Ground:   #07142F  deep navy (--hp-black)
-     Surface:  #14284A  mid navy  (--hp-ink)
-     Card:     #1D355D  card navy (--hp-charcoal)
-     Accent:   #C2185B  magenta   (--hp-magenta)
-     Hover:    #D62F73  magenta+  (--hp-magenta-hover)
-     Text 1:   #F8F6F2  warm cream (--hp-ivory)
-     Text 2:   #C9D3E3  cool slate (--hp-secondary)
-     Text 3:   #98A6BE  muted slate (--hp-muted)
-     Border:   #30486F  navy border (--hp-border-dark)
-     Neutral:  #D8CDBF  warm sand  (--hp-warm-neutral)
+   Light Editorial System (primary)
+     White         #FFFFFF   primary background
+     Warm Cream    #F8F5F0   section alternation
+     Soft Ivory    #FDFBF8   alternate surface
+     Brand Navy    #1E3A66   headings, nav, footer
+     Body Text     #334155   paragraph copy
+     Secondary     #64748B   captions, labels
+     Muted         #94A3B8   placeholders, hints
+     Border        #E7E3DD   card borders, dividers
+     Magenta       #C2185B   accent only (buttons, links, icons)
+     Magenta Hover #D62F73
 
-   Editorial Light Theme  — resources, blog, faq
-     Ground:   #F8F6F2  warm cream
-     Surface:  #EDE4D4  warm sand
-     Ink:      #07142F  deep navy headings
-     Border:   #D8CDBF  warm sand dividers
+   Dark sections (footer, dashboard UI only)
+     #07142F / #14284A / #1D355D
    ───────────────────────────────────────────────────────────────────────── */
 
 :root {
-  /* ── Raw palette ──────────────────────────────────────────────── */
-  --hp-black:        #07142F;   /* primary bg — deep navy */
-  --hp-ink:          #14284A;   /* secondary bg — mid navy */
-  --hp-charcoal:     #1D355D;   /* card/surface — card navy */
-  --hp-gold:         #B6925E;   /* muted gold — awards/badges only */
-  --hp-ivory:        #F8F6F2;   /* primary text on dark */
-  --hp-secondary:    #C9D3E3;   /* secondary text — cool blue slate */
-  --hp-muted:        #98A6BE;   /* muted text — labels, captions */
-  --hp-magenta:      #C2185B;   /* primary interactive accent */
-  --hp-magenta-hover:#D62F73;   /* hover state for magenta */
-  --hp-cream:        #F8F6F2;   /* warm cream bg */
-  --hp-bone:         #EDE4D4;   /* warm sand surface */
-  --hp-near-black:   #07142F;   /* editorial headings */
-  --hp-warm-dark:    #2A2520;
-  --hp-border:       #D8CDBF;   /* warm sand border (editorial) */
-  --hp-border-dark:  #30486F;   /* navy border (dark theme) */
-  --hp-warm-neutral: #D8CDBF;   /* warm sand — rare accent use */
+  /* ── Light palette ────────────────────────────────────────────── */
+  --hp-white:       #FFFFFF;
+  --hp-cream:       #F8F5F0;
+  --hp-surface:     #FDFBF8;
+  --hp-navy:        #1E3A66;
+  --hp-body:        #334155;
+  --hp-secondary:   #64748B;
+  --hp-muted:       #94A3B8;
+  --hp-border:      #E7E3DD;
+  --hp-divider:     #ECE8E2;
+  --hp-magenta:     #C2185B;
+  --hp-magenta-hover: #D62F73;
+
+  /* ── Dark palette (footer / dashboard UI only) ────────────────── */
+  --hp-black:       #07142F;
+  --hp-ink:         #14284A;
+  --hp-charcoal:    #1D355D;
+  --hp-gold:        #B6925E;
 
   /* ── Legacy compat ────────────────────────────────────────────── */
-  --cream:   #F8F6F2;
-  --lavender:#EDE4D4;
+  --cream:   #F8F5F0;
+  --lavender:#F8F5F0;
   --orange:  #FF914D;
   --magenta: #C2185B;
-  --plum:    #07142F;
-  --navy:    #07142F;
+  --plum:    #1E3A66;
+  --navy:    #1E3A66;
   --blush:   #FED0D1;
-  --slate:   #2A2520;
-  --gray:    #737373;
+  --slate:   #334155;
+  --gray:    #94A3B8;
   --gold:    #B6925E;
 
-  /* ── Semantic dark-theme tokens ───────────────────────────────── */
-  --bg:           var(--hp-black);
-  --surface:      var(--hp-ink);
-  --border-color: var(--hp-border-dark);
-  --text:         var(--hp-ivory);
-  --text-dim:     var(--hp-secondary);
-  --text-muted:   var(--hp-muted);
-  --accent:       var(--hp-magenta);
-  --accent-hover: var(--hp-magenta-hover);
-}
-
-[data-theme="dark"] {
-  --bg:           var(--hp-black);
-  --surface:      var(--hp-ink);
-  --border-color: var(--hp-border-dark);
-  --text:         var(--hp-ivory);
-  --text-dim:     var(--hp-secondary);
-  --text-muted:   var(--hp-muted);
-  --accent:       var(--hp-magenta);
-  --accent-hover: var(--hp-magenta-hover);
-  color-scheme: dark;
-}
-
-[data-theme="light"] {
-  --bg:           var(--hp-cream);
-  --surface:      var(--hp-bone);
+  /* ── Semantic tokens ──────────────────────────────────────────── */
+  --bg:           var(--hp-white);
+  --surface:      var(--hp-cream);
   --border-color: var(--hp-border);
-  --text:         var(--hp-near-black);
-  --text-dim:     rgba(7,20,47,0.55);
-  --text-muted:   rgba(7,20,47,0.38);
+  --text:         var(--hp-navy);
+  --text-body:    var(--hp-body);
+  --text-dim:     var(--hp-secondary);
+  --text-muted:   var(--hp-muted);
   --accent:       var(--hp-magenta);
   --accent-hover: var(--hp-magenta-hover);
-  color-scheme: light;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
-   Base styles
+   Base
    ───────────────────────────────────────────────────────────────────────── */
 
 * {
@@ -102,23 +77,24 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--cream);
+  background: #FFFFFF;
 }
 
 body {
-  background: var(--cream);
-  color: var(--navy);
+  background: #FFFFFF;
+  color: var(--hp-body);
   font-family: var(--font-inter), 'Helvetica Neue', Helvetica, -apple-system,
     BlinkMacSystemFont, Arial, sans-serif;
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
+/* Dark sections — footer, occasional navy hero moments */
 .dark-section {
   background: var(--hp-black);
-  color: var(--hp-ivory);
+  color: #F8F5F0;
 }
-.dark-section p { color: var(--hp-secondary); }
-.dark-section strong { color: var(--hp-ivory); }
+.dark-section p { color: rgba(248,245,240,0.75); }
+.dark-section strong { color: #F8F5F0; }
 
 ::selection {
   background: var(--hp-magenta);
@@ -143,8 +119,9 @@ body {
 
 .prose-editorial {
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.85;
   max-width: 68ch;
+  color: var(--hp-body);
 }
 .prose-editorial h2 {
   font-family: var(--font-playfair), Georgia, serif;
@@ -152,7 +129,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: var(--hp-near-black);
+  color: var(--hp-navy);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -160,7 +137,7 @@ body {
   font-family: var(--font-playfair), Georgia, serif;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 700;
-  color: var(--hp-near-black);
+  color: var(--hp-navy);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -180,14 +157,14 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.025;
-  mix-blend-mode: overlay;
+  opacity: 0.015;
+  mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(194,24,91,0.35), transparent);
+  background: linear-gradient(90deg, transparent, rgba(194,24,91,0.25), transparent);
 }
 
 .link-underline {
@@ -217,10 +194,18 @@ body {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Dark theme cards — updated border to navy solid */
+/* Light cards — default for marketing pages */
+.card-light {
+  background: #FFFFFF;
+  border: 1px solid #E7E3DD;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08);
+}
+
+/* Dark cards — dashboard UI, footer only */
 .card-dark {
   background: var(--hp-ink);
-  border: 1px solid var(--hp-border-dark);
+  border: 1px solid rgba(48,72,111,0.6);
   border-radius: 0.75rem;
 }
 .card-dark-gold {
@@ -230,14 +215,14 @@ body {
 }
 
 .bg-dot-grid {
-  background-image: radial-gradient(rgba(248,246,242,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(30,58,102,0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 .bg-line-grid {
   background-image:
-    linear-gradient(rgba(248,246,242,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(248,246,242,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(30,58,102,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,58,102,0.05) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 

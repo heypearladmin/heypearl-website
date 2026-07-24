@@ -49,8 +49,8 @@ function buildGroups(): FaqGroup[] {
     }));
 }
 
-const bg = '#F8F6F2';
-const text = '#07142F';
+const bg = '#FFFFFF';
+const text = '#1E3A66';
 const secondary = 'rgba(7,20,47,0.55)';
 const magenta = '#C2185B';
 const mutedGold = '#C2185B';
@@ -199,7 +199,7 @@ export default function FaqIndexPage() {
         </section>
 
         {/* CTA */}
-        <section style={{ borderTop: `1px solid ${border}`, background: '#07142F', paddingTop: '5rem', paddingBottom: '5rem' }}>
+        <section style={{ borderTop: `1px solid ${border}`, background: '#FFFFFF', paddingTop: '5rem', paddingBottom: '5rem' }}>
           <Container size="md">
             <Reveal>
             <div className="text-center">
@@ -211,7 +211,7 @@ export default function FaqIndexPage() {
                   fontFamily: 'var(--font-playfair), Georgia, serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)',
                   fontWeight: 700,
-                  color: '#F8F6F2',
+                  color: '#1E3A66',
                   lineHeight: 1.1,
                   letterSpacing: '-0.02em',
                   marginBottom: '1.25rem',
@@ -220,7 +220,7 @@ export default function FaqIndexPage() {
                 These are the answers.<br />
                 <span style={{ color: mutedGold, fontStyle: 'italic' }}>We build the infrastructure.</span>
               </h2>
-              <p style={{ fontSize: '0.95rem', color: '#98A6BE', lineHeight: 1.7, maxWidth: '28rem', margin: '0 auto 2.5rem' }}>
+              <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.7, maxWidth: '28rem', margin: '0 auto 2.5rem' }}>
                 Book a Strategy Call and we'll audit your current AI visibility, identify the gaps,
                 and show you what it takes to become the recommended choice in your market.
               </p>

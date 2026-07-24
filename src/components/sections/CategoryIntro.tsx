@@ -27,22 +27,12 @@ const PILLARS = [
 
 export function CategoryIntro() {
   return (
-    <section className="py-28 bg-[#07142F] relative overflow-hidden">
-      {/* Subtle dot grid */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(194,24,91,0.05) 1px, transparent 1px)',
-          backgroundSize: '40px 40px',
-        }}
-      />
-
+    <section className="py-28 relative overflow-hidden" style={{ background: '#F8F5F0' }}>
       <Container size="lg" className="relative">
         {/* Headline block */}
         <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.35)' }} aria-hidden />
+            <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
             <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
               The Category
             </span>
@@ -52,7 +42,7 @@ export function CategoryIntro() {
               fontFamily: 'var(--font-playfair), Georgia, serif',
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
               fontWeight: 700,
-              color: '#F8F6F2',
+              color: '#1E3A66',
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
             }}
@@ -62,29 +52,33 @@ export function CategoryIntro() {
               AI Authority Infrastructure.
             </span>
           </h2>
-          <p className="mt-5 max-w-xl" style={{ fontSize: '1rem', color: '#98A6BE', lineHeight: 1.75 }}>
+          <p className="mt-5 max-w-xl" style={{ fontSize: '1rem', color: '#64748B', lineHeight: 1.75 }}>
             Not AI content generation. Not prompt engineering. Not chatbot deployment.
             The systematic engineering of why AI engines trust, cite, and recommend your business
             over every alternative in your market.
           </p>
         </div>
 
-        {/* Four pillars */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-px" style={{ border: '1px solid rgba(48,72,111,0.5)', borderRadius: '1rem', overflow: 'hidden' }}>
-          {PILLARS.map((p, i) => (
+        {/* Four pillars — white cards on cream */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {PILLARS.map((p) => (
             <div
               key={p.number}
-              className="p-7 lg:p-9 relative"
-              style={{ background: i % 2 === 0 ? '#14284A' : '#07142F' }}
+              className="p-7 lg:p-9 rounded-2xl"
+              style={{
+                background: '#FFFFFF',
+                border: '1px solid #E7E3DD',
+                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.05)',
+              }}
             >
               <div
                 style={{
                   fontFamily: 'var(--font-playfair), Georgia, serif',
-                  fontSize: '2.5rem',
+                  fontSize: '2.25rem',
                   fontWeight: 700,
-                  color: 'rgba(182,146,94,0.08)',
+                  color: '#ECE8E2',
                   lineHeight: 1,
-                  marginBottom: '1rem',
+                  marginBottom: '1.25rem',
                   letterSpacing: '-0.03em',
                 }}
               >
@@ -94,14 +88,14 @@ export function CategoryIntro() {
                 style={{
                   fontSize: '1rem',
                   fontWeight: 600,
-                  color: '#F8F6F2',
+                  color: '#1E3A66',
                   marginBottom: '0.6rem',
                   letterSpacing: '-0.01em',
                 }}
               >
                 {p.title}
               </h3>
-              <p style={{ fontSize: '0.875rem', color: '#98A6BE', lineHeight: 1.7 }}>
+              <p style={{ fontSize: '0.875rem', color: '#64748B', lineHeight: 1.72 }}>
                 {p.body}
               </p>
             </div>
@@ -110,7 +104,7 @@ export function CategoryIntro() {
 
         {/* Bottom CTA row */}
         <div className="mt-12 flex flex-wrap items-center justify-between gap-6">
-          <p style={{ fontSize: '0.875rem', color: '#98A6BE' }}>
+          <p style={{ fontSize: '0.875rem', color: '#94A3B8' }}>
             Built for operators willing to invest in what lasts.
           </p>
           <Link

@@ -1,60 +1,57 @@
 import type { Config } from 'tailwindcss';
 
 /**
- * HeyPearl 5.0 — AI Authority Platform — Onboarding-Inspired Design System
+ * HeyPearl 6.0 — Premium AI Software Platform Design System
  *
- * Dark Conversion Theme (homepage, platform, solutions, company)
- *   Ground      Deep Navy    #07142F  → token: black
- *   Surface     Mid Navy     #14284A  → token: ink
- *   Card        Card Navy    #1D355D  → token: charcoal
- *   Accent      Magenta      #C2185B  → token: magenta (primary interactive)
- *   Accent Hov  Magenta+     #D62F73  → hover state
- *   Text        Warm Cream   #F8F6F2  → token: ivory
- *   Text 2      Cool Slate   #C9D3E3  → token: secondary text
- *   Text 3      Muted Slate  #98A6BE  → token: muted text
- *   Border      Navy Border  #30486F  → token: border-dark
- *   Warm Neut   Warm Sand    #D8CDBF  → token: warm neutral (rare accents)
+ * Light Editorial Theme (primary — all marketing pages)
+ *   Ground        White         #FFFFFF   → bg-white
+ *   Surface       Warm Cream    #F8F5F0   → bg-cream
+ *   Alt Surface   Soft Ivory    #FDFBF8   → bg-surface
+ *   Brand Navy    Deep Navy     #1E3A66   → text-navy / bg-navy
+ *   Body Text     Slate         #334155   → text-body
+ *   Secondary     Cool Gray     #64748B   → text-secondary
+ *   Muted         Pale Gray     #94A3B8   → text-muted
+ *   Border        Warm Sand     #E7E3DD   → border / border-sand
+ *   Divider       Soft Ivory    #ECE8E2
+ *   Accent        Magenta       #C2185B   → sparingly: buttons, links, icons
+ *   Hover         Magenta+      #D62F73
  *
- * Editorial Light Theme (resources, blog, faq)
- *   Ground      Warm Cream   #F8F6F2  → token: cream
- *   Surface     Warm Sand    #EDE4D4  → token: lavender
- *   Ink         Deep Navy    #07142F  → token: plum
- *   Border      Warm Sand    #D8CDBF  → token: border
- *
- * Gold (#B6925E) is rare — only awards, authority score, premium badges.
+ * Dark sections (footer, dashboard UI, product hero moments only)
+ *   Deep Navy  #07142F  → black
+ *   Mid Navy   #14284A  → ink
+ *   Card Navy  #1D355D  → charcoal
  */
 const config: Config = {
   content: ['./src/**/*.{ts,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        // ── Dark theme tokens ──────────────────────────────────────────
-        black:    '#07142F',
-        ink:      '#14284A',
-        charcoal: '#1D355D',
+        // ── Light theme — primary surfaces ────────────────────────────
+        cream:   '#F8F5F0',
+        surface: '#FDFBF8',
+        sand:    '#E7E3DD',
+        divider: '#ECE8E2',
 
-        gold: {
-          DEFAULT: '#B6925E',
-          50:  '#FAF5EC',
-          100: '#F0E3C5',
-          200: '#E0C78A',
-          300: '#CFAA50',
-          400: '#B6925E',
-          500: '#9A7A47',
-          600: '#7E6232',
-        },
-        ivory: {
-          DEFAULT: '#F8F6F2',
-          60: '#C9D3E3',
-          30: '#98A6BE',
-          10: 'rgba(248,246,242,0.07)',
+        // ── Brand navy — headings, nav, footer bg ─────────────────────
+        navy: {
+          DEFAULT: '#1E3A66',
+          50:  '#EEF2FA',
+          100: '#D4DFF2',
+          200: '#A9BFE5',
+          300: '#7E9ED8',
+          400: '#4A72B8',
+          500: '#1E3A66',
+          600: '#162C4F',
+          700: '#0E1E38',
+          800: '#07142F',
         },
 
-        // ── Editorial light theme ──────────────────────────────────────
-        cream:   '#F8F6F2',
-        lavender:'#EDE4D4',
+        // ── Text scale ────────────────────────────────────────────────
+        body:      '#334155',
+        secondary: '#64748B',
+        muted:     '#94A3B8',
 
-        // ── Primary interactive accent ─────────────────────────────────
+        // ── Primary accent — use sparingly ────────────────────────────
         magenta: {
           DEFAULT: '#C2185B',
           hover:   '#D62F73',
@@ -67,26 +64,39 @@ const config: Config = {
           600: '#A11549',
         },
 
-        // ── Legacy tokens ──────────────────────────────────────────────
-        orange: {
-          DEFAULT: '#FF914D',
-          50: '#FFF5EE', 100: '#FFE6D4', 200: '#FFCCA8',
-          300: '#FFB17C', 400: '#FF914D', 500: '#FF7A2A', 600: '#E66417',
+        // ── Dark sections (footer, dashboard UI only) ─────────────────
+        black:    '#07142F',
+        ink:      '#14284A',
+        charcoal: '#1D355D',
+
+        // ── Ivory compat ──────────────────────────────────────────────
+        ivory: {
+          DEFAULT: '#F8F5F0',
+          60: '#64748B',
+          30: '#94A3B8',
+          10: 'rgba(248,245,240,0.07)',
         },
-        plum: {
-          DEFAULT: '#07142F',
-          50:  '#EEF1F8', 100: '#C8D0E5', 200: '#96A6C9',
-          300: '#5D77AB', 400: '#2B4A8E', 500: '#07142F', 600: '#030A1A',
+
+        // ── Gold — rare: awards, authority score, badges only ─────────
+        gold: {
+          DEFAULT: '#B6925E',
+          50:  '#FAF5EC',
+          100: '#F0E3C5',
+          200: '#E0C78A',
+          300: '#CFAA50',
+          400: '#B6925E',
+          500: '#9A7A47',
+          600: '#7E6232',
         },
-        navy: {
-          DEFAULT: '#07142F',
-          50:  '#EEF1F8', 100: '#C8D0E5', 200: '#96A6C9',
-          300: '#5D77AB', 400: '#14284A', 500: '#07142F', 600: '#030A1A',
-        },
-        slate: { DEFAULT: '#2A2520', 400: '#5C574F', 500: '#2A2520' },
-        border:   '#D8CDBF',
+
+        // ── Legacy compat ─────────────────────────────────────────────
+        plum:     { DEFAULT: '#1E3A66', 50: '#EEF2FA', 100: '#D4DFF2', 200: '#A9BFE5', 300: '#7E9ED8', 400: '#4A72B8', 500: '#1E3A66', 600: '#162C4F' },
+        lavender: '#F8F5F0',
+        orange:   { DEFAULT: '#FF914D', 50: '#FFF5EE', 100: '#FFE6D4', 200: '#FFCCA8', 300: '#FFB17C', 400: '#FF914D', 500: '#FF7A2A', 600: '#E66417' },
+        slate:    { DEFAULT: '#334155', 400: '#64748B', 500: '#334155' },
+        border:   '#E7E3DD',
         blush:    '#FED0D1',
-        graytone: '#737373',
+        graytone: '#94A3B8',
       },
 
       fontFamily: {
@@ -106,23 +116,26 @@ const config: Config = {
       borderRadius:  { '4xl': '2rem', '5xl': '2.5rem' },
 
       boxShadow: {
-        soft:        '0 1px 3px rgba(3,8,20,0.12), 0 8px 24px rgba(3,8,20,0.14)',
-        lift:        '0 4px 12px rgba(3,8,20,0.16), 0 24px 48px rgba(3,8,20,0.20)',
-        card:        '0 2px 8px rgba(3,8,20,0.18), 0 16px 40px rgba(3,8,20,0.16)',
+        soft:        '0 1px 3px rgba(30,58,102,0.06), 0 4px 16px rgba(30,58,102,0.08)',
+        lift:        '0 2px 8px rgba(30,58,102,0.08), 0 12px 32px rgba(30,58,102,0.10)',
+        card:        '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)',
         'dark-lift': '0 4px 24px rgba(3,8,20,0.5)',
-        glow:        '0 0 0 1px rgba(194,24,91,0.20), 0 12px 40px rgba(194,24,91,0.12)',
-        'navy-glow': '0 0 0 1px #30486F, 0 16px 48px rgba(3,8,20,0.4)',
+        glow:        '0 0 0 1px rgba(194,24,91,0.15), 0 8px 24px rgba(194,24,91,0.08)',
+        'navy-glow': '0 0 0 1px #E7E3DD, 0 8px 24px rgba(30,58,102,0.10)',
         'gold-glow': '0 0 0 1px rgba(182,146,94,0.16), 0 8px 32px rgba(182,146,94,0.08)',
       },
 
       backgroundImage: {
+        'light-surface':    'linear-gradient(160deg, #FFFFFF 0%, #F8F5F0 100%)',
+        'cream-surface':    'linear-gradient(160deg, #FDFBF8 0%, #F8F5F0 100%)',
+        'navy-surface':     'linear-gradient(160deg, #1E3A66 0%, #07142F 100%)',
         'dark-surface':     'linear-gradient(160deg, #14284A 0%, #07142F 100%)',
         'card-surface':     'linear-gradient(160deg, #1D355D 0%, #14284A 100%)',
         'magenta-gradient': 'linear-gradient(135deg, #C2185B 0%, #D62F73 100%)',
         'gold-gradient':    'linear-gradient(135deg, #B6925E 0%, #9A7A47 100%)',
-        'pearl-gradient':   'linear-gradient(135deg, #F8F6F2 0%, #EDE4D4 100%)',
+        'pearl-gradient':   'linear-gradient(135deg, #F8F5F0 0%, #ECE8E2 100%)',
         'navy-gradient':    'linear-gradient(160deg, #07142F 0%, #14284A 50%, #1D355D 100%)',
-        'aurora':           'radial-gradient(ellipse 70% 50% at 30% 20%, rgba(194,24,91,0.06) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 75% 70%, rgba(48,72,111,0.4) 0%, transparent 60%)',
+        'aurora':           'radial-gradient(ellipse 70% 50% at 30% 20%, rgba(194,24,91,0.03) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 75% 70%, rgba(30,58,102,0.05) 0%, transparent 60%)',
       },
 
       animation: {
