@@ -2233,6 +2233,9 @@ Monitor the issue over time. As authoritative sources accumulate and inaccurate 
 
 ];
 
+// Sort newest first
+posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
