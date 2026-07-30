@@ -41,13 +41,6 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // www → non-www (301 — consolidates authority onto one canonical version)
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.heypearl.io' }],
-        destination: 'https://heypearl.io/:path*',
-        permanent: true,
-      },
       // /services → /solutions (301 — preserves SEO equity)
       { source: '/services',                    destination: '/solutions',                     permanent: true },
       { source: '/services/geo',                destination: '/solutions/geo',                 permanent: true },
