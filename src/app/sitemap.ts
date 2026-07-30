@@ -64,9 +64,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // Blog posts (served under /resources/[slug])
+  // Blog posts (served under /insights/[slug])
   const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${base}/resources/${post.slug}`,
+    url: `${base}/insights/${post.slug}`,
     lastModified: new Date(post.publishedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.7,

@@ -7,12 +7,12 @@ import { Reveal } from '@/components/ui/Reveal';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Get Started — HeyPearl',
+  title: 'Get Started with HeyPearl — AI Authority Platform Pricing & Plans',
   description:
-    "Every engagement begins with a strategy conversation. We'll understand your business, evaluate your AI visibility, and determine whether HeyPearl is the right fit.",
+    'See how HeyPearl works and what it costs. Every engagement starts with a strategy call — we evaluate your AI visibility, identify the gaps, and build the authority system that gets you recommended.',
   openGraph: {
-    title: 'Get Started — HeyPearl',
-    description: "Every engagement begins with a strategy conversation. Learn what it's like to work with HeyPearl.",
+    title: 'Get Started with HeyPearl — AI Authority Platform Pricing & Plans',
+    description: 'See how HeyPearl works and what it costs. Strategy calls are founder-led. Book yours to get an AI visibility evaluation.',
   },
 };
 

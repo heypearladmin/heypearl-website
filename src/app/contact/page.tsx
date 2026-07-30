@@ -11,10 +11,11 @@ import { ContactForm } from '@/components/forms/ContactForm';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contact — Talk to HeyPearl',
+  title: 'Contact HeyPearl — Book a Strategy Call or Get Support',
   description:
-    'Schedule a strategy call with Misti or contact the HeyPearl team. Authority infrastructure for the AI search era.',
-  openGraph: { images: ['/images/og/og-default.webp'] },
+    'Ready to become the business AI recommends? Book a founder-led strategy call with Misti Bruton, or reach the HeyPearl team for support and partnership inquiries.',
+  alternates: { canonical: 'https://heypearl.io/contact' },
+  openGraph: { images: ['/images/og/og-contact.webp'] },
   twitter: { images: ['/images/og/og-default.webp'] },
 };
 

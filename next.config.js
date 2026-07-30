@@ -41,11 +41,20 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // www → non-www (301 — consolidates authority onto one canonical version)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.heypearl.io' }],
+        destination: 'https://heypearl.io/:path*',
+        permanent: true,
+      },
       // /services → /solutions (301 — preserves SEO equity)
       { source: '/services',                    destination: '/solutions',                     permanent: true },
       { source: '/services/geo',                destination: '/solutions/geo',                 permanent: true },
       { source: '/services/heylocal',           destination: '/solutions/service-businesses',  permanent: true },
-      { source: '/services/authority-websites', destination: '/solutions/authority-websites',  permanent: true },
+      // authority-websites → platform/authority-pages (the actual page that exists)
+      { source: '/services/authority-websites', destination: '/platform/authority-pages',      permanent: true },
+      { source: '/solutions/authority-websites', destination: '/platform/authority-pages',     permanent: true },
       // /pricing → /get-started (strategic redirect)
       { source: '/pricing', destination: '/get-started', permanent: false },
     ];

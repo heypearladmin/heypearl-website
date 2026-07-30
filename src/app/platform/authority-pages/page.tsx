@@ -8,12 +8,12 @@ import { EcosystemNav } from '@/components/platform/EcosystemNav';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Authority Pages — AI-Ready Page Architecture | HeyPearl',
+  title: 'Authority Websites & Pages — AI-Ready Page Architecture | HeyPearl',
   description:
-    'Authority Pages are the page infrastructure that makes your business citable by AI. Structured for entity recognition, topical authority, and zero-click AI recommendations — not just Google rankings.',
+    'What is an authority website? HeyPearl builds authority pages and site architecture that make your business citable by AI — structured for entity recognition, topical authority, and AI recommendations.',
   openGraph: {
-    title: 'Authority Pages — AI-Ready Page Architecture',
-    description: 'Page infrastructure engineered so every AI engine knows exactly who you are and cites you with confidence.',
+    title: 'Authority Websites & Pages — AI-Ready Architecture by HeyPearl',
+    description: 'Build an authority website AI engines trust and cite. HeyPearl engineers the page infrastructure — schema, entity clarity, topical depth — that earns AI recommendations.',
     images: ['/images/og/og-authority-pages.webp'],
   },
 };
