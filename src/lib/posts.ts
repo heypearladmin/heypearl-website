@@ -2231,6 +2231,221 @@ Monitor the issue over time. As authoritative sources accumulate and inaccurate 
     imageFilename: "website-blog-ai-misinformation.png",
   },
 
+  {
+    slug: "beat-competitors-ai-search",
+    eyebrow: "Competitive AI Visibility",
+    seoTitle: "How to Beat Your Competitors in AI Search | Hey Pearl",
+    metaDescription: "Your competitors are already showing up in AI answers. Here is how to audit the gap, build the signals that win AI recommendations, and take the position before they lock it in.",
+    h1: "How to Beat Your Competitors in AI Search",
+    excerpt: "Winning in AI search is not about outspending — it is about being more legible, more credible, and more consistent than the businesses competing for the same recommendation slot.",
+    quickAnswer: "To outperform competitors in AI search, you need to understand the entity gap — who is already being cited and why — then systematically build stronger signals in the areas that matter: entity clarity, structured data, citation depth, review velocity, and topical authority. AI engines favor the business that is easiest to cite confidently. Your job is to become that business before your competitor does.",
+    publishedAt: "2026-08-07",
+    readTime: "9 min read",
+    image: "/images/website-blog-beat-competitors-ai-search.webp",
+    content: `## The recommendation slot your competitor is holding
+
+In AI search, there is no page two. When a user asks ChatGPT or Perplexity for the best accountant in their city, or the top commercial roofing contractor in their region, the engine names two or three businesses and moves on. Every query has a limited set of recommendation slots, and those slots are not distributed randomly — they go to the businesses the engine can cite with the most confidence.
+
+If a competitor is consistently appearing in AI answers for your category and you are not, they are not winning by accident. They have built a stronger entity profile, a deeper citation footprint, or a more structured content presence. The good news is that none of those advantages are permanent, and the playbook to close the gap is known.
+
+This guide walks through how to identify exactly where the gap is and what to do about it.
+
+## Step one: run the competitive audit
+
+Before you can close the gap, you need to see it clearly. Start with a structured query set across every major AI engine — ChatGPT, Perplexity, Google AI Overviews, and Gemini.
+
+For each engine, ask a set of queries that mirrors how your prospects actually search:
+- "Who are the best [your category] in [your market]?"
+- "What [your category] do you recommend in [your city]?"
+- "Which [your category] has the best reputation in [your area]?"
+- "Compare [your category] options in [your region]"
+
+Record who appears, how they are described, and what sources are cited. Do this for ten to fifteen queries per engine. You will quickly see which competitors are consistently named and which queries return no one from your market — those open queries are the fastest opportunities.
+
+## Step two: reverse-engineer what is making them visible
+
+Once you know which competitors are winning, the next step is understanding why. The answer is almost always found in one or more of five areas.
+
+**Entity recognition.** Search your competitor's name directly in Google. If they have a Knowledge Panel — the structured information box on the right side of search results — they have a formal entity presence in Google's Knowledge Graph. AI Overviews and other engines treat that as a trust certificate. Check whether they have a Wikidata entry, a Wikipedia page, or prominent profiles in recognized industry directories.
+
+**Structured data.** Use a free schema validator to inspect their homepage and key service pages. Competitors who have correctly implemented Organization, LocalBusiness, and FAQ schema are giving AI engines machine-readable confirmation of exactly what they are and what they do. If their schema is richer than yours, that is a concrete gap to close.
+
+**Citation footprint.** Search "[competitor name]" across industry publications, local news, business journals, and association sites. Count the credible third-party mentions. A competitor appearing frequently in press coverage, contributed articles, award announcements, and industry roundups has built a citation velocity that AI engines read as authority.
+
+**Review profile.** Check review volume and recency across Google, Yelp, and industry-specific platforms. A competitor with 340 reviews and a steady cadence of new ones is sending an activity signal your 95 reviews with nothing in the last four months cannot match.
+
+**Content depth.** Look at whether they have published substantial content on the core questions in your category — not thin service pages, but genuine, extractable answers to real buyer questions. AI engines favor sources they can quote.
+
+## Step three: build where the gap is widest
+
+A competitive analysis often reveals two or three leverage points that would close the gap faster than anything else. Prioritize them in this order.
+
+**If they have a Knowledge Panel and you do not:** This is the highest-priority gap. Begin the entity establishment work — consistent NAP across all directories, a fully optimized Google Business Profile, schema with a complete sameAs array, and third-party coverage that corroborates your existence. A Wikidata entry, if your business qualifies, is one of the most direct accelerants.
+
+**If their structured data is richer:** This is the most technically correctable gap. Implement Organization schema site-wide, LocalBusiness schema with full attribute coverage, FAQ schema on every page that answers questions, and Service schema for each distinct offering. A well-structured schema set can shift your AI visibility within weeks.
+
+**If their citation footprint is deeper:** This takes longer but compounds the most. Build a genuine citation program: contributed articles to industry publications, a press-ready company profile for local business journalists, association memberships where your business qualifies, and consistent announcements that give outlets a reason to mention you. Monthly contributed content, quarterly press outreach, and an annual award or certification campaign will build the citation velocity that AI engines read as sustained authority.
+
+**If their review profile is stronger:** Implement a systematic review generation program. Every closed client, every satisfied customer, every completed project is a review prompt opportunity. The velocity of new reviews — not just total volume — is what signals an active, trustworthy operation to AI engines. A business earning five new reviews a month consistently outperforms one with ten times the total but nothing recent.
+
+**If their content depth is greater:** Identify the ten questions your best prospects most commonly ask and write the definitive answer to each. Structure them with clear headings, explicit Q&A sections, and first-person specificity that proves the content comes from a real operator with real experience. Publish consistently enough that you accumulate topical authority — the signal that you are a reliable source on this subject, not just someone who answered a question once.
+
+## Step four: lock in the position before they consolidate it
+
+AI recommendation patterns are not permanent, but they do develop inertia. Engines trained on data that consistently names your competitor will naturally cite them first. Closing that gap requires sustained work over several months, not a one-time fix.
+
+The businesses that win this long-term are the ones who treat AI visibility as infrastructure — not a campaign to launch and forget, but a system that compounds. Each new citation makes the next one more likely. Each structured data improvement makes every page more extractable. Each review builds on the last. The business that builds this system first in a given market creates a moat that late-starters cannot close with a weekend sprint.
+
+Your competitor's current AI advantage is almost certainly not more than six to twelve months of serious work. That is a real gap. It is also a closeable one — if you start now.`,
+    faq: [
+      {
+        q: "How do I know which AI engine matters most for my competitors?",
+        a: "Run your competitive query set across all four major engines — ChatGPT, Perplexity, Google AI Overviews, and Gemini — and record who appears on each. The engine where your competitor appears most consistently is where the gap is most urgent, but the underlying signals that produce visibility on one platform almost always improve your standing on the others simultaneously."
+      },
+      {
+        q: "Can I get a competitor removed from AI answers?",
+        a: "Not directly. AI engines are not a directory you can petition. The path to displacing a competitor is to build stronger signals, not to undermine theirs. A business with superior entity authority, richer structured data, deeper citations, and better review velocity will gradually take the recommendation slot."
+      },
+      {
+        q: "How quickly can I close the gap?",
+        a: "Structured data and entity cleanup can produce visible shifts within weeks because retrieval is live. Citation depth and review velocity build over months. A realistic timeline to meaningfully close a significant competitive gap is three to six months of sustained, systematic effort."
+      },
+      {
+        q: "What if no competitor is being named in AI answers for my category?",
+        a: "That is an opportunity, not a problem. An open query set means the recommendation slot has not been claimed yet. Move quickly to establish your entity presence, build structured data, and publish authoritative content. Being the first business in your market to build genuine AI visibility is the most durable competitive advantage available right now."
+      },
+      {
+        q: "Do I need to monitor this ongoing?",
+        a: "Yes. AI recommendations shift as engines retrain, as competitors build new signals, and as query patterns evolve. A monthly competitive query set takes about an hour and gives you an early warning system for any position you are at risk of losing."
+      }
+    ],
+    conclusion: `The business that wins the AI recommendation slot in a given category is rarely the one with the most resources. It is the one that built the most legible, most credible, most consistently corroborated entity presence. That is a tractable problem — and unlike traditional advertising, the authority you build does not disappear when the budget stops. It compounds.`,
+    internalLinks: [
+      { label: "Audit your AI search visibility", href: "/insights/audit-your-ai-search-visibility" },
+      { label: "How AI engines decide who to recommend", href: "/insights/how-ai-engines-decide-who-to-recommend" },
+      { label: "Schedule a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photography of two chess pieces — a king in sharp focus in the foreground and a blurred opponent piece in the background — on a minimal dark surface, dramatic side lighting with a narrow beam of warm light, premium editorial quality, no text, no logos, shallow depth of field",
+    imageFilename: "website-blog-beat-competitors-ai-search.webp",
+  },
+  {
+    slug: "ai-visibility-real-estate-agents-brokerages",
+    eyebrow: "Industry Playbooks",
+    seoTitle: "AI Visibility for Real Estate Agents and Brokerages | Hey Pearl",
+    metaDescription: "Buyers and sellers are asking AI which agent or brokerage to trust. Here is how real estate professionals build the entity authority, citations, and structured signals that earn AI recommendations.",
+    h1: "AI Visibility for Real Estate Agents and Brokerages",
+    excerpt: "Real estate buyers now ask AI who to trust before they ask their neighbor. The agents and brokerages showing up in those answers are not the ones with the biggest ad spend — they are the ones who built the right signals.",
+    quickAnswer: "Real estate agents and brokerages earn AI recommendations by building formal entity authority — a complete, consistent presence across Google Business Profile, structured data, review platforms, and third-party citations. The agents AI engines recommend most reliably are those with clearly defined specialties, verifiable transaction history, strong review velocity, and corroborating mentions across local press, association sites, and industry directories.",
+    publishedAt: "2026-08-14",
+    readTime: "10 min read",
+    image: "/images/website-blog-ai-visibility-real-estate.webp",
+    content: `## How buyers and sellers now find their agent
+
+The referral conversation has not disappeared from real estate — but it has moved. A decade ago, a buyer's first step was to ask a friend or family member for an agent recommendation. Today, that same buyer often asks ChatGPT or Perplexity first, using the referral conversation to confirm what the AI already told them.
+
+The query looks like this: "Who is the best buyer's agent in [city] for first-time homebuyers?" or "What real estate teams are the most trusted in [neighborhood]?" The engine returns a synthesized answer naming two or three agents or brokerages, and the buyer contacts one of them. The other nine agents in the market — including some with twenty years of experience and 500 closed transactions — never enter the conversation.
+
+This is the new referral economy. And unlike traditional referrals, it is not built on personal relationships. It is built on signals — structured, verifiable, machine-readable signals that tell AI engines which real estate professionals are legible enough to recommend.
+
+## Why real estate is an unusually high-stakes AI visibility market
+
+Real estate has characteristics that make AI visibility both more important and more achievable than in many other industries.
+
+**High consideration.** Buying or selling a home is the largest financial transaction most people make in their lifetime. Buyers and sellers research extensively before committing. They use AI to shortlist before they read reviews or visit websites. Being present in that shortlist is a threshold requirement for entering the consideration set.
+
+**Specialist queries.** Real estate buyers search with specificity — "buyer's agent for luxury condos in downtown Austin," "top listing agents in [zip code]," "real estate team specializing in relocation to [city]." These specific queries are exactly the type that AI engines handle well, because they can match a business's declared specialties against the query. Agents who have clearly defined their niche in structured, machine-readable form have a significant advantage.
+
+**Review ecosystem.** Real estate has a rich review infrastructure — Google, Zillow, Realtor.com, Yelp — that AI engines already draw from. Agents with deep, recent review profiles on these platforms have one of their primary AI visibility inputs already partially built. The gap is usually in entity authority and structured data, not reviews.
+
+**Transaction proof.** Real estate professionals have something most businesses do not: a public, verifiable transaction record. Closed sales, average days on market, list-to-sale ratios — these are legitimacy signals that, when surfaced in the right format, tell AI engines this is an established operator, not a newcomer.
+
+## The five signals that drive AI recommendations in real estate
+
+**1. Entity clarity and Google Business Profile**
+
+The foundation is a single, consistent, fully optimized entity presence. Your Google Business Profile is the most important piece: it feeds directly into Google AI Overviews for local queries and signals to other engines that your business has a verified, accurate real-world presence.
+
+Complete every field — category, services, service area, hours, photos, Q&A. The category selection matters: use "Real Estate Agent" or "Real Estate Agency" precisely, not generic professional services categories. Add service areas that match your actual coverage and the specific communities where you want AI recommendations.
+
+Your business name, address, and phone number need to be identical — character for character — across every platform where you appear. A listing that reads "John Smith Realty" on Google and "John Smith Real Estate" on Zillow is two different entities to an AI engine. That inconsistency erodes confidence.
+
+**2. Structured data on your website**
+
+Most real estate agents and brokerage websites have no schema markup at all, or only whatever their CMS generates automatically. This is a significant missed opportunity.
+
+Implement RealEstateAgent schema or LocalBusiness schema on your site. Include your specialties, service area, years of experience, and professional credentials in the schema. Add a sameAs array pointing to your verified profiles — Google Business Profile, Zillow, Realtor.com, LinkedIn, any professional association member directories. This array is how AI engines connect your website to everything else they know about you.
+
+FAQ schema on your service pages — pages that answer questions buyers or sellers actually ask — creates extractable content that Perplexity and AI Overviews can cite directly in response to those queries.
+
+**3. Review velocity across multiple platforms**
+
+The volume of your reviews matters. Recency matters more. An agent with 280 reviews and nothing new in eight months reads as a business potentially in decline. An agent with 90 reviews and a steady cadence of four to five new reviews each month reads as active, trusted, and currently operating at a high level.
+
+Build a systematic review generation process. Every closed transaction is a review prompt opportunity. Send a personal request within two weeks of closing — when the client's satisfaction is highest and the experience is fresh. Make it easy: a direct link to your Google review page and a short personal note. Target Google first, then Zillow, then Realtor.com. The spread across platforms matters; an agent with 200 Google reviews and nothing on Zillow has a thinner profile than one with 120 across both.
+
+**4. Third-party citations and press coverage**
+
+Citations are mentions of your name — business name, agent name, or both — in credible third-party sources. For real estate, the most valuable citations come from:
+
+Local business journals and newspapers. When a reporter covers the housing market, local real estate trends, or a significant transaction, they need sources. Agents who make themselves accessible as expert commentators earn mentions that AI engines treat as high-authority corroboration.
+
+Industry association memberships and award recognitions. NAR membership, local board participation, Realtor of the Year recognition, top producer awards — these generate directory listings and press mentions that build your citation footprint. A business with ten meaningful association citations is substantively more visible to AI engines than one with none.
+
+Real estate publications and blogs. Contributed articles on Inman, RISMedia, or regional real estate publications establish topical authority. An agent who has published five bylined articles on buyer representation strategy is one an AI engine can describe specifically: "John Smith, a buyer's agent in Austin who specializes in first-time buyers and has written extensively on the 2026 purchasing market."
+
+**5. Topical authority in your specialty**
+
+Generic visibility is harder to win than niche visibility. An agent competing for "best real estate agent in Austin" faces a crowded field. The same agent competing for "best buyer's agent for tech employees relocating to Austin" faces almost none.
+
+Topical authority means owning the content territory of your specialty. Publish pages and posts that answer the specific questions your ideal clients ask: "What should I know about buying a condo in [neighborhood]?" "How does buyer representation work in a seller's market?" "What are the property tax implications of [specific area]?" Each answered question becomes an AI-retrievable content asset.
+
+The agents who build topical authority in a niche — luxury, relocation, first-time buyers, commercial — become the default recommendation in that niche, because they are the only business that has clearly and repeatedly staked a claim to it.
+
+## What to prioritize first
+
+If you are starting from a minimal AI visibility baseline, work in this order.
+
+First, complete and verify your Google Business Profile. Fix every inconsistency in your name, address, and phone across the five to ten most important platforms: Google, Zillow, Realtor.com, Yelp, Facebook, LinkedIn, and your local MLS directory.
+
+Second, implement basic schema markup on your website. If you have no developer, a plugin like Yoast or RankMath handles the fundamentals for WordPress sites. For custom sites, a developer can implement LocalBusiness or RealEstateAgent schema in an afternoon.
+
+Third, activate a review velocity program. Set up a simple, repeatable process to request a Google review from every client within two weeks of closing. Consistent volume over time outperforms periodic bursts.
+
+Fourth, build two or three substantive content pieces on your core specialty. Not marketing copy — genuine, specific, extractable answers to the questions your clients actually ask. These are the pages AI engines retrieve and cite.
+
+Fifth, identify one or two citation-building opportunities in your market. Local business journal, agent spotlight in an industry publication, or a board award you qualify for. The first few credible third-party mentions establish your entity footprint; each subsequent one strengthens it.`,
+    faq: [
+      {
+        q: "Does this apply to individual agents or only brokerages?",
+        a: "Both. Individual agents can build a personal entity presence — a personal brand on Google, their own schema markup if they have a personal website, their own review profile, and their own bylined content. Brokerages build entity authority at the brand level. The most visible real estate professionals have both: a strong brokerage brand and a strong personal entity presence that references it."
+      },
+      {
+        q: "Zillow already ranks me highly. Does that help my AI visibility?",
+        a: "Partially. A strong Zillow profile contributes to your citation footprint and provides a source Perplexity and other retrieval-based engines can pull from. But Zillow ranking and AI engine citation are not the same thing. Your Zillow profile is one input. Entity consistency, structured data on your own website, Google Business Profile optimization, and third-party coverage beyond Zillow are equally important and often absent from agents who assume their Zillow presence handles everything."
+      },
+      {
+        q: "How do I get AI engines to mention my specific specialty?",
+        a: "Declare it consistently and specifically across every platform where you have a presence. Your Google Business Profile services, your schema markup, your website copy, your directory profiles, and your social bios should all describe your specialty in the same language. Then build topical authority through content that directly addresses your niche. AI engines learn your specialty from the sum of what the web says about you — not from a single source."
+      },
+      {
+        q: "My market is very competitive. Can I still win AI recommendations?",
+        a: "Yes, particularly if you compete at the niche level rather than the category level. Competing for 'top real estate agent in Austin' is a crowded field. Competing for 'top buyer's agent for relocation to Austin from out of state' is a much smaller field where a defined content and citation strategy can establish you as the clear recommendation within a few months."
+      },
+      {
+        q: "How do I measure whether this is working?",
+        a: "Run a monthly query set across ChatGPT, Perplexity, Google AI Overviews, and Gemini using queries that mirror how your prospects search. Track whether you appear, how you are described, and whether the description matches what you want. Over time, also watch for referral traffic from AI platforms in your analytics and for clients who mention they 'heard about you from AI' — a signal that is becoming more common and more trackable."
+      }
+    ],
+    conclusion: `The agents and brokerages who build AI visibility now are establishing a referral channel that compounds in a way traditional advertising cannot. A recommendation from an AI engine reaches the buyer at the exact moment of research — before they have formed loyalties, before the competition has had a chance to engage, and at a moment when the prospect is specifically looking for someone to trust. That is the highest-leverage position in the new buyer journey. It is also one that very few real estate professionals have deliberately built. That window will not stay open indefinitely.`,
+    internalLinks: [
+      { label: "Citation building for AI visibility", href: "/insights/citation-building-for-ai-visibility" },
+      { label: "Reputation signals in the AI era", href: "/insights/reputation-signals-ai-era-reviews-recommendations" },
+      { label: "Schedule a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photography of a real estate professional in a modern open-plan office reviewing a tablet displaying property data and analytics, large floor-to-ceiling windows with soft natural daylight, navy and cream interior tones, clean minimal desk with architectural blueprints partially visible, no text, no logos, shallow depth of field",
+    imageFilename: "website-blog-ai-visibility-real-estate.webp",
+  },
+
 ];
 
 // Sort newest first
