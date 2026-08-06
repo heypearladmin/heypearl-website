@@ -178,7 +178,7 @@ export default async function InsightPost({ params }: Props) {
       '@type': 'Organization',
       name: site.legalName,
       url: site.url,
-      logo: { '@type': 'ImageObject', url: `${site.url}/images/og-default.jpg` },
+      logo: { '@type': 'ImageObject', url: `${site.url}${site.ogImage}` },
     },
     image: { '@type': 'ImageObject', url: `${site.url}${post.image}`, width: 1600, height: 900 },
     url: `${site.url}/insights/${post.slug}`,

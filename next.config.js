@@ -35,6 +35,23 @@ const nextConfig = {
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              // Next.js hydration + inline GA/Pixel scripts require unsafe-inline
+              "script-src 'self' 'unsafe-inline' reports.heypearl.io connect.facebook.net www.googletagmanager.com www.google-analytics.com",
+              "style-src 'self' 'unsafe-inline'",
+              // /_next/image srcsets, pixel img beacons, GA measurement beacons
+              "img-src 'self' data: blob: *.facebook.com www.google-analytics.com www.googletagmanager.com",
+              // Next.js inlines Google Fonts at build time — no external font CDN needed
+              "font-src 'self' data:",
+              "connect-src 'self' *.facebook.com *.google-analytics.com *.analytics.google.com www.googletagmanager.com reports.heypearl.io",
+              "frame-src 'none'",
+              "object-src 'none'",
+              "base-uri 'self'",
+            ].join('; '),
+          },
         ],
       },
     ];
