@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 
 type RevealProps = {
@@ -18,21 +18,46 @@ export function Reveal({
   className,
   once = true,
 }: RevealProps) {
-  const reduced = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      return;
+    }
+
+    el.style.opacity = '0';
+    el.style.transform = `translateY(${y}px)`;
+    el.style.transition = `opacity 0.9s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform 0.9s cubic-bezier(0.22,1,0.36,1) ${delay}s`;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            if (once) observer.unobserve(el);
+          } else if (!once) {
+            el.style.opacity = '0';
+            el.style.transform = `translateY(${y}px)`;
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay, y, once]);
 
   return (
-    <motion.div
-      initial={reduced ? false : { opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once, amount: 0.2 }}
-      transition={{
-        duration: 0.9,
-        delay,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-      className={className}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
