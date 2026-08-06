@@ -21,7 +21,7 @@ export const posts: Post[] = [
   {
     slug: "chatgpt-vs-perplexity-vs-google-ai-overviews-for-businesses",
     eyebrow: "AI Engine Intelligence",
-    seoTitle: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business? | Hey Pearl",
+    seoTitle: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business?",
     metaDescription: "A practical comparison of how ChatGPT, Perplexity, and Google AI Overviews recommend businesses — and what you need to do differently to show up in each one.",
     h1: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business?",
     excerpt: "Three major AI engines. Three different recommendation logics. Most businesses optimize for none of them. Here is what sets each platform apart — and where your effort actually pays off.",
@@ -140,7 +140,7 @@ The practical answer for most businesses is to treat the shared signals as the p
   {
     slug: "local-ai-search-optimization",
     eyebrow: "Local AI Visibility",
-    seoTitle: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses | Hey Pearl",
+    seoTitle: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses",
     metaDescription: "AI engines now give local business recommendations the way a trusted friend would. Here is how to build the local authority signals that get you named — not your competitors.",
     h1: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses",
     excerpt: "When someone asks an AI assistant for the best plumber, accountant, or restaurant in their city, the engine names two or three businesses and stops. Here is how to be one of them.",
@@ -262,7 +262,7 @@ The channel is already routing buyers. The question is whether it is routing the
   {
     slug: "90-day-ai-visibility-roadmap",
     eyebrow: "Roadmap",
-    seoTitle: "From Invisible to Recommended: Your 90-Day AI Visibility Roadmap | Hey Pearl",
+    seoTitle: "From Invisible to Recommended: Your 90-Day AI Visibility Roadmap",
     metaDescription: "A month-by-month roadmap to move from invisible to recommended in AI search \u2014 foundation, content, and reputation \u2014 with the metrics to track at each stage.",
     h1: "From Invisible to Recommended: Your 90-Day AI Visibility Roadmap",
     excerpt: "AI visibility is not a switch you flip. It is a sequence you execute. Here is the 90-day roadmap we use to move a business from invisible to recommended \u2014 and the metrics that prove it is working.",
@@ -390,7 +390,7 @@ Then the work changes shape. AI visibility is not a project you complete; it is 
   {
     slug: "pearl-framework-building-ai-ready-businesses",
     eyebrow: "The Framework",
-    seoTitle: "The P.E.A.R.L. Framework: How to Build a Business That AI Actually Trusts | Hey Pearl",
+    seoTitle: "The P.E.A.R.L. Framework: How to Build a Business That AI Actually Trusts",
     metaDescription: "Process, Efficiency, Automation, Revenue, Leverage \u2014 the five pillars of a business AI engines trust and recommend. A framework for operators, not marketers.",
     h1: "The P.E.A.R.L. Framework: How to Build a Business That AI Actually Trusts",
     excerpt: "AI engines recommend businesses that signal operational maturity. The P.E.A.R.L. framework is how we build that maturity into a company so the machines can see it.",
@@ -492,7 +492,7 @@ The deeper point is that P.E.A.R.L. does not ask you to choose between building 
   {
     slug: "reputation-signals-ai-era-reviews-recommendations",
     eyebrow: "Reputation Authority",
-    seoTitle: "Reputation Signals in the AI Era: Why Reviews Now Drive AI Recommendations | Hey Pearl",
+    seoTitle: "Reputation Signals in the AI Era: Why Reviews Now Drive AI Recommendations",
     metaDescription: "How review signals feed AI recommendation engines, which platforms matter most, and why review velocity and sentiment now compound into AI visibility.",
     h1: "Reputation Signals in the AI Era: Why Reviews Now Drive AI Recommendations",
     excerpt: "Reviews were once a conversion tool at the bottom of the funnel. In the AI era, they are training data \u2014 and they now shape whether the machines recommend you at all.",
@@ -588,7 +588,7 @@ Every review adds to a base that competitors cannot quickly replicate. Sentiment
   {
     slug: "why-your-about-page-matters-for-ai-citations",
     eyebrow: "Content Architecture",
-    seoTitle: "Why Your About Page Is the Most Underrated Page for AI Citations | Hey Pearl",
+    seoTitle: "Why Your About Page Is the Most Underrated Page for AI Citations",
     metaDescription: "AI engines use your About page to establish who you are as an entity. Here is what to include, how to structure it for machine readability, and what engines actually extract.",
     h1: "Why Your About Page Is the Most Underrated Page for AI Citations",
     excerpt: "Most businesses treat the About page as an afterthought. AI engines treat it as the primary source of truth about who you are. That mismatch is costing you citations.",
@@ -700,7 +700,7 @@ A strong About page does not just help the About page rank. It stabilizes your e
   {
     slug: "audit-your-ai-search-visibility",
     eyebrow: "Practical GEO",
-    seoTitle: "How to Audit Your AI Search Visibility in Under 30 Minutes | Hey Pearl",
+    seoTitle: "How to Audit Your AI Search Visibility in Under 30 Minutes",
     metaDescription: "A step-by-step process to audit how ChatGPT, Perplexity, Gemini, and Google AI Overviews represent your business \u2014 plus a scoring framework and quick wins.",
     h1: "How to Audit Your AI Search Visibility in Under 30 Minutes",
     excerpt: "Most business owners have never checked what AI engines say about them. Here is a repeatable 30-minute audit that tells you exactly where you stand \u2014 and what to fix first.",
@@ -1303,7 +1303,7 @@ This is the work we do at [Hey Pearl through our GEO service](/services/geo) —
   {
     slug: "google-knowledge-panel-business-guide",
     eyebrow: "Entity Authority",
-    seoTitle: "Google Knowledge Panel: How to Earn One and Why It Matters for AI Visibility | Hey Pearl",
+    seoTitle: "Google Knowledge Panel: How to Earn One and Why It Matters for AI Visibility",
     metaDescription: "A Google Knowledge Panel is proof that Google has formally recognized your business as a real-world entity. Here is what it means, why it matters for AI recommendations, and how to earn one.",
     h1: "Google Knowledge Panel: How to Earn One and Why It Matters for AI Visibility",
     excerpt: "A Knowledge Panel is not a Google feature you claim — it is a declaration that Google has recognized your business as a real-world entity worth knowing about. Earning one is one of the highest-leverage signals for AI visibility you can pursue.",
@@ -1408,7 +1408,7 @@ The investment is worth it. A Knowledge Panel is one of the few signals with a d
   {
     slug: "citation-building-for-ai-visibility",
     eyebrow: "Authority Building",
-    seoTitle: "Citation Building for AI Visibility: How Third-Party Mentions Drive AI Recommendations | Hey Pearl",
+    seoTitle: "Citation Building for AI Visibility: How Third-Party Mentions Drive AI Recommendations",
     metaDescription: "AI engines decide who to recommend based partly on the quality and breadth of your web citations. Here is how to build a citation strategy that earns AI mentions, not just directory listings.",
     h1: "Citation Building for AI Visibility: How Third-Party Mentions Drive AI Recommendations",
     excerpt: "Traditional citation building was about directory consistency for local SEO. AI-era citation building is about building a web of authoritative third-party mentions that give AI engines the confidence to name you.",
@@ -1509,7 +1509,7 @@ At Hey Pearl, we track citation impact as part of the Authority Score — a comp
   {
     slug: "ai-visibility-for-b2b-services",
     eyebrow: "B2B Strategy",
-    seoTitle: "AI Visibility for B2B Services: How Professional Services Firms Get Recommended by AI | Hey Pearl",
+    seoTitle: "AI Visibility for B2B Services: How Professional Services Firms Get Recommended by AI",
     metaDescription: "B2B buyers increasingly use AI engines for vendor research. Here is how professional services firms build the authority signals that earn AI recommendations in competitive categories.",
     h1: "AI Visibility for B2B Services: How Professional Services Firms Get Recommended by AI",
     excerpt: "The B2B buyer journey has shifted. A growing share of vendor research now starts with an AI engine. Professional services firms that build the right authority signals are the ones getting named.",
@@ -1616,7 +1616,7 @@ The third mistake is ignoring the practitioner layer. Professional services are 
   {
     slug: "monitor-ai-answer-visibility",
     eyebrow: "AI Monitoring",
-    seoTitle: "How to Monitor Your AI Answer Visibility: Tracking Whether AI Engines Recommend Your Business | Hey Pearl",
+    seoTitle: "How to Monitor Your AI Answer Visibility: Tracking Whether AI Engines Recommend Your Business",
     metaDescription: "If you don't know whether AI engines are recommending your business, you're flying blind. Here is a practical system for tracking your AI answer visibility across ChatGPT, Perplexity, and Google AI Overviews.",
     h1: "How to Monitor Your AI Answer Visibility: Tracking Whether AI Engines Recommend Your Business",
     excerpt: "Most businesses have no idea whether AI engines are recommending them. Without that baseline, every optimization effort is guesswork. Here is how to build a monitoring system that tells you where you stand.",
@@ -1756,7 +1756,7 @@ The reporting does not need to be elaborate. A well-maintained spreadsheet with 
   {
     slug: "wikidata-for-business-owners",
     eyebrow: "Entity Infrastructure",
-    seoTitle: "Wikidata for Business Owners: How to Use Open Structured Data to Boost AI Visibility | Hey Pearl",
+    seoTitle: "Wikidata for Business Owners: How to Use Open Structured Data to Boost AI Visibility",
     metaDescription: "Wikidata is one of the most powerful and underused tools for business entity authority. Here is what it is, whether your business qualifies, and how to use it to strengthen AI recommendation signals.",
     h1: "Wikidata for Business Owners: How to Use Open Structured Data to Boost AI Visibility",
     excerpt: "Most business owners have never heard of Wikidata. That is about to become a competitive disadvantage — it is one of the most authoritative structured-data sources in the world, and AI engines use it extensively.",
@@ -1874,7 +1874,7 @@ The answer is to build the third-party coverage that establishes notability. Pre
   {
     slug: "topical-authority-ai-era",
     eyebrow: "Content Authority",
-    seoTitle: "Topical Authority in the AI Era: How to Own a Category in AI Recommendations | Hey Pearl",
+    seoTitle: "Topical Authority in the AI Era: How to Own a Category in AI Recommendations",
     metaDescription: "AI engines don't just rank pages — they recognize category experts. Here is how to build topical authority that makes you the default recommendation in your domain.",
     h1: "Topical Authority in the AI Era: How to Own a Category in AI Recommendations",
     excerpt: "Keyword rankings were the metric of the old search era. In the AI era, the goal is category ownership — becoming the business that AI engines default to when someone asks about your domain. Here is how that works.",
@@ -1996,7 +1996,7 @@ These metrics do not move instantly. Topical authority is a twelve-to-twenty-fou
   {
     slug: "voice-search-ai-assistants-business-visibility",
     eyebrow: "Voice & Assistant AI",
-    seoTitle: "Voice Search and AI Assistants: How Siri, Alexa, and AI Assistants Choose Businesses | Hey Pearl",
+    seoTitle: "Voice Search and AI Assistants: How Siri, Alexa, and AI Assistants Choose Businesses",
     metaDescription: "When someone asks Siri or Alexa for a business recommendation, the assistant names one or two and stops. Here is how voice and AI assistant recommendations work — and how to earn them.",
     h1: "Voice Search and AI Assistants: How Siri, Alexa, and AI Assistants Choose Businesses",
     excerpt: "A voice assistant names one business, maybe two. There is no scrolling through alternatives. For the categories where voice recommendations happen most, earning that mention is a high-stakes visibility challenge.",
@@ -2105,7 +2105,7 @@ Voice-specific optimization is not a separate silo. It is an extension of the sa
   {
     slug: "what-to-do-when-ai-gets-your-business-wrong",
     eyebrow: "Reputation Defense",
-    seoTitle: "What to Do When AI Gets Your Business Wrong: Correcting AI Misinformation | Hey Pearl",
+    seoTitle: "What to Do When AI Gets Your Business Wrong: Correcting AI Misinformation",
     metaDescription: "AI engines sometimes generate inaccurate information about businesses. Here is what to do when an AI gets your business wrong — and how to build the authoritative sources that prevent it.",
     h1: "What to Do When AI Gets Your Business Wrong: Correcting AI Misinformation",
     excerpt: "AI engines sometimes get businesses wrong — wrong founding date, wrong services, wrong location, wrong price point. When they do, they state the errors with the same confidence they state facts. Here is how to respond.",
@@ -2234,7 +2234,7 @@ Monitor the issue over time. As authoritative sources accumulate and inaccurate 
   {
     slug: "beat-competitors-ai-search",
     eyebrow: "Competitive AI Visibility",
-    seoTitle: "How to Beat Your Competitors in AI Search | Hey Pearl",
+    seoTitle: "How to Beat Your Competitors in AI Search",
     metaDescription: "Your competitors are already showing up in AI answers. Here is how to audit the gap, build the signals that win AI recommendations, and take the position before they lock it in.",
     h1: "How to Beat Your Competitors in AI Search",
     excerpt: "Winning in AI search is not about outspending — it is about being more legible, more credible, and more consistent than the businesses competing for the same recommendation slot.",
@@ -2331,7 +2331,7 @@ Your competitor's current AI advantage is almost certainly not more than six to 
   {
     slug: "ai-visibility-real-estate-agents-brokerages",
     eyebrow: "Industry Playbooks",
-    seoTitle: "AI Visibility for Real Estate Agents and Brokerages | Hey Pearl",
+    seoTitle: "AI Visibility for Real Estate Agents and Brokerages",
     metaDescription: "Buyers and sellers are asking AI which agent or brokerage to trust. Here is how real estate professionals build the entity authority, citations, and structured signals that earn AI recommendations.",
     h1: "AI Visibility for Real Estate Agents and Brokerages",
     excerpt: "Real estate buyers now ask AI who to trust before they ask their neighbor. The agents and brokerages showing up in those answers are not the ones with the biggest ad spend — they are the ones who built the right signals.",
