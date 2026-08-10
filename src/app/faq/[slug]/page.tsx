@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : faq.a.slice(0, 160);
 
   return {
-    title: `${faq.q} | Hey Pearl`,
+    title: faq.q,
     description,
     alternates: { canonical },
     authors: [{ name: site.founder.name, url: site.founder.site }],
@@ -183,7 +183,7 @@ export default async function FaqPage({ params }: Props) {
     .sort((a, b) => (a.eyebrow === faq.postEyebrow ? -1 : 1) - (b.eyebrow === faq.postEyebrow ? -1 : 1))
     .slice(0, 3);
 
-  const lastUpdated = enrichment?.lastUpdated ?? formatDate(faq.postPublishedAt).split(' ').slice(0, 2).join(' ');
+  const lastUpdated = enrichment?.lastUpdated ?? formatDate(faq.postPublishedAt);
 
   /* ── JSON-LD ── */
   const faqSchema = {
