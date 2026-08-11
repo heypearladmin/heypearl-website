@@ -37,7 +37,7 @@ export const DASHBOARD_METRICS = [
 ];
 
 // ─── Case Studies ─────────────────────────────────────────────────────────────
-// 3 featured stories. Replace placeholder text with real client data.
+// Documented engagement stories — real data, anonymized client handles.
 // Use the client's hyperlocal area as the handle — specific enough to feel real,
 // vague enough to protect identity. E.g. "The Montlake Agent", "The South Congress Brokerage".
 
@@ -102,6 +102,26 @@ export const CASE_STUDIES: CaseStudy[] = [
     timeline: '8 months',
     updatedAt: 'July 2026',
   },
+  {
+    id: 'austin-area-agent',
+    label: 'Case Study 04',
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    city: 'Austin, TX',
+    modules: ['Authority Website', 'GEO Engine', 'AI Visibility', 'Knowledge Graph', 'Authority Score'],
+    challenge:
+      'Austin is one of the most competitive real estate markets in the US — dense with agents, heavy on search advertising, and increasingly driven by AI-powered buyer research. Laurel came to HeyPearl with an existing brand but a thin digital footprint: no Google reviews, minimal GBP traction, and a website that couldn\'t compete technically. In a market this competitive, being hard to find online meant losing buyers before the first conversation.',
+    solution:
+      'HeyPearl built a new authority website, resolved 460 technical SEO issues to achieve 100% site health, and deployed an AI content strategy targeting Austin buyer, seller, and relocation queries. A concentrated review campaign brought her from 0 to 33 five-star reviews in six months — 32 of them arriving in a single month. Entity architecture and AEO content established her as the recognized Austin authority across all major AI platforms.',
+    results: [
+      { metric: '#1', label: 'AI-recommended source for all 5 tracked Austin local search topics — with 85.4% positive sentiment across AI platforms' },
+      { metric: '100%', label: 'website health score achieved in month 6 — 460 technical issues auto-resolved from a standing start' },
+      { metric: '33', label: 'five-star Google reviews in 6 months — 32 collected in a single month from a concentrated review campaign' },
+    ],
+    quote: 'Austin is one of the most competitive real estate markets in the country. After six months with HeyPearl, I\'m showing up first on every AI search I track — and I went from zero reviews to 33 in the time I\'ve been working with them. The visibility I have now is something I couldn\'t have built on my own.',
+    timeline: '6 months',
+    updatedAt: 'July 2026',
+  },
 ];
 
 // ─── Recent Wins ──────────────────────────────────────────────────────────────
@@ -144,7 +164,15 @@ export const RECENT_WINS: Win[] = [
     segment: 'Independent Agent',
     result: 'Site health reached 100% — 460 technical issues auto-resolved without touching a line of code, building a clean foundation for search authority',
     engine: 'OTTO SEO',
-    dayFromActivation: 70,
+    dayFromActivation: 165,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: '33 five-star Google reviews at 5.0 stars — 32 earned in a single month from a concentrated review campaign, up from 1 review on file the month before',
+    engine: 'Google',
+    dayFromActivation: 165,
     month: 'Jul 2026',
   },
   {
@@ -174,6 +202,22 @@ export const RECENT_WINS: Win[] = [
 
   // ── June 2026 ─────────────────────────────────────────────────────────────
   {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'Ranked #1 AI-recommended source for all 5 tracked Austin local search topics — 85.4% positive AI sentiment across ChatGPT and major AI platforms',
+    engine: 'All engines',
+    dayFromActivation: 145,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'New authority website launched — 292 technical issues resolved, site health reached 59/100 from zero, and page count grew from 25 to 36',
+    engine: 'OTTO SEO',
+    dayFromActivation: 145,
+    month: 'Jun 2026',
+  },
+  {
     handle: 'The Leavenworth Team',
     segment: 'Team',
     result: '101+ five-star Google reviews collected in under 60 days — from a single review on file in May to a 4.97-star average now dominating local search results',
@@ -199,6 +243,14 @@ export const RECENT_WINS: Win[] = [
   },
 
   // ── May 2026 ──────────────────────────────────────────────────────────────
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'Google Business Profile action rate reached 57% — 42 direction requests in the month, with Google Maps now driving over 50% of all profile impressions',
+    engine: 'Google Maps',
+    dayFromActivation: 115,
+    month: 'May 2026',
+  },
   {
     handle: 'The Leavenworth Team',
     segment: 'Team',
@@ -228,6 +280,14 @@ export const RECENT_WINS: Win[] = [
 
   // ── March 2026 ────────────────────────────────────────────────────────────
   {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'First 2 five-star Google reviews earned — Google Business Profile interactions jumped 171% month-over-month, with 40 direction requests in a single month',
+    engine: 'Google',
+    dayFromActivation: 54,
+    month: 'Mar 2026',
+  },
+  {
     handle: 'The Leavenworth Team',
     segment: 'Team',
     result: 'Site indexed and first organic search traffic appeared — 12 clicks and 492 impressions across 34 tracked keywords, all from zero the month before',
@@ -237,6 +297,14 @@ export const RECENT_WINS: Win[] = [
   },
 
   // ── February 2026 ─────────────────────────────────────────────────────────
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: '884 Google Search impressions and 25 organic clicks in the first month of activation — 57 keywords now tracking from a standing start',
+    engine: 'Google Search',
+    dayFromActivation: 23,
+    month: 'Feb 2026',
+  },
   {
     handle: 'The Leavenworth Team',
     segment: 'Team',
