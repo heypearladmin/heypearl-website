@@ -122,6 +122,26 @@ export const CASE_STUDIES: CaseStudy[] = [
     timeline: '6 months',
     updatedAt: 'July 2026',
   },
+  {
+    id: 'seattle-luxury-agent',
+    label: 'Case Study 05',
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    city: 'Seattle, WA',
+    modules: ['Authority Website', 'Authority Score', 'Knowledge Graph', 'GEO Engine', 'AI Visibility'],
+    challenge:
+      'Seattle is one of the most competitive real estate markets in the US — and the luxury segment is especially dense with established agents, deep advertising budgets, and entrenched search authority. Christine came to HeyPearl with an active brand, a strong social following, and a solid reputation — but her average search position was 18.5 and she had zero measured local pack presence. With buyers increasingly starting their search online and on AI, she was effective in person but invisible at the top of the funnel.',
+    solution:
+      'HeyPearl migrated Christine to a new authority domain, resolved 112 technical issues, and expanded the site from 13 to 28 pages — lifting website health from 0 to 61/100 in a single month. Google Business Profile optimization drove her action rate to 24.2%, the highest in the program. A concentrated review campaign delivered 32 new reviews in under 60 days. Local pack authority was built across the Seattle service area, resulting in 66.7% grid coverage — 26 of 39 tracked map points showing her listing.',
+    results: [
+      { metric: '66.7%', label: 'local pack visibility across the Seattle grid — 26 of 39 map points showing in one of the most competitive luxury markets in the US' },
+      { metric: '13,300', label: 'monthly Google Search impressions by month 5 — a 3.9x increase from 3,389 at activation' },
+      { metric: '33', label: 'Google reviews at 4.8 stars — review campaign delivered 32 new reviews in under 60 days' },
+    ],
+    quote: 'Seattle is one of the most competitive real estate markets in the country. After six months with HeyPearl, I\'m appearing on 66% of the local search map, my search impressions have nearly quadrupled, and I have 33 reviews I didn\'t have before. That kind of authority doesn\'t happen by accident.',
+    timeline: '6 months',
+    updatedAt: 'July 2026',
+  },
 ];
 
 // ─── Recent Wins ──────────────────────────────────────────────────────────────
@@ -148,7 +168,15 @@ export const RECENT_WINS: Win[] = [
     segment: 'Independent Agent',
     result: 'Appearing in 26 of 39 map grid points near Seattle — 66.7% local pack visibility in one of the most competitive luxury markets in the US',
     engine: 'Google Maps',
-    dayFromActivation: 95,
+    dayFromActivation: 165,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: '33 Google reviews at 4.8 stars — 32 new reviews collected in under 60 days from a concentrated review campaign',
+    engine: 'Google',
+    dayFromActivation: 165,
     month: 'Jul 2026',
   },
   {
@@ -202,6 +230,22 @@ export const RECENT_WINS: Win[] = [
 
   // ── June 2026 ─────────────────────────────────────────────────────────────
   {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search impressions reached 13,300 — a 3.9x increase from 3,389 at activation — as new authority domain, technical fixes, and content began compounding',
+    engine: 'Google Search',
+    dayFromActivation: 140,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'New authority domain launched — 112 technical issues resolved, website health reached 61/100 from zero, and site expanded from 13 to 28 pages',
+    engine: 'OTTO SEO',
+    dayFromActivation: 140,
+    month: 'Jun 2026',
+  },
+  {
     handle: 'The Austin Area Agent',
     segment: 'Independent Agent',
     result: 'Ranked #1 AI-recommended source for all 5 tracked Austin local search topics — 85.4% positive AI sentiment across ChatGPT and major AI platforms',
@@ -244,6 +288,14 @@ export const RECENT_WINS: Win[] = [
 
   // ── May 2026 ──────────────────────────────────────────────────────────────
   {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Google Business Profile action rate hit 24.2% — 66 direction requests and 88 total interactions in a single month, the highest action rate in the program',
+    engine: 'Google Maps',
+    dayFromActivation: 110,
+    month: 'May 2026',
+  },
+  {
     handle: 'The Austin Area Agent',
     segment: 'Independent Agent',
     result: 'Google Business Profile action rate reached 57% — 42 direction requests in the month, with Google Maps now driving over 50% of all profile impressions',
@@ -280,6 +332,14 @@ export const RECENT_WINS: Win[] = [
 
   // ── March 2026 ────────────────────────────────────────────────────────────
   {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search clicks more than doubled month-over-month to 152 — impressions hit 7,337 and GBP website clicks jumped 3.5x as the profile gained traction',
+    engine: 'Google Search',
+    dayFromActivation: 49,
+    month: 'Mar 2026',
+  },
+  {
     handle: 'The Austin Area Agent',
     segment: 'Independent Agent',
     result: 'First 2 five-star Google reviews earned — Google Business Profile interactions jumped 171% month-over-month, with 40 direction requests in a single month',
@@ -297,6 +357,14 @@ export const RECENT_WINS: Win[] = [
   },
 
   // ── February 2026 ─────────────────────────────────────────────────────────
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: '3,389 Google Search impressions and 64 organic clicks in the first 19 days of activation — 220 keywords already tracking from a standing start',
+    engine: 'Google Search',
+    dayFromActivation: 18,
+    month: 'Feb 2026',
+  },
   {
     handle: 'The Austin Area Agent',
     segment: 'Independent Agent',
