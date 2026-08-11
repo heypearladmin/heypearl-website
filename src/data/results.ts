@@ -162,6 +162,26 @@ export const CASE_STUDIES: CaseStudy[] = [
     timeline: '5 months',
     updatedAt: 'July 2026',
   },
+  {
+    id: 'albany-area-agent',
+    label: 'Case Study 07',
+    handle: 'The Albany Area Agent',
+    segment: 'Independent Agent',
+    city: 'Albany, OR',
+    modules: ['Authority Website', 'Authority Pages', 'GEO Engine', 'AI Visibility', 'Knowledge Graph'],
+    challenge:
+      'Albany sits in Oregon\'s mid-Willamette Valley — a growing market where established brokerages and national listing portals dominate local real estate search. Jason came to HeyPearl with a Domain Power of 1, a Domain Authority of 3, zero ranked keywords, no Google Business Profile reviews, and no AI citations on any platform. Competing against established teams holding 55–164 reviews and entrenched local pack positions meant HeyPearl had to build the technical foundation first, establish AI authority next, and let the review and local pack channels compound behind it.',
+    solution:
+      'HeyPearl used OTTO to bring the site to a perfect technical foundation — resolving all issues and lifting website health to 100/100 across 115 fully optimized pages, with a 95/100 Technical pillar score. An AEO content and entity strategy established Jason as a cited source across 8 tracked Albany-area real estate topics: earning 686 AI citations, 67.6% positive sentiment, and #1 AI visibility in both Neighborhood Insights and Selling Strategies. Within 2.5 months, organic keyword coverage grew from zero to 30 tracked keywords in Google Search Console — with the top keyword cluster appearing in positions 2–4 and generating 92 monthly impressions. Review velocity and local pack penetration are the next phase.',
+    results: [
+      { metric: '100/100', label: 'website health score — OTTO resolved all technical issues across 115 pages within the first month, with a 95/100 Technical pillar rating' },
+      { metric: '686', label: 'AI citations across major platforms in 2.5 months — with 67.6% positive sentiment and #1 AI visibility in Neighborhood Insights and Selling Strategies' },
+      { metric: '30', label: 'keywords tracked in Google Search Console from zero — with 738 organic impressions and a position-2 ranking for the top keyword cluster' },
+    ],
+    quote: 'I came in with a Domain Power of 1 and zero rankings, zero reviews, zero AI presence. In 2.5 months HeyPearl built a perfect technical foundation, earned me 686 AI citations, and I\'m already tracking 30 keywords in Google. The authority is compounding faster than I expected.',
+    timeline: '2.5 months',
+    updatedAt: 'July 2026',
+  },
 ];
 
 // ─── Recent Wins ──────────────────────────────────────────────────────────────
@@ -171,9 +191,10 @@ export const CASE_STUDIES: CaseStudy[] = [
 
 export const RECENT_WINS: Win[] = [
   // Newest first. dayFromActivation is calculated from each client's program start date.
-  // Note: Texas Hill Country, Seattle Luxury, Austin Area, Albany Area started Apr–May 2026.
-  // New Braunfels and Leavenworth both started Nov 22, 2025. Pensacola started Apr 14, 2026.
-  // Woodbury started Feb 16, 2026.
+  // New Braunfels and Leavenworth both started Nov 22, 2025. Woodbury started Feb 16, 2026.
+  // Austin Area started Feb 5, 2026. Seattle Luxury started Feb 10, 2026.
+  // Pensacola started Apr 14, 2026. Albany Area started May 13, 2026.
+  // Texas Hill Country started ~May 17, 2026.
 
   // ── July 2026 ──────────────────────────────────────────────────────────────
   {
@@ -182,6 +203,22 @@ export const RECENT_WINS: Win[] = [
     result: 'Ranked #1 or #2 for 6 of 7 tracked AI buyer queries — ranch property appraisals, water rights, land listings, and more',
     engine: 'All engines',
     dayFromActivation: 75,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Texas Hill Country Agent',
+    segment: 'Independent Agent',
+    result: '47 GBP direction requests in the first full month — up from 4 the month prior, with search impressions reaching 355 and average position improving 9.7 spots to 23.7',
+    engine: 'Google Maps',
+    dayFromActivation: 75,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Texas Hill Country Agent',
+    segment: 'Independent Agent',
+    result: 'Facebook reach jumped 770% to 2,532 views — with 82.6% reaching non-followers as ranch and land content began finding new audiences beyond the existing base',
+    engine: 'Facebook',
+    dayFromActivation: 60,
     month: 'Jul 2026',
   },
   {
@@ -230,6 +267,14 @@ export const RECENT_WINS: Win[] = [
     result: 'Search impressions jumped from 290 to 2,590 in a single month — 178 keywords now tracking across the New Braunfels area',
     engine: 'Google Search',
     dayFromActivation: 235,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Albany Area Agent',
+    segment: 'Independent Agent',
+    result: '686 AI citations found with 67.6% positive sentiment — #1 AI-ranked source for Neighborhood Insights and Selling Strategies across the Albany, OR area',
+    engine: 'All engines',
+    dayFromActivation: 54,
     month: 'Jul 2026',
   },
   {
@@ -336,6 +381,14 @@ export const RECENT_WINS: Win[] = [
     result: '990 technical SEO issues resolved — site health reached 69/100 from zero, site expanded from 100 to 117 pages, and 18 Google reviews now on file',
     engine: 'OTTO SEO',
     dayFromActivation: 134,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The Albany Area Agent',
+    segment: 'Independent Agent',
+    result: 'Website health reached 100/100 — OTTO resolved all technical issues across 115 pages in the first month of activation, with a 95/100 Technical pillar score',
+    engine: 'OTTO SEO',
+    dayFromActivation: 30,
     month: 'Jun 2026',
   },
 
