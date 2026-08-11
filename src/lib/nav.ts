@@ -79,12 +79,12 @@ export const primaryNav: NavItem[] = [
     children: [
       {
         label: 'Recent Wins',
-        href: '/results#recent-wins',
+        href: '/results/recent-wins',
         description: 'Live milestones from active client engagements.',
       },
       {
         label: 'Case Studies',
-        href: '/results#case-studies',
+        href: '/results/case-studies',
         description: 'Documented outcomes from real PearlOS engagements.',
       },
     ],
