@@ -13,6 +13,7 @@ import { cn } from '@/lib/utils';
 const DROPDOWN_WIDTH: Record<string, number> = {
   Platform:  560,
   Solutions: 480,
+  Results:   320,
   Resources: 480,
   Company:   320,
 };

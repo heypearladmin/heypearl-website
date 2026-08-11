@@ -231,7 +231,7 @@ export default function ResultsPage() {
       </section>
 
       {/* Recent Wins */}
-      <section className="py-20 bg-white" aria-label="Recent wins">
+      <section id="recent-wins" className="py-20 bg-white" aria-label="Recent wins">
         <Container size="lg">
           <Reveal className="mb-10">
             <div className="flex items-center justify-between flex-wrap gap-4">
@@ -283,7 +283,7 @@ export default function ResultsPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-28 bg-[#F8F5F0]" aria-label="Case studies">
+      <section id="case-studies" className="py-28 bg-[#F8F5F0]" aria-label="Case studies">
         <Container size="lg">
           <div className="mb-16 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
