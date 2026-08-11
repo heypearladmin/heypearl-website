@@ -142,6 +142,26 @@ export const CASE_STUDIES: CaseStudy[] = [
     timeline: '6 months',
     updatedAt: 'July 2026',
   },
+  {
+    id: 'woodbury-agent',
+    label: 'Case Study 06',
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    city: 'Woodbury, MN',
+    modules: ['Authority Website', 'Authority Pages', 'GEO Engine', 'AI Visibility', 'Knowledge Graph'],
+    challenge:
+      'Woodbury is a growing Twin Cities suburb with a competitive local real estate market — and the established agents already command hundreds of reviews and years of domain authority. Dave came to HeyPearl with 88 Facebook followers, 108 Instagram followers, zero Google reviews, and a site that had yet to appear in organic search. Building authority from zero against agents with 200–400 reviews required a different sequence: establish AI visibility first, build the technical foundation, and let the organic and review channels compound.',
+    solution:
+      'HeyPearl rebuilt the technical foundation from scratch — resolving 990 issues and lifting website health from 0 to 93/100, with the site expanding from 100 to 117 pages. An AEO content strategy and entity architecture established Dave as the AI-recommended source across all 5 tracked Woodbury search topics, with 76.7% positive AI sentiment and 31 new AI citations identified in a single month. A review campaign brought him from 0 to 19 Google reviews at a perfect 5.0 stars. Authority was further reinforced by 512 backlinks from 144 unique referring domains — all building toward the search indexing and local pack visibility still ahead.',
+    results: [
+      { metric: '#1', label: 'AI-recommended source across all 5 tracked Woodbury local search topics — with 76.7% positive AI sentiment in month 4 of the engagement' },
+      { metric: '93/100', label: 'website health score by month 5 — from zero at activation, with 990 technical issues resolved and 512 authority backlinks established' },
+      { metric: '19', label: 'Google reviews at a perfect 5.0 stars — from zero reviews at activation, built through a concentrated review campaign' },
+    ],
+    quote: 'I came into this with almost no online presence — 88 Facebook followers and zero reviews. Within five months I\'m the top recommendation on AI search in Woodbury, my site health is at 93%, and I have 19 five-star reviews. HeyPearl built an authority foundation I didn\'t even know I needed.',
+    timeline: '5 months',
+    updatedAt: 'July 2026',
+  },
 ];
 
 // ─── Recent Wins ──────────────────────────────────────────────────────────────
@@ -153,6 +173,7 @@ export const RECENT_WINS: Win[] = [
   // Newest first. dayFromActivation is calculated from each client's program start date.
   // Note: Texas Hill Country, Seattle Luxury, Austin Area, Albany Area started Apr–May 2026.
   // New Braunfels and Leavenworth both started Nov 22, 2025. Pensacola started Apr 14, 2026.
+  // Woodbury started Feb 16, 2026.
 
   // ── July 2026 ──────────────────────────────────────────────────────────────
   {
@@ -227,6 +248,22 @@ export const RECENT_WINS: Win[] = [
     dayFromActivation: 107,
     month: 'Jul 2026',
   },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: '204 website sessions — best month since activation, up 63% month-over-month, with organic search sessions averaging 4m 05s engagement time',
+    engine: 'Google Analytics',
+    dayFromActivation: 165,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'Website health score reached 93/100 — 990 technical issues resolved since activation, with 527 authority backlinks across 144 referring domains',
+    engine: 'OTTO SEO',
+    dayFromActivation: 165,
+    month: 'Jul 2026',
+  },
 
   // ── June 2026 ─────────────────────────────────────────────────────────────
   {
@@ -285,6 +322,22 @@ export const RECENT_WINS: Win[] = [
     dayFromActivation: 196,
     month: 'Jun 2026',
   },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: '#1 AI-recommended source across all 5 tracked local real estate topics — 76.7% positive AI sentiment with 31 new AI citations found in a single month',
+    engine: 'All engines',
+    dayFromActivation: 134,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: '990 technical SEO issues resolved — site health reached 69/100 from zero, site expanded from 100 to 117 pages, and 18 Google reviews now on file',
+    engine: 'OTTO SEO',
+    dayFromActivation: 134,
+    month: 'Jun 2026',
+  },
 
   // ── May 2026 ──────────────────────────────────────────────────────────────
   {
@@ -311,6 +364,14 @@ export const RECENT_WINS: Win[] = [
     dayFromActivation: 160,
     month: 'May 2026',
   },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'GBP impressions peaked at 251 — up 365% from 54 at activation — with a first Woodbury seller-focused blog post driving early organic traffic',
+    engine: 'Google Maps',
+    dayFromActivation: 104,
+    month: 'May 2026',
+  },
 
   // ── April 2026 ────────────────────────────────────────────────────────────
   {
@@ -327,6 +388,14 @@ export const RECENT_WINS: Win[] = [
     result: 'First 5-star Google review earned — GBP now showing 18.8% action rate with 45 direction requests and 22 website clicks in a single month',
     engine: 'Google',
     dayFromActivation: 130,
+    month: 'Apr 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'First 126 website sessions recorded — 4m 42s average session time and /contact page at 17% of all pageviews, a strong high-intent signal in month 2',
+    engine: 'Google Analytics',
+    dayFromActivation: 73,
     month: 'Apr 2026',
   },
 
@@ -353,6 +422,14 @@ export const RECENT_WINS: Win[] = [
     result: 'Site indexed and first organic search traffic appeared — 12 clicks and 492 impressions across 34 tracked keywords, all from zero the month before',
     engine: 'Google Search',
     dayFromActivation: 99,
+    month: 'Mar 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'GBP impressions tripled month-over-month (54 → 161) — first 10 website clicks from the profile and Instagram reach grew to 599, 5.5x the follower count',
+    engine: 'Google Maps',
+    dayFromActivation: 43,
     month: 'Mar 2026',
   },
 
