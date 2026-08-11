@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { Container } from '@/components/ui/Container';
 import { site } from '@/lib/site';
+import { DASHBOARD_METRICS, CASE_STUDIES, RECENT_WINS, TESTIMONIALS } from '@/data/results';
 
 export const metadata: Metadata = {
   title: 'Results — Measurable AI Authority Outcomes | HeyPearl',
@@ -17,70 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── Data ────────────────────────────────────────────────────────────────────
-
-const DASHBOARD_METRICS = [
-  { value: '3.2×', label: 'Average increase in AI recommendation frequency', sub: 'across all active engagements' },
-  { value: '47', label: 'Average days to first measurable AI citation', sub: 'from PearlOS activation' },
-  { value: '94%', label: 'Average Knowledge Graph completion score', sub: 'at 90-day mark' },
-  { value: '6', label: 'AI engines monitored per engagement', sub: 'ChatGPT, Perplexity, Gemini, Claude, Copilot, AI Overviews' },
-  { value: '+68', label: 'Average Authority Score point gain', sub: 'from baseline to 90-day review' },
-  { value: '340%', label: 'Average AI Share of Voice growth', sub: 'within primary service category' },
-];
-
-const CASE_STUDIES = [
-  {
-    id: 'seattle-luxury',
-    label: 'Case Study 01',
-    client: 'Luxury Real Estate Agent',
-    location: 'Seattle, WA',
-    segment: 'Independent Agent',
-    modules: ['Authority Pages', 'Knowledge Graph', 'GEO Engine', 'AI Visibility'],
-    challenge: 'A 12-year veteran with 200+ five-star reviews had zero AI presence. Buyers asking AI who to call for luxury properties in Seattle got three competitor names — never hers. She learned about the gap when a client told her they almost called someone else first.',
-    solution: 'PearlOS built her entity architecture from scratch: a verified Knowledge Graph record, six Authority Pages targeting luxury buyer queries by neighborhood, and GEO content engineered around the exact prompts her buyers were using.',
-    results: [
-      { metric: '14', label: 'buyer queries now surface her as primary recommendation' },
-      { metric: '0→1', label: 'movement from invisible to top AI citation in her specialty' },
-      { metric: '61', label: 'days from activation to first consistent AI recommendation' },
-    ],
-    quote: 'I had no idea the gap existed. Now I know exactly where I stand — and so does AI.',
-    timeline: '90 days',
-  },
-  {
-    id: 'austin-brokerage',
-    label: 'Case Study 02',
-    client: 'Independent Brokerage',
-    location: 'Austin, TX',
-    segment: 'Brokerage Brand',
-    modules: ['Authority Pages', 'Authority Score', 'Knowledge Graph', 'AI Visibility', 'GEO Engine'],
-    challenge: "The brokerage had 22 agents, strong local reputation, and active social presence. But when buyers asked AI which brokerage to trust in Austin, the AI named four competitors and never mentioned their brand. Individual agents were occasionally cited — the brokerage entity itself was invisible.",
-    solution: 'Full PearlOS engagement: brokerage-level entity architecture, hierarchical agent connections, brand-level Authority Pages for every major Austin neighborhood, and GEO content targeting "best brokerage in Austin" category queries.',
-    results: [
-      { metric: '#1', label: 'AI-cited brokerage in Austin across all 6 engines tested' },
-      { metric: '88', label: 'Authority Score at 90-day mark (from 31 at baseline)' },
-      { metric: '4.1×', label: 'increase in AI recommendation frequency vs. pre-engagement' },
-    ],
-    quote: "We went from invisible to the most-cited brokerage in our city. That's not a small thing.",
-    timeline: '90 days',
-  },
-  {
-    id: 'scottsdale-team',
-    label: 'Case Study 03',
-    client: 'Real Estate Team',
-    location: 'Scottsdale, AZ',
-    segment: 'Team Structure',
-    modules: ['Knowledge Graph', 'Authority Pages', 'AI Visibility', 'GEO Engine'],
-    challenge: "An 8-agent team had strong individual agent profiles but no unified team brand in AI search. When buyers asked AI about the team by name, they got inconsistent descriptions — sometimes individual agents, sometimes nothing. The team's specialization in luxury new construction was completely absent from AI answers.",
-    solution: 'Hierarchical entity build: team brand as the primary entity, individual agents as verified sub-entities. Specialty Authority Pages for luxury new construction. GEO content targeting buyer queries around new development communities.',
-    results: [
-      { metric: '3×', label: 'increase in AI recommendation frequency across all monitored queries' },
-      { metric: '100%', label: 'entity accuracy — AI engines now describe the team correctly' },
-      { metric: '29', label: 'distinct buyer queries where team is now the primary recommendation' },
-    ],
-    quote: "Our team's specialty is now what AI leads with. That's the positioning we've always wanted.",
-    timeline: '75 days',
-  },
-];
+// ─── Static data ──────────────────────────────────────────────────────────────
 
 const METHODOLOGY_STEPS = [
   {
@@ -119,23 +57,6 @@ const KPI_DEFINITIONS = [
   { kpi: 'Citation Coverage', def: 'The number of distinct buyer queries for which a business is cited as a recommendation — measured by query category, geography, and specialization.' },
 ];
 
-const TESTIMONIALS = [
-  {
-    quote: "The Authority Score audit showed us exactly what was broken. Six weeks later, AI was recommending us by name. The speed of the change surprised everyone on our team.",
-    author: 'Brokerage Owner',
-    location: 'Austin, TX',
-  },
-  {
-    quote: "I spent three years building my reputation. HeyPearl spent 90 days making sure AI knew about it. These two things should have happened at the same time.",
-    author: 'Luxury Agent',
-    location: 'Seattle, WA',
-  },
-  {
-    quote: "The monitoring alone is worth it. We now know what six AI engines are saying about us — and what they're saying about competitors in our market.",
-    author: 'Team Lead',
-    location: 'Scottsdale, AZ',
-  },
-];
 
 // ─── SVG Components ───────────────────────────────────────────────────────────
 
@@ -203,19 +124,15 @@ export default function ResultsPage() {
             Every claim on this page is backed by client data from real PearlOS engagements. These are not satisfaction scores. They are measurable changes in AI authority — tracked from Day 1 through Day 90 and beyond.
           </p>
 
-          {/* Hero stat strip */}
+          {/* Hero stat strip — populated from DASHBOARD_METRICS[0..2] */}
           <div className="mt-12 grid grid-cols-3 gap-px max-w-2xl"
             style={{ border: '1px solid #E7E3DD', borderRadius: '0.875rem', overflow: 'hidden' }}>
-            {[
-              { stat: '3.2×', sub: 'avg. AI recommendation increase' },
-              { stat: '47', unit: ' days', sub: 'avg. to first AI citation' },
-              { stat: '94%', sub: 'avg. Knowledge Graph completion' },
-            ].map((s, i) => (
+            {DASHBOARD_METRICS.slice(0, 3).map((m, i) => (
               <div key={i} className="px-4 sm:px-6 py-5" style={{ background: i === 1 ? 'rgba(194,24,91,0.05)' : '#FFFFFF' }}>
                 <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#C2185B', lineHeight: 1, whiteSpace: 'nowrap' }}>
-                  {s.stat}{s.unit && <span style={{ fontSize: '0.75em' }}>{s.unit}</span>}
+                  {m.value}
                 </div>
-                <div className="mt-1" style={{ fontSize: '0.72rem', color: '#334155', lineHeight: 1.4 }}>{s.sub}</div>
+                <div className="mt-1" style={{ fontSize: '0.72rem', color: '#334155', lineHeight: 1.4 }}>{m.sub}</div>
               </div>
             ))}
           </div>
@@ -313,8 +230,60 @@ export default function ResultsPage() {
         </Container>
       </section>
 
+      {/* Recent Wins */}
+      <section className="py-20 bg-white" aria-label="Recent wins">
+        <Container size="lg">
+          <Reveal className="mb-10">
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.4)' }} aria-hidden />
+                  <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Recent Wins</span>
+                </div>
+                <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+                  What's happening<br />
+                  <span style={{ color: '#C2185B', fontStyle: 'italic' }}>in active engagements.</span>
+                </h2>
+              </div>
+              <p style={{ fontSize: '0.82rem', color: '#64748B', lineHeight: 1.7, maxWidth: '28rem' }}>
+                Specific milestones, observed as they happen. Each win is tied to a real engagement — named by hyperlocal area, not by client.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {RECENT_WINS.map((win, i) => (
+              <Reveal key={i} delay={i * 0.07}>
+                <div className="p-5 rounded-xl flex flex-col gap-3 h-full"
+                  style={{ border: '1px solid #E7E3DD', background: '#F8F5F0' }}>
+                  {/* Header */}
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#1E3A66', lineHeight: 1.3 }}>{win.handle}</div>
+                      <div style={{ fontSize: '0.62rem', color: '#94A3B8', fontWeight: 500, marginTop: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{win.segment}</div>
+                    </div>
+                    <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#C2185B', background: 'rgba(194,24,91,0.08)', border: '1px solid rgba(194,24,91,0.15)', borderRadius: '0.3rem', padding: '0.2rem 0.5rem', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                      {win.engine}
+                    </span>
+                  </div>
+
+                  {/* Win */}
+                  <p style={{ fontSize: '0.82rem', color: '#334155', lineHeight: 1.65, flex: 1 }}>{win.result}</p>
+
+                  {/* Footer */}
+                  <div className="flex items-center justify-between pt-2" style={{ borderTop: '1px solid rgba(48,72,111,0.08)' }}>
+                    <span style={{ fontSize: '0.68rem', color: '#64748B' }}>Day <span style={{ fontWeight: 700, color: '#C2185B' }}>{win.dayFromActivation}</span> from activation</span>
+                    <span style={{ fontSize: '0.62rem', color: '#94A3B8' }}>{win.month}</span>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Case Studies */}
-      <section className="py-28 bg-white" aria-label="Case studies">
+      <section className="py-28 bg-[#F8F5F0]" aria-label="Case studies">
         <Container size="lg">
           <div className="mb-16 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
@@ -331,21 +300,26 @@ export default function ResultsPage() {
           </div>
 
           <div className="space-y-8">
-            {CASE_STUDIES.map((cs, idx) => (
+            {CASE_STUDIES.map((cs) => (
               <div key={cs.id} className="rounded-2xl overflow-hidden"
                 style={{ border: '1px solid #E7E3DD', background: '#F8F5F0' }}>
                 {/* Card header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 px-8 py-5"
                   style={{ borderBottom: '1px solid #E7E3DD', background: 'rgba(194,24,91,0.04)' }}>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 flex-wrap">
                     <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.6)' }}>{cs.label}</span>
-                    <span style={{ fontSize: '0.62rem', color: 'rgba(255,255,255,0.12)' }}>·</span>
-                    <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#334155' }}>{cs.client} — {cs.location}</span>
-                    <span style={{ fontSize: '0.62rem', color: 'rgba(255,255,255,0.12)' }}>·</span>
-                    <span style={{ fontSize: '0.62rem', color: 'rgba(182,146,94,0.5)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>{cs.segment}</span>
+                    <span aria-hidden style={{ color: '#CBD5E1' }}>·</span>
+                    <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#1E3A66' }}>{cs.handle}</span>
+                    <span aria-hidden style={{ color: '#CBD5E1' }}>·</span>
+                    <span style={{ fontSize: '0.62rem', color: '#64748B', fontWeight: 500 }}>{cs.city}</span>
+                    <span aria-hidden style={{ color: '#CBD5E1' }}>·</span>
+                    <span style={{ fontSize: '0.62rem', color: 'rgba(182,146,94,0.6)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>{cs.segment}</span>
                   </div>
-                  <div style={{ fontSize: '0.68rem', color: '#64748B', fontWeight: 500 }}>
-                    Timeline: <span style={{ color: '#C2185B', fontWeight: 700 }}>{cs.timeline}</span>
+                  <div className="flex items-center gap-4 shrink-0">
+                    <span style={{ fontSize: '0.68rem', color: '#64748B', fontWeight: 500 }}>
+                      Timeline: <span style={{ color: '#C2185B', fontWeight: 700 }}>{cs.timeline}</span>
+                    </span>
+                    <span style={{ fontSize: '0.62rem', color: '#94A3B8' }}>Updated {cs.updatedAt}</span>
                   </div>
                 </div>
 
@@ -390,7 +364,7 @@ export default function ResultsPage() {
                       <div className="h-px mb-5" style={{ background: 'rgba(48,72,111,0.35)' }} />
                       <blockquote>
                         <p style={{ fontSize: '0.875rem', fontStyle: 'italic', color: '#334155', lineHeight: 1.7, marginBottom: '0.5rem' }}>"{cs.quote}"</p>
-                        <footer style={{ fontSize: '0.68rem', color: '#64748B' }}>— {cs.client}, {cs.location}</footer>
+                        <footer style={{ fontSize: '0.68rem', color: '#64748B' }}>— {cs.handle}, {cs.city}</footer>
                       </blockquote>
                     </div>
                   </div>
@@ -560,8 +534,8 @@ export default function ResultsPage() {
                 <div style={{ fontSize: '1.5rem', color: 'rgba(182,146,94,0.3)', lineHeight: 1, fontFamily: 'Georgia, serif' }}>"</div>
                 <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.75, fontStyle: 'italic', flex: 1 }}>{t.quote}</p>
                 <footer>
-                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748B' }}>{t.author}</div>
-                  <div style={{ fontSize: '0.68rem', color: '#64748B' }}>{t.location}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#1E3A66' }}>{t.handle}</div>
+                  <div style={{ fontSize: '0.68rem', color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.15rem' }}>{t.segment} · {t.city}</div>
                 </footer>
               </blockquote>
             ))}

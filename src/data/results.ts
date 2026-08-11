@@ -1,0 +1,188 @@
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+export type CaseStudy = {
+  id: string;
+  label: string;
+  handle: string;    // hyperlocal identity label, e.g. "The Montlake Agent"
+  segment: 'Independent Agent' | 'Brokerage' | 'Team' | 'Service Business';
+  city: string;      // general metro, e.g. "Seattle, WA"
+  modules: string[];
+  challenge: string;
+  solution: string;
+  results: { metric: string; label: string }[];
+  quote: string;
+  timeline: string;
+  updatedAt: string; // e.g. "August 2026"
+};
+
+export type Win = {
+  handle: string;              // hyperlocal identity label
+  segment: string;
+  result: string;              // one-line win, e.g. "Named primary recommendation for 'luxury homes in Montlake' on ChatGPT"
+  engine: string;              // AI engine where the win was observed
+  dayFromActivation: number;
+  month: string;               // e.g. "Aug 2026"
+};
+
+// ─── Aggregate Stats ──────────────────────────────────────────────────────────
+// Update these as real data accumulates across all 8 engagements.
+
+export const DASHBOARD_METRICS = [
+  { value: '—', label: 'Average increase in AI recommendation frequency', sub: 'across all active engagements' },
+  { value: '—', label: 'Average days to first measurable AI citation', sub: 'from PearlOS activation' },
+  { value: '—', label: 'Average Knowledge Graph completion score', sub: 'at 90-day mark' },
+  { value: '6', label: 'AI engines monitored per engagement', sub: 'ChatGPT, Perplexity, Gemini, Claude, Copilot, AI Overviews' },
+  { value: '—', label: 'Average Authority Score point gain', sub: 'from baseline to 90-day review' },
+  { value: '—', label: 'Average AI Share of Voice growth', sub: 'within primary service category' },
+];
+
+// ─── Case Studies ─────────────────────────────────────────────────────────────
+// 3 featured stories. Replace placeholder text with real client data.
+// Use the client's hyperlocal area as the handle — specific enough to feel real,
+// vague enough to protect identity. E.g. "The Montlake Agent", "The South Congress Brokerage".
+
+export const CASE_STUDIES: CaseStudy[] = [
+  {
+    id: 'pensacola-gulf-coast-agent',
+    label: 'Case Study 01',
+    handle: 'The Pensacola Gulf Coast Agent',
+    segment: 'Independent Agent',
+    city: 'Pensacola, FL',
+    modules: ['Authority Website', 'Authority Pages', 'GEO Engine', 'AI Visibility', 'Knowledge Graph'],
+    challenge:
+      'An experienced Gulf Coast real estate professional needed more than a traditional website. The goal was to establish long-term authority in the Pensacola market by improving search visibility, creating hyperlocal content, and building a digital foundation optimized for both Google and AI-powered search platforms — starting from a near-zero baseline.',
+    solution:
+      'HeyPearl implemented a complete Authority System: a modern authority website, hyperlocal neighborhood pages, AI-optimized blog content, technical SEO, AI schema implementation, Google Business Profile optimization, and a full GEO content strategy targeting the specific queries Pensacola buyers and sellers use.',
+    results: [
+      { metric: '#1', label: 'ranked across all five tracked AI search topics within 3.5 months' },
+      { metric: '165', label: 'ranking keywords — from a near-zero baseline at launch' },
+      { metric: '92/100', label: 'Technical Health Score at the 90-day mark' },
+    ],
+    quote: 'The strategy gave me a clear roadmap for growing my online presence. Every improvement builds on the last, creating lasting value for my business.',
+    timeline: '3.5 months',
+    updatedAt: 'July 2026',
+  },
+  {
+    id: 'case-02',
+    label: 'Case Study 02',
+    handle: 'The [Area] Brokerage',            // REPLACE: e.g. "The South Congress Brokerage"
+    segment: 'Brokerage',
+    city: 'City, ST',
+    modules: ['Authority Pages', 'Authority Score', 'Knowledge Graph', 'AI Visibility', 'GEO Engine'],
+    challenge:
+      'The brokerage had [X] agents, strong local reputation, and an active online presence. But when buyers asked AI which brokerage to trust in [city], AI named competitors and never mentioned their brand. The brokerage entity itself was invisible.',
+    solution:
+      'Full PearlOS engagement: brokerage-level entity architecture, hierarchical agent connections, brand-level Authority Pages for every major [city] neighborhood, and GEO content targeting the primary category queries.',
+    results: [
+      { metric: '#1', label: 'AI-cited brokerage in their market across all 6 engines tested' },
+      { metric: '—', label: 'Authority Score at 90-day mark (from — at baseline)' },
+      { metric: '—×', label: 'increase in AI recommendation frequency vs. pre-engagement' },
+    ],
+    quote: 'Replace with real client quote.',
+    timeline: '90 days',
+    updatedAt: 'August 2026',
+  },
+  {
+    id: 'case-03',
+    label: 'Case Study 03',
+    handle: 'The [Area] Team',                 // REPLACE: e.g. "The McCormick Ranch Team"
+    segment: 'Team',
+    city: 'City, ST',
+    modules: ['Knowledge Graph', 'Authority Pages', 'AI Visibility', 'GEO Engine'],
+    challenge:
+      'An [X]-agent team had strong individual profiles but no unified team brand in AI search. When buyers asked AI about the team by name, they got inconsistent descriptions. The team\'s specialty was completely absent from AI answers.',
+    solution:
+      'Hierarchical entity build: team brand as the primary entity, individual agents as verified sub-entities. Specialty Authority Pages for [specialty]. GEO content targeting buyer queries around [key area].',
+    results: [
+      { metric: '—×', label: 'increase in AI recommendation frequency across all monitored queries' },
+      { metric: '100%', label: 'entity accuracy — AI engines now describe the team correctly' },
+      { metric: '—', label: 'distinct buyer queries where team is now the primary recommendation' },
+    ],
+    quote: 'Replace with real client quote.',
+    timeline: '75 days',
+    updatedAt: 'August 2026',
+  },
+];
+
+// ─── Recent Wins ──────────────────────────────────────────────────────────────
+// Lightweight, frequently updated feed of specific wins.
+// Add a new entry each time a client hits a notable milestone.
+// Newest first.
+
+export const RECENT_WINS: Win[] = [
+  // Add new wins above this line — newest first
+  // Note: dayFromActivation is approximate for clients whose exact start date is unconfirmed.
+
+  {
+    handle: 'The Texas Hill Country Agent',
+    segment: 'Independent Agent',
+    result: 'Ranked #1 or #2 for 6 of 7 tracked AI buyer queries — ranch property appraisals, water rights, land listings, and more',
+    engine: 'All engines',
+    dayFromActivation: 75,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Appearing in 26 of 39 map grid points near Seattle — 66.7% local pack visibility in one of the most competitive luxury markets in the US',
+    engine: 'Google Maps',
+    dayFromActivation: 95,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'Site health reached 100% — 460 technical issues auto-resolved without touching a line of code, building a clean foundation for search authority',
+    engine: 'OTTO SEO',
+    dayFromActivation: 70,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: 'Search impressions jumped from 290 to 2,590 in a single month — 178 keywords now tracking across the New Braunfels area',
+    engine: 'Google Search',
+    dayFromActivation: 65,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Albany Area Agent',
+    segment: 'Independent Agent',
+    result: 'Search impressions up 210% month-over-month to 558 — average ranking position now 8.6 with 23 tracked keywords',
+    engine: 'Google Search',
+    dayFromActivation: 55,
+    month: 'Jul 2026',
+  },
+  {
+    handle: 'The Pensacola Gulf Coast Agent',
+    segment: 'Independent Agent',
+    result: 'Ranked #1 across all five tracked AI search topics — from a near-zero digital baseline at launch',
+    engine: 'All engines',
+    dayFromActivation: 107,
+    month: 'Jul 2026',
+  },
+];
+
+// ─── Testimonials ─────────────────────────────────────────────────────────────
+// Tied to real clients. Use handle + segment as attribution — no real names.
+
+export const TESTIMONIALS = [
+  {
+    quote: 'The strategy gave me a clear roadmap for growing my online presence. Every improvement builds on the last, creating lasting value for my business.',
+    handle: 'The Pensacola Gulf Coast Agent',
+    segment: 'Independent Agent',
+    city: 'Pensacola, FL',
+  },
+  {
+    quote: 'Replace with real client quote.',
+    handle: 'The [Area] Brokerage',
+    segment: 'Brokerage Owner',
+    city: 'City, ST',
+  },
+  {
+    quote: 'Replace with real client quote.',
+    handle: 'The [Area] Team',
+    segment: 'Team Lead',
+    city: 'City, ST',
+  },
+];
