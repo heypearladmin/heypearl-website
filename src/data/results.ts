@@ -83,24 +83,24 @@ export const CASE_STUDIES: CaseStudy[] = [
     updatedAt: 'July 2026',
   },
   {
-    id: 'case-03',
+    id: 'leavenworth-team',
     label: 'Case Study 03',
-    handle: 'The [Area] Team',                 // REPLACE: e.g. "The McCormick Ranch Team"
+    handle: 'The Leavenworth Team',
     segment: 'Team',
-    city: 'City, ST',
-    modules: ['Knowledge Graph', 'Authority Pages', 'AI Visibility', 'GEO Engine'],
+    city: 'Leavenworth, KS',
+    modules: ['Authority Website', 'Authority Pages', 'GEO Engine', 'AI Visibility', 'Knowledge Graph', 'Authority Score'],
     challenge:
-      'An [X]-agent team had strong individual profiles but no unified team brand in AI search. When buyers asked AI about the team by name, they got inconsistent descriptions. The team\'s specialty was completely absent from AI answers.',
+      'A veteran-owned husband-and-wife real estate team had deep community roots serving military families around Fort Leavenworth and the Kansas City metro — but zero digital authority. Their Google Business Profile was active yet unoptimized. Their site was effectively unindexed for months. And in a market where military buyers often relocate on tight timelines and rely on AI search before picking up the phone, being invisible wasn\'t an option.',
     solution:
-      'Hierarchical entity build: team brand as the primary entity, individual agents as verified sub-entities. Specialty Authority Pages for [specialty]. GEO content targeting buyer queries around [key area].',
+      'HeyPearl deployed a full authority build: OTTO resolved 1,939 technical issues and expanded the site from 97 to 237 pages, lifting the health score from 0 to 75/100. A concentrated review campaign drove 101+ five-star reviews in under 60 days — establishing instant social proof. AI-optimized content around veteran-owned real estate, military relocation, and Kansas City area topics established the team as the recommended authority across all tracked AI platforms.',
     results: [
-      { metric: '—×', label: 'increase in AI recommendation frequency across all monitored queries' },
-      { metric: '100%', label: 'entity accuracy — AI engines now describe the team correctly' },
-      { metric: '—', label: 'distinct buyer queries where team is now the primary recommendation' },
+      { metric: '#1', label: 'ranked across all 5 tracked AI search topics by month 8 — veteran real estate, military relocation, and KC metro buying' },
+      { metric: '101+', label: 'five-star Google reviews collected — from 0 reviews in the first 90 days of engagement' },
+      { metric: '97.4%', label: 'local pack coverage across the Leavenworth and Kansas City metro area' },
     ],
-    quote: 'Replace with real client quote.',
-    timeline: '75 days',
-    updatedAt: 'August 2026',
+    quote: 'We serve military families and local buyers who deserve to work with someone they can trust. Now when they search on Google or ask ChatGPT, we\'re the name that comes up. HeyPearl built that for us — and it\'s been a game changer for our business.',
+    timeline: '8 months',
+    updatedAt: 'July 2026',
   },
 ];
 
