@@ -56,7 +56,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     results: [
       { metric: '#1', label: 'ranked across all five tracked AI search topics within 3.5 months' },
       { metric: '165', label: 'ranking keywords — from a near-zero baseline at launch' },
-      { metric: '92/100', label: 'Technical Health Score at the 90-day mark' },
+      { metric: '91.1%', label: 'positive AI sentiment across major platforms — with 43 new AI citations identified in a single month from a standing start' },
     ],
     quote: 'The strategy gave me a clear roadmap for growing my online presence. Every improvement builds on the last, creating lasting value for my business.',
     timeline: '3.5 months',
