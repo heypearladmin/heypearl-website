@@ -63,24 +63,24 @@ export const CASE_STUDIES: CaseStudy[] = [
     updatedAt: 'July 2026',
   },
   {
-    id: 'case-02',
+    id: 'new-braunfels-agent',
     label: 'Case Study 02',
-    handle: 'The [Area] Brokerage',            // REPLACE: e.g. "The South Congress Brokerage"
-    segment: 'Brokerage',
-    city: 'City, ST',
-    modules: ['Authority Pages', 'Authority Score', 'Knowledge Graph', 'AI Visibility', 'GEO Engine'],
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    city: 'New Braunfels, TX',
+    modules: ['Authority Website', 'Authority Pages', 'GEO Engine', 'AI Visibility', 'Knowledge Graph'],
     challenge:
-      'The brokerage had [X] agents, strong local reputation, and an active online presence. But when buyers asked AI which brokerage to trust in [city], AI named competitors and never mentioned their brand. The brokerage entity itself was invisible.',
+      'New Braunfels is one of the fastest-growing cities in Texas — sitting between San Antonio and Austin, with new neighborhoods, relocation demand, and out-of-state buyers arriving in waves. Todd came to HeyPearl with a near-zero digital presence: no website sessions, no search impressions, no reviews. The market opportunity was real, but without search and AI visibility, none of it was reachable.',
     solution:
-      'Full PearlOS engagement: brokerage-level entity architecture, hierarchical agent connections, brand-level Authority Pages for every major [city] neighborhood, and GEO content targeting the primary category queries.',
+      'HeyPearl built the entire digital authority stack from scratch. OTTO resolved 406 technical issues and expanded the site from 23 to 56 pages — lifting site health from 0 to 79/100 without Todd touching a single line of code. Hyperlocal neighborhood and relocation content was published around the queries New Braunfels buyers actually use. Entity architecture, structured data, and an AI-optimized content strategy established Todd as the recognized area authority across both Google and AI-powered platforms.',
     results: [
-      { metric: '#1', label: 'AI-cited brokerage in their market across all 6 engines tested' },
-      { metric: '—', label: 'Authority Score at 90-day mark (from — at baseline)' },
-      { metric: '—×', label: 'increase in AI recommendation frequency vs. pre-engagement' },
+      { metric: '#1', label: 'AI-recommended source for 3 of 5 tracked local search topics — achieved within 7 months of activation' },
+      { metric: '2,590', label: 'Google search impressions in month 8 — up 2,300 in a single month from 290 the month prior' },
+      { metric: '178', label: 'ranking keywords tracked across the New Braunfels area — built entirely from zero at activation' },
     ],
-    quote: 'Replace with real client quote.',
-    timeline: '90 days',
-    updatedAt: 'August 2026',
+    quote: 'Before working with HeyPearl, I had almost no online presence. Now I\'m showing up at the top of AI searches in New Braunfels, my Google impressions went from basically zero to nearly 3,000 in a single month, and I didn\'t have to figure any of it out myself. That\'s a game changer.',
+    timeline: '8 months',
+    updatedAt: 'July 2026',
   },
   {
     id: 'case-03',
