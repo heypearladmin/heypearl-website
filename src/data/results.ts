@@ -110,9 +110,11 @@ export const CASE_STUDIES: CaseStudy[] = [
 // Newest first.
 
 export const RECENT_WINS: Win[] = [
-  // Add new wins above this line — newest first
-  // Note: dayFromActivation is approximate for clients whose exact start date is unconfirmed.
+  // Newest first. dayFromActivation is calculated from each client's program start date.
+  // Note: Texas Hill Country, Seattle Luxury, Austin Area, Albany Area started Apr–May 2026.
+  // New Braunfels and Leavenworth both started Nov 22, 2025. Pensacola started Apr 14, 2026.
 
+  // ── July 2026 ──────────────────────────────────────────────────────────────
   {
     handle: 'The Texas Hill Country Agent',
     segment: 'Independent Agent',
@@ -130,6 +132,14 @@ export const RECENT_WINS: Win[] = [
     month: 'Jul 2026',
   },
   {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'Ranked #1 across all 5 tracked AI search topics — veteran-owned real estate, military relocation, and KC metro buying queries all returning the team as the top recommendation',
+    engine: 'All engines',
+    dayFromActivation: 235,
+    month: 'Jul 2026',
+  },
+  {
     handle: 'The Austin Area Agent',
     segment: 'Independent Agent',
     result: 'Site health reached 100% — 460 technical issues auto-resolved without touching a line of code, building a clean foundation for search authority',
@@ -142,7 +152,7 @@ export const RECENT_WINS: Win[] = [
     segment: 'Independent Agent',
     result: 'Search impressions jumped from 290 to 2,590 in a single month — 178 keywords now tracking across the New Braunfels area',
     engine: 'Google Search',
-    dayFromActivation: 65,
+    dayFromActivation: 235,
     month: 'Jul 2026',
   },
   {
@@ -160,6 +170,80 @@ export const RECENT_WINS: Win[] = [
     engine: 'All engines',
     dayFromActivation: 107,
     month: 'Jul 2026',
+  },
+
+  // ── June 2026 ─────────────────────────────────────────────────────────────
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: '101+ five-star Google reviews collected in under 60 days — from a single review on file in May to a 4.97-star average now dominating local search results',
+    engine: 'Google',
+    dayFromActivation: 196,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: 'Ranked #1 AI-recommended source for 3 of 5 local search topics — including Local Market Expertise — with 131 authority links built from 77 unique referring sources',
+    engine: 'All engines',
+    dayFromActivation: 196,
+    month: 'Jun 2026',
+  },
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: '1,939 technical SEO issues resolved in a single month — site expanded from 97 to 237 pages and website health score reached 75/100 from zero',
+    engine: 'OTTO SEO',
+    dayFromActivation: 196,
+    month: 'Jun 2026',
+  },
+
+  // ── May 2026 ──────────────────────────────────────────────────────────────
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'First non-branded search click earned — "best selling agents near me" — content beginning to rank for buyer-intent queries beyond direct brand searches',
+    engine: 'Google Search',
+    dayFromActivation: 160,
+    month: 'May 2026',
+  },
+
+  // ── April 2026 ────────────────────────────────────────────────────────────
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'First real inbound call volume from Google Business Profile — 5 calls in the month, with 110 total profile interactions and a 19.4% action rate',
+    engine: 'Google Maps',
+    dayFromActivation: 130,
+    month: 'Apr 2026',
+  },
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: 'First 5-star Google review earned — GBP now showing 18.8% action rate with 45 direction requests and 22 website clicks in a single month',
+    engine: 'Google',
+    dayFromActivation: 130,
+    month: 'Apr 2026',
+  },
+
+  // ── March 2026 ────────────────────────────────────────────────────────────
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'Site indexed and first organic search traffic appeared — 12 clicks and 492 impressions across 34 tracked keywords, all from zero the month before',
+    engine: 'Google Search',
+    dayFromActivation: 99,
+    month: 'Mar 2026',
+  },
+
+  // ── February 2026 ─────────────────────────────────────────────────────────
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'First 5-star Google review earned at day 68 — the first verified conversion from digital presence to real social proof',
+    engine: 'Google',
+    dayFromActivation: 68,
+    month: 'Feb 2026',
   },
 ];
 
