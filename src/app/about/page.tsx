@@ -40,7 +40,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is the P.E.A.R.L. framework?',
-      acceptedAnswer: { '@type': 'Answer', text: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Revenue, and Leverage. It is the operating framework that underpins every Hey Pearl engagement — connecting AI visibility work to the business operations that convert discovery into closed business.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Replication, and Leverage. It is the operating framework that underpins every Hey Pearl engagement — building repeatable systems, removing friction, automating the predictable work, reproducing what works across clients and markets, and compounding it all into leverage.' },
     },
     {
       '@type': 'Question',
@@ -85,7 +85,7 @@ const aboutFaqs = [
   },
   {
     q: 'What is the P.E.A.R.L. framework?',
-    a: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Revenue, and Leverage. It is the operating framework that underpins every Hey Pearl engagement, connecting AI visibility to the business operations that convert discovery into closed business.',
+    a: 'P.E.A.R.L. stands for Process, Efficiency, Automation, Replication, and Leverage. It is the operating framework that underpins every Hey Pearl engagement — building repeatable systems, removing friction, automating the predictable work, reproducing what works across clients and markets, and compounding it all into leverage.',
   },
   {
     q: 'Where is Hey Pearl based?',
@@ -127,7 +127,7 @@ export default function AboutPage() {
           >
             Schedule a Strategy Call
           </LinkButton>
-          <LinkButton href="/services" variant="secondary" size="lg">
+          <LinkButton href="/solutions" variant="secondary" size="lg">
             What we build
           </LinkButton>
         </div>

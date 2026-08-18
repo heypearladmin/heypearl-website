@@ -10,7 +10,7 @@ type PearlMarkProps = {
  * Five graduated horizontal layers stacked into a stylized P letterform.
  * Pure inline SVG so it renders reliably regardless of asset state.
  *
- * NOT a literal pearl. Layers represent: Process · Efficiency · Automation · Revenue · Leverage.
+ * NOT a literal pearl. Layers represent: Process · Efficiency · Automation · Replication · Leverage.
  */
 export function PearlMark({ variant = 'default', className }: PearlMarkProps) {
   const isInverse = variant === 'inverse';

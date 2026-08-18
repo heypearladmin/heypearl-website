@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'FAQ — AI Authority Questions Answered | HeyPearl',
   description:
     'Answers to the most common questions about AI Authority Infrastructure, generative engine optimization, entity SEO, and how to make your business the one AI recommends.',
+  alternates: { canonical: 'https://heypearl.io/faq' },
   openGraph: {
     title: 'FAQ — AI Authority Questions Answered | HeyPearl',
     description:

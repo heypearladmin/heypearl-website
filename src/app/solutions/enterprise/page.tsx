@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl for Enterprise — AI Authority at Scale',
   description:
     'Centralized AI authority infrastructure for large real estate organizations managing multiple regions, brands, and agents. HeyPearl builds and monitors AI presence across your entire operation.',
+  alternates: { canonical: 'https://heypearl.io/solutions/enterprise' },
   openGraph: {
     title: 'HeyPearl for Enterprise — Scale AI Authority Across Your Organization',
     description: 'The AI authority platform for large organizations that need centralized AI visibility management across regions, brands, and agents.',

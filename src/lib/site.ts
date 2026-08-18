@@ -24,6 +24,13 @@ export const site = {
       display: '1606 Headway Cir, Austin TX 78754',
     },
   },
+  products: {
+    geoFarmingAI: {
+      name: 'GEO Farming AI',
+      url: 'https://start.geofarming.ai',
+      tagline: 'AI-powered neighborhood marketing for real estate.',
+    },
+  },
   social: {
     facebook: 'https://facebook.com/heypearlagency',
     instagram: 'https://instagram.com/heypearl.io',
@@ -33,6 +40,7 @@ export const site = {
     name: 'Misti Bruton',
     role: 'Founder & CEO',
     site: 'https://www.mistibruton.com/',
+    linkedin: 'https://www.linkedin.com/in/mistibruton/',
     facebook: 'https://facebook.com/mistibrutonceo',
     instagram: 'https://instagram.com/themistibruton',
     youtube: 'https://youtube.com/@themistibruton',

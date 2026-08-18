@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { HeroDeclaration } from '@/components/sections/HeroDeclaration';
+import { AISolutions } from '@/components/sections/AISolutions';
 import { TheGap } from '@/components/sections/TheGap';
 import { BusinessPain } from '@/components/sections/BusinessPain';
 import { CategoryIntro } from '@/components/sections/CategoryIntro';
 import { PearlOSFeature } from '@/components/sections/PearlOSFeature';
 import { PlatformModules } from '@/components/sections/PlatformModules';
+import { GEOFarmingFeature } from '@/components/sections/GEOFarmingFeature';
 import { PearlFramework } from '@/components/sections/PearlFramework';
 import { ResultsPreview } from '@/components/sections/ResultsPreview';
 import { Founder } from '@/components/sections/Founder';
@@ -64,7 +66,7 @@ const faqSchema = {
       name: 'What is the P.E.A.R.L. framework?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "P.E.A.R.L. stands for Process, Entity, Authority, Reputation, and Leverage. It is HeyPearl's proprietary operating framework for building AI authority that compounds — connecting entity architecture to reputation signals to AI visibility in a systematic 90-day sequence.",
+        text: "P.E.A.R.L. stands for Process, Efficiency, Automation, Replication, and Leverage. It is HeyPearl's proprietary operating framework for building AI authority that compounds — establishing repeatable systems, removing friction, automating the predictable work, reproducing what works across clients and markets, and compounding it all into leverage.",
       },
     },
     {
@@ -95,7 +97,9 @@ export default function HomePage() {
       />
       {/* 1. Brand declaration — Become the Authority AI Recommends */}
       <HeroDeclaration />
-      {/* 2. The world changed — what AI search actually means */}
+      {/* 2. AI Solutions suite — product ecosystem */}
+      <AISolutions />
+      {/* 3. The world changed — what AI search actually means */}
       <TheGap />
       {/* 3. The stakes — you're already losing visibility without knowing it */}
       <BusinessPain />
@@ -105,7 +109,9 @@ export default function HomePage() {
       <PearlOSFeature />
       {/* 6. The modules — what PearlOS powers */}
       <PlatformModules />
-      {/* 7. The framework — P.E.A.R.L. as proprietary IP */}
+      {/* 7. GEO Farming AI feature — flagship product promo */}
+      <GEOFarmingFeature />
+      {/* 8. The framework — P.E.A.R.L. as proprietary IP */}
       <PearlFramework />
       {/* 8. The evidence — real client results */}
       <ResultsPreview />

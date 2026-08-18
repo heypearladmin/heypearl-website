@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Recent Wins — Live Milestones from Active Engagements | HeyPearl',
   description:
     'Specific AI visibility milestones from real HeyPearl client engagements — tracked as they happen, named by hyperlocal area.',
+  alternates: { canonical: 'https://heypearl.io/results/recent-wins' },
   openGraph: {
     title: 'HeyPearl Recent Wins — Live Client Milestones',
     description: 'Real wins from real engagements. Updated as they happen.',

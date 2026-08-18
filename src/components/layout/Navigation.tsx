@@ -12,7 +12,7 @@ import { cn } from '@/lib/utils';
 
 const DROPDOWN_WIDTH: Record<string, number> = {
   Platform:  560,
-  Solutions: 480,
+  Solutions: 540,
   Results:   320,
   Resources: 480,
   Company:   320,
@@ -109,23 +109,37 @@ export function Navigation() {
                           {item.label === 'Platform' || item.label === 'Solutions' ? (
                             // Two-column grid for Platform and Solutions
                             <div className="grid grid-cols-2 gap-px">
-                              {item.children.map((child) => (
-                                <Link
-                                  key={child.href}
-                                  href={child.href}
-                                  className="group flex flex-col gap-1 rounded-xl p-3.5 hover:bg-[#F8F5F0] transition-colors duration-150"
-                                >
-                                  <span className="text-sm font-semibold text-[#1E3A66] group-hover:text-[#C2185B] transition-colors duration-150 flex items-center gap-1.5">
-                                    {child.label}
-                                    <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-60 transition-opacity -ml-0.5" />
-                                  </span>
-                                  {child.description && (
-                                    <span className="text-xs text-[#64748B] leading-snug">
-                                      {child.description}
+                              {item.children.map((child) => {
+                                const isExternal = child.external || child.href.startsWith('http');
+                                const isFeatured = child.featured;
+                                const sharedClass = `group flex flex-col gap-1 rounded-xl p-3.5 transition-colors duration-150 ${isFeatured ? 'bg-gradient-to-br from-[#1E3A66]/5 to-[#C2185B]/5 border border-[#C2185B]/15 hover:border-[#C2185B]/30 hover:from-[#1E3A66]/8 hover:to-[#C2185B]/8' : 'hover:bg-[#F8F5F0]'}`;
+                                const inner = (
+                                  <>
+                                    <span className="text-sm font-semibold text-[#1E3A66] group-hover:text-[#C2185B] transition-colors duration-150 flex items-center gap-1.5">
+                                      {child.label}
+                                      {isFeatured && <span className="text-[0.55rem] font-bold tracking-wide uppercase px-1.5 py-0.5 rounded bg-[#C2185B] text-white ml-1">Flagship</span>}
+                                      <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-60 transition-opacity -ml-0.5" />
                                     </span>
-                                  )}
-                                </Link>
-                              ))}
+                                    {child.description && (
+                                      <span className="text-xs text-[#64748B] leading-snug">
+                                        {child.description}
+                                      </span>
+                                    )}
+                                    {isFeatured && (
+                                      <span className="text-[0.6rem] text-[#C2185B]/70 font-medium mt-0.5">A HeyPearl Product</span>
+                                    )}
+                                  </>
+                                );
+                                return isExternal ? (
+                                  <a key={child.href} href={child.href} target="_blank" rel="noopener noreferrer" className={sharedClass}>
+                                    {inner}
+                                  </a>
+                                ) : (
+                                  <Link key={child.href} href={child.href} className={sharedClass}>
+                                    {inner}
+                                  </Link>
+                                );
+                              })}
                             </div>
                           ) : (
                             // Single-column for Resources, Company

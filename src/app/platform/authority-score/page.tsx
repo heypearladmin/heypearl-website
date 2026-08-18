@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Authority Score — AI Visibility Measurement | HeyPearl',
   description:
     "HeyPearl's Authority Score is a proprietary scoring system that quantifies your AI visibility across 6 engines, surfaces the gaps costing you recommendations, and tracks your authority progress over time.",
+  alternates: { canonical: 'https://heypearl.io/platform/authority-score' },
   openGraph: {
     title: 'Authority Score — Measure and Track Your AI Visibility',
     description: "The scoring system that tells you exactly where you stand in AI search — and what to fix first.",

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Knowledge Graph — Entity Architecture for AI | HeyPearl',
   description:
     'HeyPearl builds the entity architecture that registers your business as a verified, unambiguous entity across ChatGPT, Perplexity, Gemini, and every major AI engine — so they can cite and recommend you with confidence.',
+  alternates: { canonical: 'https://heypearl.io/platform/knowledge-graph' },
   openGraph: {
     title: 'Knowledge Graph — Entity Architecture for AI Search',
     description: 'Structured entity signals that make your business impossible for AI engines to misidentify or overlook.',
@@ -153,10 +154,10 @@ export default function KnowledgeGraphPage() {
             <div className="flex-1">
               <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
               <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
-                Entity is Layer 01. Everything builds on it.
+                Entity is the foundation. Everything builds on it.
               </h3>
               <p style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.75 }}>
-                PearlOS executes the P.E.A.R.L. sequence — and Entity (E) is the second layer, built immediately after the Process audit. Authority Pages, Reputation signals, and GEO content all depend on a verified entity foundation. Without it, AI engines can't attribute authority to the right business.
+                PearlOS builds entity architecture immediately after the Process audit, before any other module goes live. Authority Pages, Reputation signals, and GEO content all depend on a verified entity foundation. Without it, AI engines can't attribute authority to the right business.
               </p>
             </div>
             <div className="shrink-0">

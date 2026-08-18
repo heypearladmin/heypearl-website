@@ -57,7 +57,7 @@ const nextConfig = {
     return [
       // /services → /solutions (301 — preserves SEO equity)
       { source: '/services',                    destination: '/solutions',                     permanent: true },
-      { source: '/services/geo',                destination: '/solutions/geo',                 permanent: true },
+      { source: '/services/geo',                destination: '/solutions/service-businesses',  permanent: true },
       { source: '/services/heylocal',           destination: '/solutions/service-businesses',  permanent: true },
       // authority-websites → platform/authority-pages (the actual page that exists)
       { source: '/services/authority-websites', destination: '/platform/authority-pages',      permanent: true },

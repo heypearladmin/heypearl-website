@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'GEO Engine — Generative Engine Optimization | HeyPearl',
   description:
     'The HeyPearl GEO Engine is purpose-built Generative Engine Optimization — content, structure, and distribution systems designed to make your business the answer when AI generates responses for your buyers.',
+  alternates: { canonical: 'https://heypearl.io/platform/geo-engine' },
   openGraph: {
     title: 'GEO Engine — Generative Engine Optimization by HeyPearl',
     description: 'Purpose-built GEO tools for the era when AI generates the answers your buyers are reading.',

@@ -778,56 +778,56 @@ Local businesses in low-competition markets often achieve measurable AI citation
   // ─── THE P.E.A.R.L. FRAMEWORK ───────────────────────────────────────────────
 
   [slugify('What does P.E.A.R.L. stand for?')]: {
-    lastUpdated: 'July 2026',
+    lastUpdated: 'August 2026',
     takeaways: [
-      'P.E.A.R.L. stands for Process, Entity, Assets, Reputation, and Leverage.',
-      'Each pillar addresses a distinct layer of how AI engines evaluate and recommend businesses.',
-      'The framework is sequenced — entity before assets, assets before reputation.',
-      'Together the five pillars produce compounding authority that is hard for competitors to replicate quickly.',
-      'The framework is designed for small-to-medium businesses, not enterprise organizations.',
+      'P.E.A.R.L. stands for Process, Efficiency, Automation, Replication, and Leverage.',
+      'Each pillar is a sequential stage — the framework builds a system, not five independent tactics.',
+      'Replication is what turns a single win into a repeatable, reproducible capability across clients and markets.',
+      'Together the five pillars produce compounding output that is hard for competitors to copy quickly.',
+      'The framework applies to any operator building a scalable business, not only Hey Pearl\'s own clients.',
     ],
     body: `## What P.E.A.R.L. stands for
 
-P.E.A.R.L. is Hey Pearl's proprietary framework for building the infrastructure AI engines use to discover, evaluate, and recommend a business. Each letter represents a distinct pillar.
+P.E.A.R.L. is Hey Pearl's operating framework for building a business that runs, and scales, as a system rather than a series of one-off efforts. Each letter represents a distinct, sequential pillar.
 
 ### P — Process
 
-The documented systems that make your business consistently deliverable and independently verifiable. AI engines weight businesses that have published, verifiable processes — case studies, methodology pages, certifications — more heavily than businesses that only claim expertise. Process documentation is the foundation that makes expertise citable.
+The documented, repeatable workflows that make your business consistently deliverable and independently verifiable. AI engines weight businesses that have published, verifiable processes — case studies, methodology pages, certifications — more heavily than businesses that only claim expertise. Process documentation is the foundation everything else is built on.
 
-### E — Entity
+### E — Efficiency
 
-The structured identity layer that allows AI engines to resolve your business as a distinct, consistent entity in their knowledge models. Entity work covers schema markup, NAP consistency, sameAs links, and Google Business Profile completeness. Without a resolved entity, content and reviews float without confident attribution.
+The systematic removal of unnecessary effort from the processes that matter most. Efficiency is what process produces once it is running — faster turnaround, fewer errors, more consistent delivery. It frees capacity that would otherwise be spent re-solving the same problem.
 
-### A — Assets
+### A — Automation
 
-The content library that establishes topical authority in your category. Assets include authority articles, FAQ pages, service pages, case studies, and any content designed to answer the questions your buyers ask AI engines. Assets are what engines cite when they compose a recommendation.
+The use of technology and AI to execute repeatable work without depending on someone remembering to do it. Automated review requests, automated content publishing, automated data consistency checks. Automation is what makes efficiency durable instead of a one-time push.
 
-### R — Reputation
+### R — Replication
 
-The third-party signals that corroborate your entity's claims. Reviews (volume, velocity, specificity), press mentions, industry directory listings, partner features, and citations from authoritative domains. Reputation is the external validation layer that turns entity + assets into trusted recommendations.
+The deliberate reproduction of what works — across a new client, a new market, a new team, or a new workflow — instead of reinventing the solution every time. Replication is what turns a single success into a template, and a template into a standing capability.
 
 ### L — Leverage
 
-The automation and integration infrastructure that allows the other four pillars to compound without requiring constant manual effort. Review request automation, content distribution systems, social proof syndication, and analytics dashboards. Leverage is what converts a one-time sprint into a standing competitive advantage.
+The compounding output that comes from running replicated, automated systems without proportionally increasing manual effort. Leverage is what converts a one-time sprint into a standing competitive advantage.
 
 ## Why the framework is sequenced
 
-Each pillar builds on the one before it. Entity before assets: content published before your entity is resolved accrues credibility slowly. Assets before reputation: reviews that reference non-existent content have less to reinforce. Reputation before leverage: you cannot automate what you have not yet defined and validated.`,
+Each pillar builds on the one before it. Process before efficiency: you cannot remove friction from a workflow that has never been documented. Efficiency before automation: automating a messy process just produces mess faster. Automation before replication: you cannot reproduce a system reliably until it runs consistently on its own. Replication before leverage: leverage is what happens when a proven, repeatable system runs across enough contexts to compound.`,
     comparisonTable: {
       headers: ['Pillar', 'What It Builds', 'Key Outputs'],
       rows: [
-        { Pillar: 'Process', 'What It Builds': 'Verifiable expertise', 'Key Outputs': 'Methodology pages, case studies, certifications' },
-        { Pillar: 'Entity', 'What It Builds': 'AI recognition', 'Key Outputs': 'Schema, GBP, sameAs links, NAP consistency' },
-        { Pillar: 'Assets', 'What It Builds': 'Topical authority', 'Key Outputs': 'Authority articles, FAQ pages, service pages' },
-        { Pillar: 'Reputation', 'What It Builds': 'Third-party trust', 'Key Outputs': 'Reviews, press mentions, directory citations' },
-        { Pillar: 'Leverage', 'What It Builds': 'Compounding systems', 'Key Outputs': 'Automation, analytics, distribution' },
+        { Pillar: 'Process', 'What It Builds': 'Repeatable systems', 'Key Outputs': 'Documented workflows, methodology pages, SOPs' },
+        { Pillar: 'Efficiency', 'What It Builds': 'Reduced friction', 'Key Outputs': 'Faster turnaround, fewer errors, freed capacity' },
+        { Pillar: 'Automation', 'What It Builds': 'Consistent execution', 'Key Outputs': 'AI/software-driven workflows, automated signals' },
+        { Pillar: 'Replication', 'What It Builds': 'Reproducible wins', 'Key Outputs': 'Templates and playbooks deployed across clients or markets' },
+        { Pillar: 'Leverage', 'What It Builds': 'Compounding output', 'Key Outputs': 'Scaled impact without proportional new effort' },
       ],
     },
     relatedQuestions: [
       'Do I have to implement all five pillars at once?',
       'Why does documented process matter for AI visibility?',
       'How does automation create authority signals?',
-      'What makes the framework\'s assets compound?',
+      'Why does replication matter in the P.E.A.R.L. framework?',
     ],
     sources: [
       { label: 'Schema.org — Organization', url: 'https://schema.org/Organization' },
@@ -938,95 +938,82 @@ Automation amplifies your authority signals; it does not create them. You still 
     ],
   },
 
-  [slugify('Why is revenue a pillar in an AI visibility framework?')]: {
-    lastUpdated: 'July 2026',
+  [slugify('Why does replication matter in the P.E.A.R.L. framework?')]: {
+    lastUpdated: 'August 2026',
     takeaways: [
-      'Revenue is the measure of whether your AI visibility investment is working — without it, visibility is a vanity metric.',
-      'The P.E.A.R.L. framework treats revenue as the output layer: visibility → inquiry → conversion → revenue.',
-      'Businesses that track AI-attributed inquiries can measure the financial return on their GEO investment.',
-      'Revenue tracking closes the loop between marketing spend and business outcome.',
-      'GEO without revenue tracking produces good metrics and no accountability.',
+      'Replication is what separates a business that got lucky once from one that has built a genuine system.',
+      'The P.E.A.R.L. framework treats replication as the pillar that turns automation\'s output into a reusable asset.',
+      'Businesses that document and reproduce what works scale faster and more predictably than those solving every new client or market from scratch.',
+      'Replication is what makes a system defensible — competitors can copy a single tactic, but not an entire reproducible operating system.',
+      'Without replication, automation just produces isolated wins instead of a compounding advantage.',
     ],
-    body: `## Why GEO needs a revenue layer
+    body: `## Why a system needs a replication layer
 
-Most AI visibility frameworks stop at the visibility metric: are you appearing in AI answers? This is a necessary question, but it is not sufficient. Visibility without inquiry conversion produces a marketing metric, not a business outcome.
+Most businesses solve a problem well once, then solve it differently — and often worse — the next time, because nothing from the first success was captured in a form that could travel. Process, efficiency, and automation can make one engagement run well. Replication is what makes the next one run just as well, without starting over.
 
-The P.E.A.R.L. framework includes Revenue as a pillar because the purpose of AI visibility is not to appear in answers — it is to generate business.
+The P.E.A.R.L. framework includes Replication as a pillar because a single win is not a system. A system is something you can run again, in a new context, with predictable results.
 
-## The visibility-to-revenue chain
+## What replication looks like in practice
 
-AI visibility produces a chain of outcomes:
+Replication requires capturing a working system in a form that can be reused:
 
-1. **Visibility** — you appear in AI-generated recommendations for relevant queries
-2. **Inquiry** — users who see your recommendation visit your website or contact you directly
-3. **Conversion** — a share of those inquiries become clients or customers
-4. **Revenue** — that conversion rate and average transaction value determine the financial return on your GEO investment
+- **Playbooks and SOPs** that document exactly how a successful engagement was run, not just that it worked
+- **Template systems** for content, onboarding, or service delivery that can be adapted rather than rebuilt
+- **Standardized entity and schema patterns** that deploy consistently across every client or location
+- **Cross-market or cross-client rollout processes** that shorten the time it takes to bring a new engagement to the same standard as your best one
 
-Each link in this chain can be measured. The Revenue pillar is about instrumenting all four links, not just the first.
+## The compounding effect of replication
 
-## How to attribute revenue to AI visibility
+Each time a system is replicated in a new context, it gets refined. The second deployment fixes the edge cases the first one missed. The tenth deployment runs close to error-free. This is the opposite of starting from scratch every time — each repetition makes the next one faster and more reliable.
 
-AI-attributed inquiry tracking requires:
+## Why this creates a moat
 
-- **UTM parameters** on your website links in GBP and citation sources
-- **Source questions** in your intake or inquiry form ("How did you hear about us?")
-- **Call tracking** with source attribution for phone inquiries
-- **Referral source analysis** in your CRM or booking system
-
-With these systems in place, you can calculate the revenue generated per month from AI-driven discovery — and therefore the ROI of your GEO investment.
-
-## The accountability function
-
-Revenue tracking creates accountability that prevents GEO from becoming a perpetual investment without measurable return. If visibility scores improve but revenue does not, the chain is broken somewhere — in conversion, in offer-market fit, or in the quality of the inquiries being generated. That diagnosis is impossible without revenue tracking.`,
+A competitor can read your published methodology and copy a single tactic. They cannot instantly acquire the years of refinement embedded in a system that has been replicated across dozens of engagements. That refinement is what makes replication a durable competitive advantage rather than a one-time efficiency gain.`,
     relatedQuestions: [
       'What does P.E.A.R.L. stand for?',
-      'How do I know if GEO is working?',
-      'What metrics should I track over the 90 days?',
-      'How long does GEO take to show results?',
+      'How does automation create authority signals?',
+      'What makes the framework\'s assets compound?',
+      'Do I have to implement all five pillars at once?',
     ],
     sources: [
-      { label: 'Google Analytics — UTM Parameters', url: 'https://support.google.com/analytics/answer/1033863' },
-      { label: 'Google Search Console', url: 'https://search.google.com/search-console/about' },
+      { label: 'Schema.org — Organization', url: 'https://schema.org/Organization' },
+      { label: 'Google Search Central — E-E-A-T', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content' },
     ],
   },
 
   [slugify("What makes the framework's assets compound?")]: {
-    lastUpdated: 'July 2026',
+    lastUpdated: 'August 2026',
     takeaways: [
-      'Content assets compound through internal linking — each new article strengthens the topical authority of the whole cluster.',
-      'FAQ pages that link to full articles and full articles that link to FAQ pages create a reinforcing citation network.',
-      'Review velocity compounds: each new review raises the probability that the next AI engine update includes your business.',
-      'Schema signals compound with new content — each new page that validates adds to your structured data coverage.',
-      'The compounding effect accelerates after month six when the cluster reaches critical topical mass.',
+      'Efficiency gains compound because removing friction in one workflow frees capacity to improve the next one.',
+      'Automation compounds continuously — it keeps producing signals like reviews, published content, and data consistency checks without additional manual effort.',
+      'Replication compounds across contexts — each new deployment of a system refines it, so the tenth rollout runs more reliably than the first.',
+      'The compounding effect accelerates once a handful of systems have been replicated enough times to become genuinely repeatable.',
+      'This is what makes P.E.A.R.L. a moat rather than a checklist — competitors can copy a single tactic, not an entire compounding system.',
     ],
-    body: `## How authority assets compound over time
+    body: `## How P.E.A.R.L. systems compound over time
 
-A single authority article is a citation candidate. A cluster of twenty internally-linked authority articles covering a topic from multiple angles is a recognized topical authority. AI engines evaluate content clusters differently from isolated pages — a well-structured content hub signals depth of expertise that a single page cannot.
+A single efficient workflow is a small win. A business running a dozen efficient, automated, and replicated systems is operating at a fundamentally different level — because each pillar reinforces the others rather than adding up in isolation.
 
-## The internal linking effect
+## Efficiency compounds first
 
-Each new article you publish strengthens the existing cluster through internal links. An article on "how AI engines evaluate business reputation" links to articles on review velocity, schema markup, and entity strategy. Each internal link tells the engine: this site treats this topic with depth and consistency.
+Every unit of friction removed from a workflow frees capacity. That freed capacity does not sit idle — it gets reinvested into refining the next workflow, or the next client engagement. Efficiency gains stack: the tenth process improvement is easier to find and implement than the first, because the team has more bandwidth and a clearer view of where the remaining friction lives.
 
-The compounding benefit accelerates as the cluster grows. The fifth article in your cluster produces more authority signal than the first, because it has four related articles to reinforce it.
+## Automation compounds continuously
 
-## FAQ-to-article cross-linking
+Automated systems do not compound by getting "more automated" — they compound by running consistently in the background, every day, without depending on anyone remembering to act. An automated review-request sequence produces steady reputation velocity month over month. An automated publishing rhythm keeps first-party content current. The compounding effect is consistency itself: a system that ran flawlessly last month is more likely to run flawlessly next month.
 
-The FAQ page format amplifies compounding because each FAQ page can link to its parent article and to related FAQ pages. An article with eight FAQs generates eight satellite pages, each of which links back to the parent. This creates a hub-and-spoke structure that concentrates topical authority in the central article while distributing it across the full cluster.
+## Replication compounds across contexts
 
-## Review velocity compounds
-
-Each new review raises the baseline for the next engine update evaluation. A business with two reviews that gains three more is at five — still a thin dataset. A business with forty-five reviews that gains three more is demonstrating consistent velocity — a very different signal.
-
-The inflection point for most businesses is around thirty to forty recent reviews (within the last twelve months). Below that threshold, AI engines treat review data as insufficient for confident recommendation. Above it, review velocity becomes a competitive moat that takes competitors months to replicate.
+Each time a proven system is replicated in a new client, market, or team, it gets refined. The second deployment fixes the edge cases the first one missed. By the time a system has been replicated a dozen times, it runs close to error-free — and each new deployment takes less time and produces more reliable results than the last.
 
 ## Why this is a moat
 
-The compound nature of the P.E.A.R.L. assets makes them defensible. A competitor can read your articles and publish their own. They cannot instantly acquire your review history, your topical authority cluster, or your entity consistency across hundreds of platforms. Each month of sustained execution widens the gap.`,
+The compound nature of P.E.A.R.L. systems makes them defensible. A competitor can read about your methodology and attempt to copy a single tactic. They cannot instantly acquire the refinement built into a system that has been replicated across dozens of engagements, or the freed capacity that years of efficiency gains have produced. Each month of sustained execution widens the gap.`,
     relatedQuestions: [
       'What does P.E.A.R.L. stand for?',
-      'What is review velocity and why does it matter?',
-      'Why is reputation harder for competitors to copy than other AI signals?',
-      'What happens after the 90 days are over?',
+      'How does automation create authority signals?',
+      'Why does replication matter in the P.E.A.R.L. framework?',
+      'Do I have to implement all five pillars at once?',
     ],
     sources: [
       { label: 'Google Search Central — Content Clusters', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content' },
@@ -1034,13 +1021,13 @@ The compound nature of the P.E.A.R.L. assets makes them defensible. A competitor
   },
 
   [slugify('Do I have to implement all five pillars at once?')]: {
-    lastUpdated: 'July 2026',
+    lastUpdated: 'August 2026',
     takeaways: [
       'No — the framework is designed to be implemented sequentially, not simultaneously.',
-      'Entity (E) is the only pillar that must be completed before the others can compound.',
-      'Process (P) documentation can begin in parallel with entity work.',
-      'Assets (A) and Reputation (R) are month-two and month-three priorities respectively.',
-      'Leverage (L) — automation — is most valuable after the other four pillars have initial implementations in place.',
+      'Process (P) is the only pillar that must be substantially in place before the others can compound.',
+      'Efficiency (E) improvements can begin as soon as core processes are documented.',
+      'Automation (A) and Replication (R) are typically month-two and month-three priorities respectively.',
+      'Leverage (L) is most valuable after the other four pillars have initial implementations in place.',
     ],
     body: `## The sequence is a feature, not a constraint
 
@@ -1048,26 +1035,26 @@ The P.E.A.R.L. framework is often misread as requiring all five pillars to be ru
 
 ## The only hard dependency
 
-Entity (E) is the one pillar with a hard sequence dependency. Content published before your entity is resolved floats without confident attribution. Reviews earned before you have citable pages have less to reinforce. Entity first is not optional.
+Process (P) is the one pillar with a hard sequence dependency. You cannot remove friction from a workflow that has never been documented, and you cannot automate a process that does not yet exist in a repeatable form. Process first is not optional.
 
 Everything else has more flexibility.
 
 ## What can run in parallel
 
-**Process and Entity** can run simultaneously. While you are auditing and cleaning up entity signals, you can also begin drafting your methodology page and identifying case study candidates. Process documentation does not depend on entity resolution.
+**Efficiency work can begin as soon as core processes are documented.** You do not need every workflow mapped before you start removing friction from the ones you have already written down.
 
-**Early reputation work can overlap with Entity.** Claiming and completing your Google Business Profile is both entity work and the first step in your review program. Sending review requests to your most satisfied recent customers can begin as soon as your GBP is complete.
+**Early automation can overlap with efficiency.** Automating a review-request sequence or a data-consistency check does not require every efficiency gain to be captured first — it just needs a documented process to automate.
 
 ## The sequenced build
 
 A realistic phased approach:
 
-- **Month 1:** Entity + Process foundation
-- **Month 2:** Assets (first two authority articles + FAQ page structure)
-- **Month 3:** Reputation (systematic review program + initial outreach for third-party mentions)
-- **Month 4+:** Leverage (automation layers for review requests, content distribution, analytics alerts)
+- **Month 1:** Process foundation + early efficiency wins on your highest-friction workflows
+- **Month 2:** Automation (systems that execute the documented process without manual follow-through)
+- **Month 3:** Replication (reproducing what worked in the first engagement across new clients, markets, or teams)
+- **Month 4+:** Leverage (compounding the full system into output that scales without proportional new effort)
 
-By month four, all five pillars are in motion. By month six, the compound effects of the full stack begin to show measurable visibility improvements in category and problem queries.`,
+By month four, all five pillars are in motion. By month six, the compound effects of the full stack begin to show measurable results.`,
     relatedQuestions: [
       'What does P.E.A.R.L. stand for?',
       'What should I do in month one?',

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl for Real Estate Teams — Unified AI Authority for Team Leads',
   description:
     'Your team has the talent. HeyPearl builds the unified AI authority that makes your team brand the one AI recommends — across every market, every specialty, every team member.',
+  alternates: { canonical: 'https://heypearl.io/solutions/teams' },
   openGraph: {
     title: 'HeyPearl for Real Estate Teams — Build the Team Brand AI Recommends',
     description: 'AI authority infrastructure for team leads who want a unified brand presence that amplifies every agent on the team.',

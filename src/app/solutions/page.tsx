@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Solutions — HeyPearl for Your Business | HeyPearl',
   description:
     'HeyPearl builds the AI authority infrastructure for real estate agents, brokerages, service businesses, teams, and enterprise organizations. Find the solution built for your specific challenges.',
+  alternates: { canonical: 'https://heypearl.io/solutions' },
   openGraph: {
     title: 'HeyPearl Solutions — AI Authority for Your Business',
     description: 'The AI authority platform built around your specific business model, team size, and growth goals.',

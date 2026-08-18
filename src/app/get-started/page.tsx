@@ -10,9 +10,15 @@ export const metadata: Metadata = {
   title: 'Get Started with HeyPearl — AI Authority Platform Pricing & Plans',
   description:
     'See how HeyPearl works and what it costs. Every engagement starts with a strategy call — we evaluate your AI visibility, identify the gaps, and build the authority system that gets you recommended.',
+  alternates: { canonical: 'https://heypearl.io/get-started' },
   openGraph: {
     title: 'Get Started with HeyPearl — AI Authority Platform Pricing & Plans',
     description: 'See how HeyPearl works and what it costs. Strategy calls are founder-led. Book yours to get an AI visibility evaluation.',
+    images: ['/images/og/og-default.webp'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/og/og-default.webp'],
   },
 };
 

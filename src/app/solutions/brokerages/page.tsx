@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl for Brokerages — AI Authority at the Brokerage Level',
   description:
     'AI recommends agents, not brokerages — unless you build the authority to change that. HeyPearl builds the brokerage-level AI infrastructure that makes your brand the one buyers recognize and trust.',
+  alternates: { canonical: 'https://heypearl.io/solutions/brokerages' },
   openGraph: {
     title: 'HeyPearl for Brokerages — Build the Brand AI Recommends',
     description: 'AI authority infrastructure for brokerage owners who want their brand to lead the conversation, not just the agents beneath it.',

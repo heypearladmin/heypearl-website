@@ -5,7 +5,7 @@ export type PearlPillar = {
   description: string;
 };
 
-export const pearlAcronym = 'Process · Efficiency · Automation · Revenue · Leverage';
+export const pearlAcronym = 'Process · Efficiency · Automation · Replication · Leverage';
 
 export const pearlSummary =
   'P.E.A.R.L. is the operating philosophy beneath HeyPearl. Five principles that turn modern businesses into systems that compound.';
@@ -34,10 +34,10 @@ export const pearlPillars: PearlPillar[] = [
   },
   {
     letter: 'R',
-    word: 'Revenue',
-    tagline: 'Convert with intention.',
+    word: 'Replication',
+    tagline: 'Reproduce what works.',
     description:
-      'Visibility without conversion is leakage. Every layer is wired into a revenue path you can measure.',
+      'A system proven once is only valuable if it can run again. We reproduce the systems that work across clients, markets, and teams — so success is not a one-off.',
   },
   {
     letter: 'L',

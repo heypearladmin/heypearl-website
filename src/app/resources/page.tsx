@@ -9,6 +9,7 @@ import { Reveal } from '@/components/ui/Reveal';
 export const metadata = {
   title: 'AI Authority Library — HeyPearl Resources',
   description: 'The definitive educational resource for AI Authority Infrastructure. Learn how AI systems choose which businesses to recommend — and how to build the signals they trust.',
+  alternates: { canonical: 'https://heypearl.io/resources' },
   openGraph: {
     title: 'AI Authority Library — HeyPearl Resources',
     description: 'The definitive educational resource for AI Authority Infrastructure. Learn how AI systems choose which businesses to recommend — and how to build the signals they trust.',

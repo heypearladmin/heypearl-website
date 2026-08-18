@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Authority Websites & Pages — AI-Ready Page Architecture | HeyPearl',
   description:
     'What is an authority website? HeyPearl builds authority pages and site architecture that make your business citable by AI — structured for entity recognition, topical authority, and AI recommendations.',
+  alternates: { canonical: 'https://heypearl.io/platform/authority-pages' },
   openGraph: {
     title: 'Authority Websites & Pages — AI-Ready Architecture by HeyPearl',
     description: 'Build an authority website AI engines trust and cite. HeyPearl engineers the page infrastructure — schema, entity clarity, topical depth — that earns AI recommendations.',

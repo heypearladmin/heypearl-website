@@ -2,6 +2,8 @@ export type NavItem = {
   label: string;
   href: string;
   description?: string;
+  external?: boolean;
+  featured?: boolean;
   children?: NavItem[];
 };
 
@@ -47,29 +49,31 @@ export const primaryNav: NavItem[] = [
     href: '/solutions',
     children: [
       {
-        label: 'Real Estate',
-        href: '/solutions/real-estate-agents',
-        description: 'Authority infrastructure for agents, brokers, and property groups.',
+        label: 'GEO Farming AI',
+        href: 'https://start.geofarming.ai',
+        external: true,
+        featured: true,
+        description: 'AI-powered Circle Prospecting and neighborhood marketing for agents.',
       },
       {
-        label: 'Service Businesses',
-        href: '/solutions/service-businesses',
-        description: 'AI visibility for local and regional service providers.',
+        label: 'PearlOS',
+        href: '/platform/pearlos',
+        description: 'Your AI operating system for running and scaling your real estate business.',
       },
       {
-        label: 'Teams',
-        href: '/solutions/teams',
-        description: 'Collaborative authority building for multi-person teams.',
+        label: 'AI Authority',
+        href: '/platform/authority-score',
+        description: 'Build the digital authority that AI search engines trust and recommend.',
       },
       {
-        label: 'Brokerages',
-        href: '/solutions/brokerages',
-        description: 'Enterprise-grade AI authority for brokerage networks.',
+        label: 'AI Operations',
+        href: '/platform/pearlos',
+        description: 'Automate workflows, follow-up, and client communication with AI.',
       },
       {
-        label: 'Enterprise',
-        href: '/solutions/enterprise',
-        description: 'Custom authority infrastructure at organizational scale.',
+        label: 'AI Visibility',
+        href: '/platform/ai-visibility',
+        description: 'Dominate Google, AI Search, GEO, AEO, and local search visibility.',
       },
     ],
   },
@@ -122,7 +126,7 @@ export const primaryNav: NavItem[] = [
       },
       {
         label: 'Founder',
-        href: '/about#founder',
+        href: '/about/founder',
         description: 'Misti Bruton — founder, practitioner, category creator.',
       },
       {
@@ -135,6 +139,13 @@ export const primaryNav: NavItem[] = [
 ];
 
 export const footerNav = {
+  products: [
+    { label: 'GEO Farming AI',   href: 'https://start.geofarming.ai', external: true },
+    { label: 'PearlOS',          href: '/platform/pearlos' },
+    { label: 'AI Authority',     href: '/platform/authority-score' },
+    { label: 'AI Operations',    href: '/platform/pearlos' },
+    { label: 'AI Visibility',    href: '/platform/ai-visibility' },
+  ],
   platform: [
     { label: 'PearlOS',           href: '/platform/pearlos' },
     { label: 'Authority Pages',   href: '/platform/authority-pages' },
@@ -157,7 +168,7 @@ export const footerNav = {
   ],
   company: [
     { label: 'About',          href: '/about' },
-    { label: 'Founder',        href: '/about#founder' },
+    { label: 'Founder',        href: '/about/founder' },
     { label: 'Results',        href: '/results' },
     { label: 'Get Started',     href: '/get-started' },
     { label: 'Contact',        href: '/contact' },

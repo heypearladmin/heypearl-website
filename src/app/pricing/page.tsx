@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: 'Pricing — Authority Infrastructure Plans by Hey Pearl',
   description:
     'Hey Pearl pricing. Two product families — GEO and HeyLocal — with transparent plans for every stage of AI authority building. From foundational visibility to category-leading AI recommendation.',
+  alternates: { canonical: 'https://heypearl.io/pricing' },
   openGraph: {
     title: 'Pricing — Authority Infrastructure Plans by Hey Pearl',
     description: 'Transparent pricing for GEO and HeyLocal authority infrastructure. Every plan is a complete system, not a marketing retainer.',

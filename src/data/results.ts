@@ -511,6 +511,24 @@ export const RECENT_WINS: Win[] = [
     dayFromActivation: 68,
     month: 'Feb 2026',
   },
+
+  // ── December 2025 ─────────────────────────────────────────────────────────
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: '70 GBP direction requests in the first full month — consistent local map presence from activation day, with 435 profile impressions across search and maps',
+    engine: 'Google Maps',
+    dayFromActivation: 39,
+    month: 'Dec 2025',
+  },
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: '11,101 Facebook media views in month 2 — 4,060 unique post impressions across 89 posts, all organic, as content began finding audiences beyond the existing follower base',
+    engine: 'Facebook',
+    dayFromActivation: 39,
+    month: 'Dec 2025',
+  },
 ];
 
 // ─── Testimonials ─────────────────────────────────────────────────────────────

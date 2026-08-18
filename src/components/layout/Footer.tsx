@@ -78,7 +78,7 @@ export function Footer() {
                 {site.tagline} Hey Pearl is the authority infrastructure for the AI search era.
               </p>
               <p className="text-xs max-w-sm leading-relaxed" style={{ color: 'rgba(248,245,240,0.55)' }}>
-                P.E.A.R.L.: Process &middot; Efficiency &middot; Automation &middot; Revenue &middot; Leverage.
+                P.E.A.R.L.: Process &middot; Efficiency &middot; Automation &middot; Replication &middot; Leverage.
               </p>
               <p className="text-xs uppercase tracking-widest" style={{ color: 'rgba(248,245,240,0.4)' }}>
                 HeyPearl.io, maker of PearlOS
@@ -143,7 +143,44 @@ export function Footer() {
             </div>
 
             {/* Link columns */}
-            <div className="lg:col-span-7 grid sm:grid-cols-3 gap-10">
+            <div className="lg:col-span-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+              <div>
+                <p
+                  className="text-[0.72rem] font-medium uppercase tracking-widest"
+                  style={{ color: 'rgba(248,245,240,0.5)' }}
+                >
+                  Products
+                </p>
+                <ul className="mt-5 flex flex-col gap-3">
+                  {footerNav.products.map((l) => (
+                    <li key={l.label}>
+                      {l.external ? (
+                        <a
+                          href={l.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm transition flex items-center gap-1"
+                          style={{ color: l.label === 'GEO Farming AI' ? 'rgba(194,24,91,0.85)' : 'rgba(248,245,240,0.75)' }}
+                          onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? '#C2185B' : '#F8F5F0'; }}
+                          onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? 'rgba(194,24,91,0.85)' : 'rgba(248,245,240,0.75)'; }}
+                        >
+                          {l.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={l.href}
+                          className="text-sm transition"
+                          style={{ color: 'rgba(248,245,240,0.75)' }}
+                          onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = '#F8F5F0'; }}
+                          onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(248,245,240,0.75)'; }}
+                        >
+                          {l.label}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <div>
                 <p
                   className="text-[0.72rem] font-medium uppercase tracking-widest"

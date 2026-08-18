@@ -69,11 +69,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: faq.postPublishedAt,
       authors: [site.founder.name],
+      images: [site.ogImage],
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: `${faq.q} | Hey Pearl`,
       description,
+      images: [site.ogImage],
     },
   };
 }

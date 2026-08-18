@@ -105,7 +105,7 @@ const organizationSchema = {
     height: 512,
   },
   description:
-    'Authority infrastructure for the AI search era. Hey Pearl Agency LLC operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — for modern businesses.',
+    'Authority infrastructure for the AI search era. Hey Pearl Agency LLC operationalizes the P.E.A.R.L. framework — Process, Efficiency, Automation, Replication, Leverage — for modern businesses.',
   foundingDate: '2023',
   founder: {
     '@type': 'Person',

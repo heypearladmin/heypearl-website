@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'PearlOS — The AI Authority Operating System | HeyPearl',
   description:
     'PearlOS is the operating system behind every HeyPearl engagement. It orchestrates entity signals, monitors 6 AI engines in real time, and executes the P.E.A.R.L. framework so your authority compounds as a system.',
+  alternates: { canonical: 'https://heypearl.io/platform/pearlos' },
   openGraph: {
     title: 'PearlOS — The AI Authority Operating System',
     description:
@@ -281,7 +282,7 @@ export default function PearlOSPage() {
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
                 <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
-                  The P.E.A.R.L. Sequence
+                  The PearlOS Execution Sequence
                 </span>
               </div>
               <h2
@@ -299,7 +300,7 @@ export default function PearlOSPage() {
                 <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Executed in order.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
-                PearlOS enforces the P.E.A.R.L. sequence because the order matters. Entity architecture must precede authority content. Authority must precede reputation. Reputation must precede leverage. PearlOS ensures no step is skipped, no layer is built on a weak foundation.
+                PearlOS enforces this build order because the order matters. Entity architecture must precede authority content. Authority must precede reputation. Reputation must precede visibility monitoring and leverage. This execution stack runs on top of the P.E.A.R.L. framework — Process, Efficiency, Automation, Replication, Leverage — the operating philosophy that governs every engagement. PearlOS ensures no step is skipped, no layer is built on a weak foundation.
               </p>
             </div>
 

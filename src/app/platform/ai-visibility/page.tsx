@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'AI Visibility — Real-Time AI Search Monitoring | HeyPearl',
   description:
     'AI Visibility tracks how ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews represent your business — with alerts when your AI presence changes and intelligence that drives your authority strategy.',
+  alternates: { canonical: 'https://heypearl.io/platform/ai-visibility' },
   openGraph: {
     title: 'AI Visibility — Monitor Your Presence Across 6 AI Engines',
     description: 'Real-time monitoring of how every major AI engine represents your business — so you know exactly what AI is saying about you.',

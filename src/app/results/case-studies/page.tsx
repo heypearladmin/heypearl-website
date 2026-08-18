@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Case Studies — Documented AI Authority Outcomes | HeyPearl',
   description:
     'In-depth case studies from real PearlOS engagements — challenge, solution, measured results, and client perspective. Client details anonymized by request.',
+  alternates: { canonical: 'https://heypearl.io/results/case-studies' },
   openGraph: {
     title: 'HeyPearl Case Studies — Real Clients, Documented Outcomes',
     description: 'In-depth engagement breakdowns from real HeyPearl clients. Not testimonials — evidence.',

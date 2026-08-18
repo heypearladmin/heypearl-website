@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'The Platform — HeyPearl AI Authority Infrastructure',
   description:
     'PearlOS and five purpose-built modules — one integrated system that makes your business the authority AI recommends. Authority Pages, Authority Score, Knowledge Graph, AI Visibility, and GEO Engine.',
+  alternates: { canonical: 'https://heypearl.io/platform' },
   openGraph: {
     title: 'The HeyPearl Platform — AI Authority Infrastructure',
     description:

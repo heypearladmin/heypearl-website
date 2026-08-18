@@ -19,6 +19,340 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "neighborhood-marketing-ai-era-real-estate",
+    eyebrow: "Hyperlocal AI Strategy",
+    seoTitle: "Neighborhood Marketing in the AI Era: How Real Estate Agents Can Own Their Local Market in AI Search",
+    metaDescription: "Discover how real estate agents build hyperlocal AI authority — becoming the agent AI recommends for specific neighborhoods, subdivisions, and ZIP codes — not just 'real estate agent near me.'",
+    h1: "Neighborhood Marketing in the AI Era: How Real Estate Agents Can Own Their Local Market in AI Search",
+    excerpt: "Being visible in AI search citywide is table stakes. The agents winning in 2026 are the ones AI recommends for specific neighborhoods, subdivisions, and micro-markets. Here is how to build the hyperlocal AI authority that turns your farm area into your exclusive territory.",
+    quickAnswer: "Hyperlocal AI authority means becoming the AI-recommended agent for a specific neighborhood, subdivision, or ZIP code. To build it: create dedicated neighborhood content pages, earn reviews that mention specific streets and communities, build citations on hyperlocal directories, and maintain a Google Business Profile that signals geographic depth. AI engines surface neighborhood-specific agents because they have concentrated, verifiable authority signals for a defined geography — something broad city-level profiles cannot match.",
+    publishedAt: "2026-08-13",
+    readTime: "9 min read",
+    image: "/images/website-blog-neighborhood-ai-authority.webp",
+    content: `## The neighborhood authority gap in real estate AI search
+
+Most real estate agents compete for broad local search terms: "real estate agent in [city]," "homes for sale in [city]," "top realtor [city]." In traditional search, this made sense — a page that ranked for "[city] real estate" could capture the entire market.
+
+AI-powered search has fractured that model.
+
+When someone asks ChatGPT or Perplexity "who should I use to sell my home in the Ridgewood subdivision?" or "which agent knows the downtown loft market?" — they are not looking for the agent who dominates the city. They are looking for the agent who knows that specific neighborhood. And AI engines, increasingly, can tell the difference.
+
+The agents winning neighborhood-level AI recommendations are not necessarily the highest-volume producers. They are the ones who have built concentrated, verifiable authority signals for a specific geographic area — the agents who have made a neighborhood their entity.
+
+## How AI engines understand geographic authority
+
+AI engines do not evaluate geographic authority the way humans do. A human buyer might be impressed by years of experience or a high-volume production number. An AI engine is looking for something different: structured, corroborating signals that a specific entity is associated with a specific geography.
+
+These signals include:
+
+- Content that explicitly covers the neighborhood (pages, posts, articles mentioning the area by name)
+- Reviews that reference the neighborhood, street names, or community features
+- Citations on local directories that associate the agent's name and contact information with that geographic area
+- A Google Business Profile that mentions service areas, neighborhoods, and property types specific to the farm area
+- Entity mentions across local publications, neighborhood associations, and community resources
+
+When these signals exist in sufficient concentration around a defined geography, AI engines develop confidence that this agent is the neighborhood authority. When they do not exist — when an agent's digital footprint is broad but shallow — AI engines have no mechanism to surface them for hyperlocal queries.
+
+## The One-Agent-Per-Market strategy
+
+The most effective hyperlocal AI authority model is the One-Agent-Per-Market strategy: focus all authority-building signals on a single, defined geography rather than spreading across multiple areas.
+
+This runs counter to the instinct most agents have, which is to be visible everywhere. But AI engines reward depth over breadth. An agent with 200 pieces of neighborhood-specific content, 80 reviews mentioning the same ZIP code, and consistent citations on hyperlocal directories will outperform an agent with 2,000 general real estate posts and 400 city-level reviews every time a neighborhood-specific query fires.
+
+Define your market before building authority. A neighborhood authority is not someone who has "done deals there." It is someone whose entire digital identity is organized around that geography.
+
+### What a defined market looks like
+
+A specific subdivision, planned community, or condo building. A named neighborhood with distinct identity — a historic district, an arts district, a waterfront community. A tight ZIP code with cohesive character. A school district boundary that buyers consistently use as a filter.
+
+The tighter and more definable the geography, the faster authority builds. A neighborhood of 800 homes is easier to own in AI search than "the entire west side of the city."
+
+## Building neighborhood-specific content
+
+The foundation of hyperlocal AI authority is content that is explicitly, specifically about your farm area. Not content about real estate generally. Content about Willow Creek, about the Pearl District, about the 78232 ZIP code.
+
+### Neighborhood guide pages
+
+Every agent farming a specific area should have a dedicated page for that neighborhood — a comprehensive, continuously updated guide that covers neighborhood character and lifestyle, price ranges and market trends for the specific area, schools, walkability, proximity to employment, current and recent listings, and local amenities, restaurants, and community features.
+
+This page should be refreshed quarterly and linked prominently from the homepage and services pages. It is the cornerstone of neighborhood entity authority.
+
+### Hyperlocal blog content
+
+Beyond the neighborhood guide, regular content that mentions the area by name builds the topical depth AI engines need to develop confidence in the agent's authority:
+
+- "Sold above asking: what 3 recent closings in [neighborhood] taught me"
+- "What buyers need to know before making an offer in [subdivision] in 2026"
+- "The renovation projects that move the needle on resale value in [neighborhood]"
+- "[Neighborhood] market update: Q3 2026 pricing trends"
+
+Each piece of content adds a data point that reinforces the agent-geography association in AI engine memory.
+
+### Neighborhood-specific video content
+
+Video content indexed by AI-powered search engines adds a distinct signal category. A YouTube channel with 20 neighborhood walkthrough videos — each titled and described with the neighborhood name — is a powerful hyperlocal authority signal. These videos also appear in Google AI Overviews for local lifestyle queries and serve as corroborating evidence when AI engines cross-reference sources.
+
+## Generating neighborhood-specific reviews
+
+Reviews are one of the highest-weighted AI citation signals, and the content of reviews matters as much as their volume. A review that says "great agent, very professional" is a generic positive signal. A review that says "we sold our home on Birchwood Drive in Timberline Estates with [agent name] — she knew every comparable sale in the neighborhood and helped us price with confidence" is a hyperlocal authority signal.
+
+Getting neighborhood-specific reviews requires a deliberate ask strategy:
+
+- Request reviews at closing with a prompt that includes the neighborhood name
+- Provide a review template that makes it easy for clients to mention the specific area
+- Respond to all reviews in a way that confirms and reinforces the geographic context — "Thank you — it was a pleasure helping you sell in Timberline Estates. The market there has been strong, and I am glad we could get you above asking."
+
+The response itself adds another neighborhood citation to your Google Business Profile content, which AI engines index alongside the reviews themselves.
+
+## Hyperlocal citations and directory listings
+
+Hyperlocal citations — your business name, address, and phone number on geographically relevant directories — create the coverage that reinforces neighborhood authority. Beyond general real estate directories, these include:
+
+- Neighborhood association websites
+- Community Facebook groups and their linked resources
+- Local business improvement district directories
+- Hyperlocal news sites and community blogs
+- School district parent resources
+- Community event calendars
+
+Each consistent citation on a neighborhood-specific platform tells AI engines that this agent is recognized by the community itself — not just by their own marketing.
+
+## Google Business Profile optimization for neighborhood authority
+
+Your Google Business Profile is one of the most directly readable data sources AI engines have for understanding your geographic authority. Optimizing it for neighborhood authority means being specific where most agents are general.
+
+**Service area specificity:** List every neighborhood, subdivision, and ZIP code you serve — not just the city. AI engines parse this data when routing neighborhood-specific queries.
+
+**Review responses with geography:** Every review response is an opportunity to mention the specific area where you worked. Do it consistently. Over time, this creates a searchable record of hyperlocal activity.
+
+**Google Posts with neighborhood content:** Weekly Google Posts that mention specific neighborhoods create a continuous update stream that signals active, current expertise in those areas.
+
+**Q&A section population:** Populate the Q&A section of your GBP with neighborhood-specific questions and answers. "Do you work in [subdivision]?" answered with "Yes — I have completed X transactions in [subdivision] and know the market deeply." These answers are indexed by AI engines as additional authority signals.
+
+## Measuring your neighborhood AI visibility
+
+Visibility tracking for hyperlocal AI authority requires testing neighborhood-specific queries rather than general ones:
+
+- "[Agent name] [neighborhood name]" — does your name appear with the neighborhood?
+- "Best real estate agent in [neighborhood name]" — do you appear?
+- "Who knows the [neighborhood] market?" — are you cited?
+- "Real estate agent [subdivision name]" — do you show up?
+
+Run these queries across ChatGPT, Perplexity, and Google AI Mode monthly. Document which queries surface you and which do not. The gaps reveal exactly where additional content and citation signals are needed.
+
+**Tip:** Screenshot and log your AI search results monthly. AI visibility changes as content ages and new signals accumulate — having a documented baseline makes it possible to measure whether your neighborhood authority is building over time.
+
+## Common mistakes that keep agents generic in AI search
+
+**Spreading content across too many neighborhoods:** Publishing one post about Area A, one about Area B, and one about Area C signals expertise in none of them. AI engines see breadth without depth and default to city-level generalists.
+
+**Using city-level keywords instead of neighborhood-level:** "Austin real estate agent" and "Tarrytown real estate agent" are different categories of query. The first generates city-wide competition. The second has far fewer competitors — and AI engines can satisfy it with a neighborhood authority.
+
+**Generic review text:** Coaching clients to mention specific streets, communities, and property types takes 30 seconds of conversation at closing and produces a permanently visible neighborhood signal.
+
+**Ignoring the GBP service area:** A Google Business Profile that lists the city without neighborhood specificity tells AI engines exactly as much as a business card that says "real estate, Texas."
+
+**No neighborhood page to link to:** All the reviews, posts, and citations in the world need a destination — a neighborhood guide page that serves as the authoritative hub. Without it, the signals are dispersed and their compounding effect is lost.`,
+    faq: [
+      {
+        q: "How long does it take to build neighborhood AI authority?",
+        a: "Most agents see measurable improvement in hyperlocal AI visibility within 90 to 120 days of consistent neighborhood-specific activity — content publication, review generation, and GBP optimization. Full neighborhood ownership, where AI engines consistently surface the agent for neighborhood queries without a clear competitor alternative, typically takes 6 to 12 months of focused effort."
+      },
+      {
+        q: "How many neighborhood-specific pieces of content do I need?",
+        a: "Start with a comprehensive neighborhood guide page — the foundational authority hub — then build to at least 12 to 24 pieces of neighborhood-specific content in the first year: monthly market updates, transaction stories, community spotlights, and buyer/seller guides specific to the area. Consistency matters more than volume; a new piece of neighborhood content every two to three weeks outperforms a batch published all at once."
+      },
+      {
+        q: "Should I focus on one neighborhood or several?",
+        a: "Start with one. The One-Agent-Per-Market strategy works because AI authority compounds — concentrated signals in a single geography build faster than dispersed signals across many. Once you have established clear neighborhood authority in one area, you can expand to adjacent markets while maintaining depth in your primary farm."
+      },
+      {
+        q: "Do neighborhood-specific reviews really affect AI recommendations?",
+        a: "Yes — and significantly. AI engines parse review content, not just review count. A review that mentions a specific neighborhood, street, or subdivision by name is a direct geographic authority signal. Systematically coaching clients to mention the specific area in their reviews is one of the highest-leverage actions in hyperlocal AI visibility strategy."
+      },
+      {
+        q: "What if my neighborhood is not well-known or lacks online resources?",
+        a: "This is actually an advantage. Less-known neighborhoods have fewer competitors for AI recommendation slots, and the barrier to becoming the recognized authority is lower. Creating content where little or none exists makes you the default source — the entity AI engines have no choice but to surface when the query fires."
+      }
+    ],
+    conclusion: `The agents who win neighborhood-level AI recommendations in the next 24 months will not be the ones who happened to be active in an area. They will be the ones who deliberately built concentrated authority signals — content, reviews, citations, and GBP data — that gave AI engines no ambiguity about who owns a market. That work is available to any agent willing to do it. The window before competitors figure this out is still open.`,
+    internalLinks: [
+      { label: "The Real Estate Agent's Complete AI Visibility Playbook", href: "/insights/ai-visibility-real-estate-agents-brokerages" },
+      { label: "Local AI Search Optimization for Service Businesses", href: "/insights/local-ai-search-optimization" },
+      { label: "Reputation Signals That Drive AI Recommendations", href: "/insights/reputation-signals-ai-era-reviews-recommendations" },
+      { label: "How to Audit Your AI Search Visibility in 30 Minutes", href: "/insights/audit-your-ai-search-visibility" },
+      { label: "The P.E.A.R.L. Framework for AI-Ready Businesses", href: "/insights/pearl-framework-building-ai-ready-businesses" }
+    ],
+    imagePrompt: "Aerial editorial photograph looking down at a quiet, tree-lined residential neighborhood on a warm afternoon — houses with green lawns, gently curved streets, a small community park visible, dappled sunlight through mature trees, no people or cars in focus — 1600x900 pixels, no text, logos, or watermarks, realistic photography, warm natural daylight tones",
+    imageFilename: "website-blog-neighborhood-ai-authority.webp",
+  },
+  {
+    slug: "how-to-write-content-ai-cites",
+    eyebrow: "Content for GEO",
+    seoTitle: "How to Write Content That AI Actually Cites: Format, Structure, and Signals That Earn AI Recommendations",
+    metaDescription: "Learn the exact content format, structure, and writing signals that make AI engines like ChatGPT, Perplexity, and Google AI Overviews cite and recommend your business — with a practical citation-first framework.",
+    h1: "How to Write Content That AI Actually Cites: The Format, Structure, and Signals That Earn AI Recommendations",
+    excerpt: "Most business content is invisible to AI engines — not because the topic is wrong, but because the format is. AI engines extract, synthesize, and cite. Content that is not built for extraction does not get cited. Here is the citation-first writing framework that changes that.",
+    quickAnswer: "AI engines cite content that answers questions directly in the opening paragraph, uses structured headings and short paragraphs, contains attributed factual claims, and appears on a site with established topical authority. The format matters as much as the topic: answer-first structure, Q&A sections, and scannable layouts dramatically increase citation probability across ChatGPT, Perplexity, and Google AI Overviews.",
+    publishedAt: "2026-08-10",
+    readTime: "10 min read",
+    image: "/images/website-blog-content-ai-cites.webp",
+    content: `## Why most business content is invisible to AI
+
+The majority of business content published today — blogs, service pages, case studies — is written for human browsing behavior: long paragraphs, narrative flow, value-building structure before the answer arrives. That model worked when search engines ranked pages and humans decided which to click. It does not work when an AI engine reads your page and decides whether to synthesize it into a response.
+
+AI engines are not reading for enjoyment. They are parsing for extractable, attributable answers. Pages that take four paragraphs to get to the point are pages that get skipped. Pages that answer the question in the first line — and then support that answer with structure — are the ones that get cited.
+
+This is not a minor optimization. It is a fundamental rewrite of what "good content" means in 2026.
+
+## The citation-first content model
+
+Traditional content writing builds toward the answer: context, backstory, problem statement, then the solution. Citation-first content inverts this completely.
+
+The answer comes first. The headline states what the article covers. The opening paragraph delivers the core claim directly. The body expands, supports, and contextualizes. The FAQ section catches follow-on questions. The conclusion reinforces the authoritative position.
+
+This structure is not accidental — it mirrors how AI engines consume content. Perplexity runs a retrieval query, reads the top results, and extracts the most direct, attributable answer. Google AI Overviews synthesizes from pages it has already established as authoritative. ChatGPT, when searching live, skims for clear declarative sentences it can attribute to a source.
+
+Pages structured in citation-first format get extracted more consistently because their answers are findable in less reading time.
+
+## The six structural elements that drive AI citations
+
+### 1. The direct answer lede
+
+Every article, service page, and FAQ should open with a single, complete, standalone answer to the implied question. Not a teaser. Not a promise that the answer is coming. The answer itself.
+
+For a page about local SEO for service businesses: "Service businesses improve local AI visibility by claiming and fully completing their Google Business Profile, generating consistent reviews with location-specific keywords, and maintaining identical NAP data across all directories."
+
+That sentence — before any additional context — is what AI engines extract. The rest of the page earns the citation and provides supporting depth.
+
+### 2. Header-structured hierarchy
+
+Use H2 and H3 headers as navigational signals, not decorative dividers. Each H2 should be a complete question or statement that stands on its own. AI engines scan header hierarchies to understand what a page covers before reading the body.
+
+Weak headers: "More Tips" / "Additional Considerations" / "Other Factors"
+
+Strong headers: "How Google AI Overviews Select Local Business Citations" / "Why Review Velocity Matters More Than Review Count in 2026" / "What to Do When AI Gets Your Business Information Wrong"
+
+Headers written as answerable questions are more likely to be extracted as standalone answer units — snippets AI engines can surface for related queries even beyond your primary keyword.
+
+### 3. Short, declarative paragraph structure
+
+Target 2 to 4 sentences per paragraph. Each paragraph should make a single, complete point. AI engines parse paragraph-by-paragraph when extracting answer candidates. Long paragraphs with multiple ideas bury the extractable content and reduce the confidence score of any individual claim.
+
+The most-cited paragraphs in GEO research are the ones where the core claim appears in the first sentence, the support appears in the second, and the paragraph ends. That structure is machine-readable in a way that narrative prose is not.
+
+### 4. Explicit attribution markers
+
+AI engines assign higher confidence to attributed claims than to unattributed assertions. This means identifying the source, the expertise, or the context behind a claim within the sentence itself.
+
+Instead of: "Response time affects AI recommendations."
+
+Write: "Analysis of AI engine responses across 200 queries found that businesses with sub-2-hour review response rates appear in AI-recommended results at significantly higher rates than businesses with no review responses."
+
+The attribution does not need to be a hyperlink. A named study, a specific observation, or a verifiable metric with source context is enough to make the claim more extractable and more confidently cited.
+
+### 5. FAQ sections as citation capture
+
+FAQ sections are the highest-yield structural element in AI-optimized content. They directly mirror how AI engines process natural language queries: a question is posed, an answer is delivered.
+
+Each FAQ item should follow this format:
+- The question, written as a user would ask it naturally
+- A direct answer in the first sentence
+- 2 to 3 sentences of supporting context
+
+FAQPage schema markup applied to these sections explicitly signals their structure to AI indexers. This is one of the few schema types that directly influences how Google AI Overviews surface FAQ content as answer candidates. Perplexity and ChatGPT also weight Q&A-structured content more heavily in their retrieval models.
+
+### 6. Internal linking as topical authority evidence
+
+Internal links between related pages signal to AI engines that a site has comprehensive coverage of a topic. Pages that exist in isolation — without links to related content on the same domain — look like one-off articles rather than the output of a topical authority.
+
+When you write about "Google Business Profile optimization," the page should link to related pages about review management, local AI search, NAP consistency, and entity schema. This creates the web of coverage that defines topical authority in AI visibility systems — and topical authority is what earns the baseline trust that makes individual pages citable.
+
+## What content length signals to AI engines
+
+Content length is a secondary factor — relevance and structure matter more. But length patterns do signal intent and depth.
+
+Pages under 500 words are treated as quick-answer resources. They work for highly specific factual queries but rarely as citations for complex or strategic questions.
+
+Pages between 800 and 2,500 words — the range most business content targets — perform well if well-structured. This is the range where structure matters most: a disorganized 1,500-word article will be outperformed by a tight 900-word piece with clear headers, direct answers, and a strong FAQ section.
+
+Pages over 2,500 words signal deep domain coverage. They are more likely to establish topical authority but require even stricter structural discipline. Long-form content with poor organization is penalized by AI engines the same way it is penalized by human readers — the extractable answer is never found.
+
+## The content types AI engines cite most
+
+In order of citation frequency across ChatGPT, Perplexity, and Google AI Overviews:
+
+1. **How-to guides with numbered steps** — step-by-step format is inherently extractable
+2. **Comparison articles** ("X vs Y for [use case]") — answers a specific decision query
+3. **Definition pages** ("What is [term]?") — fills knowledge graph gaps directly
+4. **FAQ pages** — directly mimics query-response format
+5. **Statistics and data compilations** — high citation confidence for attributed numbers
+6. **Best practices lists** — scannable, attributable, and complete
+
+The least-cited content types: opinion essays without supporting evidence, long-form narratives without headers, and promotional content that leads with product claims instead of answers.
+
+## Content freshness and AI recrawl signals
+
+AI engines weight freshness differently than traditional search. Google AI Overviews draw heavily from pages with strong authority signals regardless of recency — those pages have accumulated more corroborating data over time. Perplexity weights recency more directly — its retrieval model surfaces fresh results, and pages with recent publication or update dates rank higher in its retrieval layer.
+
+For most businesses, this means: keep cornerstone authority pages structurally sound and update them when information changes, rather than constantly republishing. Add a "Last Updated" date marker to pages that get refreshed — this is a direct signal to Perplexity's retrieval layer.
+
+**Note:** Publishing new content regularly signals an active, maintained entity to AI training and retrieval systems. A business that published nothing in 18 months looks less authoritative than one with consistent recent output — even if the older business has more total content.
+
+## Applying citation-first writing to service pages
+
+Blog content is the obvious target for AI citation optimization. But service pages — often the highest-value pages on a business website — receive less attention and deserve more.
+
+A service page optimized for AI citation should:
+- Open with a one-paragraph definition of the service and who it serves
+- Include a "What to expect" section with numbered steps
+- Answer the five questions every prospect asks: cost range, timeline, what makes this provider different, what they need from you, what the outcome looks like
+- End with an FAQ section structured with FAQPage schema
+- Include internal links to related services and supporting content
+
+Service pages optimized this way appear in AI responses to commercial intent queries at significantly higher rates than those structured as traditional marketing copy.
+
+## Building a content ecosystem, not a content library
+
+The most durable AI citation advantage is not a single well-optimized article. It is a content ecosystem — a network of interlinked pages that collectively signal comprehensive, authoritative coverage of a topic.
+
+An ecosystem has a hierarchy: pillar pages that cover broad topics definitively, cluster pages that go deep on subtopics, and FAQ or definition pages that handle specific queries. Every page in the ecosystem links to related pages. Together, they demonstrate to AI engines that this site does not have one good article — it has total coverage of a domain.
+
+Businesses that build ecosystems are cited more consistently and recover faster from shifts in AI model behavior than businesses that have accumulated a random library of individual articles.`,
+    faq: [
+      {
+        q: "What is the most important structural element for AI citations?",
+        a: "The direct answer lede — opening every page with a complete, standalone answer to the implied question in the first paragraph. AI engines extract the most direct answer to a query, and pages that deliver that answer immediately are cited more consistently than those that build toward it."
+      },
+      {
+        q: "How long should content be to get cited by AI engines?",
+        a: "Length matters less than structure. Well-organized content between 800 and 2,500 words with clear headers, short paragraphs, and a strong FAQ section typically outperforms longer, unstructured content. For highly specific factual queries, even shorter pages can perform well; for complex strategic topics, 1,500 to 2,500 words with tight structure is the sweet spot."
+      },
+      {
+        q: "Does FAQ schema markup actually improve AI citation rates?",
+        a: "Yes — FAQPage schema markup explicitly signals to AI indexers that a page contains structured question-and-answer content. This is one of the few schema types that directly influences how Google AI Overviews surface FAQ content as answer candidates. Perplexity and ChatGPT also weight Q&A-structured content more heavily in their retrieval models."
+      },
+      {
+        q: "How often should I update content to stay visible in AI search?",
+        a: "Update cornerstone pages when information changes and mark the update date clearly. For Perplexity, which weights recency more directly, pages with recent update dates rank higher in retrieval. For Google AI Overviews, established authority pages maintain visibility even without frequent updates. Publish new content at a consistent cadence — monthly at minimum — to maintain active entity signals."
+      },
+      {
+        q: "What content types are AI engines least likely to cite?",
+        a: "Promotional content that leads with product claims, opinion essays without supporting evidence, and long-form narratives without headers or structured formatting. AI engines prioritize content that answers specific questions directly — content built for human narrative enjoyment without structural accommodations for machine parsing is systematically underrepresented in AI-generated responses."
+      }
+    ],
+    conclusion: `The businesses that earn consistent AI citations in 2026 are not the ones with the most content — they are the ones whose content is built to be extracted. Citation-first structure, direct answer ledes, FAQ sections, and internal linking are not stylistic preferences. They are the mechanical conditions AI engines need to confidently attribute your content in a response. Build for the machine without forgetting the human, and you capture both audiences at once.`,
+    internalLinks: [
+      { label: "How AI Engines Decide Who to Recommend", href: "/insights/how-ai-engines-decide-who-to-recommend" },
+      { label: "The Role of Topical Authority in AI Search", href: "/insights/topical-authority-ai-era" },
+      { label: "Using Schema Markup to Boost AI Visibility", href: "/insights/structured-data-schema-ai-visibility" },
+      { label: "How to Build a Content Ecosystem That Earns AI Citations", href: "/insights/citation-building-for-ai-visibility" },
+      { label: "The P.E.A.R.L. Framework: The AI-Ready Business System", href: "/insights/pearl-framework-building-ai-ready-businesses" }
+    ],
+    imagePrompt: "Editorial overhead flat-lay photograph of a wooden desk with an open notebook filled with handwritten outline notes, a laptop showing a minimalist text editor, a ceramic mug of coffee, and soft natural window light casting clean shadows — 1600x900 pixels, no text or logos visible, warm neutral tones with slight depth of field blur",
+    imageFilename: "website-blog-content-ai-cites.webp",
+  },
+  {
     slug: "chatgpt-vs-perplexity-vs-google-ai-overviews-for-businesses",
     eyebrow: "AI Engine Intelligence",
     seoTitle: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business?",
@@ -26,7 +360,7 @@ export const posts: Post[] = [
     h1: "ChatGPT vs Perplexity vs Google AI Overviews: Which AI Engine Matters Most for Your Business?",
     excerpt: "Three major AI engines. Three different recommendation logics. Most businesses optimize for none of them. Here is what sets each platform apart — and where your effort actually pays off.",
     quickAnswer: "ChatGPT, Perplexity, and Google AI Overviews each surface businesses differently: Google AI Overviews leans on structured entity data and its Knowledge Graph; Perplexity is citation-obsessed and retrieval-first; ChatGPT blends training knowledge with live search, rewarding businesses that are both established in model memory and well-structured on the live web. The underlying authority signals — entity consistency, schema, citations, reviews — lift you across all three simultaneously.",
-    publishedAt: "2026-06-05",
+    publishedAt: "2026-07-02",
     readTime: "9 min read",
     image: "/images/website-blog-ai-engine-comparison.webp",
     content: `## Three engines, three recommendation logics
@@ -145,7 +479,7 @@ The practical answer for most businesses is to treat the shared signals as the p
     h1: "Local AI Search Optimization: How to Show Up When AI Recommends Local Businesses",
     excerpt: "When someone asks an AI assistant for the best plumber, accountant, or restaurant in their city, the engine names two or three businesses and stops. Here is how to be one of them.",
     quickAnswer: "Local AI search optimization requires building four signals in combination: a complete, actively managed Google Business Profile; consistent NAP (name, address, phone) across every directory and platform; a strong body of recent, specific reviews on Google and industry-relevant platforms; and location-aware structured data on your website. Together, these give AI engines the confidence to name you as a local recommendation.",
-    publishedAt: "2026-05-29",
+    publishedAt: "2026-06-29",
     readTime: "8 min read",
     image: "/images/website-blog-local-ai-search.webp",
     content: `## The shortest recommendation list in history
@@ -267,7 +601,7 @@ The channel is already routing buyers. The question is whether it is routing the
     h1: "From Invisible to Recommended: Your 90-Day AI Visibility Roadmap",
     excerpt: "AI visibility is not a switch you flip. It is a sequence you execute. Here is the 90-day roadmap we use to move a business from invisible to recommended \u2014 and the metrics that prove it is working.",
     quickAnswer: "AI visibility is built in three stages over 90 days: entity foundation in month one, citation-worthy content in month two, and reputation signals in month three. The sequence matters because each stage depends on the one before it — skipping ahead produces leaky results that compound slowly if at all.",
-    publishedAt: "2026-05-22",
+    publishedAt: "2026-06-25",
     readTime: "10 min read",
     image: "/images/website-blog-90-day-ai-visibility-roadmap.webp",
     content: `## Ninety days, in the right order
@@ -391,11 +725,11 @@ Then the work changes shape. AI visibility is not a project you complete; it is 
     slug: "pearl-framework-building-ai-ready-businesses",
     eyebrow: "The Framework",
     seoTitle: "The P.E.A.R.L. Framework: How to Build a Business That AI Actually Trusts",
-    metaDescription: "Process, Efficiency, Automation, Revenue, Leverage \u2014 the five pillars of a business AI engines trust and recommend. A framework for operators, not marketers.",
+    metaDescription: "Process, Efficiency, Automation, Replication, Leverage \u2014 the five pillars of a business AI engines trust and recommend. A framework for operators, not marketers.",
     h1: "The P.E.A.R.L. Framework: How to Build a Business That AI Actually Trusts",
     excerpt: "AI engines recommend businesses that signal operational maturity. The P.E.A.R.L. framework is how we build that maturity into a company so the machines can see it.",
-    quickAnswer: "The P.E.A.R.L. framework — Process, Efficiency, Automation, Revenue, Leverage — gives AI engines the structured, consistent signals they need to recognize and recommend a business with confidence. A business that is operationally mature signals trustworthiness across every surface AI reads.",
-    publishedAt: "2026-05-15",
+    quickAnswer: "The P.E.A.R.L. framework — Process, Efficiency, Automation, Replication, Leverage — gives AI engines the structured, consistent signals they need to recognize and recommend a business with confidence. A business that is operationally mature signals trustworthiness across every surface AI reads.",
+    publishedAt: "2026-06-22",
     readTime: "8 min read",
     image: "/images/website-blog-pearl-framework-ai-ready-business.webp",
     content: `## Trust is an output, not a tactic
@@ -428,31 +762,31 @@ Automation, used well, does not just save time. It generates authority signals a
 
 The point is not automation for its own sake. It is that the right automations produce, on a continuous basis, exactly the signals AI engines look for — reputation, recency, consistency — without depending on anyone remembering to do them.
 
-## R — Revenue
+## R — Replication
 
-**Tracked outcomes that prove value.**
+**Reproducing what works, on purpose.**
 
-AI engines are moving toward outcome-based evaluation, and businesses that can evidence results have a durable advantage. Tracked, documented outcomes — case studies with specific numbers, before-and-after results, measurable client impact — are among the most citable assets a business can own. They move you from claiming value to proving it.
+A system that only works once is a fluke. A system that can be reproduced — across a new client, a new market, a new team, a new workflow — is an asset. Once process, efficiency, and automation prove themselves in one context, replication is the discipline of deliberately rebuilding that same success elsewhere instead of reinventing it from scratch.
 
-Revenue as a pillar is about building the habit and the infrastructure to capture proof of value as you deliver it. Every measured result becomes a piece of evidence that an engine can use to recommend you with confidence, and that a competitor without the same discipline cannot match.
+This is where a lot of businesses leave value on the table. They solve a problem well once, then solve it differently — and worse — the next time, because nothing was captured in a form that could travel. Replication turns a single win into a template, and a template into a standing capability.
 
 ## L — Leverage
 
-**Compounding authority assets.**
+**Compounding output without compounding effort.**
 
-Leverage is what ties the framework together. The assets built through the first four pillars — documented process, efficient systems, automation-generated signals, proven outcomes — do not merely add up. They compound. A strong entity makes every citation more credible. A body of proof makes every new page more authoritative. A steady reputation velocity makes every recommendation more likely.
+Leverage is what ties the framework together. The systems built through the first four pillars — documented process, efficient execution, automation-generated signals, and replicated wins — do not merely add up. They compound. A process that has been replicated across ten clients is more resilient than one that has only run once. A body of proof makes every new page more authoritative. A steady reputation velocity makes every recommendation more likely.
 
-Leverage means you are building assets that keep working and keep strengthening your position without proportional new effort. A business built on the P.E.A.R.L. pillars accumulates authority the way a well-run balance sheet accumulates equity — quietly, durably, and in a way that becomes progressively harder for competitors to overtake.
+Leverage means you are building capacity that keeps working and keeps strengthening your position without proportional new effort. A business built on the P.E.A.R.L. pillars scales the way a well-run balance sheet accumulates equity — quietly, durably, and in a way that becomes progressively harder for competitors to overtake.
 
 ## Why the framework holds together
 
-Each pillar strengthens the others. Process enables efficiency. Efficiency enables meaningful automation. Automation produces the reputation and consistency signals. Revenue tracking proves the whole thing works. And leverage compounds all of it into a defensible position in the channel where buyers now begin.
+Each pillar strengthens the others. Process enables efficiency. Efficiency enables meaningful automation. Automation produces the reputation and consistency signals, and generates a system worth replicating. Replication turns a single win into a repeatable capability. And leverage compounds all of it into a defensible position in the channel where buyers now begin.
 
 The deeper point is that P.E.A.R.L. does not ask you to choose between building a better business and building AI visibility. They are the same project. The businesses AI trusts are the ones worth trusting — and the framework is simply a disciplined way of becoming, and being seen as, one of them.`,
     faq: [
     {
         "q": "What does P.E.A.R.L. stand for?",
-        "a": "Process, Efficiency, Automation, Revenue, and Leverage. Each is a pillar that both makes a business genuinely stronger and makes it more legibly trustworthy to AI engines. Process documents your workflows, Efficiency signals operational maturity, Automation generates authority signals, Revenue proves value through tracked outcomes, and Leverage compounds all of it into a durable position."
+        "a": "Process, Efficiency, Automation, Replication, and Leverage. Each is a pillar that both makes a business genuinely stronger and makes it more legibly trustworthy to AI engines. Process documents your workflows, Efficiency signals operational maturity, Automation generates authority signals, Replication reproduces what works across clients and markets, and Leverage compounds all of it into a durable position."
     },
     {
         "q": "Why does documented process matter for AI visibility?",
@@ -463,19 +797,19 @@ The deeper point is that P.E.A.R.L. does not ask you to choose between building 
         "a": "The right automations produce the exact signals engines look for as a byproduct of running. An automated review-request system generates steady reputation velocity, an automated publishing rhythm keeps first-party content current, and automated data consistency keeps your entity coherent across platforms. The value is not the time saved but the continuous, reliable production of reputation, recency, and consistency signals."
     },
     {
-        "q": "Why is revenue a pillar in an AI visibility framework?",
-        "a": "Because AI engines are moving toward outcome-based evaluation, and tracked results are among the most citable assets a business can own. Documented outcomes with specific numbers move you from claiming value to proving it. Building the discipline to capture proof of value as you deliver creates evidence engines use to recommend you with confidence."
+        "q": "Why does replication matter in the P.E.A.R.L. framework?",
+        "a": "Because a system that only works once is a fluke, not an asset. Replication is the discipline of deliberately reproducing what works — across a new client, market, team, or workflow — instead of reinventing the solution every time. It is what turns a single win into a repeatable capability, and a repeatable capability into a competitive advantage a business can scale."
     },
     {
         "q": "What makes the framework's assets compound?",
-        "a": "Each asset strengthens the others. A strong entity makes every citation more credible, a body of proof makes every new page more authoritative, and steady reputation velocity makes every recommendation more likely. That is the leverage pillar: assets that keep working and strengthening your position over time without proportional new effort, accumulating authority the way equity accumulates on a balance sheet."
+        "a": "Each pillar strengthens the others. Documented process makes efficiency possible, efficient systems make automation meaningful, automation produces the signals worth replicating, and replicated systems make every new engagement faster and more reliable than the last. That is the leverage pillar: capacity that keeps working and strengthening your position over time without proportional new effort, accumulating authority the way equity accumulates on a balance sheet."
     },
     {
         "q": "Do I have to implement all five pillars at once?",
-        "a": "No, and the pillars build in sequence. Process comes first because it enables efficiency; efficiency enables meaningful automation; automation produces signals; revenue tracking proves the system works; and leverage compounds it all. Most operators start by documenting process and establishing a clean entity, then layer in the remaining pillars as the foundation solidifies."
+        "a": "No, and the pillars build in sequence. Process comes first because it enables efficiency; efficiency enables meaningful automation; automation produces a system worth replicating; replication turns that system into a repeatable capability; and leverage compounds it all. Most operators start by documenting process and establishing a clean entity, then layer in the remaining pillars as the foundation solidifies."
     }
 ],
-    conclusion: `AI engines are trust-allocation machines, and you cannot fake operational maturity to a system that reads everything. The P.E.A.R.L. framework refuses the trick and builds the substance: documented process, efficient systems, signal-generating automation, proven outcomes, and compounding leverage. The businesses AI trusts are the ones genuinely worth trusting. Build the substance, make it legible, and the recommendations follow.`,
+    conclusion: `AI engines are trust-allocation machines, and you cannot fake operational maturity to a system that reads everything. The P.E.A.R.L. framework refuses the trick and builds the substance: documented process, efficient systems, signal-generating automation, systems built to be replicated, and compounding leverage. The businesses AI trusts are the ones genuinely worth trusting. Build the substance, make it legible, and the recommendations follow.`,
     internalLinks: [
     {
         "label": "Learn more about who we are",
@@ -497,7 +831,7 @@ The deeper point is that P.E.A.R.L. does not ask you to choose between building 
     h1: "Reputation Signals in the AI Era: Why Reviews Now Drive AI Recommendations",
     excerpt: "Reviews were once a conversion tool at the bottom of the funnel. In the AI era, they are training data \u2014 and they now shape whether the machines recommend you at all.",
     quickAnswer: "In the AI era, reviews are training data, not just social proof. AI engines use review velocity, sentiment, and specificity as signals of trustworthiness — businesses with a sustained stream of detailed, authentic reviews appear more credible in AI-generated recommendations than those with few or stale ones.",
-    publishedAt: "2026-05-08",
+    publishedAt: "2026-06-18",
     readTime: "7 min read",
     image: "/images/website-blog-reputation-signals-ai-recommendations.webp",
     content: `## Reviews stopped being about conversion
@@ -593,7 +927,7 @@ Every review adds to a base that competitors cannot quickly replicate. Sentiment
     h1: "Why Your About Page Is the Most Underrated Page for AI Citations",
     excerpt: "Most businesses treat the About page as an afterthought. AI engines treat it as the primary source of truth about who you are. That mismatch is costing you citations.",
     quickAnswer: "AI engines read your About page first to establish who you are, what you do, and why you should be cited. A sparse or vague About page leaves engines unable to resolve your entity with confidence — meaning they skip you in favor of businesses whose facts are stated clearly.",
-    publishedAt: "2026-05-01",
+    publishedAt: "2026-06-15",
     readTime: "7 min read",
     image: "/images/website-blog-about-page-ai-citations.webp",
     content: `## The page you ignore is the page the machines read first
@@ -705,7 +1039,7 @@ A strong About page does not just help the About page rank. It stabilizes your e
     h1: "How to Audit Your AI Search Visibility in Under 30 Minutes",
     excerpt: "Most business owners have never checked what AI engines say about them. Here is a repeatable 30-minute audit that tells you exactly where you stand \u2014 and what to fix first.",
     quickAnswer: "An AI visibility audit has four steps: test how major engines respond to your category and problem queries, check your entity consistency across platforms, validate your structured data for errors, and document which competitors are being cited instead of you. The audit takes 30 minutes and reveals the highest-leverage fixes.",
-    publishedAt: "2026-04-24",
+    publishedAt: "2026-06-11",
     readTime: "9 min read",
     image: "/images/website-blog-audit-ai-search-visibility.webp",
     content: `## You are already being described by machines
@@ -832,7 +1166,7 @@ Re-run the audit every 90 days. AI visibility is not a project you finish; it is
     h1: "Entity SEO: How to Make Your Business a Named Entity That AI Actually Knows",
     excerpt: "AI doesn't recommend websites. It recommends entities \u2014 things it recognizes as real. The question is whether your business is one of them.",
     quickAnswer: "Entity SEO is the practice of making your business unambiguously identifiable to AI engines as a recognized thing in the world — with a consistent name, category, facts, and links that connect your profiles across authoritative sources. Without it, engines cannot cite you confidently even when you are the best answer.",
-    publishedAt: "2026-04-17",
+    publishedAt: "2026-06-08",
     readTime: "7 min read",
     image: "/images/website-blog-entity-seo-ai-knowledge-graph.webp",
     content: `There's a reason certain businesses get named by ChatGPT and Perplexity again and again while their competitors — sometimes larger, sometimes better — never come up. It usually isn't about the quality of the work. It's about whether the engine understands the business as an entity.
@@ -926,7 +1260,7 @@ Establish the entity first, and everything else compounds on top of it. That seq
     h1: "Schema Markup for AI Visibility: The Business Owner's Complete Guide",
     excerpt: "Schema is how you speak to a machine in its own language. In the AI era, the businesses that speak clearly get quoted.",
     quickAnswer: "Structured data tells AI engines your key facts in machine-readable language — what you do, who runs you, where you are, and what your pages are about. Businesses with well-implemented schema get cited more reliably because engines can extract and verify their facts without interpretation.",
-    publishedAt: "2026-04-10",
+    publishedAt: "2026-06-04",
     readTime: "7 min read",
     image: "/images/website-blog-structured-data-schema-ai-visibility.webp",
     content: `Most business owners think of schema markup — if they think of it at all — as a technical SEO nicety that produces star ratings in Google results. That framing is now badly out of date. Structured data has become one of the most direct levers you have for AI visibility, because it's the cleanest way to tell an AI engine exactly what your business is, in a form the machine can extract without guessing.
@@ -1018,7 +1352,7 @@ This kind of technical authority is baked into how we build [authority websites]
     h1: "E-E-A-T in 2026: How Google's Trust Framework Has Evolved for the AI Era",
     excerpt: "The four letters haven't changed. What the machines do with them has changed completely.",
     quickAnswer: "E-E-A-T — Experience, Expertise, Authoritativeness, Trustworthiness — now determines not just your search ranking but whether AI engines cite you at all. AI reads E-E-A-T signals across your site, your author profiles, your reviews, and your third-party mentions, then uses them to decide which voices deserve to be quoted.",
-    publishedAt: "2026-04-03",
+    publishedAt: "2026-06-01",
     readTime: "7 min read",
     image: "/images/website-blog-eeat-ai-era-trust-signals.webp",
     content: `E-E-A-T — Experience, Expertise, Authoritativeness, Trust — began as guidance for human quality raters evaluating Google's search results. It was a rubric for judging whether a page deserved to rank. In 2026, that rubric has quietly become something bigger: a framework that AI engines use to decide whether a source is safe to synthesize into an answer and whether a business is credible enough to name.
@@ -1112,7 +1446,7 @@ Operationally, feed the engines proof of the real. Use original data and imagery
     h1: "How ChatGPT, Perplexity, and Gemini Decide Which Businesses to Recommend",
     excerpt: "When an AI recommends a business, it isn't guessing. It's weighing signals. Understand the signals and you can influence the outcome.",
     quickAnswer: "AI engines recommend businesses by synthesizing entity signals: whether the business is a clearly defined entity, how consistently its facts appear across the web, how much authoritative third-party content references it, and how well its reputation signals (reviews, citations, mentions) align with the query. Strong signals in all four areas produce consistent recommendations.",
-    publishedAt: "2026-03-27",
+    publishedAt: "2026-05-28",
     readTime: "7 min read",
     image: "/images/website-blog-ai-engines-business-recommendations.webp",
     content: `Ask ChatGPT to recommend a bookkeeping firm, and it will name two or three. It will not name yours unless something specific has happened to make it confident that yours belongs on the list. That confidence is not random. It is the output of a set of signals the engine can measure, and those signals are learnable.
@@ -1210,7 +1544,7 @@ This is coordinated infrastructure work, not a one-time fix — which is exactly
     h1: "What Is GEO? A Business Owner's Guide to Generative Engine Optimization",
     excerpt: "Search stopped being a list of blue links. It became an answer. GEO is how you make sure the answer includes you.",
     quickAnswer: "GEO is the practice of building the structured authority signals — schema markup, entity consistency, citable content, and reputation depth — that cause AI engines like ChatGPT, Perplexity, and Google AI Overviews to cite and recommend your business. Unlike SEO, which targets click rankings, GEO targets the AI answers your customers now see first.",
-    publishedAt: "2026-03-20",
+    publishedAt: "2026-05-25",
     readTime: "8 min read",
     image: "/images/website-blog-geo-generative-engine-optimization.webp",
     content: `The way people find businesses has quietly changed. A few years ago, a prospect typed a query into Google, scanned ten blue links, and clicked. Today, a growing share of those prospects never see the links at all. They ask ChatGPT, Perplexity, or Google's AI Overviews a question and receive a single synthesized answer — one that names a handful of companies and ignores everyone else.
@@ -1308,7 +1642,7 @@ This is the work we do at [Hey Pearl through our GEO service](/services/geo) —
     h1: "Google Knowledge Panel: How to Earn One and Why It Matters for AI Visibility",
     excerpt: "A Knowledge Panel is not a Google feature you claim — it is a declaration that Google has recognized your business as a real-world entity worth knowing about. Earning one is one of the highest-leverage signals for AI visibility you can pursue.",
     quickAnswer: "A Google Knowledge Panel appears when Google has formally recognized your business as a distinct entity in its Knowledge Graph. It signals to Google AI Overviews, and to third-party AI engines, that your business is verifiable, established, and worthy of confident citation. You earn one by building consistent, corroborating entity signals: a complete Google Business Profile, NAP consistency, Wikipedia or Wikidata presence where relevant, strong structured data, and broad third-party mentions across authoritative sources.",
-    publishedAt: "2026-06-12",
+    publishedAt: "2026-07-06",
     readTime: "8 min read",
     image: "/images/website-blog-google-knowledge-panel.webp",
     content: `## What a Knowledge Panel actually is
@@ -1399,7 +1733,7 @@ The investment is worth it. A Knowledge Panel is one of the few signals with a d
     conclusion: "A Google Knowledge Panel is the visible evidence of something deeper: Google's formal recognition of your business as a real-world entity. That recognition flows directly into AI recommendation confidence across Google AI Overviews and, by extension, into the broader web of signals that other AI engines use to evaluate your authority. Building toward a Knowledge Panel is not a tactical SEO project — it is entity infrastructure work that pays dividends across every AI platform simultaneously. Start with the foundation: a complete GBP, consistent NAP, and Organization schema with a full sameAs array. Everything else you build compounds on top of that.",
     internalLinks: [
       { label: "Explore our GEO services", href: "/services/geo" },
-      { label: "Learn how AI engines decide who to recommend", href: "/blog/how-ai-engines-decide-who-to-recommend" },
+      { label: "Learn how AI engines decide who to recommend", href: "/insights/how-ai-engines-decide-who-to-recommend" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of a clean smartphone screen showing a glowing business information card floating above a marble desk surface, subtle navy and magenta ambient light, shallow depth of field, premium minimalist aesthetic, no text visible, no logos",
@@ -1413,7 +1747,7 @@ The investment is worth it. A Knowledge Panel is one of the few signals with a d
     h1: "Citation Building for AI Visibility: How Third-Party Mentions Drive AI Recommendations",
     excerpt: "Traditional citation building was about directory consistency for local SEO. AI-era citation building is about building a web of authoritative third-party mentions that give AI engines the confidence to name you.",
     quickAnswer: "AI engines use third-party citations — mentions of your business across directories, publications, industry platforms, and authoritative websites — as confidence signals when deciding whether to recommend you. For AI visibility, citation quality matters more than volume: a mention in an industry publication carries far more weight than fifty generic directory listings. The most effective citation strategy combines consistent directory NAP coverage as the foundation with a deliberate push for high-authority mentions across press, industry, and digital PR channels.",
-    publishedAt: "2026-06-19",
+    publishedAt: "2026-07-09",
     readTime: "8 min read",
     image: "/images/website-blog-citation-building-ai.webp",
     content: `## Why citations are different in the AI era
@@ -1500,7 +1834,7 @@ At Hey Pearl, we track citation impact as part of the Authority Score — a comp
     conclusion: "Citation building for AI visibility is a layered strategy: foundation NAP consistency across directories gives AI engines the corroboration they need to resolve your business as a single entity; high-authority editorial and industry citations give them the confidence to recommend you. The businesses winning AI recommendations in competitive categories are not the ones with the most directory listings — they are the ones that have built the broadest, most authoritative footprint of third-party evidence. Start with the foundation, then invest in the editorial layer where the real AI visibility leverage lives.",
     internalLinks: [
       { label: "Explore our GEO services", href: "/services/geo" },
-      { label: "Learn about entity SEO for AI", href: "/blog/entity-seo-make-your-business-known-to-ai" },
+      { label: "Learn about entity SEO for AI", href: "/insights/entity-seo-make-your-business-known-to-ai" },
       { label: "Start with a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial flat-lay photography of interconnected gold chains forming a network pattern on a dark navy surface, with small glowing nodes at connection points, warm directional studio lighting, premium minimal aesthetic, no text, no logos",
@@ -1514,7 +1848,7 @@ At Hey Pearl, we track citation impact as part of the Authority Score — a comp
     h1: "AI Visibility for B2B Services: How Professional Services Firms Get Recommended by AI",
     excerpt: "The B2B buyer journey has shifted. A growing share of vendor research now starts with an AI engine. Professional services firms that build the right authority signals are the ones getting named.",
     quickAnswer: "B2B services firms earn AI recommendations by building domain authority through thought leadership content, establishing clear entity signals (schema, consistent profiles, named leadership), accumulating client testimonials and case studies that AI engines can retrieve, and earning mentions in the publications and platforms that B2B buyers consult during vendor research. The key difference from consumer AI visibility: B2B engines weight expertise signals more heavily and retrieval-based engines like Perplexity are particularly important for the research-intensive B2B buying process.",
-    publishedAt: "2026-06-26",
+    publishedAt: "2026-07-13",
     readTime: "9 min read",
     image: "/images/website-blog-b2b-ai-visibility.webp",
     content: `## The B2B buyer journey has changed
@@ -1607,7 +1941,7 @@ The third mistake is ignoring the practitioner layer. Professional services are 
     conclusion: "B2B buyers are using AI engines to research vendors, and the professional services firms that earn those recommendations are building something specific: expertise authority through published thought leadership, entity clarity through consistent schema and profiles, and citation coverage through the third-party mentions that give AI engines confidence to name them. The investment is medium-term, but the competitive advantage it creates is durable. Firms in the AI visibility conversation now will be significantly harder to displace in 18 months. The time to build is before your buyers are asking AI engines who to hire — and most of them already are.",
     internalLinks: [
       { label: "Explore our GEO services", href: "/services/geo" },
-      { label: "Read about the P.E.A.R.L. framework", href: "/blog/pearl-framework-building-ai-ready-businesses" },
+      { label: "Read about the P.E.A.R.L. framework", href: "/insights/pearl-framework-building-ai-ready-businesses" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of two business professionals shaking hands across a glass conference table, reflected city skyline visible through floor-to-ceiling windows, cool blue ambient light, premium corporate setting, shallow depth of field, no text, no logos",
@@ -1621,7 +1955,7 @@ The third mistake is ignoring the practitioner layer. Professional services are 
     h1: "How to Monitor Your AI Answer Visibility: Tracking Whether AI Engines Recommend Your Business",
     excerpt: "Most businesses have no idea whether AI engines are recommending them. Without that baseline, every optimization effort is guesswork. Here is how to build a monitoring system that tells you where you stand.",
     quickAnswer: "Monitoring AI answer visibility requires systematically querying AI engines with the terms your buyers use, recording when your business is named and when it isn't, tracking what competitors are cited instead, and repeating this process regularly enough to detect trends. There is no single tool that automates this fully — the most reliable approach combines manual query testing with a structured tracking framework and, where available, purpose-built AI monitoring tools. The baseline you establish today is what makes improvement measurable.",
-    publishedAt: "2026-07-03",
+    publishedAt: "2026-07-16",
     readTime: "7 min read",
     image: "/images/website-blog-monitor-ai-visibility.webp",
     content: `## The measurement problem with AI visibility
@@ -1747,7 +2081,7 @@ The reporting does not need to be elaborate. A well-maintained spreadsheet with 
     conclusion: "AI visibility without monitoring is an investment made in the dark. You cannot optimize what you cannot measure, and the businesses building the most effective AI visibility strategies are the ones that have established a baseline, track trends over time, and let the data guide their optimization priorities. The monitoring practice does not need to be elaborate — a consistent query testing protocol, structured recording, and a regular review rhythm are the core. Build that system before you invest heavily in optimization, so you can actually know whether the work is moving the needle.",
     internalLinks: [
       { label: "Explore our AI monitoring platform", href: "/platform" },
-      { label: "Audit your AI search visibility", href: "/blog/audit-your-ai-search-visibility" },
+      { label: "Audit your AI search visibility", href: "/insights/audit-your-ai-search-visibility" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of a laptop screen displaying glowing data visualization charts in navy and magenta on a dark background, placed on a clean marble desk with soft side lighting, shallow depth of field, minimalist and premium, no text, no logos",
@@ -1761,7 +2095,7 @@ The reporting does not need to be elaborate. A well-maintained spreadsheet with 
     h1: "Wikidata for Business Owners: How to Use Open Structured Data to Boost AI Visibility",
     excerpt: "Most business owners have never heard of Wikidata. That is about to become a competitive disadvantage — it is one of the most authoritative structured-data sources in the world, and AI engines use it extensively.",
     quickAnswer: "Wikidata is a free, open, machine-readable knowledge base that serves as the structured-data backbone behind Wikipedia. AI engines including Google AI Overviews, ChatGPT, and Perplexity use Wikidata as a primary authority source for entity verification. Businesses and professionals who create accurate Wikidata entries gain a powerful, durable entity signal that accelerates Knowledge Panel creation and improves AI recommendation confidence. Eligibility requires demonstrable notability through existing third-party sources.",
-    publishedAt: "2026-07-10",
+    publishedAt: "2026-07-20",
     readTime: "8 min read",
     image: "/images/website-blog-wikidata-business.webp",
     content: `## What Wikidata actually is
@@ -1864,8 +2198,8 @@ The answer is to build the third-party coverage that establishes notability. Pre
     ],
     conclusion: "Wikidata is one of the highest-authority entity signals available to businesses — and one of the most underused. For businesses that qualify, a well-maintained Wikidata entry accelerates Knowledge Panel creation, improves AI entity recognition across all major platforms, and provides the structured-data foundation that schema markup references with maximum authority. For businesses that do not yet qualify, the path is building the third-party coverage that establishes notability. Either way, understanding what Wikidata is and how it feeds AI systems is foundational knowledge for anyone serious about AI visibility in the coming years.",
     internalLinks: [
-      { label: "Learn about entity SEO for AI", href: "/blog/entity-seo-make-your-business-known-to-ai" },
-      { label: "Read our Google Knowledge Panel guide", href: "/blog/google-knowledge-panel-business-guide" },
+      { label: "Learn about entity SEO for AI", href: "/insights/entity-seo-make-your-business-known-to-ai" },
+      { label: "Read our Google Knowledge Panel guide", href: "/insights/google-knowledge-panel-business-guide" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of an open laptop displaying a glowing network graph of interconnected data nodes in navy and magenta tones on a dark background, clean desk surface, warm directional light, shallow depth of field, no text, no logos",
@@ -1879,7 +2213,7 @@ The answer is to build the third-party coverage that establishes notability. Pre
     h1: "Topical Authority in the AI Era: How to Own a Category in AI Recommendations",
     excerpt: "Keyword rankings were the metric of the old search era. In the AI era, the goal is category ownership — becoming the business that AI engines default to when someone asks about your domain. Here is how that works.",
     quickAnswer: "Topical authority in the AI era means being recognized by AI engines as the most credible, comprehensive source on a defined subject — not just ranking for keywords, but being understood as the category expert. You build it through consistent, expert-level content that covers your domain in depth; through third-party citations that position you as a reference; through named practitioner expertise; and through the structural signals (schema, entity clarity) that make your subject-matter authority machine-readable. The engine that recognizes your topical authority defaults to you when answering category queries.",
-    publishedAt: "2026-07-17",
+    publishedAt: "2026-07-23",
     readTime: "8 min read",
     image: "/images/website-blog-topical-authority-ai.webp",
     content: `## The shift from keyword ranking to category ownership
@@ -1987,7 +2321,7 @@ These metrics do not move instantly. Topical authority is a twelve-to-twenty-fou
     conclusion: "The AI era rewards category ownership over keyword winning. Building topical authority means choosing a domain you can genuinely lead, producing expert-level content that covers it comprehensively, earning the citations that validate your authority externally, and making that authority machine-readable through schema and entity infrastructure. It is not a short game — twelve to twenty-four months of consistent investment is a realistic timeline for meaningful AI category recognition. But the competitive moat it builds is real: an entity recognized by AI engines as the default authority in its domain maintains that position not through constant optimization, but through the accumulated weight of genuine expertise.",
     internalLinks: [
       { label: "Explore our GEO services", href: "/services/geo" },
-      { label: "Read about E-E-A-T in the AI era", href: "/blog/eeat-in-the-ai-era" },
+      { label: "Read about E-E-A-T in the AI era", href: "/insights/eeat-in-the-ai-era" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of a mountain peak emerging above clouds at golden hour, shot from a high vantage with dramatic light, deep navy sky above, warm golden horizon, minimal and majestic, no people, no text, no logos",
@@ -2001,7 +2335,7 @@ These metrics do not move instantly. Topical authority is a twelve-to-twenty-fou
     h1: "Voice Search and AI Assistants: How Siri, Alexa, and AI Assistants Choose Businesses",
     excerpt: "A voice assistant names one business, maybe two. There is no scrolling through alternatives. For the categories where voice recommendations happen most, earning that mention is a high-stakes visibility challenge.",
     quickAnswer: "Voice assistants and AI assistant integrations name one or two businesses when asked for a local recommendation, drawing primarily from Google Business Profile data (for Google Assistant and Siri) and Alexa's business directory data (for Amazon). Earning voice recommendations requires the same foundational signals as general AI visibility — complete GBP, NAP consistency, strong reviews — with particular weight on review ratings and response speed, since assistants often prioritize the highest-rated, most responsive local option. For smart-speaker contexts, structured data and FAQ-formatted content give you an additional edge.",
-    publishedAt: "2026-07-24",
+    publishedAt: "2026-07-27",
     readTime: "7 min read",
     image: "/images/website-blog-voice-search-ai.webp",
     content: `## When the assistant decides, there is no second result
@@ -2095,8 +2429,8 @@ Voice-specific optimization is not a separate silo. It is an extension of the sa
     ],
     conclusion: "Voice and AI assistant recommendations operate on the same fundamental currency as all AI visibility: entity clarity, review quality, and authoritative structured data. The difference is the zero-tolerance nature of voice recommendation selection — the assistant names one business, and all the others are invisible for that interaction. Building toward voice recommendation presence means closing every foundation gap (GBP completeness, location pin accuracy, Yelp and Apple Maps presence) and reaching for the review quality that makes your business the confident choice when an assistant must name just one. The investments are the same as broader AI visibility; the payoff is recommendation access in the moments when buyers are most ready to act.",
     internalLinks: [
-      { label: "Explore our local AI visibility services", href: "/blog/local-ai-search-optimization" },
-      { label: "Learn about structured data for AI", href: "/blog/structured-data-schema-ai-visibility" },
+      { label: "Explore our local AI visibility services", href: "/insights/local-ai-search-optimization" },
+      { label: "Learn about structured data for AI", href: "/insights/structured-data-schema-ai-visibility" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of a minimalist white smart speaker on a clean marble surface with a soft glowing ring light emanating from the base, warm ambient light, shallow depth of field, premium domestic setting, no text, no logos",
@@ -2110,7 +2444,7 @@ Voice-specific optimization is not a separate silo. It is an extension of the sa
     h1: "What to Do When AI Gets Your Business Wrong: Correcting AI Misinformation",
     excerpt: "AI engines sometimes get businesses wrong — wrong founding date, wrong services, wrong location, wrong price point. When they do, they state the errors with the same confidence they state facts. Here is how to respond.",
     quickAnswer: "When an AI engine generates inaccurate information about your business, the correction path has two layers: update the authoritative sources the engine is likely drawing from (Google Business Profile, your website, major directories, your structured data), and use each platform's feedback mechanism to flag specific inaccuracies. Prevention is more effective than correction — the richer and more consistent your authoritative source layer, the less room AI engines have to hallucinate or retrieve inaccurate third-party claims.",
-    publishedAt: "2026-07-31",
+    publishedAt: "2026-07-30",
     readTime: "7 min read",
     image: "/images/website-blog-ai-misinformation.webp",
     content: `## When the AI is confidently wrong
@@ -2224,7 +2558,7 @@ Monitor the issue over time. As authoritative sources accumulate and inaccurate 
     conclusion: "AI misinformation about businesses is a practical problem with a practical solution: build the authoritative source layer robust enough that accurate information dominates what AI engines retrieve, monitor your AI representation regularly, and correct inaccuracies at the source when they occur. The businesses most vulnerable to persistent AI misinformation are those with thin or inconsistent online presence — the same businesses vulnerable to all the other AI visibility challenges. Building the entity foundation is simultaneously your visibility strategy and your misinformation prevention strategy. The two goals converge on the same investment.",
     internalLinks: [
       { label: "Monitor your AI visibility with our platform", href: "/platform" },
-      { label: "Learn how to audit your AI search visibility", href: "/blog/audit-your-ai-search-visibility" },
+      { label: "Learn how to audit your AI search visibility", href: "/insights/audit-your-ai-search-visibility" },
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photography of a magnifying glass hovering over a glowing digital screen displaying fragmented text and data in navy and white, soft warm side lighting, sharp focus on the magnifying glass, abstract and slightly unsettling mood, no text visible, no logos",
@@ -2239,7 +2573,7 @@ Monitor the issue over time. As authoritative sources accumulate and inaccurate 
     h1: "How to Beat Your Competitors in AI Search",
     excerpt: "Winning in AI search is not about outspending — it is about being more legible, more credible, and more consistent than the businesses competing for the same recommendation slot.",
     quickAnswer: "To outperform competitors in AI search, you need to understand the entity gap — who is already being cited and why — then systematically build stronger signals in the areas that matter: entity clarity, structured data, citation depth, review velocity, and topical authority. AI engines favor the business that is easiest to cite confidently. Your job is to become that business before your competitor does.",
-    publishedAt: "2026-08-07",
+    publishedAt: "2026-08-03",
     readTime: "9 min read",
     image: "/images/website-blog-beat-competitors-ai-search.webp",
     content: `## The recommendation slot your competitor is holding
@@ -2336,7 +2670,7 @@ Your competitor's current AI advantage is almost certainly not more than six to 
     h1: "AI Visibility for Real Estate Agents and Brokerages",
     excerpt: "Real estate buyers now ask AI who to trust before they ask their neighbor. The agents and brokerages showing up in those answers are not the ones with the biggest ad spend — they are the ones who built the right signals.",
     quickAnswer: "Real estate agents and brokerages earn AI recommendations by building formal entity authority — a complete, consistent presence across Google Business Profile, structured data, review platforms, and third-party citations. The agents AI engines recommend most reliably are those with clearly defined specialties, verifiable transaction history, strong review velocity, and corroborating mentions across local press, association sites, and industry directories.",
-    publishedAt: "2026-08-14",
+    publishedAt: "2026-08-06",
     readTime: "10 min read",
     image: "/images/website-blog-ai-visibility-real-estate.webp",
     content: `## How buyers and sellers now find their agent

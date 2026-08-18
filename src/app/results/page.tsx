@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Results — Measurable AI Authority Outcomes | HeyPearl',
   description:
     'Real outcomes from real HeyPearl engagements — authority growth, AI citation frequency, share of voice, and business transformation across real estate agents, brokerages, and service businesses.',
+  alternates: { canonical: 'https://heypearl.io/results' },
   openGraph: {
     title: 'HeyPearl Results — The Proof Center',
     description: 'Measurable AI authority outcomes from real engagements. Not testimonials. Evidence.',

@@ -10,13 +10,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
     // Core
-    { path: '',        priority: 1.0, freq: 'weekly' },
-    { path: '/platform', priority: 0.9, freq: 'monthly' },
-    { path: '/solutions', priority: 0.9, freq: 'monthly' },
-    { path: '/results',  priority: 0.8, freq: 'monthly' },
-    { path: '/get-started', priority: 0.9, freq: 'monthly' },
-    { path: '/about',    priority: 0.7, freq: 'monthly' },
-    { path: '/contact',  priority: 0.8, freq: 'monthly' },
+    { path: '',              priority: 1.0, freq: 'weekly' },
+    { path: '/platform',     priority: 0.9, freq: 'monthly' },
+    { path: '/solutions',    priority: 0.9, freq: 'monthly' },
+    { path: '/results',      priority: 0.8, freq: 'monthly' },
+    { path: '/get-started',  priority: 0.9, freq: 'monthly' },
+    { path: '/about',        priority: 0.7, freq: 'monthly' },
+    { path: '/about/founder',priority: 0.6, freq: 'monthly' },
+    { path: '/contact',      priority: 0.8, freq: 'monthly' },
+    { path: '/insights',     priority: 0.85, freq: 'weekly' },
+    { path: '/results/case-studies',  priority: 0.7, freq: 'monthly' },
+    { path: '/results/recent-wins',   priority: 0.7, freq: 'monthly' },
     // Platform modules
     { path: '/platform/pearlos',         priority: 0.85, freq: 'monthly' },
     { path: '/platform/authority-pages', priority: 0.8,  freq: 'monthly' },

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description:
     'Ready to become the business AI recommends? Book a founder-led strategy call with Misti Bruton, or reach the HeyPearl team for support and partnership inquiries.',
   alternates: { canonical: 'https://heypearl.io/contact' },
-  openGraph: { images: ['/images/og-contact.jpg'] },
-  twitter: { images: ['/images/og-default.jpg'] },
+  openGraph: { images: ['/images/og/og-default.webp'] },
+  twitter: { images: ['/images/og/og-default.webp'] },
 };
 
 export default function ContactPage() {

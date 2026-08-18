@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl for Service Businesses — AI Authority for Local & Regional Services',
   description:
     'When buyers ask AI who to hire for your service category, is your business the answer? HeyPearl builds the AI authority infrastructure that makes local and regional service businesses the recommended choice.',
+  alternates: { canonical: 'https://heypearl.io/solutions/service-businesses' },
   openGraph: {
     title: 'HeyPearl for Service Businesses — Be the Service AI Recommends',
     description: 'The AI authority platform for service businesses losing ground to competitors who built their AI presence first.',

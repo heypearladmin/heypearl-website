@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   title: 'Insights — Editorial on the AI Search Era',
   description:
     'Field-tested frameworks, AI search experiments, and operator intelligence from Hey Pearl on authority infrastructure and the AI search era.',
+  alternates: { canonical: 'https://heypearl.io/insights' },
 };
 
 // All published articles, newest first (posts array is already sorted desc)
@@ -112,8 +113,8 @@ export default function InsightsPage() {
           {/* Article grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post, i) => {
-              // "New" on the 2 most-recent grid cards (featured card already carries New)
-              const isNew = i < 2;
+              // "New" on the 1 most-recent grid card (featured card already carries New)
+              const isNew = i < 1;
               return (
                 <Reveal key={post.slug} delay={i * 0.04}>
                   <Link
@@ -187,8 +188,8 @@ export default function InsightsPage() {
                 >
                   Schedule a Strategy Call
                 </LinkButton>
-                <LinkButton href="/services" variant="secondary" size="lg">
-                  See our services
+                <LinkButton href="/solutions" variant="secondary" size="lg">
+                  See our solutions
                 </LinkButton>
               </div>
             </div>

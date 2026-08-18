@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl for Real Estate Agents — AI Authority for Independent Agents',
   description:
     'Buyers are asking AI who to call. HeyPearl builds the AI authority infrastructure that makes your name the agent AI recommends — for your market, your specialty, your territory.',
+  alternates: { canonical: 'https://heypearl.io/solutions/real-estate-agents' },
   openGraph: {
     title: 'HeyPearl for Real Estate Agents — Become the Agent AI Recommends',
     description: 'The AI authority platform built for independent agents who want to own their market before competitors do.',

@@ -6,35 +6,35 @@ const STEPS = [
     title: 'Process',
     tagline: 'Structured sequence, not tactics.',
     description:
-      'A systematic 90-day authority build that establishes AI visibility from day one. Every engagement follows the same disciplined sequence so nothing is left to chance.',
+      'A systematic 90-day authority build that establishes repeatable systems from day one. Every engagement follows the same disciplined sequence so nothing is left to chance.',
   },
   {
     letter: 'E',
-    title: 'Entity',
-    tagline: 'Tell AI exactly who you are.',
+    title: 'Efficiency',
+    tagline: 'Remove the friction.',
     description:
-      'Knowledge graph architecture that registers your business as a verified, unambiguous entity across ChatGPT, Perplexity, Gemini, and every major AI engine.',
+      'We strip the unnecessary effort out of the systems that matter most — so your team spends its time on the work that actually moves authority forward.',
   },
   {
     letter: 'A',
-    title: 'Authority',
-    tagline: 'Depth that signals expertise.',
+    title: 'Automation',
+    tagline: 'Let the software do the work.',
     description:
-      'Topical content systems, structured data, and E-E-A-T architecture that make your expertise undeniable to AI systems — and citation-worthy at scale.',
+      'PearlOS handles the predictable execution — entity signals, content publishing, monitoring — so authority compounds without depending on manual follow-through.',
   },
   {
     letter: 'R',
-    title: 'Reputation',
-    tagline: 'Third-party proof AI can verify.',
+    title: 'Replication',
+    tagline: 'Reproduce what works.',
     description:
-      'Citation patterns, review architecture, and trust signal systems that give AI engines the external validation they need to confidently recommend your business.',
+      'Once a system proves itself, we reproduce it — across clients, markets, teams, and workflows — so results are systematic, not a one-time win.',
   },
   {
     letter: 'L',
     title: 'Leverage',
     tagline: 'Returns that grow over time.',
     description:
-      'Distribution and amplification systems that make your signals multiply across channels — so visibility grows every month without proportional reinvestment.',
+      'Replicated systems compound into greater output and impact without proportionally more effort — so visibility grows every month without proportional reinvestment.',
   },
 ];
 

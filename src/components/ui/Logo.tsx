@@ -12,7 +12,7 @@ type LogoProps = {
  * HeyPearl wordmark.
  * Renders the actual logo PNG (`/images/logo.png` or `/images/logo-inverse.png`).
  *
- * P.E.A.R.L. = Process · Efficiency · Automation · Revenue · Leverage.
+ * P.E.A.R.L. = Process · Efficiency · Automation · Replication · Leverage.
  */
 export function Logo({ variant = 'default', className, href = '/' }: LogoProps) {
   const isInverse = variant === 'inverse';
