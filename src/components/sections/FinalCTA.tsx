@@ -93,7 +93,7 @@ export function FinalCTA() {
           {[
             'No long-term contracts required',
             'Founder-led strategy sessions',
-            'Measurable results in 90 days',
+            'Measured against your Day 1 baseline',
           ].map((trust) => (
             <div key={trust} className="flex items-center gap-2">
               <div className="w-1 h-1 rounded-full" style={{ background: '#C2185B' }} aria-hidden />

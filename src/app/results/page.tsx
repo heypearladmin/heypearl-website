@@ -59,40 +59,6 @@ const KPI_DEFINITIONS = [
 ];
 
 
-// ─── SVG Components ───────────────────────────────────────────────────────────
-
-function RingChart({ value, max = 100, size = 80, stroke = 7, color = '#C2185B' }: {
-  value: number; max?: number; size?: number; stroke?: number; color?: string;
-}) {
-  const r = (size - stroke) / 2;
-  const circ = 2 * Math.PI * r;
-  const filled = (value / max) * circ;
-  const cx = size / 2;
-  return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden>
-      <circle cx={cx} cy={cx} r={r} fill="none" stroke="rgba(48,72,111,0.35)" strokeWidth={stroke} />
-      <circle cx={cx} cy={cx} r={r} fill="none" stroke={color} strokeWidth={stroke}
-        strokeDasharray={`${filled} ${circ}`} strokeLinecap="round"
-        transform={`rotate(-90 ${cx} ${cx})`} />
-    </svg>
-  );
-}
-
-function BarRow({ label, value, max = 100, color = '#C2185B' }: {
-  label: string; value: number; max?: number; color?: string;
-}) {
-  const pct = Math.round((value / max) * 100);
-  return (
-    <div className="flex items-center gap-3">
-      <div style={{ fontSize: '0.72rem', color: '#334155', width: '7rem', flexShrink: 0, textAlign: 'right' }}>{label}</div>
-      <div className="flex-1 h-1.5 rounded-full" style={{ background: 'rgba(48,72,111,0.35)' }}>
-        <div className="h-full rounded-full" style={{ width: `${pct}%`, background: color }} />
-      </div>
-      <div style={{ fontSize: '0.72rem', fontWeight: 700, color, width: '2rem', flexShrink: 0 }}>{value}</div>
-    </div>
-  );
-}
-
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ResultsPage() {
@@ -125,10 +91,10 @@ export default function ResultsPage() {
             Every claim on this page is backed by client data from real PearlOS engagements. These are not satisfaction scores. They are measurable changes in AI authority — tracked from Day 1 through Day 90 and beyond.
           </p>
 
-          {/* Hero stat strip — populated from DASHBOARD_METRICS[0..2] */}
-          <div className="mt-12 grid grid-cols-3 gap-px max-w-2xl"
+          {/* Hero stat strip — populated from DASHBOARD_METRICS */}
+          <div className="mt-12 grid grid-cols-2 gap-px max-w-xl"
             style={{ border: '1px solid #E7E3DD', borderRadius: '0.875rem', overflow: 'hidden' }}>
-            {DASHBOARD_METRICS.slice(0, 3).map((m, i) => (
+            {DASHBOARD_METRICS.map((m, i) => (
               <div key={i} className="px-4 sm:px-6 py-5" style={{ background: i === 1 ? 'rgba(194,24,91,0.05)' : '#FFFFFF' }}>
                 <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#C2185B', lineHeight: 1, whiteSpace: 'nowrap' }}>
                   {m.value}
@@ -163,12 +129,12 @@ export default function ResultsPage() {
               <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Performance Dashboard</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
-              Across all active engagements.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Averaged at 90 days.</span>
+              The infrastructure<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>behind every engagement.</span>
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {DASHBOARD_METRICS.map((m, i) => (
               <div key={i} className="p-6 rounded-xl flex flex-col gap-3"
                 style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid #E7E3DD' }}>
@@ -181,53 +147,18 @@ export default function ResultsPage() {
             ))}
           </div>
 
-          {/* Authority Score progress panel */}
+          {/* Authority Score methodology panel */}
           <div className="mt-8 p-7 lg:p-9 rounded-2xl" style={{ background: 'rgba(194,24,91,0.04)', border: '1px solid rgba(182,146,94,0.1)' }}>
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-              <div className="flex-1">
-                <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>Authority Score — Typical Progression</div>
-                <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.2, marginBottom: '0.75rem' }}>
-                  From baseline to competitive<br />authority in 90 days.
-                </h3>
-                <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.75 }}>
-                  Authority Score is a 0–100 composite metric measured at engagement start, Day 30, Day 60, and Day 90. Most clients enter with a score between 18–35. The 90-day average across all engagements is 86.
-                </p>
-              </div>
-              <div className="shrink-0 w-full lg:w-72 space-y-3.5">
-                {[
-                  { label: 'Day 0 (avg.)', value: 27 },
-                  { label: 'Day 30', value: 51 },
-                  { label: 'Day 60', value: 72 },
-                  { label: 'Day 90', value: 86 },
-                ].map((row) => (
-                  <BarRow key={row.label} label={row.label} value={row.value} />
-                ))}
-              </div>
+            <div className="flex-1">
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>How Authority Score Works</div>
+              <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.2, marginBottom: '0.75rem' }}>
+                From baseline to competitive authority.
+              </h3>
+              <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.75 }}>
+                Authority Score is a 0–100 composite metric measured at engagement start and re-measured at Day 30, Day 60, and Day 90 against that same baseline. The individual case studies below show each client's actual starting point and measured progress — we don't publish a blended average across engagements until enough of them have completed a full 90-day cycle to support one honestly.
+              </p>
             </div>
           </div>
-
-          {/* Ring chart row */}
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[
-              { label: 'Entity Verification', value: 96 },
-              { label: 'Knowledge Graph Completion', value: 94 },
-              { label: 'Citation Accuracy', value: 91 },
-              { label: 'Schema Coverage', value: 89 },
-            ].map((item) => (
-              <div key={item.label} className="p-5 rounded-xl flex flex-col items-center gap-3"
-                style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid #E7E3DD' }}>
-                <div className="relative flex items-center justify-center">
-                  <RingChart value={item.value} size={72} stroke={6} />
-                  <span style={{ position: 'absolute', fontSize: '0.8rem', fontWeight: 700, color: '#C2185B' }}>{item.value}%</span>
-                </div>
-                <div style={{ fontSize: '0.72rem', color: '#334155', textAlign: 'center', lineHeight: 1.4 }}>{item.label}</div>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-5" style={{ fontSize: '0.72rem', color: '#64748B', lineHeight: 1.6 }}>
-            All metrics represent averages across HeyPearl client engagements at the 90-day mark. Individual results vary by market, category, and engagement scope.
-          </p>
         </Container>
       </section>
 
@@ -418,7 +349,7 @@ export default function ResultsPage() {
               <div className="space-y-4">
                 {[
                   'Verified entity — correctly categorized across all six AI engines',
-                  'Named as primary recommendation in 14–29+ tracked buyer queries',
+                  'Named as the primary AI recommendation across most or all tracked buyer queries in your category',
                   'Knowledge Graph complete, NAP consistent, schema active',
                   'AI Visibility monitoring running — changes detected within the cycle',
                   'Visibility building monthly as content and signals mature',

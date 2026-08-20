@@ -214,11 +214,11 @@ export default function BrokeragesPage() {
         <Container size="lg">
           <Reveal>
           <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: cardShadow }}>
-            <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1rem' }}>Client Result</div>
+            <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1rem' }}>The Same Infrastructure, at Brokerage Scale</div>
             <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', fontStyle: 'italic', color: '#1E3A66', lineHeight: 1.5, marginBottom: '1.25rem' }}>
-              "An independent brokerage in Austin became the #1 AI-cited brokerage across 6 engines tested — within 90 days of PearlOS activation."
+              "Ranked #1 across all 5 tracked AI search topics by month 8 — from zero digital authority to becoming the recommended source across every tracked AI platform."
             </p>
-            <p style={{ fontSize: '0.78rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope.</p>
+            <p style={{ fontSize: '0.78rem', color: '#64748B' }}>That result is from a real estate team's documented engagement — the same entity architecture, authority infrastructure, and AI visibility systems we deploy at the brokerage level, coordinated across every agent in the brokerage. We're building out brokerage-specific case studies as those engagements complete a full measurement cycle. <Link href="/results" className="underline hover:no-underline">See documented case studies →</Link></p>
           </div>
           </Reveal>
         </Container>

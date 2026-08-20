@@ -50,7 +50,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is PearlOS?',
-      acceptedAnswer: { '@type': 'Answer', text: 'PearlOS is the operational layer beneath Hey Pearl. It includes CRM workflows, lead nurture sequences, AI inbox systems, booking and scheduling automation, and operational dashboards that convert AI-driven visibility into closed business.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'PearlOS is the operating system beneath every Hey Pearl engagement. It orchestrates entity signals, monitors AI recommendation patterns across major AI engines, and executes the P.E.A.R.L. framework — while also running the operational layer, including CRM workflows, AI-assisted follow-up, and booking automation, that turns AI-driven visibility into closed business.' },
     },
   ],
 };
@@ -93,7 +93,7 @@ const aboutFaqs = [
   },
   {
     q: 'What is PearlOS?',
-    a: 'PearlOS is the operational layer beneath Hey Pearl. It includes CRM workflows, lead nurture sequences, AI inbox systems, booking and scheduling automation, and operational dashboards that convert AI-driven visibility into closed business.',
+    a: 'PearlOS is the operating system beneath every Hey Pearl engagement. It orchestrates entity signals, monitors AI recommendation patterns across major AI engines, and executes the P.E.A.R.L. framework — while also running the operational layer, including CRM workflows, AI-assisted follow-up, and booking automation, that turns AI-driven visibility into closed business.',
   },
 ];
 

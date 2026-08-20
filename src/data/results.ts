@@ -24,18 +24,6 @@ export type Win = {
   month: string;               // e.g. "Aug 2026"
 };
 
-// ─── Aggregate Stats ──────────────────────────────────────────────────────────
-// Update these as real data accumulates across all 8 engagements.
-
-export const DASHBOARD_METRICS = [
-  { value: '—', label: 'Average increase in AI recommendation frequency', sub: 'across all active engagements' },
-  { value: '—', label: 'Average days to first measurable AI citation', sub: 'from PearlOS activation' },
-  { value: '—', label: 'Average Knowledge Graph completion score', sub: 'at 90-day mark' },
-  { value: '6', label: 'AI engines monitored per engagement', sub: 'ChatGPT, Perplexity, Gemini, Claude, Copilot, AI Overviews' },
-  { value: '—', label: 'Average Authority Score point gain', sub: 'from baseline to 90-day review' },
-  { value: '—', label: 'Average AI Share of Voice growth', sub: 'within primary service category' },
-];
-
 // ─── Case Studies ─────────────────────────────────────────────────────────────
 // Documented engagement stories — real data, anonymized client handles.
 // Use the client's hyperlocal area as the handle — specific enough to feel real,
@@ -182,6 +170,16 @@ export const CASE_STUDIES: CaseStudy[] = [
     timeline: '2.5 months',
     updatedAt: 'July 2026',
   },
+];
+
+// ─── Aggregate Stats ──────────────────────────────────────────────────────────
+// Only include metrics we can currently stand behind with real, verifiable numbers.
+// Add averaged/aggregate metrics here once enough engagements have completed a
+// full measurement cycle to support them — do not add placeholder values.
+
+export const DASHBOARD_METRICS = [
+  { value: `${CASE_STUDIES.length}`, label: 'Documented client engagements', sub: 'anonymized case studies published below' },
+  { value: '6', label: 'AI engines monitored per engagement', sub: 'ChatGPT, Perplexity, Gemini, Claude, Copilot, AI Overviews' },
 ];
 
 // ─── Recent Wins ──────────────────────────────────────────────────────────────
@@ -542,15 +540,15 @@ export const TESTIMONIALS = [
     city: 'Pensacola, FL',
   },
   {
-    quote: 'Replace with real client quote.',
-    handle: 'The [Area] Brokerage',
-    segment: 'Brokerage Owner',
-    city: 'City, ST',
+    quote: 'Seattle is one of the most competitive real estate markets in the country. After six months with HeyPearl, I\'m appearing on 66% of the local search map, my search impressions have nearly quadrupled, and I have 33 reviews I didn\'t have before. That kind of authority doesn\'t happen by accident.',
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    city: 'Seattle, WA',
   },
   {
-    quote: 'Replace with real client quote.',
-    handle: 'The [Area] Team',
-    segment: 'Team Lead',
-    city: 'City, ST',
+    quote: 'We serve military families and local buyers who deserve to work with someone they can trust. Now when they search on Google or ask ChatGPT, we\'re the name that comes up. HeyPearl built that for us — and it\'s been a game changer for our business.',
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    city: 'Leavenworth, KS',
   },
 ];

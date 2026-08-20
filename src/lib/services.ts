@@ -69,7 +69,7 @@ export const services: Service[] = [
     href: '/services/geo#automation',
     tagline: 'The backend engine',
     description:
-      'PearlOS is the operational layer underneath HeyPearl. CRM, lead nurture, AI response, and booking workflows that turn visibility into closed business.',
+      'PearlOS is the operating system underneath HeyPearl — orchestrating entity signals and AI monitoring, and running the CRM, lead nurture, AI response, and booking workflows that turn visibility into closed business.',
     bullets: [
       'CRM workflows and pipeline design',
       'Lead nurture and follow-up sequences',

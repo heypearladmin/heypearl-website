@@ -216,9 +216,9 @@ export default function TeamsPage() {
           <div className="p-8 lg:p-10 rounded-2xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: cardShadow }}>
             <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '1rem' }}>Client Result</div>
             <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', fontStyle: 'italic', color: '#1E3A66', lineHeight: 1.5, marginBottom: '1.25rem' }}>
-              "A real estate team in Scottsdale saw a 3× increase in AI recommendation frequency across their market — within a single quarter of PearlOS activation."
+              "A veteran-owned real estate team in Leavenworth, KS ranked #1 across all 5 tracked AI search topics by month 8 — building from zero digital authority to 101+ five-star reviews and 97.4% local pack coverage across their market."
             </p>
-            <p style={{ fontSize: '0.78rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope.</p>
+            <p style={{ fontSize: '0.78rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope. <Link href="/results" className="underline hover:no-underline">See documented case studies →</Link></p>
           </div>
           </Reveal>
         </Container>

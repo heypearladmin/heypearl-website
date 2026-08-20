@@ -111,7 +111,7 @@ const layers = [
   {
     number: '05',
     title: 'PearlOS Operations Layer',
-    body: 'CRM, lead nurture, AI inboxes, and booking workflows that turn AI visibility into closed business.',
+    body: 'The CRM, lead nurture, AI inbox, and booking layer PearlOS runs to turn AI visibility into closed business — connected to the same entity signals and AI monitoring driving your visibility.',
   },
 ];
 
@@ -249,8 +249,8 @@ export default function GEOPage() {
               <Reveal>
                 <SectionHeading
                   eyebrow="PearlOS"
-                  title="The operations layer beneath the visibility."
-                  description="HeyPearl gets you found. PearlOS makes the system run. Together they convert AI driven discovery into closed business."
+                  title="The system that runs beneath the visibility."
+                  description="PearlOS orchestrates the entity signals and AI monitoring behind every engagement — and runs the operational layer, from CRM to booking, that turns that visibility into closed business."
                   invert
                 />
               </Reveal>

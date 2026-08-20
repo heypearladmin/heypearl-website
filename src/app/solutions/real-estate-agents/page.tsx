@@ -246,9 +246,9 @@ export default function RealEstateAgentsPage() {
           <Reveal delay={0.15}>
           <div className="mt-8 p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.05)' }}>
             <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.7, fontStyle: 'italic' }}>
-              "A luxury agent in Seattle was being recommended by 14 AI queries that previously returned competitors. Within 90 days of PearlOS activation, those queries consistently named them as the primary recommendation."
+              "Seattle is one of the most competitive real estate markets in the country. After six months with HeyPearl, I'm appearing on 66% of the local search map, my search impressions have nearly quadrupled, and I have 33 reviews I didn't have before. That kind of authority doesn't happen by accident." — The Seattle Luxury Agent
             </p>
-            <p className="mt-3" style={{ fontSize: '0.75rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope.</p>
+            <p className="mt-3" style={{ fontSize: '0.75rem', color: '#64748B' }}>Client details anonymized. Results represent real engagements — outcomes vary by market and engagement scope. <Link href="/results" className="underline hover:no-underline">See documented case studies →</Link></p>
           </div>
           </Reveal>
         </Container>

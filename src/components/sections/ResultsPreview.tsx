@@ -4,31 +4,31 @@ import { Container } from '@/components/ui/Container';
 
 const CASE_STUDIES = [
   {
-    client: 'Luxury Realtor — Seattle, WA',
-    headline: 'From zero AI presence to cited across 14 high-intent queries',
-    metric: '14',
-    metricLabel: 'buyer queries now answered with this agent',
+    client: 'Independent Agent — Seattle, WA',
+    headline: 'From an 18.5 average search position to 66.7% local pack visibility',
+    metric: '66.7%',
+    metricLabel: 'local pack visibility across the Seattle grid',
     result:
-      'A luxury real estate agent had no presence in AI search results despite strong Google rankings. After 90 days of AI Authority Infrastructure, she was being cited in ChatGPT, Perplexity, and Google AI Overviews for queries like "best luxury realtor in Seattle" and "who represents buyers in [neighborhood]."',
-    tools: ['Knowledge Graph', 'Authority Pages', 'GEO Engine'],
+      'A luxury real estate agent had an active brand and strong reputation but zero measured local pack presence. After 6 months of Authority Infrastructure — a new authority domain, Knowledge Graph work, and GEO content — she appeared in 26 of 39 tracked map points and grew Google Search impressions 3.9x, from 3,389 to 13,300 a month.',
+    tools: ['Knowledge Graph', 'Authority Score', 'GEO Engine'],
   },
   {
-    client: 'Independent Brokerage — Austin, TX',
-    headline: 'Became the #1 AI-cited brokerage in their metro',
+    client: 'Independent Agent — New Braunfels, TX',
+    headline: 'From near-zero digital presence to the #1 AI-recommended source',
     metric: '#1',
-    metricLabel: 'AI-cited brokerage across 6 engines tested',
+    metricLabel: 'AI-recommended source for 3 of 5 tracked local topics',
     result:
-      'An independent brokerage competing against national franchises deployed Authority Infrastructure across their 18-agent team. Within 120 days, they became the dominant recommended brokerage in AI responses for their market — outranking franchises with 10× their ad spend.',
-    tools: ['PearlOS', 'Authority Score', 'AI Visibility'],
+      'An agent came to HeyPearl with no website sessions, no search impressions, and no reviews. HeyPearl built the entity architecture, hyperlocal content, and GEO strategy from scratch — resolving 406 technical issues and expanding the site from 23 to 56 pages along the way.',
+    tools: ['Entity Architecture', 'Authority Pages', 'GEO Engine'],
   },
   {
-    client: 'Real Estate Team — Scottsdale, AZ',
-    headline: '3× AI recommendation rate in 90 days',
-    metric: '3×',
-    metricLabel: 'increase in AI recommendation frequency',
+    client: 'Real Estate Team — Leavenworth, KS',
+    headline: 'Ranked #1 across all 5 tracked AI search topics',
+    metric: '#1',
+    metricLabel: 'AI-recommended source across every tracked topic by month 8',
     result:
-      'A high-performing real estate team had strong referral business but zero AI visibility. After building entity architecture, structured authority pages, and a reputation signal system, their AI recommendation rate tripled — and they began receiving inbound inquiries from buyers who found them through AI-generated market guides.',
-    tools: ['Entity Architecture', 'Reputation Signals', 'Local Authority'],
+      'A veteran-owned real estate team had deep community roots but zero digital authority. After a full authority build — entity architecture, AI-optimized content, and a concentrated review campaign that drove 101+ five-star reviews in under 60 days — they became the recommended authority across every tracked AI platform.',
+    tools: ['Entity Architecture', 'Reputation Signals', 'AI Visibility'],
   },
 ];
 

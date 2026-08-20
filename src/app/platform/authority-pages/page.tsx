@@ -47,9 +47,9 @@ const WHAT_IT_DOES = [
 ];
 
 const OUTCOMES = [
-  { metric: '14', label: 'buyer queries answered', context: 'Luxury Realtor — Seattle, WA' },
-  { metric: '#1', label: 'AI-cited brokerage', context: 'Independent Brokerage — Austin, TX' },
-  { metric: '3×', label: 'AI recommendation increase', context: 'Real Estate Team — Scottsdale, AZ' },
+  { metric: '66.7%', label: 'local pack visibility', context: 'Independent Agent — Seattle, WA' },
+  { metric: '#1', label: 'AI-recommended source, all 5 topics', context: 'Real Estate Team — Leavenworth, KS' },
+  { metric: '101+', label: 'five-star reviews in under 60 days', context: 'Real Estate Team — Leavenworth, KS' },
 ];
 
 export default function AuthorityPagesPage() {

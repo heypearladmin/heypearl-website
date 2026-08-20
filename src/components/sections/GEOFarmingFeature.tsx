@@ -214,7 +214,7 @@ export function GEOFarmingFeature() {
             </h2>
 
             <p className="text-lg leading-relaxed mb-8" style={{ color: '#334155' }}>
-              AI-powered neighborhood marketing designed to turn every listing into your next listing.
+              AI-powered neighborhood authority that makes you the recognized agent for your farm — so every listing becomes your next listing.
             </p>
 
             {/* Bullets */}

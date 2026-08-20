@@ -65,7 +65,7 @@ export function AISolutions() {
               A complete suite of AI-powered products.
             </h2>
             <p style={{ fontSize: '1rem', color: '#64748B', lineHeight: 1.75, maxWidth: '44rem' }}>
-              Built to help real estate professionals dominate their market, automate operations, and become the obvious choice in every neighborhood.
+              Built to help real estate professionals build AI authority, automate operations, and become the recognized, recommended choice in every neighborhood.
             </p>
           </div>
         </Reveal>
@@ -215,9 +215,9 @@ export function AISolutions() {
                   </p>
                   <div
                     className="inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-medium self-start transition-colors duration-200"
-                    style={{ border: '1px solid #E7E3DD', color: '#94A3B8', background: 'rgba(148,163,184,0.06)' }}
+                    style={{ border: '1px solid #E7E3DD', color: '#C2185B', background: 'rgba(194,24,91,0.06)' }}
                   >
-                    Coming Soon
+                    Explore →
                   </div>
                 </Link>
               </Reveal>

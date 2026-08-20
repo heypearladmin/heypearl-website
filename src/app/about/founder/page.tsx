@@ -12,7 +12,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: "Misti Bruton — Founder of HeyPearl | AI Authority Infrastructure",
   description:
-    "Misti Bruton is the founder and CEO of HeyPearl and creator of PearlOS. She helps experienced Realtors stop chasing cold leads and become the obvious AI-recommended choice in their market.",
+    "Misti Bruton is the founder and CEO of HeyPearl and creator of PearlOS. She helps real estate professionals build the AI authority infrastructure that gets them recognized and recommended in their market.",
   alternates: { canonical: 'https://heypearl.io/about/founder' },
   openGraph: {
     title: "Misti Bruton — Founder of HeyPearl | AI Authority Infrastructure",
@@ -226,10 +226,10 @@ export default function FounderPage() {
                 </span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: '#334155' }}>
-                Misti Bruton is the founder and CEO of HeyPearl and the creator of PearlOS — the first AI Authority Infrastructure built specifically for real estate professionals and local businesses competing in the age of AI search.
+                Misti Bruton is the founder and CEO of HeyPearl and the creator of PearlOS — bringing AI Authority Infrastructure to real estate professionals and local businesses competing in the age of AI search.
               </p>
               <p className="mt-4 text-base leading-relaxed" style={{ color: '#64748B' }}>
-                Her mission: help experienced Realtors stop chasing cold leads and become the obvious, AI-recommended choice in their market.
+                Her mission: help experienced Realtors build the authority infrastructure that makes them the obvious, AI-recommended choice in their market — not chase leads one at a time.
               </p>
 
               {/* Social links */}
