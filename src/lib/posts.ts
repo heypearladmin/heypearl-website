@@ -19,6 +19,294 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "ai-visibility-local-service-businesses",
+    eyebrow: "Industry Playbooks",
+    seoTitle: "AI Visibility for Local Service Businesses: The Complete Playbook for Contractors, Healthcare, and Home Services",
+    metaDescription: "Contractors, healthcare providers, and home service businesses face a different AI visibility problem than national brands. Here is the playbook for becoming the local provider AI recommends — built for the service categories buyers research before they call.",
+    h1: "AI Visibility for Local Service Businesses: The Complete Playbook",
+    excerpt: "When someone asks AI who to hire for a plumbing emergency, a roof repair, or a same-day dentist appointment, the answer comes from a narrower, more urgent set of signals than general brand authority. Here is how local service businesses build the AI visibility that gets them named first.",
+    quickAnswer: "Local service businesses build AI visibility by combining four signal types AI engines weight heavily for local, urgent-intent queries: verified entity data (accurate name, service area, and licensing across every platform), service-specific content that answers the exact questions buyers ask before hiring, review velocity and specificity tied to named services, and consistent geographic signals across every listing and citation. Unlike national brands, local service businesses compete primarily on trust and proximity signals rather than broad topical authority — which means the fastest path to AI visibility is depth in a narrow service area, not breadth across many.",
+    publishedAt: "2026-08-17",
+    readTime: "10 min read",
+    image: "/images/website-blog-local-service-ai-visibility.webp",
+    content: `## Why local service businesses face a different AI visibility problem
+
+A national software company and a local HVAC contractor are not competing for the same kind of AI recommendation, even though both want to appear when AI engines answer relevant questions.
+
+The software company is competing on topical authority — depth of content, industry recognition, and category leadership across a broad audience. The HVAC contractor is competing on something narrower and more urgent: when someone in their service area asks an AI assistant "who can fix my air conditioner today," the engine is evaluating proximity, licensing, availability signals, and trust — not blog post volume.
+
+This distinction matters because most AI visibility advice is written for the first kind of business. Local service businesses — contractors, home service providers, healthcare practices, legal practices, and similar categories — need a playbook built around what actually drives local, high-intent AI recommendations: verified entity data, service-specific content, review depth, and geographic consistency.
+
+## The four signal types that matter most for local service AI visibility
+
+**1. Verified entity data.** AI engines need to resolve, with confidence, who you are, what you do, where you operate, and whether you are licensed and legitimate to perform the service. This means your business name, address, phone number, service categories, and license or certification information must be accurate and identical everywhere they appear — your website, Google Business Profile, industry directories, and any citation source an AI engine might reference.
+
+**2. Service-specific content, not generic service pages.** A page titled "Plumbing Services" answers almost nothing an AI engine can cite with confidence. A page that answers "how much does it cost to fix a running toilet in [city]" or "what to do when your water heater is leaking" gives an AI engine a specific, citable answer tied to a specific query pattern — which is exactly the kind of content generative engines pull from when composing a recommendation.
+
+**3. Review velocity and specificity.** For local service businesses, reviews function as a trust signal AI engines weight heavily, and not all reviews carry equal weight. A review that says "great service" is weaker evidence than one that says "they fixed our furnace within two hours on a Sunday and explained exactly what was wrong" — because the second review gives an AI engine concrete, verifiable detail tied to a specific service and outcome.
+
+**4. Geographic consistency.** Local service businesses typically serve a defined area — a city, a set of ZIP codes, a metro region. Every signal about that service area needs to agree: your Google Business Profile service area, your website's location pages, your citations, and your schema markup should all describe the same geography in the same way. Inconsistency here creates exactly the kind of ambiguity AI engines are least willing to resolve in your favor.
+
+## Building the content layer: answer the pre-call questions
+
+Before a homeowner, patient, or client calls a local service business, they almost always research first — and increasingly, that research starts with an AI assistant rather than a search engine results page. The content that wins these queries answers the specific questions people ask in that research phase.
+
+For a **home services business** (plumbing, HVAC, electrical, roofing, landscaping): content addressing typical repair costs, warning signs of a specific problem, emergency versus non-emergency situations, and what to expect during a service visit.
+
+For a **healthcare practice** (dental, chiropractic, urgent care, specialty medicine): content addressing symptom-to-specialist matching ("who treats X condition"), insurance and payment questions, what a first visit involves, and same-day or urgent availability.
+
+For a **legal practice**: content addressing "do I need a lawyer for X situation," typical timelines and costs for common matters, and what documentation to bring to a consultation.
+
+The pattern across all three categories is the same: the content that earns AI citation answers the question someone has before they are ready to call, not just a description of the service itself.
+
+## Structuring content so AI engines can extract a direct answer
+
+Format matters as much as topic selection. AI engines favor content structured to yield a direct, extractable answer:
+
+- Lead each section with the direct answer to the implied question, then support it with detail
+- Use specific numbers where accurate — typical price ranges, response-time windows, appointment availability — rather than vague qualifiers
+- Structure comparison-style content (which service is right for which situation) in clearly labeled sections or tables
+- Include a dedicated FAQ section addressing the specific phrasing real customers use, not just formal service terminology
+
+A local service business that structures its content this way gives AI engines something to lift directly into a generated answer. A business whose content only describes services in marketing language gives engines nothing precise enough to cite.
+
+## The Google Business Profile as the primary entity anchor
+
+For local service businesses specifically, Google Business Profile carries outsized weight because it is the most frequently cross-referenced entity source for local queries across nearly every AI engine, not just Google's own AI Overviews.
+
+Priority actions: complete every available field, including services and attributes specific to your category; keep hours and service area precise and current; respond to every review, positive and negative, with specific, non-templated responses; and post updates regularly enough that the profile reads as active rather than dormant. An incomplete or stale profile is one of the most common reasons a local service business with genuinely good service still fails to appear in AI-generated local recommendations.
+
+## Licensing and certification as a trust signal AI engines can verify
+
+Local service categories — contractors, healthcare, legal — are among the few where licensing and certification information functions as a direct, verifiable trust signal rather than a marketing claim. Publishing license numbers, board certifications, insurance information, and professional association memberships in a structured, consistent way gives AI engines evidence they can weigh confidently, because it is the kind of claim that is independently checkable rather than self-asserted.
+
+This is a genuine differentiator for local service businesses specifically: a plumber's "20 years of experience" claim is difficult for an AI engine to verify independently, but a published license number cross-referenced against a state licensing board is not.
+
+## What to prioritize in the first 30 days
+
+For a local service business starting from limited AI visibility, the highest-leverage sequence is:
+
+1. **Audit and correct entity consistency** across your website, Google Business Profile, and top citation sources — name, address, phone, service categories, and service area should match exactly everywhere.
+2. **Publish five to ten service-specific content pieces** answering the actual pre-call questions your category generates most often.
+3. **Launch or accelerate a structured review-request process** tied to specific service completions, encouraging specific, detailed feedback rather than generic praise.
+4. **Complete and activate your Google Business Profile** fully, including category-specific attributes and services.
+5. **Publish licensing and certification information** in a clear, structured, consistently formatted way across your website and profile.
+
+## Why this differs from a national brand's AI visibility strategy
+
+A national brand builds AI visibility primarily through topical authority and content breadth — becoming the recognized source across an entire category, regardless of location. A local service business builds it through depth and consistency within a narrow, defined geography. Trying to apply a national content-volume strategy to a single-location service business usually wastes effort on breadth the business does not need, while under-investing in the entity consistency and review depth that actually determine whether AI engines trust and recommend a specific local provider.`,
+    faq: [
+      {
+        q: "How is AI visibility different for a local service business than a national company?",
+        a: "A national company competes primarily on topical authority — breadth and depth of content across a broad audience and category. A local service business competes primarily on trust and proximity signals: verified entity data, geographic consistency, and reviews tied to specific services performed in a specific area. Local service AI visibility is won through depth and consistency in a narrow service area, not through broad content volume."
+      },
+      {
+        q: "Do online reviews actually affect whether AI recommends a local service business?",
+        a: "Yes, and specificity matters more than volume alone. A review that names the specific service performed and describes a verifiable outcome carries more weight as a trust signal than a high volume of generic, low-detail reviews. AI engines use review text, not just star ratings, as evidence when evaluating which local providers to recommend for a given query."
+      },
+      {
+        q: "Should a local service business publish its license number online?",
+        a: "Yes. For categories like contracting, healthcare, and legal services, published licensing and certification information functions as a verifiable trust signal AI engines can weigh with confidence, because it is independently checkable rather than a self-asserted marketing claim. It is one of the more underused entity signals available to local service businesses."
+      },
+      {
+        q: "How important is Google Business Profile for local service AI visibility?",
+        a: "It is one of the most important single signals available, because it is cross-referenced by nearly every major AI engine when evaluating local queries, not only Google's own AI Overviews. A complete, current, actively maintained profile — with accurate service categories, hours, service area, and review responses — is foundational to local service AI visibility."
+      },
+      {
+        q: "What kind of content should a local service business publish first?",
+        a: "Content that answers the specific questions customers have before they call — typical costs, warning signs, urgency indicators, what to expect during a visit — rather than generic service description pages. This content matches the actual query patterns AI engines are answering and gives them something specific and citable to draw from."
+      }
+    ],
+    conclusion: "Local service businesses do not need to out-publish national brands to build strong AI visibility — they need to out-verify them. The businesses winning AI recommendations in home services, healthcare, and legal categories are the ones with the most consistent, verifiable entity data, the most specific and citable pre-call content, and the deepest, most detailed review record tied to real services performed in a real, clearly defined area. That is a different, and in many ways more achievable, path to AI visibility than the content-volume race larger brands run — it rewards depth and accuracy over scale.",
+    internalLinks: [
+      { label: "See how AI visibility works for real estate agents and brokerages", href: "/insights/ai-visibility-real-estate-agents-brokerages" },
+      { label: "Learn how local AI search optimization works", href: "/insights/local-ai-search-optimization" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a professional local service worker — such as a licensed contractor or technician in clean work attire — reviewing a tablet with a client at the entrance of a well-maintained residential home during golden hour, warm natural light, shallow depth of field, authentic and premium documentary photography style, no text, no logos, no watermarks",
+    imageFilename: "website-blog-local-service-ai-visibility.webp",
+  },
+  {
+    slug: "llms-txt-ai-crawler-access-guide",
+    eyebrow: "AI Crawler Access",
+    seoTitle: "llms.txt and AI Crawler Access: The Technical Guide to Controlling How AI Engines Read Your Site",
+    metaDescription: "GPTBot, ClaudeBot, PerplexityBot, and Google-Extended are already crawling your website. Here is what llms.txt is, how AI crawler directives actually work, and how to configure both so AI engines can find, read, and cite your content correctly.",
+    h1: "llms.txt and AI Crawler Access: How to Control What AI Engines Read on Your Site",
+    excerpt: "Before AI engines can cite your business, their crawlers have to be able to read it. Here is what llms.txt is, which AI bots are already visiting your site, and how to configure crawler access so you are found instead of filtered out.",
+    quickAnswer: "llms.txt is an emerging text file, placed at a website's root domain, that gives AI language models a clean, structured summary of a site's most important pages — similar to how a sitemap helps traditional search engines. Alongside llms.txt, businesses control AI crawler access through robots.txt directives that explicitly allow or block bots such as GPTBot (OpenAI), ClaudeBot (Anthropic), PerplexityBot, and Google-Extended (Google's AI training crawler). If these directives are missing, misconfigured, or inherited from a generic template, AI engines may be unable to access your content at all — regardless of how good that content is.",
+    publishedAt: "2026-08-20",
+    readTime: "10 min read",
+    image: "/images/website-blog-llms-txt-ai-crawlers.webp",
+    content: `## Why AI crawler access is the step most businesses skip
+
+Every AI visibility strategy — schema markup, entity architecture, authority content, reputation signals — depends on a single precondition: the AI engine has to be able to crawl and read your site in the first place.
+
+Most businesses invest heavily in the content and structured data layer while never checking whether the underlying crawler permissions actually allow AI systems to reach that content. It is a foundational gap, and it is invisible until you specifically look for it. Your website can be technically flawless and your content genuinely citable, and still be functionally invisible to ChatGPT, Perplexity, or Google AI Overviews if the crawlers behind them are blocked, throttled, or simply never told the site exists.
+
+This is the layer beneath the layer — the access question that has to be answered correctly before any other AI visibility work can compound.
+
+## What llms.txt actually is
+
+llms.txt is a proposed plain-text file, placed at a website's root (yourdomain.com/llms.txt), designed to give large language models a curated, structured overview of a site's most important content — written in a format optimized for machine consumption rather than human browsing.
+
+Conceptually, it sits between a sitemap and a README file. Where a sitemap.xml lists every URL for traditional search engine indexing, llms.txt is meant to guide an AI system directly to the pages that matter most: your core service pages, your most authoritative articles, your FAQ content, your about and contact information. It typically uses simple Markdown formatting — a title, a short description, and organized links grouped by section — so a language model can quickly orient itself around what a site is and where its most citable content lives.
+
+It is important to be precise about its status: llms.txt is a community-proposed convention, not a standard formally adopted or confirmed to be used by OpenAI, Anthropic, Google, or Perplexity in the way robots.txt is universally respected by search crawlers. Adoption is inconsistent and evolving. That does not make it worthless — a well-structured llms.txt costs little to implement, causes no harm, and positions a site to benefit if and as adoption grows. But it should be treated as a forward-looking addition, not a substitute for the parts of AI crawler access that are already confirmed and consequential: robots.txt directives and server-level access rules.
+
+## llms.txt vs. robots.txt vs. sitemap.xml — what each one actually does
+
+These three files are often confused because they all live at the root of a domain, but they serve distinct functions:
+
+**robots.txt** is the access-control layer. It tells crawlers — search engines and AI bots alike — which parts of your site they are allowed or forbidden to request. This is the file with real, immediate teeth: a disallow directive aimed at an AI crawler will, in most cases, be honored, meaning that crawler simply will not fetch the blocked pages.
+
+**sitemap.xml** is the discovery layer for traditional search engines. It lists every indexable URL so Google, Bing, and other search crawlers can find and prioritize content efficiently. It is not primarily designed with AI language model consumption in mind, though AI systems that also function as search engines (like Google's AI Overviews) benefit from it indirectly.
+
+**llms.txt** is the orientation layer, specifically for AI systems. It does not control access — a bot can ignore it entirely and suffer no consequence — but where it is respected, it shortcuts an AI system's understanding of what your site is and which pages represent your most authoritative, most current content.
+
+The practical takeaway: robots.txt determines whether AI crawlers can reach your content at all. llms.txt, where honored, determines how efficiently they understand it once they arrive. Get the access layer right first.
+
+## The AI crawlers you need to know by name
+
+Every major AI company operates named, identifiable web crawlers. Configuring access requires knowing which bot serves which purpose:
+
+**GPTBot** — OpenAI's crawler, used to gather data for training and improving its models. A separate crawler, OAI-SearchBot, handles retrieval for ChatGPT's real-time search and browsing features, and is generally the one you want indexing your content for citation purposes.
+
+**ChatGPT-User** — A distinct user-agent OpenAI uses when ChatGPT is actively browsing a page on behalf of a live user query, as opposed to bulk training-data collection.
+
+**ClaudeBot** — Anthropic's crawler, used for both training data collection and to support Claude's ability to browse and reference web content when responding to queries.
+
+**PerplexityBot** — Perplexity's crawler, directly responsible for the real-time retrieval that powers Perplexity's answer engine. Because Perplexity operates primarily as a citation-driven answer engine rather than a pure chatbot, this crawler has an outsized effect on whether your business appears as a cited source.
+
+**Google-Extended** — A control token (not a traditional crawler user-agent) that lets you specifically opt your content in or out of use for training Google's Gemini models and powering AI Overviews, separately from standard Googlebot indexing for search.
+
+**Amazonbot** — Amazon's crawler, which feeds Alexa's answer capabilities among other uses.
+
+**Applebot-Extended** — Apple's control token for AI-related use of crawled content, relevant as Apple integrates more generative AI features into its ecosystem.
+
+New crawlers are introduced as AI companies expand capabilities, so this list should be treated as a living reference, not a permanent one. The businesses that stay current are the ones who periodically re-check which bots are actually requesting their pages.
+
+## How to check whether AI crawlers can currently access your site
+
+Before writing a single directive, establish your current baseline:
+
+**Check your existing robots.txt.** Visit yourdomain.com/robots.txt directly. Read every line. Many robots.txt files were written years before AI crawlers existed and contain broad disallow rules — intended for a different purpose entirely — that inadvertently catch AI bots in their net.
+
+**Check your server logs.** If you have access to raw server or CDN logs, search for the crawler names above. Their presence confirms they are attempting to reach your site; their absence tells you nothing has been actively blocking them, but also that nothing has actively invited them either.
+
+**Check your CDN or firewall rules.** Services like Cloudflare have introduced bot-management features that can block AI crawlers by default at the network level — sometimes without a business realizing the setting exists or was ever changed. This layer sits outside robots.txt entirely and can silently override an otherwise-permissive robots.txt file.
+
+**Use a live fetch test.** Some AI platforms offer or are rumored to offer tools that let you test whether their crawler can successfully fetch a given URL. Where available, use them directly rather than assuming.
+
+## How to write an llms.txt file
+
+A basic llms.txt follows a simple, readable Markdown structure:
+
+\`\`\`
+# [Your Business Name]
+
+> One or two sentence description of what the business does and who it serves.
+
+## Core Pages
+- [About](https://yourdomain.com/about): Company background and team
+- [Services](https://yourdomain.com/services): Full service overview
+
+## Authority Content
+- [Guide Title](https://yourdomain.com/insights/guide-slug): One-line summary
+- [FAQ](https://yourdomain.com/faq): Answers to common questions
+
+## Contact
+- [Contact](https://yourdomain.com/contact): How to reach the business
+\`\`\`
+
+Keep descriptions factual and specific rather than promotional — the purpose is orientation, not marketing copy. Prioritize your highest-authority, most frequently updated content over comprehensive completeness; a curated list of twenty genuinely important pages is more useful to a language model than an exhaustive dump of every URL on the site.
+
+## How to configure robots.txt for AI crawlers
+
+The strategic decision is not simply "allow" or "block" — it depends on what each crawler is used for and what your visibility goals are.
+
+**For businesses pursuing AI visibility and citation** (the default recommendation for nearly every commercial business), the general posture should be permissive toward retrieval-oriented crawlers:
+
+\`\`\`
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+\`\`\`
+
+**For businesses with specific content they do not want used in AI training** — while still wanting to appear in AI-generated answers — the distinction between training crawlers and retrieval crawlers matters. You can, for example, disallow GPTBot (training) while allowing OAI-SearchBot (real-time retrieval and citation), giving you citation visibility without contributing to model training corpora.
+
+**Directories that should generally remain disallowed for all crawlers** regardless of AI strategy: admin panels, staging environments, internal search result pages, checkout and account pages, and any duplicate or thin-content page groups you would not want cited as a representative sample of your business.
+
+Always test syntax after editing — a single misplaced character in robots.txt can invalidate the entire file or accidentally disallow everything.
+
+## Common mistakes that quietly block AI visibility
+
+**Inherited disallow-all rules.** Some CMS platforms and site builders ship with a default \`Disallow: /\` in staging or preview environments that gets carried into production and never removed.
+
+**Blanket bot-blocking plugins.** Security plugins marketed as blocking "bad bots" or "scrapers" sometimes categorize all automated crawlers — including legitimate AI retrieval bots — as threats by default, with no distinction made.
+
+**CDN-level blocking that bypasses robots.txt entirely.** As noted above, this is the mistake most likely to go unnoticed, because checking robots.txt alone will show everything looks fine while a network-level rule silently drops the requests before they ever reach your server.
+
+**Treating llms.txt as sufficient on its own.** A perfectly written llms.txt does nothing if robots.txt or a firewall rule is blocking the crawler from ever requesting the site in the first place. Access has to be granted before orientation matters.
+
+## Does blocking AI crawlers protect your content, or hurt your visibility?
+
+This is a legitimate strategic question, not just a technical one, and the honest answer is: it depends on the goal.
+
+Blocking AI training crawlers (GPTBot, ClaudeBot's training use, Google-Extended) does prevent your specific content from being used as raw material in future model training runs. For businesses with significant proprietary or licensed content, that may be a deliberate and reasonable choice.
+
+However, blocking retrieval and citation crawlers (OAI-SearchBot, PerplexityBot's live retrieval function) has a different effect entirely: it prevents your business from appearing in the AI-generated answers and recommendations those systems produce in response to real user queries. For a business trying to be the one AI recommends, blocking these crawlers is directly counterproductive — it removes you from consideration before your content and authority signals ever get evaluated.
+
+The strategic default for most commercial businesses: allow retrieval and citation crawlers broadly, and make training-data decisions deliberately and separately, rather than blocking everything under a single blunt "block all AI bots" instinct.
+
+## Where this fits in the larger AI authority system
+
+Crawler access is not a standalone tactic — it is the infrastructure layer everything else depends on. Entity architecture, schema markup, and authority content all assume the AI engine can actually reach and parse the page carrying those signals. A business with excellent structured data and a misconfigured robots.txt file is investing in signals that never get received.
+
+This is why crawler access belongs at the start of an AI visibility audit, not as an afterthought. Before evaluating content quality or entity completeness, confirm the door is actually open.`,
+    faq: [
+      {
+        q: "What is llms.txt used for?",
+        a: "llms.txt is a plain-text file placed at a website's root domain that gives AI language models a curated, structured summary of a site's most important pages — its core services, authority content, and contact information — in a format designed for quick machine orientation rather than human browsing. It functions similarly to a sitemap, but is written specifically to help AI systems understand what a site is and where its best content lives."
+      },
+      {
+        q: "Is llms.txt an official web standard?",
+        a: "No. It is a community-proposed convention, not a standard formally confirmed to be used by OpenAI, Anthropic, Google, or Perplexity the way robots.txt is universally respected by search crawlers. Adoption is inconsistent and still evolving. It is worth implementing because it costs little and positions a site to benefit as adoption grows, but it should not be treated as a substitute for the access controls in robots.txt, which are confirmed and consequential."
+      },
+      {
+        q: "Should I block AI crawlers like GPTBot from scraping my content?",
+        a: "It depends on your goal. Blocking training-oriented crawlers (like GPTBot's training use) prevents your content from being used in future model training, which may be reasonable for businesses with proprietary content. But blocking retrieval and citation crawlers, such as OAI-SearchBot or PerplexityBot, prevents your business from appearing in AI-generated answers and recommendations — which is directly counterproductive for a business trying to build AI visibility. Most commercial businesses should allow retrieval crawlers broadly and make training-data decisions separately and deliberately."
+      },
+      {
+        q: "How do I know which AI bots are currently crawling my website?",
+        a: "Check your raw server or CDN access logs for known AI crawler user-agent names — GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Amazonbot, and similar. Their presence in logs confirms they are actively requesting pages. You should also review your robots.txt file directly and check whether your CDN or firewall (such as Cloudflare) has bot-management rules that could be blocking crawlers at the network level, independent of what robots.txt says."
+      },
+      {
+        q: "Does llms.txt replace robots.txt?",
+        a: "No — they serve different functions and both matter. robots.txt is the access-control layer; it determines whether a crawler is permitted to request your pages at all, and is treated as authoritative by essentially every major crawler. llms.txt is an orientation layer that, where honored, helps an AI system understand your site's structure and priority content more efficiently once access has already been granted. Access has to be confirmed first — an llms.txt file does nothing for a crawler that robots.txt or a firewall rule is blocking outright."
+      },
+      {
+        q: "Will blocking AI crawlers hurt my AI search visibility?",
+        a: "If you block the retrieval and citation crawlers that power live AI answers — such as PerplexityBot or OAI-SearchBot — yes, directly. Those crawlers are how AI engines discover and later cite your content in response to real user queries. A business blocking these crawlers is removing itself from consideration in AI-generated recommendations before any content or authority signal is ever evaluated, regardless of how strong that content otherwise is."
+      }
+    ],
+    conclusion: "AI crawler access is the layer every other AI visibility tactic depends on, and it is the one most audits skip. A business can have excellent schema, strong entity signals, and genuinely citable content, and still be invisible to AI engines if a stale robots.txt rule, a default security plugin, or a CDN-level bot filter is quietly blocking the crawlers that would otherwise find it. Confirming access, writing a clear llms.txt, and making deliberate — not accidental — decisions about which AI bots can reach your site is foundational infrastructure work. It does not replace content or entity strategy, but without it, that other work never gets the chance to be seen.",
+    internalLinks: [
+      { label: "Learn about schema markup for AI visibility", href: "/insights/structured-data-schema-ai-visibility" },
+      { label: "Audit your AI search visibility", href: "/insights/audit-your-ai-search-visibility" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a minimalist home office desk at dusk with a laptop screen displaying a soft glowing abstract network and data-node visualization in navy and deep magenta tones, out-of-focus server rack lights faintly visible through a window in the background, warm ambient light mixing with cool screen glow, shallow depth of field, premium tech-editorial photography style, no text, no logos, no watermarks",
+    imageFilename: "website-blog-llms-txt-ai-crawlers.webp",
+  },
+  {
     slug: "neighborhood-marketing-ai-era-real-estate",
     eyebrow: "Hyperlocal AI Strategy",
     seoTitle: "Neighborhood Marketing in the AI Era: How Real Estate Agents Can Own Their Local Market in AI Search",
