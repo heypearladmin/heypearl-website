@@ -34,9 +34,45 @@ const WHY_ENTITY = [
   { q: 'What is entity ambiguity?', a: "Entity ambiguity happens when different sources describe your business inconsistently — different names, addresses, categories, or service descriptions. AI engines resolve ambiguity by recommending the business they can most confidently identify." },
 ];
 
+const FAQS = [
+  { q: "What does the Knowledge Graph module do?", a: "It builds the entity architecture that registers your business as a verified, unambiguous entity across ChatGPT, Perplexity, Gemini, and every major AI engine \u2014 so those systems can resolve exactly who you are and confidently attribute authority, reviews, and content to the right business." },
+  { q: "Why does entity architecture matter for AI visibility?", a: "AI engines don't read a website the way a person does \u2014 they need a business's identity to resolve cleanly across schema, citations, and third-party sources before they'll cite it with confidence. Without a verified entity, authority content and reviews can exist without ever being confidently attributed to your business." },
+  { q: "How is this different from schema markup alone?", a: "Schema markup is one input to entity architecture, not the whole of it. Knowledge Graph work also covers NAP consistency across platforms, sameAs linking to authoritative external profiles, and disambiguation from similarly-named entities \u2014 schema is necessary but not sufficient on its own." },
+  { q: "How long does it take to build a complete Knowledge Graph presence?", a: "Initial entity architecture is typically built in the first 30 days of an engagement, since it's the foundation every other module depends on. Full maturity \u2014 where AI engines consistently and accurately attribute authority to the verified entity \u2014 usually continues strengthening over the following 60 to 90 days as citations accumulate." },
+  { q: "Does Knowledge Graph work replace the need for a Google Business Profile?", a: "No \u2014 a complete, accurate Google Business Profile is itself one of the entity signals Knowledge Graph work relies on and strengthens. The two work together rather than one replacing the other." },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Platform', item: `${site.url}/platform` },
+    { '@type': 'ListItem', position: 3, name: 'Knowledge Graph', item: `${site.url}/platform/knowledge-graph` },
+  ],
+};
+
 export default function KnowledgeGraphPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-white overflow-hidden"
@@ -44,7 +80,7 @@ export default function KnowledgeGraphPage() {
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
           <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-knowledge-graph.webp" alt="" fill sizes="38vw" className="object-cover" />
+            <Image src="/images/platform/platform-knowledge-graph.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
@@ -171,6 +207,33 @@ export default function KnowledgeGraphPage() {
                 Learn about PearlOS <ArrowUpRight size={14} />
               </Link>
             </div>
+          </div>
+        </Container>
+      </section>
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <Container size="lg">
+          <Reveal>
+          <div className="mb-12 max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+              What operators ask<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about Knowledge Graph.</span>
+            </h2>
+          </div>
+          </Reveal>
+          <div className="space-y-4 max-w-3xl">
+            {FAQS.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
+              </div>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>

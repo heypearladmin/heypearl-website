@@ -76,9 +76,45 @@ const LAYERS = [
   { step: '05', title: 'Leverage Layer', desc: 'How authority compounds — distribution and amplification systems that grow your AI visibility month after month.' },
 ];
 
+const FAQS = [
+  { q: "What is PearlOS, exactly?", a: "PearlOS is the operating system that runs beneath every HeyPearl engagement. It orchestrates entity signals, monitors AI engines in real time, executes the P.E.A.R.L. framework in sequence, and runs the operational layer \u2014 CRM workflows, AI-assisted follow-up, and booking automation \u2014 that turns AI-driven visibility into closed business." },
+  { q: "How is PearlOS different from a CRM?", a: "A CRM manages contacts and pipeline. PearlOS does that too, but it starts a layer earlier \u2014 orchestrating the entity signals and AI monitoring that determine whether your business is recommended by AI engines in the first place. A CRM has nothing to say about whether ChatGPT or Perplexity recommends you; PearlOS is built specifically for that problem, and then carries the resulting inquiries through to a booked conversation." },
+  { q: "Do I need all five platform modules to use PearlOS, or can I start with one?", a: "PearlOS is the layer that coordinates the five modules, but engagements are typically phased \u2014 entity architecture and Process foundation first, then Authority Pages and GEO content, then Authority Score and AI Visibility monitoring as the system matures. PearlOS runs whichever modules are active at any given stage." },
+  { q: "How does PearlOS relate to the P.E.A.R.L. framework?", a: "P.E.A.R.L. \u2014 Process, Efficiency, Automation, Replication, Leverage \u2014 is the operating philosophy. PearlOS is the software that executes it: it enforces the sequence, prevents steps from being skipped, and automates the parts of the framework that don't require a human decision." },
+  { q: "Does PearlOS replace my existing marketing tools?", a: "No. PearlOS is an AI authority and operations layer, not a full marketing-stack replacement. It's built to coordinate the AI-specific work \u2014 entity signals, AI monitoring, authority content \u2014 and connect that to the CRM and booking automation that turns the resulting visibility into conversations, working alongside whatever website and marketing tools you already run." },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Platform', item: `${site.url}/platform` },
+    { '@type': 'ListItem', position: 3, name: 'PearlOS', item: `${site.url}/platform/pearlos` },
+  ],
+};
+
 export default function PearlOSPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative -mt-24 sm:-mt-28 min-h-[72vh] flex flex-col justify-center bg-white overflow-hidden"
@@ -86,7 +122,7 @@ export default function PearlOSPage() {
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
           <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-pearlos.webp" alt="" fill sizes="38vw" className="object-cover" />
+            <Image src="/images/platform/platform-pearlos.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div
@@ -328,10 +364,37 @@ export default function PearlOSPage() {
           </div>
         </Container>
       </section>
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <Container size="lg">
+          <Reveal>
+          <div className="mb-12 max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+              What operators ask<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about PearlOS.</span>
+            </h2>
+          </div>
+          </Reveal>
+          <div className="space-y-4 max-w-3xl">
+            {FAQS.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
+              </div>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
 
       {/* Ecosystem nav */}
       <EcosystemNav
-        current=""
+        current="/platform/pearlos"
         nextHref="/platform/authority-score"
         nextLabel="Authority Score — Measure your gaps"
       />

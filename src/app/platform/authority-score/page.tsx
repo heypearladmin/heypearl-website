@@ -35,9 +35,45 @@ const PROCESS = [
   { step: '04', title: 'Ongoing Tracking', desc: 'PearlOS re-runs your Authority Score at regular intervals throughout your engagement — so you can see compounding gains in real time.' },
 ];
 
+const FAQS = [
+  { q: "What is Authority Score?", a: "Authority Score is HeyPearl's proprietary 0\u2013100 composite metric that quantifies how well-positioned a business is to receive AI recommendations \u2014 combining entity clarity, content depth, citation signals, and competitive share of voice into a single trackable number." },
+  { q: "How is Authority Score calculated?", a: "It weighs several inputs together: how completely and accurately your entity is verified across AI engines, the depth and citation-worthiness of your authority content, the volume and specificity of third-party reputation signals, and how you compare to competitors in your category for the same buyer queries." },
+  { q: "What is a good Authority Score?", a: "Most businesses enter with a score in the 18\u201335 range before any AI authority work has been done. There's no universal \"good\" threshold \u2014 the useful comparison is your score relative to the specific competitors you're being evaluated against by AI engines in your category and market." },
+  { q: "How often does my Authority Score update?", a: "Authority Score is measured at engagement start to establish a baseline, then re-measured on a regular cycle \u2014 typically at 30, 60, and 90 days \u2014 against that same baseline, so progress is always shown against where you actually started, not a generic industry average." },
+  { q: "How is Authority Score different from a domain authority or SEO score?", a: "Domain authority and similar SEO metrics estimate a page's likely search-ranking strength based on backlinks and technical factors. Authority Score is built specifically to estimate AI recommendation likelihood \u2014 a different mechanism, based on entity verification and citation-worthiness rather than link equity." },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Platform', item: `${site.url}/platform` },
+    { '@type': 'ListItem', position: 3, name: 'Authority Score', item: `${site.url}/platform/authority-score` },
+  ],
+};
+
 export default function AuthorityScorePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-white overflow-hidden"
@@ -45,7 +81,7 @@ export default function AuthorityScorePage() {
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
           <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-authority-score.webp" alt="" fill sizes="38vw" className="object-cover" />
+            <Image src="/images/platform/platform-authority-score.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div
@@ -198,6 +234,33 @@ export default function AuthorityScorePage() {
                 Learn about PearlOS <ArrowUpRight size={14} />
               </Link>
             </div>
+          </div>
+        </Container>
+      </section>
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <Container size="lg">
+          <Reveal>
+          <div className="mb-12 max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+              What operators ask<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about Authority Score.</span>
+            </h2>
+          </div>
+          </Reveal>
+          <div className="space-y-4 max-w-3xl">
+            {FAQS.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
+              </div>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>

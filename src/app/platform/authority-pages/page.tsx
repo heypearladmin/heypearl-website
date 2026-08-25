@@ -52,9 +52,45 @@ const OUTCOMES = [
   { metric: '101+', label: 'five-star reviews in under 60 days', context: 'Real Estate Team — Leavenworth, KS' },
 ];
 
+const FAQS = [
+  { q: "What are Authority Pages?", a: "Authority Pages are page infrastructure engineered specifically for AI citation \u2014 headings, definitions, statistics, and answers structured the way AI engines pull citations, plus a deliberate internal linking architecture that reinforces your entity across the site." },
+  { q: "How are Authority Pages different from regular website pages?", a: "A typical service or about page is written to persuade a human reader. Authority Pages are structured to give AI engines concrete, citable material \u2014 direct answers near the top, specific claims an engine can extract confidently, and internal links that build a consistent, cross-referencing picture of your authority." },
+  { q: "How many Authority Pages does a typical engagement include?", a: "Scope varies by engagement, but most builds include a core set covering primary service and specialty pages, plus a growing library of supporting authority content published on an ongoing cadence as the engagement matures." },
+  { q: "Do Authority Pages replace my existing website?", a: "Not necessarily \u2014 they can be built as new pages within your existing site or as a dedicated authority website, depending on your current site's technical foundation. The goal is citable, AI-ready page architecture, not a full site rebuild for its own sake." },
+  { q: "How does Authority Page content get chosen?", a: "Topics are chosen from the actual questions your buyers ask AI engines in the research phase, informed by AI Visibility monitoring and Authority Score gap analysis \u2014 not from generic keyword lists." },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Platform', item: `${site.url}/platform` },
+    { '@type': 'ListItem', position: 3, name: 'Authority Pages', item: `${site.url}/platform/authority-pages` },
+  ],
+};
+
 export default function AuthorityPagesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-white overflow-hidden"
@@ -62,7 +98,7 @@ export default function AuthorityPagesPage() {
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
           <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-authority-pages.webp" alt="" fill sizes="38vw" className="object-cover" />
+            <Image src="/images/platform/platform-authority-pages.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div
@@ -319,6 +355,33 @@ export default function AuthorityPagesPage() {
           <p className="text-center mt-5" style={{ fontSize: '0.7rem', color: '#94A3B8' }}>
             Client details anonymized. Results represent real engagements — outcomes vary by market and scope.
           </p>
+        </Container>
+      </section>
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <Container size="lg">
+          <Reveal>
+          <div className="mb-12 max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+              What operators ask<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about Authority Pages.</span>
+            </h2>
+          </div>
+          </Reveal>
+          <div className="space-y-4 max-w-3xl">
+            {FAQS.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
+              </div>
+              </Reveal>
+            ))}
+          </div>
         </Container>
       </section>
 

@@ -37,9 +37,45 @@ const WHAT_IT_TRACKS = [
   { title: 'Query-Level Intelligence', desc: "The specific buyer questions that are (or aren't) surfacing your business — so content and entity efforts can be directed at the highest-leverage gaps." },
 ];
 
+const FAQS = [
+  { q: "What does the AI Visibility module actually track?", a: "AI Visibility monitors how ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews represent your business in response to real buyer queries \u2014 whether you're mentioned, how you're described, and whether that description is accurate \u2014 and alerts you when the picture changes." },
+  { q: "How is AI Visibility different from traditional rank tracking?", a: "Rank tracking measures where a page lands in a search results list. AI Visibility measures something different: whether an AI engine chooses to mention, describe, or recommend your business at all when composing a generated answer. There is no \"position\" to track \u2014 only presence, accuracy, and sentiment." },
+  { q: "Which AI engines does AI Visibility monitor?", a: "Six major engines: ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews. Coverage expands as new AI search surfaces gain meaningful buyer usage." },
+  { q: "How often is AI Visibility data updated?", a: "Monitoring runs continuously, with alerts triggered when your AI representation changes materially \u2014 a new citation, a dropped mention, or a factual inaccuracy in how an engine describes your business." },
+  { q: "What happens when AI Visibility detects a change in how I'm represented?", a: "You're alerted, and the finding feeds back into the rest of the platform \u2014 a factual error can trigger a correction through Knowledge Graph and Authority Pages work, while a new citation opportunity can inform GEO Engine content priorities." },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Platform', item: `${site.url}/platform` },
+    { '@type': 'ListItem', position: 3, name: 'AI Visibility', item: `${site.url}/platform/ai-visibility` },
+  ],
+};
+
 export default function AIVisibilityPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative -mt-24 sm:-mt-28 min-h-[68vh] flex flex-col justify-center bg-white overflow-hidden"
@@ -47,7 +83,7 @@ export default function AIVisibilityPage() {
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
           <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-ai-visibility.webp" alt="" fill sizes="38vw" className="object-cover" />
+            <Image src="/images/platform/platform-ai-visibility.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
@@ -199,6 +235,33 @@ export default function AIVisibilityPage() {
                 Learn about PearlOS <ArrowUpRight size={14} />
               </Link>
             </div>
+          </div>
+        </Container>
+      </section>
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <Container size="lg">
+          <Reveal>
+          <div className="mb-12 max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+              What operators ask<br />
+              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about AI Visibility.</span>
+            </h2>
+          </div>
+          </Reveal>
+          <div className="space-y-4 max-w-3xl">
+            {FAQS.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+                <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
+              </div>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>

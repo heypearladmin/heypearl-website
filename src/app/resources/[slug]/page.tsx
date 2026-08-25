@@ -36,8 +36,19 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     .map(s => ARTICLE_META.find(a => a.slug === s))
     .filter(Boolean) as typeof ARTICLE_META;
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+      { '@type': 'ListItem', position: 2, name: 'Resources', item: `${site.url}/resources` },
+      { '@type': 'ListItem', position: 3, name: article.title, item: `${site.url}/resources/${article.slug}` },
+    ],
+  };
+
   return (
     <div style={{ background: bg, minHeight: '100vh' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumb */}
       <div style={{ background: card, borderBottom: `1px solid ${border}` }}>
