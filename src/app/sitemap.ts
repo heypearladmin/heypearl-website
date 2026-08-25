@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/solutions/service-businesses', priority: 0.8, freq: 'monthly' },
     { path: '/solutions/teams',              priority: 0.8, freq: 'monthly' },
     { path: '/solutions/enterprise',         priority: 0.8, freq: 'monthly' },
+    { path: '/hey-local',                    priority: 0.8, freq: 'monthly' },
     // Resources
     { path: '/resources', priority: 0.85, freq: 'weekly' },
     { path: '/faq',       priority: 0.8,  freq: 'weekly' },

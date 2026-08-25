@@ -874,7 +874,7 @@ The channel is already routing buyers. The question is whether it is routing the
     ],
     conclusion: "Local AI recommendations are short lists with high stakes. The businesses that earn a spot on them are not necessarily the largest or the oldest — they are the ones engines can identify with the most confidence. Build that confidence through a complete and active Google Business Profile, consistent NAP across every platform, a steady stream of specific and recent reviews, location-aware structured data, and content that speaks directly to your geography and services. That infrastructure compounds over time, and it becomes the reason the engine names you instead of your competitor when the next buyer asks who to call.",
     internalLinks: [
-      { label: "Learn about HeyLocal", href: "/services/heylocal" },
+      { label: "Learn about HeyLocal", href: "/hey-local" },
       { label: "Explore our GEO services", href: "/services/geo" },
       { label: "Book a strategy call", href: "/contact" }
     ],
@@ -1499,7 +1499,7 @@ Organization schema with a complete \`sameAs\` property explicitly links your we
 
 Every other GEO signal assumes an entity exists to attach to. Citation velocity means citations of an entity. Review signals are reviews of an entity. Structured data describes an entity. E-E-A-T is authority accruing to an entity. Without entity status, these signals scatter across an ambiguous identity and lose most of their force.
 
-Establish the entity first, and everything else compounds on top of it. That sequencing — entity foundation, then signal amplification — is exactly how our [GEO service](/services/geo) is structured, and it's why our [HeyLocal](/services/heylocal) work puts entity consistency at the center of local visibility.`,
+Establish the entity first, and everything else compounds on top of it. That sequencing — entity foundation, then signal amplification — is exactly how our [GEO service](/services/geo) is structured, and it's why our [HeyLocal](/hey-local) work puts entity consistency at the center of local visibility.`,
     faq: [
     {
         "q": "What's the difference between a website and an entity?",
@@ -1534,7 +1534,7 @@ Establish the entity first, and everything else compounds on top of it. That seq
     },
     {
         "label": "See our HeyLocal service",
-        "href": "/services/heylocal"
+        "href": "/hey-local"
     }
 ],
     imagePrompt: "Editorial photography of a glowing knowledge graph visualization projected in a dark modern room, person silhouetted in background studying the projection, cool blue and warm amber light contrast, cinematic quality, realistic photography, no text, no logos",

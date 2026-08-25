@@ -75,6 +75,11 @@ export const primaryNav: NavItem[] = [
         href: '/platform/ai-visibility',
         description: 'Dominate Google, AI Search, GEO, AEO, and local search visibility.',
       },
+      {
+        label: 'Hey Local',
+        href: '/hey-local',
+        description: 'Simple online growth for local businesses.',
+      },
     ],
   },
   {
