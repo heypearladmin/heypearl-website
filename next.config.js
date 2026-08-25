@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    // Vercel's built-in image optimization has a monthly source-image
+    // transformation quota. This site's image volume exceeded it in
+    // production (confirmed via 402 Payment Required on /_next/image
+    // requests for several blog hero images), which broke images live.
+    // Disabling optimization serves the original files directly — no
+    // resizing/format conversion, but no quota-driven outages either.
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'res.cloudinary.com' },
