@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, MapPin, Star, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
+import { LocalVisibilityDashboard } from '@/components/hey-local/LocalVisibilityDashboard';
 import { site } from '@/lib/site';
 
 /**
@@ -218,53 +219,9 @@ export default function HeyLocalPage() {
                 <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, rgba(16,32,63,0.75) 0%, rgba(16,32,63,0.92) 100%)` }} />
               </div>
 
-              {/* Illustrative visibility snapshot — not tied to any specific client */}
+              {/* Illustrative visibility dashboard — not tied to any specific client */}
               <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-10">
-                <div
-                  className="w-full max-w-lg rounded-2xl p-6 sm:p-8"
-                  style={{ background: WHITE }}
-                >
-                  <div className="flex items-center justify-between mb-6">
-                    <p style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: MUTED_ON_LIGHT }}>
-                      Local Visibility Snapshot
-                    </p>
-                    <span
-                      className="rounded-full px-2.5 py-1 text-[0.6rem] font-bold"
-                      style={{ background: LIME, color: NAVY }}
-                    >
-                      ILLUSTRATIVE
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-3 gap-4">
-                    <div>
-                      <div className="flex items-center gap-1.5 mb-1" style={{ color: MUTED_ON_LIGHT }}>
-                        <MapPin size={13} />
-                        <span style={{ fontSize: '0.65rem', fontWeight: 600 }}>Maps</span>
-                      </div>
-                      <p className="font-display" style={{ fontSize: '1.4rem', fontWeight: 700, color: NAVY }}>Active</p>
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-1.5 mb-1" style={{ color: MUTED_ON_LIGHT }}>
-                        <Star size={13} />
-                        <span style={{ fontSize: '0.65rem', fontWeight: 600 }}>Reviews</span>
-                      </div>
-                      <p className="font-display" style={{ fontSize: '1.4rem', fontWeight: 700, color: NAVY }}>Growing</p>
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-1.5 mb-1" style={{ color: MUTED_ON_LIGHT }}>
-                        <TrendingUp size={13} />
-                        <span style={{ fontSize: '0.65rem', fontWeight: 600 }}>Trend</span>
-                      </div>
-                      <p className="font-display" style={{ fontSize: '1.4rem', fontWeight: 700, color: NAVY }}>Up</p>
-                    </div>
-                  </div>
-                  <div className="mt-5 h-1.5 rounded-full overflow-hidden" style={{ background: SOFT }}>
-                    <div className="h-full rounded-full" style={{ width: '72%', background: LIME }} />
-                  </div>
-                  <p className="mt-2" style={{ fontSize: '0.7rem', color: MUTED_ON_LIGHT }}>
-                    Example visualization of what Hey Local tracks for every client.
-                  </p>
-                </div>
+                <LocalVisibilityDashboard />
               </div>
             </div>
           </Reveal>
