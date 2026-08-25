@@ -209,14 +209,13 @@ export default function HeyLocalPage() {
             >
               <div className="relative" style={{ aspectRatio: '16/7' }}>
                 <Image
-                  src="/images/new-hero-images/hero-heylocal.jpg"
-                  alt="A thriving local business district"
+                  src="/images/website-heylocal-background.webp"
+                  alt="A local shopping street with storefronts lit up in the evening"
                   fill
                   sizes="(min-width: 1024px) 1152px, 100vw"
                   className="object-cover"
-                  style={{ filter: 'saturate(0.5)' }}
                 />
-                <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, rgba(16,32,63,0.75) 0%, rgba(16,32,63,0.92) 100%)` }} />
+                <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, rgba(16,32,63,0.55) 0%, rgba(16,32,63,0.85) 100%)` }} />
               </div>
 
               {/* Illustrative visibility dashboard — not tied to any specific client */}
