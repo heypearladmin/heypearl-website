@@ -27,6 +27,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
   const [status, setStatus] = useState<Status>({ type: 'collapsed' });
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -36,7 +37,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
       const res = await fetch('/api/lead-magnet', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ firstName, email, postSlug, resourceTitle: title, sourcePage }),
+        body: JSON.stringify({ firstName, email, phone, postSlug, resourceTitle: title, sourcePage }),
       });
 
       const data = (await res.json().catch(() => ({}))) as {
@@ -89,7 +90,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
           Get {title} as a PDF
         </h3>
         <p className="mt-3 text-slate leading-relaxed text-sm">
-          We&rsquo;ll email it to you and send it here for immediate download.
+          Your download unlocks immediately below — no email required to access it.
         </p>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -121,6 +122,22 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
               inputMode="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+            />
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="lm-phone" className="block text-xs tracking-micro uppercase text-slate mb-2">
+              Phone <span className="text-slate/50 normal-case">(optional)</span>
+            </label>
+            <input
+              id="lm-phone"
+              name="phone"
+              type="tel"
+              autoComplete="tel"
+              inputMode="tel"
+              placeholder="(555) 123-4567"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
               className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
             />
           </div>
