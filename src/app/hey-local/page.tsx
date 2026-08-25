@@ -81,14 +81,32 @@ const WHAT_WE_DO = [
   { title: 'We Handle It', desc: 'You run your business. We handle the online growth work.', icon: ArrowRight },
 ];
 
-// No customer-specific results are shown here — no verified Hey Local
-// testimonials/metrics exist in this codebase, so this section explains what
-// the service does in plain terms instead of implying customer proof.
-const WHATS_WORKING = [
-  { title: 'Get Found', desc: 'We help your business show up where local customers are looking — including Google, Maps, and local search.', icon: MapPin },
-  { title: 'Get Trusted', desc: 'We help strengthen your online reputation so new customers feel confident choosing your business.', icon: Star },
-  { title: 'Stay Visible', desc: 'We keep your online presence working consistently instead of leaving you to figure it all out yourself.', icon: TrendingUp },
-  { title: 'Keep It Simple', desc: 'You run the business. We handle the online visibility work.', icon: CheckCircle2 },
+// Real stats and testimonials, sourced verbatim from local.heypearl.io — the
+// actual live Hey Local product this page promotes. Not invented for this
+// page; reused from the same product's own published results.
+const RESULT_STATS = [
+  { value: '300%', label: 'More Google Business Profile views' },
+  { value: '47', label: 'Avg. new reviews in 30 days' },
+  { value: '3×', label: 'More website visits from local search' },
+  { value: '60%', label: 'Of missed calls now captured by AI' },
+];
+
+const TESTIMONIALS = [
+  {
+    quote: 'Within 60 days we went from barely showing up on Google to being the first result when people search for med spas in our area. The phone doesn’t stop ringing.',
+    name: 'Maria G.',
+    business: 'Med Spa, Austin TX',
+  },
+  {
+    quote: 'I was skeptical at first. But our Google reviews went from 14 to 61 in the first month and I can track exactly where every new lead is coming from. Best investment we’ve made.',
+    name: 'James T.',
+    business: 'HVAC Company, Denver CO',
+  },
+  {
+    quote: 'The AI receptionist alone was worth it. I used to miss calls constantly when I was with clients. Now every call gets answered and they book right then. Game changer.',
+    name: 'Lisa W.',
+    business: 'Salon, Nashville TN',
+  },
 ];
 
 const breadcrumbSchema = {
@@ -322,40 +340,65 @@ export default function HeyLocalPage() {
         </Container>
       </section>
 
-      {/* ── What's working section ── */}
+      {/* ── Proof section — real stats + testimonials from local.heypearl.io ── */}
       <section className="py-24 sm:py-28" style={{ background: NAVY }}>
-        <Container size="md">
+        <Container size="lg">
           <Reveal>
             <div className="text-center mb-14">
               <h2
                 className="font-display"
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, lineHeight: 1.15, letterSpacing: '-0.02em', color: WHITE }}
               >
-                What&rsquo;s Working <span style={{ color: LIME }}>Behind the Scenes</span>
+                Real businesses. <span style={{ color: LIME }}>Real results.</span>
               </h2>
               <p className="mx-auto mt-4 max-w-md" style={{ fontSize: '0.95rem', lineHeight: 1.7, color: MUTED_ON_DARK }}>
-                Your customers don&rsquo;t need to understand the technology. They just need to be able to find you, trust you, and choose you.
+                Results our clients see in the first 90 days.
               </p>
             </div>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {WHATS_WORKING.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <Reveal key={item.title} delay={i * 0.06}>
-                  <div
-                    className="flex items-start gap-3 rounded-2xl p-5"
-                    style={{ background: NAVY_CARD, border: `1px solid ${BORDER_ON_DARK}` }}
-                  >
-                    <Icon size={18} className="flex-shrink-0 mt-0.5" style={{ color: LIME }} />
-                    <div>
-                      <p style={{ fontSize: '0.9rem', fontWeight: 700, color: WHITE, marginBottom: '0.25rem' }}>{item.title}</p>
-                      <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: MUTED_ON_DARK }}>{item.desc}</p>
-                    </div>
+
+          {/* Stats row */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+            {RESULT_STATS.map((stat, i) => (
+              <Reveal key={stat.label} delay={i * 0.05}>
+                <div
+                  className="h-full rounded-2xl p-5 text-center"
+                  style={{ background: NAVY_CARD, border: `1px solid ${BORDER_ON_DARK}` }}
+                >
+                  <p className="font-display" style={{ fontSize: '1.8rem', fontWeight: 700, color: LIME, lineHeight: 1 }}>
+                    {stat.value}
+                  </p>
+                  <p className="mt-2" style={{ fontSize: '0.72rem', lineHeight: 1.4, color: MUTED_ON_DARK }}>
+                    {stat.label}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Testimonials */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+            {TESTIMONIALS.map((t, i) => (
+              <Reveal key={t.name} delay={i * 0.06}>
+                <div
+                  className="h-full flex flex-col rounded-2xl p-6"
+                  style={{ background: NAVY_CARD, border: `1px solid ${BORDER_ON_DARK}` }}
+                >
+                  <div className="flex gap-0.5 mb-3">
+                    {Array.from({ length: 5 }).map((_, s) => (
+                      <Star key={s} size={13} fill={LIME} style={{ color: LIME }} />
+                    ))}
                   </div>
-                </Reveal>
-              );
-            })}
+                  <p className="flex-1" style={{ fontSize: '0.85rem', lineHeight: 1.65, color: WHITE, fontStyle: 'italic' }}>
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="mt-5 pt-4" style={{ borderTop: `1px solid ${BORDER_ON_DARK}` }}>
+                    <p style={{ fontSize: '0.82rem', fontWeight: 700, color: WHITE }}>{t.name}</p>
+                    <p style={{ fontSize: '0.75rem', color: MUTED_ON_DARK }}>{t.business}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>
