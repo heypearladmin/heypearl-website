@@ -11,8 +11,11 @@ import { extractToc } from '@/lib/toc';
 import { slugify } from '@/lib/slugify';
 import { FAQCard } from '@/components/blog/FAQCard';
 import { RelatedArticles } from '@/components/blog/RelatedArticles';
+import { LeadMagnetGate } from '@/components/forms/LeadMagnetGate';
+import { StickyCTA } from '@/components/layout/StickyCTA';
 import { site } from '@/lib/site';
 import { getPost, posts, formatDate } from '@/lib/posts';
+import { getLeadMagnetPdf } from '@/lib/leadMagnets';
 import { ArrowLeft, Clock, Calendar, User } from 'lucide-react';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -160,6 +163,7 @@ export default async function InsightPost({ params }: Props) {
   if (!post) notFound();
 
   const toc = extractToc(post.content);
+  const leadMagnetPdf = getLeadMagnetPdf(post.slug);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -214,6 +218,8 @@ export default async function InsightPost({ params }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      <StickyCTA />
 
       {/* ── Hero ── */}
       <header className="relative overflow-hidden bg-plum text-cream">
@@ -310,6 +316,17 @@ export default async function InsightPost({ params }: Props) {
                       </LinkButton>
                     ))}
                   </div>
+                </div>
+              )}
+
+              {/* PDF lead magnet */}
+              {leadMagnetPdf && (
+                <div className="mt-12">
+                  <LeadMagnetGate
+                    postSlug={post.slug}
+                    title={post.h1}
+                    sourcePage={`/insights/${post.slug}`}
+                  />
                 </div>
               )}
 
