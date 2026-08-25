@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ArrowRight, MapPin, Star, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
@@ -58,19 +57,19 @@ const PROBLEMS = [
     eyebrow: 'THE PHONE GOES QUIET',
     title: 'Your competitors are getting calls that should be yours',
     body: 'Customers search Google before they call anyone. If your business isn’t showing up when they search, they never even find out you exist — they just call the business that did.',
-    fix: 'We put you where customers are looking — Google, Maps, and local search.',
+    fix: 'We help put your business where customers are already looking — Google, Maps, and local search.',
   },
   {
     eyebrow: 'FEAST OR FAMINE',
     title: 'Great month. Slow month. You never know which is coming.',
     body: 'Referrals and word-of-mouth are great when they happen — but they’re not something you can count on. One quiet month and the whole business feels it.',
-    fix: 'Consistent visibility creates a more consistent flow of opportunities.',
+    fix: 'We keep your business visible consistently instead of relying only on referrals and luck.',
   },
   {
     eyebrow: 'NO TIME. NO STAFF. NO IDEA WHERE TO START',
     title: 'You’re the owner, the crew and the marketer. That’s too much.',
     body: 'Running the business is already a full-time job. Nobody has the bandwidth to also become a marketing expert — and guessing at it burns time you don’t have.',
-    fix: 'We handle the online growth work so you can focus on running the business.',
+    fix: 'We handle the online growth work so you can focus on running your business.',
   },
 ];
 
@@ -82,13 +81,14 @@ const WHAT_WE_DO = [
   { title: 'We Handle It', desc: 'You run your business. We handle the online growth work.', icon: ArrowRight },
 ];
 
-// Pulled directly from the real Hey Local product tiers (src/lib/pricing.ts)
-// rather than any invented client outcome or testimonial.
-const WHAT_TO_EXPECT = [
-  'Local visibility infrastructure across maps, search, and AI summaries',
-  'A foundational review system that builds real reputation over time',
-  'Local schema and structured data so your business is easy to find',
-  'A monthly visibility report — no guessing whether it’s working',
+// No customer-specific results are shown here — no verified Hey Local
+// testimonials/metrics exist in this codebase, so this section explains what
+// the service does in plain terms instead of implying customer proof.
+const WHATS_WORKING = [
+  { title: 'Get Found', desc: 'We help your business show up where local customers are looking — including Google, Maps, and local search.', icon: MapPin },
+  { title: 'Get Trusted', desc: 'We help strengthen your online reputation so new customers feel confident choosing your business.', icon: Star },
+  { title: 'Stay Visible', desc: 'We keep your online presence working consistently instead of leaving you to figure it all out yourself.', icon: TrendingUp },
+  { title: 'Keep It Simple', desc: 'You run the business. We handle the online visibility work.', icon: CheckCircle2 },
 ];
 
 const breadcrumbSchema = {
@@ -135,7 +135,7 @@ export default function HeyLocalPage() {
                 className="text-[0.65rem] font-semibold tracking-[0.14em] uppercase"
                 style={{ color: WHITE }}
               >
-                AI-Powered Local Business Growth
+                Built for Local Businesses
               </span>
             </div>
           </Reveal>
@@ -322,7 +322,7 @@ export default function HeyLocalPage() {
         </Container>
       </section>
 
-      {/* ── Proof section ── */}
+      {/* ── What's working section ── */}
       <section className="py-24 sm:py-28" style={{ background: NAVY }}>
         <Container size="md">
           <Reveal>
@@ -331,25 +331,31 @@ export default function HeyLocalPage() {
                 className="font-display"
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, lineHeight: 1.15, letterSpacing: '-0.02em', color: WHITE }}
               >
-                Real businesses. <span style={{ color: LIME }}>Real results.</span>
+                What&rsquo;s Working <span style={{ color: LIME }}>Behind the Scenes</span>
               </h2>
               <p className="mx-auto mt-4 max-w-md" style={{ fontSize: '0.95rem', lineHeight: 1.7, color: MUTED_ON_DARK }}>
-                Every Hey Local engagement is built around the same foundation:
+                Your customers don&rsquo;t need to understand the technology. They just need to be able to find you, trust you, and choose you.
               </p>
             </div>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {WHAT_TO_EXPECT.map((item, i) => (
-              <Reveal key={item} delay={i * 0.06}>
-                <div
-                  className="flex items-start gap-3 rounded-2xl p-5"
-                  style={{ background: NAVY_CARD, border: `1px solid ${BORDER_ON_DARK}` }}
-                >
-                  <CheckCircle2 size={18} className="flex-shrink-0 mt-0.5" style={{ color: LIME }} />
-                  <p style={{ fontSize: '0.875rem', lineHeight: 1.6, color: WHITE }}>{item}</p>
-                </div>
-              </Reveal>
-            ))}
+            {WHATS_WORKING.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <Reveal key={item.title} delay={i * 0.06}>
+                  <div
+                    className="flex items-start gap-3 rounded-2xl p-5"
+                    style={{ background: NAVY_CARD, border: `1px solid ${BORDER_ON_DARK}` }}
+                  >
+                    <Icon size={18} className="flex-shrink-0 mt-0.5" style={{ color: LIME }} />
+                    <div>
+                      <p style={{ fontSize: '0.9rem', fontWeight: 700, color: WHITE, marginBottom: '0.25rem' }}>{item.title}</p>
+                      <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: MUTED_ON_DARK }}>{item.desc}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </Container>
       </section>
@@ -387,24 +393,6 @@ export default function HeyLocalPage() {
         </Container>
       </section>
 
-      {/* ── Related ── */}
-      <section className="py-14" style={{ background: SOFT }}>
-        <Container size="lg">
-          <div className="flex flex-wrap items-center justify-center gap-3 text-center">
-            <p style={{ fontSize: '0.85rem', color: MUTED_ON_LIGHT }}>
-              Looking for something more specific?
-            </p>
-            <Link
-              href="/solutions/service-businesses"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold"
-              style={{ color: NAVY }}
-            >
-              See our Service Business solution
-              <ArrowRight size={13} />
-            </Link>
-          </div>
-        </Container>
-      </section>
     </>
   );
 }
