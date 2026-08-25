@@ -38,8 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/resources', priority: 0.85, freq: 'weekly' },
     { path: '/faq',       priority: 0.8,  freq: 'weekly' },
     // Legal
+    // Note: /privacy is intentionally excluded — its own canonical tag points
+    // to /policies, so listing it here would contradict that self-declaration.
     { path: '/policies',         priority: 0.3, freq: 'yearly' },
-    { path: '/privacy',          priority: 0.3, freq: 'yearly' },
     { path: '/terms-of-service', priority: 0.3, freq: 'yearly' },
   ];
 

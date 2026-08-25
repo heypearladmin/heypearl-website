@@ -1,0 +1,28 @@
+# Hey Pearl
+
+> HeyPearl builds AI Authority Infrastructure — the entity architecture, structured data, authority content, and reputation systems that make a business more likely to be recognized, trusted, cited, and recommended by AI engines including ChatGPT, Perplexity, Gemini, and Google AI Overviews. HeyPearl's methodology is the P.E.A.R.L. framework (Process, Efficiency, Automation, Replication, Leverage), executed through its operating system, PearlOS.
+
+## Core Pages
+- [Home](https://heypearl.io/): Overview of the AI Authority Platform
+- [About](https://heypearl.io/about): Company background, mission, and the P.E.A.R.L. framework
+- [Platform](https://heypearl.io/platform): PearlOS and the five platform modules
+- [Solutions](https://heypearl.io/solutions): Offerings by audience — agents, brokerages, teams, service businesses, enterprise
+- [Results](https://heypearl.io/results): Documented client case studies and measured outcomes
+- [Get Started](https://heypearl.io/get-started): How engagements begin
+- [Contact](https://heypearl.io/contact): How to reach Hey Pearl
+
+## Platform Modules
+- [PearlOS](https://heypearl.io/platform/pearlos): The operating system orchestrating entity signals, AI engine monitoring, and the P.E.A.R.L. framework
+- [Authority Pages](https://heypearl.io/platform/authority-pages): AI-citable page architecture and structured content
+- [Authority Score](https://heypearl.io/platform/authority-score): Proprietary scoring system for AI recommendation readiness
+- [Knowledge Graph](https://heypearl.io/platform/knowledge-graph): Entity architecture and verification
+- [AI Visibility](https://heypearl.io/platform/ai-visibility): Real-time monitoring of AI engine representation
+- [GEO Engine](https://heypearl.io/platform/geo-engine): Generative Engine Optimization content and distribution systems
+
+## Authority Content
+- [Insights](https://heypearl.io/insights): Editorial articles on AI search, GEO, AEO, and authority infrastructure
+- [Resources](https://heypearl.io/resources): The AI Authority Library — foundational guides on entity SEO, schema, and AI search
+- [FAQ](https://heypearl.io/faq): Answers to common questions about AI Authority Infrastructure, GEO, and PearlOS
+
+## Contact
+- [Contact](https://heypearl.io/contact): Support, partnerships, and strategy call scheduling

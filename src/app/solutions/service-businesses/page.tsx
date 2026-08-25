@@ -209,6 +209,27 @@ export default function ServiceBusinessesPage() {
       {/* Recommended Modules */}
       <RecommendedModules modules={MODULES} />
 
+      {/* Related reading */}
+      <section className="py-12 bg-white">
+        <Container size="lg">
+          <Link
+            href="/insights/ai-visibility-local-service-businesses"
+            className="group flex items-center justify-between gap-4 rounded-2xl px-6 py-5"
+            style={{ border: '1px solid #E7E3DD', background: '#F8F5F0' }}
+          >
+            <div>
+              <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.35rem' }}>
+                Related Playbook
+              </div>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#1E3A66' }}>
+                AI Visibility for Local Service Businesses: The Complete Playbook
+              </div>
+            </div>
+            <ArrowUpRight size={16} style={{ color: '#C2185B' }} />
+          </Link>
+        </Container>
+      </section>
+
       {/* FAQ */}
       <section className="py-24 bg-white">
         <Container size="lg">

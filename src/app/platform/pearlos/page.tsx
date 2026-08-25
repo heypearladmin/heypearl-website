@@ -10,7 +10,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'PearlOS — The AI Authority Operating System | HeyPearl',
   description:
-    'PearlOS is the operating system behind every HeyPearl engagement. It orchestrates entity signals, monitors 6 AI engines in real time, and executes the P.E.A.R.L. framework so your authority compounds as a system.',
+    'PearlOS is the operating system behind every HeyPearl engagement. It orchestrates entity signals, monitors 6 AI engines in real time, executes the P.E.A.R.L. framework, and runs the operational layer — CRM workflows, AI-assisted follow-up, and booking automation — that turns AI-driven visibility into closed business.',
   alternates: { canonical: 'https://heypearl.io/platform/pearlos' },
   openGraph: {
     title: 'PearlOS — The AI Authority Operating System',
@@ -138,7 +138,7 @@ export default function PearlOSPage() {
             The system that runs your authority build — so you don't have to.
           </p>
           <p className="mt-5 max-w-[36rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75 }}>
-            PearlOS coordinates every module, monitors every AI engine, and executes the P.E.A.R.L. framework in the exact sequence required. Every HeyPearl engagement is powered by it from day one.
+            PearlOS coordinates every module, monitors every AI engine, and executes the P.E.A.R.L. framework in the exact sequence required — then runs the CRM, follow-up, and booking automation that converts that visibility into closed business. Every HeyPearl engagement is powered by it from day one.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a

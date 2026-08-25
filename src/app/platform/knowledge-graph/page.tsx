@@ -159,6 +159,12 @@ export default function KnowledgeGraphPage() {
               <p style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.75 }}>
                 PearlOS builds entity architecture immediately after the Process audit, before any other module goes live. Authority Pages, Reputation signals, and GEO content all depend on a verified entity foundation. Without it, AI engines can't attribute authority to the right business.
               </p>
+              <p className="mt-4" style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.75 }}>
+                Entity signals only matter if AI crawlers can actually reach them —{' '}
+                <Link href="/insights/llms-txt-ai-crawler-access-guide" style={{ color: '#C2185B', fontWeight: 600 }}>
+                  see how to configure AI crawler access with llms.txt and robots.txt
+                </Link>.
+              </p>
             </div>
             <div className="shrink-0">
               <Link href="/platform/pearlos" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#C2185B' }}>
