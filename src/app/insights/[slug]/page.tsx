@@ -12,7 +12,6 @@ import { slugify } from '@/lib/slugify';
 import { FAQCard } from '@/components/blog/FAQCard';
 import { RelatedArticles } from '@/components/blog/RelatedArticles';
 import { LeadMagnetGate } from '@/components/forms/LeadMagnetGate';
-import { StickyCTA } from '@/components/layout/StickyCTA';
 import { site } from '@/lib/site';
 import { getPost, posts, formatDate } from '@/lib/posts';
 import { getLeadMagnetPdf } from '@/lib/leadMagnets';
@@ -218,8 +217,6 @@ export default async function InsightPost({ params }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
-      <StickyCTA />
 
       {/* ── Hero ── */}
       <header className="relative overflow-hidden bg-plum text-cream">

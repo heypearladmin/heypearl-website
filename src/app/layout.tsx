@@ -4,6 +4,7 @@ import Script from 'next/script';
 import './globals.css';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
+import { StickyCTA } from '@/components/layout/StickyCTA';
 import { site } from '@/lib/site';
 
 const inter = Inter({
@@ -239,6 +240,7 @@ export default function RootLayout({
           <main id="main-content" className="pt-24 sm:pt-28">{children}</main>
           <Footer />
         </div>
+        <StickyCTA />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
