@@ -80,6 +80,12 @@ export const primaryNav: NavItem[] = [
         href: '/hey-local',
         description: 'Simple online growth for local businesses.',
       },
+      {
+        label: 'Reputation Engine',
+        href: 'https://hpre.heypearl.io',
+        external: true,
+        description: 'Automated review generation and reputation management.',
+      },
     ],
   },
   {

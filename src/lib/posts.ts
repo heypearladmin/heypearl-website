@@ -19,6 +19,230 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "how-much-does-ai-visibility-cost",
+    eyebrow: "Investment & ROI",
+    seoTitle: "How Much Does AI Visibility Cost? A Realistic Pricing Guide for 2026",
+    metaDescription: "What does it actually cost to build AI authority infrastructure — and what should you expect for that investment? A straightforward breakdown of pricing models, cost factors, and how to evaluate ROI before you commit.",
+    h1: "How Much Does AI Visibility Cost? A Realistic Pricing Guide",
+    excerpt: "Every business researching AI visibility eventually asks the same question, and most providers dodge it. Here is a straight answer: what actually drives the cost, what a realistic monthly investment looks like, and the red flags that mean a cheap number isn't actually a good deal.",
+    quickAnswer: "AI visibility and GEO services typically run $1,000 to $3,500 per month, structured as ongoing retainers rather than one-time projects — because AI authority is built and maintained continuously, not installed once. Cost is driven primarily by four factors: how competitive your category is, how far your current entity and content foundation is from where it needs to be, how many locations or markets you're covering, and how fast you want to move. Fixed, one-size-fits-all packages under a few hundred dollars a month are a red flag — the work genuinely requires enough hours that a very low price usually means very little is actually being done.",
+    publishedAt: "2026-08-27",
+    readTime: "9 min read",
+    image: "/images/website-blog-ai-visibility-pricing-guide.webp",
+    content: `## Why a straight answer is hard to find
+
+Search "how much does AI visibility cost" or "GEO pricing" and you'll find a lot of vague answers: "it depends," "contact us for a quote," "custom pricing based on your needs." That's not evasiveness for its own sake — the honest answer really does depend on specifics — but it leaves operators without the one thing they actually need before a sales call: a realistic sense of the range, so they can tell early whether a conversation is worth having.
+
+This is an attempt at that straight answer: what the work actually costs, what drives the number up or down, and how to evaluate whether a quote you're given is reasonable.
+
+## What actually determines the cost
+
+Four factors do most of the work in determining what a realistic AI visibility investment looks like for a given business.
+
+**How competitive your category is.** A solo practitioner in a low-competition specialty needs less work to become the AI-recommended answer than a business competing against a dozen well-established rivals in a dense metro market. Competitive intensity is the single biggest cost driver, because it determines how much content, citation-building, and entity work is needed to close the gap.
+
+**How far your current foundation is from where it needs to be.** A business with a clean, consistent Google Business Profile, some existing reviews, and a functional website starts closer to the goal than a business with inconsistent NAP data across a dozen directories, no schema markup, and a thin content footprint. The gap between baseline and target is direct labor — and direct labor is most of what you're paying for.
+
+**How many locations or markets you're covering.** Single-location businesses have a narrower entity-architecture problem than multi-location businesses or franchises, where the same signals need to be built and kept consistent across every location without the locations competing with or diluting each other.
+
+**How fast you want to move.** AI authority compounds over months, not days, but the pace of content production, citation outreach, and technical implementation can be adjusted. Faster timelines require more concurrent work, which costs more per month even though the total scope is similar.
+
+## Typical pricing models in the industry
+
+Three pricing structures show up most often:
+
+**Monthly retainer.** The most common model, and the one that fits the nature of the work best. AI authority isn't installed once — entity signals need to stay consistent, content needs to keep publishing, reviews need to keep accumulating, and AI engine representation needs ongoing monitoring because engines update continuously. A retainer reflects that this is maintenance-and-growth work, not a one-time deliverable.
+
+**Fixed-scope project.** Appropriate for a narrowly defined deliverable — a one-time technical audit, a schema implementation project, an entity cleanup sprint — but not appropriate as the primary engagement model for building AI visibility, because visibility isn't something you finish and walk away from.
+
+**Hybrid.** An initial fixed-scope foundation phase (entity cleanup, technical audit, schema implementation) followed by an ongoing retainer for content, citation-building, and monitoring. This is often the most honest model, because it prices the one-time foundation work separately from the ongoing compounding work.
+
+## What a realistic monthly investment looks like
+
+Ranges vary by provider and market, but as a general reference: foundational local visibility work for a single-location business typically starts in the **$1,000 to $1,500 per month** range. Mid-tier engagements that add active content production, review-acquisition systems, and broader citation work typically run **$1,500 to $2,500 per month**. Full-scale engagements — multi-engine AI monitoring, entity architecture at scale, dedicated content cadence, and automation layers — typically run **$2,500 to $3,500 per month** or more, particularly for multi-location or highly competitive categories.
+
+These are directional, not universal — a provider quoting well outside this range in either direction is worth asking follow-up questions about, for different reasons in each direction.
+
+## What's typically included at each tier
+
+At the foundational tier, expect: an initial entity and visibility audit, Google Business Profile and citation cleanup, basic schema implementation, and a review system.
+
+At the mid tier, add: a regular content cadence (authority articles and FAQ content built around real buyer questions), active review-acquisition outreach, and expanded citation-building.
+
+At the full-scale tier, add: continuous AI engine monitoring across multiple platforms, entity architecture built for multi-location or category-leadership scale, and automation layers that keep signals current without manual upkeep.
+
+## How to think about ROI
+
+The honest framework: AI visibility produces a chain of outcomes — visibility, then inquiry, then conversion, then revenue — and the return depends on where in that chain a business already performs well. A business with strong conversion once a lead shows up will see faster, clearer ROI from an investment that increases visibility, because the rest of the funnel already works. A business with weak conversion will see visibility improve but revenue lag, because the bottleneck was never visibility in the first place.
+
+Before evaluating ROI on a prospective investment, it's worth being honest about which part of that chain is actually the constraint.
+
+## Red flags to watch for
+
+**Guaranteed rankings, citations, or AI recommendations.** No legitimate provider can guarantee how an AI engine will respond to a given query, because that engine's behavior isn't controlled by any single vendor. A guarantee is a sign of either naivety or dishonesty.
+
+**A single fixed price with no discovery process.** A quote given before anyone has looked at your current entity consistency, content footprint, or competitive category is a guess, not a plan.
+
+**Pricing far below the ranges above with a broad scope of promised work.** The work genuinely takes real hours — content research and writing, technical implementation, citation outreach, ongoing monitoring. A price that doesn't cover enough hours to do that work usually means the work isn't actually happening at the depth being promised.
+
+**No mention of a baseline measurement.** If a provider can't tell you where you're starting from, they can't credibly tell you how far you've come — which makes the whole engagement unaccountable.
+
+## Questions worth asking before you commit
+
+- What does the first 30, 60, and 90 days actually include?
+- How is my current baseline measured, and how will progress be reported against it?
+- Is pricing a flat retainer, or does it scale with additional locations, markets, or competitive intensity?
+- What happens if the timeline needs to extend — is that a renegotiation, or built into the original scope?
+- Can you show a real, documented example of the kind of result this investment has produced for a comparable business?
+
+A provider who answers these directly, with specifics, is worth a longer conversation. A provider who deflects into generalities is telling you something too.`,
+    faq: [
+      {
+        q: "How much does AI visibility or GEO typically cost per month?",
+        a: "Most engagements fall between $1,000 and $3,500 per month, structured as an ongoing retainer rather than a one-time project. Foundational single-location work typically starts around $1,000-$1,500/month, mid-tier engagements with active content and review systems run $1,500-$2,500/month, and full-scale multi-engine engagements run $2,500-$3,500/month or more, particularly for competitive or multi-location businesses."
+      },
+      {
+        q: "Why is AI visibility priced as a retainer instead of a one-time project?",
+        a: "Because the work itself isn't a one-time installation. Entity signals need to stay consistent over time, content needs to keep publishing, reviews need to keep accumulating, and AI engines update continuously — so visibility that isn't maintained tends to erode as competitors keep investing. A retainer reflects that this is ongoing maintenance-and-growth work, not a fixed deliverable."
+      },
+      {
+        q: "What's the biggest factor that drives AI visibility pricing up or down?",
+        a: "Competitive intensity in your category. A business in a low-competition specialty needs less work to become the AI-recommended answer than a business competing against many well-established rivals in a dense market — competitive intensity determines how much content, citation-building, and entity work is needed to close the gap, which is most of what drives the monthly cost."
+      },
+      {
+        q: "Should I be suspicious of a very low price for AI visibility services?",
+        a: "Generally, yes — worth asking careful questions at minimum. The work requires real hours: research, writing, technical implementation, citation outreach, and ongoing monitoring. A price too low to cover that many hours at a sustainable rate usually means the promised scope isn't actually being delivered at the depth claimed."
+      },
+      {
+        q: "Can a provider guarantee I'll be cited or recommended by ChatGPT or Google AI Overviews?",
+        a: "No legitimate provider can guarantee this, because AI engine behavior isn't controlled by any single vendor — it depends on the engine's own evaluation of entity signals, content, and third-party validation. A guarantee of specific AI recommendation outcomes is a significant red flag, not a sign of confidence."
+      },
+      {
+        q: "How do I know if an AI visibility investment is actually working?",
+        a: "By insisting on a documented baseline at the start of the engagement and regular, specific reporting against that same baseline — entity completeness, citation frequency, AI engine representation, and where relevant, inquiry and conversion tracking. A provider who can't tell you where you started can't credibly tell you how far you've come."
+      }
+    ],
+    conclusion: "The honest range for AI visibility work in 2026 is roughly $1,000 to $3,500 a month, driven primarily by competitive intensity, your starting point, how many locations you're covering, and how fast you want to move. Treat it as an ongoing investment in infrastructure that compounds, not a one-time purchase — and treat any quote that skips discovery, guarantees specific AI outcomes, or comes in far below what real hours of work would cost as a reason to ask more questions before committing.",
+    internalLinks: [
+      { label: "See what's included at every tier", href: "/get-started" },
+      { label: "Read documented client outcomes", href: "/results" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a small business owner reviewing a simple printed budget or invoice at a clean wooden desk, natural window light, a laptop and coffee cup nearby, calm and trustworthy mood, shallow depth of field, premium documentary photography style, no text, no logos, no watermarks",
+    imageFilename: "website-blog-ai-visibility-pricing-guide.webp",
+  },
+  {
+    slug: "ai-visibility-multi-location-franchise-businesses",
+    eyebrow: "Industry Playbooks",
+    seoTitle: "AI Visibility for Multi-Location Businesses and Franchises: The Complete Playbook",
+    metaDescription: "Multi-location businesses and franchises face a different AI visibility problem than single-location ones — duplicate entities, cannibalized content, and inconsistent local signals. Here is how to build AI authority across every location without the locations competing with each other.",
+    h1: "AI Visibility for Multi-Location Businesses and Franchises: The Complete Playbook",
+    excerpt: "A business with one location has one entity to build authority for. A business with twenty locations has twenty-one — the parent brand, plus every individual location — and getting that architecture wrong is the single most common reason multi-location AI visibility efforts stall.",
+    quickAnswer: "Multi-location businesses and franchises build AI visibility through hub-and-spoke entity architecture: a strong parent-brand entity connected to distinct, verified entities for each individual location, each with its own accurate Google Business Profile, location-specific content, and local citation footprint. The most common failure mode is treating locations as identical templates — thin, duplicated location pages and inconsistent entity data across locations actively suppress AI recommendations for all of them, because AI engines read the inconsistency as a sign the business can't be confidently resolved.",
+    publishedAt: "2026-08-24",
+    readTime: "10 min read",
+    image: "/images/website-blog-multi-location-franchise-ai-visibility.webp",
+    content: `## Why multi-location AI visibility is a different problem
+
+A single-location business has one entity to build AI authority around: one name, one address, one Google Business Profile, one set of reviews. A multi-location business or franchise has a fundamentally different structure — a parent brand entity, plus a distinct entity for every individual location, each of which needs its own accurate, verified identity while still rolling up coherently to the brand above it.
+
+This is not the same problem at a bigger scale. It's a different problem, and most of the AI visibility advice written for single-location businesses doesn't translate cleanly, because it doesn't account for the ways locations can undermine each other if the architecture is wrong.
+
+## The core challenge: one brand, many entities
+
+AI engines evaluate each location largely on its own merits when responding to a geographically specific query — "best [category] near [neighborhood]" resolves to a specific location's entity signals, not the brand's national reputation. That means a strong national brand doesn't automatically transfer authority to every location; each location has to independently earn the entity clarity, local citations, and review depth that make it AI-recommendable in its own market.
+
+At the same time, the locations aren't independent of each other. A prospective customer or an AI engine composing an answer benefits from understanding that a given location is part of a larger, established brand — that context is a trust signal too, when it's structured correctly.
+
+The practical challenge is building both things at once: distinct, locally-credible entities, connected coherently to a verified parent brand.
+
+## The most common mistake: templated, thin location pages
+
+The single most frequent failure pattern in multi-location AI visibility is treating location pages as a fill-in-the-blank template — the same content structure with only the city name swapped out across dozens of pages. This produces two compounding problems.
+
+First, thin, duplicated content gives AI engines nothing specific to cite for any individual location — there's no genuine local depth to extract. Second, and more damaging, near-duplicate content across many location pages can read as low-effort or even manipulative, which suppresses confidence in the entity rather than building it.
+
+A location page needs to contain content genuinely specific to that location: the actual service area, staff or leadership specific to that site where relevant, location-specific reviews, and local context that couldn't be copy-pasted onto a different city's page without it being obviously wrong.
+
+## Building hub-and-spoke entity architecture
+
+The structural fix is a clear hub-and-spoke model: one well-verified parent brand entity, with each location established as its own distinct, connected entity beneath it.
+
+**The hub (parent brand):** A verified, consistent brand entity — corporate Knowledge Panel where achievable, consistent brand-level schema, and a clear \`sameAs\` structure connecting the brand's authoritative profiles.
+
+**The spokes (individual locations):** Each location needs its own Google Business Profile, its own LocalBusiness schema with a clear \`parentOrganization\` reference back to the brand entity, and its own accurate NAP (name, address, phone) data — consistent across every citation source for that specific location, not the brand's headquarters address reused everywhere.
+
+This structure lets AI engines resolve two things simultaneously: which specific location is relevant to a geographically-scoped query, and that the location is a verified part of a larger, established brand.
+
+## Avoiding content cannibalization across locations
+
+Beyond thin pages, multi-location businesses face a subtler risk: locations competing with each other for the same queries instead of the brand as a whole capturing more total visibility. This happens when location pages target overlapping geography or near-identical keyword patterns without clear differentiation.
+
+The fix is deliberate geographic and topical separation: each location's content should be built around the specific neighborhoods, service area nuances, and local queries that actually belong to that location — not a duplicated set of generic category keywords repeated with a city name swapped in.
+
+## Location-specific signals that actually matter
+
+**Individual Google Business Profiles**, fully completed and actively maintained per location — not a single national profile standing in for all locations.
+
+**Location-specific reviews**, genuinely tied to the experience at that specific site, not aggregated or displayed as if they represent the whole brand undifferentiated.
+
+**Local citations built per location**, using that location's actual address and phone number — not the brand headquarters' contact information duplicated across every city.
+
+**Location-specific staff or expertise signals** where relevant — a named manager, practitioner, or team lead tied to that location strengthens both entity clarity and E-E-A-T.
+
+## Centralized monitoring across locations
+
+Once the entity architecture is in place, ongoing AI visibility monitoring needs to happen at both the brand level and the individual location level — a brand-wide view to catch systemic issues (an outdated schema template deployed everywhere, a brand-wide NAP inconsistency), and per-location tracking to catch issues specific to one market (a competitor overtaking a specific location's local pack position, a factual error in how one location is described).
+
+Monitoring only at the brand level misses exactly the kind of location-specific problems that are otherwise invisible until a customer in that market can't find you.
+
+## How to sequence a multi-location rollout
+
+Trying to build full entity architecture across every location simultaneously is usually the wrong sequence. A more reliable approach:
+
+1. **Establish the brand hub first** — corporate entity, brand schema, brand-level citation consistency.
+2. **Build a genuine template location page**, then fully customize and launch it for one pilot location — not a shortcut template, but a real, working example of what "done right" looks like for a single site.
+3. **Refine based on what the pilot reveals** — what local content actually mattered, what took longer than expected, what local citation sources were most valuable in that market.
+4. **Scale the refined process** to remaining locations in batches, prioritizing the most competitive or highest-value markets first.
+
+This sequence costs more time upfront than templating everything at once, but it avoids deploying the same structural mistakes across every location before anyone catches them.
+
+## What to prioritize in the first 90 days
+
+For a multi-location business starting from limited AI visibility: establish the parent brand entity and schema first; audit and correct NAP consistency for every existing location citation; build and launch one fully custom pilot location page as the real template; and stand up individual, fully completed Google Business Profiles for every location before investing heavily in content volume.`,
+    faq: [
+      {
+        q: "How is AI visibility different for a multi-location business than a single-location one?",
+        a: "A single-location business has one entity to build authority for. A multi-location business has a parent brand entity plus a distinct entity for every individual location, each of which needs to independently earn local entity clarity, citations, and reviews — AI engines evaluate location-specific queries against that individual location's signals, not the brand's overall reputation alone."
+      },
+      {
+        q: "Why do templated location pages hurt AI visibility instead of helping it?",
+        a: "Thin, duplicated location pages that only swap the city name give AI engines nothing genuinely specific to cite for any individual location, and near-duplicate content across many pages can read as low-effort, which suppresses confidence in the entity rather than building it. Each location page needs real, location-specific content to be citable."
+      },
+      {
+        q: "What is hub-and-spoke entity architecture?",
+        a: "A structure where one verified parent brand entity (the hub) connects to distinct, independently verified entities for each location (the spokes) — each location has its own Google Business Profile, its own LocalBusiness schema referencing the parent organization, and its own accurate local NAP data, while still being clearly connected to the larger brand."
+      },
+      {
+        q: "Can locations compete with each other for AI visibility?",
+        a: "Yes — this is called content cannibalization, and it happens when location pages target overlapping geography or near-identical keywords without clear differentiation. The fix is deliberate separation: building each location's content around the specific neighborhoods and local queries that actually belong to that location."
+      },
+      {
+        q: "Should a multi-location business build all location pages at once?",
+        a: "No — a more reliable sequence is establishing the brand hub first, then fully building and launching one genuine pilot location page, refining the process based on what that pilot reveals, and then scaling the refined approach to remaining locations in batches rather than templating everything simultaneously."
+      }
+    ],
+    conclusion: "Multi-location AI visibility fails most often not because of insufficient effort, but because of the wrong structure — treating twenty locations as twenty copies of the same template instead of twenty-one distinct entities (the brand, plus each location) that need to be independently credible while remaining coherently connected. Get the hub-and-spoke architecture right, avoid cannibalizing your own locations against each other, and sequence the rollout through a real pilot before scaling — and multi-location AI visibility becomes a compounding advantage instead of a recurring headache.",
+    internalLinks: [
+      { label: "See how HeyPearl supports enterprise and multi-location organizations", href: "/solutions/enterprise" },
+      { label: "Learn about entity architecture and Knowledge Graph", href: "/platform/knowledge-graph" },
+      { label: "Explore AI Visibility monitoring", href: "/platform/ai-visibility" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial aerial photograph of a row of similar modern storefronts or franchise businesses along a clean suburban commercial street, each with slightly different signage and parking, warm late-afternoon light, wide establishing composition suggesting a chain or franchise network, premium documentary photography style, no readable text on signage, no logos, no watermarks",
+    imageFilename: "website-blog-multi-location-franchise-ai-visibility.webp",
+  },
+  {
     slug: "ai-visibility-local-service-businesses",
     eyebrow: "Industry Playbooks",
     seoTitle: "AI Visibility for Local Service Businesses: The Complete Playbook for Contractors, Healthcare, and Home Services",
