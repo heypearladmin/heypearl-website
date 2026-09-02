@@ -6,6 +6,17 @@ import { Container } from '@/components/ui/Container';
 import { site } from '@/lib/site';
 import { RECENT_WINS } from '@/data/results';
 
+const ENGINE_COLORS: Record<string, string> = {
+  'All engines': '#FF6A00',
+  'Google Search': '#2563FF',
+  'Google Maps': '#2563FF',
+  'Google': '#2563FF',
+  'Google Analytics': '#FFC107',
+  'Facebook': '#FFC107',
+  'OTTO SEO': '#22C55E',
+};
+const DEFAULT_ENGINE_COLOR = '#0A1224';
+
 export const metadata: Metadata = {
   title: 'Recent Wins — Live Milestones from Active Engagements | HeyPearl',
   description:
@@ -79,7 +90,9 @@ export default function RecentWinsPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {RECENT_WINS.map((win, i) => (
+            {RECENT_WINS.map((win, i) => {
+              const engineColor = ENGINE_COLORS[win.engine] ?? DEFAULT_ENGINE_COLOR;
+              return (
               <Reveal key={i} delay={i * 0.06}>
                 <div
                   className="p-5 rounded-xl flex flex-col gap-3 h-full"
@@ -91,7 +104,7 @@ export default function RecentWinsPage() {
                       <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#0A1224', lineHeight: 1.3 }}>{win.handle}</div>
                       <div style={{ fontSize: '0.62rem', color: '#94A3B8', fontWeight: 500, marginTop: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{win.segment}</div>
                     </div>
-                    <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#FF6A00', background: 'rgba(255,106,0,0.08)', border: '1px solid rgba(255,106,0,0.15)', borderRadius: '0.3rem', padding: '0.2rem 0.5rem', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                    <span style={{ fontSize: '0.6rem', fontWeight: 600, color: engineColor, background: `${engineColor}14`, border: `1px solid ${engineColor}30`, borderRadius: '0.3rem', padding: '0.2rem 0.5rem', whiteSpace: 'nowrap', flexShrink: 0 }}>
                       {win.engine}
                     </span>
                   </div>
@@ -102,13 +115,14 @@ export default function RecentWinsPage() {
                   {/* Footer */}
                   <div className="flex items-center justify-between pt-2" style={{ borderTop: '1px solid rgba(48,72,111,0.08)' }}>
                     <span style={{ fontSize: '0.68rem', color: '#64748B' }}>
-                      Day <span style={{ fontWeight: 700, color: '#FF6A00' }}>{win.dayFromActivation}</span> from activation
+                      Day <span style={{ fontWeight: 700, color: engineColor }}>{win.dayFromActivation}</span> from activation
                     </span>
                     <span style={{ fontSize: '0.62rem', color: '#94A3B8' }}>{win.month}</span>
                   </div>
                 </div>
               </Reveal>
-            ))}
+              );
+            })}
           </div>
         </Container>
       </section>
