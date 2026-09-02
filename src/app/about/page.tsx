@@ -109,7 +109,7 @@ export default function AboutPage() {
         title={
           <>
             Building the future{' '}
-            <span className="italic font-light text-magenta">
+            <span className="italic font-light text-orange">
               of AI Authority.
             </span>
           </>
@@ -219,7 +219,7 @@ export default function AboutPage() {
             {values.map((v, i) => (
               <Reveal key={v.title} delay={i * 0.06}>
                 <div className="rounded-3xl bg-white border border-[#E7E3DD] shadow-soft p-8 sm:p-10 h-full">
-                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-magenta">
+                  <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-orange">
                     Principle 0{i + 1}
                   </div>
                   <h3 className="mt-3 font-display text-2xl text-plum">
@@ -254,7 +254,7 @@ export default function AboutPage() {
                 className="pointer-events-none absolute inset-0 opacity-40"
                 style={{
                   background:
-                    'radial-gradient(50% 50% at 100% 0%, rgba(194,24,91,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(194,24,91,0.12) 0%, transparent 60%)',
+                    'radial-gradient(50% 50% at 100% 0%, rgba(255,106,0,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(255,106,0,0.12) 0%, transparent 60%)',
                 }}
               />
               <div className="relative p-10 sm:p-14">
@@ -284,7 +284,7 @@ export default function AboutPage() {
               />
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-[#1E3A66]/40 via-transparent to-transparent"
+                className="absolute inset-0 bg-gradient-to-t from-[#0A1224]/40 via-transparent to-transparent"
               />
               <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase' }} className="text-white">

@@ -34,7 +34,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(60% 60% at 25% 20%, rgba(255,145,77,0.20) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.20) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(14,14,14,0.08) 0%, transparent 60%)',
+            'radial-gradient(60% 60% at 25% 20%, rgba(255,106,0,0.20) 0%, transparent 60%), radial-gradient(50% 50% at 80% 30%, rgba(211,70,129,0.20) 0%, transparent 60%), radial-gradient(60% 60% at 60% 90%, rgba(14,14,14,0.08) 0%, transparent 60%)',
         }}
       />
 
@@ -68,7 +68,7 @@ export function Hero() {
               className="font-display text-display-xl text-plum"
             >
               Build authority before AI{' '}
-              <span className="italic font-light text-magenta">chooses</span>{' '}
+              <span className="italic font-light text-orange">chooses</span>{' '}
               your competitors.
             </motion.h1>
 
@@ -139,7 +139,7 @@ function HeroVisualStack() {
   return (
     <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
       {/* Outer glow plate */}
-      <div className="absolute -inset-6 rounded-[2rem] bg-magenta-gradient opacity-25 blur-2xl" />
+      <div className="absolute -inset-6 rounded-[2rem] bg-orange-gradient opacity-25 blur-2xl" />
 
       {/* Photographic backdrop card */}
       <div className="absolute -right-6 -top-4 w-3/4 aspect-[3/4] rounded-[1.75rem] overflow-hidden border border-plum/5 shadow-soft hidden sm:block">
@@ -166,7 +166,7 @@ function HeroVisualStack() {
 
       {/* Live ribbon */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 rounded-full bg-cream/95 backdrop-blur-sm border border-plum/10 px-4 py-1.5 shadow-soft">
-        <span className="h-1.5 w-1.5 rounded-full bg-magenta animate-pulse" />
+        <span className="h-1.5 w-1.5 rounded-full bg-orange animate-pulse" />
         <span className="text-[0.65rem] tracking-micro uppercase text-plum">
           Operating Index · Live
         </span>

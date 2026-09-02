@@ -82,7 +82,7 @@ export default function PlatformPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
+              'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
@@ -93,23 +93,23 @@ export default function PlatformPage() {
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               The HeyPearl Platform
             </span>
           </div>
           <h1
             className="max-w-3xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(2.6rem, 6vw, 5rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.04,
               letterSpacing: '-0.03em',
             }}
           >
             One operating system.<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Five integrated modules.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Five integrated modules.</span>
           </h1>
           <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1.05rem', color: '#64748B', lineHeight: 1.75 }}>
             PearlOS orchestrates every signal, every engine, and every layer of authority infrastructure — so your AI visibility grows as a system, not a collection of tactics.
@@ -119,7 +119,7 @@ export default function PlatformPage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200"
             >
               Book a Strategy Call
               <ArrowRight size={14} />
@@ -145,23 +145,23 @@ export default function PlatformPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                   The Operating Layer
                 </span>
               </div>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(2rem, 4vw, 3rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.08,
                   letterSpacing: '-0.025em',
                   marginBottom: '1.25rem',
                 }}
               >
                 PearlOS runs<br />
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>everything.</span>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>everything.</span>
               </h2>
               <p style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75, marginBottom: '1rem' }}>
                 PearlOS is the operating system beneath every HeyPearl engagement — the unified intelligence layer that connects entity signals, monitors AI engines, and executes the P.E.A.R.L. framework in sequence.
@@ -172,7 +172,7 @@ export default function PlatformPage() {
               <Link
                 href="/platform/pearlos"
                 className="inline-flex items-center gap-2 text-sm font-semibold"
-                style={{ color: '#C2185B' }}
+                style={{ color: '#FF6A00' }}
               >
                 Deep dive into PearlOS
                 <ArrowUpRight size={14} />
@@ -183,14 +183,14 @@ export default function PlatformPage() {
             {/* Right — 4 PearlOS functions */}
             <Reveal delay={0.1}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px"
-              style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+              style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
               {PEARLOS_FUNCTIONS.map((fn, i) => (
                 <div
                   key={fn.title}
                   className="p-5"
                   style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}
                 >
-                  <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>
+                  <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.4rem', letterSpacing: '-0.01em' }}>
                     {fn.title}
                   </div>
                   <p style={{ fontSize: '0.8rem', color: '#64748B', lineHeight: 1.65 }}>
@@ -210,17 +210,17 @@ export default function PlatformPage() {
           <Reveal>
           <div className="mb-10 flex items-center gap-3">
             <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Where to Start
             </span>
           </div>
           <h2
             className="mb-10 max-w-xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.7rem, 3.5vw, 2.4rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.1,
               letterSpacing: '-0.022em',
             }}
@@ -242,17 +242,17 @@ export default function PlatformPage() {
                 href={item.href}
                 className="group flex gap-4 p-5 rounded-xl transition-colors duration-200"
                 style={{
-                  background: item.highlight ? 'rgba(194,24,91,0.04)' : '#FFFFFF',
-                  border: item.highlight ? '1px solid rgba(194,24,91,0.2)' : '1px solid #E7E3DD',
-                  boxShadow: '0 1px 4px rgba(30,58,102,0.06)',
+                  background: item.highlight ? 'rgba(255,106,0,0.04)' : '#FFFFFF',
+                  border: item.highlight ? '1px solid rgba(255,106,0,0.2)' : '1px solid #E7E3DD',
+                  boxShadow: '0 1px 4px rgba(10,18,36,0.06)',
                 }}
               >
                 <div
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: '0.9rem',
                     fontWeight: 700,
-                    color: item.highlight ? '#C2185B' : '#94A3B8',
+                    color: item.highlight ? '#FF6A00' : '#94A3B8',
                     flexShrink: 0,
                     lineHeight: 1,
                     marginTop: '0.1rem',
@@ -262,8 +262,8 @@ export default function PlatformPage() {
                 </div>
                 <div>
                   <div
-                    className="group-hover:text-[#C2185B] transition-colors duration-200 mb-1"
-                    style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em' }}
+                    className="group-hover:text-[#FF6A00] transition-colors duration-200 mb-1"
+                    style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em' }}
                   >
                     {item.label}
                   </div>
@@ -285,21 +285,21 @@ export default function PlatformPage() {
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 Five Modules
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
-              Five systems. <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One result.</span>
+              Five systems. <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>One result.</span>
             </h2>
             <p className="mt-4 max-w-xl" style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.7 }}>
               Each module addresses a distinct layer of AI authority — and every module runs through PearlOS so they build on each other, not alongside each other.
@@ -310,7 +310,7 @@ export default function PlatformPage() {
           <Reveal delay={0.1}>
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}
           >
             {MODULES.map((mod, i) => (
               <Link
@@ -326,15 +326,15 @@ export default function PlatformPage() {
                   <ArrowUpRight
                     size={13}
                     className="opacity-0 group-hover:opacity-60 transition-opacity shrink-0"
-                    style={{ color: '#C2185B' }}
+                    style={{ color: '#FF6A00' }}
                   />
                 </div>
                 <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94A3B8', marginBottom: '0.35rem' }}>
                   {mod.tagline}
                 </div>
                 <h3
-                  className="group-hover:text-[#C2185B] transition-colors duration-200 mb-4"
-                  style={{ fontSize: '1rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em' }}
+                  className="group-hover:text-[#FF6A00] transition-colors duration-200 mb-4"
+                  style={{ fontSize: '1rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em' }}
                 >
                   {mod.label}
                 </h3>
@@ -355,7 +355,7 @@ export default function PlatformPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold"
-                style={{ color: '#C2185B' }}
+                style={{ color: '#FF6A00' }}
               >
                 Book a Strategy Call
                 <ArrowRight size={13} />
@@ -367,12 +367,12 @@ export default function PlatformPage() {
       </section>
 
       {/* Why integration matters + CTA — navy bg */}
-      <section className="py-24 bg-[#1E3A66]" aria-label="How the platform works">
+      <section className="py-24 bg-[#0A1224]" aria-label="How the platform works">
         <Container size="md" className="text-center">
           <Reveal>
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Why Integration Matters
             </span>
             <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
@@ -380,7 +380,7 @@ export default function PlatformPage() {
           <h2
             className="mb-6 max-w-2xl mx-auto"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.9rem, 4vw, 3rem)',
               fontWeight: 700,
               color: '#FFFFFF',
@@ -389,7 +389,7 @@ export default function PlatformPage() {
             }}
           >
             We didn't build five separate tools.{' '}
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>We built one system.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>We built one system.</span>
           </h2>
           <p className="max-w-2xl mx-auto mb-6" style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.8 }}>
             Authority Pages create citable infrastructure. Knowledge Graph registers your entity. Authority Score reveals the gaps. AI Visibility tracks every engine. GEO Engine amplifies what works. PearlOS makes them all speak the same language and execute in the right order.
@@ -401,7 +401,7 @@ export default function PlatformPage() {
             href={site.strategyCallUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
+            className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200"
           >
             Explore the Platform
             <ArrowRight size={14} />

@@ -58,7 +58,7 @@ export function HeroDeclaration() {
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: 'radial-gradient(rgba(30,58,102,0.07) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(rgba(10,18,36,0.07) 1px, transparent 1px)',
           backgroundSize: '36px 36px',
         }}
       />
@@ -67,7 +67,7 @@ export function HeroDeclaration() {
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ background: 'radial-gradient(ellipse 70% 70% at 100% 100%, #F8F5F0 0%, transparent 60%)' }} />
 
-      {/* Cursor spotlight — magenta tint */}
+      {/* Cursor spotlight — orange tint */}
       {mounted && (
         <motion.div
           aria-hidden
@@ -80,7 +80,7 @@ export function HeroDeclaration() {
             top: spotY,
             x: '-50%',
             y: '-50%',
-            background: 'radial-gradient(circle, rgba(194,24,91,0.05) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(255,106,0,0.05) 0%, transparent 65%)',
           }}
         />
       )}
@@ -93,15 +93,15 @@ export function HeroDeclaration() {
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-8">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 HeyPearl — The AI Authority Platform
               </span>
             </div>
 
             {/* H1 */}
-            <h1 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 5.5vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.03, letterSpacing: '-0.03em' }}>
+            <h1 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(2.6rem, 5.5vw, 5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.03, letterSpacing: '-0.03em' }}>
               Become the Authority<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
                 AI Recommends.
               </span>
             </h1>
@@ -119,8 +119,8 @@ export function HeroDeclaration() {
                 href={site.strategyCallUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold transition-colors duration-200 hover:bg-[#D62F73]"
-                style={{ background: '#C2185B', color: '#FFFFFF' }}
+                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold transition-colors duration-200 hover:bg-[#E65F00]"
+                style={{ background: '#FF6A00', color: '#FFFFFF' }}
               >
                 Book a Strategy Call
                 <ArrowRight size={15} />
@@ -143,7 +143,7 @@ export function HeroDeclaration() {
                 { num: '5-Layer', label: 'P.E.A.R.L. authority system' },
               ].map(({ num, label }) => (
                 <div key={label}>
-                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.55rem', fontWeight: 700, color: '#C2185B', lineHeight: 1, letterSpacing: '-0.02em' }}>
+                  <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.55rem', fontWeight: 700, color: '#FF6A00', lineHeight: 1, letterSpacing: '-0.02em' }}>
                     {num}
                   </div>
                   <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '0.35rem', letterSpacing: '0.03em' }}>
@@ -161,28 +161,28 @@ export function HeroDeclaration() {
               className="hidden lg:flex lg:flex-col lg:gap-3 lg:w-[46%] shrink-0"
             >
               <div>
-                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
+                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#FF6A00', marginBottom: '0.25rem' }}>
                   Real data. Real visibility. Real results.
                 </p>
                 <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
                   Track how AI engines see your brand, your entities, and your authority over time.
                 </p>
               </div>
-              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18), 0 4px 16px rgba(30,58,102,0.1)' }}>
+              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(10,18,36,0.18), 0 4px 16px rgba(10,18,36,0.1)' }}>
                 <HeroDashboardMockup />
               </div>
             </motion.div>
           ) : (
             <div className="hidden lg:flex lg:flex-col lg:gap-3 lg:w-[46%] shrink-0">
               <div>
-                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C2185B', marginBottom: '0.25rem' }}>
+                <p style={{ fontSize: '0.8rem', fontWeight: 700, color: '#FF6A00', marginBottom: '0.25rem' }}>
                   Real data. Real visibility. Real results.
                 </p>
                 <p style={{ fontSize: '0.78rem', color: '#64748B', lineHeight: 1.5 }}>
                   Track how AI engines see your brand, your entities, and your authority over time.
                 </p>
               </div>
-              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(30,58,102,0.18)' }}>
+              <div style={{ borderRadius: '0.875rem', overflow: 'hidden', boxShadow: '0 32px 72px rgba(10,18,36,0.18)' }}>
                 <HeroDashboardMockup />
               </div>
             </div>

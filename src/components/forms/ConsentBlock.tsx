@@ -49,7 +49,7 @@ export function ConsentBlock({
           checked={consentTransactional}
           onChange={(e) => onChangeTransactional(e.target.checked)}
           aria-describedby={`${transactionalId}-description`}
-          className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-magenta focus:ring-2 focus:ring-magenta focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
+          className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-orange focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
         />
         <span
           id={`${transactionalId}-description`}
@@ -72,7 +72,7 @@ export function ConsentBlock({
           checked={consentMarketing}
           onChange={(e) => onChangeMarketing(e.target.checked)}
           aria-describedby={`${marketingId}-description`}
-          className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-magenta focus:ring-2 focus:ring-magenta focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
+          className="mt-1 h-4 w-4 shrink-0 rounded border-plum/30 text-orange focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-cream cursor-pointer"
         />
         <span
           id={`${marketingId}-description`}

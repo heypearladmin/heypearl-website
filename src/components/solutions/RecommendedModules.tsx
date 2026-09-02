@@ -21,10 +21,10 @@ export function RecommendedModules({
   eyebrow = 'Recommended Platform Modules',
   headline,
 }: RecommendedModulesProps) {
-  const navy = '#1E3A66';
+  const navy = '#0A1224';
   const body = '#334155';
   const secondary = '#64748B';
-  const magenta = '#C2185B';
+  const orange = '#FF6A00';
   const border = '#E7E3DD';
 
   return (
@@ -33,13 +33,13 @@ export function RecommendedModules({
         <div className="mb-14 max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: border }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: orange }}>
               {eyebrow}
             </span>
           </div>
           <h2
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.9rem, 4vw, 3rem)',
               fontWeight: 700,
               color: navy,
@@ -49,7 +49,7 @@ export function RecommendedModules({
           >
             {headline ?? (
               <>The platform modules<br />
-              <span style={{ color: magenta, fontStyle: 'italic' }}>that matter most for you.</span></>
+              <span style={{ color: orange, fontStyle: 'italic' }}>that matter most for you.</span></>
             )}
           </h2>
           <p className="mt-5" style={{ fontSize: '0.9rem', color: secondary, lineHeight: 1.7 }}>
@@ -74,7 +74,7 @@ export function RecommendedModules({
                     {mod.tagline}
                   </div>
                   <h3
-                    className="group-hover:text-[#C2185B] transition-colors duration-200"
+                    className="group-hover:text-[#FF6A00] transition-colors duration-200"
                     style={{ fontSize: '1rem', fontWeight: 700, color: navy, letterSpacing: '-0.01em' }}
                   >
                     {mod.label}
@@ -83,7 +83,7 @@ export function RecommendedModules({
                 <ArrowUpRight
                   size={13}
                   className="opacity-0 group-hover:opacity-60 transition-opacity shrink-0 mt-1"
-                  style={{ color: magenta }}
+                  style={{ color: orange }}
                 />
               </div>
               <div className="h-px mb-4" style={{ background: border }} />
@@ -100,7 +100,7 @@ export function RecommendedModules({
         >
           <span style={{ fontSize: '0.82rem', color: secondary, lineHeight: 1.5 }}>
             All modules run through{' '}
-            <Link href="/platform/pearlos" className="font-semibold hover:opacity-80" style={{ color: magenta }}>
+            <Link href="/platform/pearlos" className="font-semibold hover:opacity-80" style={{ color: orange }}>
               PearlOS
             </Link>
             {' '}— the operating system that connects every signal and executes the P.E.A.R.L. framework in sequence.

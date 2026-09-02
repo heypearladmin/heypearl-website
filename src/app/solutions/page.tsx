@@ -56,7 +56,7 @@ const SOLUTIONS = [
   },
 ];
 
-const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+const cardShadow = '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)';
 
 export default function SolutionsPage() {
   return (
@@ -67,21 +67,21 @@ export default function SolutionsPage() {
         aria-label="Solutions hero"
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden lg:block">
           <Image src="/images/new-hero-images/hero-solutions.jpg" alt="" fill sizes="45vw" className="object-cover opacity-35" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.85) 20%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0.05) 100%)' }} />
         </div>
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.4 }} aria-hidden />
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Solutions
             </span>
           </div>
-          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
+          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             Built for your<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>specific business.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>specific business.</span>
           </h1>
           <p className="mt-6 max-w-[36rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.8 }}>
             The AI authority problem looks different depending on your business model, team size, and market. HeyPearl builds the platform around your specific challenges — not a generic playbook.
@@ -101,9 +101,9 @@ export default function SolutionsPage() {
             ].map((item) => (
               <Link key={item.href} href={item.href}
                 className="block p-6 group"
-                style={{ background: item.active ? 'rgba(194,24,91,0.04)' : '#FFFFFF', borderLeft: item.active ? '2px solid #C2185B' : 'none' }}>
-                <div style={{ fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: item.active ? '#C2185B' : '#94A3B8', marginBottom: '0.2rem' }}>{item.label}</div>
-                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: item.active ? '#1E3A66' : '#64748B', marginBottom: '0.3rem' }}>{item.sub}</div>
+                style={{ background: item.active ? 'rgba(255,106,0,0.04)' : '#FFFFFF', borderLeft: item.active ? '2px solid #FF6A00' : 'none' }}>
+                <div style={{ fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: item.active ? '#FF6A00' : '#94A3B8', marginBottom: '0.2rem' }}>{item.label}</div>
+                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: item.active ? '#0A1224' : '#64748B', marginBottom: '0.3rem' }}>{item.sub}</div>
                 <div style={{ fontSize: '0.78rem', color: '#94A3B8' }}>{item.note}</div>
               </Link>
             ))}
@@ -116,12 +116,12 @@ export default function SolutionsPage() {
         <Container size="lg">
           <Reveal className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Find Your Solution</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Find Your Solution</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               The same platform.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Configured for your context.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Configured for your context.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.75 }}>
               Every HeyPearl engagement runs on PearlOS. What changes is how we apply the platform to the specific problems your business faces in the AI era.
@@ -136,7 +136,7 @@ export default function SolutionsPage() {
                 style={{ background: '#FFFFFF' }}>
                 <div className="sm:w-52 shrink-0">
                   <div style={{ fontSize: '0.62rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94A3B8', marginBottom: '0.2rem' }}>{sol.tagline}</div>
-                  <div className="group-hover:text-[#C2185B] transition-colors duration-200" style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1E3A66' }}>{sol.label}</div>
+                  <div className="group-hover:text-[#FF6A00] transition-colors duration-200" style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0A1224' }}>{sol.label}</div>
                 </div>
                 <div className="h-px sm:h-auto sm:w-px self-stretch shrink-0" style={{ background: '#ECE8E2' }} />
                 <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -149,7 +149,7 @@ export default function SolutionsPage() {
                     <p style={{ fontSize: '0.85rem', color: '#334155', lineHeight: 1.6 }}>{sol.outcome}</p>
                   </div>
                 </div>
-                <ArrowUpRight size={14} className="hidden sm:block opacity-0 group-hover:opacity-50 transition-opacity shrink-0" style={{ color: '#C2185B' }} />
+                <ArrowUpRight size={14} className="hidden sm:block opacity-0 group-hover:opacity-50 transition-opacity shrink-0" style={{ color: '#FF6A00' }} />
               </Link>
               </Reveal>
             ))}
@@ -164,17 +164,17 @@ export default function SolutionsPage() {
             <Reveal>
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Powered by PearlOS</span>
+                <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Powered by PearlOS</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1rem' }}>
                 Every solution runs<br />
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>on the same platform.</span>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>on the same platform.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8, marginBottom: '1.25rem' }}>
                 Whether you're a solo agent or a multi-region enterprise, the underlying infrastructure is the same — PearlOS orchestrating the P.E.A.R.L. framework across five connected modules.
               </p>
-              <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#C2185B' }}>
+              <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#FF6A00' }}>
                 Explore the Platform <ArrowUpRight size={14} />
               </Link>
             </div>
@@ -190,9 +190,9 @@ export default function SolutionsPage() {
               ].map((mod) => (
                 <Link key={mod.href} href={mod.href}
                   className="group flex items-center justify-between px-5 py-3.5 rounded-lg bg-white hover:bg-[#F8F5F0] transition-colors duration-200"
-                  style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
-                  <span style={{ fontSize: '0.875rem', fontWeight: 600, color: '#1E3A66' }}>{mod.label}</span>
-                  <ArrowRight size={12} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#C2185B' }} />
+                  style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
+                  <span style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0A1224' }}>{mod.label}</span>
+                  <ArrowRight size={12} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#FF6A00' }} />
                 </Link>
               ))}
             </div>
@@ -202,18 +202,18 @@ export default function SolutionsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#1E3A66]">
+      <section className="py-24 bg-[#0A1224]">
         <Container size="md" className="text-center">
           <Reveal>
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Not sure which solution<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>fits your situation?</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>fits your situation?</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             Book a strategy call. We'll review your current AI visibility, identify the gaps, and tell you exactly what an engagement looks like for your business.
           </p>
           <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+            className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
             See How It Works <ArrowRight size={14} />
           </a>
           </Reveal>

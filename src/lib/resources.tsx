@@ -227,7 +227,7 @@ function ArticleSection({ id, children }: { id: string; children: React.ReactNod
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.35rem, 2.5vw, 1.75rem)', fontWeight: 700, color: '#1C1917', letterSpacing: '-0.018em', marginBottom: '1rem', lineHeight: 1.2 }}>
+    <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.35rem, 2.5vw, 1.75rem)', fontWeight: 700, color: '#1C1917', letterSpacing: '-0.018em', marginBottom: '1rem', lineHeight: 1.2 }}>
       {children}
     </h2>
   );
@@ -266,7 +266,7 @@ function ComparisonTable({ headers, rows }: { headers: string[]; rows: string[][
         <thead>
           <tr>
             {headers.map((h, i) => (
-              <th key={i} style={{ padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700, color: '#1C1917', borderBottom: '2px solid #BF9B5C', background: 'rgba(191,155,92,0.06)', whiteSpace: 'nowrap' }}>
+              <th key={i} style={{ padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700, color: '#1C1917', borderBottom: '2px solid #FFC107', background: 'rgba(255,193,7,0.06)', whiteSpace: 'nowrap' }}>
                 {h}
               </th>
             ))}
@@ -290,8 +290,8 @@ function ComparisonTable({ headers, rows }: { headers: string[]; rows: string[][
 
 function Callout({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div style={{ borderLeft: '3px solid #BF9B5C', background: 'rgba(191,155,92,0.05)', padding: '1rem 1.25rem', margin: '1.75rem 0', borderRadius: '0 0.5rem 0.5rem 0' }}>
-      <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#BF9B5C', marginBottom: '0.375rem' }}>{label}</div>
+    <div style={{ borderLeft: '3px solid #FFC107', background: 'rgba(255,193,7,0.05)', padding: '1rem 1.25rem', margin: '1.75rem 0', borderRadius: '0 0.5rem 0.5rem 0' }}>
+      <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FFC107', marginBottom: '0.375rem' }}>{label}</div>
       <div style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#3D3530' }}>{children}</div>
     </div>
   );
@@ -1390,7 +1390,7 @@ export const TOPIC_CLUSTERS = [
     id: 'foundations',
     label: 'Foundations',
     description: 'What AI Authority is and why it matters',
-    color: '#BF9B5C',
+    color: '#FFC107',
     slugs: ['what-is-ai-authority', 'what-is-generative-engine-optimization', 'the-future-of-search'],
   },
   {

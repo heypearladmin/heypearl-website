@@ -37,7 +37,7 @@ export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps
             <Link
               href="/platform/pearlos"
               className="inline-flex items-center gap-1 text-xs font-semibold transition-colors duration-150 hover:opacity-75"
-              style={{ color: '#C2185B' }}
+              style={{ color: '#FF6A00' }}
             >
               PearlOS
               <span style={{ fontSize: '0.65rem', opacity: 0.6 }}>↗</span>
@@ -52,9 +52,9 @@ export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps
                     href={mod.href}
                     className="inline-block rounded-full px-3 py-1 text-xs font-medium transition-colors duration-150"
                     style={{
-                      background: isActive ? 'rgba(194,24,91,0.08)' : '#FFFFFF',
-                      border: isActive ? '1px solid rgba(194,24,91,0.3)' : '1px solid #E7E3DD',
-                      color: isActive ? '#C2185B' : '#64748B',
+                      background: isActive ? 'rgba(255,106,0,0.08)' : '#FFFFFF',
+                      border: isActive ? '1px solid rgba(255,106,0,0.3)' : '1px solid #E7E3DD',
+                      color: isActive ? '#FF6A00' : '#64748B',
                     }}
                   >
                     {mod.label}
@@ -71,7 +71,7 @@ export function EcosystemNav({ current, nextHref, nextLabel }: EcosystemNavProps
               <Link
                 href={nextHref}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold transition-colors duration-150 hover:opacity-75"
-                style={{ color: '#1E3A66' }}
+                style={{ color: '#0A1224' }}
               >
                 {nextLabel}
                 <ArrowRight size={11} />

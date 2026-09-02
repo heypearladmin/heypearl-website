@@ -5,6 +5,7 @@ import { TheGap } from '@/components/sections/TheGap';
 import { BusinessPain } from '@/components/sections/BusinessPain';
 import { CategoryIntro } from '@/components/sections/CategoryIntro';
 import { PearlOSFeature } from '@/components/sections/PearlOSFeature';
+import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { PlatformModules } from '@/components/sections/PlatformModules';
 import { GEOFarmingFeature } from '@/components/sections/GEOFarmingFeature';
 import { PearlFramework } from '@/components/sections/PearlFramework';
@@ -107,7 +108,9 @@ export default function HomePage() {
       <CategoryIntro />
       {/* 5. The operating system — PearlOS */}
       <PearlOSFeature />
-      {/* 6. The modules — what PearlOS powers */}
+      {/* 5.5. What We Do — HeyPearl's agency capabilities/services */}
+      <WhatWeDo />
+      {/* 6. The modules — the systems and technology that power those capabilities */}
       <PlatformModules />
       {/* 7. GEO Farming AI feature — flagship product promo */}
       <GEOFarmingFeature />

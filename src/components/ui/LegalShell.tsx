@@ -24,7 +24,7 @@ export function LegalShell({
       <PageHero eyebrow={eyebrow} title={title} description={description} />
       <section className="pb-24">
         <Container size="md">
-          <p className="text-xs tracking-micro uppercase text-magenta mb-10">
+          <p className="text-xs tracking-micro uppercase text-orange mb-10">
             Effective {effectiveDate}
           </p>
           <div className="flex flex-col gap-10 text-slate leading-relaxed">

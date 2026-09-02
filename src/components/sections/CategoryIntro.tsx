@@ -33,22 +33,22 @@ export function CategoryIntro() {
         <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
               The Category
             </span>
           </div>
           <h2
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
             }}
           >
             We invented a category:{' '}
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>
               AI Authority Infrastructure.
             </span>
           </h2>
@@ -68,12 +68,12 @@ export function CategoryIntro() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.05)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.05)',
               }}
             >
               <div
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: '2.25rem',
                   fontWeight: 700,
                   color: '#ECE8E2',
@@ -88,7 +88,7 @@ export function CategoryIntro() {
                 style={{
                   fontSize: '1rem',
                   fontWeight: 600,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   marginBottom: '0.6rem',
                   letterSpacing: '-0.01em',
                 }}
@@ -110,7 +110,7 @@ export function CategoryIntro() {
           <Link
             href="/platform"
             className="inline-flex items-center gap-2 text-sm font-medium"
-            style={{ color: '#C2185B' }}
+            style={{ color: '#FF6A00' }}
           >
             See the full platform
             <ArrowRight size={14} />

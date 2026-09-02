@@ -3,22 +3,26 @@
 @tailwind utilities;
 
 /* ─────────────────────────────────────────────────────────────────────────
-   HeyPearl 6.0 — Premium AI Software Platform
+   HeyPearl Final Brand Kit — AI Authority Systems
 
    Light Editorial System (primary)
      White         #FFFFFF   primary background
      Warm Cream    #F8F5F0   section alternation
      Soft Ivory    #FDFBF8   alternate surface
-     Brand Navy    #1E3A66   headings, nav, footer
+     Deep Navy     #0A1224   headings, nav, footer (foundation)
      Body Text     #334155   paragraph copy
      Secondary     #64748B   captions, labels
      Muted         #94A3B8   placeholders, hints
      Border        #E7E3DD   card borders, dividers
-     Magenta       #C2185B   accent only (buttons, links, icons)
-     Magenta Hover #D62F73
+
+   Brand accents — hierarchy matters, not equal weight
+     Chinese Orange   #FF6A00   PRIMARY accent (CTAs, logo dot, emphasis)
+     Royal Blue       #2563FF   technology / intelligence
+     Success Green    #22C55E   growth / results
+     Golden Yellow    #FFC107   secondary highlight — sparingly
 
    Dark sections (footer, dashboard UI only)
-     #07142F / #14284A / #1D355D
+     #0A1224 / #101B33 / #16233F
    ───────────────────────────────────────────────────────────────────────── */
 
 :root {
@@ -26,32 +30,38 @@
   --hp-white:       #FFFFFF;
   --hp-cream:       #F8F5F0;
   --hp-surface:     #FDFBF8;
-  --hp-navy:        #1E3A66;
+  --hp-navy:        #0A1224;
   --hp-body:        #334155;
   --hp-secondary:   #64748B;
   --hp-muted:       #94A3B8;
   --hp-border:      #E7E3DD;
   --hp-divider:     #ECE8E2;
-  --hp-magenta:     #C2185B;
-  --hp-magenta-hover: #D62F73;
+
+  /* ── Brand accents ─────────────────────────────────────────────── */
+  --hp-orange:        #FF6A00;
+  --hp-orange-hover:  #E65F00;
+  --hp-blue:          #2563FF;
+  --hp-blue-hover:    #1D4FD8;
+  --hp-green:         #22C55E;
+  --hp-green-hover:   #16A34A;
+  --hp-gold:          #FFC107;
 
   /* ── Dark palette (footer / dashboard UI only) ────────────────── */
-  --hp-black:       #07142F;
-  --hp-ink:         #14284A;
-  --hp-charcoal:    #1D355D;
-  --hp-gold:        #B6925E;
+  --hp-black:       #0A1224;
+  --hp-ink:         #101B33;
+  --hp-charcoal:    #16233F;
 
   /* ── Legacy compat ────────────────────────────────────────────── */
   --cream:   #F8F5F0;
   --lavender:#F8F5F0;
-  --orange:  #FF914D;
-  --magenta: #C2185B;
-  --plum:    #1E3A66;
-  --navy:    #1E3A66;
-  --blush:   #FED0D1;
+  --orange:  #FF6A00;
+  --magenta: #FF6A00;
+  --plum:    #0A1224;
+  --navy:    #0A1224;
+  --blush:   #FFE3CC;
   --slate:   #334155;
   --gray:    #94A3B8;
-  --gold:    #B6925E;
+  --gold:    #FFC107;
 
   /* ── Semantic tokens ──────────────────────────────────────────── */
   --bg:           var(--hp-white);
@@ -61,8 +71,8 @@
   --text-body:    var(--hp-body);
   --text-dim:     var(--hp-secondary);
   --text-muted:   var(--hp-muted);
-  --accent:       var(--hp-magenta);
-  --accent-hover: var(--hp-magenta-hover);
+  --accent:       var(--hp-orange);
+  --accent-hover: var(--hp-orange-hover);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -97,7 +107,7 @@ body {
 .dark-section strong { color: #F8F5F0; }
 
 ::selection {
-  background: var(--hp-magenta);
+  background: var(--hp-orange);
   color: #fff;
 }
 
@@ -106,7 +116,7 @@ body {
    ───────────────────────────────────────────────────────────────────────── */
 
 .font-display {
-  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  font-family: var(--font-jakarta), Helvetica Neue, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -124,7 +134,7 @@ body {
   color: var(--hp-body);
 }
 .prose-editorial h2 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-jakarta), Helvetica Neue, Arial, sans-serif;
   font-size: clamp(1.4rem, 3vw, 1.9rem);
   font-weight: 700;
   line-height: 1.2;
@@ -134,7 +144,7 @@ body {
   margin-bottom: 1rem;
 }
 .prose-editorial h3 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-jakarta), Helvetica Neue, Arial, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 700;
   color: var(--hp-navy);
@@ -143,7 +153,7 @@ body {
 }
 .prose-editorial p { margin-top: 1.25rem; }
 .prose-editorial a {
-  color: var(--hp-magenta);
+  color: var(--hp-orange);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -164,7 +174,7 @@ body {
 
 .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(194,24,91,0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,106,0,0.25), transparent);
 }
 
 .link-underline {
@@ -199,7 +209,7 @@ body {
   background: #FFFFFF;
   border: 1px solid #E7E3DD;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08);
+  box-shadow: 0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08);
 }
 
 /* Dark cards — dashboard UI, footer only */
@@ -210,19 +220,19 @@ body {
 }
 .card-dark-gold {
   background: var(--hp-ink);
-  border: 1px solid rgba(182,146,94,0.18);
+  border: 1px solid rgba(255,193,7,0.18);
   border-radius: 0.75rem;
 }
 
 .bg-dot-grid {
-  background-image: radial-gradient(rgba(30,58,102,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(10,18,36,0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 .bg-line-grid {
   background-image:
-    linear-gradient(rgba(30,58,102,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(30,58,102,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(10,18,36,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,18,36,0.05) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 

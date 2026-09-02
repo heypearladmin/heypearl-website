@@ -18,9 +18,9 @@ function NeighborhoodIllustration() {
     <div
       className="relative w-full h-full rounded-2xl overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #07142F 0%, #0F2548 50%, #1a1035 100%)',
+        background: 'linear-gradient(135deg, #0A1224 0%, #0F2548 50%, #1a1035 100%)',
         minHeight: '480px',
-        border: '1px solid rgba(194,24,91,0.15)',
+        border: '1px solid rgba(255,106,0,0.15)',
       }}
     >
       {/* Grid overlay */}
@@ -38,7 +38,7 @@ function NeighborhoodIllustration() {
         aria-hidden
         className="absolute inset-0"
         style={{
-          background: 'radial-gradient(50% 50% at 40% 40%, rgba(194,24,91,0.18) 0%, transparent 65%), radial-gradient(35% 45% at 70% 70%, rgba(30,58,102,0.3) 0%, transparent 60%)',
+          background: 'radial-gradient(50% 50% at 40% 40%, rgba(255,106,0,0.18) 0%, transparent 65%), radial-gradient(35% 45% at 70% 70%, rgba(10,18,36,0.3) 0%, transparent 60%)',
         }}
       />
 
@@ -73,8 +73,8 @@ function NeighborhoodIllustration() {
         {/* Active coverage rings — highlighted nodes */}
         {[[180, 160], [300, 160], [240, 240]].map(([x, y], i) => (
           <g key={`ring-${i}`}>
-            <circle cx={x} cy={y} r="38" fill="none" stroke="rgba(194,24,91,0.25)" strokeWidth="1" strokeDasharray="4 3" />
-            <circle cx={x} cy={y} r="24" fill="rgba(194,24,91,0.12)" />
+            <circle cx={x} cy={y} r="38" fill="none" stroke="rgba(255,106,0,0.25)" strokeWidth="1" strokeDasharray="4 3" />
+            <circle cx={x} cy={y} r="24" fill="rgba(255,106,0,0.12)" />
           </g>
         ))}
 
@@ -91,7 +91,7 @@ function NeighborhoodIllustration() {
               cx={x}
               cy={y}
               r={primary ? 10 : 7}
-              fill={primary ? '#C2185B' : 'rgba(194,24,91,0.55)'}
+              fill={primary ? '#FF6A00' : 'rgba(255,106,0,0.55)'}
               stroke={primary ? 'rgba(248,245,240,0.3)' : 'transparent'}
               strokeWidth="1.5"
             />
@@ -110,12 +110,12 @@ function NeighborhoodIllustration() {
           <div
             key={s.label}
             className="flex-1 rounded-xl p-3"
-            style={{ background: 'rgba(7,20,47,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.1)' }}
+            style={{ background: 'rgba(10,18,36,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.1)' }}
           >
             <div style={{ fontSize: '0.55rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(248,245,240,0.5)', marginBottom: '2px' }}>
               {s.label}
             </div>
-            <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.15rem', fontWeight: 700, color: '#F8F5F0', lineHeight: 1 }}>
+            <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.15rem', fontWeight: 700, color: '#F8F5F0', lineHeight: 1 }}>
               {s.value}
             </div>
           </div>
@@ -125,10 +125,10 @@ function NeighborhoodIllustration() {
       {/* Bottom badge */}
       <div
         className="absolute bottom-6 left-6 right-6 rounded-xl px-4 py-3 flex items-center justify-between"
-        style={{ background: 'rgba(7,20,47,0.9)', backdropFilter: 'blur(8px)', border: '1px solid rgba(194,24,91,0.2)' }}
+        style={{ background: 'rgba(10,18,36,0.9)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,106,0,0.2)' }}
       >
         <div>
-          <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '2px' }}>
+          <div style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FF6A00', marginBottom: '2px' }}>
             GEO Farming AI
           </div>
           <div style={{ fontSize: '0.8rem', color: 'rgba(248,245,240,0.85)', fontWeight: 500 }}>
@@ -137,17 +137,17 @@ function NeighborhoodIllustration() {
         </div>
         <div
           className="flex items-center gap-1.5 rounded-lg px-2.5 py-1.5"
-          style={{ background: 'rgba(194,24,91,0.15)', border: '1px solid rgba(194,24,91,0.3)' }}
+          style={{ background: 'rgba(255,106,0,0.15)', border: '1px solid rgba(255,106,0,0.3)' }}
         >
-          <div className="w-1.5 h-1.5 rounded-full bg-[#C2185B] animate-pulse" />
-          <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#C2185B', letterSpacing: '0.06em' }}>LIVE</span>
+          <div className="w-1.5 h-1.5 rounded-full bg-[#FF6A00] animate-pulse" />
+          <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#FF6A00', letterSpacing: '0.06em' }}>LIVE</span>
         </div>
       </div>
 
       {/* Powered by badge */}
       <div
         className="absolute top-6 right-6"
-        style={{ background: 'rgba(7,20,47,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.08)', borderRadius: '8px', padding: '4px 10px' }}
+        style={{ background: 'rgba(10,18,36,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.08)', borderRadius: '8px', padding: '4px 10px' }}
       >
         <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(248,245,240,0.45)', fontWeight: 600 }}>
           Powered by HeyPearl
@@ -171,7 +171,7 @@ export function GEOFarmingFeature() {
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: 'linear-gradient(#1E3A66 1px, transparent 1px), linear-gradient(90deg, #1E3A66 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#0A1224 1px, transparent 1px), linear-gradient(90deg, #0A1224 1px, transparent 1px)',
           backgroundSize: '64px 64px',
         }}
       />
@@ -189,28 +189,28 @@ export function GEOFarmingFeature() {
             <div className="flex items-center gap-2 mb-5">
               <span
                 className="inline-flex items-center px-2.5 py-1 rounded-full text-[0.58rem] font-bold uppercase tracking-widest"
-                style={{ background: '#C2185B', color: '#FFFFFF' }}
+                style={{ background: '#FF6A00', color: '#FFFFFF' }}
               >
                 New
               </span>
-              <span style={{ fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.75)' }}>
+              <span style={{ fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,193,7,0.75)' }}>
                 A HeyPearl Product
               </span>
             </div>
 
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.025em',
                 marginBottom: '0.75rem',
               }}
             >
               Introducing{' '}
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>GEO Farming AI.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>GEO Farming AI.</span>
             </h2>
 
             <p className="text-lg leading-relaxed mb-8" style={{ color: '#334155' }}>
@@ -223,7 +223,7 @@ export function GEOFarmingFeature() {
                 <li key={b} className="flex items-center gap-3">
                   <span
                     className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs font-bold"
-                    style={{ background: '#C2185B' }}
+                    style={{ background: '#FF6A00' }}
                     aria-hidden
                   >
                     ✓
@@ -239,8 +239,8 @@ export function GEOFarmingFeature() {
                 href={geoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold transition-all duration-200 hover:bg-[#D62F73] hover:shadow-lg hover:scale-[1.01]"
-                style={{ background: '#C2185B', color: '#FFFFFF' }}
+                className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold transition-all duration-200 hover:bg-[#E65F00] hover:shadow-lg hover:scale-[1.01]"
+                style={{ background: '#FF6A00', color: '#FFFFFF' }}
               >
                 Launch Your Campaign
                 <ArrowUpRight size={14} />
@@ -249,7 +249,7 @@ export function GEOFarmingFeature() {
                 href="https://calendly.com/hey-pearl/meet?month=2026-05"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-medium transition-colors duration-200 hover:border-[#1E3A66]/40 hover:text-[#1E3A66]"
+                className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-medium transition-colors duration-200 hover:border-[#0A1224]/40 hover:text-[#0A1224]"
                 style={{ border: '1px solid #E7E3DD', color: '#334155' }}
               >
                 Book a Strategy Call

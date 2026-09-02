@@ -62,7 +62,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
   if (status.type === 'success') {
     return (
       <div className="rounded-3xl bg-lavender border border-plum/10 p-8 sm:p-10 text-center">
-        <Eyebrow tone="magenta">Your guide is ready</Eyebrow>
+        <Eyebrow tone="orange">Your guide is ready</Eyebrow>
         <h3 className="mt-3 font-display text-2xl text-plum">Download {title}</h3>
         <p className="mt-3 text-slate leading-relaxed max-w-md mx-auto text-sm">
           Thanks, {firstName || 'friend'} — your download is ready below.
@@ -96,7 +96,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label htmlFor="lm-firstName" className="block text-xs tracking-micro uppercase text-slate mb-2">
-              First name<span className="text-magenta ml-1">*</span>
+              First name<span className="text-orange ml-1">*</span>
             </label>
             <input
               id="lm-firstName"
@@ -106,12 +106,12 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
               autoComplete="given-name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-orange/30 transition-colors"
             />
           </div>
           <div>
             <label htmlFor="lm-email" className="block text-xs tracking-micro uppercase text-slate mb-2">
-              Email<span className="text-magenta ml-1">*</span>
+              Email<span className="text-orange ml-1">*</span>
             </label>
             <input
               id="lm-email"
@@ -122,7 +122,7 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
               inputMode="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-orange/30 transition-colors"
             />
           </div>
           <div className="sm:col-span-2">
@@ -138,13 +138,13 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
               placeholder="(555) 123-4567"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+              className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-orange/30 transition-colors"
             />
           </div>
         </div>
 
         {status.type === 'error' && (
-          <div role="alert" className="mt-5 rounded-2xl border border-magenta/30 bg-magenta/5 px-4 py-3 text-sm text-magenta-600">
+          <div role="alert" className="mt-5 rounded-2xl border border-orange/30 bg-orange/5 px-4 py-3 text-sm text-orange-600">
             {status.message}
           </div>
         )}
@@ -169,18 +169,18 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
     <button
       type="button"
       onClick={() => setStatus({ type: 'expanded' })}
-      className="group w-full flex items-center justify-between gap-4 rounded-3xl bg-lavender border border-plum/10 p-6 sm:p-8 text-left hover:border-magenta/30 hover:shadow-soft transition-all duration-300"
+      className="group w-full flex items-center justify-between gap-4 rounded-3xl bg-lavender border border-plum/10 p-6 sm:p-8 text-left hover:border-orange/30 hover:shadow-soft transition-all duration-300"
     >
       <div className="flex items-center gap-4">
-        <div className="flex-shrink-0 h-12 w-12 rounded-2xl bg-magenta/10 flex items-center justify-center">
-          <FileText size={20} className="text-magenta" />
+        <div className="flex-shrink-0 h-12 w-12 rounded-2xl bg-orange/10 flex items-center justify-center">
+          <FileText size={20} className="text-orange" />
         </div>
         <div>
-          <p className="text-[0.65rem] tracking-micro uppercase text-magenta font-medium mb-1">Free PDF Guide</p>
+          <p className="text-[0.65rem] tracking-micro uppercase text-orange font-medium mb-1">Free PDF Guide</p>
           <p className="font-display text-lg text-plum leading-snug">Download {title} as a PDF</p>
         </div>
       </div>
-      <Download size={18} className="flex-shrink-0 text-plum/40 group-hover:text-magenta transition-colors" />
+      <Download size={18} className="flex-shrink-0 text-plum/40 group-hover:text-orange transition-colors" />
     </button>
   );
 }

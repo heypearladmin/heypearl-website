@@ -90,7 +90,7 @@ export function ContactForm() {
   if (status.type === 'success') {
     return (
       <div className="rounded-3xl bg-white border border-plum/5 shadow-soft p-10 sm:p-12 text-center">
-        <Eyebrow tone="magenta">Message received</Eyebrow>
+        <Eyebrow tone="orange">Message received</Eyebrow>
         <h3 className="mt-4 font-display text-2xl sm:text-3xl text-plum">
           Thanks — we&rsquo;ll be in touch.
         </h3>
@@ -182,7 +182,7 @@ export function ContactForm() {
           rows={5}
           value={values.message}
           onChange={(e) => update('message', e.target.value)}
-          className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+          className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-orange/30 transition-colors"
           placeholder="How can we help?"
         />
       </div>
@@ -199,7 +199,7 @@ export function ContactForm() {
       {status.type === 'error' && (
         <div
           role="alert"
-          className="mt-5 rounded-2xl border border-magenta/30 bg-magenta/5 px-4 py-3 text-sm text-magenta-600"
+          className="mt-5 rounded-2xl border border-orange/30 bg-orange/5 px-4 py-3 text-sm text-orange-600"
         >
           {status.message}
         </div>
@@ -270,7 +270,7 @@ function Field({
         className="block text-xs tracking-micro uppercase text-slate mb-2"
       >
         {label}
-        {required && <span className="text-magenta ml-1">*</span>}
+        {required && <span className="text-orange ml-1">*</span>}
       </label>
       <input
         id={id}
@@ -282,7 +282,7 @@ function Field({
         inputMode={inputMode}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-magenta/30 transition-colors"
+        className="w-full rounded-2xl border border-plum/15 bg-white px-4 py-3 text-plum placeholder:text-slate/50 focus:outline-none focus:border-plum/40 focus:ring-2 focus:ring-orange/30 transition-colors"
       />
     </div>
   );

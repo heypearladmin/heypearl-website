@@ -46,7 +46,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
-        <span className="text-[0.65rem] tracking-micro uppercase text-magenta font-medium">
+        <span className="text-[0.65rem] tracking-micro uppercase text-orange font-medium">
           On this page
         </span>
         <ChevronDown
@@ -64,7 +64,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
       >
         {/* Sticky header on desktop */}
         <li className="hidden lg:block mb-2">
-          <span className="text-[0.65rem] tracking-micro uppercase text-magenta font-medium">
+          <span className="text-[0.65rem] tracking-micro uppercase text-orange font-medium">
             On this page
           </span>
         </li>
@@ -77,7 +77,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
                 'block rounded-lg py-1.5 transition-colors leading-snug',
                 item.level === 2 ? 'pl-0 font-medium' : 'pl-4 text-[0.9em]',
                 activeId === item.id
-                  ? 'text-magenta'
+                  ? 'text-orange'
                   : 'text-slate/70 hover:text-plum',
               )}
             >

@@ -12,14 +12,14 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden" style={{ background: '#07142F', color: '#F8F5F0' }}>
+    <footer className="relative overflow-hidden" style={{ background: '#0A1224', color: '#F8F5F0' }}>
       {/* Subtle navy radial — no orange glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(70% 50% at 50% 0%, rgba(30,58,102,0.45) 0%, transparent 70%)',
+            'radial-gradient(70% 50% at 50% 0%, rgba(10,18,36,0.45) 0%, transparent 70%)',
         }}
       />
 
@@ -28,7 +28,7 @@ export function Footer() {
         <Container size="xl" className="pt-24 pb-16">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-7">
-              {/* Section eyebrow — muted cream, no magenta dot */}
+              {/* Section eyebrow — muted cream, no orange dot */}
               <p
                 className="inline-flex items-center gap-2 text-[0.72rem] font-medium uppercase tracking-widest"
                 style={{ color: 'rgba(248,245,240,0.5)' }}
@@ -160,9 +160,9 @@ export function Footer() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm transition flex items-center gap-1"
-                          style={{ color: l.label === 'GEO Farming AI' ? 'rgba(194,24,91,0.85)' : 'rgba(248,245,240,0.75)' }}
-                          onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? '#C2185B' : '#F8F5F0'; }}
-                          onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? 'rgba(194,24,91,0.85)' : 'rgba(248,245,240,0.75)'; }}
+                          style={{ color: l.label === 'GEO Farming AI' ? 'rgba(255,106,0,0.85)' : 'rgba(248,245,240,0.75)' }}
+                          onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? '#FF6A00' : '#F8F5F0'; }}
+                          onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = l.label === 'GEO Farming AI' ? 'rgba(255,106,0,0.85)' : 'rgba(248,245,240,0.75)'; }}
                         >
                           {l.label}
                         </a>

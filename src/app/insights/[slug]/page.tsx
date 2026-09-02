@@ -149,7 +149,7 @@ function inlineFormat(text: string): React.ReactNode {
     if (match.index > last) parts.push(text.slice(last, match.index));
     if (match[1]) parts.push(<strong key={match.index} className="font-semibold text-plum">{match[1]}</strong>);
     else if (match[2]) parts.push(<em key={match.index}>{match[2]}</em>);
-    else if (match[3]) parts.push(<a key={match.index} href={match[4]} target="_blank" rel="noopener noreferrer" className="text-magenta underline underline-offset-2 hover:text-magenta/80 transition">{match[3]}</a>);
+    else if (match[3]) parts.push(<a key={match.index} href={match[4]} target="_blank" rel="noopener noreferrer" className="text-orange underline underline-offset-2 hover:text-orange/80 transition">{match[3]}</a>);
     last = match.index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));
@@ -284,7 +284,7 @@ export default async function InsightPost({ params }: Props) {
               </div>
 
               {/* Excerpt pull-quote */}
-              <p className="text-lg sm:text-xl text-slate leading-relaxed font-medium border-l-4 border-magenta pl-5 mb-10">
+              <p className="text-lg sm:text-xl text-slate leading-relaxed font-medium border-l-4 border-orange pl-5 mb-10">
                 {post.excerpt}
               </p>
 

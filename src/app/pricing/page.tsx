@@ -92,7 +92,7 @@ export default function PricingPage() {
         title={
           <>
             Authority infrastructure,{' '}
-            <span className="italic font-light text-magenta">priced clearly.</span>
+            <span className="italic font-light text-orange">priced clearly.</span>
           </>
         }
         description="Two product families. Six tiers. Each one a complete authority system, not a marketing retainer."

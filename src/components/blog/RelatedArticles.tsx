@@ -34,7 +34,7 @@ export function RelatedArticles({ current, all }: RelatedArticlesProps) {
           <Link
             key={post.slug}
             href={`/insights/${post.slug}`}
-            className="group block rounded-2xl border border-plum/10 bg-white overflow-hidden hover:shadow-soft hover:border-magenta/20 transition-all duration-300"
+            className="group block rounded-2xl border border-plum/10 bg-white overflow-hidden hover:shadow-soft hover:border-orange/20 transition-all duration-300"
           >
             <div className="relative aspect-[3/2] overflow-hidden">
               <Image
@@ -47,8 +47,8 @@ export function RelatedArticles({ current, all }: RelatedArticlesProps) {
               />
             </div>
             <div className="p-4">
-              <Eyebrow tone="magenta" className="mb-2">{post.eyebrow}</Eyebrow>
-              <p className="font-display text-sm text-plum leading-snug line-clamp-2 group-hover:text-magenta transition-colors">
+              <Eyebrow tone="orange" className="mb-2">{post.eyebrow}</Eyebrow>
+              <p className="font-display text-sm text-plum leading-snug line-clamp-2 group-hover:text-orange transition-colors">
                 {post.h1}
               </p>
               <div className="mt-3 flex items-center gap-3 text-[0.7rem] text-slate/60">

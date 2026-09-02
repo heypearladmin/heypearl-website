@@ -51,9 +51,9 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
                   fontSize: '0.78rem',
                   lineHeight: 1.45,
                   fontWeight: isActive ? 600 : 400,
-                  color: isActive ? '#1E3A66' : '#64748B',
+                  color: isActive ? '#0A1224' : '#64748B',
                   textDecoration: 'none',
-                  borderLeft: isActive ? '2px solid #C2185B' : '2px solid #E7E3DD',
+                  borderLeft: isActive ? '2px solid #FF6A00' : '2px solid #E7E3DD',
                   transition: 'all 0.15s',
                 }}
               >

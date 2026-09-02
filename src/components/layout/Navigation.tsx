@@ -74,8 +74,8 @@ export function Navigation() {
                   className={cn(
                     'inline-flex items-center gap-1 px-3.5 py-2 text-sm font-medium transition-colors duration-200 rounded-md',
                     openMenu === item.label
-                      ? 'text-[#1E3A66]'
-                      : 'text-[#334155] hover:text-[#1E3A66]',
+                      ? 'text-[#0A1224]'
+                      : 'text-[#334155] hover:text-[#0A1224]',
                   )}
                 >
                   {item.label}
@@ -84,7 +84,7 @@ export function Navigation() {
                       size={13}
                       className={cn(
                         'transition-transform duration-200 text-[#94A3B8]',
-                        openMenu === item.label && 'rotate-180 text-[#C2185B]',
+                        openMenu === item.label && 'rotate-180 text-[#FF6A00]',
                       )}
                     />
                   )}
@@ -104,7 +104,7 @@ export function Navigation() {
                         onMouseEnter={() => handleMouseEnter(item.label)}
                         onMouseLeave={() => handleMouseLeave()}
                       >
-                        <div className="rounded-2xl bg-white border border-[#E7E3DD] shadow-[0_8px_32px_rgba(30,58,102,0.10)] p-2">
+                        <div className="rounded-2xl bg-white border border-[#E7E3DD] shadow-[0_8px_32px_rgba(10,18,36,0.10)] p-2">
 
                           {item.label === 'Platform' || item.label === 'Solutions' ? (
                             // Two-column grid for Platform and Solutions
@@ -112,12 +112,12 @@ export function Navigation() {
                               {item.children.map((child) => {
                                 const isExternal = child.external || child.href.startsWith('http');
                                 const isFeatured = child.featured;
-                                const sharedClass = `group flex flex-col gap-1 rounded-xl p-3.5 transition-colors duration-150 ${isFeatured ? 'bg-gradient-to-br from-[#1E3A66]/5 to-[#C2185B]/5 border border-[#C2185B]/15 hover:border-[#C2185B]/30 hover:from-[#1E3A66]/8 hover:to-[#C2185B]/8' : 'hover:bg-[#F8F5F0]'}`;
+                                const sharedClass = `group flex flex-col gap-1 rounded-xl p-3.5 transition-colors duration-150 ${isFeatured ? 'bg-gradient-to-br from-[#0A1224]/5 to-[#FF6A00]/5 border border-[#FF6A00]/15 hover:border-[#FF6A00]/30 hover:from-[#0A1224]/8 hover:to-[#FF6A00]/8' : 'hover:bg-[#F8F5F0]'}`;
                                 const inner = (
                                   <>
-                                    <span className="text-sm font-semibold text-[#1E3A66] group-hover:text-[#C2185B] transition-colors duration-150 flex items-center gap-1.5">
+                                    <span className="text-sm font-semibold text-[#0A1224] group-hover:text-[#FF6A00] transition-colors duration-150 flex items-center gap-1.5">
                                       {child.label}
-                                      {isFeatured && <span className="text-[0.55rem] font-bold tracking-wide uppercase px-1.5 py-0.5 rounded bg-[#C2185B] text-white ml-1">Flagship</span>}
+                                      {isFeatured && <span className="text-[0.55rem] font-bold tracking-wide uppercase px-1.5 py-0.5 rounded bg-[#FF6A00] text-white ml-1">Flagship</span>}
                                       <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-60 transition-opacity -ml-0.5" />
                                     </span>
                                     {child.description && (
@@ -126,7 +126,7 @@ export function Navigation() {
                                       </span>
                                     )}
                                     {isFeatured && (
-                                      <span className="text-[0.6rem] text-[#C2185B]/70 font-medium mt-0.5">A HeyPearl Product</span>
+                                      <span className="text-[0.6rem] text-[#FF6A00]/70 font-medium mt-0.5">A HeyPearl Product</span>
                                     )}
                                   </>
                                 );
@@ -151,7 +151,7 @@ export function Navigation() {
                                   className="group flex items-start gap-3 rounded-xl p-3.5 hover:bg-[#F8F5F0] transition-colors duration-150"
                                 >
                                   <div>
-                                    <div className="text-sm font-semibold text-[#1E3A66] group-hover:text-[#C2185B] transition-colors duration-150">
+                                    <div className="text-sm font-semibold text-[#0A1224] group-hover:text-[#FF6A00] transition-colors duration-150">
                                       {child.label}
                                     </div>
                                     {child.description && (
@@ -179,7 +179,7 @@ export function Navigation() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#C2185B] text-white text-sm font-semibold hover:bg-[#D62F73] transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#FF6A00] text-white text-sm font-semibold hover:bg-[#E65F00] transition-colors duration-200"
             >
               Book a Strategy Call
               <ArrowUpRight size={14} />
@@ -189,7 +189,7 @@ export function Navigation() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className="lg:hidden p-2 text-[#334155] hover:text-[#1E3A66] transition-colors"
+            className="lg:hidden p-2 text-[#334155] hover:text-[#0A1224] transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -224,7 +224,7 @@ export function Navigation() {
                             size={16}
                             className={cn(
                               'transition-transform text-[#94A3B8]',
-                              mobileExpanded === item.label && 'rotate-180 text-[#C2185B]',
+                              mobileExpanded === item.label && 'rotate-180 text-[#FF6A00]',
                             )}
                           />
                         </button>
@@ -242,7 +242,7 @@ export function Navigation() {
                                   <Link
                                     href={child.href}
                                     onClick={() => setMobileOpen(false)}
-                                    className="block px-4 py-2.5 text-sm text-[#64748B] hover:text-[#C2185B] transition-colors"
+                                    className="block px-4 py-2.5 text-sm text-[#64748B] hover:text-[#FF6A00] transition-colors"
                                   >
                                     {child.label}
                                   </Link>
@@ -256,7 +256,7 @@ export function Navigation() {
                       <Link
                         href={item.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block py-4 text-base font-medium text-[#334155] hover:text-[#1E3A66] transition-colors"
+                        className="block py-4 text-base font-medium text-[#334155] hover:text-[#0A1224] transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -270,7 +270,7 @@ export function Navigation() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#C2185B] text-white text-sm font-semibold hover:bg-[#D62F73] transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#FF6A00] text-white text-sm font-semibold hover:bg-[#E65F00] transition-colors"
                 >
                   Book a Strategy Call
                   <ArrowUpRight size={14} />
@@ -278,7 +278,7 @@ export function Navigation() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center w-full py-3.5 rounded-xl border border-[#E7E3DD] text-sm font-medium text-[#334155] hover:text-[#1E3A66] hover:border-[#1E3A66]/30 transition-colors"
+                  className="flex items-center justify-center w-full py-3.5 rounded-xl border border-[#E7E3DD] text-sm font-medium text-[#334155] hover:text-[#0A1224] hover:border-[#0A1224]/30 transition-colors"
                 >
                   Contact HeyPearl
                 </Link>

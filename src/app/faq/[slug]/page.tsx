@@ -154,7 +154,7 @@ function inlineFmt(text: string): React.ReactNode {
     if (match.index > last) parts.push(text.slice(last, match.index));
     if (match[1]) parts.push(<strong key={match.index} className="font-semibold text-plum">{match[1]}</strong>);
     else if (match[2]) parts.push(<em key={match.index}>{match[2]}</em>);
-    else if (match[3]) parts.push(<a key={match.index} href={match[4]} target="_blank" rel="noopener noreferrer" className="text-magenta underline underline-offset-2 hover:text-magenta/80 transition">{match[3]}</a>);
+    else if (match[3]) parts.push(<a key={match.index} href={match[4]} target="_blank" rel="noopener noreferrer" className="text-orange underline underline-offset-2 hover:text-orange/80 transition">{match[3]}</a>);
     last = match.index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));
@@ -294,8 +294,8 @@ export default async function FaqPage({ params }: Props) {
         <Container size="md" className="py-12 sm:py-16">
 
           {/* ── Quick Answer ── */}
-          <aside aria-label="Quick answer" className="rounded-2xl border-l-4 border-magenta bg-white shadow-soft px-6 py-5 mb-6">
-            <p className="text-[0.65rem] tracking-micro uppercase text-magenta font-medium mb-2">
+          <aside aria-label="Quick answer" className="rounded-2xl border-l-4 border-orange bg-white shadow-soft px-6 py-5 mb-6">
+            <p className="text-[0.65rem] tracking-micro uppercase text-orange font-medium mb-2">
               Quick Answer
             </p>
             <p className="text-base sm:text-[1.0625rem] text-slate leading-relaxed font-medium">
@@ -326,7 +326,7 @@ export default async function FaqPage({ params }: Props) {
               <ul className="flex flex-col gap-3">
                 {enrichment.takeaways.map((t, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 size={16} className="text-magenta flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 size={16} className="text-orange flex-shrink-0 mt-0.5" />
                     <span className="text-slate text-sm leading-relaxed">{t}</span>
                   </li>
                 ))}
@@ -380,16 +380,16 @@ export default async function FaqPage({ params }: Props) {
           {/* ── Full article card (bottom) ── */}
           <Link
             href={`/insights/${faq.postSlug}`}
-            className="group flex items-center justify-between gap-4 rounded-2xl border border-plum/10 bg-white px-6 py-5 mb-12 hover:border-magenta/30 hover:shadow-soft transition-all duration-300"
+            className="group flex items-center justify-between gap-4 rounded-2xl border border-plum/10 bg-white px-6 py-5 mb-12 hover:border-orange/30 hover:shadow-soft transition-all duration-300"
           >
             <div>
               <p className="text-[0.6rem] tracking-micro uppercase text-slate/40 mb-1">Read the full article</p>
-              <p className="text-sm font-semibold text-plum group-hover:text-magenta transition-colors leading-snug">
+              <p className="text-sm font-semibold text-plum group-hover:text-orange transition-colors leading-snug">
                 {faq.postTitle}
               </p>
               <p className="text-xs text-slate/50 mt-1">{faq.postEyebrow}</p>
             </div>
-            <ArrowRight size={16} className="flex-shrink-0 text-slate/30 group-hover:text-magenta group-hover:translate-x-0.5 transition-all" />
+            <ArrowRight size={16} className="flex-shrink-0 text-slate/30 group-hover:text-orange group-hover:translate-x-0.5 transition-all" />
           </Link>
 
           {/* ── Related Questions ── */}
@@ -403,12 +403,12 @@ export default async function FaqPage({ params }: Props) {
                   <Link
                     key={slugify(rf.q)}
                     href={`/faq/${slugify(rf.q)}`}
-                    className="group flex items-start justify-between gap-4 rounded-2xl border border-plum/10 bg-white p-5 hover:border-magenta/30 hover:shadow-soft transition-all duration-300"
+                    className="group flex items-start justify-between gap-4 rounded-2xl border border-plum/10 bg-white p-5 hover:border-orange/30 hover:shadow-soft transition-all duration-300"
                   >
-                    <span className="text-sm font-medium text-plum group-hover:text-magenta transition-colors leading-snug">
+                    <span className="text-sm font-medium text-plum group-hover:text-orange transition-colors leading-snug">
                       {rf.q}
                     </span>
-                    <ArrowRight size={14} className="flex-shrink-0 mt-0.5 text-slate/40 group-hover:text-magenta transition-colors" />
+                    <ArrowRight size={14} className="flex-shrink-0 mt-0.5 text-slate/40 group-hover:text-orange transition-colors" />
                   </Link>
                 ))}
               </div>
@@ -425,7 +425,7 @@ export default async function FaqPage({ params }: Props) {
                   <Link
                     key={post.slug}
                     href={`/insights/${post.slug}`}
-                    className="group block rounded-2xl border border-plum/10 bg-white overflow-hidden hover:shadow-soft hover:border-magenta/20 transition-all duration-300"
+                    className="group block rounded-2xl border border-plum/10 bg-white overflow-hidden hover:shadow-soft hover:border-orange/20 transition-all duration-300"
                   >
                     <div className="relative aspect-[3/2] overflow-hidden">
                       <Image
@@ -438,8 +438,8 @@ export default async function FaqPage({ params }: Props) {
                       />
                     </div>
                     <div className="p-4">
-                      <Eyebrow tone="magenta" className="mb-2">{post.eyebrow}</Eyebrow>
-                      <p className="font-display text-sm text-plum leading-snug line-clamp-2 group-hover:text-magenta transition-colors">
+                      <Eyebrow tone="orange" className="mb-2">{post.eyebrow}</Eyebrow>
+                      <p className="font-display text-sm text-plum leading-snug line-clamp-2 group-hover:text-orange transition-colors">
                         {post.h1}
                       </p>
                       <p className="mt-2 text-xs text-slate/60 leading-relaxed line-clamp-2">

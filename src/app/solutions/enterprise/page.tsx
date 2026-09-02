@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+const cardShadow = '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)';
 
 const CHALLENGES = [
   {
@@ -135,31 +135,31 @@ export default function EnterprisePage() {
         aria-label="Enterprise hero"
       >
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div aria-hidden className="pointer-events-none absolute top-0 right-0 w-[800px] h-[600px]"
-          style={{ background: 'radial-gradient(ellipse at top right, rgba(194,24,91,0.04) 0%, transparent 65%)' }} />
+          style={{ background: 'radial-gradient(ellipse at top right, rgba(255,106,0,0.04) 0%, transparent 65%)' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div className="flex items-center gap-2 mb-6 flex-wrap">
             <Link href="/solutions" className="text-xs" style={{ color: '#64748B' }}>Solutions</Link>
             <span style={{ color: '#94A3B8', fontSize: '0.75rem' }}>/</span>
-            <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Enterprise</span>
+            <span style={{ fontSize: '0.72rem', color: '#FF6A00', fontWeight: 600 }}>Enterprise</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.4 }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.4 }} aria-hidden />
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               For Large Organizations
             </span>
           </div>
-          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
+          <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
             AI authority<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>at organizational scale.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>at organizational scale.</span>
           </h1>
           <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.8 }}>
             Managing AI authority across regions, brands, and hundreds of agents requires infrastructure, not individual effort. HeyPearl builds the centralized AI authority system that large organizations need — and the monitoring to know it's working.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
               Talk to Our Team <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: '#64748B' }}>
@@ -175,12 +175,12 @@ export default function EnterprisePage() {
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>The Challenge</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>The Challenge</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Why large organizations<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>face the biggest AI gaps.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>face the biggest AI gaps.</span>
             </h2>
           </div>
           </Reveal>
@@ -189,8 +189,8 @@ export default function EnterprisePage() {
             style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: cardShadow }}>
             {CHALLENGES.map((c) => (
               <div key={c.num} className="p-7 lg:p-8 bg-white">
-                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(30,58,102,0.08)', fontFamily: 'var(--font-playfair), Georgia, serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
+                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(10,18,36,0.08)', fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', lineHeight: 1, marginBottom: '0.75rem' }}>{c.num}</div>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.6rem', letterSpacing: '-0.01em' }}>{c.title}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.72 }}>{c.body}</p>
               </div>
             ))}
@@ -205,12 +205,12 @@ export default function EnterprisePage() {
           <Reveal>
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Enterprise Capabilities</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Enterprise Capabilities</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Built for organizations<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>that can't afford blind spots.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>that can't afford blind spots.</span>
             </h2>
           </div>
           </Reveal>
@@ -220,7 +220,7 @@ export default function EnterprisePage() {
             {CAPABILITIES.map((item) => (
               <div key={item.title} className="p-7 bg-white">
                 <div className="h-px mb-5" style={{ background: '#ECE8E2' }} />
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.title}</h3>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.title}</h3>
                 <p style={{ fontSize: '0.83rem', color: '#334155', lineHeight: 1.72 }}>{item.desc}</p>
               </div>
             ))}
@@ -232,7 +232,7 @@ export default function EnterprisePage() {
       {/* Recommended Modules */}
       <RecommendedModules
         modules={MODULES}
-        headline={<>The full platform.<br /><span style={{ color: '#C2185B', fontStyle: 'italic' }}>Deployed at enterprise scale.</span></>}
+        headline={<>The full platform.<br /><span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Deployed at enterprise scale.</span></>}
       />
 
       {/* FAQ */}
@@ -241,20 +241,20 @@ export default function EnterprisePage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Questions</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               What enterprise teams ask<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>before they engage.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>before they engage.</span>
             </h2>
           </div>
           </Reveal>
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+              <div className="p-6 rounded-xl" style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.6rem' }}>{faq.q}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
@@ -267,7 +267,7 @@ export default function EnterprisePage() {
       <section className="py-16 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="mb-8">
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Related Solutions</span>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Related Solutions</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
@@ -277,12 +277,12 @@ export default function EnterprisePage() {
               <Reveal key={item.href} delay={i * 0.08}>
               <Link href={item.href}
                 className="group flex items-center gap-4 p-5 rounded-xl bg-white hover:bg-[#F8F5F0] transition-colors duration-200"
-                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
                 <div className="flex-1">
-                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{item.label}</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.25rem' }}>{item.label}</div>
                   <div style={{ fontSize: '0.8rem', color: '#334155' }}>{item.desc}</div>
                 </div>
-                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#C2185B' }} />
+                <ArrowUpRight size={13} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#FF6A00' }} />
               </Link>
               </Reveal>
             ))}
@@ -291,19 +291,19 @@ export default function EnterprisePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#1E3A66]">
+      <section className="py-24 bg-[#0A1224]">
         <Container size="md" className="text-center">
           <Reveal>
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Ready to build AI authority<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>across your organization?</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>across your organization?</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75 }}>
             Enterprise engagements start with a strategic assessment of your organization's AI visibility gaps. Talk to our team about scope, structure, and what a phased rollout looks like.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
               Talk to Our Team <ArrowRight size={14} />
             </a>
             <Link href="/platform/pearlos" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"

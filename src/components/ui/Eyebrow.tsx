@@ -4,13 +4,12 @@ import type { ReactNode } from 'react';
 type EyebrowProps = {
   children: ReactNode;
   className?: string;
-  tone?: 'plum' | 'magenta' | 'orange' | 'cream' | 'navy';
+  tone?: 'plum' | 'orange' | 'cream' | 'navy';
   showDot?: boolean;
 };
 
 const tones = {
   plum: 'text-plum',
-  magenta: 'text-magenta',
   orange: 'text-orange',
   cream: 'text-cream',
   navy: 'text-navy',
@@ -31,7 +30,7 @@ export function Eyebrow({
       )}
     >
       {showDot && (
-        <span className="inline-block h-1.5 w-1.5 rounded-full bg-magenta" />
+        <span className="inline-block h-1.5 w-1.5 rounded-full bg-orange" />
       )}
       <span>{children}</span>
     </div>

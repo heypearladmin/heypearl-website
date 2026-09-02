@@ -32,7 +32,7 @@ export default function InsightsPage() {
         title={
           <>
             Editorial dispatches{' '}
-            <span className="italic font-light text-magenta">
+            <span className="italic font-light text-orange">
               from the AI search era.
             </span>
           </>
@@ -79,7 +79,7 @@ export default function InsightsPage() {
                 <div className="relative grid lg:grid-cols-2 gap-8 p-8 sm:p-12">
                   <div className="flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="inline-flex items-center gap-1.5 rounded-full bg-magenta px-3 py-1 text-[0.65rem] tracking-micro uppercase text-cream font-medium">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-orange px-3 py-1 text-[0.65rem] tracking-micro uppercase text-cream font-medium">
                         New
                       </span>
                       <Eyebrow tone="cream">{featured.eyebrow}</Eyebrow>
@@ -100,7 +100,7 @@ export default function InsightsPage() {
                         {featured.readTime}
                       </span>
                     </div>
-                    <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-cream group-hover:text-magenta transition-colors">
+                    <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-cream group-hover:text-orange transition-colors">
                       Read the article
                       <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </div>
@@ -134,13 +134,13 @@ export default function InsightsPage() {
                         className="absolute inset-0 bg-gradient-to-t from-plum/30 via-transparent to-transparent"
                       />
                       {isNew && (
-                        <span className="absolute top-4 left-4 inline-flex items-center rounded-full bg-magenta px-2.5 py-1 text-[0.6rem] tracking-micro uppercase text-cream font-medium">
+                        <span className="absolute top-4 left-4 inline-flex items-center rounded-full bg-orange px-2.5 py-1 text-[0.6rem] tracking-micro uppercase text-cream font-medium">
                           New
                         </span>
                       )}
                     </div>
                     <div className="p-6 sm:p-8 flex flex-col flex-1">
-                      <Eyebrow tone="magenta">{post.eyebrow}</Eyebrow>
+                      <Eyebrow tone="orange">{post.eyebrow}</Eyebrow>
                       <h3 className="mt-3 font-display text-xl text-plum leading-snug">
                         {post.h1}
                       </h3>

@@ -45,18 +45,18 @@ export function AISolutions() {
         {/* Header */}
         <Reveal>
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.5)' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span className="inline-block h-px w-8" style={{ background: 'rgba(255,193,7,0.5)' }} aria-hidden />
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Our AI Solutions
             </span>
           </div>
           <div className="max-w-3xl">
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.025em',
                 marginBottom: '1rem',
@@ -78,9 +78,9 @@ export function AISolutions() {
             <div
               className="relative h-full rounded-3xl overflow-hidden flex flex-col p-8 sm:p-10"
               style={{
-                background: 'linear-gradient(145deg, #0F2548 0%, #1E3A66 45%, #2D1438 100%)',
-                border: '1px solid rgba(194,24,91,0.25)',
-                boxShadow: '0 0 0 1px rgba(194,24,91,0.12), 0 24px 64px rgba(30,58,102,0.25)',
+                background: 'linear-gradient(145deg, #0F2548 0%, #0A1224 45%, #2D1438 100%)',
+                border: '1px solid rgba(255,106,0,0.25)',
+                boxShadow: '0 0 0 1px rgba(255,106,0,0.12), 0 24px 64px rgba(10,18,36,0.25)',
                 minHeight: '420px',
               }}
             >
@@ -89,7 +89,7 @@ export function AISolutions() {
                 aria-hidden
                 className="pointer-events-none absolute inset-0"
                 style={{
-                  background: 'radial-gradient(55% 55% at 85% 10%, rgba(194,24,91,0.2) 0%, transparent 65%), radial-gradient(40% 60% at 10% 90%, rgba(30,58,102,0.4) 0%, transparent 60%)',
+                  background: 'radial-gradient(55% 55% at 85% 10%, rgba(255,106,0,0.2) 0%, transparent 65%), radial-gradient(40% 60% at 10% 90%, rgba(10,18,36,0.4) 0%, transparent 60%)',
                 }}
               />
 
@@ -108,7 +108,7 @@ export function AISolutions() {
                 <div className="flex items-center gap-2 flex-wrap">
                   <span
                     className="inline-flex items-center px-2.5 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest"
-                    style={{ background: '#C2185B', color: '#FFFFFF' }}
+                    style={{ background: '#FF6A00', color: '#FFFFFF' }}
                   >
                     Flagship Product
                   </span>
@@ -124,7 +124,7 @@ export function AISolutions() {
                 <div>
                   <h3
                     style={{
-                      fontFamily: 'var(--font-playfair), Georgia, serif',
+                      fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                       fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
                       fontWeight: 700,
                       color: '#F8F5F0',
@@ -143,7 +143,7 @@ export function AISolutions() {
                 <ul className="grid grid-cols-2 gap-2">
                   {GEO_FEATURES.map((f) => (
                     <li key={f} className="flex items-center gap-2">
-                      <CheckCircle2 size={13} className="shrink-0" style={{ color: '#C2185B' }} />
+                      <CheckCircle2 size={13} className="shrink-0" style={{ color: '#FF6A00' }} />
                       <span style={{ fontSize: '0.8rem', color: 'rgba(248,245,240,0.85)' }}>{f}</span>
                     </li>
                   ))}
@@ -156,7 +156,7 @@ export function AISolutions() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:scale-[1.02]"
-                    style={{ background: '#C2185B', color: '#FFFFFF' }}
+                    style={{ background: '#FF6A00', color: '#FFFFFF' }}
                   >
                     Launch Campaign
                     <ArrowUpRight size={14} />
@@ -184,7 +184,7 @@ export function AISolutions() {
               <Reveal key={p.name} delay={0.06 + i * 0.05}>
                 <Link
                   href={p.href}
-                  className="group flex flex-col gap-4 h-full rounded-3xl p-7 transition-all duration-200 hover:shadow-md hover:border-[#1E3A66]/20"
+                  className="group flex flex-col gap-4 h-full rounded-3xl p-7 transition-all duration-200 hover:shadow-md hover:border-[#0A1224]/20"
                   style={{
                     border: '1px solid #E7E3DD',
                     background: '#F8F5F0',
@@ -194,16 +194,16 @@ export function AISolutions() {
                 >
                   <div>
                     <div
-                      style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(182,146,94,0.7)', marginBottom: '0.35rem' }}
+                      style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,193,7,0.7)', marginBottom: '0.35rem' }}
                     >
                       HeyPearl Product
                     </div>
                     <h3
                       style={{
-                        fontFamily: 'var(--font-playfair), Georgia, serif',
+                        fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                         fontSize: '1.1rem',
                         fontWeight: 700,
-                        color: '#1E3A66',
+                        color: '#0A1224',
                         lineHeight: 1.2,
                       }}
                     >
@@ -215,7 +215,7 @@ export function AISolutions() {
                   </p>
                   <div
                     className="inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-medium self-start transition-colors duration-200"
-                    style={{ border: '1px solid #E7E3DD', color: '#C2185B', background: 'rgba(194,24,91,0.06)' }}
+                    style={{ border: '1px solid #E7E3DD', color: '#FF6A00', background: 'rgba(255,106,0,0.06)' }}
                   >
                     Explore →
                   </div>

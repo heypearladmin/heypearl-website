@@ -23,11 +23,11 @@ export default function ResourcesPage() {
 
   const bg = '#F8F5F0';
   const card = '#FFFFFF';
-  const navy = '#1E3A66';
+  const navy = '#0A1224';
   const body = '#334155';
   const secondary = '#64748B';
   const muted = '#94A3B8';
-  const magenta = '#C2185B';
+  const orange = '#FF6A00';
   const border = '#E7E3DD';
 
   return (
@@ -43,13 +43,13 @@ export default function ResourcesPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <span className="inline-block h-px w-8" style={{ background: border }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: orange }}>
                 AI Authority Library
               </span>
             </div>
             <h1
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
                 fontWeight: 700,
                 color: navy,
@@ -59,7 +59,7 @@ export default function ResourcesPage() {
               }}
             >
               The definitive guide to<br />
-              <span style={{ color: magenta, fontStyle: 'italic' }}>AI Authority Infrastructure.</span>
+              <span style={{ color: orange, fontStyle: 'italic' }}>AI Authority Infrastructure.</span>
             </h1>
             <p style={{ fontSize: '1.05rem', color: body, lineHeight: 1.75, maxWidth: '38rem' }}>
               Everything you need to understand how AI systems choose which businesses to recommend — and what it takes to be one of them. Built for business owners, marketers, and anyone navigating the new landscape of AI search.
@@ -88,7 +88,7 @@ export default function ResourcesPage() {
           <Reveal>
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
+                <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
                   Start Here
                 </h2>
                 <p style={{ fontSize: '0.8rem', color: secondary }}>Three essential reads for understanding AI Authority</p>
@@ -104,18 +104,18 @@ export default function ResourcesPage() {
                 style={{ background: card }}
               >
                 {i === 0 && (
-                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.375rem', background: 'rgba(194,24,91,0.07)', borderRadius: '999px', padding: '0.2rem 0.625rem', marginBottom: '1rem' }}>
-                    <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.375rem', background: 'rgba(255,106,0,0.07)', borderRadius: '999px', padding: '0.2rem 0.625rem', marginBottom: '1rem' }}>
+                    <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: orange }}>
                       Essential Read
                     </span>
                   </div>
                 )}
-                <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta, marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: orange, marginBottom: '0.5rem' }}>
                   {article.category}
                 </div>
                 <h3
-                  style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.15rem', fontWeight: 700, color: navy, lineHeight: 1.25, marginBottom: '0.75rem', letterSpacing: '-0.012em', transition: 'color 0.2s' }}
-                  className="group-hover:text-[#C2185B]"
+                  style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.15rem', fontWeight: 700, color: navy, lineHeight: 1.25, marginBottom: '0.75rem', letterSpacing: '-0.012em', transition: 'color 0.2s' }}
+                  className="group-hover:text-[#FF6A00]"
                 >
                   {article.title}
                 </h3>
@@ -125,7 +125,7 @@ export default function ResourcesPage() {
                 <div className="flex items-center gap-2">
                   <Clock size={11} style={{ color: muted }} />
                   <span style={{ fontSize: '0.72rem', color: muted }}>{article.readTime} min read</span>
-                  <ArrowUpRight size={13} className="ml-auto opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: magenta }} />
+                  <ArrowUpRight size={13} className="ml-auto opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: orange }} />
                 </div>
               </Link>
             ))}
@@ -138,7 +138,7 @@ export default function ResourcesPage() {
         <Container size="lg">
           <Reveal>
             <div className="mb-8">
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
                 Topic Clusters
               </h2>
               <p style={{ fontSize: '0.8rem', color: secondary }}>Browse by subject area</p>
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
                           style={{ borderBottom: `1px solid ${border}` }}
                         >
                           <span style={{ fontSize: '0.855rem', color: body, fontWeight: 500 }}>{article.title}</span>
-                          <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-60 transition-opacity flex-shrink-0" style={{ color: magenta }} />
+                          <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-60 transition-opacity flex-shrink-0" style={{ color: orange }} />
                         </Link>
                       ))}
                     </div>
@@ -183,7 +183,7 @@ export default function ResourcesPage() {
         <Container size="lg">
           <Reveal>
             <div className="mb-8">
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: navy, letterSpacing: '-0.015em', marginBottom: '0.25rem' }}>
                 All Guides
               </h2>
               <p style={{ fontSize: '0.8rem', color: secondary }}>Complete pillar article index — {ARTICLE_META.length} guides</p>
@@ -202,11 +202,11 @@ export default function ResourcesPage() {
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: magenta, marginBottom: '0.25rem' }}>
+                    <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: orange, marginBottom: '0.25rem' }}>
                       {article.category}
                     </div>
                     <h3
-                      className="group-hover:text-[#C2185B] transition-colors duration-200"
+                      className="group-hover:text-[#FF6A00] transition-colors duration-200"
                       style={{ fontSize: '0.97rem', fontWeight: 700, color: navy, letterSpacing: '-0.01em' }}
                     >
                       {article.title}
@@ -217,7 +217,7 @@ export default function ResourcesPage() {
                       <Clock size={11} style={{ color: muted }} />
                       <span style={{ fontSize: '0.72rem', color: muted }}>{article.readTime}m</span>
                     </div>
-                    <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: magenta }} />
+                    <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: orange }} />
                   </div>
                 </Link>
               ))}
@@ -231,12 +231,12 @@ export default function ResourcesPage() {
         <Container size="md">
           <Reveal>
             <div className="text-center">
-              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1.25rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: orange, marginBottom: '1.25rem' }}>
                 Ready to Apply This
               </div>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)',
                   fontWeight: 700,
                   color: '#F8F5F0',
@@ -254,7 +254,7 @@ export default function ResourcesPage() {
               <Link
                 href={site.strategyCallUrl}
                 className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold transition-opacity hover:opacity-85"
-                style={{ background: magenta, color: '#FFFFFF', fontSize: '0.88rem', letterSpacing: '-0.01em' }}
+                style={{ background: orange, color: '#FFFFFF', fontSize: '0.88rem', letterSpacing: '-0.01em' }}
               >
                 Book a Strategy Call
                 <ArrowUpRight size={14} />

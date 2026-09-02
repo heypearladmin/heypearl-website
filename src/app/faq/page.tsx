@@ -51,10 +51,10 @@ function buildGroups(): FaqGroup[] {
 }
 
 const bg = '#FFFFFF';
-const text = '#1E3A66';
+const text = '#0A1224';
 const secondary = '#64748B';
-const magenta = '#C2185B';
-const mutedGold = '#C2185B';
+const orange = '#FF6A00';
+const mutedGold = '#FF6A00';
 const border = '#E7E3DD';
 const card = '#FFFFFF';
 
@@ -76,14 +76,14 @@ export default function FaqIndexPage() {
           <Container size="lg">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
-                <span className="inline-block h-px w-8" style={{ background: magenta, opacity: 0.4 }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta }}>
+                <span className="inline-block h-px w-8" style={{ background: orange, opacity: 0.4 }} aria-hidden />
+                <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: orange }}>
                   Frequently Asked Questions
                 </span>
               </div>
               <h1
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
                   fontWeight: 700,
                   color: text,
@@ -132,7 +132,7 @@ export default function FaqIndexPage() {
                       </div>
                       <h2
                         style={{
-                          fontFamily: 'var(--font-playfair), Georgia, serif',
+                          fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                           fontSize: '1.25rem',
                           fontWeight: 700,
                           color: text,
@@ -145,7 +145,7 @@ export default function FaqIndexPage() {
                     <Link
                       href={`/resources/${group.postSlug}`}
                       className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold hover:opacity-70 transition-opacity"
-                      style={{ color: magenta }}
+                      style={{ color: orange }}
                     >
                       Read full article
                       <ArrowUpRight size={12} />
@@ -163,7 +163,7 @@ export default function FaqIndexPage() {
                       >
                         <div style={{ flex: 1, minWidth: 0 }}>
                           <p
-                            className="group-hover:text-[#C2185B] transition-colors duration-200"
+                            className="group-hover:text-[#FF6A00] transition-colors duration-200"
                             style={{ fontSize: '0.95rem', fontWeight: 600, color: text, lineHeight: 1.45, marginBottom: '0.4rem' }}
                           >
                             {item.q}
@@ -175,7 +175,7 @@ export default function FaqIndexPage() {
                         <ArrowUpRight
                           size={14}
                           className="flex-shrink-0 mt-1 opacity-0 group-hover:opacity-60 transition-opacity"
-                          style={{ color: magenta }}
+                          style={{ color: orange }}
                         />
                       </Link>
                     ))}
@@ -186,7 +186,7 @@ export default function FaqIndexPage() {
                     <Link
                       href={`/resources/${group.postSlug}`}
                       className="inline-flex items-center gap-1.5 text-xs font-semibold"
-                      style={{ color: magenta }}
+                      style={{ color: orange }}
                     >
                       Read full article
                       <ArrowUpRight size={12} />
@@ -204,15 +204,15 @@ export default function FaqIndexPage() {
           <Container size="md">
             <Reveal>
             <div className="text-center">
-              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: magenta, marginBottom: '1.25rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: orange, marginBottom: '1.25rem' }}>
                 Ready to Apply This
               </div>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.1,
                   letterSpacing: '-0.02em',
                   marginBottom: '1.25rem',
@@ -228,7 +228,7 @@ export default function FaqIndexPage() {
               <Link
                 href={site.strategyCallUrl}
                 className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold transition-opacity hover:opacity-85"
-                style={{ background: magenta, color: '#FFFFFF', fontSize: '0.88rem', letterSpacing: '-0.01em' }}
+                style={{ background: orange, color: '#FFFFFF', fontSize: '0.88rem', letterSpacing: '-0.01em' }}
               >
                 Book a Strategy Call
                 <ArrowUpRight size={14} />

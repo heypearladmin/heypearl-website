@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { Navigation } from '@/components/layout/Navigation';
@@ -16,14 +16,14 @@ const inter = Inter({
   fallback: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 });
 
-const playfair = Playfair_Display({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['700', '800'],
+  weight: ['600', '700', '800'],
   style: ['normal', 'italic'],
-  variable: '--font-playfair',
+  variable: '--font-jakarta',
   display: 'swap',
   preload: true,
-  fallback: ['Georgia', 'Times New Roman', 'serif'],
+  fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
 });
 
 export const metadata: Metadata = {
@@ -215,14 +215,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head />
       <body className="bg-cream text-navy antialiased relative">
         {/* Skip to content — keyboard accessibility */}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"
-          style={{ background: '#BF9B5C', color: '#090909' }}
+          style={{ background: '#FFC107', color: '#090909' }}
         >
           Skip to main content
         </a>

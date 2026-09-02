@@ -45,22 +45,22 @@ export function PlatformModules() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 Platform Modules
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               Five purpose-built modules,<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>all powered by PearlOS.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>all powered by PearlOS.</span>
             </h2>
             <p className="mt-4" style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.7 }}>
               PearlOS orchestrates each module as part of one integrated system — no standalone tactics, no disconnected tools.
@@ -86,7 +86,7 @@ export function PlatformModules() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.06)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.06)',
               }}
             >
               {/* Tagline */}
@@ -96,7 +96,7 @@ export function PlatformModules() {
                   fontWeight: 600,
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  color: 'rgba(194,24,91,0.6)',
+                  color: 'rgba(255,106,0,0.6)',
                   marginBottom: '0.4rem',
                 }}
               >
@@ -106,11 +106,11 @@ export function PlatformModules() {
               {/* Module name + arrow */}
               <div className="flex items-start justify-between mb-4">
                 <h3
-                  className="group-hover:text-[#C2185B] transition-colors duration-200"
+                  className="group-hover:text-[#FF6A00] transition-colors duration-200"
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#1E3A66',
+                    color: '#0A1224',
                     letterSpacing: '-0.01em',
                   }}
                 >
@@ -119,7 +119,7 @@ export function PlatformModules() {
                 <ArrowUpRight
                   size={14}
                   className="opacity-0 group-hover:opacity-60 transition-opacity mt-0.5 shrink-0"
-                  style={{ color: '#C2185B' }}
+                  style={{ color: '#FF6A00' }}
                 />
               </div>
 
@@ -136,8 +136,8 @@ export function PlatformModules() {
           <div
             className="p-6 lg:p-8 rounded-2xl flex flex-col justify-center"
             style={{
-              background: '#1E3A66',
-              border: '1px solid #1E3A66',
+              background: '#0A1224',
+              border: '1px solid #0A1224',
             }}
           >
             <p style={{ fontSize: '0.85rem', color: 'rgba(248,245,240,0.65)', lineHeight: 1.65, marginBottom: '1.25rem' }}>
@@ -146,7 +146,7 @@ export function PlatformModules() {
             <Link
               href="/platform"
               className="inline-flex items-center gap-2 text-sm font-semibold"
-              style={{ color: '#C2185B' }}
+              style={{ color: '#FF6A00' }}
             >
               Explore the full platform
               <ArrowUpRight size={14} />

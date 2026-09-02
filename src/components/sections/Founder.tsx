@@ -22,7 +22,7 @@ export function Founder() {
               className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-sm mx-auto lg:mx-0"
               style={{
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 24px 64px rgba(30,58,102,0.1)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 24px 64px rgba(10,18,36,0.1)',
               }}
             >
               <Image
@@ -36,7 +36,7 @@ export function Founder() {
               <div
                 aria-hidden
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(to top, rgba(30,58,102,0.55) 0%, transparent 45%)' }}
+                style={{ background: 'linear-gradient(to top, rgba(10,18,36,0.55) 0%, transparent 45%)' }}
               />
               <div className="absolute bottom-5 left-5 right-5">
                 <div style={{ fontSize: '0.67rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.6)', marginBottom: '2px' }}>
@@ -44,7 +44,7 @@ export function Founder() {
                 </div>
                 <div
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: '1.15rem',
                     fontWeight: 700,
                     color: '#FFFFFF',
@@ -61,10 +61,10 @@ export function Founder() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 8px 32px rgba(30,58,102,0.1)',
+                boxShadow: '0 8px 32px rgba(10,18,36,0.1)',
               }}
             >
-              <div style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#C2185B', marginBottom: '6px' }}>
+              <div style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#FF6A00', marginBottom: '6px' }}>
                 Category Creator
               </div>
               <div style={{ fontSize: '0.75rem', color: '#334155', lineHeight: 1.5 }}>
@@ -77,24 +77,24 @@ export function Founder() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Founder
               </span>
             </div>
 
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
                 marginBottom: '1.25rem',
               }}
             >
               Built by an operator who has{' '}
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>run the playbook.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>run the playbook.</span>
             </h2>
 
             <p style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75, marginBottom: '1rem' }}>
@@ -115,7 +115,7 @@ export function Founder() {
             >
               {CREDENTIALS.map(({ label, value }) => (
                 <div key={label}>
-                  <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#C2185B', marginBottom: '4px' }}>
+                  <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#FF6A00', marginBottom: '4px' }}>
                     {label}
                   </div>
                   <div style={{ fontSize: '0.82rem', color: '#334155', lineHeight: 1.4 }}>
@@ -131,15 +131,15 @@ export function Founder() {
                 href={site.strategyCallUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors duration-200 hover:bg-[#D62F73]"
-                style={{ background: '#C2185B', color: '#FFFFFF' }}
+                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors duration-200 hover:bg-[#E65F00]"
+                style={{ background: '#FF6A00', color: '#FFFFFF' }}
               >
                 Book a Strategy Call
                 <ArrowRight size={14} />
               </a>
               <Link
                 href="/about/founder"
-                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium transition-colors duration-200 hover:border-[#C2185B] hover:text-[#C2185B]"
+                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium transition-colors duration-200 hover:border-[#FF6A00] hover:text-[#FF6A00]"
                 style={{ border: '1px solid #E7E3DD', color: '#334155' }}
               >
                 Misti's story

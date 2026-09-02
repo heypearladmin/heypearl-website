@@ -24,7 +24,7 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(50% 60% at 30% 30%, rgba(255,145,77,0.16) 0%, transparent 60%), radial-gradient(50% 50% at 80% 70%, rgba(211,70,129,0.16) 0%, transparent 60%)',
+            'radial-gradient(50% 60% at 30% 30%, rgba(255,106,0,0.16) 0%, transparent 60%), radial-gradient(50% 50% at 80% 70%, rgba(211,70,129,0.16) 0%, transparent 60%)',
         }}
       />
       <Container size="md" className="relative py-32 sm:py-44 text-center">

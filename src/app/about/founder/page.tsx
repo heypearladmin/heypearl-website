@@ -133,14 +133,14 @@ export default function FounderPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(194,24,91,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(194,24,91,0.03) 1px, transparent 1px)',
+              'linear-gradient(rgba(255,106,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,106,0,0.03) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-16">
           <Link
             href="/about"
-            className="inline-flex items-center gap-1.5 mb-8 text-xs font-medium text-[#64748B] hover:text-[#C2185B] transition-colors"
+            className="inline-flex items-center gap-1.5 mb-8 text-xs font-medium text-[#64748B] hover:text-[#FF6A00] transition-colors"
           >
             <ArrowLeft size={12} />
             Back to About
@@ -162,7 +162,7 @@ export default function FounderPage() {
                   <div
                     aria-hidden
                     className="absolute inset-0"
-                    style={{ background: 'linear-gradient(to top, rgba(30,58,102,0.5) 0%, transparent 45%)' }}
+                    style={{ background: 'linear-gradient(to top, rgba(10,18,36,0.5) 0%, transparent 45%)' }}
                   />
                   <div className="absolute bottom-5 left-5 right-5">
                     <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.65)', marginBottom: '3px' }}>
@@ -170,7 +170,7 @@ export default function FounderPage() {
                     </div>
                     <div
                       style={{
-                        fontFamily: 'var(--font-playfair), Georgia, serif',
+                        fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                         fontSize: '1.2rem',
                         fontWeight: 700,
                         color: '#FFFFFF',
@@ -193,7 +193,7 @@ export default function FounderPage() {
                   style={{
                     background: '#FFFFFF',
                     border: '1px solid #E7E3DD',
-                    boxShadow: '0 8px 24px rgba(30,58,102,0.1)',
+                    boxShadow: '0 8px 24px rgba(10,18,36,0.1)',
                     color: '#0077B5',
                     fontSize: '0.72rem',
                     fontWeight: 600,
@@ -212,16 +212,16 @@ export default function FounderPage() {
               <h1
                 className="mt-4"
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(2rem, 4.5vw, 3.4rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.08,
                   letterSpacing: '-0.02em',
                 }}
               >
                 She built the thing{' '}
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>
                   she always wanted as a client.
                 </span>
               </h1>
@@ -251,7 +251,7 @@ export default function FounderPage() {
                   href={site.founder.site}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-colors duration-200 hover:border-[#C2185B] hover:text-[#C2185B]"
+                  className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-colors duration-200 hover:border-[#FF6A00] hover:text-[#FF6A00]"
                   style={{ border: '1px solid #E7E3DD', color: '#334155' }}
                 >
                   mistibruton.com
@@ -268,17 +268,17 @@ export default function FounderPage() {
         <Container size="lg">
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.5)' }} aria-hidden />
-              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(255,193,7,0.5)' }} aria-hidden />
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Story
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.025em',
                 maxWidth: '36rem',
@@ -294,7 +294,7 @@ export default function FounderPage() {
             <div
               aria-hidden
               className="hidden md:block absolute left-[11px] top-2 bottom-2 w-px"
-              style={{ background: 'rgba(194,24,91,0.12)' }}
+              style={{ background: 'rgba(255,106,0,0.12)' }}
             />
 
             <div className="flex flex-col gap-10">
@@ -303,14 +303,14 @@ export default function FounderPage() {
                   <div className="md:flex gap-8 items-start">
                     <div
                       className="hidden md:flex shrink-0 w-6 h-6 rounded-full items-center justify-center mt-1"
-                      style={{ background: '#C2185B' }}
+                      style={{ background: '#FF6A00' }}
                       aria-hidden
                     >
                       <div className="w-2 h-2 rounded-full bg-white" />
                     </div>
                     <div className="rounded-2xl bg-white border border-[#E7E3DD] p-7 flex-1">
                       <div
-                        style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.5rem' }}
+                        style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FF6A00', marginBottom: '0.5rem' }}
                       >
                         {item.period}
                       </div>
@@ -331,17 +331,17 @@ export default function FounderPage() {
         <Container size="lg">
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.5)' }} aria-hidden />
-              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(255,193,7,0.5)' }} aria-hidden />
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Work
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.6rem, 3vw, 2.4rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.025em',
                 marginBottom: '0.75rem',
@@ -359,17 +359,17 @@ export default function FounderPage() {
               <Reveal key={i} delay={i * 0.06}>
                 <Link
                   href={p.href}
-                  className="group flex flex-col gap-3 h-full rounded-2xl border border-[#E7E3DD] bg-[#F8F5F0] p-7 transition-shadow hover:shadow-md hover:border-[#C2185B]/20"
+                  className="group flex flex-col gap-3 h-full rounded-2xl border border-[#E7E3DD] bg-[#F8F5F0] p-7 transition-shadow hover:shadow-md hover:border-[#FF6A00]/20"
                 >
-                  <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#C2185B' }}>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FF6A00' }}>
                     Expertise
                   </div>
                   <h3
                     style={{
-                      fontFamily: 'var(--font-playfair), Georgia, serif',
+                      fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                       fontSize: '1.05rem',
                       fontWeight: 700,
-                      color: '#1E3A66',
+                      color: '#0A1224',
                       lineHeight: 1.3,
                     }}
                   >
@@ -378,7 +378,7 @@ export default function FounderPage() {
                   <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.7, flex: 1 }}>
                     {p.body}
                   </p>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#C2185B] mt-1">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#FF6A00] mt-1">
                     Learn more <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
                   </div>
                 </Link>
@@ -403,13 +403,13 @@ export default function FounderPage() {
               <div
                 aria-hidden
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(to right, rgba(30,58,102,0.6) 0%, rgba(30,58,102,0.1) 60%, transparent 100%)' }}
+                style={{ background: 'linear-gradient(to right, rgba(10,18,36,0.6) 0%, rgba(10,18,36,0.1) 60%, transparent 100%)' }}
               />
               <div className="absolute inset-0 flex flex-col justify-center px-10 sm:px-14 max-w-lg">
                 <blockquote>
                   <p
                     style={{
-                      fontFamily: 'var(--font-playfair), Georgia, serif',
+                      fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                       fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
                       fontStyle: 'italic',
                       fontWeight: 600,
@@ -435,17 +435,17 @@ export default function FounderPage() {
         <Container size="md">
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: 'rgba(182,146,94,0.5)' }} aria-hidden />
-              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span className="inline-block h-px w-8" style={{ background: 'rgba(255,193,7,0.5)' }} aria-hidden />
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Vision
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.6rem, 3vw, 2.4rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.025em',
                 marginBottom: '1.5rem',
@@ -464,7 +464,7 @@ export default function FounderPage() {
               </p>
               <p>
                 That infrastructure is HeyPearl. The operational layer beneath it is{' '}
-                <Link href="/platform/pearlos" className="text-[#C2185B] font-medium hover:underline">
+                <Link href="/platform/pearlos" className="text-[#FF6A00] font-medium hover:underline">
                   PearlOS
                 </Link>
                 . Together, they form a system that converts AI visibility into closed business — without the churn, the cold calls, or the ad spend treadmill.
@@ -521,7 +521,7 @@ export default function FounderPage() {
                 <Link
                   key={href}
                   href={href}
-                  className="inline-flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200 hover:text-[#C2185B] hover:border-[#C2185B]"
+                  className="inline-flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200 hover:text-[#FF6A00] hover:border-[#FF6A00]"
                   style={{ border: '1px solid #E7E3DD', color: '#334155', background: '#FFFFFF' }}
                 >
                   {label}

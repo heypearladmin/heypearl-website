@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
 };
 
-const mg = '#C2185B';
-const cardShadow = '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)';
+const mg = '#FF6A00';
+const cardShadow = '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)';
 
 const STEPS = [
   {
@@ -103,7 +103,7 @@ export default function GetStartedPage() {
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
-            backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
@@ -126,10 +126,10 @@ export default function GetStartedPage() {
             <h1
               className="max-w-3xl"
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(2.75rem, 6vw, 5rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.06,
                 letterSpacing: '-0.025em',
                 marginBottom: '1.5rem',
@@ -186,10 +186,10 @@ export default function GetStartedPage() {
                 </p>
                 <h2
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
                     fontWeight: 700,
-                    color: '#1E3A66',
+                    color: '#0A1224',
                     lineHeight: 1.15,
                     letterSpacing: '-0.02em',
                     marginBottom: '1.25rem',
@@ -215,13 +215,13 @@ export default function GetStartedPage() {
                 <Reveal key={item.title} delay={i * 0.07}>
                   <div
                     className="flex items-start gap-4 p-5 rounded-xl"
-                    style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}
+                    style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}
                   >
-                    <span className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center" style={{ background: 'rgba(194,24,91,0.1)' }}>
+                    <span className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center" style={{ background: 'rgba(255,106,0,0.1)' }}>
                       <Check size={11} color={mg} strokeWidth={2.5} />
                     </span>
                     <div>
-                      <p style={{ fontWeight: 600, color: '#1E3A66', fontSize: '0.9rem', marginBottom: '0.25rem' }}>{item.title}</p>
+                      <p style={{ fontWeight: 600, color: '#0A1224', fontSize: '0.9rem', marginBottom: '0.25rem' }}>{item.title}</p>
                       <p style={{ color: '#334155', fontSize: '0.85rem', lineHeight: 1.65 }}>{item.body}</p>
                     </div>
                   </div>
@@ -242,10 +242,10 @@ export default function GetStartedPage() {
               </p>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.15,
                   letterSpacing: '-0.02em',
                 }}
@@ -267,12 +267,12 @@ export default function GetStartedPage() {
                 <Reveal key={step.num} delay={i * 0.08}>
                   <div
                     className="relative flex items-start gap-6 p-7 rounded-2xl lg:pl-24"
-                    style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.05)' }}
+                    style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.05)' }}
                   >
                     <div className="hidden lg:flex absolute left-0 top-7 w-[5.5rem] justify-center">
                       <span
                         className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold"
-                        style={{ background: 'rgba(194,24,91,0.08)', color: mg, border: '1px solid rgba(194,24,91,0.2)' }}
+                        style={{ background: 'rgba(255,106,0,0.08)', color: mg, border: '1px solid rgba(255,106,0,0.2)' }}
                       >
                         {i + 1}
                       </span>
@@ -281,7 +281,7 @@ export default function GetStartedPage() {
                     <div className="lg:hidden">
                       <span
                         className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
-                        style={{ background: 'rgba(194,24,91,0.08)', color: mg, border: '1px solid rgba(194,24,91,0.2)' }}
+                        style={{ background: 'rgba(255,106,0,0.08)', color: mg, border: '1px solid rgba(255,106,0,0.2)' }}
                       >
                         {i + 1}
                       </span>
@@ -290,10 +290,10 @@ export default function GetStartedPage() {
                     <div className="flex-1">
                       <p
                         style={{
-                          fontFamily: 'var(--font-playfair), Georgia, serif',
+                          fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                           fontSize: '1.1rem',
                           fontWeight: 700,
-                          color: '#1E3A66',
+                          color: '#0A1224',
                           marginBottom: '0.5rem',
                         }}
                       >
@@ -305,7 +305,7 @@ export default function GetStartedPage() {
                     <div
                       aria-hidden
                       className="hidden lg:block flex-shrink-0 self-center text-right"
-                      style={{ fontFamily: 'var(--font-playfair)', fontSize: '2.5rem', fontWeight: 700, color: 'rgba(30,58,102,0.06)', lineHeight: 1 }}
+                      style={{ fontFamily: 'var(--font-jakarta)', fontSize: '2.5rem', fontWeight: 700, color: 'rgba(10,18,36,0.06)', lineHeight: 1 }}
                     >
                       {step.num}
                     </div>
@@ -327,10 +327,10 @@ export default function GetStartedPage() {
               </p>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.15,
                   letterSpacing: '-0.02em',
                 }}
@@ -345,7 +345,7 @@ export default function GetStartedPage() {
               <Reveal key={a.label} delay={i * 0.07}>
                 <div
                   className="p-7 rounded-2xl h-full"
-                  style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.05)' }}
+                  style={{ background: '#FFFFFF', border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.05)' }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <span className="h-px flex-1" style={{ background: `linear-gradient(to right, ${mg}, transparent)`, opacity: 0.3 }} aria-hidden />
@@ -375,10 +375,10 @@ export default function GetStartedPage() {
               <h2
                 className="mb-6"
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.2,
                   letterSpacing: '-0.018em',
                 }}
@@ -409,10 +409,10 @@ export default function GetStartedPage() {
               </p>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.15,
                   letterSpacing: '-0.02em',
                 }}
@@ -426,7 +426,7 @@ export default function GetStartedPage() {
             {FAQS.map((faq, i) => (
               <Reveal key={faq.q} delay={i * 0.06}>
                 <div className="py-7" style={{ borderColor: '#E7E3DD' }}>
-                  <p style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontWeight: 700, fontSize: '1.05rem', color: '#1E3A66', marginBottom: '0.6rem' }}>
+                  <p style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontWeight: 700, fontSize: '1.05rem', color: '#0A1224', marginBottom: '0.6rem' }}>
                     {faq.q}
                   </p>
                   <p style={{ color: '#334155', fontSize: '0.9rem', lineHeight: 1.75, maxWidth: '52rem' }}>{faq.a}</p>
@@ -438,7 +438,7 @@ export default function GetStartedPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ paddingTop: '6rem', paddingBottom: '6rem', background: '#1E3A66' }}>
+      <section style={{ paddingTop: '6rem', paddingBottom: '6rem', background: '#0A1224' }}>
         <Container size="md">
           <Reveal>
             <div className="text-center">
@@ -448,7 +448,7 @@ export default function GetStartedPage() {
               <h2
                 className="mb-4"
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(2rem, 4.5vw, 3.25rem)',
                   fontWeight: 700,
                   color: '#FFFFFF',

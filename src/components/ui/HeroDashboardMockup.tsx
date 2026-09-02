@@ -6,7 +6,7 @@ export function HeroDashboardMockup() {
   return (
     <div
       style={{
-        background: '#07142F',
+        background: '#0A1224',
         borderRadius: '0.875rem',
         overflow: 'hidden',
         fontFamily: 'Inter, system-ui, sans-serif',
@@ -20,11 +20,11 @@ export function HeroDashboardMockup() {
       {/* Sidebar */}
       <div style={{ width: '36px', background: '#040E20', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '12px 0', gap: '16px', flexShrink: 0 }}>
         {/* Logo */}
-        <div style={{ width: '20px', height: '20px', background: '#C2185B', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '9px', fontWeight: 800, color: '#fff' }}>H</div>
+        <div style={{ width: '20px', height: '20px', background: '#FF6A00', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '9px', fontWeight: 800, color: '#fff' }}>H</div>
         <div style={{ width: '1px', height: '1px', background: 'rgba(255,255,255,0.1)', marginTop: '2px' }} />
         {/* Nav icons */}
         {['⊞', '📊', '👥', '📄', '⚙'].map((icon, i) => (
-          <div key={i} style={{ width: '24px', height: '24px', borderRadius: '5px', background: i === 0 ? 'rgba(194,24,91,0.25)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', cursor: 'pointer', color: i === 0 ? '#C2185B' : 'rgba(255,255,255,0.35)' }}>
+          <div key={i} style={{ width: '24px', height: '24px', borderRadius: '5px', background: i === 0 ? 'rgba(255,106,0,0.25)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', cursor: 'pointer', color: i === 0 ? '#FF6A00' : 'rgba(255,255,255,0.35)' }}>
             {icon}
           </div>
         ))}
@@ -43,7 +43,7 @@ export function HeroDashboardMockup() {
             <div style={{ fontSize: '8px', color: 'rgba(255,255,255,0.5)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '4px', padding: '3px 7px' }}>
               Jun 16 – Jul 16, 2025
             </div>
-            <div style={{ fontSize: '8px', fontWeight: 600, background: '#C2185B', color: '#fff', borderRadius: '4px', padding: '3px 7px' }}>
+            <div style={{ fontSize: '8px', fontWeight: 600, background: '#FF6A00', color: '#fff', borderRadius: '4px', padding: '3px 7px' }}>
               Generate Report ↗
             </div>
           </div>
@@ -51,14 +51,14 @@ export function HeroDashboardMockup() {
 
         {/* Stat cards row */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '6px' }}>
-          {/* Authority Score */}
-          <StatCard label="Authority Score" value="87" sub="+24% vs last period" accent="#C2185B" donut />
-          {/* AI Visibility */}
-          <StatCard label="AI Visibility" value="72%" sub="↑ 16% High Quality" accent="#C2185B" badge="High" />
-          {/* Entities */}
-          <StatCard label="Entities" value="142" sub="+32 Distinct Entities" accent="#C2185B" />
-          {/* AI Recs */}
-          <StatCard label="AI Recommendations" value="23" sub="9 Active, 14 In Progress" accent="#C2185B" />
+          {/* Authority Score — primary brand metric */}
+          <StatCard label="Authority Score" value="87" sub="+24% vs last period" accent="#FF6A00" donut />
+          {/* AI Visibility — AI / search signal */}
+          <StatCard label="AI Visibility" value="72%" sub="↑ 16% High Quality" accent="#2563FF" badge="High" />
+          {/* Entities — knowledge graph / technical */}
+          <StatCard label="Entities" value="142" sub="+32 Distinct Entities" accent="#2563FF" />
+          {/* AI Recs — growth outcome */}
+          <StatCard label="AI Recommendations" value="23" sub="9 Active, 14 In Progress" accent="#22C55E" />
         </div>
 
         {/* Charts row */}
@@ -78,8 +78,8 @@ export function HeroDashboardMockup() {
               {/* Area fill */}
               <defs>
                 <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#C2185B" stopOpacity="0.35" />
-                  <stop offset="100%" stopColor="#C2185B" stopOpacity="0.02" />
+                  <stop offset="0%" stopColor="#2563FF" stopOpacity="0.35" />
+                  <stop offset="100%" stopColor="#2563FF" stopOpacity="0.02" />
                 </linearGradient>
               </defs>
               <path
@@ -90,12 +90,12 @@ export function HeroDashboardMockup() {
               <polyline
                 points="20,45 38,40 56,36 74,32 92,28 110,22 128,18 146,12 164,8"
                 fill="none"
-                stroke="#C2185B"
+                stroke="#2563FF"
                 strokeWidth="1.5"
                 strokeLinejoin="round"
               />
               {/* End dot */}
-              <circle cx="164" cy="8" r="2.5" fill="#C2185B" />
+              <circle cx="164" cy="8" r="2.5" fill="#2563FF" />
               {/* X labels */}
               {[['Jun 16', 20], ['Jun 23', 56], ['Jun 30', 92], ['Jul 7', 128], ['Jul 15', 164]].map(([label, x]) => (
                 <text key={label} x={x} y={68} fontSize="5" fill="rgba(255,255,255,0.3)" textAnchor="middle">{label}</text>
@@ -115,10 +115,10 @@ export function HeroDashboardMockup() {
               <div key={label}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
                   <span style={{ fontSize: '8px', color: 'rgba(255,255,255,0.55)' }}>{label}</span>
-                  <span style={{ fontSize: '8px', color: '#C2185B', fontWeight: 600 }}>{pct}%</span>
+                  <span style={{ fontSize: '8px', color: '#2563FF', fontWeight: 600 }}>{pct}%</span>
                 </div>
                 <div style={{ height: '3px', background: 'rgba(255,255,255,0.08)', borderRadius: '2px' }}>
-                  <div style={{ height: '100%', width: `${pct}%`, background: '#C2185B', borderRadius: '2px', opacity: 0.85 }} />
+                  <div style={{ height: '100%', width: `${pct}%`, background: '#2563FF', borderRadius: '2px', opacity: 0.85 }} />
                 </div>
               </div>
             ))}

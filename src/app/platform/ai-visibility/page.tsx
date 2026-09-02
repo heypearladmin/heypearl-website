@@ -82,29 +82,29 @@ export default function AIVisibilityPage() {
         aria-label="AI Visibility hero"
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
-          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
+          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(255,193,7,0.3)', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 32px 64px rgba(10,18,36,0.12)', background: '#fff' }}>
             <Image src="/images/platform/platform-ai-visibility.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: 'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+          style={{ backgroundImage: 'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div style={{ maxWidth: '54%' }}>
             <div className="flex items-center gap-2 mb-6 flex-wrap">
-              <Link href="/platform" className="text-xs transition-colors hover:text-[#C2185B]" style={{ color: '#64748B' }}>Platform</Link>
+              <Link href="/platform" className="text-xs transition-colors hover:text-[#FF6A00]" style={{ color: '#64748B' }}>Platform</Link>
               <span style={{ color: '#E7E3DD', fontSize: '0.75rem' }}>/</span>
-              <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>AI Visibility</span>
+              <span style={{ fontSize: '0.72rem', color: '#FF6A00', fontWeight: 600 }}>AI Visibility</span>
             </div>
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 Module 04 — Powered by PearlOS
               </span>
             </div>
-            <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
+            <h1 className="max-w-3xl" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(2.6rem, 6vw, 5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.04, letterSpacing: '-0.03em' }}>
               AI Visibility
             </h1>
-            <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#C2185B' }}>
+            <p className="mt-3 max-w-xl" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1rem, 2vw, 1.25rem)', fontStyle: 'italic', color: '#FF6A00' }}>
               Know exactly what AI is saying about you.
             </p>
             <p className="mt-5 max-w-[34rem]" style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75 }}>
@@ -112,10 +112,10 @@ export default function AIVisibilityPage() {
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+                className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
                 Book a Strategy Call <ArrowRight size={14} />
               </a>
-              <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#1E3A66] transition-colors" style={{ color: '#64748B' }}>
+              <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#0A1224] transition-colors" style={{ color: '#64748B' }}>
                 View all modules <ArrowUpRight size={13} />
               </Link>
             </div>
@@ -127,15 +127,15 @@ export default function AIVisibilityPage() {
       <section className="py-20 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="mb-10 text-center">
-            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Six Engines Monitored
             </span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
             {ENGINES.map((e, i) => (
               <div key={e.name} className="p-5 text-center" style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}>
-                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.2rem' }}>{e.name}</div>
+                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.2rem' }}>{e.name}</div>
                 <div style={{ fontSize: '0.65rem', color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{e.note}</div>
               </div>
             ))}
@@ -153,11 +153,11 @@ export default function AIVisibilityPage() {
             <div className="mb-14 max-w-2xl">
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Tracks</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>What It Tracks</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
                 Six signals.<br />
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Complete AI awareness.</span>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Complete AI awareness.</span>
               </h2>
               <p className="mt-5" style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
                 AI Visibility doesn't track impressions or clicks. It tracks the signals that predict whether your business gets recommended — before you lose the recommendation.
@@ -165,12 +165,12 @@ export default function AIVisibilityPage() {
             </div>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
             {WHAT_IT_TRACKS.map((item, i) => (
               <Reveal key={item.title} delay={i * 0.08}>
                 <div className="p-7" style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}>
                   <div className="h-px mb-5" style={{ background: '#E7E3DD' }} />
-                  <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.title}</h3>
+                  <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.title}</h3>
                   <p style={{ fontSize: '0.83rem', color: '#64748B', lineHeight: 1.72 }}>{item.desc}</p>
                 </div>
               </Reveal>
@@ -186,11 +186,11 @@ export default function AIVisibilityPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Why It Matters</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Why It Matters</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 AI visibility loss<br />
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>is invisible. Until it isn't.</span>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>is invisible. Until it isn't.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#334155', lineHeight: 1.8, marginBottom: '1rem' }}>
                 Traditional analytics tell you when traffic drops — after the damage is done. AI Visibility monitoring tells you when your AI representation changes — while you can still act on it.
@@ -206,8 +206,8 @@ export default function AIVisibilityPage() {
                 { label: "AI engines update how they represent businesses regularly — and those changes don't always favor the incumbent." },
                 { label: 'A single inaccurate AI description can suppress recommendations across all six engines simultaneously.' },
               ].map((item, i) => (
-                <div key={i} className="flex gap-3 p-5 rounded-xl bg-white" style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06)' }}>
-                  <span style={{ color: '#C2185B', flexShrink: 0, marginTop: '0.1rem', fontSize: '0.9rem' }}>→</span>
+                <div key={i} className="flex gap-3 p-5 rounded-xl bg-white" style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06)' }}>
+                  <span style={{ color: '#FF6A00', flexShrink: 0, marginTop: '0.1rem', fontSize: '0.9rem' }}>→</span>
                   <p style={{ fontSize: '0.85rem', color: '#334155', lineHeight: 1.65 }}>{item.label}</p>
                 </div>
               ))}
@@ -220,10 +220,10 @@ export default function AIVisibilityPage() {
       <section className="py-20 bg-white">
         <Container size="lg">
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl bg-white"
-            style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+            style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
-              <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <h3 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 Visibility data drives every other module.
               </h3>
               <p style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.75 }}>
@@ -231,7 +231,7 @@ export default function AIVisibilityPage() {
               </p>
             </div>
             <div className="shrink-0">
-              <Link href="/platform/pearlos" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#C2185B' }}>
+              <Link href="/platform/pearlos" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#FF6A00' }}>
                 Learn about PearlOS <ArrowUpRight size={14} />
               </Link>
             </div>
@@ -244,20 +244,20 @@ export default function AIVisibilityPage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Questions</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               What operators ask<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about AI Visibility.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>about AI Visibility.</span>
             </h2>
           </div>
           </Reveal>
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.6rem' }}>{faq.q}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
@@ -274,18 +274,18 @@ export default function AIVisibilityPage() {
       />
 
       {/* CTA */}
-      <section className="py-24 bg-[#1E3A66]">
+      <section className="py-24 bg-[#0A1224]">
         <Container size="md" className="text-center">
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Know what AI<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>is saying about you.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>is saying about you.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
             AI Visibility monitoring begins from day one of every PearlOS engagement. Book a strategy call to see your current AI presence.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"

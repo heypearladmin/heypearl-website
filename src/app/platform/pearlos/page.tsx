@@ -121,7 +121,7 @@ export default function PearlOSPage() {
         aria-label="PearlOS hero"
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
-          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
+          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(255,193,7,0.3)', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 32px 64px rgba(10,18,36,0.12)', background: '#fff' }}>
             <Image src="/images/platform/platform-pearlos.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
@@ -130,32 +130,32 @@ export default function PearlOSPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
+              'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div style={{ maxWidth: '54%' }}>
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/platform" className="text-xs transition-colors hover:text-[#C2185B]" style={{ color: '#64748B' }}>
+            <Link href="/platform" className="text-xs transition-colors hover:text-[#FF6A00]" style={{ color: '#64748B' }}>
               Platform
             </Link>
             <span style={{ color: '#E7E3DD', fontSize: '0.75rem' }}>/</span>
-            <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>PearlOS</span>
+            <span style={{ fontSize: '0.72rem', color: '#FF6A00', fontWeight: 600 }}>PearlOS</span>
           </div>
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               The Operating System — Start Here
             </span>
           </div>
           <h1
             className="max-w-3xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(2.8rem, 6.5vw, 5.5rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.03,
               letterSpacing: '-0.03em',
             }}
@@ -165,10 +165,10 @@ export default function PearlOSPage() {
           <p
             className="mt-4 max-w-xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1rem, 2vw, 1.35rem)',
               fontStyle: 'italic',
-              color: '#C2185B',
+              color: '#FF6A00',
             }}
           >
             The system that runs your authority build — so you don't have to.
@@ -181,14 +181,14 @@ export default function PearlOSPage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200"
             >
               See PearlOS in Action
               <ArrowRight size={14} />
             </a>
             <Link
               href="/platform"
-              className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#1E3A66] transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#0A1224] transition-colors"
               style={{ color: '#64748B' }}
             >
               View all platform modules
@@ -206,22 +206,22 @@ export default function PearlOSPage() {
           <div className="mb-10 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 What It Means for Your Business
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 2.8rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.022em',
               }}
             >
               Three outcomes.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Not features. Outcomes.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Not features. Outcomes.</span>
             </h2>
           </div>
           </Reveal>
@@ -230,14 +230,14 @@ export default function PearlOSPage() {
               <Reveal key={i} delay={i * 0.08}>
               <div
                 className="p-7 rounded-xl flex flex-col bg-white"
-                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
+                style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}
               >
                 <div
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: '1rem',
                     fontWeight: 700,
-                    color: '#1E3A66',
+                    color: '#0A1224',
                     lineHeight: 1.35,
                     marginBottom: '1rem',
                     letterSpacing: '-0.01em',
@@ -263,22 +263,22 @@ export default function PearlOSPage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 How It Works
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               Six functions.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One coordinated system.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>One coordinated system.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
               Without PearlOS, the five modules are powerful individual tools. With it, they become a single coordinated system where every layer amplifies every other.
@@ -288,7 +288,7 @@ export default function PearlOSPage() {
 
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}
           >
             {FUNCTIONS.map((fn, i) => (
               <Reveal key={fn.title} delay={i * 0.08}>
@@ -297,7 +297,7 @@ export default function PearlOSPage() {
                 style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}
               >
                 <div className="h-px mb-5" style={{ background: '#E7E3DD' }} />
-                <h3 style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
+                <h3 style={{ fontSize: '0.92rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>
                   {fn.title}
                 </h3>
                 <p style={{ fontSize: '0.83rem', color: '#64748B', lineHeight: 1.72 }}>
@@ -317,23 +317,23 @@ export default function PearlOSPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                   The PearlOS Execution Sequence
                 </span>
               </div>
               <h2
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.08,
                   letterSpacing: '-0.022em',
                   marginBottom: '1.25rem',
                 }}
               >
                 Five layers.<br />
-                <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Executed in order.</span>
+                <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Executed in order.</span>
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
                 PearlOS enforces this build order because the order matters. Entity architecture must precede authority content. Authority must precede reputation. Reputation must precede visibility monitoring and leverage. This execution stack runs on top of the P.E.A.R.L. framework — Process, Efficiency, Automation, Replication, Leverage — the operating philosophy that governs every engagement. PearlOS ensures no step is skipped, no layer is built on a weak foundation.
@@ -345,13 +345,13 @@ export default function PearlOSPage() {
                 <div
                   key={layer.step}
                   className="flex gap-5 p-5 rounded-xl bg-white"
-                  style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06)' }}
+                  style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06)' }}
                 >
-                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: '#94A3B8', flexShrink: 0, lineHeight: 1 }}>
+                  <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.1rem', fontWeight: 700, color: '#94A3B8', flexShrink: 0, lineHeight: 1 }}>
                     {layer.step}
                   </div>
                   <div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.25rem' }}>
                       {layer.title}
                     </div>
                     <p style={{ fontSize: '0.8rem', color: '#64748B', lineHeight: 1.65 }}>
@@ -370,20 +370,20 @@ export default function PearlOSPage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Questions</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               What operators ask<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about PearlOS.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>about PearlOS.</span>
             </h2>
           </div>
           </Reveal>
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.6rem' }}>{faq.q}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
@@ -400,12 +400,12 @@ export default function PearlOSPage() {
       />
 
       {/* CTA */}
-      <section className="py-24 bg-[#1E3A66]">
+      <section className="py-24 bg-[#0A1224]">
         <Container size="md" className="text-center">
           <h2
             className="mb-5 max-w-xl mx-auto"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.9rem, 4vw, 2.8rem)',
               fontWeight: 700,
               color: '#FFFFFF',
@@ -414,7 +414,7 @@ export default function PearlOSPage() {
             }}
           >
             Ready to run PearlOS<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>for your business?</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>for your business?</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
             Every HeyPearl engagement is powered by PearlOS from day one. Book a strategy call to see how it applies to your specific market.
@@ -424,7 +424,7 @@ export default function PearlOSPage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200"
             >
               See PearlOS in Action
               <ArrowRight size={14} />

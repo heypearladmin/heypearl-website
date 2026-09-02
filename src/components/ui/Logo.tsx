@@ -3,22 +3,27 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 type LogoProps = {
+  /** default = black wordmark for light backgrounds, inverse = white wordmark for dark backgrounds */
   variant?: 'default' | 'inverse';
+  /** compact = the "P." brand icon only, for tight spaces (mobile nav, favicon-style marks) */
+  compact?: boolean;
   className?: string;
   href?: string;
 };
 
 /**
- * HeyPearl wordmark.
- * Renders the actual logo PNG (`/images/logo.png` or `/images/logo-inverse.png`).
- *
- * P.E.A.R.L. = Process · Efficiency · Automation · Replication · Leverage.
+ * HeyPearl wordmark — the handwritten/script "HeyPearl." logo with its
+ * signature Chinese Orange dot. Always rendered from the final brand PNGs;
+ * never recreated with a web font.
  */
-export function Logo({ variant = 'default', className, href = '/' }: LogoProps) {
+export function Logo({ variant = 'default', compact = false, className, href = '/' }: LogoProps) {
   const isInverse = variant === 'inverse';
-  // default = navy "PEARL" for light backgrounds
-  // inverse = white "PEARL" for dark backgrounds (footer, dark hero)
-  const src = isInverse ? '/images/heypearl-logo-light.png' : '/images/Heypearl-logo-navy-blue.png';
+
+  const src = compact
+    ? (isInverse ? '/images/HeyPearl_FinalIconWhite.png' : '/images/HeyPearl_FinalIconBlack.png')
+    : (isInverse ? '/images/HeyPearl_FinalLogoWhite.png' : '/images/HeyPearl_FinalLogoBlack.png');
+
+  const dimensions = compact ? { width: 260, height: 270 } : { width: 800, height: 300 };
 
   return (
     <Link
@@ -31,11 +36,11 @@ export function Logo({ variant = 'default', className, href = '/' }: LogoProps) 
     >
       <Image
         src={src}
-        alt="HeyPearl.io"
-        width={800}
-        height={260}
+        alt="HeyPearl."
+        width={dimensions.width}
+        height={dimensions.height}
         priority
-        className="h-14 sm:h-16 lg:h-20 w-auto"
+        className={compact ? 'h-10 w-auto' : 'h-14 sm:h-16 lg:h-20 w-auto'}
       />
     </Link>
   );

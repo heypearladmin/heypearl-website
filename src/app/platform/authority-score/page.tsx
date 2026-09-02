@@ -80,7 +80,7 @@ export default function AuthorityScorePage() {
         aria-label="Authority Score hero"
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
-          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(182,146,94,0.3)', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 32px 64px rgba(30,58,102,0.12)', background: '#fff' }}>
+          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(255,193,7,0.3)', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 32px 64px rgba(10,18,36,0.12)', background: '#fff' }}>
             <Image src="/images/platform/platform-authority-score.webp" alt="" fill sizes="38vw" className="object-cover" priority />
           </div>
         </div>
@@ -89,30 +89,30 @@ export default function AuthorityScorePage() {
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(30,58,102,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,102,0.025) 1px, transparent 1px)',
+              'linear-gradient(rgba(10,18,36,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(10,18,36,0.025) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }}
         />
         <Container size="lg" className="relative z-10 pt-40 sm:pt-48 pb-20">
           <div style={{ maxWidth: '54%' }}>
           <div className="flex items-center gap-2 mb-6 flex-wrap">
-            <Link href="/platform" className="text-xs transition-colors hover:text-[#C2185B]" style={{ color: '#64748B' }}>Platform</Link>
+            <Link href="/platform" className="text-xs transition-colors hover:text-[#FF6A00]" style={{ color: '#64748B' }}>Platform</Link>
             <span style={{ color: '#E7E3DD', fontSize: '0.75rem' }}>/</span>
-            <span style={{ fontSize: '0.72rem', color: '#C2185B', fontWeight: 600 }}>Authority Score</span>
+            <span style={{ fontSize: '0.72rem', color: '#FF6A00', fontWeight: 600 }}>Authority Score</span>
           </div>
           <div className="flex items-center gap-3 mb-5">
             <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               Module 02 — Powered by PearlOS
             </span>
           </div>
           <h1
             className="max-w-3xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(2.6rem, 6vw, 5rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.04,
               letterSpacing: '-0.03em',
             }}
@@ -122,10 +122,10 @@ export default function AuthorityScorePage() {
           <p
             className="mt-3 max-w-xl"
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#C2185B',
+              color: '#FF6A00',
             }}
           >
             You can't improve what you can't see.
@@ -138,12 +138,12 @@ export default function AuthorityScorePage() {
               href={site.strategyCallUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200"
             >
               Get Your Authority Score
               <ArrowRight size={14} />
             </a>
-            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#1E3A66] transition-colors" style={{ color: '#64748B' }}>
+            <Link href="/platform" className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#0A1224] transition-colors" style={{ color: '#64748B' }}>
               View all modules <ArrowUpRight size={13} />
             </Link>
           </div>
@@ -158,11 +158,11 @@ export default function AuthorityScorePage() {
           <div className="mb-14 max-w-2xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>What It Measures</span>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>What It Measures</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.08, letterSpacing: '-0.022em' }}>
               Six dimensions.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>One clear picture.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>One clear picture.</span>
             </h2>
             <p className="mt-5" style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
               Authority Score doesn't measure website traffic or keyword rankings. It measures the signals AI engines actually use to decide whether to recommend your business.
@@ -170,12 +170,12 @@ export default function AuthorityScorePage() {
           </div>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+            style={{ border: '1px solid #E7E3DD', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
             {WHAT_IT_MEASURES.map((item, i) => (
               <Reveal key={item.label} delay={i * 0.08}>
               <div className="p-7" style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F8F5F0' }}>
                 <div className="h-px mb-5" style={{ background: '#E7E3DD' }} />
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.label}</h3>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', letterSpacing: '-0.01em', marginBottom: '0.6rem' }}>{item.label}</h3>
                 <p style={{ fontSize: '0.83rem', color: '#64748B', lineHeight: 1.72 }}>{item.desc}</p>
               </div>
               </Reveal>
@@ -191,9 +191,9 @@ export default function AuthorityScorePage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>How It Works</span>
+                <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>How It Works</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em', marginBottom: '1.25rem' }}>
                 Scoring in four steps.
               </h2>
               <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: 1.75 }}>
@@ -202,10 +202,10 @@ export default function AuthorityScorePage() {
             </div>
             <div className="space-y-3">
               {PROCESS.map((p) => (
-                <div key={p.step} className="flex gap-5 p-5 rounded-xl bg-white" style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06)' }}>
-                  <div style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: '#94A3B8', flexShrink: 0, lineHeight: 1 }}>{p.step}</div>
+                <div key={p.step} className="flex gap-5 p-5 rounded-xl bg-white" style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06)' }}>
+                  <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.1rem', fontWeight: 700, color: '#94A3B8', flexShrink: 0, lineHeight: 1 }}>{p.step}</div>
                   <div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.25rem' }}>{p.title}</div>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.25rem' }}>{p.title}</div>
                     <p style={{ fontSize: '0.8rem', color: '#64748B', lineHeight: 1.65 }}>{p.desc}</p>
                   </div>
                 </div>
@@ -219,10 +219,10 @@ export default function AuthorityScorePage() {
       <section className="py-20 bg-[#F8F5F0]">
         <Container size="lg">
           <div className="flex flex-col lg:flex-row gap-8 items-start p-8 lg:p-10 rounded-2xl bg-white"
-            style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.08)' }}>
+            style={{ border: '1px solid #E7E3DD', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.08)' }}>
             <div className="flex-1">
-              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B', marginBottom: '0.75rem' }}>PearlOS Integration</div>
-              <h3 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
+              <div style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00', marginBottom: '0.75rem' }}>PearlOS Integration</div>
+              <h3 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.4rem, 3vw, 2rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
                 Authority Score guides the entire system.
               </h3>
               <p style={{ fontSize: '0.9rem', color: '#64748B', lineHeight: 1.75 }}>
@@ -230,7 +230,7 @@ export default function AuthorityScorePage() {
               </p>
             </div>
             <div className="shrink-0">
-              <Link href="/platform/pearlos" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#C2185B' }}>
+              <Link href="/platform/pearlos" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#FF6A00' }}>
                 Learn about PearlOS <ArrowUpRight size={14} />
               </Link>
             </div>
@@ -243,20 +243,20 @@ export default function AuthorityScorePage() {
           <Reveal>
           <div className="mb-12 max-w-xl">
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-block h-px w-8" style={{ background: '#C2185B', opacity: 0.3 }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>Questions</span>
+              <span className="inline-block h-px w-8" style={{ background: '#FF6A00', opacity: 0.3 }} aria-hidden />
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>Questions</span>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#1E3A66', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+            <h2 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
               What operators ask<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>about Authority Score.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>about Authority Score.</span>
             </h2>
           </div>
           </Reveal>
           <div className="space-y-4 max-w-3xl">
             {FAQS.map((faq, i) => (
               <Reveal key={i} delay={i * 0.08}>
-              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(30,58,102,0.04)' }}>
-                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1E3A66', marginBottom: '0.6rem' }}>{faq.q}</h3>
+              <div className="p-6 rounded-xl" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD', boxShadow: '0 1px 3px rgba(10,18,36,0.04)' }}>
+                <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#0A1224', marginBottom: '0.6rem' }}>{faq.q}</h3>
                 <p style={{ fontSize: '0.845rem', color: '#334155', lineHeight: 1.7 }}>{faq.a}</p>
               </div>
               </Reveal>
@@ -273,18 +273,18 @@ export default function AuthorityScorePage() {
       />
 
       {/* CTA */}
-      <section className="py-24 bg-[#1E3A66]">
+      <section className="py-24 bg-[#0A1224]">
         <Container size="md" className="text-center">
-          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
+          <h2 className="mb-5 max-w-xl mx-auto" style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#FFFFFF', lineHeight: 1.1, letterSpacing: '-0.022em' }}>
             Find out where you<br />
-            <span style={{ color: '#C2185B', fontStyle: 'italic' }}>stand in AI search.</span>
+            <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>stand in AI search.</span>
           </h2>
           <p className="mb-8 max-w-md mx-auto" style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
             Your Authority Score baseline is the first deliverable in every HeyPearl engagement. Book a strategy call to start the audit.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={site.strategyCallUrl} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#C2185B] hover:bg-[#D62F73] text-white transition-colors duration-200">
+              className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold bg-[#FF6A00] hover:bg-[#E65F00] text-white transition-colors duration-200">
               Book a Strategy Call <ArrowRight size={14} />
             </a>
             <Link href="/platform" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-medium transition-colors duration-200"

@@ -21,23 +21,23 @@ export function PearlOSFeature() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Core System
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
                 marginBottom: '1.25rem',
               }}
             >
               One operating system.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Every signal. Every engine.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Every signal. Every engine.</span>
             </h2>
             <p style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.75, marginBottom: '2rem', maxWidth: '34rem' }}>
               Every HeyPearl engagement runs through PearlOS — a structured operating layer
@@ -51,7 +51,7 @@ export function PearlOSFeature() {
                 <li key={cap} className="flex items-start gap-3">
                   <span
                     className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                    style={{ background: '#C2185B' }}
+                    style={{ background: '#FF6A00' }}
                     aria-hidden
                   />
                   <span style={{ fontSize: '0.88rem', color: '#334155', lineHeight: 1.6 }}>
@@ -64,7 +64,7 @@ export function PearlOSFeature() {
             <Link
               href="/platform/pearlos"
               className="inline-flex items-center gap-2 text-sm font-semibold"
-              style={{ color: '#C2185B' }}
+              style={{ color: '#FF6A00' }}
             >
               Explore PearlOS
               <ArrowRight size={14} />
@@ -79,7 +79,7 @@ export function PearlOSFeature() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 24px 64px rgba(30,58,102,0.12)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 24px 64px rgba(10,18,36,0.12)',
               }}
             >
               {/* Window chrome */}
@@ -96,10 +96,10 @@ export function PearlOSFeature() {
                 <div className="flex items-center justify-between mb-5">
                   <div>
                     <div style={{ fontSize: '0.65rem', color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>PearlOS</div>
-                    <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#1E3A66' }}>Authority Dashboard</div>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#0A1224' }}>Authority Dashboard</div>
                   </div>
-                  <div className="px-2 py-0.5 rounded-md" style={{ background: 'rgba(194,24,91,0.08)', border: '1px solid rgba(194,24,91,0.15)' }}>
-                    <span style={{ fontSize: '0.6rem', color: '#C2185B', fontWeight: 600 }}>● LIVE</span>
+                  <div className="px-2 py-0.5 rounded-md" style={{ background: 'rgba(255,106,0,0.08)', border: '1px solid rgba(255,106,0,0.15)' }}>
+                    <span style={{ fontSize: '0.6rem', color: '#FF6A00', fontWeight: 600 }}>● LIVE</span>
                   </div>
                 </div>
 
@@ -112,8 +112,8 @@ export function PearlOSFeature() {
                   ].map(({ label, val, change }) => (
                     <div key={label} className="rounded-xl p-3" style={{ background: '#F8F5F0', border: '1px solid #E7E3DD' }}>
                       <div style={{ fontSize: '0.6rem', color: '#94A3B8', marginBottom: '4px' }}>{label}</div>
-                      <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1E3A66', lineHeight: 1 }}>{val}</div>
-                      <div style={{ fontSize: '0.6rem', color: '#C2185B', marginTop: '3px' }}>{change} 30d</div>
+                      <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0A1224', lineHeight: 1 }}>{val}</div>
+                      <div style={{ fontSize: '0.6rem', color: '#FF6A00', marginTop: '3px' }}>{change} 30d</div>
                     </div>
                   ))}
                 </div>
@@ -134,7 +134,7 @@ export function PearlOSFeature() {
                       <div className="h-1.5 rounded-full" style={{ background: '#ECE8E2' }}>
                         <div
                           className="h-full rounded-full"
-                          style={{ width: `${pct}%`, background: pct > 80 ? '#C2185B' : 'rgba(194,24,91,0.45)' }}
+                          style={{ width: `${pct}%`, background: pct > 80 ? '#FF6A00' : 'rgba(255,106,0,0.45)' }}
                         />
                       </div>
                     </div>
@@ -150,7 +150,7 @@ export function PearlOSFeature() {
                     'New citation detected — Google SGE',
                   ].map((activity) => (
                     <div key={activity} className="flex items-center gap-2 py-1.5">
-                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: '#C2185B' }} />
+                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: '#FF6A00' }} />
                       <span style={{ fontSize: '0.65rem', color: '#64748B' }}>{activity}</span>
                     </div>
                   ))}
@@ -162,7 +162,7 @@ export function PearlOSFeature() {
             <div
               aria-hidden
               className="absolute -bottom-8 -right-8 w-48 h-48 rounded-full -z-10"
-              style={{ background: 'radial-gradient(ellipse, rgba(194,24,91,0.04) 0%, transparent 70%)' }}
+              style={{ background: 'radial-gradient(ellipse, rgba(255,106,0,0.04) 0%, transparent 70%)' }}
             />
           </div>
         </div>

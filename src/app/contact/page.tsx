@@ -27,7 +27,7 @@ export default function ContactPage() {
         title={
           <>
             Two ways to talk to{' '}
-            <span className="italic font-light text-magenta">HeyPearl.</span>
+            <span className="italic font-light text-orange">HeyPearl.</span>
           </>
         }
         description="Choose the front door that fits. Strategy calls are founder-led. The contact channel is for support, partnerships, and operational questions."
@@ -59,7 +59,7 @@ export default function ContactPage() {
                   className="pointer-events-none absolute inset-0 opacity-40"
                   style={{
                     background:
-                      'radial-gradient(50% 50% at 100% 0%, rgba(194,24,91,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(194,24,91,0.12) 0%, transparent 60%)',
+                      'radial-gradient(50% 50% at 100% 0%, rgba(255,106,0,0.2) 0%, transparent 60%), radial-gradient(40% 60% at 0% 100%, rgba(255,106,0,0.12) 0%, transparent 60%)',
                   }}
                 />
                 <div className="relative">
@@ -104,10 +104,10 @@ export default function ContactPage() {
                 <div className="mt-10 flex flex-col gap-4">
                   <a
                     href={`mailto:${site.contact.email}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#1E3A66] transition-colors"
+                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#0A1224] transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                      <Mail size={18} className="text-magenta" />
+                      <Mail size={18} className="text-orange" />
                       <div>
                         <div className="text-xs tracking-micro uppercase text-slate">
                           Email
@@ -125,10 +125,10 @@ export default function ContactPage() {
 
                   <a
                     href={`tel:${site.contact.phone}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#1E3A66] transition-colors"
+                    className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4 hover:border-[#0A1224] transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                      <Phone size={18} className="text-magenta" />
+                      <Phone size={18} className="text-orange" />
                       <div>
                         <div className="text-xs tracking-micro uppercase text-slate">
                           Phone
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   </a>
 
                   <div className="flex items-start gap-3 rounded-2xl border border-[#E7E3DD] bg-white px-5 py-4">
-                    <MapPin size={18} className="mt-0.5 text-magenta" />
+                    <MapPin size={18} className="mt-0.5 text-orange" />
                     <div>
                       <div className="text-xs tracking-micro uppercase text-slate">
                         Office
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.instagram}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#0A1224] transition"
                       aria-label="Instagram"
                     >
                       <Instagram size={16} />
@@ -176,7 +176,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.facebook}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#0A1224] transition"
                       aria-label="Facebook"
                     >
                       <Facebook size={16} />
@@ -184,7 +184,7 @@ export default function ContactPage() {
                     <Link
                       href={site.social.youtube}
                       target="_blank"
-                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#1E3A66] transition"
+                      className="h-10 w-10 inline-flex items-center justify-center rounded-full border border-[#E7E3DD] bg-white text-plum hover:border-[#0A1224] transition"
                       aria-label="YouTube"
                     >
                       <Youtube size={16} />
@@ -218,7 +218,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.instagram}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#0A1224] transition"
                   aria-label="Misti on Instagram"
                 >
                   <Instagram size={16} />
@@ -226,7 +226,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.facebook}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#0A1224] transition"
                   aria-label="Misti on Facebook"
                 >
                   <Facebook size={16} />
@@ -234,7 +234,7 @@ export default function ContactPage() {
                 <Link
                   href={site.founder.youtube}
                   target="_blank"
-                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#1E3A66] transition"
+                  className="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white border border-[#E7E3DD] text-plum hover:border-[#0A1224] transition"
                   aria-label="Misti on YouTube"
                 >
                   <Youtube size={16} />

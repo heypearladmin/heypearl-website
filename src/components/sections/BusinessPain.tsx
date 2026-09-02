@@ -31,7 +31,7 @@ export function BusinessPain() {
               fontWeight: 600,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
-              color: '#C2185B',
+              color: '#FF6A00',
             }}
           >
             The Visibility Gap
@@ -44,16 +44,16 @@ export function BusinessPain() {
           <div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(2rem, 4.5vw, 3.4rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.025em',
               }}
             >
               Right now, someone in your market is asking AI{' '}
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>
                 who to hire.
               </span>
             </h2>
@@ -86,7 +86,7 @@ export function BusinessPain() {
             >
               This isn't an SEO problem. It isn't a content problem.
               It's a{' '}
-              <span style={{ color: '#1E3A66', fontWeight: 600 }}>
+              <span style={{ color: '#0A1224', fontWeight: 600 }}>
                 visibility infrastructure problem
               </span>{' '}
               — and most businesses don't have a systematic solution for it yet.
@@ -109,7 +109,7 @@ export function BusinessPain() {
                 <div className="flex gap-4">
                   <span
                     style={{
-                      color: '#C2185B',
+                      color: '#FF6A00',
                       fontSize: '0.75rem',
                       fontWeight: 700,
                       marginTop: '0.1rem',
@@ -125,7 +125,7 @@ export function BusinessPain() {
                       style={{
                         fontSize: '0.9rem',
                         fontWeight: 600,
-                        color: '#1E3A66',
+                        color: '#0A1224',
                         marginBottom: '0.5rem',
                         lineHeight: 1.4,
                         letterSpacing: '-0.01em',
@@ -159,7 +159,7 @@ export function BusinessPain() {
         >
           <p
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
               color: '#334155',

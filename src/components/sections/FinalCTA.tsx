@@ -5,7 +5,7 @@ import { site } from '@/lib/site';
 
 export function FinalCTA() {
   return (
-    <section className="py-32 relative overflow-hidden" style={{ background: '#1E3A66' }}>
+    <section className="py-32 relative overflow-hidden" style={{ background: '#0A1224' }}>
       {/* Subtle radial center glow */}
       <div
         aria-hidden
@@ -32,7 +32,7 @@ export function FinalCTA() {
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-3 mb-8">
           <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
-          <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+          <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
             Start Your Authority System
           </span>
           <span className="inline-block h-px w-8" style={{ background: 'rgba(255,255,255,0.2)' }} aria-hidden />
@@ -41,7 +41,7 @@ export function FinalCTA() {
         {/* Headline */}
         <h2
           style={{
-            fontFamily: 'var(--font-playfair), Georgia, serif',
+            fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
             fontSize: 'clamp(2.2rem, 5vw, 4rem)',
             fontWeight: 700,
             color: '#FFFFFF',
@@ -52,7 +52,7 @@ export function FinalCTA() {
         >
           Become the trusted name<br />
           AI{' '}
-          <span style={{ color: '#C2185B', fontStyle: 'italic' }}>recommends.</span>
+          <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>recommends.</span>
         </h2>
 
         <p
@@ -69,8 +69,8 @@ export function FinalCTA() {
             href={site.strategyCallUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg px-7 py-4 text-sm font-semibold transition-colors duration-200 hover:bg-[#D62F73]"
-            style={{ background: '#C2185B', color: '#FFFFFF' }}
+            className="inline-flex items-center gap-2 rounded-lg px-7 py-4 text-sm font-semibold transition-colors duration-200 hover:bg-[#E65F00]"
+            style={{ background: '#FF6A00', color: '#FFFFFF' }}
           >
             Book a Strategy Call with Misti
             <ArrowRight size={15} />
@@ -96,7 +96,7 @@ export function FinalCTA() {
             'Measured against your Day 1 baseline',
           ].map((trust) => (
             <div key={trust} className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full" style={{ background: '#C2185B' }} aria-hidden />
+              <div className="w-1 h-1 rounded-full" style={{ background: '#FF6A00' }} aria-hidden />
               <span style={{ fontSize: '0.78rem', color: 'rgba(248,245,240,0.5)' }}>{trust}</span>
             </div>
           ))}

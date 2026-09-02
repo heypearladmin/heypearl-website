@@ -26,7 +26,7 @@ export function PricingCard({
       )}
     >
       {isHighlight && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-magenta-gradient px-4 py-1 text-[0.65rem] tracking-micro uppercase text-cream shadow-soft">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-orange-gradient px-4 py-1 text-[0.65rem] tracking-micro uppercase text-cream shadow-soft">
           Most Chosen
         </div>
       )}
@@ -35,7 +35,7 @@ export function PricingCard({
         <div
           className={cn(
             'text-[0.65rem] tracking-micro uppercase',
-            isHighlight ? 'text-cream/70' : 'text-magenta',
+            isHighlight ? 'text-cream/70' : 'text-orange',
           )}
         >
           {tier.family} · {tier.position}
@@ -100,7 +100,7 @@ export function PricingCard({
               size={16}
               className={cn(
                 'mt-0.5 shrink-0',
-                isHighlight ? 'text-orange' : 'text-magenta',
+                isHighlight ? 'text-orange' : 'text-orange',
               )}
             />
             {f}

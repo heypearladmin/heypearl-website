@@ -41,22 +41,22 @@ export function ResultsPreview() {
           <div className="max-w-xl">
             <div className="flex items-center gap-3 mb-5">
               <span className="inline-block h-px w-8" style={{ background: '#E7E3DD' }} aria-hidden />
-              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C2185B' }}>
+              <span style={{ fontSize: '0.67rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#FF6A00' }}>
                 The Evidence
               </span>
             </div>
             <h2
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                 fontSize: 'clamp(1.9rem, 4vw, 3rem)',
                 fontWeight: 700,
-                color: '#1E3A66',
+                color: '#0A1224',
                 lineHeight: 1.08,
                 letterSpacing: '-0.022em',
               }}
             >
               The system works.<br />
-              <span style={{ color: '#C2185B', fontStyle: 'italic' }}>Here's the proof.</span>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>Here's the proof.</span>
             </h2>
           </div>
           <Link
@@ -78,7 +78,7 @@ export function ResultsPreview() {
               style={{
                 background: i === 1 ? '#F8F5F0' : '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.06)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.06)',
               }}
             >
               {/* Client context */}
@@ -88,7 +88,7 @@ export function ResultsPreview() {
                   fontWeight: 600,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
-                  color: 'rgba(194,24,91,0.6)',
+                  color: 'rgba(255,106,0,0.6)',
                   marginBottom: '1.25rem',
                 }}
               >
@@ -99,10 +99,10 @@ export function ResultsPreview() {
               <div className="mb-4">
                 <div
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: '3rem',
                     fontWeight: 700,
-                    color: '#1E3A66',
+                    color: '#16A34A',
                     lineHeight: 1,
                     letterSpacing: '-0.03em',
                   }}
@@ -122,7 +122,7 @@ export function ResultsPreview() {
                 style={{
                   fontSize: '0.95rem',
                   fontWeight: 600,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   lineHeight: 1.4,
                   marginBottom: '0.8rem',
                   letterSpacing: '-0.01em',

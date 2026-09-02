@@ -46,17 +46,17 @@ export function PearlFramework() {
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="inline-block h-px w-10" style={{ background: '#E7E3DD' }} aria-hidden />
-            <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C2185B' }}>
+            <span style={{ fontSize: '0.67rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FF6A00' }}>
               HeyPearl's Proprietary Framework
             </span>
             <span className="inline-block h-px w-10" style={{ background: '#E7E3DD' }} aria-hidden />
           </div>
           <h2
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(2.2rem, 5vw, 3.6rem)',
               fontWeight: 700,
-              color: '#1E3A66',
+              color: '#0A1224',
               lineHeight: 1.06,
               letterSpacing: '-0.025em',
             }}
@@ -65,10 +65,10 @@ export function PearlFramework() {
           </h2>
           <p
             style={{
-              fontFamily: 'var(--font-playfair), Georgia, serif',
+              fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(1.1rem, 2vw, 1.25rem)',
               fontStyle: 'italic',
-              color: '#C2185B',
+              color: '#FF6A00',
               marginTop: '0.6rem',
               letterSpacing: '-0.01em',
             }}
@@ -90,17 +90,17 @@ export function PearlFramework() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
-                boxShadow: '0 1px 4px rgba(30,58,102,0.06), 0 8px 24px rgba(30,58,102,0.06)',
+                boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.06)',
               }}
             >
               {/* Ghost letter watermark */}
               <div
                 aria-hidden
                 style={{
-                  fontFamily: 'var(--font-playfair), Georgia, serif',
+                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                   fontSize: '6rem',
                   fontWeight: 700,
-                  color: 'rgba(30,58,102,0.04)',
+                  color: 'rgba(10,18,36,0.04)',
                   lineHeight: 1,
                   position: 'absolute',
                   top: '0.5rem',
@@ -118,16 +118,16 @@ export function PearlFramework() {
                 style={{
                   width: '2.75rem',
                   height: '2.75rem',
-                  background: 'rgba(194,24,91,0.06)',
-                  border: '1px solid rgba(194,24,91,0.15)',
+                  background: 'rgba(255,106,0,0.06)',
+                  border: '1px solid rgba(255,106,0,0.15)',
                 }}
               >
                 <span
                   style={{
-                    fontFamily: 'var(--font-playfair), Georgia, serif',
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
                     fontSize: '1.25rem',
                     fontWeight: 700,
-                    color: '#C2185B',
+                    color: '#FF6A00',
                     lineHeight: 1,
                   }}
                 >
@@ -140,7 +140,7 @@ export function PearlFramework() {
                 style={{
                   fontSize: '1.05rem',
                   fontWeight: 700,
-                  color: '#1E3A66',
+                  color: '#0A1224',
                   letterSpacing: '-0.015em',
                   marginBottom: '0.3rem',
                 }}
@@ -153,7 +153,7 @@ export function PearlFramework() {
                 style={{
                   fontSize: '0.75rem',
                   fontStyle: 'italic',
-                  color: 'rgba(194,24,91,0.65)',
+                  color: 'rgba(255,106,0,0.65)',
                   marginBottom: '0.9rem',
                   lineHeight: 1.4,
                 }}
@@ -182,9 +182,9 @@ export function PearlFramework() {
             }}
           >
             Executed over{' '}
-            <span style={{ color: '#C2185B', fontWeight: 600 }}>90 days.</span>{' '}
+            <span style={{ color: '#FF6A00', fontWeight: 600 }}>90 days.</span>{' '}
             Built to grow{' '}
-            <span style={{ color: '#1E3A66', fontWeight: 500 }}>indefinitely.</span>
+            <span style={{ color: '#0A1224', fontWeight: 500 }}>indefinitely.</span>
           </p>
         </div>
       </Container>

@@ -50,7 +50,7 @@ export function CursorHero({ children, className }: Props) {
             top: spotY,
             x: '-50%',
             y: '-50%',
-            background: 'radial-gradient(circle, rgba(191,155,92,0.06) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(255,193,7,0.06) 0%, transparent 65%)',
             zIndex: 0,
           }}
         />
