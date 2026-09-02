@@ -100,7 +100,7 @@ export function PricingCard({
               size={16}
               className={cn(
                 'mt-0.5 shrink-0',
-                isHighlight ? 'text-orange' : 'text-orange',
+                isHighlight ? 'text-green-300' : 'text-green',
               )}
             />
             {f}

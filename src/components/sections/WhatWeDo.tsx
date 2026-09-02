@@ -81,9 +81,14 @@ export function WhatWeDo() {
               >
                 <div
                   className="inline-flex items-center justify-center rounded-xl mb-5"
-                  style={{ width: '2.75rem', height: '2.75rem', background: `${svc.color}14` }}
+                  style={{
+                    width: '2.75rem',
+                    height: '2.75rem',
+                    background: `${svc.color}1F`,
+                    border: `1px solid ${svc.color}40`,
+                  }}
                 >
-                  <Icon size={20} style={{ color: svc.color }} strokeWidth={2} />
+                  <Icon size={20} style={{ color: svc.color }} strokeWidth={2.25} />
                 </div>
                 <h3
                   style={{

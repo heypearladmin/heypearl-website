@@ -138,12 +138,12 @@ export function HeroDeclaration() {
             {/* Proof strip */}
             <div className="mt-12 flex flex-wrap gap-10" style={{ borderTop: '1px solid #E7E3DD', paddingTop: '1.75rem' }}>
               {[
-                { num: '6',       label: 'AI engines tracked per client' },
-                { num: '90-Day',  label: 'Authority visibility roadmap' },
-                { num: '5-Layer', label: 'P.E.A.R.L. authority system' },
-              ].map(({ num, label }) => (
+                { num: '6',       label: 'AI engines tracked per client', color: '#2563FF' },
+                { num: '90-Day',  label: 'Authority visibility roadmap', color: '#22C55E' },
+                { num: '5-Layer', label: 'P.E.A.R.L. authority system', color: '#FF6A00' },
+              ].map(({ num, label, color }) => (
                 <div key={label}>
-                  <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.55rem', fontWeight: 700, color: '#FF6A00', lineHeight: 1, letterSpacing: '-0.02em' }}>
+                  <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.55rem', fontWeight: 700, color, lineHeight: 1, letterSpacing: '-0.02em' }}>
                     {num}
                   </div>
                   <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '0.35rem', letterSpacing: '0.03em' }}>

@@ -74,17 +74,17 @@ export function TheGap() {
           {/* New world */}
           <div className="p-8 lg:p-10 relative" style={{ background: '#FDFBF8' }}>
             {/* Left accent */}
-            <div className="absolute left-0 top-8 bottom-8 w-px" style={{ background: 'linear-gradient(to bottom, transparent, rgba(255,106,0,0.4), transparent)' }} />
+            <div className="absolute left-0 top-8 bottom-8 w-px" style={{ background: 'linear-gradient(to bottom, transparent, rgba(37,99,255,0.4), transparent)' }} />
             <div className="flex items-center gap-2.5 mb-8">
-              <div className="w-2 h-2 rounded-full" style={{ background: '#FF6A00' }} />
-              <span style={{ fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FF6A00' }}>
+              <div className="w-2 h-2 rounded-full" style={{ background: '#2563FF' }} />
+              <span style={{ fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#2563FF' }}>
                 The Recommendation Era (Now)
               </span>
             </div>
             <ul className="space-y-5">
               {NEW.map((item) => (
                 <li key={item} className="flex gap-3.5">
-                  <span style={{ color: '#FF6A00', lineHeight: 1.6, flexShrink: 0, marginTop: '0.15rem', fontSize: '0.9rem' }}>→</span>
+                  <span style={{ color: '#2563FF', lineHeight: 1.6, flexShrink: 0, marginTop: '0.15rem', fontSize: '0.9rem' }}>→</span>
                   <span style={{ fontSize: '0.9rem', color: '#334155', lineHeight: 1.65 }}>{item}</span>
                 </li>
               ))}

@@ -7,21 +7,25 @@ const PILLARS = [
     number: '01',
     title: 'Entity Architecture',
     body: 'Structured data and knowledge graph signals that tell AI engines precisely who you are and what you do — eliminating ambiguity at the source.',
+    accent: '#2563FF',
   },
   {
     number: '02',
     title: 'Authority Infrastructure',
     body: 'A system of pages, assets, and content that establishes topical depth and credibility across every AI platform that matters.',
+    accent: '#FF6A00',
   },
   {
     number: '03',
     title: 'Reputation Signals',
     body: 'Third-party trust signals, citation patterns, and E-E-A-T architecture that AI engines use to validate recommendation worthiness.',
+    accent: '#FFC107',
   },
   {
     number: '04',
     title: 'AI Visibility Monitoring',
     body: 'Real-time tracking of how AI engines represent your brand, so you can course-correct before gaps quietly erode your visibility.',
+    accent: '#22C55E',
   },
 ];
 
@@ -68,21 +72,24 @@ export function CategoryIntro() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E7E3DD',
+                borderTop: `3px solid ${p.accent}`,
                 boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 8px 24px rgba(10,18,36,0.05)',
               }}
             >
-              <div
-                style={{
-                  fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
-                  fontSize: '2.25rem',
-                  fontWeight: 700,
-                  color: '#ECE8E2',
-                  lineHeight: 1,
-                  marginBottom: '1.25rem',
-                  letterSpacing: '-0.03em',
-                }}
-              >
-                {p.number}
+              <div className="flex items-center justify-between" style={{ marginBottom: '1.25rem' }}>
+                <div
+                  style={{
+                    fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif',
+                    fontSize: '2.25rem',
+                    fontWeight: 700,
+                    color: '#ECE8E2',
+                    lineHeight: 1,
+                    letterSpacing: '-0.03em',
+                  }}
+                >
+                  {p.number}
+                </div>
+                <div className="w-2 h-2 rounded-full" style={{ background: p.accent }} aria-hidden />
               </div>
               <h3
                 style={{
