@@ -101,7 +101,7 @@ export function HeroDeclaration() {
             {/* H1 */}
             <h1 style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(2.6rem, 5.5vw, 5rem)', fontWeight: 700, color: '#0A1224', lineHeight: 1.03, letterSpacing: '-0.03em' }}>
               Become the Authority<br />
-              <span style={{ color: '#FF6A00', fontStyle: 'italic', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#FF6A00', fontStyle: 'italic' }}>
                 AI Recommends.
               </span>
             </h1>

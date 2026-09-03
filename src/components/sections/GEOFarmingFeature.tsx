@@ -78,7 +78,7 @@ function NeighborhoodIllustration() {
           </g>
         ))}
 
-        {/* Location pins */}
+        {/* Location pins — glowing, staggered pulse */}
         {[
           { x: 180, y: 160, primary: true },
           { x: 300, y: 160, primary: false },
@@ -86,14 +86,27 @@ function NeighborhoodIllustration() {
           { x: 120, y: 200, primary: false },
           { x: 360, y: 200, primary: false },
         ].map(({ x, y, primary }, i) => (
-          <g key={`pin-${i}`}>
+          <g key={`pin-${i}`} style={{ color: '#2563FF' }}>
+            {/* Expanding radar-ping ring */}
             <circle
+              className="map-ping-ring"
+              cx={x}
+              cy={y}
+              r={primary ? 10 : 7}
+              fill="none"
+              stroke="#2563FF"
+              strokeWidth="1.5"
+              style={{ animationDelay: `${i * 0.4}s` }}
+            />
+            <circle
+              className="map-pin-glow"
               cx={x}
               cy={y}
               r={primary ? 10 : 7}
               fill={primary ? '#2563FF' : 'rgba(37,99,255,0.6)'}
               stroke={primary ? 'rgba(248,245,240,0.3)' : 'transparent'}
               strokeWidth="1.5"
+              style={{ animationDelay: `${i * 0.4}s` }}
             />
             <circle cx={x} cy={y} r={primary ? 4 : 2.5} fill="white" opacity="0.9" />
           </g>

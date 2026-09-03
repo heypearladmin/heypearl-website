@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { EcosystemNav } from '@/components/platform/EcosystemNav';
+import { AuthorityScoreMockup } from '@/components/platform/AuthorityScoreMockup';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -80,8 +80,8 @@ export default function AuthorityScorePage() {
         aria-label="Authority Score hero"
       >
         <div aria-hidden className="pointer-events-none absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 w-[38%] hidden lg:block" style={{ zIndex: 1 }}>
-          <div style={{ aspectRatio: '16/10', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid rgba(255,193,7,0.3)', boxShadow: '0 1px 4px rgba(10,18,36,0.06), 0 32px 64px rgba(10,18,36,0.12)', background: '#fff' }}>
-            <Image src="/images/platform/platform-authority-score.webp" alt="" fill sizes="38vw" className="object-cover" priority />
+          <div style={{ aspectRatio: '16/10', boxShadow: '0 32px 64px rgba(10,18,36,0.18)', borderRadius: '1rem' }}>
+            <AuthorityScoreMockup />
           </div>
         </div>
         <div

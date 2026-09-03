@@ -236,6 +236,27 @@ body {
   background-size: 64px 64px;
 }
 
+/* Map pin glow — radar-ping ring + breathing dot, used on illustrative map graphics */
+@keyframes radarPing {
+  0%   { transform: scale(0.55); opacity: 0.75; }
+  75%  { opacity: 0.08; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+@keyframes pinGlow {
+  0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 0px currentColor); }
+  50%      { opacity: 1;    filter: drop-shadow(0 0 6px currentColor); }
+}
+.map-ping-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: radarPing 2.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+.map-pin-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pinGlow 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
