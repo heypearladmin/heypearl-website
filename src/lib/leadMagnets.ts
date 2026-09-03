@@ -16,6 +16,7 @@ export const LEAD_MAGNET_PDF_BY_POST_SLUG: Record<string, string> = {
   'entity-seo-make-your-business-known-to-ai': 'entity-seo-ai-knowledge-graph.pdf',
   'what-is-geo-generative-engine-optimization': 'geo-generative-engine-optimization-guide.pdf',
   'google-knowledge-panel-business-guide': 'google-knowledge-panel-business-guide.pdf',
+  'how-often-update-content-ai-visibility': 'how-often-update-content-ai-visibility.pdf',
   'how-to-write-content-ai-cites': 'how-to-write-content-ai-cites.pdf',
   'llms-txt-ai-crawler-access-guide': 'llms-txt-ai-crawler-access-guide.pdf',
   'local-ai-search-optimization': 'local-ai-search-optimization.pdf',

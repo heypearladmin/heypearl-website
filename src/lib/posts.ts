@@ -19,6 +19,216 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "what-is-aeo-answer-engine-optimization",
+    eyebrow: "AEO Foundations",
+    seoTitle: "What Is AEO? A Business Owner's Guide to Answer Engine Optimization",
+    metaDescription: "AEO, GEO, and SEO get used interchangeably, but they solve different problems. Here is what Answer Engine Optimization actually means, how it differs from SEO and GEO, and the concrete building blocks that make your content the direct answer AI engines give.",
+    h1: "What Is AEO? A Business Owner's Guide to Answer Engine Optimization",
+    excerpt: "SEO earns you a ranking. GEO earns you a citation. AEO earns you the answer itself — the sentence an AI engine, a voice assistant, or a search answer box hands back with no click required. Here is what that actually takes.",
+    quickAnswer: "AEO (Answer Engine Optimization) is the practice of structuring content so it can be extracted and delivered directly as an answer — by Google's AI Overviews, ChatGPT, Perplexity, voice assistants like Siri and Alexa, or a traditional featured snippet — rather than simply ranked as a link. It differs from SEO, which optimizes for ranking position, and from GEO, which optimizes for broader visibility and citation across generative AI engines. AEO is narrower and more mechanical than both: it's about matching the exact shape of a question with a concise, structured, extractable answer, using direct-answer paragraphs, FAQ schema, and clear entity language so an engine can lift your content out with confidence.",
+    publishedAt: "2026-09-03",
+    readTime: "9 min read",
+    image: "/images/website-blog-what-is-aeo.webp",
+    content: `## Why a third acronym, and why now
+
+For twenty-five years, "optimize your website" meant one thing: SEO. Then generative AI engines arrived, and GEO — Generative Engine Optimization — became the term for making sure ChatGPT, Perplexity, and Google's AI Overviews know your business exists and cite it. Now a third term, AEO, is showing up in the same conversations, and it's fair to ask whether it's a meaningfully different thing or just another label for the same work.
+
+It's a real, distinct discipline — narrower than GEO, more mechanical than SEO, and increasingly the difference between being *mentioned* by an AI engine and being *the answer* it gives.
+
+## The one-sentence version
+
+**SEO** gets your page ranked. **GEO** gets your business cited and represented accurately across AI engines' broader understanding of your category. **AEO** gets your specific content extracted and delivered as the direct answer to a specific question — in an AI Overview, a chat response, a voice assistant's reply, or a traditional featured snippet.
+
+All three matter. But AEO is the one most businesses have never deliberately built for, because it didn't need a name until answer surfaces — the box above the search results, the paragraph a chatbot gives instead of a list of links, the sentence Siri reads aloud — became a primary way people get information at all.
+
+## How AEO is different from SEO
+
+Traditional SEO optimizes for a ranking position on a results page. The unit of success is the page: does it rank in the top three, top ten, page one? A user still has to click through, read the page, and find their answer themselves.
+
+AEO optimizes for something more specific: does a particular passage of your content directly and completely answer a particular question, in a form an engine can lift out and present on its own? The unit of success isn't the page — it's the answer. A page can rank well and still fail at AEO if none of its content is structured as a clean, self-contained answer an engine can extract with confidence.
+
+This is why a comprehensive, well-written 2,000-word guide can rank on page one for SEO purposes while contributing nothing to AEO, if the actual answer to the reader's question is buried in paragraph twelve, hedged with qualifications, or split across three sections that need to be read together to make sense.
+
+## How AEO is different from GEO
+
+GEO and AEO are close cousins, and the boundary between them is genuinely blurry — but the distinction is useful. GEO is about your business's overall presence and accuracy across generative AI engines: does ChatGPT know who you are, represent you correctly, and consider you a credible source in your category when it's reasoning about a broader question? That's an entity-and-authority problem, built through structured data, citations, reviews, and consistent presence across the sources these engines draw on.
+
+AEO is about a specific piece of content answering a specific question well enough to be quoted or extracted directly. You can have strong GEO — engines know and trust your business — while still having weak AEO, because none of your content is actually structured as a direct, quotable answer to the specific questions your buyers ask.
+
+In practice, the two compound each other. Strong entity signals (GEO) make an engine more willing to trust and cite your content. Well-structured, direct-answer content (AEO) gives the engine something specific and citable to pull from. Businesses that invest in only one tend to plateau — recognized but not quoted, or quotable but not trusted.
+
+## The building blocks of AEO
+
+**Question-first structure.** Headings phrased as the actual questions people ask ("How much does X cost," "What's the difference between X and Y," "Do I need X for Y") rather than clever or branded headings. An engine matching a user's question to your content is doing pattern-matching on structure — the closer your heading matches the question shape, the easier that match is.
+
+**Direct-answer paragraphs.** The first one to three sentences after a question-style heading should completely answer the question on their own, without requiring the reader to continue for the answer to make sense. Elaboration, caveats, and nuance can follow — but the extractable answer comes first, not last.
+
+**FAQ schema markup.** FAQPage structured data explicitly labels question-and-answer pairs in a machine-readable format. This is one of the few schema types with a direct, demonstrated effect on whether Google AI Overviews and traditional featured snippets surface your content, and Perplexity and ChatGPT weight Q&A-structured content more heavily in retrieval as well.
+
+**Concise, unhedged language.** Answer engines favor confident, specific answers over heavily qualified ones. "Most engagements run $1,500 to $2,500 per month" is more extractable than "it really depends on a number of factors that vary by situation." Nuance still belongs in the content — just after the direct answer, not instead of it.
+
+**Entity clarity.** An engine needs to know *who* is answering before it trusts *what* they're answering. Consistent business naming, clear authorship, and verified entity signals (the same foundation that supports GEO) make an engine more confident extracting and attributing an answer to you specifically.
+
+## Finding the questions worth optimizing for
+
+AEO only works if you're answering questions your buyers are actually asking, in the language they actually use. Three practical sources for finding them: the questions your sales or front-desk team hears repeated most often before someone converts; the "People also ask" and related-question modules on Google for your core topics; and the follow-up questions users type into ChatGPT or Perplexity after an initial query in your category, which tend to reveal the more specific, high-intent questions worth a dedicated, direct-answer section.
+
+Prioritize questions that are specific and answerable in one or two sentences over broad, open-ended ones — "How much does a kitchen remodel cost in [city]" is a strong AEO target; "How do I plan a kitchen remodel" is better served by a comprehensive guide than a single extractable answer.
+
+## A simple AEO framework
+
+1. **Identify the specific question** — not a topic, a question, phrased the way a buyer would actually ask it.
+2. **Write the direct answer first** — one to three sentences, complete and self-contained, no throat-clearing.
+3. **Add supporting detail after** — context, caveats, and nuance for the reader who wants more.
+4. **Mark it up with FAQPage schema** so the structure is machine-readable, not just visually apparent.
+5. **Repeat for every genuinely distinct question** your buyers ask — resist the urge to answer the same question five different ways for keyword coverage; distinct questions, not repetition, is what builds AEO depth.
+
+## Common AEO mistakes
+
+**Burying the answer.** The classic content-marketing instinct is to build narrative tension before delivering the payoff. That works for engagement; it actively hurts AEO, because an engine scanning for an extractable answer won't wait through three paragraphs of setup to find it.
+
+**Treating every page as an AEO opportunity.** Not all content should be answer-optimized — a brand story, a case study narrative, or an opinion piece isn't meant to be extracted as a factual answer, and forcing that structure onto it produces flat, list-like content that serves neither purpose well. Reserve AEO structure for genuinely question-shaped content.
+
+**Marking up decorative FAQs.** Some sites add FAQ schema to generic, low-value questions purely to gain the schema's visibility. Engines and search platforms have gotten better at penalizing this pattern. FAQ schema should mark up real, specific, useful answers — not manufactured ones.
+
+## Where AEO fits alongside SEO and GEO
+
+None of the three replaces the others. SEO earns the ranking that gets your site discovered in the first place. GEO builds the entity trust and citation footprint that makes AI engines willing to represent you accurately and favorably. AEO makes sure that once an engine is looking at your content, it finds a clean, confident, extractable answer worth handing back to the user directly. A business investing in only one of the three is optimizing for a version of search that no longer exists on its own — buyers now move fluidly between a search results page, an AI Overview, and a chat interface, often within the same research session.`,
+    faq: [
+      {
+        q: "What does AEO stand for and what does it mean?",
+        a: "AEO stands for Answer Engine Optimization — the practice of structuring content so it can be extracted and delivered directly as an answer by AI Overviews, chatbots like ChatGPT and Perplexity, voice assistants, or traditional featured snippets, rather than simply ranked as a link a user has to click through to."
+      },
+      {
+        q: "What is the difference between AEO and SEO?",
+        a: "SEO optimizes for a ranking position on a search results page — success means the page ranks well and a user clicks through to read it. AEO optimizes for a specific passage of content being extracted and presented directly as the answer, without necessarily requiring a click at all. A page can succeed at SEO while failing at AEO if its actual answers aren't structured for extraction."
+      },
+      {
+        q: "What is the difference between AEO and GEO?",
+        a: "GEO (Generative Engine Optimization) is about whether AI engines know your business, represent it accurately, and trust it as a source in your category — an entity and authority problem. AEO is about whether a specific piece of your content directly and completely answers a specific question in a form an engine can extract and quote. The two compound each other: strong entity trust (GEO) makes engines more willing to cite your content, and well-structured direct answers (AEO) give them something specific to cite."
+      },
+      {
+        q: "Does FAQ schema actually help with AEO?",
+        a: "Yes. FAQPage structured data explicitly labels question-and-answer pairs in a machine-readable format, and it's one of the few schema types with a demonstrated effect on whether Google AI Overviews and featured snippets surface your content. Perplexity and ChatGPT also weight FAQ-structured content more heavily when retrieving answers, though the schema should mark up genuinely useful questions, not manufactured ones added purely for visibility."
+      },
+      {
+        q: "How do I find the right questions to optimize for AEO?",
+        a: "Three reliable sources: the questions your sales or front-desk team hears most often before a prospect converts, the 'People also ask' and related-question modules that appear on Google for your core topics, and the follow-up questions people type into ChatGPT or Perplexity after an initial query in your category. Prioritize specific, answerable-in-one-or-two-sentences questions over broad, open-ended ones."
+      },
+      {
+        q: "Should every page on my site be optimized for AEO?",
+        a: "No. AEO structure suits genuinely question-shaped content — pricing questions, comparison questions, how-to questions. Forcing direct-answer structure onto a brand story, a case study narrative, or an opinion piece flattens content that isn't meant to be extracted as a factual answer, and generally serves neither the reader nor the AEO goal well."
+      }
+    ],
+    conclusion: "AEO isn't a rebrand of SEO or a subset of GEO — it's the specific, mechanical discipline of making sure your content can be lifted out and handed back as the answer, not just found and clicked. Businesses building real AI-era visibility need all three: SEO to be found, GEO to be trusted and represented accurately, and AEO to be the answer itself when it counts. Skip AEO and you can be well-ranked and well-cited while still losing the moment that matters most — the one where an engine picks a single sentence to read back to the person asking.",
+    internalLinks: [
+      { label: "What Is GEO? A Business Owner's Guide", href: "/insights/what-is-geo-generative-engine-optimization" },
+      { label: "How to Write Content That AI Actually Cites", href: "/insights/how-to-write-content-ai-cites" },
+      { label: "Schema Markup for AI Visibility", href: "/insights/structured-data-schema-ai-visibility" },
+      { label: "Explore the AEO/GEO platform", href: "/platform/geo-engine" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a smartphone on a clean desk displaying a simple voice assistant or search answer interface, soft natural window light, a notebook and pen nearby, minimal and modern composition, shallow depth of field, premium documentary photography style, no visible text or logos on screen, no watermarks",
+    imageFilename: "website-blog-what-is-aeo.webp",
+  },
+  {
+    slug: "how-often-update-content-ai-visibility",
+    eyebrow: "Content Maintenance",
+    seoTitle: "How Often Should You Update Content for AI Visibility? A Practical Refresh Framework",
+    metaDescription: "AI engines favor current information, but re-writing everything constantly isn't realistic or necessary. Here is a practical framework for deciding what content to refresh, how often, and how to signal freshness to AI engines without starting from scratch.",
+    h1: "How Often Should You Update Content for AI Visibility?",
+    excerpt: "AI engines are increasingly cautious about citing content that looks stale, but most businesses have no real system for deciding what to update, when, or why. Here is a practical framework — not a rewrite-everything mandate.",
+    quickAnswer: "There is no single universal refresh interval — the right cadence depends on how fast the underlying facts change. Pricing, statistics, and anything tied to a specific year need review every 3-6 months. Foundational explainer content (what something is, how something works) stays accurate for 12-18 months and mainly needs periodic re-validation rather than rewriting. Time-sensitive or competitive content — anything referencing 'current,' 'latest,' or a specific year — needs the tightest cadence, ideally quarterly. The signal that matters most to AI engines isn't how often you touch a page, but whether the page's actual claims remain accurate and whether a visible last-updated date confirms it.",
+    publishedAt: "2026-08-31",
+    readTime: "8 min read",
+    image: "/images/website-blog-content-refresh-framework.webp",
+    content: `## The wrong question most businesses ask
+
+"How often should we publish new content?" is the question most content strategies are built around. It's the wrong starting point for AI visibility, because AI engines don't just care about volume or recency of publication — they care about whether the content they're about to cite is still accurate. A three-year-old page with correct, current information can outperform a page published last week that quietly contains an outdated statistic or a pricing figure that's no longer true.
+
+The right question is narrower: which of your existing pages are at risk of becoming *wrong*, not just old — and what's the minimum maintenance needed to keep them trustworthy?
+
+## Why AI engines care about freshness differently than search engines used to
+
+Traditional SEO rewarded fresh content indirectly, through engagement and backlink signals that new content tends to accumulate. Generative AI engines have a more direct reason to care: when an engine cites your page as the source for a factual claim, it's putting its own credibility behind that claim. An engine that repeatedly surfaces outdated pricing, expired statistics, or superseded information starts generating visibly wrong answers — which is a failure mode AI engines are increasingly tuned to avoid, by favoring sources that show clear signs of being actively maintained.
+
+This shows up in a few concrete ways: engines weighing a visible "last updated" date, favoring pages that reference the current year or recent time periods over ones anchored to outdated ones, and, over time, quietly de-prioritizing sources that have been caught citing information that turned out to be false or expired.
+
+## Not all content decays at the same rate
+
+The mistake most refresh schedules make is treating all content as equally perishable. It isn't. A useful way to think about it is in three tiers.
+
+**Fast-decay content** — pricing, statistics, "current" or "latest" framing, anything referencing a specific year, competitive comparisons, regulatory or compliance information. This content becomes actively wrong on a predictable timeline, whether or not you touch it. Review every 3 to 6 months, and rewrite whenever the underlying fact has genuinely changed, not on a fixed schedule regardless of accuracy.
+
+**Medium-decay content** — how-to guides, process explanations, best-practice frameworks. The core mechanics are usually stable for a year or more, but the specifics (a recommended tool, a step that assumes an interface that has since changed, a reference to a now-superseded approach) can quietly go stale. Review every 9 to 12 months for accuracy, without necessarily needing a full rewrite.
+
+**Slow-decay content** — foundational explainers of what a concept is and why it matters, definitional content, entity and about-page content. This ages the slowest, because it's answering a question whose answer doesn't change often. Review annually, mainly to confirm nothing has shifted rather than to rewrite proactively.
+
+## What "refreshing" a page actually requires
+
+A refresh doesn't have to mean a rewrite. Three levels of intervention, from lightest to heaviest:
+
+**Validation.** Read the page and confirm every factual claim is still accurate. Update the visible last-modified date if it is. This is the right response for most medium- and slow-decay content most of the time, and it takes minutes, not hours.
+
+**Targeted update.** Change the specific claims that have gone stale — a statistic, a price range, a "current" reference — while leaving the surrounding structure and content intact. This is the right response for fast-decay content on a routine cycle.
+
+**Full revision.** Rewrite substantial portions because the underlying approach, not just a specific fact, has changed. This is comparatively rare and usually triggered by a genuine shift — a new AI engine entering the market, a platform changing how it surfaces answers, a regulatory change — rather than by the calendar.
+
+## Signals that tell AI engines a page is maintained
+
+**A visible, genuine last-updated date.** Not a date that silently updates on every page load regardless of whether anything changed — that pattern is detectable and undermines trust once discovered. A last-updated date should only change when the content genuinely does.
+
+**Internal consistency with your other current content.** If a page still references pricing, statistics, or positioning that contradicts what your more recently updated pages say, that inconsistency is itself a signal something's stale, independent of whether either individual page states a last-updated date.
+
+**Structured data that reflects the update.** Where you're using Article or similar schema, the dateModified field should track real edits, not just be present as a formality.
+
+## Building a lightweight refresh system
+
+Most businesses don't need dedicated content-ops software to manage this — a simple, honest system beats an elaborate one nobody maintains. A practical version: tag or categorize existing content into the three decay tiers above; set a calendar reminder at the appropriate interval per tier (quarterly for fast-decay, twice yearly for medium, annually for slow); and treat each review as a validation pass first — only escalate to a targeted update or full revision if the review actually surfaces something inaccurate.
+
+The goal isn't to generate busywork on a schedule. It's to make sure nothing on your site is silently wrong for longer than the decay tier justifies.
+
+## What not to do
+
+**Don't rewrite for the sake of a fresh timestamp.** Changing a publish date without changing substance is the exact pattern AI engines are increasingly able to detect and discount — it optimizes for a signal without the substance the signal is supposed to represent.
+
+**Don't apply one cadence to everything.** A quarterly review cycle applied uniformly either wastes effort re-validating content that hasn't meaningfully aged, or — worse — leaves genuinely fast-decaying content (like pricing) stale for a full quarter before anyone checks it.
+
+**Don't ignore internal consistency.** A single outdated page is a minor problem. A site where old and new pages contradict each other on the same fact is a bigger one, because it signals to both readers and AI engines that the site as a whole isn't being actively maintained.`,
+    faq: [
+      {
+        q: "How often should I update my website content for AI visibility?",
+        a: "It depends on the content type rather than a single universal answer. Fast-decay content — pricing, statistics, anything referencing a specific year — should be reviewed every 3-6 months. Medium-decay content like how-to guides holds up for 9-12 months between reviews. Slow-decay foundational or definitional content only needs an annual check. The goal is accuracy, not a fixed rewrite schedule."
+      },
+      {
+        q: "Do AI engines actually penalize outdated content?",
+        a: "AI engines increasingly favor sources that show signs of active maintenance — a genuine last-updated date, current-year references, and internal consistency with a site's other content — and are more cautious about citing pages that appear stale or that have been shown to contain outdated claims, because doing so risks the engine surfacing a visibly wrong answer."
+      },
+      {
+        q: "Does changing the publish date without changing the content help?",
+        a: "No — and it can actively hurt. Updating a timestamp without a substantive change is a detectable pattern, and AI engines and platforms are increasingly able to discount it. A last-updated date should only change when the underlying content genuinely does."
+      },
+      {
+        q: "What's the difference between validating and rewriting a page?",
+        a: "Validation means reading a page to confirm its claims are still accurate and updating the last-modified date if so — a fast process appropriate for most medium- and slow-decay content. A targeted update changes specific stale claims (a statistic, a price) while leaving the rest intact. A full revision rewrites substantial portions because the underlying approach has changed, not just a fact — this is the least common and most resource-intensive response."
+      },
+      {
+        q: "Which types of content go stale the fastest?",
+        a: "Pricing, statistics, anything framed as 'current' or 'latest,' content that references a specific year, competitive comparisons, and regulatory or compliance information all decay quickly regardless of how well-written they are, because the underlying facts change on a predictable timeline independent of the content itself."
+      }
+    ],
+    conclusion: "A content refresh strategy built around a fixed publishing calendar solves the wrong problem. The real risk isn't old content — it's inaccurate content that an AI engine cites with the same confidence as something published yesterday. Tier your content by how fast its underlying facts actually change, validate before you rewrite, and make sure your last-updated signals are honest. That's a maintenance system that actually protects the trust AI engines place in your site, instead of just generating the appearance of freshness.",
+    internalLinks: [
+      { label: "How to Monitor Your AI Answer Visibility", href: "/insights/monitor-ai-answer-visibility" },
+      { label: "How to Write Content That AI Actually Cites", href: "/insights/how-to-write-content-ai-cites" },
+      { label: "How to Audit Your AI Search Visibility in Under 30 Minutes", href: "/insights/audit-your-ai-search-visibility" },
+      { label: "Explore AI Visibility monitoring", href: "/platform/ai-visibility" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a person's hands reviewing and annotating printed website pages spread across a clean desk with a laptop showing a content calendar, warm natural light, organized and methodical mood, shallow depth of field, premium documentary photography style, no visible screen text, no logos, no watermarks",
+    imageFilename: "website-blog-content-refresh-framework.webp",
+  },
+  {
     slug: "how-much-does-ai-visibility-cost",
     eyebrow: "Investment & ROI",
     seoTitle: "How Much Does AI Visibility Cost? A Realistic Pricing Guide for 2026",
