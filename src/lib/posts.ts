@@ -238,7 +238,7 @@ The goal isn't to generate busywork on a schedule. It's to make sure nothing on 
     quickAnswer: "AI visibility and GEO services typically run $1,000 to $3,500 per month, structured as ongoing retainers rather than one-time projects — because AI authority is built and maintained continuously, not installed once. Cost is driven primarily by four factors: how competitive your category is, how far your current entity and content foundation is from where it needs to be, how many locations or markets you're covering, and how fast you want to move. Fixed, one-size-fits-all packages under a few hundred dollars a month are a red flag — the work genuinely requires enough hours that a very low price usually means very little is actually being done.",
     publishedAt: "2026-08-27",
     readTime: "9 min read",
-    image: "/images/website-blog-ai-visibility-pricing-guide.webp",
+    image: "/images/website-blog-ai-visibility-pricing-guide-v2.webp",
     content: `## Why a straight answer is hard to find
 
 Search "how much does AI visibility cost" or "GEO pricing" and you'll find a lot of vague answers: "it depends," "contact us for a quote," "custom pricing based on your needs." That's not evasiveness for its own sake — the honest answer really does depend on specifics — but it leaves operators without the one thing they actually need before a sales call: a realistic sense of the range, so they can tell early whether a conversation is worth having.
@@ -339,7 +339,7 @@ A provider who answers these directly, with specifics, is worth a longer convers
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photograph of a small business owner reviewing a simple printed budget or invoice at a clean wooden desk, natural window light, a laptop and coffee cup nearby, calm and trustworthy mood, shallow depth of field, premium documentary photography style, no text, no logos, no watermarks",
-    imageFilename: "website-blog-ai-visibility-pricing-guide.webp",
+    imageFilename: "website-blog-ai-visibility-pricing-guide-v2.webp",
   },
   {
     slug: "ai-visibility-multi-location-franchise-businesses",
@@ -351,7 +351,7 @@ A provider who answers these directly, with specifics, is worth a longer convers
     quickAnswer: "Multi-location businesses and franchises build AI visibility through hub-and-spoke entity architecture: a strong parent-brand entity connected to distinct, verified entities for each individual location, each with its own accurate Google Business Profile, location-specific content, and local citation footprint. The most common failure mode is treating locations as identical templates — thin, duplicated location pages and inconsistent entity data across locations actively suppress AI recommendations for all of them, because AI engines read the inconsistency as a sign the business can't be confidently resolved.",
     publishedAt: "2026-08-24",
     readTime: "10 min read",
-    image: "/images/website-blog-multi-location-franchise-ai-visibility.webp",
+    image: "/images/website-blog-multi-location-franchise-ai-visibility-v2.webp",
     content: `## Why multi-location AI visibility is a different problem
 
 A single-location business has one entity to build AI authority around: one name, one address, one Google Business Profile, one set of reviews. A multi-location business or franchise has a fundamentally different structure — a parent brand entity, plus a distinct entity for every individual location, each of which needs its own accurate, verified identity while still rolling up coherently to the brand above it.
@@ -450,7 +450,7 @@ For a multi-location business starting from limited AI visibility: establish the
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial aerial photograph of a row of similar modern storefronts or franchise businesses along a clean suburban commercial street, each with slightly different signage and parking, warm late-afternoon light, wide establishing composition suggesting a chain or franchise network, premium documentary photography style, no readable text on signage, no logos, no watermarks",
-    imageFilename: "website-blog-multi-location-franchise-ai-visibility.webp",
+    imageFilename: "website-blog-multi-location-franchise-ai-visibility-v2.webp",
   },
   {
     slug: "ai-visibility-local-service-businesses",
