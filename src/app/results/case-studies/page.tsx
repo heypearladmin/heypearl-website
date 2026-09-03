@@ -5,6 +5,17 @@ import { Container } from '@/components/ui/Container';
 import { site } from '@/lib/site';
 import { CASE_STUDIES } from '@/data/results';
 
+const MODULE_COLORS: Record<string, string> = {
+  'Authority Website': '#FF6A00',
+  'Authority Pages': '#0A1224',
+  'Authority Score': '#FFC107',
+  'Knowledge Graph': '#2563FF',
+  'AI Visibility': '#2563FF',
+  'GEO Engine': '#22C55E',
+};
+const DEFAULT_MODULE_COLOR = '#64748B';
+const RESULT_COLOR_CYCLE = ['#FF6A00', '#2563FF', '#22C55E', '#FFC107'];
+
 export const metadata: Metadata = {
   title: 'Case Studies — Documented AI Authority Outcomes | HeyPearl',
   description:
@@ -117,9 +128,12 @@ export default function CaseStudiesPage() {
                     <div>
                       <div style={{ fontSize: '0.63rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#64748B', marginBottom: '0.5rem' }}>Modules Used</div>
                       <div className="flex flex-wrap gap-2">
-                        {cs.modules.map((m) => (
-                          <span key={m} style={{ fontSize: '0.68rem', fontWeight: 600, color: '#FF6A00', background: 'rgba(255,106,0,0.08)', border: '1px solid rgba(255,193,7,0.2)', borderRadius: '0.375rem', padding: '0.2rem 0.6rem' }}>{m}</span>
-                        ))}
+                        {cs.modules.map((m) => {
+                          const moduleColor = MODULE_COLORS[m] ?? DEFAULT_MODULE_COLOR;
+                          return (
+                            <span key={m} style={{ fontSize: '0.68rem', fontWeight: 600, color: moduleColor, background: `${moduleColor}14`, border: `1px solid ${moduleColor}30`, borderRadius: '0.375rem', padding: '0.2rem 0.6rem' }}>{m}</span>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
@@ -131,7 +145,7 @@ export default function CaseStudiesPage() {
                       <div className="space-y-4">
                         {cs.results.map((r, i) => (
                           <div key={i} className="flex items-start gap-4">
-                            <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 700, color: '#FF6A00', lineHeight: 1, flexShrink: 0, width: '5rem' }}>{r.metric}</div>
+                            <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 700, color: RESULT_COLOR_CYCLE[i % RESULT_COLOR_CYCLE.length], lineHeight: 1, flexShrink: 0, width: '5rem' }}>{r.metric}</div>
                             <div style={{ fontSize: '0.82rem', color: '#64748B', lineHeight: 1.65, paddingTop: '0.25rem' }}>{r.label}</div>
                           </div>
                         ))}

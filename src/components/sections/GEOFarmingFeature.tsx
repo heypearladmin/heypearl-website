@@ -20,7 +20,7 @@ function NeighborhoodIllustration() {
       style={{
         background: 'linear-gradient(135deg, #0A1224 0%, #0F2548 50%, #1a1035 100%)',
         minHeight: '480px',
-        border: '1px solid rgba(255,106,0,0.15)',
+        border: '1px solid rgba(37,99,255,0.18)',
       }}
     >
       {/* Grid overlay */}
@@ -38,7 +38,7 @@ function NeighborhoodIllustration() {
         aria-hidden
         className="absolute inset-0"
         style={{
-          background: 'radial-gradient(50% 50% at 40% 40%, rgba(255,106,0,0.18) 0%, transparent 65%), radial-gradient(35% 45% at 70% 70%, rgba(10,18,36,0.3) 0%, transparent 60%)',
+          background: 'radial-gradient(50% 50% at 40% 40%, rgba(37,99,255,0.2) 0%, transparent 65%), radial-gradient(35% 45% at 70% 70%, rgba(10,18,36,0.3) 0%, transparent 60%)',
         }}
       />
 
@@ -73,8 +73,8 @@ function NeighborhoodIllustration() {
         {/* Active coverage rings — highlighted nodes */}
         {[[180, 160], [300, 160], [240, 240]].map(([x, y], i) => (
           <g key={`ring-${i}`}>
-            <circle cx={x} cy={y} r="38" fill="none" stroke="rgba(255,106,0,0.25)" strokeWidth="1" strokeDasharray="4 3" />
-            <circle cx={x} cy={y} r="24" fill="rgba(255,106,0,0.12)" />
+            <circle cx={x} cy={y} r="38" fill="none" stroke="rgba(37,99,255,0.35)" strokeWidth="1" strokeDasharray="4 3" />
+            <circle cx={x} cy={y} r="24" fill="rgba(37,99,255,0.16)" />
           </g>
         ))}
 
@@ -91,7 +91,7 @@ function NeighborhoodIllustration() {
               cx={x}
               cy={y}
               r={primary ? 10 : 7}
-              fill={primary ? '#FF6A00' : 'rgba(255,106,0,0.55)'}
+              fill={primary ? '#2563FF' : 'rgba(37,99,255,0.6)'}
               stroke={primary ? 'rgba(248,245,240,0.3)' : 'transparent'}
               strokeWidth="1.5"
             />
@@ -103,19 +103,19 @@ function NeighborhoodIllustration() {
       {/* Floating stat cards */}
       <div className="absolute top-6 left-6 right-6 flex gap-3">
         {[
-          { label: 'Homes Targeted', value: '247' },
-          { label: 'Leads Generated', value: '18' },
-          { label: 'Market Coverage', value: '94%' },
+          { label: 'Homes Targeted', value: '247', color: '#FF6A00' },
+          { label: 'Leads Generated', value: '18', color: '#22C55E' },
+          { label: 'Market Coverage', value: '94%', color: '#2563FF' },
         ].map((s) => (
           <div
             key={s.label}
             className="flex-1 rounded-xl p-3"
-            style={{ background: 'rgba(10,18,36,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.1)' }}
+            style={{ background: 'rgba(10,18,36,0.85)', backdropFilter: 'blur(8px)', border: `1px solid ${s.color}30` }}
           >
             <div style={{ fontSize: '0.55rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(248,245,240,0.5)', marginBottom: '2px' }}>
               {s.label}
             </div>
-            <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.15rem', fontWeight: 700, color: '#F8F5F0', lineHeight: 1 }}>
+            <div style={{ fontFamily: 'var(--font-jakarta), Helvetica Neue, Arial, sans-serif', fontSize: '1.15rem', fontWeight: 700, color: s.color, lineHeight: 1 }}>
               {s.value}
             </div>
           </div>
@@ -137,22 +137,13 @@ function NeighborhoodIllustration() {
         </div>
         <div
           className="flex items-center gap-1.5 rounded-lg px-2.5 py-1.5"
-          style={{ background: 'rgba(255,106,0,0.15)', border: '1px solid rgba(255,106,0,0.3)' }}
+          style={{ background: 'rgba(34,197,94,0.15)', border: '1px solid rgba(34,197,94,0.35)' }}
         >
-          <div className="w-1.5 h-1.5 rounded-full bg-[#FF6A00] animate-pulse" />
-          <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#FF6A00', letterSpacing: '0.06em' }}>LIVE</span>
+          <div className="w-1.5 h-1.5 rounded-full bg-[#22C55E] animate-pulse" />
+          <span style={{ fontSize: '0.6rem', fontWeight: 600, color: '#22C55E', letterSpacing: '0.06em' }}>LIVE</span>
         </div>
       </div>
 
-      {/* Powered by badge */}
-      <div
-        className="absolute top-6 right-6"
-        style={{ background: 'rgba(10,18,36,0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(248,245,240,0.08)', borderRadius: '8px', padding: '4px 10px' }}
-      >
-        <span style={{ fontSize: '0.55rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(248,245,240,0.45)', fontWeight: 600 }}>
-          Powered by HeyPearl
-        </span>
-      </div>
     </div>
   );
 }
