@@ -66,11 +66,6 @@ export const primaryNav: NavItem[] = [
         description: 'Build the digital authority that AI search engines trust and recommend.',
       },
       {
-        label: 'AI Operations',
-        href: '/platform/pearlos',
-        description: 'Automate workflows, follow-up, and client communication with AI.',
-      },
-      {
         label: 'AI Visibility',
         href: '/platform/ai-visibility',
         description: 'Dominate Google, AI Search, GEO, AEO, and local search visibility.',
@@ -154,7 +149,6 @@ export const footerNav = {
     { label: 'GEO Farming AI',   href: 'https://start.geofarming.ai', external: true },
     { label: 'PearlOS',          href: '/platform/pearlos' },
     { label: 'AI Authority',     href: '/platform/authority-score' },
-    { label: 'AI Operations',    href: '/platform/pearlos' },
     { label: 'AI Visibility',    href: '/platform/ai-visibility' },
   ],
   platform: [

@@ -25,11 +25,6 @@ const STANDARD_PRODUCTS = [
     href: '/platform/authority-score',
   },
   {
-    name: 'AI Operations',
-    description: 'Automate repetitive tasks, workflows, follow-up, and client communication.',
-    href: '/platform/pearlos',
-  },
-  {
     name: 'AI Visibility',
     description: 'Dominate Google, AI Search, GEO, AEO, and local search visibility.',
     href: '/platform/ai-visibility',
