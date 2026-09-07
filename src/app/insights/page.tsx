@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'Insights — Editorial on the AI Search Era',
   description:
     'Field-tested frameworks, AI search experiments, and operator intelligence from Hey Pearl on authority infrastructure and the AI search era.',
-  alternates: { canonical: 'https://heypearl.io/insights' },
+  alternates: { canonical: 'https://www.heypearl.io/insights' },
 };
 
 // All published articles, newest first (posts array is already sorted desc)

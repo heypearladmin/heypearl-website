@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   title: 'Hey Local | Online Growth for Local Businesses',
   description:
     'Hey Local helps local businesses get found, build trust, and attract more customers with a stronger online presence.',
-  alternates: { canonical: 'https://heypearl.io/hey-local' },
+  alternates: { canonical: 'https://www.heypearl.io/hey-local' },
   openGraph: {
     title: 'Hey Local | Online Growth for Local Businesses',
     description:

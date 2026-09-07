@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Knowledge Graph — Entity Architecture for AI | HeyPearl',
   description:
     'HeyPearl builds the entity architecture that registers your business as a verified, unambiguous entity across ChatGPT, Perplexity, Gemini, and every major AI engine — so they can cite and recommend you with confidence.',
-  alternates: { canonical: 'https://heypearl.io/platform/knowledge-graph' },
+  alternates: { canonical: 'https://www.heypearl.io/platform/knowledge-graph' },
   openGraph: {
     title: 'Knowledge Graph — Entity Architecture for AI Search',
     description: 'Structured entity signals that make your business impossible for AI engines to misidentify or overlook.',

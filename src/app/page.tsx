@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { site } from '@/lib/site';
 import { HeroDeclaration } from '@/components/sections/HeroDeclaration';
 import { AISolutions } from '@/components/sections/AISolutions';
 import { TheGap } from '@/components/sections/TheGap';
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
   title: 'HeyPearl — The AI Authority Platform',
   description:
     'HeyPearl builds the infrastructure that makes AI engines trust, cite, and recommend your business. The AI Authority Platform — powered by PearlOS and the P.E.A.R.L. framework.',
+  alternates: { canonical: site.url },
   openGraph: {
     title: 'HeyPearl — The AI Authority Platform',
     description:

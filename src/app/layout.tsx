@@ -95,13 +95,13 @@ export const viewport: Viewport = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': 'https://heypearl.io/#organization',
+  '@id': 'https://www.heypearl.io/#organization',
   name: 'Hey Pearl Agency LLC',
   alternateName: 'Hey Pearl',
-  url: 'https://heypearl.io',
+  url: 'https://www.heypearl.io',
   logo: {
     '@type': 'ImageObject',
-    url: 'https://heypearl.io/favicon.png',
+    url: 'https://www.heypearl.io/favicon.png',
     width: 512,
     height: 512,
   },
@@ -163,7 +163,7 @@ const organizationSchema = {
           name: 'PearlOS — AI Authority Operating System',
           description:
             'The operating layer that orchestrates every HeyPearl engagement — entity signals, AI recommendation monitoring, and the P.E.A.R.L. framework in sequence.',
-          url: 'https://heypearl.io/platform/pearlos',
+          url: 'https://www.heypearl.io/platform/pearlos',
         },
       },
       {
@@ -173,7 +173,7 @@ const organizationSchema = {
           name: 'Authority Pages',
           description:
             'Structured, AI-optimized pages that declare your business identity in a format AI systems can read, understand, and cite with confidence.',
-          url: 'https://heypearl.io/platform/authority-pages',
+          url: 'https://www.heypearl.io/platform/authority-pages',
         },
       },
       {
@@ -183,7 +183,7 @@ const organizationSchema = {
           name: 'Knowledge Graph Module',
           description:
             'Complete entity architecture and knowledge graph optimization that makes your business recognizable and citable across AI systems.',
-          url: 'https://heypearl.io/platform/knowledge-graph',
+          url: 'https://www.heypearl.io/platform/knowledge-graph',
         },
       },
     ],
@@ -193,17 +193,17 @@ const organizationSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  '@id': 'https://heypearl.io/#website',
-  url: 'https://heypearl.io',
+  '@id': 'https://www.heypearl.io/#website',
+  url: 'https://www.heypearl.io',
   name: 'Hey Pearl Agency LLC',
   description:
     'Authority infrastructure for the AI search era.',
-  publisher: { '@id': 'https://heypearl.io/#organization' },
+  publisher: { '@id': 'https://www.heypearl.io/#organization' },
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: 'https://heypearl.io/?q={search_term_string}',
+      urlTemplate: 'https://www.heypearl.io/?q={search_term_string}',
     },
     'query-input': 'required name=search_term_string',
   },

@@ -6,7 +6,6 @@ import { slugify } from '@/lib/slugify';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.url.replace(/\/$/, '');
-  const now = new Date();
 
   const staticPages: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
     // Core
@@ -45,17 +44,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/terms-of-service', priority: 0.3, freq: 'yearly' },
   ];
 
+  // No trustworthy per-page modification date exists for these static
+  // marketing pages — lastModified is intentionally omitted rather than
+  // fabricated (a shared "now" timestamp misrepresents freshness to crawlers).
   const staticEntries: MetadataRoute.Sitemap = staticPages.map(({ path, priority, freq }) => ({
     url: `${base}${path}`,
-    lastModified: now,
     changeFrequency: freq,
     priority,
   }));
 
-  // Authority Library articles
+  // Authority Library articles — same reasoning: no real per-article date
+  // field exists in the underlying data, so lastModified is omitted.
   const articleEntries: MetadataRoute.Sitemap = ARTICLE_META.map((article) => ({
     url: `${base}/resources/${article.slug}`,
-    lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.75,
   }));

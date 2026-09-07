@@ -7,7 +7,7 @@ export const site = {
     'HeyPearl builds the systems that help businesses become the authority AI recommends. The AI Authority Platform — powered by PearlOS and the P.E.A.R.L. framework.',
   shortDescription:
     'We build the systems that help businesses become the authority AI recommends.',
-  url: 'https://heypearl.io',
+  url: 'https://www.heypearl.io',
   ogImage: '/images/og/og-default.webp',
   // Misti's Calendly for founder-led strategy calls
   strategyCallUrl: 'https://calendly.com/hey-pearl/meet',

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Misti Bruton — Founder of HeyPearl | AI Authority Infrastructure",
   description:
     "Misti Bruton is the founder and CEO of HeyPearl and creator of PearlOS. She helps real estate professionals build the AI authority infrastructure that gets them recognized and recommended in their market.",
-  alternates: { canonical: 'https://heypearl.io/about/founder' },
+  alternates: { canonical: 'https://www.heypearl.io/about/founder' },
   openGraph: {
     title: "Misti Bruton — Founder of HeyPearl | AI Authority Infrastructure",
     description:
@@ -31,9 +31,9 @@ const personSchema = {
   worksFor: {
     '@type': 'Organization',
     name: 'Hey Pearl Agency LLC',
-    url: 'https://heypearl.io',
+    url: 'https://www.heypearl.io',
   },
-  url: 'https://heypearl.io/about/founder',
+  url: 'https://www.heypearl.io/about/founder',
   sameAs: [
     'https://www.linkedin.com/in/mistibruton/',
     'https://www.mistibruton.com/',

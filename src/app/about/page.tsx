@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'About Hey Pearl — Authority Infrastructure Company for the AI Search Era',
   description:
     'Meet the team behind the AI Authority Platform. Hey Pearl builds the systems — entity architecture, schema, authority pages, reputation signals — that make businesses the answer AI recommends. Book a strategy call.',
-  alternates: { canonical: 'https://heypearl.io/about' },
+  alternates: { canonical: 'https://www.heypearl.io/about' },
   openGraph: {
     title: 'About Hey Pearl — Authority Infrastructure Company for the AI Search Era',
     description: 'Hey Pearl Agency LLC. Founded by Misti Bruton. We build the authority infrastructure — schema, entity SEO, editorial content, reputation signals — that makes your business the answer AI gives.',

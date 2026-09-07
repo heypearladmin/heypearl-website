@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'PearlOS — The AI Authority Operating System | HeyPearl',
   description:
     'PearlOS is the operating system behind every HeyPearl engagement. It orchestrates entity signals, monitors 6 AI engines in real time, executes the P.E.A.R.L. framework, and runs the operational layer — CRM workflows, AI-assisted follow-up, and booking automation — that turns AI-driven visibility into closed business.',
-  alternates: { canonical: 'https://heypearl.io/platform/pearlos' },
+  alternates: { canonical: 'https://www.heypearl.io/platform/pearlos' },
   openGraph: {
     title: 'PearlOS — The AI Authority Operating System',
     description:

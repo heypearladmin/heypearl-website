@@ -68,8 +68,8 @@ const nextConfig = {
       // authority-websites → platform/authority-pages (the actual page that exists)
       { source: '/services/authority-websites', destination: '/platform/authority-pages',      permanent: true },
       { source: '/solutions/authority-websites', destination: '/platform/authority-pages',     permanent: true },
-      // /pricing → /get-started (strategic redirect)
-      { source: '/pricing', destination: '/get-started', permanent: false },
+      // /pricing → /get-started (permanent — stable since this codebase's tracked history)
+      { source: '/pricing', destination: '/get-started', permanent: true },
     ];
   },
 };
