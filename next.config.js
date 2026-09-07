@@ -70,6 +70,12 @@ const nextConfig = {
       { source: '/solutions/authority-websites', destination: '/platform/authority-pages',     permanent: true },
       // /pricing → /get-started (permanent — stable since this codebase's tracked history)
       { source: '/pricing', destination: '/get-started', permanent: true },
+      // /privacy-policy and /terms — moved here from Server-Component redirect()
+      // calls, which only issue a client/RSC-level redirect with no standard
+      // Location header a non-JS crawler can follow. This produces a true
+      // edge-level 308 with a proper Location header for every client.
+      { source: '/privacy-policy', destination: '/policies',        permanent: true },
+      { source: '/terms',          destination: '/terms-of-service', permanent: true },
     ];
   },
 };
