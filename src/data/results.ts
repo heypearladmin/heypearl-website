@@ -194,6 +194,96 @@ export const RECENT_WINS: Win[] = [
   // Pensacola started Apr 14, 2026. Albany Area started May 13, 2026.
   // Texas Hill Country started ~May 17, 2026.
 
+  // ── August 2026 ────────────────────────────────────────────────────────────
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search impressions grew 85% to 4,790 and ranking keywords quadrupled from 8 to 37 — including three new local rankings for Canyon Lake & New Braunfels searches',
+    engine: 'Google Search',
+    dayFromActivation: 282,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The New Braunfels Agent',
+    segment: 'Independent Agent',
+    result: 'Earned first organic ChatGPT visibility (0% → 4.1%) as average AI citations per scan grew 331% — the first month AI search began meaningfully working',
+    engine: 'ChatGPT',
+    dayFromActivation: 282,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'Reached the #1 Google ranking for "moreno real estate" — up from #3 — as average search position improved to 15.4 and the Fort Leavenworth military-families guide grew impressions 382%',
+    engine: 'Google Search',
+    dayFromActivation: 282,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Leavenworth Team',
+    segment: 'Team',
+    result: 'New 317 N. Esplanade listing page earned 296% more impressions (27 → 107) in its first full month live',
+    engine: 'Google Search',
+    dayFromActivation: 282,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search impressions surged 822% (1,150 → 10,600) and clicks grew 179% as newly published neighborhood guides and local FAQ content broke out',
+    engine: 'Google Search',
+    dayFromActivation: 196,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Woodbury Agent',
+    segment: 'Independent Agent',
+    result: 'New Woodbury school-district guide earned 957 impressions in its first month live, with a new Minnesota-summer relocation FAQ adding 491 more',
+    engine: 'Google Search',
+    dayFromActivation: 196,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search impressions nearly doubled to 1,760 as a new Austin flood zones homebuyers guide and neighborhood FAQ page earned their first 182 combined impressions',
+    engine: 'Google Search',
+    dayFromActivation: 207,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Austin Area Agent',
+    segment: 'Independent Agent',
+    result: 'Website sessions grew 104% (75 → 153) and Google Business Profile interactions rose 62%, with a perfect 5.0-star rating maintained across 33 reviews',
+    engine: 'Google Analytics',
+    dayFromActivation: 207,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search impressions grew 224% (589 → 1,910) and average position improved to 18.9, as a new Lake Washington FAQ page earned 317 impressions',
+    engine: 'Google Search',
+    dayFromActivation: 202,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Seattle Luxury Agent',
+    segment: 'Independent Agent',
+    result: 'Website sessions grew 126% (160 → 361) as a new Seattle waterfront blog post earned 139 impressions in its first month live',
+    engine: 'Google Analytics',
+    dayFromActivation: 202,
+    month: 'Aug 2026',
+  },
+  {
+    handle: 'The Pensacola Gulf Coast Agent',
+    segment: 'Independent Agent',
+    result: 'Google Search clicks grew 45% and impressions grew 58% (3,720 → 5,870) as two new property listing pages earned their first clicks and the Nature Trail neighborhood page grew impressions 160%',
+    engine: 'Google Search',
+    dayFromActivation: 139,
+    month: 'Aug 2026',
+  },
+
   // ── July 2026 ──────────────────────────────────────────────────────────────
   {
     handle: 'The Texas Hill Country Agent',
