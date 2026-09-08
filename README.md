@@ -67,7 +67,6 @@ heypearl-website/
 │  │  │  ├─ WhyHeyPearl.tsx
 │  │  │  ├─ Showcase.tsx
 │  │  │  ├─ Founder.tsx
-│  │  │  ├─ PricingPreview.tsx
 │  │  │  └─ FinalCTA.tsx
 │  │  └─ ui/
 │  │     ├─ Button.tsx          (Button + LinkButton)
@@ -76,7 +75,6 @@ heypearl-website/
 │  │     ├─ LegalShell.tsx
 │  │     ├─ Logo.tsx
 │  │     ├─ PageHero.tsx
-│  │     ├─ PricingCard.tsx
 │  │     ├─ Reveal.tsx
 │  │     └─ SectionHeading.tsx
 │  └─ lib/
