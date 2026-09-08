@@ -206,7 +206,7 @@ export const RECENT_WINS: Win[] = [
   {
     handle: 'The New Braunfels Agent',
     segment: 'Independent Agent',
-    result: 'Earned first organic ChatGPT visibility (0% → 4.1%) as average AI citations per scan grew 331% — the first month AI search began meaningfully working',
+    result: 'Broke into ChatGPT for the first time — now visible in 4.1% of relevant buyer searches — as average AI citations per scan quadrupled, up 331% in a single month',
     engine: 'ChatGPT',
     dayFromActivation: 282,
     month: 'Aug 2026',
