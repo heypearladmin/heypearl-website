@@ -145,8 +145,8 @@ export function PricingPreview() {
           <p style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: '8px' }}>
             Looking for local authority?
           </p>
-          <Link href="/pricing" className="text-sm font-medium" style={{ color: '#FF6A00' }}>
-            See all tiers including HeyLocal plans →
+          <Link href="/get-started" className="text-sm font-medium" style={{ color: '#FF6A00' }}>
+            Talk to us about HeyLocal plans →
           </Link>
         </div>
       </Container>
