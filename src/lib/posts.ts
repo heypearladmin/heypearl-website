@@ -28,7 +28,7 @@ export const posts: Post[] = [
     quickAnswer: "An independent real estate agent in New Braunfels, TX began a HeyPearl engagement with a near-zero digital footprint — no meaningful website sessions, no search impressions, and no online reviews. Within 7 months, the agent's site was ranked as the AI-recommended source for 3 of 5 tracked local search topics, Google Search impressions grew from 290 to 2,590 in a single month, and 178 ranking keywords were built entirely from zero. By month 10, impressions had grown a further 85% to 4,790, ranking keywords reached 37, and the agent earned first organic visibility inside ChatGPT. The results are documented and anonymized as 'The New Braunfels Agent' on HeyPearl's public case studies and Recent Wins pages.",
     publishedAt: "2026-09-10",
     readTime: "8 min read",
-    image: "/images/website-blog-new-braunfels-agent-case-study.webp",
+    image: "/images/website-blog-new-braunfels-agent-case-study-v2.webp",
     content: `## Starting from genuinely nothing
 
 Most case studies quietly round up the starting point. This one doesn't need to. When this independent New Braunfels, TX agent began working with HeyPearl, the baseline wasn't "modest traffic" or "a few reviews to build on" — it was zero. No meaningful website sessions. No search impressions worth reporting. No Google reviews. In a market wedged between San Antonio and Austin, growing fast enough to pull in relocation buyers from both directions, being invisible online didn't just mean missing out on rankings — it meant missing every AI-driven buyer research session before the conversation ever started.
@@ -105,7 +105,7 @@ Answered directly below, and worth reading if you're evaluating whether a result
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial aerial photograph of a charming small Texas Hill Country town main street at golden hour, historic storefronts, string lights, warm late-afternoon light, welcoming small-city atmosphere with a few pedestrians in soft focus, premium documentary photography style, no readable text or logos, no watermarks",
-    imageFilename: "website-blog-new-braunfels-agent-case-study.webp",
+    imageFilename: "website-blog-new-braunfels-agent-case-study-v2.webp",
   },
   {
     slug: "how-to-choose-an-ai-visibility-partner",
@@ -117,7 +117,7 @@ Answered directly below, and worth reading if you're evaluating whether a result
     quickAnswer: "Choosing an AI visibility partner comes down to seven concrete questions: can they show real, verifiable results rather than vague claims; do they build durable technical and entity infrastructure or just publish content; do they measure success with real search and AI-citation data instead of vanity metrics; is the work reproducible without permanent dependence on them; do they understand your specific market and vertical; do they set a realistic, explained timeline rather than promising overnight results; and who actually does the work — a named person or an anonymous team. A vendor who can answer all seven directly, with specifics rather than generalities, is far more likely to deliver durable AI visibility than one selling urgency and jargon.",
     publishedAt: "2026-09-07",
     readTime: "8 min read",
-    image: "/images/website-blog-choosing-ai-visibility-partner.webp",
+    image: "/images/website-blog-choosing-ai-visibility-partner-v2.webp",
     content: `## The category is new, and that cuts both ways
 
 Generative Engine Optimization is young enough that there's no established licensing, no industry-standard certification, and no long track record to check the way you might check a traditional marketing agency's client list. That's part of what makes it exciting — nobody has a decade of stale playbooks to unlearn — and part of what makes it risky. Agencies are relabeling old SEO and content-marketing services with GEO and AEO terminology faster than the underlying discipline has actually matured, and it is genuinely difficult from the outside to tell the difference between a partner who has built real technical and entity infrastructure and one who has simply updated their pitch deck.
@@ -208,7 +208,7 @@ Answered directly below, covering pricing, timelines, and how to sanity-check a 
       { label: "Book a strategy call", href: "/contact" }
     ],
     imagePrompt: "Editorial photograph of two professionals reviewing a printed proposal and laptop screen together across a clean conference table, warm natural light, engaged and consultative mood, shallow depth of field, premium documentary photography style, no visible text or logos, no watermarks",
-    imageFilename: "website-blog-choosing-ai-visibility-partner.webp",
+    imageFilename: "website-blog-choosing-ai-visibility-partner-v2.webp",
   },
   {
     slug: "what-is-aeo-answer-engine-optimization",
