@@ -19,6 +19,198 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "new-braunfels-agent-zero-to-ai-recommended",
+    eyebrow: "Client Story",
+    seoTitle: "From Zero Online Presence to AI's Top Recommendation in 7 Months",
+    metaDescription: "An independent New Braunfels agent started with no website sessions, no search impressions, and no reviews. Here is the documented, month-by-month path to becoming the AI-recommended source for local buyers.",
+    h1: "From Zero Online Presence to AI's Top Recommendation in 7 Months",
+    excerpt: "No website traffic. No search impressions. No reviews. Eight months later, this New Braunfels agent is the AI-recommended source for three of five local buyer topics — and still growing. Here is exactly what happened, month by month, using only the real numbers on record.",
+    quickAnswer: "An independent real estate agent in New Braunfels, TX began a HeyPearl engagement with a near-zero digital footprint — no meaningful website sessions, no search impressions, and no online reviews. Within 7 months, the agent's site was ranked as the AI-recommended source for 3 of 5 tracked local search topics, Google Search impressions grew from 290 to 2,590 in a single month, and 178 ranking keywords were built entirely from zero. By month 10, impressions had grown a further 85% to 4,790, ranking keywords reached 37, and the agent earned first organic visibility inside ChatGPT. The results are documented and anonymized as 'The New Braunfels Agent' on HeyPearl's public case studies and Recent Wins pages.",
+    publishedAt: "2026-09-10",
+    readTime: "8 min read",
+    image: "/images/website-blog-new-braunfels-agent-case-study.webp",
+    content: `## Starting from genuinely nothing
+
+Most case studies quietly round up the starting point. This one doesn't need to. When this independent New Braunfels, TX agent began working with HeyPearl, the baseline wasn't "modest traffic" or "a few reviews to build on" — it was zero. No meaningful website sessions. No search impressions worth reporting. No Google reviews. In a market wedged between San Antonio and Austin, growing fast enough to pull in relocation buyers from both directions, being invisible online didn't just mean missing out on rankings — it meant missing every AI-driven buyer research session before the conversation ever started.
+
+That gap is the reason this story is worth telling in narrative form rather than just as a metrics table. The numbers below are real and documented — they're the same figures published on HeyPearl's [case studies page](/results/case-studies) and updated monthly on [Recent Wins](/results/recent-wins) — but the sequence matters as much as the totals, because it's the part most "before and after" screenshots skip.
+
+## Month one: building the foundation nobody sees
+
+The first phase of this engagement wasn't visible to anyone outside it. HeyPearl's OTTO system resolved 406 technical issues on the agent's site and expanded it from 23 to 56 pages — lifting overall site health from 0 to 79 out of 100 without the agent touching a line of code. None of this shows up as a headline metric. It's infrastructure: the entity architecture, structured data, and technical foundation that everything else compounds on top of.
+
+This is the step that's easiest to skip and most expensive to skip. A content strategy built on top of a technically broken site — thin indexing, missing schema, unclear entity signals — caps out early no matter how good the content is. Getting this right first is why the growth that followed didn't plateau after an initial bump.
+
+## Months two through six: hyperlocal content, entity signals, and quiet compounding
+
+With the technical foundation in place, HeyPearl published hyperlocal neighborhood and relocation content built around the specific queries New Braunfels buyers actually search — not generic real estate keywords, but the area-specific questions people ask when they're seriously considering a move: neighborhood comparisons, local amenities, relocation logistics. Alongside that, entity architecture and an AI-optimized content strategy began establishing the agent as a recognized authority across both Google and AI-powered platforms.
+
+This phase is where a lot of engagements quietly stall, because the visible metrics still look thin. It's also exactly when the underlying signals — entity clarity, topical depth, AI citation groundwork — are compounding toward the point where growth becomes visible rather than theoretical.
+
+## Month seven: the AI recommendation milestone
+
+By month seven, the compounding became measurable in the way that matters most for an AI-search era: the agent's site was ranked as the AI-recommended source for 3 of 5 tracked local search topics. That's not a search ranking — it's AI engines choosing this specific agent's content as the answer when someone asks which local agent to work with in New Braunfels.
+
+## Month eight: the single-month jump
+
+The month-eight numbers are the ones that read like a typo until you see the trajectory behind them. Google Search impressions jumped from 290 to 2,590 in a single month — an increase of 2,300 impressions in 30 days. Alongside that, 178 ranking keywords were now tracking across the New Braunfels area, built entirely from a standing start eight months earlier.
+
+Jumps like this don't come from a single lucky post. They come from months of technical and entity groundwork reaching a threshold where Google and AI engines start treating a site as an established, trustworthy source rather than a new, unproven one — and then compounding faster once that threshold is crossed.
+
+## Month ten and beyond: the growth kept going
+
+The most common question about a result like this is whether it holds up, or whether it was a one-time spike. The most recent documented month answers that directly. By month ten, Google Search impressions had grown a further 85% to 4,790, and ranking keywords nearly quadrupled from 8 to 37 — including three brand-new local rankings for Canyon Lake and New Braunfels-specific searches. The agent also earned first organic visibility inside ChatGPT, moving from 0% to 4.1% visibility, with average AI citations per scan up 331% in that same month.
+
+That's the difference between a spike and a foundation: the growth compounded, it didn't fade.
+
+## Why this sequence, not a different one
+
+It's worth being specific about why the work happened in this order, because the order is the actual lesson. Technical foundation came first because content and entity signals built on a broken site cap out early. Hyperlocal, question-specific content came second because generic real estate content doesn't build the topical depth AI engines look for. AI-specific optimization compounded on top of both, because AI engines evaluate entity clarity and citation-worthiness that neither pure technical SEO nor pure content marketing addresses on its own. Skipping or reordering any of these steps is the most common reason a similar engagement stalls.
+
+## What this means if you're starting from the same place
+
+If your own starting point looks like this agent's did — no meaningful traffic, no reviews, no search presence — the honest takeaway isn't "results in 30 days." It's that a near-zero baseline isn't a disadvantage in the way it feels like one. There's no legacy technical debt to unwind, no years of inconsistent NAP data to clean up, no history of thin content to prune. The work is entirely additive, which is part of why the growth curve here looks the way it does.
+
+## Frequently asked questions
+
+Answered directly below, and worth reading if you're evaluating whether a result like this is realistic for your own market.`,
+    faq: [
+      {
+        q: "Is this a real client, or a composite example?",
+        a: "This is a real, documented engagement. The client's real name is not used publicly — HeyPearl anonymizes all client case studies using a hyperlocal identity label, in this case 'The New Braunfels Agent' — but every metric in this article matches the figures published on HeyPearl's case studies and Recent Wins pages, sourced from Google Search Console, SearchAtlas, and Google Business Profile data."
+      },
+      {
+        q: "How long did it take to see real results?",
+        a: "The first visible AI-recommendation milestone landed at month 7. The largest single-month search visibility jump — 290 to 2,590 impressions — happened in month 8. Growth continued through month 10, the most recent reporting period, with impressions reaching 4,790 and the agent's first organic ChatGPT visibility. Results build in phases: technical foundation first, then content and entity signals, then compounding visibility — they don't arrive all at once in week one."
+      },
+      {
+        q: "Could this work in a smaller or less competitive market than New Braunfels?",
+        a: "New Braunfels is a fast-growing but not hyper-saturated market, which is part of why an entity-and-content-first strategy could compound relatively quickly. A smaller market with less search volume may see smaller absolute numbers; a more saturated market may take longer to reach an AI-recommended position. The sequence — technical foundation, then hyperlocal content, then AI-specific optimization — applies regardless of market size, though the exact timeline varies by competition and starting point."
+      },
+      {
+        q: "What made the biggest difference in this engagement?",
+        a: "Based on the sequence of results, the technical foundation work in month one appears to be what made the later growth compound rather than plateau — resolving 406 technical issues and lifting site health from 0 to 79/100 before content and AI-specific work began. Skipping that step is a common reason similar engagements stall even when the content strategy is strong."
+      },
+      {
+        q: "Is the growth still continuing, or did it plateau after the initial jump?",
+        a: "As of the most recent documented month (month 10), growth was continuing: search impressions grew a further 85% beyond the month-8 jump, ranking keywords nearly quadrupled, and the agent earned first-ever organic ChatGPT visibility. The case study is updated as new results come in rather than presented as a single point-in-time snapshot."
+      }
+    ],
+    conclusion: "Zero online presence isn't a permanent condition — it's a starting point, and in some ways an easier one to build from than a site carrying years of technical debt and inconsistent signals. This agent's path from no website sessions to an AI-recommended local authority took 7 months to reach the first major milestone and continued compounding through month 10 — built in a specific, deliberate order: technical foundation, hyperlocal content, then AI-specific optimization layered on top. That sequence, not a single tactic, is what turned a zero baseline into sustained, still-growing visibility.",
+    internalLinks: [
+      { label: "Read the full case study", href: "/results/case-studies" },
+      { label: "See the latest monthly wins", href: "/results/recent-wins" },
+      { label: "How to Choose an AI Visibility Partner", href: "/insights/how-to-choose-an-ai-visibility-partner" },
+      { label: "Explore Authority Pages", href: "/platform/authority-pages" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial aerial photograph of a charming small Texas Hill Country town main street at golden hour, historic storefronts, string lights, warm late-afternoon light, welcoming small-city atmosphere with a few pedestrians in soft focus, premium documentary photography style, no readable text or logos, no watermarks",
+    imageFilename: "website-blog-new-braunfels-agent-case-study.webp",
+  },
+  {
+    slug: "how-to-choose-an-ai-visibility-partner",
+    eyebrow: "Choosing a Partner",
+    seoTitle: "How to Choose an AI Visibility Partner: 7 Questions to Ask First",
+    metaDescription: "Hiring the wrong AI visibility or GEO agency wastes months you can't get back. Here are 7 concrete questions to ask before you sign — and the red flags that signal a vendor is selling hype, not infrastructure.",
+    h1: "How to Choose an AI Visibility Partner: 7 Questions to Ask First",
+    excerpt: "GEO and AEO agencies are multiplying faster than the discipline itself has matured, and a lot of what's being sold is hype wearing new acronyms. Here are the 7 questions worth asking before you hire anyone — and what the honest answers actually sound like.",
+    quickAnswer: "Choosing an AI visibility partner comes down to seven concrete questions: can they show real, verifiable results rather than vague claims; do they build durable technical and entity infrastructure or just publish content; do they measure success with real search and AI-citation data instead of vanity metrics; is the work reproducible without permanent dependence on them; do they understand your specific market and vertical; do they set a realistic, explained timeline rather than promising overnight results; and who actually does the work — a named person or an anonymous team. A vendor who can answer all seven directly, with specifics rather than generalities, is far more likely to deliver durable AI visibility than one selling urgency and jargon.",
+    publishedAt: "2026-09-07",
+    readTime: "8 min read",
+    image: "/images/website-blog-choosing-ai-visibility-partner.webp",
+    content: `## The category is new, and that cuts both ways
+
+Generative Engine Optimization is young enough that there's no established licensing, no industry-standard certification, and no long track record to check the way you might check a traditional marketing agency's client list. That's part of what makes it exciting — nobody has a decade of stale playbooks to unlearn — and part of what makes it risky. Agencies are relabeling old SEO and content-marketing services with GEO and AEO terminology faster than the underlying discipline has actually matured, and it is genuinely difficult from the outside to tell the difference between a partner who has built real technical and entity infrastructure and one who has simply updated their pitch deck.
+
+The good news is that the difference shows up clearly in how a vendor answers a small number of specific, concrete questions. Vague or evasive answers are the tell — not the absence of an answer, but the shape of it.
+
+## Question 1: Can you show real, verifiable results?
+
+Ask for actual before-and-after numbers from real engagements — search impressions, ranking keyword counts, AI citation data, review growth — not just testimonial quotes or screenshots without context. A credible partner should be comfortable sharing specific, dated figures, even anonymized, and should be able to explain where each number comes from — Google Search Console, a rank-tracking tool, AI visibility monitoring — rather than presenting an unsourced dashboard screenshot.
+
+Be specific in what you ask for: not "do you get results," but "show me the actual month-over-month search impression numbers for a client in a similar starting position to mine."
+
+## Question 2: Are they building infrastructure, or just publishing content?
+
+GEO and AEO work that lasts is built on technical and entity foundations — structured data, entity architecture, site health, internal linking — with content published on top of that foundation. Work that's just a content calendar with AI-sounding topics, and no technical or entity component underneath, tends to plateau early, because it never addresses the structural signals AI engines actually evaluate.
+
+Ask directly: "Walk me through what happens in month one, before any content gets published." A partner doing real infrastructure work will have a concrete answer — technical audits, schema implementation, entity verification. A partner without one will often pivot straight to describing blog topics.
+
+## Question 3: How do they measure success?
+
+Some vendors report on metrics that feel impressive but don't map to actual visibility — total word count published, number of "AI mentions" with no context on sentiment or accuracy, generic traffic numbers that don't distinguish branded from non-branded search. The metrics that actually matter are the ones tied to specific, verifiable outcomes: search impressions and clicks from Google Search Console, ranking keyword growth, AI citation volume and sentiment from AI visibility monitoring, and local pack or map presence where relevant.
+
+If a proposed reporting structure doesn't include at least these categories, ask why — and be cautious of a vendor who can't clearly explain what each number they report actually measures.
+
+## Question 4: Is the work reproducible without permanent dependence on them?
+
+Some of the value in this work is genuinely infrastructure — schema, entity architecture, technical fixes — that continues working after an engagement ends, the same way a well-built website keeps functioning after the web developer moves on. Some vendors structure their offering so that stopping the engagement causes visibility to collapse, because the "optimization" was really just continuous manual intervention rather than durable infrastructure.
+
+Ask what happens to your search and AI visibility if you paused the engagement after a year. An honest answer acknowledges that ongoing content and monitoring add continued value, while the technical and entity foundation remains in place independently.
+
+## Question 5: Do they understand your specific market?
+
+Generic GEO advice — "publish more content," "get more reviews," "add schema markup" — is true but insufficiently specific to actually move results. A partner who understands your vertical should be able to speak concretely about the actual questions your buyers ask AI engines, the specific competitive landscape in your market, and how AI engines are already representing your category, not just your business.
+
+A useful test: ask what an AI engine currently says when asked about your category in your specific market, before any work has started. A partner who has actually researched your situation will have a real answer; one who hasn't will speak only in generalities.
+
+## Question 6: Is the timeline realistic, and do they explain why?
+
+AI visibility work compounds — it rarely produces dramatic results in the first thirty days, and a vendor promising otherwise is either inexperienced or overselling. A credible partner should be able to explain, in specific terms, why their timeline looks the way it does: technical foundation work typically comes first and isn't visible externally, followed by content and entity signals that compound over several months, followed by visible ranking and citation growth once a credibility threshold is crossed.
+
+Be skeptical of both extremes — a vendor promising results in weeks, and one who can't commit to any timeline framework at all.
+
+## Question 7: Who actually does the work?
+
+In a category this new, a meaningful amount of "AI visibility" work is still done by real people making real strategic decisions — not a fully automated black box. Ask who specifically will be working on your account, what their background is, and whether the person you're talking to during the sales process is involved in the actual work or hands off to an anonymous team afterward.
+
+This isn't about needing a celebrity strategist — it's about accountability. A vendor who can't tell you who does the work, or treats the question as unusual, is a signal worth taking seriously.
+
+## Red flags worth naming directly
+
+A few patterns are worth flagging on their own, regardless of how the seven questions above are answered: guaranteed rankings or guaranteed AI citations (no legitimate partner can guarantee outcomes on platforms they don't control); pricing based purely on volume of content published rather than outcomes measured; reporting that only ever shows positive numbers with no visible baseline or comparison period; and reluctance to put deliverables, timelines, or reporting cadence in writing before you sign.
+
+## What a well-run engagement actually looks like
+
+In practice, a credible engagement usually follows a recognizable shape: an initial technical and entity audit in month one, with concrete, itemized findings rather than a generic checklist; visible technical and structural fixes in the first month or two, even before content ramps up; a content and entity strategy grounded in your actual market's real buyer questions, not generic templates; monthly reporting tied to Search Console, rank tracking, and AI visibility data with clear before-and-after comparisons; and a growth curve that compounds over months rather than spiking once and flattening.
+
+## Frequently asked questions
+
+Answered directly below, covering pricing, timelines, and how to sanity-check a vendor's claims.`,
+    faq: [
+      {
+        q: "How much should AI visibility or GEO services cost?",
+        a: "Pricing varies widely by market, scope, and starting point, but the more useful question is what's included at a given price — technical infrastructure work and entity architecture cost more to do properly than a pure content calendar, and a price that seems unusually low relative to competitors often means one of those foundational components is missing."
+      },
+      {
+        q: "How long should I commit to before expecting results?",
+        a: "Most credible engagements set expectations around a 3 to 8 month window before major visibility milestones, because technical and entity groundwork typically needs to compound before results become visible. Be cautious of both a vendor promising results in under a month and one who won't commit to any realistic timeframe at all."
+      },
+      {
+        q: "Should I ask for references from current clients?",
+        a: "Yes, and specifically ask to see real, dated performance data rather than just a testimonial quote — a vendor confident in their results should be comfortable sharing anonymized but specific numbers, not just satisfied-sounding language."
+      },
+      {
+        q: "What's the biggest mistake businesses make when choosing an AI visibility partner?",
+        a: "Choosing based on how confidently a vendor uses AI-search terminology rather than on concrete evidence of technical and entity work. GEO and AEO vocabulary is easy to learn and repeat; building the underlying infrastructure that actually earns AI citations is the harder, less easily faked part."
+      },
+      {
+        q: "Can I do AI visibility work myself instead of hiring a partner?",
+        a: "Some of it, yes — publishing direct-answer content, adding basic FAQ schema, and claiming your Google Business Profile are all things a business owner can do directly. The harder parts to do without support are typically the technical entity architecture, ongoing AI visibility monitoring across multiple platforms, and the market-specific strategy that comes from having worked across many similar engagements."
+      }
+    ],
+    conclusion: "The honest answer to most of these seven questions takes longer to give than a confident, vague one — which is exactly why they're useful filters. A partner willing to show real numbers, explain their technical foundation, set a realistic timeline, and tell you plainly who does the work is behaving like someone building durable infrastructure. A partner who deflects two or three of these questions with reassurance instead of specifics is very likely selling a version of GEO that won't hold up past the first few months.",
+    internalLinks: [
+      { label: "See a real, documented client result", href: "/insights/new-braunfels-agent-zero-to-ai-recommended" },
+      { label: "How Much Does AI Visibility Cost?", href: "/insights/how-much-does-ai-visibility-cost" },
+      { label: "Read the case studies", href: "/results/case-studies" },
+      { label: "Explore the PearlOS platform", href: "/platform/pearlos" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of two professionals reviewing a printed proposal and laptop screen together across a clean conference table, warm natural light, engaged and consultative mood, shallow depth of field, premium documentary photography style, no visible text or logos, no watermarks",
+    imageFilename: "website-blog-choosing-ai-visibility-partner.webp",
+  },
+  {
     slug: "what-is-aeo-answer-engine-optimization",
     eyebrow: "AEO Foundations",
     seoTitle: "What Is AEO? A Business Owner's Guide to Answer Engine Optimization",
