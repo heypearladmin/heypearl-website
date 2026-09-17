@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Button, LinkButton } from '@/components/ui/Button';
 import { Download, FileText } from 'lucide-react';
@@ -28,6 +28,10 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [website, setWebsite] = useState(''); // honeypot — real visitors never fill this in
+  // Timestamp the form mounted — sent with the submission so the server can
+  // independently verify a human-plausible amount of time actually passed.
+  const formLoadedAt = useRef(Date.now());
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,7 +41,16 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
       const res = await fetch('/api/lead-magnet', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ firstName, email, phone, postSlug, resourceTitle: title, sourcePage }),
+        body: JSON.stringify({
+          firstName,
+          email,
+          phone,
+          postSlug,
+          resourceTitle: title,
+          sourcePage,
+          website,
+          formLoadedAt: formLoadedAt.current,
+        }),
       });
 
       const data = (await res.json().catch(() => ({}))) as {
@@ -92,6 +105,23 @@ export function LeadMagnetGate({ postSlug, title, sourcePage }: Props) {
         <p className="mt-3 text-slate leading-relaxed text-sm">
           Your download unlocks immediately below — no email required to access it.
         </p>
+
+        {/* Honeypot — invisible to real visitors, tempting to bots that fill every field. */}
+        <div
+          style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
+          aria-hidden="true"
+        >
+          <label htmlFor="lm-website">Website</label>
+          <input
+            id="lm-website"
+            name="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={website}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>

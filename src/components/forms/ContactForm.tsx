@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Button } from '@/components/ui/Button';
 import { ConsentBlock } from '@/components/forms/ConsentBlock';
@@ -13,6 +13,8 @@ type FormState = {
   message: string;
   consentTransactional: boolean;
   consentMarketing: boolean;
+  /** Honeypot — real visitors never see or fill this in. */
+  website: string;
 };
 
 type Status =
@@ -29,6 +31,7 @@ const initial: FormState = {
   message: '',
   consentTransactional: false,
   consentMarketing: false,
+  website: '',
 };
 
 /**
@@ -42,6 +45,9 @@ const initial: FormState = {
 export function ContactForm() {
   const [values, setValues] = useState<FormState>(initial);
   const [status, setStatus] = useState<Status>({ type: 'idle' });
+  // Timestamp the form mounted — sent with the submission so the server can
+  // independently verify a human-plausible amount of time actually passed.
+  const formLoadedAt = useRef(Date.now());
 
   const submitting = status.type === 'submitting';
   const canSubmit = !submitting;
@@ -60,7 +66,7 @@ export function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, formLoadedAt: formLoadedAt.current }),
       });
 
       const data = (await res.json().catch(() => ({}))) as {
@@ -127,6 +133,23 @@ export function ContactForm() {
         Tell us a little about you and we&rsquo;ll follow up by email, text, or
         phone — whichever you prefer.
       </p>
+
+      {/* Honeypot — invisible to real visitors, tempting to bots that fill every field. */}
+      <div
+        style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
+        aria-hidden="true"
+      >
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={values.website}
+          onChange={(e) => update('website', e.target.value)}
+        />
+      </div>
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
         <Field

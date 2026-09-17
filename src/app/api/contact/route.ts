@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { Resend } from 'resend';
 import { site } from '@/lib/site';
+import { isHoneypotTripped, checkSubmissionTiming } from '@/lib/antiSpam';
 
 /**
  * POST /api/contact
@@ -30,6 +31,10 @@ type Payload = {
   message?: unknown;
   consentTransactional?: unknown;
   consentMarketing?: unknown;
+  /** Honeypot — must always arrive empty from a real browser submission. */
+  website?: unknown;
+  /** Client-reported form-mount time; re-verified against server clock below. */
+  formLoadedAt?: unknown;
 };
 
 function isNonEmptyString(v: unknown): v is string {
@@ -56,7 +61,24 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { firstName, lastName, email, phone, message, consentTransactional, consentMarketing } = body;
+  const { firstName, lastName, email, phone, message, consentTransactional, consentMarketing, website, formLoadedAt } = body;
+
+  // Spam gate — checked before any other validation so a bot gets the exact
+  // same response shape no matter what else it filled in. Neither check is
+  // ever tripped by a real visitor filling out the form normally, so a
+  // failure here is treated as spam, not a legitimate error: log it and
+  // return the same success shape a real submission gets, without sending
+  // anything downstream.
+  if (isHoneypotTripped(website)) {
+    console.warn('[contact] Blocked spam submission — honeypot field was filled.');
+    return NextResponse.json({ ok: true });
+  }
+
+  const timing = checkSubmissionTiming(formLoadedAt);
+  if (!timing.ok) {
+    console.warn(`[contact] Blocked spam submission — timing check failed (${timing.reason}).`);
+    return NextResponse.json({ ok: true });
+  }
 
   if (
     !isNonEmptyString(firstName) ||

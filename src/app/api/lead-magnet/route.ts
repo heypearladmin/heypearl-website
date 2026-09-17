@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { LEAD_MAGNET_PDF_BY_POST_SLUG } from '@/lib/leadMagnets';
+import { isHoneypotTripped, checkSubmissionTiming } from '@/lib/antiSpam';
 
 /**
  * POST /api/lead-magnet
@@ -32,6 +33,10 @@ type Payload = {
   postSlug?: unknown;
   resourceTitle?: unknown;
   sourcePage?: unknown;
+  /** Honeypot — must always arrive empty from a real browser submission. */
+  website?: unknown;
+  /** Client-reported form-mount time; re-verified against server clock below. */
+  formLoadedAt?: unknown;
 };
 
 function isNonEmptyString(v: unknown): v is string {
@@ -46,7 +51,23 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Invalid JSON payload.' }, { status: 400 });
   }
 
-  const { firstName, email, phone, postSlug, resourceTitle, sourcePage } = body;
+  const { firstName, email, phone, postSlug, resourceTitle, sourcePage, website, formLoadedAt } = body;
+
+  // Spam gate — checked before any other validation, and before GHL is ever
+  // touched. Neither check is ever tripped by a real visitor filling out the
+  // form normally, so a failure here is treated as spam: log it and return
+  // a generic success-shaped response with no download URL, rather than an
+  // error that would tell a bot exactly what it tripped.
+  if (isHoneypotTripped(website)) {
+    console.warn('[lead-magnet] Blocked spam submission — honeypot field was filled.');
+    return NextResponse.json({ ok: true });
+  }
+
+  const timing = checkSubmissionTiming(formLoadedAt);
+  if (!timing.ok) {
+    console.warn(`[lead-magnet] Blocked spam submission — timing check failed (${timing.reason}).`);
+    return NextResponse.json({ ok: true });
+  }
 
   if (!isNonEmptyString(firstName) || !isNonEmptyString(email) || !isNonEmptyString(postSlug)) {
     return NextResponse.json(
