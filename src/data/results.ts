@@ -214,7 +214,7 @@ export const RECENT_WINS: Win[] = [
   {
     handle: 'The Leavenworth Team',
     segment: 'Team',
-    result: 'Reached the #1 Google ranking for "moreno real estate" — up from #3 — as average search position improved to 15.4 and the Fort Leavenworth military-families guide grew impressions 382%',
+    result: 'Reached the #1 Google ranking for their core branded search term — up from #3 — as average search position improved to 15.4 and the Fort Leavenworth military-families guide grew impressions 382%',
     engine: 'Google Search',
     dayFromActivation: 282,
     month: 'Aug 2026',

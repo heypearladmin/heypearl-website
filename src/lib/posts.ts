@@ -19,6 +19,170 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "leavenworth-team-zero-reviews-to-veteran-authority",
+    eyebrow: "Client Story",
+    seoTitle: "From Zero Reviews to Veteran Community Authority in 8 Months",
+    metaDescription: "A veteran-owned husband-and-wife real estate team had zero Google reviews and an unindexed site. Here is how a review campaign and AI-optimized content made them the #1 AI-recommended source for military relocation in Kansas City.",
+    h1: "From Zero Reviews to Veteran Community Authority in 8 Months",
+    excerpt: "Deep community roots. Zero digital authority. A veteran-owned team serving military families around Fort Leavenworth had an unoptimized Google Business Profile and a site that sat unindexed for months. Eight months later, they're the #1 AI-recommended source across every tracked local topic. Here is the real, documented path — reviews first, not last.",
+    quickAnswer: "A veteran-owned husband-and-wife real estate team serving Fort Leavenworth and the Kansas City metro began a HeyPearl engagement with zero Google reviews and an effectively unindexed website. Within 60 days of a concentrated review campaign, they collected 101+ five-star reviews, reaching a 4.97-star average. In parallel, OTTO resolved 1,939 technical issues and expanded their site from 97 to 237 pages, lifting site health from 0 to 75/100. By month 8, the team ranked as the #1 AI-recommended source across all 5 tracked local search topics — veteran-owned real estate, military relocation, and Kansas City metro buying — with 97.4% local pack coverage across the metro area. The results are documented and anonymized as 'The Leavenworth Team' on HeyPearl's public case studies and Recent Wins pages.",
+    publishedAt: "2026-09-24",
+    readTime: "8 min read",
+    image: "/images/website-blog-leavenworth-team-case-study.webp",
+    content: `## Deep roots, zero digital proof
+
+Some businesses start an AI-visibility engagement with no online presence at all. This one was different, and in some ways harder to diagnose: a veteran-owned, husband-and-wife real estate team had spent years building deep, genuine community roots serving military families around Fort Leavenworth and the broader Kansas City metro. Their reputation in the community was real. Their digital footprint didn't reflect any of it — zero Google reviews, a Google Business Profile that was active but unoptimized, and a website that sat effectively unindexed for months.
+
+That gap matters more in this market than most. Military families relocate on tight, externally-imposed timelines — a permanent-change-of-station order doesn't wait for a slow home search — and they overwhelmingly research agents through AI search and Google before ever picking up the phone. A team with real community trust but zero visible proof of it was, from a buyer's-eve research session, indistinguishable from a team with no experience at all.
+
+## Why reviews came first, not last
+
+Most of HeyPearl's documented engagements lead with technical and entity infrastructure, then let review velocity build over months as a byproduct of increased visibility. This engagement inverted that sequence deliberately: a concentrated review campaign ran in parallel with the technical build from day one, because for this specific audience, review count and rating are the single fastest-reading trust signal a relocating military family checks before anything else.
+
+The result: 101+ five-star reviews collected in under 60 days, taking the team from a single review on file in May to a 4.97-star average that now dominates local search results. That's not organic, slow accumulation — it's a deliberate campaign run at the same time as the technical foundation, because the audience's decision-making pattern called for proof of trust to arrive early, not late.
+
+## Building the technical foundation in parallel
+
+While the review campaign ran, OTTO went to work on the site itself: 1,939 technical issues resolved, the site expanded from 97 to 237 pages, and overall site health lifted from 0 to 75 out of 100. AI-optimized content around veteran-owned real estate, military relocation, and Kansas City-area topics began establishing the team as a recognized authority — not with generic real estate content, but with the specific questions a relocating military family actually has: how PCS timelines work with home closings, which Kansas City suburbs suit which duty-station commutes, what veteran-specific financing looks like in practice.
+
+## The early months: first real signals
+
+The first concrete digital signal came at day 68 — a first 5-star Google review, the first verified conversion from community reputation into visible, searchable proof. By day 99, the site was indexed and pulling in first organic search traffic: 12 clicks and 492 impressions across 34 tracked keywords, all from zero the month before. Day 130 brought the first real inbound call volume traceable to the Google Business Profile — 5 calls in the month, with 110 total profile interactions and a 19.4% action rate.
+
+None of these numbers are dramatic on their own. Together, they're the sequence of a digital presence coming online for the first time — indexing, then traffic, then calls — each one a precondition for the next.
+
+## Month six: the review campaign lands
+
+By day 160, the first non-branded search click appeared — "best selling agents near me" — content beginning to rank for buyer-intent queries beyond direct brand searches. Then, in the same window, the concentrated review campaign fully landed: 101+ five-star reviews in under 60 days, and 1,939 technical issues resolved in a single month as the site expansion from 97 to 237 pages completed, pushing site health to 75/100.
+
+## Month eight: the AI recommendation milestone
+
+By month eight, the compounding of trust signals and technical infrastructure reached its clearest measurable outcome: the team ranked as the #1 AI-recommended source across all 5 tracked local search topics — veteran-owned real estate, military relocation, and Kansas City metro buying queries all returning the team as the top recommendation. Local pack coverage reached 97.4% across the Leavenworth and Kansas City metro area — meaning that across the map grid points HeyPearl tracks, the team appears in local search results almost everywhere a searcher might look.
+
+## Ten months in: still compounding
+
+The most recent documented data shows the momentum continuing, not plateauing. A new listing page for a property on N. Esplanade earned 296% more impressions (27 → 107) in its first full month live. Their core branded search term reached the #1 Google ranking — up from #3 — as average search position improved to 15.4, and a Fort Leavenworth military-families guide grew impressions 382%. New, hyperlocal content is still finding an audience nearly a year into the engagement.
+
+## Why this story is different from a typical search-visibility case
+
+Most AI-visibility stories are primarily technical: fix the site, publish the content, watch rankings climb. This one is a reminder that the fastest-moving lever depends on the audience. For a military relocation audience making high-stakes decisions on compressed timelines, review velocity — visible, recent, abundant social proof — moved trust faster than search rankings alone could have. The technical foundation still mattered enormously; it's what let that trust convert into actual visibility once someone searched. But the sequencing, review campaign first, in parallel with the technical build, was the deliberate choice that fit this specific audience.
+
+## What this means if your audience makes high-stakes, fast decisions
+
+If your buyers are also making a decision under real time pressure — relocation, an urgent local service need, anything where "I need someone I can trust right now" outweighs "let me research for three months" — the lesson here isn't to skip technical work. It's that review velocity deserves to run in parallel with it, not after it, because for that kind of buyer, visible proof of trust is often the first thing they check.`,
+    faq: [
+      {
+        q: "Is this a real client, or a composite example?",
+        a: "This is a real, documented engagement. The client's real names are not used publicly — HeyPearl anonymizes all client case studies using a hyperlocal identity label, in this case 'The Leavenworth Team' — but every metric in this article matches the figures published on HeyPearl's case studies and Recent Wins pages, sourced from Google Search Console, Google Business Profile, and AI visibility monitoring data."
+      },
+      {
+        q: "How did they collect 101+ reviews in under 60 days?",
+        a: "Through a concentrated review campaign run deliberately in parallel with the technical site build, rather than waiting for reviews to accumulate organically after visibility improved. For an audience making high-stakes, time-pressured decisions — like military families relocating on a fixed timeline — visible trust signals mattered early, not just eventually."
+      },
+      {
+        q: "Why did the review campaign run before the technical work finished, instead of after?",
+        a: "Because the audience's decision-making pattern called for it. Military relocation buyers typically research and decide quickly, and review count and rating are often the fastest-reading trust signal they check. Running the review campaign in parallel with — rather than after — the technical build meant visible proof of trust was available as early in the engagement as possible."
+      },
+      {
+        q: "How long did it take to become the #1 AI-recommended source?",
+        a: "Eight months from a standing start of zero reviews and an unindexed site. The path moved through clear stages: first review at day 68, first organic search traffic at day 99, first inbound calls at day 130, the review campaign and technical build landing together around day 196, and the #1 AI-recommendation ranking across all 5 tracked topics by month 8."
+      },
+      {
+        q: "Is the growth still continuing, or did it plateau after the initial results?",
+        a: "As of the most recent documented data, growth is continuing — a new property listing page grew impressions 296% in its first month live, their core branded search term reached the #1 Google position, and a military-families content guide grew impressions 382%. New content is still finding an audience well into the engagement."
+      }
+    ],
+    conclusion: "Zero reviews and an unindexed site don't mean zero trust — they mean the trust a business has genuinely earned in its community hasn't been made visible yet. This veteran-owned team's path shows that the right sequence depends on the audience: for buyers making fast, high-stakes decisions, a concentrated review campaign running in parallel with the technical foundation — not after it — turned eight months of work into the #1 AI-recommended source across every topic that matters to the families they serve.",
+    internalLinks: [
+      { label: "Read the full case study", href: "/results/case-studies" },
+      { label: "See the latest monthly wins", href: "/results/recent-wins" },
+      { label: "From Zero Online Presence to AI's Top Recommendation", href: "/insights/new-braunfels-agent-zero-to-ai-recommended" },
+      { label: "How AI Engines Decide Who to Recommend", href: "/insights/how-ai-engines-decide-who-to-recommend" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a warm, welcoming Midwestern residential street in early autumn near a military town, American flag visible on a porch, mature trees with turning leaves, a moving truck softly out of focus in the driveway of a home with a For Sale sign, natural golden-hour light, premium documentary photography style, no readable text or logos, no watermarks",
+    imageFilename: "website-blog-leavenworth-team-case-study.webp",
+  },
+  {
+    slug: "ai-visibility-geo-myths-vs-reality",
+    eyebrow: "Myths & Misconceptions",
+    seoTitle: "7 AI Visibility and GEO Myths, Debunked",
+    metaDescription: "GEO and AI visibility advice is full of confident-sounding claims that don't hold up. Here are 7 of the most common myths about AI search and generative engine optimization — and what's actually true.",
+    h1: "7 AI Visibility and GEO Myths, Debunked",
+    excerpt: "Every emerging discipline attracts confident-sounding claims that don't survive contact with reality. GEO and AI visibility are no exception. Here are 7 of the most common myths circulating about AI search — and what the evidence actually supports.",
+    quickAnswer: "Common AI visibility myths include: that AI visibility is just SEO with a new name (it overlaps but requires distinct entity and citation work); that more content automatically means more AI citations (structure and citability matter more than volume); that AI visibility work shows results in weeks (most real engagements take 3 to 8 months to compound); that once you're cited by an AI engine the work is done (AI representations can drift or become inaccurate over time and need monitoring); that only large businesses benefit from AI visibility work (documented small-business and solo-agent case studies show otherwise); that reviews don't matter for AI search (review signals directly inform AI-engine trust and recommendation decisions); and that AI visibility and traditional SEO compete for the same budget and effort (they're complementary, not substitutes).",
+    publishedAt: "2026-09-17",
+    readTime: "8 min read",
+    image: "/images/website-blog-ai-visibility-geo-myths.webp",
+    content: `## Why this list exists
+
+Any discipline that's genuinely new attracts two kinds of bad information at once: outdated advice repackaged with new vocabulary, and confident-sounding claims nobody has actually tested. GEO and AI visibility are squarely in that phase right now. Below are seven of the claims we hear most often from business owners who've been told something about AI search that doesn't hold up under scrutiny — along with what the evidence, including HeyPearl's own documented client engagements, actually supports.
+
+## Myth 1: "AI visibility is just SEO with a new name"
+
+**Reality:** They overlap, but they're not the same discipline. Traditional SEO optimizes for ranking position on a results page — the unit of success is the page. AI visibility (GEO) is about whether generative AI engines know your business exists, represent it accurately, and trust it enough to cite or recommend it — an entity-and-authority problem that depends on structured data, consistent presence across sources these engines draw on, and content built for extraction, not just ranking. A page can rank well in traditional search and still be invisible to ChatGPT or Perplexity if the underlying entity signals aren't there.
+
+## Myth 2: "More content automatically means more AI citations"
+
+**Reality:** Volume without structure is close to worthless for AI citation purposes. AI engines extract and cite content that directly, confidently, and completely answers a specific question — not content that's merely long or keyword-rich. A single well-structured, direct-answer page can out-perform a dozen generic posts.
+
+## Myth 3: "AI visibility work shows results in weeks"
+
+**Reality:** In HeyPearl's own documented engagements, meaningful AI-recommendation milestones have landed anywhere from 2.5 months (for a business starting with strong existing technical fundamentals) to 8 months (for a business starting from zero). Technical and entity foundations typically need to compound before visible ranking and citation growth appears — a vendor promising dramatic results inside 30 days is describing something other than durable AI visibility work.
+
+## Myth 4: "Once an AI engine cites you, the work is done"
+
+**Reality:** AI representations can drift. Engines retrain, re-index, and re-evaluate sources continuously, and outdated or thin source content can cause a previously accurate citation to become stale or simply disappear from an engine's response. Ongoing monitoring — tracking how AI platforms represent your business over time, not just a one-time check — is part of maintaining AI visibility, not a one-time project.
+
+## Myth 5: "Only large businesses or big budgets benefit from AI visibility work"
+
+**Reality:** Some of the most dramatic documented results come from small, independent operators starting from zero — not enterprise brands with existing authority to build on. An independent agent with no website traffic and no reviews reached AI-recommended status for 3 of 5 tracked local topics within 7 months; a veteran-owned two-person team went from zero Google reviews to the #1 AI-recommended source across all 5 tracked topics in 8 months. Neither started with an existing budget advantage — they started from genuinely nothing.
+
+## Myth 6: "Reviews don't matter for AI search — that's a Google Maps thing"
+
+**Reality:** Review volume, recency, and rating feed directly into how AI engines evaluate trustworthiness and decide whether to recommend a business, not just how Google's local map pack ranks it. In documented engagements, a concentrated review campaign has directly preceded and correlated with AI-recommendation milestones — reviews function as a trust signal AI engines weigh, not a separate, unrelated metric.
+
+## Myth 7: "AI visibility and traditional SEO compete for the same time and budget"
+
+**Reality:** They're complementary investments, not substitutes competing for the same resources. Traditional SEO still earns the ranking that gets a site discovered by human searchers and by the crawlers that feed AI engines' understanding of the web in the first place. AI visibility work builds the entity clarity and citation-worthiness that determines whether an AI engine trusts and represents that same content accurately. Treating them as an either-or choice under-invests in the foundation the other depends on. SEO, GEO, and AEO are three distinct but complementary disciplines, not competing options.
+
+## The pattern behind all seven myths
+
+Every myth on this list shares a common shape: it takes something that sounds intuitively true and applies it past the point where the evidence supports it. More content sounds like it should help — until you look at what AI engines actually extract. A big budget sounds like it should be a prerequisite — until documented small-business results say otherwise. The corrective in every case is the same: check the claim against real, documented outcomes rather than against what sounds plausible.`,
+    faq: [
+      {
+        q: "Is GEO the same thing as SEO?",
+        a: "No. They overlap but solve different problems. SEO optimizes for ranking position on a search results page. GEO (Generative Engine Optimization) is about whether AI engines know your business, represent it accurately, and trust it enough to cite or recommend it — an entity and authority problem that traditional SEO alone doesn't address."
+      },
+      {
+        q: "Does publishing more blog content improve AI visibility?",
+        a: "Not by itself. AI engines extract and cite content based on how directly and completely it answers a specific question, not on total volume published. A single well-structured, direct-answer page can outperform many generic, unstructured posts for AI citation purposes."
+      },
+      {
+        q: "How fast should I expect AI visibility results?",
+        a: "In documented engagements, meaningful milestones have taken 2.5 to 8 months depending on the starting point, because technical and entity foundations typically need to compound before visible results appear. Be skeptical of any provider promising dramatic AI visibility results within a few weeks."
+      },
+      {
+        q: "Do reviews actually affect whether AI engines recommend a business?",
+        a: "Yes. Review volume, recency, and rating are trust signals that inform how AI engines evaluate and decide whether to recommend a source, not just inputs to Google's local map ranking. Documented engagements show review campaigns correlating directly with AI-recommendation milestones."
+      },
+      {
+        q: "Can a small business or solo agent really compete for AI visibility against larger competitors?",
+        a: "Documented case studies suggest yes — some of the most significant results come from independent operators and small teams starting with zero existing digital presence, not from businesses with the largest existing budgets or brand recognition."
+      }
+    ],
+    conclusion: "Confident-sounding claims are cheap in any new discipline; documented outcomes are not. Each myth on this list traded a plausible-sounding assumption for what the evidence — including real, published client engagements — actually shows. The businesses seeing durable AI visibility results aren't the ones chasing the most content or the biggest budget; they're the ones building the specific technical, entity, and trust infrastructure that AI engines actually evaluate, and giving it the months it realistically takes to compound.",
+    internalLinks: [
+      { label: "What Is GEO? A Business Owner's Guide", href: "/insights/what-is-geo-generative-engine-optimization" },
+      { label: "How to Choose an AI Visibility Partner", href: "/insights/how-to-choose-an-ai-visibility-partner" },
+      { label: "See real, documented client results", href: "/results/case-studies" },
+      { label: "Explore the platform", href: "/platform" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial flat-lay photograph of a clean wooden desk with two open notebooks side by side — one with handwritten crossed-out notes labeled with an X mark, the other with clean checkmarked notes — soft natural window light, a pen resting between them, minimal and modern composition, premium documentary photography style, no readable text, no logos, no watermarks",
+    imageFilename: "website-blog-ai-visibility-geo-myths.webp",
+  },
+  {
     slug: "new-braunfels-agent-zero-to-ai-recommended",
     eyebrow: "Client Story",
     seoTitle: "From Zero Online Presence to AI's Top Recommendation in 7 Months",
@@ -33,7 +197,7 @@ export const posts: Post[] = [
 
 Most case studies quietly round up the starting point. This one doesn't need to. When this independent New Braunfels, TX agent began working with HeyPearl, the baseline wasn't "modest traffic" or "a few reviews to build on" — it was zero. No meaningful website sessions. No search impressions worth reporting. No Google reviews. In a market wedged between San Antonio and Austin, growing fast enough to pull in relocation buyers from both directions, being invisible online didn't just mean missing out on rankings — it meant missing every AI-driven buyer research session before the conversation ever started.
 
-That gap is the reason this story is worth telling in narrative form rather than just as a metrics table. The numbers below are real and documented — they're the same figures published on HeyPearl's [case studies page](/results/case-studies) and updated monthly on [Recent Wins](/results/recent-wins) — but the sequence matters as much as the totals, because it's the part most "before and after" screenshots skip.
+That gap is the reason this story is worth telling in narrative form rather than just as a metrics table. The numbers below are real and documented — they're the same figures published on HeyPearl's case studies page and updated monthly on Recent Wins — but the sequence matters as much as the totals, because it's the part most "before and after" screenshots skip.
 
 ## Month one: building the foundation nobody sees
 
