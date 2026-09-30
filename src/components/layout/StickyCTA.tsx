@@ -18,6 +18,11 @@ export function StickyCTA() {
   const [scrolledPast, setScrolledPast] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [open, setOpen] = useState(false);
+  // The fixed bottom-right position collides with the footer's own legal
+  // links (Policies/Privacy/Terms) once the footer scrolls into view — the
+  // footer already repeats the same phone/contact info, so it's safe to
+  // just step aside rather than sit on top of it.
+  const [footerInView, setFooterInView] = useState(false);
 
   useEffect(() => {
     if (sessionStorage.getItem(DISMISS_KEY) === '1') {
@@ -33,6 +38,17 @@ export function StickyCTA() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    const footer = document.getElementById('site-footer');
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setFooterInView(entry.isIntersecting);
+    });
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
+
   function dismiss() {
     setDismissed(true);
     setOpen(false);
@@ -42,7 +58,10 @@ export function StickyCTA() {
   if (dismissed || !scrolledPast) return null;
 
   return (
-    <div className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-3">
+    <div
+      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-3 transition-opacity duration-200"
+      style={footerInView ? { opacity: 0, pointerEvents: 'none' } : undefined}
+    >
       {/* Expanded card */}
       {open && (
         <div className="w-[19rem] rounded-3xl bg-white shadow-lift border border-plum/5 overflow-hidden">

@@ -12,7 +12,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden" style={{ background: '#0A1224', color: '#F8F5F0' }}>
+    <footer id="site-footer" className="relative overflow-hidden" style={{ background: '#0A1224', color: '#F8F5F0' }}>
       {/* Subtle navy radial — no orange glow */}
       <div
         aria-hidden
