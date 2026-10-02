@@ -12,8 +12,8 @@ export const site = {
   // Misti's Calendly for founder-led strategy calls
   strategyCallUrl: 'https://calendly.com/hey-pearl/meet',
   contact: {
-    phone: '+1 830 402 4045',
-    phoneDisplay: '(830) 402-4045',
+    phone: '+1 830 465 3011',
+    phoneDisplay: '(830) 465-3011',
     email: 'support@heypearl.io',
     address: {
       line1: '1606 Headway Cir',

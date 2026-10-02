@@ -129,7 +129,7 @@ const organizationSchema = {
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      telephone: '+18304024045',
+      telephone: '+18304653011',
       contactType: 'customer service',
       email: 'support@heypearl.io',
       availableLanguage: 'English',

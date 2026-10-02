@@ -93,7 +93,7 @@ export default function TermsOfServicePage() {
                     support@heypearl.io
                   </a>
                 </li>
-                <li>Phone: (830) 402-4045</li>
+                <li>Phone: (830) 465-3011</li>
                 <li>
                   Website:{' '}
                   <a
@@ -361,7 +361,7 @@ export default function TermsOfServicePage() {
                   support@heypearl.io
                 </a>
                 <br />
-                Phone: (830) 402-4045
+                Phone: (830) 465-3011
                 <br />
                 Website:{' '}
                 <a
