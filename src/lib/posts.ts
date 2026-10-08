@@ -19,6 +19,206 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "woodbury-agent-ai-visibility-before-google-rankings",
+    eyebrow: "Client Story",
+    seoTitle: "AI Recommended First, Google Second: A Woodbury Agent's 6 Months",
+    metaDescription: "Against agents with 200–400 reviews, a Woodbury, MN agent started with zero reviews and no search presence. Here is why AI visibility came first, and how Google traffic followed.",
+    h1: "AI Recommended First, Google Second: A Woodbury Agent's First 6 Months",
+    excerpt: "Most visibility plans chase Google rankings first and hope AI follows. This Twin Cities agent did the opposite — and became the AI-recommended source for every tracked local topic months before Google traffic broke out. Here is the documented sequence, including the modest early numbers.",
+    quickAnswer: "An independent agent in Woodbury, MN began a HeyPearl engagement with zero Google reviews, 88 Facebook followers, and a site that had not yet appeared in organic search, competing against agents holding 200–400 reviews. The engagement deliberately sequenced AI visibility first. By month 4, the agent was the #1 AI-recommended source across all 5 tracked Woodbury topics with 76.7% positive AI sentiment; by month 5, website health had reached 93/100 and Google reviews had grown from 0 to 19 at 5.0 stars. Classic search visibility followed: in month 6 (August), Google Search impressions grew 822% (1,150 to 10,600) and clicks grew 179% (24 to 67). The results are documented and anonymized as 'The Woodbury Agent' on HeyPearl's public case studies and Recent Wins pages.",
+    publishedAt: "2026-10-09",
+    readTime: "8 min read",
+    image: "/images/website-blog-woodbury-agent-case-study.webp",
+    content: `## A competitive suburb and a very small starting point
+
+Woodbury is a growing Twin Cities suburb with an established real estate market, and the agents already working it hold the kind of advantages that are hard to out-build quickly: hundreds of Google reviews and years of domain authority. This agent began a HeyPearl engagement with 88 Facebook followers, 108 Instagram followers, zero Google reviews, and a website that had not yet appeared in organic search.
+
+Competing head-on for Google rankings against agents with 200 to 400 reviews would have meant a long wait with little visible progress. The plan took a different route, and the route is the story.
+
+## The decision: AI visibility first
+
+The standard playbook builds Google visibility first and treats AI visibility as a byproduct. This engagement reversed the order on purpose. The reasoning was simple: AI engines evaluating who to recommend weigh entity clarity, structured data, topical depth, and corroborating signals. A new site can earn those faster than it can out-rank agents with years of accumulated Google authority. So the first phase focused on being clearly and accurately understood by AI engines, with the expectation that organic search and local pack visibility would compound behind it.
+
+That is a trade-off, not a free lunch. It meant the early Google numbers stayed small while the AI numbers moved.
+
+## Months one to three: small signals, in the right places
+
+The early data was modest, and it is worth reading that way. At day 43, Google Business Profile impressions tripled month over month (54 to 161), with the first 10 website clicks coming from the profile, and Instagram reach hit 599 — 5.5 times the follower count. At day 73, the site recorded its first 126 website sessions, with a 4m 42s average session time and the contact page accounting for 17% of all pageviews, a strong high-intent signal for a site that small. By day 104, Business Profile impressions peaked at 251, up 365% from 54 at activation, and a first seller-focused blog post began driving early organic traffic.
+
+None of these are large numbers. They are the early signs of a presence coming online, and the contact page share suggests the few visitors who arrived were serious.
+
+## Month four: the AI recommendation lands
+
+By day 134, the agent was the #1 AI-recommended source across all 5 tracked Woodbury local real estate topics, with 76.7% positive AI sentiment and 31 new AI citations identified in a single month. In the same period, 990 technical issues had been resolved, site health reached 69 out of 100 from zero, the site expanded from 100 to 117 pages, and 18 Google reviews were on file.
+
+This is the payoff of the sequence: a newcomer with a fraction of the incumbents' review count was nonetheless the top recommendation when AI engines were asked about the local market.
+
+## Month five: a foundation that holds
+
+By day 165, website health reached 93 out of 100 and the site had its best month yet — 204 sessions, up 63% over the prior month, with organic search sessions averaging 4m 05s of engagement. Authority backlinks had grown to more than 500 across 144 referring domains. Google reviews reached 19 at a perfect 5.0 stars, built through a concentrated review campaign.
+
+The agent's own summary of this stage was that the foundation was something they had not known they needed: top recommendation on AI search in Woodbury, site health at 93%, and a wall of five-star reviews, all within five months.
+
+## Month six: Google catches up
+
+Then the order of events paid off in the second direction. By day 196, Google Search impressions grew 822% month over month (1,150 to 10,600) and clicks grew 179% (24 to 67), driven by a wave of newly published local content: a Woodbury school-district guide earned 957 impressions in its first month live, a new Minnesota-summer relocation FAQ added 491, and a utilities and services relocation guide added 423. Google Business Profile interactions edged up 9.7% to 34, with a 5.0-star rating across 20 reviews.
+
+Note the honest scale: 67 clicks is a small absolute number. The meaningful signal is the direction and the source — 10,600 impressions from pages that did not exist a month earlier.
+
+## What the sequence teaches
+
+Three lessons stand out. First, in a market dominated by incumbents with large review counts, AI recommendation can be reached before Google rankings, because the two engines weigh different evidence. Second, the early period will look underwhelming on Google metrics, and that is the expected cost of this sequencing rather than a sign it is not working. Third, the AI foundation does not stay separate: the entity clarity, structured data, and topical content built for AI engines are the same assets that later fed Google's impressions.
+
+## Who this sequencing fits
+
+If you are entering a market where established competitors hold large review counts and years of authority, and you cannot afford to wait a year for Google to notice you, leading with AI visibility is a reasonable strategy. If you already hold strong Google rankings, the order matters less, and the work is more about making sure AI engines represent you accurately.`,
+    faq: [
+      {
+        q: "Is this a real client, or a composite example?",
+        a: "This is a real, documented engagement. The client's real name is not used publicly — HeyPearl anonymizes client case studies with a hyperlocal identity label, in this case 'The Woodbury Agent' — but the metrics in this article match the figures published on HeyPearl's case studies and Recent Wins pages, sourced from Google Search Console, Google Analytics, Google Business Profile, and AI visibility monitoring data."
+      },
+      {
+        q: "Why lead with AI visibility instead of Google rankings?",
+        a: "Because the local competitors held 200 to 400 reviews and years of Google authority, which are slow to overcome. AI engines weigh different evidence, such as entity clarity, structured data, and topical depth, which a new site can build faster. The plan expected Google visibility to compound behind the AI foundation, and by month six it did."
+      },
+      {
+        q: "Did Google results stay small for a long time?",
+        a: "Yes, and that is the honest trade-off of this sequencing. Through the first several months, website sessions and Business Profile numbers were modest. The larger Google gain showed up in month six, when search impressions grew 822% from 1,150 to 10,600, though clicks were still a small absolute number at 67."
+      },
+      {
+        q: "How long did it take to become the #1 AI-recommended source?",
+        a: "About four months. By day 134 the agent was the #1 AI-recommended source across all 5 tracked Woodbury local real estate topics, with 76.7% positive AI sentiment and 31 new AI citations identified in a single month."
+      },
+      {
+        q: "Would this sequence work in any market?",
+        a: "It fits best where incumbents hold large review counts and long-standing Google authority. In a market where you already rank well, the order matters less. Results also vary by competition, starting point, and scope, so treat this as one documented example rather than a guarantee."
+      }
+    ],
+    conclusion: "When incumbents hold hundreds of reviews and years of authority, waiting to out-rank them on Google is a slow bet. This Woodbury agent led with AI visibility instead, became the #1 AI-recommended source for every tracked local topic within about four months, and then watched Google impressions grow 822% in month six as the same foundation fed classic search. The early Google numbers were small, and the sequence still worked.",
+    internalLinks: [
+      { label: "Read the full case study", href: "/results/case-studies" },
+      { label: "See the latest monthly wins", href: "/results/recent-wins" },
+      { label: "From Zero Reviews to Veteran Community Authority", href: "/insights/leavenworth-team-zero-reviews-to-veteran-authority" },
+      { label: "How AI Engines Decide Who to Recommend", href: "/insights/how-ai-engines-decide-who-to-recommend" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial photograph of a quiet, tree-lined Minnesota suburban street in early autumn with a small lake glimmering between houses in the background, warm golden-hour light, a modest brick home with a tidy front yard in the foreground, calm and welcoming mood, premium documentary photography style, no readable text or logos, no people in focus, no watermarks",
+    imageFilename: "website-blog-woodbury-agent-case-study.webp",
+  },
+  {
+    slug: "ai-visibility-glossary-terms-business-owners-should-know",
+    eyebrow: "Glossary",
+    seoTitle: "The AI Visibility Glossary: 26 Terms Business Owners Should Know",
+    metaDescription: "GEO, AEO, entities, schema, citations, llms.txt — a plain-English glossary of the 26 terms behind AI search visibility, each defined in a sentence or two.",
+    h1: "The AI Visibility Glossary: 26 Terms Business Owners Should Know",
+    excerpt: "AI search comes with a pile of new acronyms and borrowed SEO terms, and most explanations assume you already know half of them. Here are 26 definitions in plain English, grouped by what they help you do.",
+    quickAnswer: "AI visibility is how often, and how accurately, AI engines like ChatGPT, Perplexity, and Google's AI Overviews mention or recommend your business. The core terms: GEO (Generative Engine Optimization) is making your business understood and cited by generative AI; AEO (Answer Engine Optimization) is structuring content so it can be extracted as a direct answer; an entity is a clearly identifiable real-world thing such as a business or person; structured data (schema markup) labels your content in a machine-readable format; and a citation is a source an AI engine references when it answers. This glossary defines 26 terms in total, grouped by topic.",
+    publishedAt: "2026-10-06",
+    readTime: "9 min read",
+    image: "/images/website-blog-ai-visibility-glossary.webp",
+    content: `## How to use this glossary
+
+Each term below is defined in a sentence or two, grouped by what it helps you do. Skim for the term you keep seeing, or read straight through to get the vocabulary in order. The definitions are deliberately plain; the fuller treatment of most terms lives in their own articles on this site.
+
+## The core disciplines
+
+**SEO (Search Engine Optimization):** The practice of improving a website so it ranks higher in traditional search results. Success is measured mainly by ranking position and clicks.
+
+**GEO (Generative Engine Optimization):** The practice of making your business understood, trusted, and cited by generative AI engines such as ChatGPT, Perplexity, and Google's AI Overviews. It is largely an entity and authority problem.
+
+**AEO (Answer Engine Optimization):** The practice of structuring specific content so it can be extracted and delivered directly as the answer to a question, whether in an AI response, a voice assistant, or a featured snippet.
+
+**AI visibility:** How often, and how accurately, AI engines mention or recommend your business when people ask relevant questions. It is the outcome that GEO and AEO work aims to improve.
+
+**Generative AI engine:** An AI system that composes answers in natural language rather than only listing links. ChatGPT, Perplexity, Gemini, and Claude are examples.
+
+**AI Overview:** The AI-generated summary Google can show at the top of some search results, drawing on and citing web sources.
+
+## How AI engines work
+
+**LLM (large language model):** The type of AI model behind most generative engines, trained on large amounts of text to predict and generate language.
+
+**Retrieval-augmented generation (RAG):** A technique where an AI engine looks up current sources and uses them to build its answer, rather than relying only on what it learned in training. It is why fresh, well-structured pages can influence AI answers.
+
+**Hallucination:** When an AI engine states something false or invented with confidence, such as a wrong address, service, or founding date for a business.
+
+**AI crawler:** An automated program that fetches web pages for AI systems to learn from or retrieve. GPTBot, from OpenAI, is a well-known example. Whether you allow these crawlers affects what AI engines can see.
+
+## Entities and trust
+
+**Entity:** A clearly identifiable real-world thing, such as a business, a person, or a place, that a machine can distinguish from similar things. AI engines recommend entities, not just pages.
+
+**Knowledge graph:** A structured network of entities and the relationships between them. Search and AI systems use knowledge graphs to understand who and what a business is.
+
+**Knowledge panel:** The information box Google can display for a recognized entity, summarizing key facts. Its presence signals that Google has a confident picture of the entity.
+
+**Wikidata:** A free, structured, community-edited database of entities that many systems draw on as a reference. A well-formed entry can help machines identify a business unambiguously.
+
+**E-E-A-T:** Experience, Expertise, Authoritativeness, and Trustworthiness — the quality signals search systems look for when judging whether a source deserves to be trusted.
+
+**Topical authority:** The depth and breadth of your coverage of a subject, which signals that you are a reliable source on it rather than a one-off mention.
+
+## Technical building blocks
+
+**Structured data (schema markup):** Code added to a page that labels its content in a standard, machine-readable format, such as a business's name, address, services, or FAQs.
+
+**FAQPage schema:** A specific type of structured data that marks up question-and-answer pairs, making them easier for search and AI systems to extract.
+
+**robots.txt:** A file at the root of a website that tells crawlers which areas they may or may not visit.
+
+**llms.txt:** A proposed convention for a plain-text file that points AI systems to the most useful content on a site. It is an emerging idea, and support varies by engine.
+
+## Content and measurement
+
+**Direct-answer paragraph:** The first one to three sentences under a question-style heading, written to fully answer the question on their own so an engine can lift them out.
+
+**Citation:** A source an AI engine references or links when it composes an answer. Earning citations is a core goal of AI visibility work.
+
+**AI sentiment:** The tone with which AI engines describe your business, such as positive, neutral, or negative, when they mention it.
+
+**Local pack:** The map and short list of local businesses Google shows for location-based searches, heavily influenced by your Business Profile and reviews.
+
+**Review velocity:** How quickly you are collecting new reviews. Recent, steady reviews are a trust signal for both local search and AI recommendations.
+
+**Branded vs. non-branded search:** Branded searches include your business name; non-branded searches describe a need without naming you. Growth in non-branded search shows you are being discovered by people who did not already know you.
+
+## Where to go from here
+
+If one term above is the one you keep tripping over, start with its dedicated article. If the whole list is new to you, the foundations — GEO, AEO, and entities — are the best place to begin, because the rest of the vocabulary builds on them.`,
+    faq: [
+      {
+        q: "What is the difference between GEO and AEO?",
+        a: "GEO is about whether AI engines know, trust, and accurately represent your business overall — an entity and authority problem. AEO is about whether a specific piece of your content can be extracted and delivered as the direct answer to a specific question. The two reinforce each other."
+      },
+      {
+        q: "What does AI visibility mean?",
+        a: "AI visibility is how often and how accurately AI engines such as ChatGPT, Perplexity, and Google's AI Overviews mention or recommend your business when people ask relevant questions."
+      },
+      {
+        q: "What is an entity in AI search?",
+        a: "An entity is a clearly identifiable real-world thing, such as a business, person, or place, that a machine can tell apart from similar things. AI engines recommend entities, so being clearly defined as one is foundational."
+      },
+      {
+        q: "What is a citation in AI search?",
+        a: "A citation is a source an AI engine references or links when it composes an answer. Earning citations is a core goal of AI visibility work."
+      },
+      {
+        q: "Do I need llms.txt?",
+        a: "llms.txt is an emerging, proposed convention for guiding AI systems to your best content, and support varies by engine. It is a low-cost addition, but it is not a substitute for clear structure, structured data, and strong content."
+      }
+    ],
+    conclusion: "The vocabulary of AI visibility looks intimidating, but most of it reduces to a few ideas: be a clearly identifiable entity, publish content that answers questions directly, label it in a machine-readable way, and earn the trust signals that make an engine willing to cite you. Learn the terms above and the rest of the conversation gets much easier to follow.",
+    internalLinks: [
+      { label: "What Is GEO? A Business Owner's Guide", href: "/insights/what-is-geo-generative-engine-optimization" },
+      { label: "What Is AEO? A Business Owner's Guide", href: "/insights/what-is-aeo-answer-engine-optimization" },
+      { label: "Entity SEO: Make Your Business Known to AI", href: "/insights/entity-seo-make-your-business-known-to-ai" },
+      { label: "7 AI Visibility and GEO Myths, Debunked", href: "/insights/ai-visibility-geo-myths-vs-reality" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Editorial overhead flat-lay photograph of a clean wooden desk with an open reference notebook, colored index tabs, a pen, and a closed laptop, soft natural window light casting gentle shadows, organized and studious mood, shallow depth of field, premium documentary photography style, no readable text, no logos, no watermarks",
+    imageFilename: "website-blog-ai-visibility-glossary.webp",
+  },
+  {
     slug: "leavenworth-team-zero-reviews-to-veteran-authority",
     eyebrow: "Client Story",
     seoTitle: "From Zero Reviews to Veteran Community Authority in 8 Months",
