@@ -27,7 +27,7 @@ export const site = {
   products: {
     geoFarmingAI: {
       name: 'GEO Farming AI',
-      url: 'https://start.geofarming.ai',
+      url: 'https://www.geofarming.ai/',
       tagline: 'AI-powered neighborhood marketing for real estate.',
     },
   },

@@ -50,7 +50,7 @@ export const primaryNav: NavItem[] = [
     children: [
       {
         label: 'GEO Farming AI',
-        href: 'https://start.geofarming.ai',
+        href: 'https://www.geofarming.ai/',
         external: true,
         featured: true,
         description: 'AI-powered Circle Prospecting and neighborhood marketing for agents.',
@@ -146,7 +146,7 @@ export const primaryNav: NavItem[] = [
 
 export const footerNav = {
   products: [
-    { label: 'GEO Farming AI',   href: 'https://start.geofarming.ai', external: true },
+    { label: 'GEO Farming AI',   href: 'https://www.geofarming.ai/', external: true },
     { label: 'PearlOS',          href: '/platform/pearlos' },
     { label: 'AI Authority',     href: '/platform/authority-score' },
     { label: 'AI Visibility',    href: '/platform/ai-visibility' },
