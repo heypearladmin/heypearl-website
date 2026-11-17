@@ -19,6 +19,208 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "how-to-read-monthly-seo-ai-visibility-report",
+    eyebrow: "Reporting",
+    seoTitle: "How to Read Your Monthly SEO and AI Visibility Report",
+    metaDescription: "Impressions, clicks, sessions, profile interactions, citations — a monthly report is full of numbers. Here is how to tell which ones signal real progress and which are noise.",
+    h1: "How to Read Your Monthly SEO and AI Visibility Report: What Matters and What's Noise",
+    excerpt: "A good monthly report can still leave you unsure whether things are working. The numbers are usually small, they move around, and the biggest wins often show up months after the work. Here is a practical way to read one without being fooled by it.",
+    quickAnswer: "To read a monthly SEO and AI visibility report, compare each metric with the same metric last month rather than judging its size, and ask five questions: Are impressions growing, and are they coming from non-branded searches? Are the new pages earning their first impressions? Are engaged sessions (not just total sessions) rising? Are Google Business Profile interactions and review counts increasing? And are AI engines citing you more, and describing you accurately? Treat a single-month spike skeptically, remember that foundation work shows up with a lag, and judge direction over three or more months instead of one.",
+    publishedAt: "2026-11-19",
+    readTime: "8 min read",
+    image: "/images/website-blog-monitor-ai-visibility.webp",
+    content: `## The problem with monthly reports
+
+A monthly performance report gives you a stack of numbers and an implicit question: is this working? The honest answer is often "it depends on how you read it," because early numbers are small, they bounce from month to month, and the work with the biggest payoff, such as technical fixes, entity clarity, and new content, tends to show up late.
+
+This guide is a reading method, not a benchmark table. It will not tell you what a good click-through rate is, because that depends on your market. It will help you decide whether the direction of each number is encouraging and which numbers deserve your attention.
+
+## Rule one: compare to last month, not to a target in your head
+
+Most reports show the same metric for two periods side by side. That comparison is the useful part. A site that went from 24 clicks to 67 clicks made real progress even though 67 is a small number. A site that went from 3,000 impressions to 2,900 may be flat even though 2,900 sounds large.
+
+Read direction first and size second. Then ask what the starting point was, because a percentage gain on a tiny base can look dramatic and mean very little. Both the percentage and the raw numbers belong in your reading.
+
+## Google Search Console: what to look at
+
+Search Console reports how your site appears in Google results. Four numbers matter most:
+
+**Impressions:** How many times your pages appeared in results. This is the earliest sign that Google has started to show your content, and it usually rises before clicks do.
+
+**Clicks:** How many times someone clicked through. Clicks are smaller and noisier than impressions, so look at them over several months.
+
+**Click-through rate (CTR):** Clicks divided by impressions. It tells you whether your titles and descriptions persuade people when you appear.
+
+**Average position:** Where you rank on average. Read it with care: when a site begins appearing for many new, harder searches, its average position can look worse even though visibility is improving.
+
+### Branded versus non-branded searches
+
+The most important split in your Search Console data is between branded searches, which include your business name, and non-branded searches, which describe a need without naming you. Growth in branded searches mostly means people who already know you are looking for you. Growth in non-branded searches means people who did not know you are discovering you. A report that shows rising impressions should tell you which kind it is.
+
+### New pages and their first impressions
+
+When you publish a new guide or FAQ page, the first thing to check is whether it earns its first impressions. A new page going from zero to a few hundred impressions in its first month is a healthy early sign, even if it earns few clicks yet.
+
+## Google Analytics: sessions and engaged sessions
+
+Analytics shows what visitors do on your site. Total sessions count visits, but engaged sessions count visits where the person stayed, scrolled, or took an action, which makes them a better measure of quality. If sessions rise and engaged sessions rise with them, the new traffic is real interest. If sessions rise and engaged sessions do not, ask where the traffic is coming from.
+
+Also look at which pages visitors reach. A high share of pageviews on a contact or booking page is a strong intent signal, even on a small site.
+
+## Google Business Profile: interactions and reviews
+
+For local businesses, the Business Profile section is often where results show first. Look at total interactions, which combine calls, direction requests, and website clicks, and at the action rate, meaning the share of profile views that turn into one of those actions. Then look at the review count and star rating. Review volume and recency are trust signals for people and for AI engines, so a steady flow of recent reviews matters more than a single burst followed by silence.
+
+## AI visibility: citations, topics, and sentiment
+
+AI visibility numbers are newer and less standardized, so read them with the most care. The useful questions are whether AI engines are citing your site more often, whether you are being recommended across more of your tracked topics, and whether the way you are described is accurate and positive.
+
+Because AI answers vary from run to run, a small change in one month is usually noise. Look for movement that holds across several reporting periods, and make sure the same set of questions is being tracked each time so you are comparing like with like.
+
+## Numbers that mislead
+
+A few patterns trip up almost everyone:
+
+**A single-month spike.** One strong month can come from one page, one event, or a seasonal swing. Wait for it to hold before treating it as a trend.
+
+**Average position on its own.** As noted above, it can fall while real visibility rises.
+
+**Total traffic without a source.** More visits mean little if you cannot tell whether they came from relevant searches.
+
+**Anything reported without a comparison.** A number with no baseline cannot tell you whether you are improving.
+
+## Expect a lag
+
+The first months of a visibility engagement are often spent on work that does not show up in the numbers yet: fixing technical issues, clarifying who the business is to machines, and publishing content that has not been indexed. Impressions tend to appear first, then clicks, then calls and inquiries. If you judge the work on clicks alone in month two, you will almost always be disappointed, and you will be measuring the wrong thing at the wrong time.
+
+## A five-question monthly read
+
+When your report arrives, ask these five questions in order:
+
+1. Are impressions higher than last month, and are the gains coming from non-branded searches?
+2. Did new pages earn their first impressions?
+3. Are engaged sessions rising, not just total sessions?
+4. Are profile interactions and recent reviews increasing?
+5. Are AI engines citing and describing the business more often and more accurately?
+
+If most answers are yes for three months running, the work is compounding. If they are mixed, ask your provider to explain which numbers are lagging and why, and what the plan is for the next month.`,
+    faq: [
+      {
+        q: "How long should I wait before judging an SEO or AI visibility engagement?",
+        a: "Judge direction over at least three months rather than one. Foundation work such as technical fixes and entity clarity shows up late, and impressions usually move before clicks, calls, or inquiries."
+      },
+      {
+        q: "Are small numbers in my report a bad sign?",
+        a: "Not necessarily. Early numbers are small for almost every new or recovering site. What matters is the direction compared with the previous month and the source of the growth, such as new non-branded searches and new pages earning their first impressions."
+      },
+      {
+        q: "What is the difference between branded and non-branded search in my report?",
+        a: "Branded searches include your business name, so growth there mostly reflects people who already know you. Non-branded searches describe a need without naming you, so growth there shows people discovering you for the first time."
+      },
+      {
+        q: "Why did my average position get worse while impressions went up?",
+        a: "When a site starts appearing for many new, harder-to-rank searches, those additions can pull the average position down even though overall visibility is improving. Read position alongside impressions and the pages involved."
+      },
+      {
+        q: "Why do my AI visibility numbers change from month to month?",
+        a: "AI answers vary from run to run and across engines, so small month-to-month changes are often noise. Look for movement that holds across several reporting periods, using the same tracked questions each time."
+      }
+    ],
+    conclusion: "A monthly report is a map of direction, not a verdict on one month. Compare each number with last month, separate branded from non-branded growth, favor engaged sessions and recent reviews over raw totals, and give foundation work the months it needs to show. Read this way, a report full of small numbers can still tell you clearly whether the work is compounding.",
+    internalLinks: [
+      { label: "How to Choose an AI Visibility Partner", href: "/insights/how-to-choose-an-ai-visibility-partner" },
+      { label: "How to Monitor Your AI Answer Visibility", href: "/insights/monitor-ai-answer-visibility" },
+      { label: "How to Audit Your AI Search Visibility", href: "/insights/audit-your-ai-search-visibility" },
+      { label: "See documented client results", href: "/results/case-studies" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Reused image: website-blog-monitor-ai-visibility.webp (laptop displaying analytics charts on a marble desk, soft evening light).",
+    imageFilename: "website-blog-monitor-ai-visibility.webp",
+  },
+  {
+    slug: "seattle-luxury-agent-local-pack-visibility",
+    eyebrow: "Client Story",
+    seoTitle: "From Invisible on the Map to 66.7% Local Pack Coverage in Seattle",
+    metaDescription: "A Seattle luxury agent with a strong reputation had zero measured local pack presence. Here is the documented six-month path to showing up on two-thirds of the local map.",
+    h1: "From Invisible on the Map to 66.7% Local Pack Coverage in Seattle's Luxury Market",
+    excerpt: "A strong reputation, an active brand, and zero measured presence in the local map results. In one of the most competitive luxury markets in the country, this Seattle agent went from invisible to appearing on 26 of 39 tracked map points. Here is the documented sequence.",
+    quickAnswer: "An independent luxury real estate agent in Seattle began a HeyPearl engagement with an active brand and a solid reputation but an average search position of 18.5 and zero measured local pack presence. Within about six months, the agent appeared in 26 of 39 tracked map grid points, a 66.7% local pack coverage, in a market dense with established agents. Along the way, Google Business Profile optimization drove an action rate of 24.2%, the highest in HeyPearl's client program, a review campaign added 32 new reviews in under 60 days (33 reviews at 4.8 stars), and Google Search impressions reached 13,300, a 3.9x increase from 3,389 at activation. The results are documented and anonymized as 'The Seattle Luxury Agent' on HeyPearl's public case studies and Recent Wins pages.",
+    publishedAt: "2026-11-17",
+    readTime: "7 min read",
+    image: "/images/website-blog-local-ai-search.webp",
+    content: `## A strong brand that did not show up online
+
+Some businesses are well known to the people who already know them and almost invisible to everyone else. This Seattle luxury agent was one of them. The brand was active, the social following was strong, and the reputation was solid. Online, though, the average search position was 18.5, and the measured local pack presence was zero.
+
+That is a costly gap in a market this competitive. Seattle's luxury segment is dense with established agents, deep advertising budgets, and entrenched search authority, and buyers increasingly start their research online and with AI tools. An agent who is effective in person but absent from the local map is losing the first step of the journey.
+
+## Why the local pack is the right target
+
+The local pack is the map and short list of businesses Google shows for location-based searches. It is heavily influenced by your Google Business Profile, your reviews, and how clearly your location and service area are established. For a local professional, appearing there often matters more than ranking on page one for a general query, because it reaches people at the moment they are looking for someone nearby.
+
+HeyPearl measures this with a grid of map points around the service area and records at how many of them the listing appears. That turns "are we showing up on the map?" into a number you can track.
+
+## Month one: a fast start in search
+
+Early results came from the search side. In the first 19 days of activation, the site recorded 3,389 Google Search impressions and 64 organic clicks, with 220 keywords already tracking from a standing start. By day 49, search clicks had more than doubled month over month to 152, impressions reached 7,337, and website clicks from the Business Profile grew 3.5 times as the profile gained traction.
+
+## Month four: the profile starts converting
+
+By day 110, the Google Business Profile action rate reached 24.2%, meaning nearly one in four people who viewed the profile took an action such as calling, requesting directions, or visiting the website. That month brought 66 direction requests and 88 total interactions, the highest action rate in HeyPearl's client program. Direction requests are an especially strong signal, because they suggest someone is ready to visit.
+
+## Month five: a new foundation
+
+Around day 140, the site moved to a new authority domain. In that period, 112 technical issues were resolved, website health reached 61 out of 100 from zero, and the site grew from 13 to 28 pages. Google Search impressions reached 13,300, a 3.9x increase from the 3,389 recorded at activation.
+
+## Months five and six: reviews and the map
+
+A concentrated review campaign added 32 new reviews in under 60 days, bringing the profile to 33 reviews at 4.8 stars. Combined with the profile work and the authority built across the Seattle service area, local pack visibility reached 66.7% at day 165: the listing appeared in 26 of 39 tracked map points, in one of the most competitive luxury markets in the country.
+
+## Where it stands now
+
+The latest documented month shows new, locally specific content still finding an audience. A new Lake Washington FAQ page earned 317 impressions, a new Seattle waterfront blog post earned 139 impressions in its first month, and website sessions grew 126% (160 to 361). The profile holds a 4.8-star rating across 34 reviews.
+
+## What this story teaches
+
+Three points stand out. First, a good reputation does not translate into online visibility by itself; it has to be made legible to Google and to AI engines through the profile, reviews, and a clear location. Second, in a crowded luxury market, the local map is a measurable target, and a grid-based measurement shows progress long before rankings change much. Third, profile engagement quality, not just volume, matters: a 24.2% action rate says the right people are finding the listing.
+
+## Who this approach fits
+
+If you serve a defined local area, already have a strong in-person reputation, and compete against established agents with deeper budgets, a local-pack-first approach is worth considering. If you serve a broad, non-local audience, the map matters less and other channels deserve more attention.`,
+    faq: [
+      {
+        q: "Is this a real client, or a composite example?",
+        a: "This is a real, documented engagement. The client's real name is not used publicly — HeyPearl anonymizes client case studies with a hyperlocal identity label, in this case 'The Seattle Luxury Agent' — but the metrics in this article match the figures published on HeyPearl's case studies and Recent Wins pages, sourced from Google Search Console, Google Analytics, and Google Business Profile data."
+      },
+      {
+        q: "What does 66.7% local pack coverage mean?",
+        a: "HeyPearl tracks a grid of map points across the service area and records at how many the business listing appears in the local results. Here the listing appeared in 26 of 39 tracked points, which is 66.7%."
+      },
+      {
+        q: "How long did it take to reach that local pack coverage?",
+        a: "About six months from activation. Early gains came from search and the Business Profile, a new authority domain was launched around month five, and the 66.7% coverage was recorded at day 165."
+      },
+      {
+        q: "What is a Google Business Profile action rate?",
+        a: "It is the share of profile views that lead to an action such as a phone call, a direction request, or a website visit. This profile reached 24.2%, the highest action rate in HeyPearl's client program."
+      },
+      {
+        q: "Would this work for an agent in a smaller market?",
+        a: "The approach of measuring local map coverage, optimizing the profile, and building reviews applies in any local market. Timelines and results vary with competition and starting point, so treat this as one documented example, not a guarantee."
+      }
+    ],
+    conclusion: "A strong reputation is an asset that online systems cannot see unless you make it visible. This Seattle luxury agent started with zero measured local pack presence and, through profile optimization, a concentrated review campaign, and a stronger site foundation, reached 66.7% coverage of the local map in about six months. The grid measurement made the progress visible long before it showed up anywhere else.",
+    internalLinks: [
+      { label: "Read the full case study", href: "/results/case-studies" },
+      { label: "See the latest monthly wins", href: "/results/recent-wins" },
+      { label: "Local AI Search Optimization", href: "/insights/local-ai-search-optimization" },
+      { label: "From Zero Reviews to Veteran Community Authority", href: "/insights/leavenworth-team-zero-reviews-to-veteran-authority" },
+      { label: "Book a strategy call", href: "/contact" }
+    ],
+    imagePrompt: "Reused image: website-blog-local-ai-search.webp (person on a city sidewalk checking a map on a phone, warm daylight).",
+    imageFilename: "website-blog-local-ai-search.webp",
+  },
+  {
     slug: "woodbury-agent-ai-visibility-before-google-rankings",
     eyebrow: "Client Story",
     seoTitle: "AI Recommended First, Google Second: A Woodbury Agent's 6 Months",
